@@ -11,5 +11,5 @@
 
 ## 2.Crawling
 
-    pip install selenium
-    pip install webdriver-manager
+    pip install selenium --upgrade
+    pip install webdriver-manager --upgrade

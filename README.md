@@ -19,4 +19,4 @@
     pip install selenium --upgrade
     pip install webdriver-manager --upgrade
 
-    pip3 install pandas
+    pip install pandas

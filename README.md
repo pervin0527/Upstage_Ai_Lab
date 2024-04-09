@@ -20,3 +20,22 @@
     pip install webdriver-manager --upgrade
 
     pip install pandas
+
+## 3.FastAPI
+
+    ## 가상환경 만들기. 아나콘다 설치했으면 필요 없음.
+    python -m venv .venv
+
+    ## FastAPI, uvicorn 설치
+    pip install fastapi
+    pip install "uvicorn[standard]"
+
+    ## tensorflow 설치
+    pip install tensorflow
+
+    pip install python-multipart
+
+## 4.메모리 영역에서의 CRUD
+
+- RESTful한 API 또는 REST API
+- 127.0.0.1:8000/api/v1/user [POST] : 유저를 만들겠다.

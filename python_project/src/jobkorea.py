@@ -1,5 +1,4 @@
 import time
-import pandas as pd
 
 from tqdm import tqdm
 from selenium import webdriver
@@ -62,8 +61,7 @@ class JobKoreaCrawler:
         idx = 1
         total_data = []
         while True:
-            if self.debug:
-                if idx == 5:
+            if self.debug and idx == 5:
                     break
 
             if idx > 1:

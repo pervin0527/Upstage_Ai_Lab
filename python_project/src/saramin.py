@@ -7,9 +7,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 
 class SaraminCrawler:
-    def __init__(self, keyword, wait_sec=3, debug=True):
+    def __init__(self, wait_sec=3, debug=True):
         self.url = 'https://www.saramin.co.kr/zf_user/'
-        self.keyword = keyword
         self.wait_sec = wait_sec
 
         self.debug = debug
@@ -18,59 +17,62 @@ class SaraminCrawler:
             self.options.add_experimental_option("detach", True)
 
 
-    def input_keyword(self, browser):
-        """검색창에 keyword를 입력"""
-        browser.find_element(By.CLASS_NAME, 'btn_search').click()
-        keyword_input = browser.find_element(By.ID, 'ipt_keyword_recruit')
-        keyword_input.click()
-        keyword_input.send_keys(self.keyword)
+    def input_setup(self, browser):
+        """검색조건 설정"""
+        browser.find_element(By.CLASS_NAME, 'recruit').click()
+        seoul_all = browser.find_element(By.XPATH, '//*[@id="loc_mcd_101000"]') ## 서울 전체
+        browser.execute_script("arguments[0].click();", seoul_all)
 
-        btn_search_recruit = browser.find_element(By.ID, 'btn_search_recruit')
-        btn_search_recruit.click()
+        gyeonggi_all = browser.find_element(By.XPATH, '//*[@id="depth1_btn_102000"]/button') ## 경기
+        browser.execute_script("arguments[0].click();", gyeonggi_all)
 
-        browser.find_element(By.XPATH, '//*[@id="content"]/ul[1]/li[2]/a').click()
+        browser.find_element(By.CLASS_NAME, 'job_category_section').click()
+        browser.find_element(By.XPATH, '//*[@id="sp_main_wrapper"]/div[2]/div/div[2]/div[2]/div[1]/button[6]').click()
+        browser.find_element(By.XPATH, '//*[@id="sp_job_category_subDepth_2"]/div[2]/div/div[2]/div/dl[2]/dd/button[6]').click()
+        browser.find_element(By.XPATH, '//*[@id="sp_job_category_subDepth_2"]/div[2]/div/div[2]/div/dl[2]/dd/button[7]').click()
+        browser.find_element(By.XPATH, '//*[@id="search_btn"]').click()
 
 
     def get_data_from_page(self, browser, page_number):
-        container = browser.find_element(By.CLASS_NAME, 'content')
-        blocks = container.find_elements(By.CLASS_NAME, 'item_recruit')        
+        container = browser.find_element(By.CLASS_NAME, 'list_body')
+        blocks = container.find_elements(By.CLASS_NAME, 'list_item')  
+
+        if len(blocks) < 30:
+            return False
 
         current_page_data = []
-        for i, block in tqdm(enumerate(blocks), desc=f"Page {page_number}", total=len(blocks), leave=False):
+        for i, block in tqdm(enumerate(blocks), desc=f"Page {page_number}", total=len(blocks), leave=True):
             try:
-                company_name = block.find_element(By.CLASS_NAME, 'corp_name').find_element(By.TAG_NAME, 'a').text
-                job_tit = block.find_element(By.CLASS_NAME, 'job_tit').find_element(By.TAG_NAME, 'a')
-                title = job_tit.get_attribute('title')
-                link = job_tit.get_attribute('href')
-                
-                options = []
-                job_condition = block.find_element(By.CLASS_NAME, 'job_condition').find_elements(By.TAG_NAME, 'span')
-                for j, condition in enumerate(job_condition):
-                    if j == 0:
-                        regions = condition.find_elements(By.TAG_NAME, 'a')
-                        regions = ','.join([region.text for region in regions])
-                        options.append(regions)
-                    else:
-                        options.append(condition.text)
-                options = ','.join([option for option in options])
+                block.get_attribute('id')
+                company_name_box = block.find_element(By.CLASS_NAME, 'company_nm')
+                company_name = company_name_box.find_element(By.CLASS_NAME, 'str_tit').text
 
-                detail_fields = block.find_element(By.CLASS_NAME, 'job_sector').find_elements(By.TAG_NAME, 'a')
+                recurit_box = block.find_element(By.CLASS_NAME, 'notification_info')
+                title_box = recurit_box.find_element(By.CLASS_NAME, 'str_tit')
+                title = title_box.text
+                link = title_box.get_attribute('href')
+
+                detail_fields_box = block.find_element(By.CLASS_NAME, 'job_meta').find_element(By.CLASS_NAME, 'job_sector')
+                detail_fields = detail_fields_box.find_elements(By.TAG_NAME, 'span')
                 detail_fields = ','.join([x.text for x in detail_fields])
+
+                option_box = block.find_element(By.CLASS_NAME, 'recruit_info')
+                options = option_box.find_elements(By.TAG_NAME, 'p')
+                options = ','.join([option.text.replace(' · ', '') for option in options])
 
                 data = {'회사명' : company_name, '채용공고 제목' : title, '채용공고 세부 사항' : options, '기술 세부 사항' : detail_fields, '링크' : link}
                 current_page_data.append(data)
-
-            except NoSuchElementException as e:
-                print(f'\n\nBlock No : {i}, \n\t{e}')
+                
+            except:
+                continue
 
         return current_page_data
-
 
     def crawling(self):
         """crawling을 수행하는 주요 함수."""
         browser = webdriver.Chrome(options=self.options)
         browser.get(self.url)
-        self.input_keyword(browser)
+        self.input_setup(browser)
 
         idx = 1
         total_data = []
@@ -79,17 +81,20 @@ class SaraminCrawler:
                     break
 
             if idx > 1:
-                url = f'https://www.saramin.co.kr/zf_user/search/recruit?search_area=main&search_done=y&search_optional_item=n&searchType=search&searchword=%EB%94%A5%EB%9F%AC%EB%8B%9D&recruitPage={idx}&recruitSort=relation&recruitPageCount=40&inner_com_type=&company_cd=0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C9%2C10&show_applied=&quick_apply=&except_read=&ai_head_hunting='
+                url = f'https://www.saramin.co.kr/zf_user/jobs/list/domestic?page={idx}&loc_mcd=101000%2C102000&cat_kewd=108%2C109&search_optional_item=n&search_done=y&panel_count=y&preview=y&isAjaxRequest=0&page_count=50&sort=RL&type=domestic&is_param=1&isSearchResultEmpty=1&isSectionHome=0&searchParamCount=2#searchTitle'
                 try:
                     browser.get(url)
                 except:
-                    print(f'Page Not Found. Current Page No : {idx}')
                     break
 
             time.sleep(self.wait_sec)
             page_data = self.get_data_from_page(browser, idx)
+
+            if not page_data:
+                break
+
             total_data.extend(page_data)
-                    
             idx += 1
 
+        browser.close()
         return total_data

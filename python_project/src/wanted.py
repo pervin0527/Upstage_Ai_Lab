@@ -46,7 +46,7 @@ class WantedCrawler:
                 if self.debug and idx == 1:
                     break
                 browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(2.5)
+                time.sleep(2)
                 new_height = browser.execute_script("return document.body.scrollHeight")
                 if new_height == last_height:
                     break
@@ -103,10 +103,9 @@ class WantedCrawler:
                 data = {'회사명' : company_name, '채용공고 제목' : title, '채용공고 세부 사항' : option_list, '기술 세부 사항' : detail_fields, '링크' : link}
                 card_browser.close()
                 total_data.append(data)
-                break
 
             except NoSuchElementException as e:
-                print(e)
+                continue
 
         browser.close()
         return total_data

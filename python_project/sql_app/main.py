@@ -18,40 +18,40 @@ def get_db():
     finally:
         db.close()
 
-# @app.on_event("startup")
-# async def load_data():
-#     db = next(get_db())
-#     # 데이터 저장 전의 총 데이터 개수를 출력
-#     initial_count = db.query(func.count(models.JobPost.id)).scalar()
-#     print(f"데이터 저장 전 DB의 총 데이터 개수: {initial_count}")
+@app.on_event("startup")
+async def load_data():
+    db = next(get_db())
+    # 데이터 저장 전의 총 데이터 개수를 출력
+    initial_count = db.query(func.count(models.JobPost.id)).scalar()
+    print(f"데이터 저장 전 DB의 총 데이터 개수: {initial_count}")
 
-#     if initial_count == 0:  # 데이터가 하나도 없을 때만 실행
-#         csv_file = '/Users/pervin0527/Get_ME_AJob/outputs/jobkorea.csv'
-#         df = pd.read_csv(csv_file)
-#         df.columns = ['index', 'company_name', 'job_title', 'job_details', 'skills', 'link']
-#         df.drop(columns=['index'], inplace=True)
+    if initial_count == 0:  # 데이터가 하나도 없을 때만 실행
+        csv_file = '/Users/pervin0527/Get_ME_AJob/outputs/jobkorea.csv'
+        df = pd.read_csv(csv_file)
+        df.columns = ['index', 'company_name', 'job_title', 'job_details', 'skills', 'link']
+        df.drop(columns=['index'], inplace=True)
 
-#         try:
-#             for index, row in df.iterrows():
-#                 job_post = schemas.JobPostCreate(
-#                     company_name=row['company_name'],
-#                     job_title=row['job_title'],
-#                     job_details=row['job_details'],
-#                     skills=row['skills'],
-#                     link=row['link']
-#                 )
-#                 crud.create_job_post(db=db, job_post=job_post)
-#             db.commit()
-#         except Exception as e:
-#             db.rollback()
-#             print(f"데이터 로드 중 오류 발생: {str(e)}")
-#         # 데이터 저장 후의 총 데이터 개수를 출력
-#         final_count = db.query(func.count(models.JobPost.id)).scalar()
-#         print(f"데이터 저장 후 DB의 총 데이터 개수: {final_count}")
-#     else:
-#         print("DB에 이미 데이터가 존재합니다. 새로운 데이터 로드를 생략합니다.")
+        try:
+            for index, row in df.iterrows():
+                job_post = schemas.JobPostCreate(
+                    company_name=row['company_name'],
+                    job_title=row['job_title'],
+                    job_details=row['job_details'],
+                    skills=row['skills'],
+                    link=row['link']
+                )
+                crud.create_job_post(db=db, job_post=job_post)
+            db.commit()
+        except Exception as e:
+            db.rollback()
+            print(f"데이터 로드 중 오류 발생: {str(e)}")
+        # 데이터 저장 후의 총 데이터 개수를 출력
+        final_count = db.query(func.count(models.JobPost.id)).scalar()
+        print(f"데이터 저장 후 DB의 총 데이터 개수: {final_count}")
+    else:
+        print("DB에 이미 데이터가 존재합니다. 새로운 데이터 로드를 생략합니다.")
 
-#     db.close()
+    db.close()
 
 
 @app.post("/jobposts/", response_model=schemas.JobPostRead)

@@ -1,7 +1,6 @@
 from typing import Union
-
-from fastapi import FastAPI, Path, Body
 from pydantic import BaseModel
+from fastapi import FastAPI, Path, Body
 
 app = FastAPI()
 
@@ -16,12 +15,6 @@ class User(BaseModel):
     username: str
     full_name: Union[str, None] = None
 
-
-# @app.put("/items/{item_id}")
-# async def update_item(item_id: int, item: Item, user: User, importance: int = Body()):
-#     results = {"item_id": item_id, "item": item, "user": user, "importance": importance}
-
-#     return results
 
 @app.put("/items/{item_id}")
 async def update_item(

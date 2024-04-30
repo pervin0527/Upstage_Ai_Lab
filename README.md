@@ -35,7 +35,8 @@
 
     pip install python-multipart
 
-## 4.메모리 영역에서의 CRUD
+## EDA
 
-- RESTful한 API 또는 REST API
-- 127.0.0.1:8000/api/v1/user [POST] : 유저를 만들겠다.
+- [https://www.kaggle.com/competitions/instacart-market-basket-analysis/data](https://www.kaggle.com/competitions/instacart-market-basket-analysis/data)
+- [https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
+- [https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)

@@ -1,2 +1,8 @@
 .DS_Store
 __pycache__
+aisles.csv
+departments.csv
+order_products__*.csv
+orders.csv
+products.csv
+sample_submission.csv

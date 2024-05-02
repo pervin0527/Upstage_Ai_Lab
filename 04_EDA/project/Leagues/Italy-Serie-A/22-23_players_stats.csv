@@ -1,4 +1,4 @@
-,Unnamed: 0,player_name,team_name,age,position,Apps,Mins,Goals,Assists,Yel,Red,SpG,PS%,AerialsWon,MoM,Rating,Tackles,Inter,Fouls,Offsides,Clear,Was_dribble,Blocks,OwnGoal,key_pass_per_game,dribble_won_per_game,foul_given_game,offside_given_per_game,dispossessed_per_game,turnover_per_game,average_per_pass,corsses_per_game,longpass_per_game,through_ball_per_game,xG,xGDiff,xGPerNinety,totalShots,xGPerShot
+,Unnamed: 0,player_name,team_name,age,position,Apps,Mins,Goals,Assists,Yel,Red,SpG,PS%,AerialsWon,MoM,Rating,Tackles,Inter,Fouls,Offsides,Clear,Dribbles allowed,Blocks,OwnGoal,Key_pass_per_game,Dribble,Foul_given_game,Offside_given_per_game,Dispossessed_per_game,Unsuccessful touches,Average_per_pass,Crosses_per_game,Longpass_per_game,Through_ball_per_game,xG,xGDiff,xGPerNinety,totalShots,xGPerShot
 0,0,Victor Osimhen,,25, FW,30(2),2583,26,4,4,0,4.2,71.0,2.1,5,7.45,0.3,0.2,1.3,0,0.9,0.2,0,0,1.1,0.8,1.2,1,1.5,3,11.6,0.1,0.3,0,23.83,2.17,0.83,135,0.18
 1,1,Khvicha Kvaratskhelia,,23," AM(CLR),FW",30(4),2541,12,10,1,0,2.5,83.7,0.2,7,7.43,1.3,0.1,0.6,0,0.2,0.8,0,0,1.6,2.2,1.3,0.2,1.4,1.9,30.5,0.4,1.3,0.2,8.29,3.71,0.29,85,0.1
 2,2,Sergej Milinkovic-Savic,,29, AM(C),34(2),3030,9,8,10,0,1.8,77.1,2.7,6,7.24,1.6,0.8,1.3,0,1.3,1.2,0.3,0,1.2,1.1,2,0.1,1.8,2.9,52.2,0.1,2.2,0.2,7.16,1.84,0.21,64,0.11
@@ -249,7 +249,7 @@
 247,247,Robin Gosens,,29," D(L),M(CL)",11(21),1168,3,0,2,0,0.8,80.7,0.6,0,6.44,1.1,0.7,0.5,0,0.4,0.3,0.1,0,0.5,0.2,0.1,0.1,0.1,0.5,16.5,0.3,0.5,0,2.36,0.64,0.18,26,0.09
 248,248,Giacomo Raspadori,,24," AM(CL),FW",10(15),903,2,2,1,0,1.6,80.9,0.1,0,6.44,0.4,0.2,0.3,0,0.1,0.2,0,0,0.7,0.3,0.5,0,0.6,1.2,16.8,0.3,0.8,0,3.6,-1.6,0.36,41,0.09
 249,249,Sam Lammers,,27," AM(C),FW",13(6),1103,1,1,1,0,1.2,68.3,1.6,0,6.43,0.6,0.3,1,0.1,0.6,0.5,0.2,0,0.7,0.7,1.2,0.1,0.9,2.8,13.1,0.1,0.2,0.1,2.54,-1.54,0.21,23,0.11
-250,250,Assan Ceesay,,30, FW,20(14),1818,6,0,2,0,1.2,58.9,1.9,1,6.43,0.7,0.1,1.1,0,0.6,0.2,0.1,0,0.2,0.6,0.8,0.6,0.7,1.9,10.9,0.1,0.1,0,5.24,0.77,0.26,42,0.12
+250,250,Assan Ceesay,,30, FW,20(14),1818,6,0,2,0,1.2,58.9,1.9,1,6.43,0.7,0.1,1.1,0,0.6,0.2,0.1,0,0.2,0.6,0.8,0.6,0.7,1.9,10.9,0.1,0.1,0,5.23,0.77,0.26,42,0.12
 251,251,Davide Faraoni,,32," D(R),M(R)",19(4),1493,2,3,7,0,0.9,67.0,0.6,0,6.42,1.5,0.7,0.9,0,1.5,1.1,0.5,0,0.5,0.3,0.5,0.2,0.2,0.5,18.3,0.4,1.5,0,2.73,-0.73,0.16,20,0.14
 252,252,Karol Linetty,,29, M(CLR),22(10),1888,1,0,8,0,0.5,87.3,0.8,1,6.42,1,0.6,1.6,0,0.7,0.4,0.3,0,0.6,0.3,0.7,0.1,0.3,0.8,29.4,0.3,1.1,0,1.22,-0.22,0.06,16,0.08
 253,253,Petar Stojanovic,,28," D(R),M(R)",16(11),1528,0,1,3,0,0.4,80.9,0.1,0,6.42,1.6,0.4,0.4,0.3,1.8,0.6,0.2,0,0.7,0.5,0.6,0,0.5,0.4,30.3,0.3,2.4,0,0.29,-0.29,0.02,10,0.03

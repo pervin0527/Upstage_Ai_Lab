@@ -1,49 +1,801 @@
-,Name,Position,Date of Birth,Age,Nationality,Market Value
-0,Emil Audero,Goalkeeper,"Jan 18, 1997",26,Italy,€6.00m
-1,Nikita Contini,Goalkeeper,"May 21, 1996",27,Italy,€500k
-2,Martin Turk,Goalkeeper,"Aug 21, 2003",19,Slovenia,€400k
-3,Elia Tantalocchi,Goalkeeper,"Jun 30, 2004",19,Italy,€100k
-4,Nicola Ravaglia,Goalkeeper,"Dec 12, 1988",34,Italy,€100k
-5,Federico Zorzi,Goalkeeper,"Mar 6, 2004",19,Italy,€10k
-6,Koray Günter,Centre-Back,"Aug 16, 1994",28,Germany,€3.50m
-7,Omar Colley,Centre-Back,"Oct 24, 1992",30,The Gambia,€3.00m
-8,Bruno Amione,Centre-Back,"Jan 3, 2002",21,Argentina,€2.70m
-9,Maxime Leverbe,Centre-Back,"Feb 15, 1997",26,France,€1.20m
-10,Alex Ferrari,Centre-Back,"Jul 1, 1994",28,Italy,€1.00m
-11,Bram Nuytinck,Centre-Back,"May 4, 1990",33,Netherlands,€1.00m
-12,Jeison Murillo,Centre-Back,"May 27, 1992",31,Colombia,€1.00m
-13,Marios Ikonomou,Centre-Back,"Oct 6, 1992",30,Greece,€300k
-14,Lorenzo Villa,Centre-Back,"Jul 26, 2003",19,Italy,€75k
-15,Arttu Lötjönen,Centre-Back,"Jan 28, 2004",19,Finland,€25k
-16,Tommaso Augello,Left-Back,"Aug 30, 1994",28,Italy,€2.00m
-17,Nicola Murru,Left-Back,"Dec 16, 1994",28,Italy,€1.00m
-18,Alessandro Zanoli,Right-Back,"Oct 3, 2000",22,Italy,€6.00m
-19,Fabio Depaoli,Right-Back,"Apr 24, 1997",26,Italy,€3.00m
-20,Bartosz Bereszyński,Right-Back,"Jul 12, 1992",30,Poland,€1.60m
-21,Andrea Conti,Right-Back,"Mar 2, 1994",29,Italy,€500k
-22,Harry Winks,Defensive Midfield,"Feb 2, 1996",27,England,€10.00m
-23,Tomás Rincón,Defensive Midfield,"Jan 13, 1988",35,Venezuela,€800k
-24,Gerard Yepes,Defensive Midfield,"Aug 25, 2002",20,Spain,€500k
-25,Emirhan İlkhan,Central Midfield,"Jun 1, 2004",19,Türkiye,€4.00m
-26,Michaël Cuisance,Central Midfield,"Aug 16, 1999",23,France,€3.00m
-27,Gonzalo Villar,Central Midfield,"Mar 23, 1998",25,Spain,€2.80m
-28,Ronaldo Vieira,Central Midfield,"Jul 19, 1998",24,England,€2.00m
-29,Flavio Paoletti,Central Midfield,"Jan 16, 2003",20,Italy,€800k
-30,Simone Trimboli,Central Midfield,"Apr 19, 2002",21,Italy,€600k
-31,Telasco Segovia,Central Midfield,"Apr 2, 2003",20,Venezuela,€500k
-32,Antonio Candreva,Right Midfield,"Feb 28, 1987",36,Italy,€1.50m
-33,Lorenzo Malagrida,Left Midfield,"Oct 24, 2003",19,Italy,€400k
-34,Abdelhamid Sabiri,Attacking Midfield,"Nov 28, 1996",26,Morocco,€2.50m
-35,Valerio Verre,Attacking Midfield,"Jan 11, 1994",29,Italy,€1.80m
-36,Filip Djuricic,Attacking Midfield,"Jan 30, 1992",31,Serbia,€1.80m
-37,Jesé,Left Winger,"Feb 26, 1993",30,Spain,€1.00m
-38,Samuel Ntanda,Left Winger,"Jun 30, 2005",18,Belgium,-
-39,Ignacio Pussetto,Right Winger,"Dec 21, 1995",27,Argentina,€2.50m
-40,Mehdi Léris,Right Winger,"May 23, 1998",25,Algeria,€2.50m
-41,Sam Lammers,Centre-Forward,"Apr 30, 1997",26,Netherlands,€2.00m
-42,Manuel De Luca,Centre-Forward,"Jul 17, 1998",24,Italy,€2.00m
-43,Manolo Gabbiadini,Centre-Forward,"Nov 26, 1991",31,Italy,€2.00m
-44,Francesco Caputo,Centre-Forward,"Aug 6, 1987",35,Italy,€1.50m
-45,Daniele Montevago,Centre-Forward,"Mar 18, 2003",20,Italy,€800k
-46,Fabio Quagliarella,Centre-Forward,"Jan 31, 1983",40,Italy,€500k
-47,Mihailo Ivanovic,Centre-Forward,"Nov 29, 2004",18,Serbia,€150k
+,Name,Team,Position,Date of Birth,Age,Nationality,Market Value
+0,Alex Meret,SSC Napoli,Goalkeeper,"Mar 22, 1997",26,Italy,€18.00m
+1,Pierluigi Gollini,SSC Napoli,Goalkeeper,"Mar 18, 1995",28,Italy,€4.50m
+2,Salvatore Sirigu,SSC Napoli,Goalkeeper,"Jan 12, 1987",36,Italy,€500k
+3,Hubert Idasiak,SSC Napoli,Goalkeeper,"Feb 3, 2002",21,Poland,€150k
+4,Valerio Boffelli,SSC Napoli,Goalkeeper,"Sep 4, 2004",18,Italy,€75k
+5,Davide Marfella,SSC Napoli,Goalkeeper,"Sep 15, 1999",23,Italy,€50k
+6,Min-jae Kim,SSC Napoli,Centre-Back,"Nov 15, 1996",26,"Korea, South",€60.00m
+7,Amir Rrahmani,SSC Napoli,Centre-Back,"Feb 24, 1994",29,Kosovo,€25.00m
+8,Leo Østigård,SSC Napoli,Centre-Back,"Nov 28, 1999",23,Norway,€7.00m
+9,Juan Jesus,SSC Napoli,Centre-Back,"Jun 10, 1991",32,Brazil,€3.50m
+10,Mathías Olivera,SSC Napoli,Left-Back,"Oct 31, 1997",25,Uruguay,€18.00m
+11,Mário Rui,SSC Napoli,Left-Back,"May 27, 1991",32,Portugal,€8.00m
+12,Giovanni Di Lorenzo,SSC Napoli,Right-Back,"Aug 4, 1993",29,Italy,€25.00m
+13,Alessandro Zanoli,SSC Napoli,Right-Back,"Oct 3, 2000",22,Italy,€6.00m
+14,Bartosz Bereszyński,SSC Napoli,Right-Back,"Jul 12, 1992",30,Poland,€1.60m
+15,Stanislav Lobotka,SSC Napoli,Defensive Midfield,"Nov 25, 1994",28,Slovakia,€40.00m
+16,Diego Demme,SSC Napoli,Defensive Midfield,"Nov 21, 1991",31,Germany,€3.00m
+17,Frank Anguissa,SSC Napoli,Central Midfield,"Nov 16, 1995",27,Cameroon,€40.00m
+18,Piotr Zieliński,SSC Napoli,Central Midfield,"May 20, 1994",29,Poland,€35.00m
+19,Tanguy Ndombélé,SSC Napoli,Central Midfield,"Dec 28, 1996",26,France,€22.00m
+20,Karim Zedadka,SSC Napoli,Left Midfield,"Jun 9, 2000",23,Algeria,€200k
+21,Eljif Elmas,SSC Napoli,Attacking Midfield,"Sep 24, 1999",23,North Macedonia,€26.00m
+22,Gianluca Gaetano,SSC Napoli,Attacking Midfield,"May 5, 2000",23,Italy,€4.50m
+23,Khvicha Kvaratskhelia,SSC Napoli,Left Winger,"Feb 12, 2001",22,Georgia,€85.00m
+24,Alessio Zerbin,SSC Napoli,Left Winger,"Mar 3, 1999",24,Italy,€4.00m
+25,Hirving Lozano,SSC Napoli,Right Winger,"Jul 30, 1995",27,Mexico,€25.00m
+26,Matteo Politano,SSC Napoli,Right Winger,"Aug 3, 1993",29,Italy,€15.00m
+27,Adam Ounas,SSC Napoli,Right Winger,"Nov 11, 1996",26,Algeria,€7.00m
+28,Giacomo Raspadori,SSC Napoli,Second Striker,"Feb 18, 2000",23,Italy,€35.00m
+29,Victor Osimhen,SSC Napoli,Centre-Forward,"Dec 29, 1998",24,Nigeria,€120.00m
+30,Giovanni Simeone,SSC Napoli,Centre-Forward,"Jul 5, 1995",27,Argentina,€15.00m
+31,André Onana,Inter Milan,Goalkeeper,"Apr 2, 1996",27,Cameroon,€35.00m
+32,Samir Handanovic,Inter Milan,Goalkeeper,"Jul 14, 1984",38,Slovenia,€500k
+33,Gabriel Brazão,Inter Milan,Goalkeeper,"Oct 5, 2000",22,Brazil,€400k
+34,Alex Cordaz,Inter Milan,Goalkeeper,"Jan 1, 1983",40,Italy,€200k
+35,Nikolaos Botis,Inter Milan,Goalkeeper,"Mar 31, 2004",19,Greece,€100k
+36,Alessandro Bastoni,Inter Milan,Centre-Back,"Apr 13, 1999",24,Italy,€60.00m
+37,Milan Skriniar,Inter Milan,Centre-Back,"Feb 11, 1995",28,Slovakia,€50.00m
+38,Stefan de Vrij,Inter Milan,Centre-Back,"Feb 5, 1992",31,Netherlands,€8.00m
+39,Francesco Acerbi,Inter Milan,Centre-Back,"Feb 10, 1988",35,Italy,€4.00m
+40,Danilo D'Ambrosio,Inter Milan,Centre-Back,"Sep 9, 1988",34,Italy,€1.50m
+41,Alessandro Fontanarosa,Inter Milan,Centre-Back,"Feb 7, 2003",20,Italy,€400k
+42,Federico Dimarco,Inter Milan,Left-Back,"Nov 10, 1997",25,Italy,€35.00m
+43,Dalbert,Inter Milan,Left-Back,"Sep 8, 1993",29,Brazil,€1.00m
+44,Matteo Darmian,Inter Milan,Right-Back,"Dec 2, 1989",33,Italy,€4.00m
+45,Mattia Zanotti,Inter Milan,Right-Back,"Jan 11, 2003",20,Italy,€800k
+46,Hakan Çalhanoğlu,Inter Milan,Defensive Midfield,"Feb 8, 1994",29,Türkiye,€40.00m
+47,Marcelo Brozovic,Inter Milan,Defensive Midfield,"Nov 16, 1992",30,Croatia,€25.00m
+48,Kristjan Asllani,Inter Milan,Defensive Midfield,"Mar 9, 2002",21,Albania,€12.00m
+49,Lucien Agoumé,Inter Milan,Defensive Midfield,"Feb 9, 2002",21,France,€7.00m
+50,Aleksandar Stankovic,Inter Milan,Defensive Midfield,"Aug 3, 2005",17,Serbia,-
+51,Nicolò Barella,Inter Milan,Central Midfield,"Feb 7, 1997",26,Italy,€75.00m
+52,Henrikh Mkhitaryan,Inter Milan,Central Midfield,"Jan 21, 1989",34,Armenia,€6.00m
+53,Roberto Gagliardini,Inter Milan,Central Midfield,"Apr 7, 1994",29,Italy,€4.00m
+54,Ebenezer Akinsanmiro,Inter Milan,Central Midfield,"Nov 25, 2004",18,Nigeria,€800k
+55,Denzel Dumfries,Inter Milan,Right Midfield,"Apr 18, 1996",27,Netherlands,€28.00m
+56,Raoul Bellanova,Inter Milan,Right Midfield,"May 17, 2000",23,Italy,€5.00m
+57,Robin Gosens,Inter Milan,Left Midfield,"Jul 5, 1994",28,Germany,€15.00m
+58,Valentín Carboni,Inter Milan,Attacking Midfield,"Mar 5, 2005",18,Argentina,€5.00m
+59,Issiaka Kamate,Inter Milan,Right Winger,"Aug 2, 2004",18,France,€200k
+60,Joaquín Correa,Inter Milan,Second Striker,"Aug 13, 1994",28,Argentina,€12.00m
+61,Lautaro Martínez,Inter Milan,Centre-Forward,"Aug 22, 1997",25,Argentina,€85.00m
+62,Romelu Lukaku,Inter Milan,Centre-Forward,"May 13, 1993",30,Belgium,€40.00m
+63,Edin Dzeko,Inter Milan,Centre-Forward,"Mar 17, 1986",37,Bosnia-Herzegovina,€4.00m
+64,Eddie Salcedo,Inter Milan,Centre-Forward,"Oct 1, 2001",21,Italy,€2.50m
+65,Dennis Curatolo,Inter Milan,Centre-Forward,"Apr 3, 2004",19,Italy,€150k
+66,Mike Maignan,AC Milan,Goalkeeper,"Jul 3, 1995",27,France,€45.00m
+67,Ciprian Tătărușanu,AC Milan,Goalkeeper,"Feb 9, 1986",37,Romania,€400k
+68,Devis Vásquez,AC Milan,Goalkeeper,"May 12, 1998",25,Colombia,€350k
+69,Andreas Jungdal,AC Milan,Goalkeeper,"Feb 22, 2002",21,Denmark,€300k
+70,Lapo Nava,AC Milan,Goalkeeper,"Jan 22, 2004",19,Italy,€150k
+71,Antonio Mirante,AC Milan,Goalkeeper,"Jul 8, 1983",39,Italy,€100k
+72,Fikayo Tomori,AC Milan,Centre-Back,"Dec 19, 1997",25,England,€40.00m
+73,Pierre Kalulu,AC Milan,Centre-Back,"Jun 5, 2000",23,France,€30.00m
+74,Malick Thiaw,AC Milan,Centre-Back,"Aug 8, 2001",21,Germany,€20.00m
+75,Matteo Gabbia,AC Milan,Centre-Back,"Oct 21, 1999",23,Italy,€5.00m
+76,Simon Kjaer,AC Milan,Centre-Back,"Mar 26, 1989",34,Denmark,€3.50m
+77,Andrei Coubiș,AC Milan,Centre-Back,"Sep 29, 2003",19,Romania,€100k
+78,Theo Hernández,AC Milan,Left-Back,"Oct 6, 1997",25,France,€60.00m
+79,Sergiño Dest,AC Milan,Left-Back,"Nov 3, 2000",22,United States,€10.00m
+80,Fodé Ballo-Touré,AC Milan,Left-Back,"Jan 3, 1997",26,Senegal,€3.50m
+81,Andrea Bozzolan,AC Milan,Left-Back,"Feb 23, 2004",19,Italy,€125k
+82,Davide Calabria,AC Milan,Right-Back,"Dec 6, 1996",26,Italy,€20.00m
+83,Alessandro Florenzi,AC Milan,Right-Back,"Mar 11, 1991",32,Italy,€2.00m
+84,Sandro Tonali,AC Milan,Defensive Midfield,"May 8, 2000",23,Italy,€50.00m
+85,Ismaël Bennacer,AC Milan,Defensive Midfield,"Dec 1, 1997",25,Algeria,€40.00m
+86,Rade Krunic,AC Milan,Defensive Midfield,"Oct 7, 1993",29,Bosnia-Herzegovina,€10.00m
+87,Yacine Adli,AC Milan,Defensive Midfield,"Jul 29, 2000",22,France,€8.00m
+88,Tiemoué Bakayoko,AC Milan,Defensive Midfield,"Aug 17, 1994",28,France,€2.50m
+89,Tommaso Pobega,AC Milan,Central Midfield,"Jul 15, 1999",23,Italy,€14.00m
+90,Aster Vranckx,AC Milan,Central Midfield,"Oct 4, 2002",20,Belgium,€8.50m
+91,Antonio Gala,AC Milan,Central Midfield,"Jun 7, 2004",19,Italy,€75k
+92,Charles De Ketelaere,AC Milan,Attacking Midfield,"Mar 10, 2001",22,Belgium,€22.00m
+93,Brahim Díaz,AC Milan,Attacking Midfield,"Aug 3, 1999",23,Morocco,€20.00m
+94,Rafael Leão,AC Milan,Left Winger,"Jun 10, 1999",24,Portugal,€90.00m
+95,Ante Rebic,AC Milan,Left Winger,"Sep 21, 1993",29,Croatia,€6.00m
+96,Alexis Saelemaekers,AC Milan,Right Winger,"Jun 27, 1999",24,Belgium,€15.00m
+97,Junior Messias,AC Milan,Right Winger,"May 13, 1991",32,Brazil,€4.50m
+98,Divock Origi,AC Milan,Centre-Forward,"Apr 18, 1995",28,Belgium,€6.00m
+99,Olivier Giroud,AC Milan,Centre-Forward,"Sep 30, 1986",36,France,€4.00m
+100,Marko Lazetic,AC Milan,Centre-Forward,"Jan 22, 2004",19,Serbia,€2.00m
+101,Zlatan Ibrahimović,AC Milan,Centre-Forward,"Oct 3, 1981",41,Sweden,€2.00m
+102,Wojciech Szczęsny,Juventus FC,Goalkeeper,"Apr 18, 1990",33,Poland,€10.00m
+103,Mattia Perin,Juventus FC,Goalkeeper,"Nov 10, 1992",30,Italy,€4.00m
+104,Gian Marco Crespi,Juventus FC,Goalkeeper,"Jun 28, 2001",22,Italy,€200k
+105,Giovanni Garofani,Juventus FC,Goalkeeper,"Oct 20, 2002",20,Italy,€200k
+106,Carlo Pinsoglio,Juventus FC,Goalkeeper,"Mar 16, 1990",33,Italy,€200k
+107,Simone Scaglia,Juventus FC,Goalkeeper,"Jul 12, 2004",18,Italy,€25k
+108,Bremer,Juventus FC,Centre-Back,"Mar 18, 1997",26,Brazil,€40.00m
+109,Danilo,Juventus FC,Centre-Back,"Jul 15, 1991",31,Brazil,€15.00m
+110,Federico Gatti,Juventus FC,Centre-Back,"Jun 24, 1998",25,Italy,€12.00m
+111,Daniele Rugani,Juventus FC,Centre-Back,"Jul 29, 1994",28,Italy,€2.00m
+112,Leonardo Bonucci,Juventus FC,Centre-Back,"May 1, 1987",36,Italy,€1.50m
+113,Alessandro Pio Riccio,Juventus FC,Centre-Back,"Feb 6, 2002",21,Italy,€700k
+114,Alex Sandro,Juventus FC,Left-Back,"Jan 26, 1991",32,Brazil,€3.00m
+115,Mattia De Sciglio,Juventus FC,Right-Back,"Oct 20, 1992",30,Italy,€3.00m
+116,Tommaso Barbieri,Juventus FC,Right-Back,"Aug 26, 2002",20,Italy,€1.20m
+117,Manuel Locatelli,Juventus FC,Defensive Midfield,"Jan 8, 1998",25,Italy,€30.00m
+118,Denis Zakaria,Juventus FC,Defensive Midfield,"Nov 20, 1996",26,Switzerland,€18.00m
+119,Nicolò Rovella,Juventus FC,Defensive Midfield,"Dec 4, 2001",21,Italy,€18.00m
+120,Leandro Paredes,Juventus FC,Defensive Midfield,"Jun 29, 1994",29,Argentina,€12.00m
+121,Enzo Barrenechea,Juventus FC,Defensive Midfield,"May 22, 2001",22,Argentina,€900k
+122,Adrien Rabiot,Juventus FC,Central Midfield,"Apr 3, 1995",28,France,€40.00m
+123,Nicolò Fagioli,Juventus FC,Central Midfield,"Feb 12, 2001",22,Italy,€35.00m
+124,Weston McKennie,Juventus FC,Central Midfield,"Aug 28, 1998",24,United States,€18.00m
+125,Paul Pogba,Juventus FC,Central Midfield,"Mar 15, 1993",30,France,€15.00m
+126,Fabio Miretti,Juventus FC,Central Midfield,"Aug 3, 2003",19,Italy,€15.00m
+127,Alessandro Sersanti,Juventus FC,Central Midfield,"Feb 16, 2002",21,Italy,€400k
+128,Juan Cuadrado,Juventus FC,Right Midfield,"May 26, 1988",35,Colombia,€4.00m
+129,Filip Kostić,Juventus FC,Left Midfield,"Nov 1, 1992",30,Serbia,€22.00m
+130,Mohamed Ihattaren,Juventus FC,Attacking Midfield,"Feb 12, 2002",21,Netherlands,-
+131,Federico Chiesa,Juventus FC,Left Winger,"Oct 25, 1997",25,Italy,€40.00m
+132,Samuel Iling-Junior,Juventus FC,Left Winger,"Oct 4, 2003",19,England,€9.00m
+133,Ángel Di María,Juventus FC,Right Winger,"Feb 14, 1988",35,Argentina,€8.00m
+134,Matías Soulé,Juventus FC,Right Winger,"Apr 15, 2003",20,Argentina,€4.00m
+135,Nikola Sekulov,Juventus FC,Right Winger,"Feb 18, 2002",21,Italy,€600k
+136,Mattia Compagnon,Juventus FC,Right Winger,"Nov 6, 2001",21,Italy,€400k
+137,Dušan Vlahović,Juventus FC,Centre-Forward,"Jan 28, 2000",23,Serbia,€70.00m
+138,Moise Kean,Juventus FC,Centre-Forward,"Feb 28, 2000",23,Italy,€18.00m
+139,Arkadiusz Milik,Juventus FC,Centre-Forward,"Feb 28, 1994",29,Poland,€8.00m
+140,Kaio Jorge,Juventus FC,Centre-Forward,"Jan 24, 2002",21,Brazil,€3.00m
+141,Cosimo da Graça,Juventus FC,Centre-Forward,"May 1, 2002",21,Italy,€800k
+142,Rui Patrício,AS Roma,Goalkeeper,"Feb 15, 1988",35,Portugal,€5.00m
+143,Mile Svilar,AS Roma,Goalkeeper,"Aug 27, 1999",23,Serbia,€1.50m
+144,Pietro Boer,AS Roma,Goalkeeper,"May 12, 2002",21,Italy,€150k
+145,Gabriele Baldi,AS Roma,Goalkeeper,"Aug 24, 2004",18,Italy,€100k
+146,Jacopo Del Bello,AS Roma,Goalkeeper,"Sep 25, 2004",18,Italy,€25k
+147,Roger Ibañez,AS Roma,Centre-Back,"Nov 23, 1998",24,Brazil,€30.00m
+148,Gianluca Mancini,AS Roma,Centre-Back,"Apr 17, 1996",27,Italy,€18.00m
+149,Diego Llorente,AS Roma,Centre-Back,"Aug 16, 1993",29,Spain,€12.00m
+150,Chris Smalling,AS Roma,Centre-Back,"Nov 22, 1989",33,England,€8.00m
+151,Marash Kumbulla,AS Roma,Centre-Back,"Feb 8, 2000",23,Albania,€8.00m
+152,Dimitrios Keramitsis,AS Roma,Centre-Back,"Jul 1, 2004",18,Greece,€250k
+153,William Bianda,AS Roma,Centre-Back,"Apr 30, 2000",23,France,€200k
+154,Brian Silva,AS Roma,Centre-Back,"Jun 2, 2003",20,France,€75k
+155,Leonardo Spinazzola,AS Roma,Left-Back,"Mar 25, 1993",30,Italy,€10.00m
+156,Matías Viña,AS Roma,Left-Back,"Nov 9, 1997",25,Uruguay,€8.00m
+157,Jan Oliveras,AS Roma,Left-Back,"Jul 7, 2004",18,Spain,€175k
+158,Matteo Falasca,AS Roma,Left-Back,"Apr 27, 2004",19,Italy,€100k
+159,Zeki Çelik,AS Roma,Right-Back,"Feb 17, 1997",26,Türkiye,€10.00m
+160,Rick Karsdorp,AS Roma,Right-Back,"Feb 11, 1995",28,Netherlands,€7.00m
+161,Filippo Missori,AS Roma,Right-Back,"Mar 24, 2004",19,Italy,€800k
+162,Corentin Louakima,AS Roma,Right-Back,"Feb 28, 2003",20,France,€100k
+163,Bryan Cristante,AS Roma,Defensive Midfield,"Mar 3, 1995",28,Italy,€20.00m
+164,Nemanja Matic,AS Roma,Defensive Midfield,"Aug 1, 1988",34,Serbia,€4.00m
+165,Ebrima Darboe,AS Roma,Defensive Midfield,"Jun 6, 2001",22,The Gambia,€1.80m
+166,Benjamin Tahirovic,AS Roma,Defensive Midfield,"Mar 3, 2003",20,Bosnia-Herzegovina,€1.50m
+167,Giacomo Faticanti,AS Roma,Defensive Midfield,"Jul 31, 2004",18,Italy,€800k
+168,Filippo Tripi,AS Roma,Defensive Midfield,"Jan 6, 2002",21,Italy,€300k
+169,Mady Camara,AS Roma,Central Midfield,"Feb 28, 1997",26,Guinea,€10.00m
+170,Edoardo Bove,AS Roma,Central Midfield,"May 16, 2002",21,Italy,€10.00m
+171,Georginio Wijnaldum,AS Roma,Central Midfield,"Nov 11, 1990",32,Netherlands,€8.00m
+172,Niccolò Pisilli,AS Roma,Central Midfield,"Sep 23, 2004",18,Italy,€1.00m
+173,Riccardo Pagano,AS Roma,Central Midfield,"Nov 28, 2004",18,Italy,€900k
+174,Nicola Zalewski,AS Roma,Left Midfield,"Jan 23, 2002",21,Poland,€20.00m
+175,Lorenzo Pellegrini,AS Roma,Attacking Midfield,"Jun 19, 1996",27,Italy,€35.00m
+176,Nicolò Zaniolo,AS Roma,Attacking Midfield,"Jul 2, 1999",23,Italy,€27.00m
+177,Cristian Volpato,AS Roma,Attacking Midfield,"Nov 15, 2003",19,Italy,€3.00m
+178,Ante Coric,AS Roma,Attacking Midfield,"Apr 14, 1997",26,Croatia,€300k
+179,Claudio Cassano,AS Roma,Attacking Midfield,"Jul 22, 2003",19,Italy,€200k
+180,Stephan El Shaarawy,AS Roma,Left Winger,"Oct 27, 1992",30,Italy,€5.00m
+181,Luigi Cherubini,AS Roma,Left Winger,"Jan 15, 2004",19,Italy,€200k
+182,Ola Solbakken,AS Roma,Right Winger,"Sep 7, 1998",24,Norway,€3.50m
+183,Paulo Dybala,AS Roma,Second Striker,"Nov 15, 1993",29,Argentina,€30.00m
+184,Tammy Abraham,AS Roma,Centre-Forward,"Oct 2, 1997",25,England,€40.00m
+185,Andrea Belotti,AS Roma,Centre-Forward,"Dec 20, 1993",29,Italy,€8.00m
+186,Eldor Shomurodov,AS Roma,Centre-Forward,"Jun 29, 1995",28,Uzbekistan,€6.00m
+187,Felix Afena-Gyan,AS Roma,Centre-Forward,"Jan 19, 2003",20,Ghana,€5.00m
+188,Jordan Majchrzak,AS Roma,Centre-Forward,"Oct 8, 2004",18,Poland,€400k
+189,Juan Musso,Atalanta BC,Goalkeeper,"May 6, 1994",29,Argentina,€8.00m
+190,Marco Sportiello,Atalanta BC,Goalkeeper,"May 10, 1992",31,Italy,€1.50m
+191,Tommaso Bertini,Atalanta BC,Goalkeeper,"Jan 13, 2004",19,Italy,€100k
+192,Francesco Rossi,Atalanta BC,Goalkeeper,"Apr 27, 1991",32,Italy,€100k
+193,Giorgio Scalvini,Atalanta BC,Centre-Back,"Dec 11, 2003",19,Italy,€40.00m
+194,Merih Demiral,Atalanta BC,Centre-Back,"Mar 5, 1998",25,Türkiye,€20.00m
+195,Caleb Okoli,Atalanta BC,Centre-Back,"Jul 13, 2001",21,Italy,€10.00m
+196,Berat Djimsiti,Atalanta BC,Centre-Back,"Feb 19, 1993",30,Albania,€10.00m
+197,Rafael Tolói,Atalanta BC,Centre-Back,"Oct 10, 1990",32,Italy,€6.00m
+198,José Luis Palomino,Atalanta BC,Centre-Back,"Jan 5, 1990",33,Argentina,€2.50m
+199,Tommaso Del Lungo,Atalanta BC,Centre-Back,"Nov 21, 2003",19,Italy,€100k
+200,Iacopo Regonesi,Atalanta BC,Left-Back,"Mar 28, 2004",19,Italy,€200k
+201,Lorenzo Bernasconi,Atalanta BC,Left-Back,"Nov 16, 2003",19,Italy,€75k
+202,Joakim Maehle,Atalanta BC,Right-Back,"May 20, 1997",26,Denmark,€14.00m
+203,Brandon Soppy,Atalanta BC,Right-Back,"Feb 21, 2002",21,France,€9.00m
+204,Marten de Roon,Atalanta BC,Defensive Midfield,"Mar 29, 1991",32,Netherlands,€10.00m
+205,Matteo Colombo,Atalanta BC,Defensive Midfield,"Mar 9, 2004",19,Italy,€125k
+206,Mannah Chiwisa,Atalanta BC,Defensive Midfield,"Dec 12, 2003",19,Zambia,€125k
+207,Leonardo Mendicino,Atalanta BC,Defensive Midfield,"Jun 25, 2006",17,Italy,-
+208,Éderson,Atalanta BC,Central Midfield,"Jul 7, 1999",23,Brazil,€20.00m
+209,Mario Pasalic,Atalanta BC,Central Midfield,"Feb 9, 1995",28,Croatia,€20.00m
+210,Endri Muhameti,Atalanta BC,Central Midfield,"Jul 12, 2004",18,Albania,€150k
+211,Simone Muratore,Atalanta BC,Central Midfield,"May 30, 1998",25,Italy,€100k
+212,Davide Zappacosta,Atalanta BC,Right Midfield,"Jun 11, 1992",31,Italy,€7.00m
+213,Hans Hateboer,Atalanta BC,Right Midfield,"Jan 9, 1994",29,Netherlands,€6.00m
+214,Nadir Zortea,Atalanta BC,Right Midfield,"Jun 19, 1999",24,Italy,€2.00m
+215,Marco Palestra,Atalanta BC,Right Midfield,"Mar 3, 2005",18,Italy,-
+216,Matteo Ruggeri,Atalanta BC,Left Midfield,"Jul 11, 2002",20,Italy,€4.00m
+217,Teun Koopmeiners,Atalanta BC,Attacking Midfield,"Feb 28, 1998",25,Netherlands,€30.00m
+218,Ruslan Malinovskyi,Atalanta BC,Attacking Midfield,"May 4, 1993",30,Ukraine,€15.00m
+219,Lukas Vorlicky,Atalanta BC,Attacking Midfield,"Jan 18, 2002",21,Czech Republic,€100k
+220,Jérémie Boga,Atalanta BC,Left Winger,"Jan 3, 1997",26,Cote d'Ivoire,€14.00m
+221,Ademola Lookman,Atalanta BC,Second Striker,"Oct 20, 1997",25,Nigeria,€30.00m
+222,Tommaso De Nipoti,Atalanta BC,Second Striker,"Jul 23, 2003",19,Italy,€175k
+223,Alessandro Falleni,Atalanta BC,Second Striker,"May 9, 2003",20,Italy,€25k
+224,Rasmus Højlund,Atalanta BC,Centre-Forward,"Feb 4, 2003",20,Denmark,€45.00m
+225,Duván Zapata,Atalanta BC,Centre-Forward,"Apr 1, 1991",32,Colombia,€8.00m
+226,Luis Muriel,Atalanta BC,Centre-Forward,"Apr 16, 1991",32,Colombia,€5.00m
+227,Ivan Provedel,SS Lazio,Goalkeeper,"Mar 17, 1994",29,Italy,€12.00m
+228,Luís Maximiano,SS Lazio,Goalkeeper,"Jan 5, 1999",24,Portugal,€6.00m
+229,Marius Adamonis,SS Lazio,Goalkeeper,"May 13, 1997",26,Lithuania,€150k
+230,Federico Magro,SS Lazio,Goalkeeper,"Jan 10, 2005",18,Italy,-
+231,Nicolò Casale,SS Lazio,Centre-Back,"Feb 14, 1998",25,Italy,€22.00m
+232,Alessio Romagnoli,SS Lazio,Centre-Back,"Jan 12, 1995",28,Italy,€18.00m
+233,Patric,SS Lazio,Centre-Back,"Apr 17, 1993",30,Spain,€5.00m
+234,Mario Gila,SS Lazio,Centre-Back,"Aug 29, 2000",22,Spain,€3.00m
+235,Fabio Ruggeri,SS Lazio,Centre-Back,"Dec 13, 2004",18,Italy,€75k
+236,Luca Pellegrini,SS Lazio,Left-Back,"Mar 7, 1999",24,Italy,€7.00m
+237,Mohamed Salim Fares,SS Lazio,Left-Back,"Feb 15, 1996",27,Algeria,€2.00m
+238,Dimitrije Kamenovic,SS Lazio,Left-Back,"Jul 16, 2000",22,Serbia,€700k
+239,Ștefan Radu,SS Lazio,Left-Back,"Oct 22, 1986",36,Romania,€300k
+240,Adam Marusic,SS Lazio,Right-Back,"Oct 17, 1992",30,Montenegro,€8.00m
+241,Elseid Hysaj,SS Lazio,Right-Back,"Feb 2, 1994",29,Albania,€5.00m
+242,Djavan Anderson,SS Lazio,Right-Back,"Apr 21, 1995",28,Suriname,€275k
+243,Romano Floriani Mussolini,SS Lazio,Right-Back,"Jan 27, 2003",20,Italy,€75k
+244,Danilo Cataldi,SS Lazio,Defensive Midfield,"Aug 6, 1994",28,Italy,€10.00m
+245,Marco Bertini,SS Lazio,Defensive Midfield,"Aug 7, 2002",20,Italy,€100k
+246,Sergej Milinković-Savić,SS Lazio,Central Midfield,"Feb 27, 1995",28,Serbia,€50.00m
+247,Luis Alberto,SS Lazio,Central Midfield,"Sep 28, 1992",30,Spain,€18.00m
+248,Marcos Antônio,SS Lazio,Central Midfield,"Jun 13, 2000",23,Brazil,€8.00m
+249,Toma Bašić,SS Lazio,Central Midfield,"Nov 25, 1996",26,Croatia,€6.00m
+250,Matías Vecino,SS Lazio,Central Midfield,"Aug 24, 1991",31,Uruguay,€4.50m
+251,Manuel Lazzari,SS Lazio,Right Midfield,"Nov 29, 1993",29,Italy,€7.50m
+252,Mattia Zaccagni,SS Lazio,Left Winger,"Jun 16, 1995",28,Italy,€30.00m
+253,Raúl Moro,SS Lazio,Left Winger,"Dec 5, 2002",20,Spain,€2.50m
+254,Diego González,SS Lazio,Left Winger,"Jan 7, 2003",20,Paraguay,€750k
+255,Felipe Anderson,SS Lazio,Right Winger,"Apr 15, 1993",30,Brazil,€15.00m
+256,Matteo Cancellieri,SS Lazio,Right Winger,"Feb 12, 2002",21,Italy,€5.00m
+257,Luka Romero,SS Lazio,Right Winger,"Nov 18, 2004",18,Argentina,€3.00m
+258,Pedro,SS Lazio,Right Winger,"Jul 28, 1987",35,Spain,€1.50m
+259,Ciro Immobile,SS Lazio,Centre-Forward,"Feb 20, 1990",33,Italy,€15.00m
+260,Pierluigi Gollini,ACF Fiorentina,Goalkeeper,"Mar 18, 1995",28,Italy,€4.50m
+261,Pietro Terracciano,ACF Fiorentina,Goalkeeper,"Mar 8, 1990",33,Italy,€2.00m
+262,Michele Cerofolini,ACF Fiorentina,Goalkeeper,"Jan 4, 1999",24,Italy,€500k
+263,Salvatore Sirigu,ACF Fiorentina,Goalkeeper,"Jan 12, 1987",36,Italy,€500k
+264,Tommaso Martinelli,ACF Fiorentina,Goalkeeper,"Jan 6, 2006",17,Italy,-
+265,Tommaso Vannucchi,ACF Fiorentina,Goalkeeper,"Mar 5, 2007",16,Italy,-
+266,Nikola Milenković,ACF Fiorentina,Centre-Back,"Oct 12, 1997",25,Serbia,€18.00m
+267,Lucas Martínez Quarta,ACF Fiorentina,Centre-Back,"May 10, 1996",27,Argentina,€10.00m
+268,Igor,ACF Fiorentina,Centre-Back,"Feb 7, 1998",25,Brazil,€10.00m
+269,Luca Ranieri,ACF Fiorentina,Centre-Back,"Apr 23, 1999",24,Italy,€2.50m
+270,Matija Nastasic,ACF Fiorentina,Centre-Back,"Mar 28, 1993",30,Serbia,€1.50m
+271,Dimo Krastev,ACF Fiorentina,Centre-Back,"Feb 10, 2003",20,Bulgaria,€200k
+272,Cristiano Biraghi,ACF Fiorentina,Left-Back,"Sep 1, 1992",30,Italy,€5.00m
+273,Aleksa Terzic,ACF Fiorentina,Left-Back,"Aug 17, 1999",23,Serbia,€2.00m
+274,Dodô,ACF Fiorentina,Right-Back,"Nov 17, 1998",24,Brazil,€20.00m
+275,Lorenzo Venuti,ACF Fiorentina,Right-Back,"Apr 12, 1995",28,Italy,€2.00m
+276,Michael Kayode,ACF Fiorentina,Right-Back,"Jul 10, 2004",18,Italy,€800k
+277,Sofyan Amrabat,ACF Fiorentina,Defensive Midfield,"Aug 21, 1996",26,Morocco,€30.00m
+278,Rolando Mandragora,ACF Fiorentina,Defensive Midfield,"Jun 29, 1997",26,Italy,€10.00m
+279,Lorenzo Amatucci,ACF Fiorentina,Defensive Midfield,"Feb 5, 2004",19,Italy,€700k
+280,Gaetano Castrovilli,ACF Fiorentina,Central Midfield,"Feb 17, 1997",26,Italy,€10.00m
+281,Youssef Maleh,ACF Fiorentina,Central Midfield,"Aug 22, 1998",24,Morocco,€4.50m
+282,Alfred Duncan,ACF Fiorentina,Central Midfield,"Mar 10, 1993",30,Ghana,€4.00m
+283,Szymon Żurkowski,ACF Fiorentina,Central Midfield,"Sep 25, 1997",25,Poland,€3.50m
+284,Giacomo Bonaventura,ACF Fiorentina,Central Midfield,"Aug 22, 1989",33,Italy,€2.50m
+285,Marco Benassi,ACF Fiorentina,Central Midfield,"Sep 8, 1994",28,Italy,€1.50m
+286,Alessandro Bianco,ACF Fiorentina,Central Midfield,"Oct 1, 2002",20,Italy,€800k
+287,Costantino Favasuli,ACF Fiorentina,Left Midfield,"Apr 26, 2004",19,Italy,€200k
+288,Antonín Barák,ACF Fiorentina,Attacking Midfield,"Dec 3, 1994",28,Czech Republic,€10.00m
+289,Riccardo Saponara,ACF Fiorentina,Attacking Midfield,"Dec 21, 1991",31,Italy,€2.00m
+290,Christian Kouamé,ACF Fiorentina,Left Winger,"Dec 6, 1997",25,Cote d'Ivoire,€12.00m
+291,Riccardo Sottil,ACF Fiorentina,Left Winger,"Jun 3, 1999",24,Italy,€8.00m
+292,Josip Brekalo,ACF Fiorentina,Left Winger,"Jun 23, 1998",25,Croatia,€5.00m
+293,Nicolás González,ACF Fiorentina,Right Winger,"Apr 6, 1998",25,Argentina,€30.00m
+294,Jonathan Ikoné,ACF Fiorentina,Right Winger,"May 2, 1998",25,France,€16.00m
+295,Filippo Distefano,ACF Fiorentina,Second Striker,"Aug 28, 2003",19,Italy,€600k
+296,Arthur Cabral,ACF Fiorentina,Centre-Forward,"Apr 25, 1998",25,Brazil,€20.00m
+297,Luka Jović,ACF Fiorentina,Centre-Forward,"Dec 23, 1997",25,Serbia,€8.00m
+298,Andrea Consigli,US Sassuolo,Goalkeeper,"Jan 27, 1987",36,Italy,€1.00m
+299,Alessandro Russo,US Sassuolo,Goalkeeper,"Mar 31, 2001",22,Italy,€350k
+300,Gioele Zacchi,US Sassuolo,Goalkeeper,"Jul 10, 2003",19,Italy,€150k
+301,Gianluca Pegolo,US Sassuolo,Goalkeeper,"Mar 25, 1981",42,Italy,€100k
+302,Martin Erlić,US Sassuolo,Centre-Back,"Jan 24, 1998",25,Croatia,€5.00m
+303,Ruan Tressoldi,US Sassuolo,Centre-Back,"Jun 7, 1999",24,Brazil,€4.50m
+304,Gian Marco Ferrari,US Sassuolo,Centre-Back,"May 15, 1992",31,Italy,€2.00m
+305,Filippo Romagna,US Sassuolo,Centre-Back,"May 26, 1997",26,Italy,€400k
+306,Adrian Cannavaro,US Sassuolo,Centre-Back,"May 10, 2004",19,Italy,€100k
+307,Rogério,US Sassuolo,Left-Back,"Jan 13, 1998",25,Brazil,€5.50m
+308,Riccardo Marchizza,US Sassuolo,Left-Back,"Mar 26, 1998",25,Italy,€1.00m
+309,Edoardo Pieragnolo,US Sassuolo,Left-Back,"Jan 3, 2003",20,Italy,€100k
+310,Jeremy Toljan,US Sassuolo,Right-Back,"Aug 8, 1994",28,Germany,€4.50m
+311,Mert Müldür,US Sassuolo,Right-Back,"Apr 3, 1999",24,Türkiye,€4.00m
+312,Kaan Ayhan,US Sassuolo,Right-Back,"Nov 10, 1994",28,Türkiye,€3.70m
+313,Maxime López,US Sassuolo,Defensive Midfield,"Dec 4, 1997",25,France,€15.00m
+314,Davide Frattesi,US Sassuolo,Central Midfield,"Sep 22, 1999",23,Italy,€25.00m
+315,Matheus Henrique,US Sassuolo,Central Midfield,"Dec 19, 1997",25,Brazil,€10.00m
+316,Abdou Harroui,US Sassuolo,Central Midfield,"Jan 13, 1998",25,Morocco,€2.70m
+317,Pedro Obiang,US Sassuolo,Central Midfield,"Mar 27, 1992",31,Equatorial Guinea,€800k
+318,Nadir Zortea,US Sassuolo,Right Midfield,"Jun 19, 1999",24,Italy,€2.00m
+319,Georgios Kyriakopoulos,US Sassuolo,Left Midfield,"Feb 5, 1996",27,Greece,€3.80m
+320,Hamed Junior Traorè,US Sassuolo,Attacking Midfield,"Feb 16, 2000",23,Cote d'Ivoire,€22.00m
+321,Nedim Bajrami,US Sassuolo,Attacking Midfield,"Feb 28, 1999",24,Albania,€7.50m
+322,Kristian Thorstvedt,US Sassuolo,Attacking Midfield,"Mar 13, 1999",24,Norway,€7.50m
+323,Kevin Bruno,US Sassuolo,Attacking Midfield,"Apr 26, 2005",18,Italy,-
+324,Armand Laurienté,US Sassuolo,Left Winger,"Dec 4, 1998",24,France,€18.00m
+325,Emil Konradsen Ceide,US Sassuolo,Left Winger,"Sep 3, 2001",21,Norway,€2.50m
+326,Domenico Berardi,US Sassuolo,Right Winger,"Aug 1, 1994",28,Italy,€18.00m
+327,Luca D'Andrea,US Sassuolo,Right Winger,"Sep 6, 2004",18,Italy,€2.50m
+328,Giacomo Raspadori,US Sassuolo,Second Striker,"Feb 18, 2000",23,Italy,€35.00m
+329,Andrea Pinamonti,US Sassuolo,Centre-Forward,"May 19, 1999",24,Italy,€15.00m
+330,Agustín Álvarez,US Sassuolo,Centre-Forward,"May 19, 2001",22,Uruguay,€8.00m
+331,Janis Antiste,US Sassuolo,Centre-Forward,"Aug 18, 2002",20,France,€3.00m
+332,Grégoire Defrel,US Sassuolo,Centre-Forward,"Jun 17, 1991",32,France,€1.50m
+333,Vanja Milinković-Savić,Torino FC,Goalkeeper,"Feb 20, 1997",26,Serbia,€3.50m
+334,Etrit Berisha,Torino FC,Goalkeeper,"Mar 10, 1989",34,Albania,€400k
+335,Luca Gemello,Torino FC,Goalkeeper,"Jul 3, 2000",22,Italy,€300k
+336,Matteo Fiorenza,Torino FC,Goalkeeper,"Jun 15, 2003",20,Italy,€50k
+337,Perr Schuurs,Torino FC,Centre-Back,"Nov 26, 1999",23,Netherlands,€25.00m
+338,Alessandro Buongiorno,Torino FC,Centre-Back,"Jun 6, 1999",24,Italy,€10.00m
+339,David Zima,Torino FC,Centre-Back,"Nov 8, 2000",22,Czech Republic,€5.00m
+340,Andreaw Gravillon,Torino FC,Centre-Back,"Feb 8, 1998",25,Guadeloupe,€4.00m
+341,Ricardo Rodríguez,Torino FC,Centre-Back,"Aug 25, 1992",30,Switzerland,€3.50m
+342,Koffi Djidji,Torino FC,Centre-Back,"Nov 30, 1992",30,Cote d'Ivoire,€3.00m
+343,Ange Caumenan N'Guessan,Torino FC,Centre-Back,"Sep 1, 2003",19,France,€200k
+344,Sebas Wade,Torino FC,Left-Back,"Apr 9, 2003",20,England,€10k
+345,Wilfried Singo,Torino FC,Right-Back,"Dec 25, 2000",22,Cote d'Ivoire,€12.00m
+346,Ola Aina,Torino FC,Right-Back,"Oct 8, 1996",26,Nigeria,€3.50m
+347,Brian Bayeye,Torino FC,Right-Back,"Jun 30, 2000",23,DR Congo,€500k
+348,Ali Dembélé,Torino FC,Right-Back,"Jan 5, 2004",19,France,€200k
+349,Samuele Ricci,Torino FC,Defensive Midfield,"Aug 21, 2001",21,Italy,€20.00m
+350,Ivan Ilić,Torino FC,Central Midfield,"Mar 17, 2001",22,Serbia,€19.00m
+351,Saša Lukić,Torino FC,Central Midfield,"Aug 13, 1996",26,Serbia,€12.00m
+352,Emirhan İlkhan,Torino FC,Central Midfield,"Jun 1, 2004",19,Türkiye,€4.00m
+353,Karol Linetty,Torino FC,Central Midfield,"Feb 2, 1995",28,Poland,€3.50m
+354,Ronaldo Vieira,Torino FC,Central Midfield,"Jul 19, 1998",24,England,€2.00m
+355,Jacopo Segre,Torino FC,Central Midfield,"Feb 17, 1997",26,Italy,€1.70m
+356,Gvidas Gineitis,Torino FC,Central Midfield,"Apr 15, 2004",19,Lithuania,€900k
+357,Michel Adopo,Torino FC,Central Midfield,"Jul 19, 2000",22,France,€500k
+358,Matthew Garbett,Torino FC,Central Midfield,"Apr 13, 2002",21,New Zealand,€300k
+359,Aaron Ciammaglichella,Torino FC,Central Midfield,"Jan 26, 2005",18,Italy,-
+360,Valentino Lazaro,Torino FC,Left Midfield,"Mar 24, 1996",27,Austria,€5.00m
+361,Mërgim Vojvoda,Torino FC,Left Midfield,"Feb 1, 1995",28,Kosovo,€4.00m
+362,Nikola Vlašić,Torino FC,Attacking Midfield,"Oct 4, 1997",25,Croatia,€17.00m
+363,Aleksey Miranchuk,Torino FC,Attacking Midfield,"Oct 17, 1995",27,Russia,€12.00m
+364,Nemanja Radonjic,Torino FC,Left Winger,"Feb 15, 1996",27,Serbia,€4.00m
+365,Yann Karamoh,Torino FC,Left Winger,"Jul 8, 1998",24,France,€3.50m
+366,Demba Seck,Torino FC,Right Winger,"Feb 10, 2001",22,Senegal,€2.70m
+367,Simone Edera,Torino FC,Right Winger,"Jan 9, 1997",26,Italy,€300k
+368,Antonio Sanabria,Torino FC,Centre-Forward,"Mar 4, 1996",27,Paraguay,€10.00m
+369,Pietro Pellegri,Torino FC,Centre-Forward,"Mar 17, 2001",22,Italy,€3.50m
+370,Luigi Caccavo,Torino FC,Centre-Forward,"Feb 3, 2004",19,Italy,€125k
+371,Marco Silvestri,Udinese Calcio,Goalkeeper,"Mar 2, 1991",32,Italy,€5.00m
+372,Daniele Padelli,Udinese Calcio,Goalkeeper,"Oct 25, 1985",37,Italy,€200k
+373,Edoardo Piana,Udinese Calcio,Goalkeeper,"Sep 29, 2003",19,Italy,€50k
+374,Nehuén Pérez,Udinese Calcio,Centre-Back,"Jun 24, 2000",23,Argentina,€10.00m
+375,Jaka Bijol,Udinese Calcio,Centre-Back,"Feb 5, 1999",24,Slovenia,€10.00m
+376,Rodrigo Becão,Udinese Calcio,Centre-Back,"Jan 19, 1996",27,Brazil,€10.00m
+377,Enzo Ebosse,Udinese Calcio,Centre-Back,"Mar 11, 1999",24,Cameroon,€4.50m
+378,Filip Benkovic,Udinese Calcio,Centre-Back,"Jul 13, 1997",25,Croatia,€2.20m
+379,Bram Nuytinck,Udinese Calcio,Centre-Back,"May 4, 1990",33,Netherlands,€1.00m
+380,James Abankwah,Udinese Calcio,Centre-Back,"Jan 16, 2004",19,Ireland,€300k
+381,Axel Guessand,Udinese Calcio,Centre-Back,"Nov 6, 2004",18,France,€250k
+382,Niccolò Cocetta,Udinese Calcio,Centre-Back,"Dec 19, 2003",19,Italy,€75k
+383,Destiny Udogie,Udinese Calcio,Left-Back,"Nov 28, 2002",20,Italy,€25.00m
+384,Adam Masina,Udinese Calcio,Left-Back,"Jan 2, 1994",29,Morocco,€2.50m
+385,Leonardo Buta,Udinese Calcio,Left-Back,"Jun 5, 2002",21,Portugal,€1.50m
+386,Marvin Zeegelaar,Udinese Calcio,Left-Back,"Aug 12, 1990",32,Netherlands,€400k
+387,Brandon Soppy,Udinese Calcio,Right-Back,"Feb 21, 2002",21,France,€9.00m
+388,Kingsley Ehizibue,Udinese Calcio,Right-Back,"May 25, 1995",28,Netherlands,€2.50m
+389,Walace,Udinese Calcio,Defensive Midfield,"Apr 4, 1995",28,Brazil,€7.00m
+390,Mato Jajalo,Udinese Calcio,Defensive Midfield,"May 25, 1988",35,Bosnia-Herzegovina,€250k
+391,Riccardo Castagnaviz,Udinese Calcio,Defensive Midfield,"Jan 29, 2003",20,Italy,€50k
+392,Lazar Samardžić,Udinese Calcio,Central Midfield,"Feb 24, 2002",21,Serbia,€14.00m
+393,Jean-Victor Makengo,Udinese Calcio,Central Midfield,"Jun 12, 1998",25,France,€10.00m
+394,Sandi Lovric,Udinese Calcio,Central Midfield,"Mar 28, 1998",25,Slovenia,€10.00m
+395,Roberto Pereyra,Udinese Calcio,Central Midfield,"Jan 7, 1991",32,Argentina,€6.00m
+396,Tolgay Arslan,Udinese Calcio,Central Midfield,"Aug 16, 1990",32,Germany,€1.40m
+397,Martin Palumbo,Udinese Calcio,Central Midfield,"Mar 5, 2002",21,Norway,€700k
+398,Matteo Bassi,Udinese Calcio,Central Midfield,"Jan 8, 2004",19,Italy,€10k
+399,Festy Ebosele,Udinese Calcio,Right Midfield,"Aug 2, 2002",20,Ireland,€3.50m
+400,Simone Pafundi,Udinese Calcio,Attacking Midfield,"Mar 14, 2006",17,Italy,€8.00m
+401,Alberto Centis,Udinese Calcio,Attacking Midfield,"Feb 13, 2004",19,Italy,€75k
+402,Florian Thauvin,Udinese Calcio,Right Winger,"Jan 26, 1993",30,France,€3.50m
+403,Diego Russo,Udinese Calcio,Right Winger,"Apr 20, 2005",18,Italy,-
+404,Beto,Udinese Calcio,Centre-Forward,"Jan 31, 1998",25,Portugal,€25.00m
+405,Gerard Deulofeu,Udinese Calcio,Centre-Forward,"Mar 13, 1994",29,Spain,€10.00m
+406,Isaac Success,Udinese Calcio,Centre-Forward,"Jan 7, 1996",27,Nigeria,€4.00m
+407,Vivaldo Semedo,Udinese Calcio,Centre-Forward,"Jan 28, 2005",18,Portugal,€500k
+408,Ilija Nestorovski,Udinese Calcio,Centre-Forward,"Mar 12, 1990",33,North Macedonia,€400k
+409,Lukasz Skorupski,Bologna FC 1909,Goalkeeper,"May 5, 1991",32,Poland,€3.50m
+410,Federico Ravaglia,Bologna FC 1909,Goalkeeper,"Nov 11, 1999",23,Italy,€450k
+411,Francesco Bardi,Bologna FC 1909,Goalkeeper,"Jan 18, 1992",31,Italy,€400k
+412,Nicola Bagnolini,Bologna FC 1909,Goalkeeper,"Mar 14, 2004",19,Italy,€200k
+413,Francesco Raffaelli,Bologna FC 1909,Goalkeeper,"May 21, 2005",18,Italy,-
+414,Jhon Lucumí,Bologna FC 1909,Centre-Back,"Jun 26, 1998",25,Colombia,€12.00m
+415,Joaquín Sosa,Bologna FC 1909,Centre-Back,"Jan 10, 2002",21,Uruguay,€3.00m
+416,Adama Soumaoro,Bologna FC 1909,Centre-Back,"Jun 18, 1992",31,France,€3.00m
+417,Kevin Bonifazi,Bologna FC 1909,Centre-Back,"May 19, 1996",27,Italy,€2.80m
+418,Gary Medel,Bologna FC 1909,Centre-Back,"Aug 3, 1987",35,Chile,€800k
+419,Wisdom Amey,Bologna FC 1909,Centre-Back,"Aug 11, 2005",17,Italy,€700k
+420,Matteo Angeli,Bologna FC 1909,Centre-Back,"Dec 30, 2002",20,Italy,€450k
+421,Riccardo Stivanello,Bologna FC 1909,Centre-Back,"Apr 24, 2004",19,Italy,€250k
+422,Mattia Motolese,Bologna FC 1909,Centre-Back,"Apr 13, 2004",19,Italy,€125k
+423,Andrea Cambiaso,Bologna FC 1909,Left-Back,"Feb 20, 2000",23,Italy,€8.00m
+424,Charalampos Lykogiannis,Bologna FC 1909,Left-Back,"Oct 22, 1993",29,Greece,€1.00m
+425,Stefan Posch,Bologna FC 1909,Right-Back,"May 14, 1997",26,Austria,€14.00m
+426,Denso Kasius,Bologna FC 1909,Right-Back,"Oct 6, 2002",20,Netherlands,€1.70m
+427,Lorenzo De Silvestri,Bologna FC 1909,Right-Back,"May 23, 1988",35,Italy,€400k
+428,Ibrahima Mbaye,Bologna FC 1909,Right-Back,"Nov 19, 1994",28,Senegal,€300k
+429,Jerdy Schouten,Bologna FC 1909,Defensive Midfield,"Jan 12, 1997",26,Netherlands,€12.00m
+430,Nikola Moro,Bologna FC 1909,Defensive Midfield,"Mar 12, 1998",25,Croatia,€6.50m
+431,Nicolás Domínguez,Bologna FC 1909,Central Midfield,"Jun 28, 1998",25,Argentina,€17.00m
+432,Michel Aebischer,Bologna FC 1909,Central Midfield,"Jan 6, 1997",26,Switzerland,€4.00m
+433,Niklas Pyyhtiä,Bologna FC 1909,Central Midfield,"Sep 25, 2003",19,Finland,€600k
+434,Kacper Urbanski,Bologna FC 1909,Central Midfield,"Sep 7, 2004",18,Poland,€600k
+435,Kingsley Michael,Bologna FC 1909,Central Midfield,"Aug 26, 1999",23,Nigeria,€250k
+436,Georgios Kyriakopoulos,Bologna FC 1909,Left Midfield,"Feb 5, 1996",27,Greece,€3.80m
+437,Lewis Ferguson,Bologna FC 1909,Attacking Midfield,"Aug 24, 1999",23,Scotland,€12.00m
+438,Roberto Soriano,Bologna FC 1909,Attacking Midfield,"Feb 8, 1991",32,Italy,€2.50m
+439,Musa Barrow,Bologna FC 1909,Left Winger,"Nov 14, 1998",24,The Gambia,€11.00m
+440,Nicola Sansone,Bologna FC 1909,Left Winger,"Sep 10, 1991",31,Italy,€1.50m
+441,Riccardo Orsolini,Bologna FC 1909,Right Winger,"Jan 24, 1997",26,Italy,€12.00m
+442,Emanuel Vignato,Bologna FC 1909,Right Winger,"Aug 24, 2000",22,Italy,€2.00m
+443,Orji Okwonkwo,Bologna FC 1909,Right Winger,"Jan 19, 1998",25,Nigeria,-
+444,Joshua Zirkzee,Bologna FC 1909,Centre-Forward,"May 22, 2001",22,Netherlands,€9.00m
+445,Marko Arnautovic,Bologna FC 1909,Centre-Forward,"Apr 19, 1989",34,Austria,€5.00m
+446,Antonio Raimondo,Bologna FC 1909,Centre-Forward,"Mar 18, 2004",19,Italy,€800k
+447,Michele Di Gregorio,AC Monza,Goalkeeper,"Jul 27, 1997",25,Italy,€8.00m
+448,Alessio Cragno,AC Monza,Goalkeeper,"Jun 28, 1994",29,Italy,€3.00m
+449,Alessandro Sorrentino,AC Monza,Goalkeeper,"Apr 3, 2002",21,Italy,€500k
+450,Eugenio Lamanna,AC Monza,Goalkeeper,"Aug 7, 1989",33,Italy,€100k
+451,Marlon,AC Monza,Centre-Back,"Sep 7, 1995",27,Brazil,€6.00m
+452,Pablo Marí,AC Monza,Centre-Back,"Aug 31, 1993",29,Spain,€5.00m
+453,Andrea Carboni,AC Monza,Centre-Back,"Feb 4, 2001",22,Italy,€4.00m
+454,Armando Izzo,AC Monza,Centre-Back,"Mar 2, 1992",31,Italy,€3.00m
+455,Luca Caldirola,AC Monza,Centre-Back,"Feb 1, 1991",32,Italy,€1.50m
+456,Valentin Antov,AC Monza,Centre-Back,"Nov 9, 2000",22,Bulgaria,€800k
+457,Luca Marrone,AC Monza,Centre-Back,"Mar 28, 1990",33,Italy,€200k
+458,Sheriff Kassama,AC Monza,Centre-Back,"Sep 16, 2004",18,Italy,€150k
+459,Gabriel Paletta,AC Monza,Centre-Back,"Feb 15, 1986",37,Italy,-
+460,Andrea Ranocchia,AC Monza,Centre-Back,"Feb 16, 1988",35,Italy,-
+461,Franco Carboni,AC Monza,Left-Back,"Apr 4, 2003",20,Argentina,€1.00m
+462,Samuele Birindelli,AC Monza,Right-Back,"Jul 19, 1999",23,Italy,€2.30m
+463,Gabriele Ferrarini,AC Monza,Right-Back,"Apr 9, 2000",23,Italy,€550k
+464,Giulio Donati,AC Monza,Right-Back,"Feb 5, 1990",33,Italy,€500k
+465,Nicolò Rovella,AC Monza,Defensive Midfield,"Dec 4, 2001",21,Italy,€18.00m
+466,Andrea Barberis,AC Monza,Defensive Midfield,"Dec 11, 1993",29,Italy,€800k
+467,Antonis Siatounis,AC Monza,Defensive Midfield,"Aug 26, 2002",20,Greece,€75k
+468,Leonardo Colombo,AC Monza,Defensive Midfield,"Jun 4, 2005",18,Italy,-
+469,Matteo Pessina,AC Monza,Central Midfield,"Apr 21, 1997",26,Italy,€15.00m
+470,Stefano Sensi,AC Monza,Central Midfield,"Aug 5, 1995",27,Italy,€8.00m
+471,Filippo Ranocchia,AC Monza,Central Midfield,"May 14, 2001",22,Italy,€1.80m
+472,José Machín,AC Monza,Central Midfield,"Aug 14, 1996",26,Equatorial Guinea,€1.50m
+473,Mattia Valoti,AC Monza,Central Midfield,"Sep 6, 1993",29,Italy,€1.50m
+474,Warren Bondo,AC Monza,Central Midfield,"Sep 15, 2003",19,France,€700k
+475,Patrick Ciurria,AC Monza,Right Midfield,"Feb 9, 1995",28,Italy,€5.00m
+476,Salvatore Molina,AC Monza,Right Midfield,"Jan 1, 1992",31,Italy,€650k
+477,Carlos Augusto,AC Monza,Left Midfield,"Jan 7, 1999",24,Brazil,€15.00m
+478,Andrea Colpani,AC Monza,Attacking Midfield,"May 11, 1999",24,Italy,€4.00m
+479,Samuele Vignato,AC Monza,Attacking Midfield,"Feb 24, 2004",19,Italy,€600k
+480,Andrea Ferraris,AC Monza,Left Winger,"Feb 22, 2003",20,Italy,€100k
+481,Marco D'Alessandro,AC Monza,Right Winger,"Feb 17, 1991",32,Italy,€700k
+482,Gianluca Caprari,AC Monza,Second Striker,"Jul 30, 1993",29,Italy,€8.00m
+483,Andrea Petagna,AC Monza,Centre-Forward,"Jun 30, 1995",28,Italy,€10.00m
+484,Dany Mota,AC Monza,Centre-Forward,"May 2, 1998",25,Portugal,€6.00m
+485,Christian Gytkjaer,AC Monza,Centre-Forward,"May 6, 1990",33,Denmark,€800k
+486,Mirko Maric,AC Monza,Centre-Forward,"May 16, 1995",28,Croatia,€800k
+487,Leo dos Reis,AC Monza,Centre-Forward,"Jan 23, 2003",20,Spain,€75k
+488,Guglielmo Vicario,FC Empoli,Goalkeeper,"Oct 7, 1996",26,Italy,€16.00m
+489,Samuele Perisan,FC Empoli,Goalkeeper,"Aug 21, 1997",25,Italy,€800k
+490,Jacopo Furlan,FC Empoli,Goalkeeper,"Feb 22, 1993",30,Italy,€200k
+491,Lovro Stubljar,FC Empoli,Goalkeeper,"Aug 9, 2004",18,Slovenia,€200k
+492,Samir Ujkani,FC Empoli,Goalkeeper,"Jul 5, 1988",34,Kosovo,€100k
+493,Gian Marco Fantoni,FC Empoli,Goalkeeper,"Jan 24, 2004",19,Italy,€50k
+494,Jacopo Seghetti,FC Empoli,Goalkeeper,"Feb 17, 2005",18,Italy,-
+495,Koni De Winter,FC Empoli,Centre-Back,"Jun 12, 2002",21,Belgium,€4.00m
+496,Ardian Ismajli,FC Empoli,Centre-Back,"Sep 30, 1996",26,Albania,€3.50m
+497,Sebastian Walukiewicz,FC Empoli,Centre-Back,"Apr 5, 2000",23,Poland,€3.00m
+498,Sebastiano Luperto,FC Empoli,Centre-Back,"Sep 6, 1996",26,Italy,€3.00m
+499,Gabriele Guarino,FC Empoli,Centre-Back,"Apr 14, 2004",19,Italy,€800k
+500,Lorenzo Tonelli,FC Empoli,Centre-Back,"Jan 17, 1990",33,Italy,€500k
+501,Gabriele Indragoli,FC Empoli,Centre-Back,"Feb 20, 2004",19,Italy,€100k
+502,Fabiano Parisi,FC Empoli,Left-Back,"Nov 9, 2000",22,Italy,€10.00m
+503,Liberato Cacace,FC Empoli,Left-Back,"Sep 27, 2000",22,New Zealand,€2.00m
+504,Samuele Angori,FC Empoli,Left-Back,"Oct 7, 2003",19,Italy,€200k
+505,Tyronne Ebuehi,FC Empoli,Right-Back,"Dec 16, 1995",27,Nigeria,€2.50m
+506,Petar Stojanović,FC Empoli,Right-Back,"Oct 7, 1995",27,Slovenia,€2.30m
+507,Alberto Grassi,FC Empoli,Defensive Midfield,"Mar 7, 1995",28,Italy,€2.00m
+508,Leo Stulac,FC Empoli,Defensive Midfield,"Sep 26, 1994",28,Slovenia,€1.00m
+509,Duccio Degli Innocenti,FC Empoli,Defensive Midfield,"Apr 28, 2003",20,Italy,€500k
+510,Răzvan Marin,FC Empoli,Central Midfield,"May 23, 1996",27,Romania,€8.00m
+511,Jacopo Fazzini,FC Empoli,Central Midfield,"Mar 16, 2003",20,Italy,€3.50m
+512,Filippo Bandinelli,FC Empoli,Central Midfield,"Mar 29, 1995",28,Italy,€3.50m
+513,Liam Henderson,FC Empoli,Central Midfield,"Apr 25, 1996",27,Scotland,€2.50m
+514,Nicolas Haas,FC Empoli,Central Midfield,"Jan 23, 1996",27,Switzerland,€2.00m
+515,Jean-Daniel Akpa Akpro,FC Empoli,Central Midfield,"Oct 11, 1992",30,Cote d'Ivoire,€1.50m
+516,Giovanni Crociata,FC Empoli,Central Midfield,"Aug 11, 1997",25,Italy,€750k
+517,Lorenzo Ignacchiti,FC Empoli,Central Midfield,"Apr 25, 2004",19,Italy,€250k
+518,Alessandro Renzi,FC Empoli,Central Midfield,"Jan 27, 2004",19,Italy,€175k
+519,Tommaso Baldanzi,FC Empoli,Attacking Midfield,"Mar 23, 2003",20,Italy,€15.00m
+520,Nedim Bajrami,FC Empoli,Attacking Midfield,"Feb 28, 1999",24,Albania,€7.50m
+521,Nicolò Cambiaghi,FC Empoli,Left Winger,"Dec 28, 2000",22,Italy,€8.00m
+522,Marko Pjaca,FC Empoli,Left Winger,"May 6, 1995",28,Croatia,€1.70m
+523,Emanuel Vignato,FC Empoli,Right Winger,"Aug 24, 2000",22,Italy,€2.00m
+524,Davide Merola,FC Empoli,Right Winger,"Mar 27, 2000",23,Italy,€400k
+525,Martín Satriano,FC Empoli,Centre-Forward,"Feb 20, 2001",22,Uruguay,€7.00m
+526,Roberto Piccoli,FC Empoli,Centre-Forward,"Jan 27, 2001",22,Italy,€3.50m
+527,Sam Lammers,FC Empoli,Centre-Forward,"Apr 30, 1997",26,Netherlands,€2.00m
+528,Francesco Caputo,FC Empoli,Centre-Forward,"Aug 6, 1987",35,Italy,€1.50m
+529,Mattia Destro,FC Empoli,Centre-Forward,"Mar 20, 1991",32,Italy,€1.30m
+530,Herculano Nabian,FC Empoli,Centre-Forward,"Jan 25, 2004",19,Portugal,€450k
+531,Emmanuel Ekong,FC Empoli,Centre-Forward,"Jun 25, 2002",21,Sweden,€250k
+532,Lorenzo Montipò,Hellas Verona,Goalkeeper,"Feb 20, 1996",27,Italy,€4.00m
+533,Simone Perilli,Hellas Verona,Goalkeeper,"Jan 7, 1995",28,Italy,€200k
+534,Mattia Chiesa,Hellas Verona,Goalkeeper,"Jul 16, 2000",22,Italy,€100k
+535,Alessandro Berardi,Hellas Verona,Goalkeeper,"Jan 16, 1991",32,Italy,€50k
+536,Giacomo Toniolo,Hellas Verona,Goalkeeper,"Apr 1, 2004",19,Italy,€10k
+537,Manuel Ravasio,Hellas Verona,Goalkeeper,"Jul 7, 2005",17,Italy,-
+538,Isak Hien,Hellas Verona,Centre-Back,"Jan 13, 1999",24,Sweden,€6.00m
+539,Diego Coppola,Hellas Verona,Centre-Back,"Dec 28, 2003",19,Italy,€4.00m
+540,Koray Günter,Hellas Verona,Centre-Back,"Aug 16, 1994",28,Germany,€3.50m
+541,Giangiacomo Magnani,Hellas Verona,Centre-Back,"Oct 4, 1995",27,Italy,€3.00m
+542,Paweł Dawidowicz,Hellas Verona,Centre-Back,"May 20, 1995",28,Poland,€3.00m
+543,Bruno Amione,Hellas Verona,Centre-Back,"Jan 3, 2002",21,Argentina,€2.70m
+544,Panagiotis Retsos,Hellas Verona,Centre-Back,"Aug 9, 1998",24,Greece,€2.00m
+545,Federico Ceccherini,Hellas Verona,Centre-Back,"May 11, 1992",31,Italy,€1.50m
+546,Josh Doig,Hellas Verona,Left-Back,"May 18, 2002",21,Scotland,€8.00m
+547,Juan Cabal,Hellas Verona,Left-Back,"Jan 8, 2001",22,Colombia,€2.50m
+548,Davide Faraoni,Hellas Verona,Right-Back,"Oct 25, 1991",31,Italy,€3.00m
+549,Fabio Depaoli,Hellas Verona,Right-Back,"Apr 24, 1997",26,Italy,€3.00m
+550,Filippo Terracciano,Hellas Verona,Right-Back,"Feb 8, 2003",20,Italy,€1.50m
+551,Deyovaisio Zeefuik,Hellas Verona,Right-Back,"Mar 11, 1998",25,Netherlands,€1.20m
+552,Adrien Tamèze,Hellas Verona,Defensive Midfield,"Feb 4, 1994",29,Cameroon,€6.00m
+553,Oliver Abildgaard,Hellas Verona,Defensive Midfield,"Jun 10, 1996",27,Denmark,€4.50m
+554,Martin Hongla,Hellas Verona,Defensive Midfield,"Mar 16, 1998",25,Cameroon,€3.00m
+555,Ibrahim Sulemana,Hellas Verona,Defensive Midfield,"May 22, 2003",20,Ghana,€1.50m
+556,Miguel Veloso,Hellas Verona,Defensive Midfield,"May 11, 1986",37,Portugal,€500k
+557,Joselito,Hellas Verona,Defensive Midfield,"Feb 9, 2004",19,Spain,€75k
+558,Ivan Ilić,Hellas Verona,Central Midfield,"Mar 17, 2001",22,Serbia,€19.00m
+559,Ondrej Duda,Hellas Verona,Central Midfield,"Dec 5, 1994",28,Slovakia,€3.40m
+560,Darko Lazović,Hellas Verona,Left Midfield,"Sep 15, 1990",32,Serbia,€2.50m
+561,Antonín Barák,Hellas Verona,Attacking Midfield,"Dec 3, 1994",28,Czech Republic,€10.00m
+562,Simone Verdi,Hellas Verona,Attacking Midfield,"Jul 12, 1992",30,Italy,€4.00m
+563,Ajdin Hrustić,Hellas Verona,Attacking Midfield,"Jul 5, 1996",26,Australia,€1.50m
+564,Mateusz Praszelik,Hellas Verona,Attacking Midfield,"Sep 26, 2000",22,Poland,€900k
+565,Alessandro Cortinovis,Hellas Verona,Attacking Midfield,"Jan 25, 2001",22,Italy,€700k
+566,Alphadjo Cissè,Hellas Verona,Attacking Midfield,"Oct 22, 2006",16,Italy,-
+567,Jayden Braaf,Hellas Verona,Left Winger,"Aug 31, 2002",20,Netherlands,€1.00m
+568,Cyril Ngonge,Hellas Verona,Right Winger,"May 26, 2000",23,Belgium,€2.00m
+569,Yayah Kallon,Hellas Verona,Right Winger,"Jun 30, 2001",22,Sierra Leone,€1.50m
+570,Davide Bragantini,Hellas Verona,Right Winger,"Aug 17, 2003",19,Italy,€150k
+571,Denis Cazzadori,Hellas Verona,Second Striker,"Mar 16, 2004",19,Italy,€150k
+572,Thomas Henry,Hellas Verona,Centre-Forward,"Sep 20, 1994",28,France,€4.00m
+573,Roberto Piccoli,Hellas Verona,Centre-Forward,"Jan 27, 2001",22,Italy,€3.50m
+574,Kevin Lasagna,Hellas Verona,Centre-Forward,"Aug 10, 1992",30,Italy,€1.80m
+575,Adolfo Gaich,Hellas Verona,Centre-Forward,"Feb 26, 1999",24,Argentina,€1.80m
+576,Milan Djuric,Hellas Verona,Centre-Forward,"May 22, 1990",33,Bosnia-Herzegovina,€1.00m
+577,Federico Caia,Hellas Verona,Centre-Forward,"Apr 21, 2003",20,Italy,€150k
+578,Guillermo Ochoa,US Salernitana 1919,Goalkeeper,"Jul 13, 1985",37,Mexico,€1.50m
+579,Luigi Sepe,US Salernitana 1919,Goalkeeper,"May 8, 1991",32,Italy,€1.00m
+580,Alessandro Micai,US Salernitana 1919,Goalkeeper,"Jul 24, 1993",29,Italy,€500k
+581,Vincenzo Fiorillo,US Salernitana 1919,Goalkeeper,"Jan 13, 1990",33,Italy,€200k
+582,Jacopo De Matteis,US Salernitana 1919,Goalkeeper,"Dec 28, 2002",20,Italy,€25k
+583,Andrea Sorrentino,US Salernitana 1919,Goalkeeper,"Oct 21, 2004",18,Italy,€25k
+584,Pasquale Allocca,US Salernitana 1919,Goalkeeper,"May 9, 2005",18,Italy,-
+585,Flavius Daniliuc,US Salernitana 1919,Centre-Back,"Apr 27, 2001",22,Austria,€8.00m
+586,Lorenzo Pirola,US Salernitana 1919,Centre-Back,"Feb 20, 2002",21,Italy,€8.00m
+587,Matteo Lovato,US Salernitana 1919,Centre-Back,"Feb 14, 2000",23,Italy,€6.00m
+588,Dylan Bronn,US Salernitana 1919,Centre-Back,"Jun 19, 1995",28,Tunisia,€2.50m
+589,William Troost-Ekong,US Salernitana 1919,Centre-Back,"Sep 1, 1993",29,Nigeria,€2.50m
+590,Norbert Gyömbér,US Salernitana 1919,Centre-Back,"Jul 3, 1992",30,Slovakia,€1.50m
+591,Valerio Mantovani,US Salernitana 1919,Centre-Back,"Apr 18, 1996",27,Italy,€700k
+592,Federico Fazio,US Salernitana 1919,Centre-Back,"Mar 17, 1987",36,Argentina,€400k
+593,Andrei Motoc,US Salernitana 1919,Centre-Back,"Dec 13, 2002",20,Moldova,€75k
+594,Domagoj Bradarić,US Salernitana 1919,Left-Back,"Dec 10, 1999",23,Croatia,€7.00m
+595,Sanasi Sy,US Salernitana 1919,Left-Back,"Apr 4, 1999",24,France,€300k
+596,Pasquale Mazzocchi,US Salernitana 1919,Right-Back,"Jul 27, 1995",27,Italy,€4.80m
+597,Junior Sambia,US Salernitana 1919,Right-Back,"Sep 7, 1996",26,France,€3.50m
+598,Wajdi Kechrida,US Salernitana 1919,Right-Back,"Nov 5, 1995",27,Tunisia,€800k
+599,Frédéric Veseli,US Salernitana 1919,Right-Back,"Nov 20, 1992",30,Albania,€300k
+600,Emil Bohinen,US Salernitana 1919,Defensive Midfield,"Mar 12, 1999",24,Norway,€3.40m
+601,Ivan Radovanovic,US Salernitana 1919,Defensive Midfield,"Aug 29, 1988",34,Serbia,€400k
+602,Giulio Maggiore,US Salernitana 1919,Central Midfield,"Mar 12, 1998",25,Italy,€5.50m
+603,Lassana Coulibaly,US Salernitana 1919,Central Midfield,"Apr 10, 1996",27,Mali,€5.00m
+604,Tonny Vilhena,US Salernitana 1919,Central Midfield,"Jan 3, 1995",28,Netherlands,€3.80m
+605,Hans Nicolussi Caviglia,US Salernitana 1919,Central Midfield,"Jun 18, 2000",23,Italy,€2.00m
+606,Domen Crnigoj,US Salernitana 1919,Central Midfield,"Nov 18, 1995",27,Slovenia,€1.50m
+607,Leonardo Capezzi,US Salernitana 1919,Central Midfield,"Mar 28, 1995",28,Italy,€350k
+608,Michele Cavion,US Salernitana 1919,Central Midfield,"Dec 8, 1994",28,Italy,€350k
+609,Antonio Pio Iervolino,US Salernitana 1919,Central Midfield,"May 23, 2003",20,Italy,€100k
+610,Antonio Candreva,US Salernitana 1919,Right Midfield,"Feb 28, 1987",36,Italy,€1.50m
+611,Pawel Jaroszynski,US Salernitana 1919,Left Midfield,"Oct 2, 1994",28,Poland,€450k
+612,Grigoris Kastanos,US Salernitana 1919,Attacking Midfield,"Jan 30, 1998",25,Cyprus,€1.80m
+613,Reda Boultam,US Salernitana 1919,Attacking Midfield,"Mar 3, 1998",25,Netherlands,€400k
+614,Andres Sfait,US Salernitana 1919,Left Winger,"Dec 9, 2004",18,Romania,€50k
+615,Franck Ribéry,US Salernitana 1919,Left Winger,"Apr 7, 1983",40,France,-
+616,Boulaye Dia,US Salernitana 1919,Centre-Forward,"Nov 16, 1996",26,Senegal,€25.00m
+617,Krzysztof Piatek,US Salernitana 1919,Centre-Forward,"Jul 1, 1995",27,Poland,€7.00m
+618,Federico Bonazzoli,US Salernitana 1919,Centre-Forward,"May 21, 1997",26,Italy,€4.00m
+619,Erik Botheim,US Salernitana 1919,Centre-Forward,"Jan 10, 2000",23,Norway,€3.50m
+620,Diego Valencia,US Salernitana 1919,Centre-Forward,"Jan 14, 2000",23,Chile,€2.00m
+621,Edoardo Vergani,US Salernitana 1919,Centre-Forward,"Feb 6, 2001",22,Italy,€450k
+622,Julian Kristoffersen,US Salernitana 1919,Centre-Forward,"May 10, 1997",26,Norway,€175k
+623,Bartlomiej Dragowski,Spezia Calcio,Goalkeeper,"Aug 19, 1997",25,Poland,€4.50m
+624,Jeroen Zoet,Spezia Calcio,Goalkeeper,"Jan 6, 1991",32,Netherlands,€400k
+625,Petar Zovko,Spezia Calcio,Goalkeeper,"Mar 25, 2002",21,Bosnia-Herzegovina,€100k
+626,Federico Marchetti,Spezia Calcio,Goalkeeper,"Feb 7, 1983",40,Italy,€50k
+627,Leonardo Dido,Spezia Calcio,Goalkeeper,"Jan 5, 2004",19,Italy,€10k
+628,Dimitrios Nikolaou,Spezia Calcio,Centre-Back,"Aug 13, 1998",24,Greece,€3.50m
+629,Przemysław Wiśniewski,Spezia Calcio,Centre-Back,"Jul 27, 1998",24,Poland,€3.00m
+630,Mattia Caldara,Spezia Calcio,Centre-Back,"May 5, 1994",29,Italy,€2.00m
+631,Petko Hristov,Spezia Calcio,Centre-Back,"Mar 1, 1999",24,Bulgaria,€900k
+632,Elio Capradossi,Spezia Calcio,Centre-Back,"Mar 11, 1996",27,Italy,€750k
+633,Nicolò Bertola,Spezia Calcio,Centre-Back,"Mar 23, 2003",20,Italy,€150k
+634,Simone Giorgeschi,Spezia Calcio,Centre-Back,"Jun 28, 2004",19,Italy,€50k
+635,Jakub Kiwior,Spezia Calcio,Left-Back,"Feb 15, 2000",23,Poland,€25.00m
+636,Arkadiusz Reca,Spezia Calcio,Left-Back,"Jun 17, 1995",28,Poland,€3.00m
+637,João Moutinho,Spezia Calcio,Left-Back,"Jan 12, 1998",25,Portugal,€1.50m
+638,Leonardo Gabelli,Spezia Calcio,Left-Back,"Apr 30, 2002",21,Italy,€25k
+639,Kelvin Amian,Spezia Calcio,Right-Back,"Feb 8, 1998",25,France,€3.80m
+640,Luca Vignali,Spezia Calcio,Right-Back,"Jan 11, 1996",27,Italy,€1.00m
+641,Salva Ferrer,Spezia Calcio,Right-Back,"Jan 21, 1998",25,Spain,€800k
+642,Ethan Ampadu,Spezia Calcio,Defensive Midfield,"Sep 14, 2000",22,Wales,€9.00m
+643,Salvatore Esposito,Spezia Calcio,Defensive Midfield,"Oct 7, 2000",22,Italy,€3.30m
+644,Albin Ekdal,Spezia Calcio,Defensive Midfield,"Jul 28, 1989",33,Sweden,€800k
+645,Aurélien Nguiamba,Spezia Calcio,Defensive Midfield,"Jan 18, 1999",24,France,€300k
+646,Simone Bastoni,Spezia Calcio,Central Midfield,"Nov 5, 1996",26,Italy,€6.50m
+647,Szymon Żurkowski,Spezia Calcio,Central Midfield,"Sep 25, 1997",25,Poland,€3.50m
+648,Mikael Egill Ellertsson,Spezia Calcio,Central Midfield,"Mar 11, 2002",21,Iceland,€1.50m
+649,Mehdi Bourabia,Spezia Calcio,Central Midfield,"Aug 7, 1991",31,Morocco,€1.30m
+650,Aimar Sher,Spezia Calcio,Central Midfield,"Dec 20, 2002",20,Sweden,€800k
+651,Tio Cipot,Spezia Calcio,Central Midfield,"Apr 20, 2003",20,Slovenia,€700k
+652,Emil Kornvig,Spezia Calcio,Central Midfield,"Apr 28, 2000",23,Denmark,€450k
+653,Jacopo Sala,Spezia Calcio,Central Midfield,"Dec 5, 1991",31,Italy,€400k
+654,Julius Beck,Spezia Calcio,Central Midfield,"Apr 27, 2005",18,Denmark,€250k
+655,Pietro Candelari,Spezia Calcio,Central Midfield,"Jan 21, 2005",18,Italy,-
+656,Emil Holm,Spezia Calcio,Right Midfield,"May 13, 2000",23,Sweden,€5.00m
+657,Daniel Maldini,Spezia Calcio,Attacking Midfield,"Oct 11, 2001",21,Italy,€3.00m
+658,Kevin Agudelo,Spezia Calcio,Attacking Midfield,"Nov 14, 1998",24,Colombia,€3.00m
+659,Viktor Kovalenko,Spezia Calcio,Attacking Midfield,"Feb 14, 1996",27,Ukraine,€1.50m
+660,Leonardo Pedicillo,Spezia Calcio,Attacking Midfield,"Jan 20, 2003",20,Italy,€25k
+661,Emmanuel Gyasi,Spezia Calcio,Left Winger,"Jan 11, 1994",29,Ghana,€2.00m
+662,Suf Podgoreanu,Spezia Calcio,Left Winger,"Jan 20, 2002",21,Israel,€300k
+663,Daniele Verde,Spezia Calcio,Right Winger,"Jun 20, 1996",27,Italy,€3.00m
+664,Leandro Sanca,Spezia Calcio,Right Winger,"Jan 4, 2000",23,Guinea-Bissau,€400k
+665,Ognjen Stijepovic,Spezia Calcio,Second Striker,"Oct 22, 1999",23,Montenegro,€50k
+666,M'Bala Nzola,Spezia Calcio,Centre-Forward,"Aug 18, 1996",26,Angola,€8.00m
+667,Eldor Shomurodov,Spezia Calcio,Centre-Forward,"Jun 29, 1995",28,Uzbekistan,€6.00m
+668,Raimonds Krollis,Spezia Calcio,Centre-Forward,"Oct 28, 2001",21,Latvia,€2.50m
+669,David Strelec,Spezia Calcio,Centre-Forward,"Apr 4, 2001",22,Slovakia,€1.10m
+670,Samuel Mraz,Spezia Calcio,Centre-Forward,"May 13, 1997",26,Slovakia,€600k
+671,Wladimiro Falcone,US Lecce,Goalkeeper,"Apr 12, 1995",28,Italy,€5.00m
+672,Federico Brancolini,US Lecce,Goalkeeper,"Jul 14, 2001",21,Italy,€200k
+673,Marco Bleve,US Lecce,Goalkeeper,"Oct 18, 1995",27,Italy,€150k
+674,Jasper Samooja,US Lecce,Goalkeeper,"Jul 21, 2003",19,Finland,€75k
+675,Federico Baschirotto,US Lecce,Centre-Back,"Sep 20, 1996",26,Italy,€8.00m
+676,Marin Pongracic,US Lecce,Centre-Back,"Sep 11, 1997",25,Croatia,€4.00m
+677,Samuel Umtiti,US Lecce,Centre-Back,"Nov 14, 1993",29,France,€4.00m
+678,Pietro Ceccaroni,US Lecce,Centre-Back,"Dec 21, 1995",27,Italy,€1.60m
+679,Mert Çetin,US Lecce,Centre-Back,"Jan 1, 1997",26,Türkiye,€1.20m
+680,Simone Romagnoli,US Lecce,Centre-Back,"Feb 9, 1990",33,Italy,€750k
+681,Kastriot Dermaku,US Lecce,Centre-Back,"Jan 15, 1992",31,Albania,€400k
+682,Alessandro Tuia,US Lecce,Centre-Back,"Jun 8, 1990",33,Italy,€400k
+683,Mattia Ciucci,US Lecce,Centre-Back,"Nov 11, 2002",20,Italy,€25k
+684,Antonino Gallo,US Lecce,Left-Back,"Jan 5, 2000",23,Italy,€2.50m
+685,Giuseppe Pezzella,US Lecce,Left-Back,"Nov 29, 1997",25,Italy,€2.50m
+686,Gianluca Frabotta,US Lecce,Left-Back,"Jun 24, 1999",24,Italy,€1.40m
+687,Valentin Gendrey,US Lecce,Right-Back,"Jun 21, 2000",23,France,€4.00m
+688,Arturo Calabresi,US Lecce,Right-Back,"Mar 17, 1996",27,Italy,€1.10m
+689,Tommaso Cassandro,US Lecce,Right-Back,"Jan 9, 2000",23,Italy,€900k
+690,Mats Lemmens,US Lecce,Right-Back,"Mar 10, 2002",21,Belgium,€100k
+691,Morten Hjulmand,US Lecce,Defensive Midfield,"Jun 25, 1999",24,Denmark,€15.00m
+692,Alexis Blin,US Lecce,Defensive Midfield,"Sep 16, 1996",26,France,€2.50m
+693,Joan González,US Lecce,Central Midfield,"Feb 1, 2002",21,Spain,€6.00m
+694,Youssef Maleh,US Lecce,Central Midfield,"Aug 22, 1998",24,Morocco,€4.50m
+695,Kristijan Bistrovic,US Lecce,Central Midfield,"Apr 9, 1998",25,Croatia,€2.50m
+696,Kristoffer Askildsen,US Lecce,Central Midfield,"Jan 9, 2001",22,Norway,€2.00m
+697,Daniel Samek,US Lecce,Central Midfield,"Feb 19, 2004",19,Czech Republic,€1.50m
+698,Thórir Jóhann Helgason,US Lecce,Central Midfield,"Sep 28, 2000",22,Iceland,€800k
+699,Medon Berisha,US Lecce,Central Midfield,"Oct 21, 2003",19,Albania,€500k
+700,Rémi Oudin,US Lecce,Attacking Midfield,"Nov 18, 1996",26,France,€4.00m
+701,Lameck Banda,US Lecce,Left Winger,"Jan 29, 2001",22,Zambia,€4.00m
+702,Federico Di Francesco,US Lecce,Left Winger,"Jun 14, 1994",29,Italy,€1.80m
+703,Francesco Di Mariano,US Lecce,Left Winger,"Apr 20, 1996",27,Italy,€1.40m
+704,Marcin Listkowski,US Lecce,Left Winger,"Feb 10, 1998",25,Poland,€300k
+705,Gabriel Strefezza,US Lecce,Right Winger,"Apr 18, 1997",26,Brazil,€10.00m
+706,Pablo Rodríguez,US Lecce,Second Striker,"Aug 4, 2001",21,Spain,€2.00m
+707,Lorenzo Colombo,US Lecce,Centre-Forward,"Mar 8, 2002",21,Italy,€5.00m
+708,Assan Ceesay,US Lecce,Centre-Forward,"Mar 17, 1994",29,The Gambia,€2.50m
+709,Joel Voelkerling Persson,US Lecce,Centre-Forward,"Jan 15, 2003",20,Sweden,€600k
+710,Marco Carnesecchi,US Cremonese,Goalkeeper,"Jul 1, 2000",22,Italy,€13.00m
+711,Andrei Radu,US Cremonese,Goalkeeper,"May 28, 1997",26,Romania,€3.50m
+712,Mouhamadou Sarr,US Cremonese,Goalkeeper,"Jan 5, 1997",26,Senegal,€400k
+713,Gianluca Saro,US Cremonese,Goalkeeper,"Jun 25, 2000",23,Italy,€200k
+714,Dorian Ciezkowski,US Cremonese,Goalkeeper,"Mar 22, 2001",22,Poland,€100k
+715,Johan Vásquez,US Cremonese,Centre-Back,"Oct 22, 1998",24,Mexico,€3.60m
+716,Jack Hendry,US Cremonese,Centre-Back,"May 7, 1995",28,Scotland,€3.00m
+717,Emanuel Aiwu,US Cremonese,Centre-Back,"Dec 25, 2000",22,Austria,€3.00m
+718,Luka Lochoshvili,US Cremonese,Centre-Back,"May 29, 1998",25,Georgia,€1.80m
+719,Luca Ravanelli,US Cremonese,Centre-Back,"Jan 6, 1997",26,Italy,€1.40m
+720,Alex Ferrari,US Cremonese,Centre-Back,"Jul 1, 1994",28,Italy,€1.00m
+721,Vlad Chiricheș,US Cremonese,Centre-Back,"Nov 14, 1989",33,Romania,€900k
+722,Matteo Bianchetti,US Cremonese,Centre-Back,"Mar 17, 1993",30,Italy,€800k
+723,Maissa Ndiaye,US Cremonese,Centre-Back,"Jan 28, 2002",21,Senegal,€300k
+724,Paolo Gardoni,US Cremonese,Centre-Back,"Jan 1, 2004",19,Italy,€25k
+725,Emanuele Valeri,US Cremonese,Left-Back,"Dec 7, 1998",24,Italy,€3.50m
+726,Giacomo Quagliata,US Cremonese,Left-Back,"Feb 19, 2000",23,Italy,€2.00m
+727,Leonardo Sernicola,US Cremonese,Right-Back,"Jul 30, 1997",25,Italy,€2.00m
+728,Paolo Ghiglione,US Cremonese,Right-Back,"Feb 2, 1997",26,Italy,€1.30m
+729,Santiago Ascacíbar,US Cremonese,Defensive Midfield,"Feb 25, 1997",26,Argentina,€6.50m
+730,Charles Pickel,US Cremonese,Defensive Midfield,"May 15, 1997",26,DR Congo,€3.80m
+731,Michele Castagnetti,US Cremonese,Defensive Midfield,"Dec 27, 1989",33,Italy,€700k
+732,Paolo Bartolomei,US Cremonese,Defensive Midfield,"Aug 22, 1989",33,Italy,€250k
+733,Soualiho Meïté,US Cremonese,Central Midfield,"Mar 17, 1994",29,France,€3.50m
+734,Pablo Galdames,US Cremonese,Central Midfield,"Dec 30, 1996",26,Chile,€2.30m
+735,Gonzalo Escalante,US Cremonese,Central Midfield,"Mar 27, 1993",30,Argentina,€2.00m
+736,Marco Benassi,US Cremonese,Central Midfield,"Sep 8, 1994",28,Italy,€1.50m
+737,Tommaso Milanese,US Cremonese,Central Midfield,"Jul 31, 2002",20,Italy,€1.20m
+738,Joshua Tenkorang,US Cremonese,Central Midfield,"May 26, 2000",23,Italy,€200k
+739,Christian Acella,US Cremonese,Central Midfield,"Jul 7, 2002",20,Italy,€150k
+740,Luca Borghesan,US Cremonese,Central Midfield,"Jan 5, 2004",19,Italy,€50k
+741,Jaime Báez,US Cremonese,Left Winger,"Apr 25, 1995",28,Uruguay,€1.20m
+742,Cristian Buonaiuto,US Cremonese,Left Winger,"Dec 29, 1992",30,Italy,€800k
+743,Dennis Politic,US Cremonese,Left Winger,"Mar 5, 2000",23,Romania,€150k
+744,Luca Zanimacchia,US Cremonese,Right Winger,"Jul 19, 1998",24,Italy,€1.80m
+745,Felix Afena-Gyan,US Cremonese,Centre-Forward,"Jan 19, 2003",20,Ghana,€5.00m
+746,Cyriel Dessers,US Cremonese,Centre-Forward,"Dec 8, 1994",28,Nigeria,€5.00m
+747,David Okereke,US Cremonese,Centre-Forward,"Aug 29, 1997",25,Nigeria,€4.00m
+748,Frank Tsadjout,US Cremonese,Centre-Forward,"Jul 28, 1999",23,Italy,€1.20m
+749,Samuel Di Carmine,US Cremonese,Centre-Forward,"Sep 29, 1988",34,Italy,€350k
+750,Daniel Ciofani,US Cremonese,Centre-Forward,"Jul 31, 1985",37,Italy,€200k
+751,Alberto Basso Ricci,US Cremonese,Centre-Forward,"Jun 29, 2004",19,Italy,€100k
+752,Emil Audero,UC Sampdoria,Goalkeeper,"Jan 18, 1997",26,Italy,€6.00m
+753,Nikita Contini,UC Sampdoria,Goalkeeper,"May 21, 1996",27,Italy,€500k
+754,Martin Turk,UC Sampdoria,Goalkeeper,"Aug 21, 2003",19,Slovenia,€400k
+755,Elia Tantalocchi,UC Sampdoria,Goalkeeper,"Jun 30, 2004",19,Italy,€100k
+756,Nicola Ravaglia,UC Sampdoria,Goalkeeper,"Dec 12, 1988",34,Italy,€100k
+757,Federico Zorzi,UC Sampdoria,Goalkeeper,"Mar 6, 2004",19,Italy,€10k
+758,Koray Günter,UC Sampdoria,Centre-Back,"Aug 16, 1994",28,Germany,€3.50m
+759,Omar Colley,UC Sampdoria,Centre-Back,"Oct 24, 1992",30,The Gambia,€3.00m
+760,Bruno Amione,UC Sampdoria,Centre-Back,"Jan 3, 2002",21,Argentina,€2.70m
+761,Maxime Leverbe,UC Sampdoria,Centre-Back,"Feb 15, 1997",26,France,€1.20m
+762,Alex Ferrari,UC Sampdoria,Centre-Back,"Jul 1, 1994",28,Italy,€1.00m
+763,Bram Nuytinck,UC Sampdoria,Centre-Back,"May 4, 1990",33,Netherlands,€1.00m
+764,Jeison Murillo,UC Sampdoria,Centre-Back,"May 27, 1992",31,Colombia,€1.00m
+765,Marios Ikonomou,UC Sampdoria,Centre-Back,"Oct 6, 1992",30,Greece,€300k
+766,Lorenzo Villa,UC Sampdoria,Centre-Back,"Jul 26, 2003",19,Italy,€75k
+767,Arttu Lötjönen,UC Sampdoria,Centre-Back,"Jan 28, 2004",19,Finland,€25k
+768,Tommaso Augello,UC Sampdoria,Left-Back,"Aug 30, 1994",28,Italy,€2.00m
+769,Nicola Murru,UC Sampdoria,Left-Back,"Dec 16, 1994",28,Italy,€1.00m
+770,Alessandro Zanoli,UC Sampdoria,Right-Back,"Oct 3, 2000",22,Italy,€6.00m
+771,Fabio Depaoli,UC Sampdoria,Right-Back,"Apr 24, 1997",26,Italy,€3.00m
+772,Bartosz Bereszyński,UC Sampdoria,Right-Back,"Jul 12, 1992",30,Poland,€1.60m
+773,Andrea Conti,UC Sampdoria,Right-Back,"Mar 2, 1994",29,Italy,€500k
+774,Harry Winks,UC Sampdoria,Defensive Midfield,"Feb 2, 1996",27,England,€10.00m
+775,Tomás Rincón,UC Sampdoria,Defensive Midfield,"Jan 13, 1988",35,Venezuela,€800k
+776,Gerard Yepes,UC Sampdoria,Defensive Midfield,"Aug 25, 2002",20,Spain,€500k
+777,Emirhan İlkhan,UC Sampdoria,Central Midfield,"Jun 1, 2004",19,Türkiye,€4.00m
+778,Michaël Cuisance,UC Sampdoria,Central Midfield,"Aug 16, 1999",23,France,€3.00m
+779,Gonzalo Villar,UC Sampdoria,Central Midfield,"Mar 23, 1998",25,Spain,€2.80m
+780,Ronaldo Vieira,UC Sampdoria,Central Midfield,"Jul 19, 1998",24,England,€2.00m
+781,Flavio Paoletti,UC Sampdoria,Central Midfield,"Jan 16, 2003",20,Italy,€800k
+782,Simone Trimboli,UC Sampdoria,Central Midfield,"Apr 19, 2002",21,Italy,€600k
+783,Telasco Segovia,UC Sampdoria,Central Midfield,"Apr 2, 2003",20,Venezuela,€500k
+784,Antonio Candreva,UC Sampdoria,Right Midfield,"Feb 28, 1987",36,Italy,€1.50m
+785,Lorenzo Malagrida,UC Sampdoria,Left Midfield,"Oct 24, 2003",19,Italy,€400k
+786,Abdelhamid Sabiri,UC Sampdoria,Attacking Midfield,"Nov 28, 1996",26,Morocco,€2.50m
+787,Valerio Verre,UC Sampdoria,Attacking Midfield,"Jan 11, 1994",29,Italy,€1.80m
+788,Filip Djuricic,UC Sampdoria,Attacking Midfield,"Jan 30, 1992",31,Serbia,€1.80m
+789,Jesé,UC Sampdoria,Left Winger,"Feb 26, 1993",30,Spain,€1.00m
+790,Samuel Ntanda,UC Sampdoria,Left Winger,"Jun 30, 2005",18,Belgium,-
+791,Ignacio Pussetto,UC Sampdoria,Right Winger,"Dec 21, 1995",27,Argentina,€2.50m
+792,Mehdi Léris,UC Sampdoria,Right Winger,"May 23, 1998",25,Algeria,€2.50m
+793,Sam Lammers,UC Sampdoria,Centre-Forward,"Apr 30, 1997",26,Netherlands,€2.00m
+794,Manuel De Luca,UC Sampdoria,Centre-Forward,"Jul 17, 1998",24,Italy,€2.00m
+795,Manolo Gabbiadini,UC Sampdoria,Centre-Forward,"Nov 26, 1991",31,Italy,€2.00m
+796,Francesco Caputo,UC Sampdoria,Centre-Forward,"Aug 6, 1987",35,Italy,€1.50m
+797,Daniele Montevago,UC Sampdoria,Centre-Forward,"Mar 18, 2003",20,Italy,€800k
+798,Fabio Quagliarella,UC Sampdoria,Centre-Forward,"Jan 31, 1983",40,Italy,€500k
+799,Mihailo Ivanovic,UC Sampdoria,Centre-Forward,"Nov 29, 2004",18,Serbia,€150k

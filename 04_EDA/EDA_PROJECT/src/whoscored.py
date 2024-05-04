@@ -14,11 +14,11 @@ TEAM_OFFENSIVE_COLUMNS = ['Team_name', 'Shots_OT_pg', 'Dribbles_pg', 'Fouled_pg'
 TEAM_XG_COLUMNS = ['Team_name', 'xG', 'Goals-OG', 'xGDiff', 'Shots', 'xG/shots']
 
 ## excepted : 'Interception', 'Offsides'
-TEAM_DETAILED_SELECT_BOX = ['Tackles', 'Fouls', 'Cards', 'Clearances', 'Blocks', 'Saves', 
-                            'Shots', 'Goals', 'Dribbles', 'Possession loss', 'Aerial',
-                            'Passes', 'Key passes', 'Assists']
+DETAILED_SELECT_BOX = ['Tackles', 'Fouls', 'Cards', 'Clearances', 'Blocks', 'Saves', 
+                       'Shots', 'Goals', 'Dribbles', 'Possession loss', 'Aerial',
+                       'Passes', 'Key passes', 'Assists']
 
-PLAYER_SUMMARY_COLUMNS = ['Player_name', 'Team_name', 'Age', 'Position', 'Apps', 'Mins', 'Goals', 'Assists', 'Yel', 'Red', 'Shots_pg', 'Pass_Success(%)', 'AerialsWon', 'MoM', 'Rating']
+# PLAYER_SUMMARY_COLUMNS = ['Player_name', 'Team_name', 'Age', 'Position', 'Apps', 'Mins', 'Goals', 'Assists', 'Yel', 'Red', 'Shots_pg', 'Pass_Success(%)', 'AerialsWon', 'MoM', 'Rating']
 
 
 def league_table_crawling(url, leagues, seasons, save_dir):
@@ -154,7 +154,7 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
 
                         print(idx, team_name, goal, yellow_cards, red_cards, possession, pass_success, aerial_won_per_game, rating)
                         table_data.append([team_name, goal, yellow_cards, red_cards, possession, pass_success, aerial_won_per_game, rating])
-                    TEAM_summary_df = pd.DataFrame(table_data, columns=TEAM_SUMMARY_COLUMNS)
+                    summary_df = pd.DataFrame(table_data, columns=TEAM_SUMMARY_COLUMNS)
 
 
                 if option_name == 'defensive':
@@ -204,7 +204,7 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
                     select_box = Select(select_element)
 
                     detailed_dfs = []
-                    for curr_selected in TEAM_DETAILED_SELECT_BOX:
+                    for curr_selected in DETAILED_SELECT_BOX:
                         print(curr_selected)
                         select_box.select_by_visible_text(curr_selected)
                         time.sleep(1.5)  # AJAX 로딩 대기
@@ -223,13 +223,13 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
 
                         for idx, column_header in enumerate(column_headers):
                             if column_header == 'Total':
-                                column_headers[idx] = f'{curr_selected}_Total'
+                                column_headers[idx] = f'Total_{curr_selected}'
                             if column_header == 'SixYardBox':
-                                column_headers[idx] = f'{curr_selected}_SixYardBox'
+                                column_headers[idx] = f'SixYardBox_{curr_selected}'
                             if column_header == 'PenaltyArea':
-                                column_headers[idx] = f'{curr_selected}_PenaltyArea'
+                                column_headers[idx] = f'PenaltyArea_{curr_selected}'
                             if column_header == 'OutOfBox':
-                                column_headers[idx] = f'{curr_selected}_OutOfBox'
+                                column_headers[idx] = f'OutOfBox_{curr_selected}'
                 
 
                         tbody = table.find_element(By.TAG_NAME, 'tbody')
@@ -252,7 +252,6 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
                     detailed_df = detailed_dfs[0]
                     for df in detailed_dfs[1:]:
                         detailed_df = detailed_df.merge(df, on='Team_name', how='outer')
-
                 print()
 
             league_df = league_df.merge(summary_df, on='Team_name', how='outer')
@@ -268,7 +267,7 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
 def player_stats_crawling(url, leagues, seasons, save_dir):
     browser = get_webdriver()
     browser.get(url)
-    wait_timer = WebDriverWait(browser, 1.5)
+    wait_timer = WebDriverWait(browser, 3)
 
     try:
         close_ad(browser)
@@ -278,15 +277,15 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
     browser.find_element(By.ID, 'Top-Tournaments-btn').click()
     tournaments = browser.find_elements(By.CLASS_NAME, 'TournamentNavButton-module_clickableArea__ZFnBl')
     league_urls = [tournament.get_attribute('href') for tournament in tournaments]
-
     for league_url in league_urls:
         league_name = league_url.split('/')[-1]
 
         if league_name in leagues:
             print(league_name, league_url)
-            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams.csv')
-
             browser.get(league_url)
+
+            curr_save_dir = f"{save_dir}/{league_name}"
+            make_dir(curr_save_dir)
 
             select_box = Select(browser.find_element(By.ID,'seasons'))
             select_box.select_by_visible_text(seasons[0])
@@ -302,11 +301,12 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
             team_stat_btn = nav_items[3]
             team_stat_btn.click()
 
+            data_frames = []
             options = browser.find_element(By.ID, 'stage-top-player-stats-options').find_elements(By.TAG_NAME, 'li')
-            for option in options:
+            for option in options[:-1]:
                 option_name = option.text.lower()
+                print(option_name)
                 option.click()
-                # time.sleep(1.5)
 
                 grid_container = browser.find_element(By.ID, f'statistics-mini-filter-{option_name}')
                 grid_toolbar = grid_container.find_element(By.CLASS_NAME, 'grid-toolbar')
@@ -314,51 +314,213 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
                 grid_btns = grid_apps.find_elements(By.TAG_NAME, 'dd')
                 target_btn = grid_btns[1].find_element(By.TAG_NAME, 'a')
                 target_btn.click()
-                time.sleep(2)
+                time.sleep(3)
 
                 paging_container = browser.find_element(By.ID, f'statistics-paging-{option_name}')
                 current_page = int(paging_container.find_element(By.ID, "currentPage").get_attribute('value'))
-                total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value')) + 1
-                # print(current_page, total_pages)
+                # total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
+                total_pages = 2
+
+                container = browser.find_element(By.ID, f'statistics-table-{option_name}')
+                thead = container.find_element(By.TAG_NAME, 'thead')
+                columns = thead.find_elements(By.TAG_NAME, 'th')
+                columns = [column.text.strip() for column in columns[1:]]
+                columns[0] = 'Player_name'
+
+                if option_name == 'summary':
+                    columns.insert(1, 'Team_name')
+                    columns.insert(2, 'Age')
+                    columns.insert(3, 'Positions')
+                    columns[10] = 'Shoots_pg'
+                    columns[11] = 'Pass_success(%)'
+                else:
+                    columns.pop(-1) ## Rating 제외
+                    columns.pop(1)
+                    columns.pop(1)
+
+                if option_name == 'defensive':
+                    columns[2] = 'Interceptions'
+                    columns[6] = 'Dribbled_past_pg'
+                elif option_name == 'offensive':
+                    columns[3] = 'Shots_pg'
+                    columns[4] = 'KeyPasses_pg'
+                    columns[5] = 'Dribbles_pg'
+                    columns[7] = 'Offsides_pg'
+                    columns[8] = 'Dispossessed_pg'
+                    columns[9] = 'Bad_Controls_pg'
+                elif option_name == 'passing':
+                    columns[2] = 'KeyPasses_pg'
+                    columns[3] = 'Passes_pg'
+                    columns[4] = 'Pass_success(%)'
+                    columns[5] = 'Crosses_pg'
+                    columns[6] = 'Long_pass_pg'
+                    columns[7] = 'Through_pass_pg'
+                elif option_name == 'xg':
+                    columns[3] = 'Goals-xG'
+                    columns[4] = 'xG_per_90m'
+                    columns[5] = 'Total_shots'
+                    columns[6] = 'xG_per_total_shots'
+
+                print(columns)
 
                 total_page_data = []
-                container = browser.find_element(By.ID, f'statistics-table-{option_name}')
-                while current_page < total_pages:
-                    time.sleep(1.5)
+                while current_page <= total_pages:
+                    time.sleep(3)
                     table = container.find_element(By.TAG_NAME, 'table')
                     table_body = table.find_element(By.TAG_NAME, 'tbody')
                     rows = table_body.find_elements(By.TAG_NAME, 'tr')
+                    for row in rows:
+                        row_idx = row.find_element(By.CLASS_NAME, 'table-ranking').text.strip()
+                        spans = row.find_elements(By.TAG_NAME, 'span')
+                        player_name = spans[0].text.strip()
+                        row_data = [player_name]
 
-                    if option_name == 'summary':
-                        for row in rows:
-                            row_idx = row.find_element(By.CLASS_NAME, 'table-ranking').text.strip()
-                            spans = row.find_elements(By.TAG_NAME, 'span')
-                            player_name = spans[0].text.strip()
+                        if option_name == 'summary':
                             team_name = spans[2].text.strip()[:-1]
                             age = spans[4].text.strip()
                             positions = spans[5].text.split(',', 1)[1].strip()
-                            row_data = [player_name, team_name, age, positions]
+                            row_data.extend([team_name, age, positions])
 
-                            tds = row.find_elements(By.TAG_NAME, 'td')[2:]
-                            tds = [td.text.strip() for td in tds]
-                            tds = ['0' if x == '-' else x for x in tds]
-                            row_data.extend(tds)
+                        tds = row.find_elements(By.TAG_NAME, 'td')[2:]
+                        tds = [td.text.strip() for td in tds]
+                        tds = ['0' if x == '-' else x for x in tds]
 
-                            total_page_data.append(row_data)
-                            print(row_idx, ', '.join(row_data))
+                        if option_name != 'summary':
+                            tds.pop(0)
+                            tds.pop(0)
+                            tds.pop(-1) ## Rating 제외
+
+                        row_data.extend(tds)
+                        total_page_data.append(row_data)
+                        print(row_idx, ', '.join(row_data))
 
                     grid_toolbar = browser.find_element(By.ID, f'statistics-paging-{option.text.lower()}').find_element(By.CLASS_NAME, 'grid-toolbar')
                     rigth_box = grid_toolbar.find_element(By.CLASS_NAME, 'right')
                     next_button = rigth_box.find_element(By.ID, "next")
                     if next_button.is_enabled():
                         next_button.click()
-                        current_page += 1              
+                        current_page += 1  
+                        
+                print()
+                df = pd.DataFrame(total_page_data, columns=columns)
+                data_frames.append(df)
 
-                if option_name == "summary":
-                    df = pd.DataFrame(total_page_data, columns=PLAYER_SUMMARY_COLUMNS)
-                    df.to_csv('/Users/pervin0527/EDA_PROJECT/test.csv', index=False)
-                
-                break
-            break
-        break
+            ## 병합 전 중복 컬럼 제거
+            final_df = data_frames[0]
+            for df in data_frames[1:]:
+                overlapping_columns = final_df.columns.intersection(df.columns)
+                overlapping_columns = overlapping_columns.drop('Player_name')  ## Player_name 제외한 중복 컬럼들
+                df.drop(columns=overlapping_columns, inplace=True)
+                final_df = pd.merge(final_df, df, on='Player_name', how='outer')
+
+            final_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players.csv', index=False)
+    browser.close()
+
+
+def player_detail_stats_crawling(url, leagues, seasons, save_dir):
+    browser = get_webdriver()
+    browser.get(url)
+    wait_timer = WebDriverWait(browser, 5)
+
+    try:
+        close_ad(browser)
+    except:
+        pass
+
+    browser.find_element(By.ID, 'Top-Tournaments-btn').click()
+    tournaments = browser.find_elements(By.CLASS_NAME, 'TournamentNavButton-module_clickableArea__ZFnBl')
+    league_urls = [tournament.get_attribute('href') for tournament in tournaments]
+
+    for league_url in league_urls:
+        league_name = league_url.split('/')[-1]
+
+        if league_name in leagues:
+            print(league_name, league_url)
+            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players.csv')
+            browser.get(league_url)
+            time.sleep(2)
+
+            select_box = Select(browser.find_element(By.ID,'seasons'))
+            select_box.select_by_visible_text(seasons[0])
+
+            if league_name == 'Italy-Serie-A':
+                select_element = wait_timer.until(EC.element_to_be_clickable((By.ID, 'stages')))
+                select_box = Select(select_element)
+                select_box.select_by_visible_text("Serie A")  
+            
+            time.sleep(2)
+            main_container = browser.find_element(By.CLASS_NAME, 'main-content-column')
+            sub_nav = main_container.find_element(By.ID, 'sub-navigation')
+            nav_items = sub_nav.find_elements(By.TAG_NAME, 'li')
+            team_stat_btn = nav_items[3]
+            team_stat_btn.click()
+
+            option = browser.find_element(By.ID, 'stage-top-player-stats-options').find_elements(By.TAG_NAME, 'li')[-1]
+            option.click()
+
+            select_element = wait_timer.until(EC.element_to_be_clickable((By.ID, 'category')))
+            select_box = Select(select_element)
+
+            detailed_dfs = []
+            for curr_selected in DETAILED_SELECT_BOX:
+                print(curr_selected)
+                select_box.select_by_visible_text(curr_selected)
+                time.sleep(3)  # AJAX 로딩 대기
+
+                container = browser.find_element(By.ID, 'statistics-table-detailed')
+                table = container.find_element(By.ID, 'top-player-stats-summary-grid')
+
+                thead = table.find_element(By.TAG_NAME, 'thead')
+                column_headers = thead.find_elements(By.TAG_NAME, 'th')[1:-1]
+                column_headers = [column.text.strip() for column in column_headers]
+                column_headers[0] = 'Player_name'
+                column_headers.pop(1)
+                column_headers.pop(1)
+
+                for idx, column_header in enumerate(column_headers):
+                    if column_header == 'Total':
+                        column_headers[idx] = f'Total_{curr_selected}'
+                    if column_header == 'SixYardBox':
+                        column_headers[idx] = f'SixYardBox_{curr_selected}'
+                    if column_header == 'PenaltyArea':
+                        column_headers[idx] = f'PenaltyArea_{curr_selected}'
+                    if column_header == 'OutOfBox':
+                        column_headers[idx] = f'OutOfBox_{curr_selected}'
+                print(column_headers)
+
+                table_data = []
+                current_page = 1
+                total_pages = 2
+                # total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
+                while current_page <= total_pages:
+                    time.sleep(3)
+                    table = container.find_element(By.ID, 'top-player-stats-summary-grid')
+                    tbody = table.find_element(By.TAG_NAME, 'tbody')
+                    rows = tbody.find_elements(By.TAG_NAME, 'tr')
+                    for row in rows:
+                        player_name = row.find_element(By.CLASS_NAME, 'iconize').text.strip()
+                        tds = [cell.text.strip() for cell in row.find_elements(By.TAG_NAME, 'td')[4:-1]]
+                        tds = ['0' if x == '-' else x for x in tds]
+
+                        data_row = [player_name] + tds
+                        print(', '.join(data_row))
+                        table_data.append(data_row)
+
+                    grid_toolbar = browser.find_element(By.ID, f'statistics-paging-{option.text.lower()}').find_element(By.CLASS_NAME, 'grid-toolbar')
+                    rigth_box = grid_toolbar.find_element(By.CLASS_NAME, 'right')
+                    next_button = rigth_box.find_element(By.ID, "next")
+                    if next_button.is_enabled():
+                        next_button.click()
+                        current_page += 1  
+
+                print()                
+                category_df = pd.DataFrame(table_data, columns=column_headers)
+                detailed_dfs.append(category_df)
+
+            detailed_df = detailed_dfs[0]
+            for df in detailed_dfs[1:]:
+                detailed_df = detailed_df.merge(df, on='Player_name', how='outer')
+
+            league_df = league_df.merge(detailed_df, on="Player_name", how='outer')
+            league_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-test.csv', index=False)
     browser.close()

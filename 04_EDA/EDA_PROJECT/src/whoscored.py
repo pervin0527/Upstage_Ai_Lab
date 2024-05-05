@@ -6,15 +6,14 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from src.utils import get_webdriver, close_ad, make_dir
+from src.utils import get_webdriver, close_ad, make_dir, map_positions, split_positions, team_name_mapper
 
 TEAM_SUMMARY_COLUMNS = ['Team_name', 'Goals', 'Yellow_cards', 'Red_cards', 'Possessions(%)', 'Pass_Success(%)', 'A_Won', 'Rating']
 TEAM_DEFENSIVE_COLUMNS = ['Team_name', 'Shot_allowed', 'Tackles_pg', 'Intercept_pg', 'Fouls_pg', 'Offsides_pg']
 TEAM_OFFENSIVE_COLUMNS = ['Team_name', 'Shots_OT_pg', 'Dribbles_pg', 'Fouled_pg']
 TEAM_XG_COLUMNS = ['Team_name', 'xG', 'Goals-OG', 'xGDiff', 'Shots', 'xG/shots']
 
-## excepted : 'Interception', 'Offsides'
-DETAILED_SELECT_BOX = ['Tackles', 'Fouls', 'Cards', 'Clearances', 'Blocks', 'Saves', 
+DETAILED_SELECT_BOX = ['Tackles', 'Interception', 'Fouls', 'Cards', 'Offsides', 'Clearances', 'Blocks', 'Saves', 
                        'Shots', 'Goals', 'Dribbles', 'Possession loss', 'Aerial',
                        'Passes', 'Key passes', 'Assists']
 
@@ -79,7 +78,7 @@ def league_table_crawling(url, leagues, seasons, save_dir):
                 dataset.append([team_name, num_matches, num_win, num_draw, num_lose, goal_for, goal_against, goal_difference, points])
             
             team_table_df = pd.DataFrame(dataset, columns=columns)
-            team_table_df.to_csv(f"{curr_save_dir}/{league_name}-{seasons[0].replace('/', '_')}-teams.csv", index=False)
+            team_table_df.to_csv(f"{curr_save_dir}/{league_name}-{seasons[0].replace('/', '_')}-teams-stats.csv", index=False)
             print()
     
     browser.close()
@@ -104,7 +103,7 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
 
         if league_name in leagues:
             print(league_name, league_url)
-            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams.csv')
+            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams-stats.csv')
 
             browser.get(league_url)
 
@@ -259,7 +258,7 @@ def team_stats_crawling(url, leagues, seasons, save_dir):
             league_df = league_df.merge(offensive_df, on='Team_name', how='outer')
             league_df = league_df.merge(xg_df, on='Team_name', how='outer')
             league_df = league_df.merge(detailed_df, on='Team_name', how='outer')
-            league_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams.csv', index=False)
+            league_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams-stats.csv', index=False)
 
     browser.close()
 
@@ -318,8 +317,8 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
 
                 paging_container = browser.find_element(By.ID, f'statistics-paging-{option_name}')
                 current_page = int(paging_container.find_element(By.ID, "currentPage").get_attribute('value'))
-                # total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
-                total_pages = 2
+                total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
+                # total_pages = 2
 
                 container = browser.find_element(By.ID, f'statistics-table-{option_name}')
                 thead = container.find_element(By.TAG_NAME, 'thead')
@@ -365,7 +364,7 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
 
                 total_page_data = []
                 while current_page <= total_pages:
-                    time.sleep(3)
+                    time.sleep(5)
                     table = container.find_element(By.TAG_NAME, 'table')
                     table_body = table.find_element(By.TAG_NAME, 'tbody')
                     rows = table_body.find_elements(By.TAG_NAME, 'tr')
@@ -413,7 +412,7 @@ def player_stats_crawling(url, leagues, seasons, save_dir):
                 df.drop(columns=overlapping_columns, inplace=True)
                 final_df = pd.merge(final_df, df, on='Player_name', how='outer')
 
-            final_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players.csv', index=False)
+            final_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-stats.csv', index=False)
     browser.close()
 
 
@@ -436,7 +435,7 @@ def player_detail_stats_crawling(url, leagues, seasons, save_dir):
 
         if league_name in leagues:
             print(league_name, league_url)
-            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players.csv')
+            league_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-stats.csv')
             browser.get(league_url)
             time.sleep(2)
 
@@ -457,6 +456,7 @@ def player_detail_stats_crawling(url, leagues, seasons, save_dir):
 
             option = browser.find_element(By.ID, 'stage-top-player-stats-options').find_elements(By.TAG_NAME, 'li')[-1]
             option.click()
+            time.sleep(3)
 
             select_element = wait_timer.until(EC.element_to_be_clickable((By.ID, 'category')))
             select_box = Select(select_element)
@@ -466,6 +466,18 @@ def player_detail_stats_crawling(url, leagues, seasons, save_dir):
                 print(curr_selected)
                 select_box.select_by_visible_text(curr_selected)
                 time.sleep(3)  # AJAX 로딩 대기
+
+                paging_container = browser.find_element(By.ID, f'statistics-paging-detailed')
+                current_page = int(paging_container.find_element(By.ID, "currentPage").get_attribute('value'))
+                total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
+                # total_pages = 2
+
+                if current_page != 1:
+                    grid_toolbar = browser.find_element(By.ID, f'statistics-paging-{option.text.lower()}').find_element(By.CLASS_NAME, 'grid-toolbar')
+                    rigth_box = grid_toolbar.find_element(By.CLASS_NAME, 'right')
+                    first_button = rigth_box.find_element(By.ID, "next")
+                    if first_button.is_enabled():
+                        first_button.click()
 
                 container = browser.find_element(By.ID, 'statistics-table-detailed')
                 table = container.find_element(By.ID, 'top-player-stats-summary-grid')
@@ -489,11 +501,8 @@ def player_detail_stats_crawling(url, leagues, seasons, save_dir):
                 print(column_headers)
 
                 table_data = []
-                current_page = 1
-                total_pages = 2
-                # total_pages = int(paging_container.find_element(By.ID, "totalPages").get_attribute('value'))
                 while current_page <= total_pages:
-                    time.sleep(3)
+                    time.sleep(4)
                     table = container.find_element(By.ID, 'top-player-stats-summary-grid')
                     tbody = table.find_element(By.TAG_NAME, 'tbody')
                     rows = tbody.find_elements(By.TAG_NAME, 'tr')
@@ -522,5 +531,38 @@ def player_detail_stats_crawling(url, leagues, seasons, save_dir):
                 detailed_df = detailed_df.merge(df, on='Player_name', how='outer')
 
             league_df = league_df.merge(detailed_df, on="Player_name", how='outer')
-            league_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-test.csv', index=False)
+            league_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-stats-full.csv', index=False)
     browser.close()
+
+
+def clearing(leagues, seasons, save_dir):
+    for league_name in leagues:
+        print(league_name)
+        team_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-teams-stats.csv')
+        player_df = pd.read_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-stats.csv')
+
+        ## 중복제거
+        player_df.drop_duplicates(subset=['Player_name', 'Team_name'], keep='first', inplace=True)
+
+        ## 포지션 세분화
+        unique_positions_set = set()
+        unique_positions = player_df['Positions'].unique()
+        unique_positions_set.update(unique_positions)
+        player_df['Positions'] = player_df['Positions'].apply(map_positions)
+
+        position_words = set()
+        for position in unique_positions_set:
+            parts = position.split(',')
+            for part in parts:
+                cleaned_part = part.strip()
+                position_words.add(cleaned_part)
+        print(list(position_words))
+
+        player_df = split_positions(player_df)
+
+        ## teams_df와 players_df의 팀명 통일
+        mapping_dict = team_name_mapper(player_df, team_df)
+        player_df['Team_name'] = player_df['Team_name'].map(mapping_dict)
+
+        ## 저장
+        player_df.to_csv(f'{save_dir}/{league_name}/{league_name}-{seasons[0].replace("/", "_")}-players-stats-cleaned.csv', index=False)

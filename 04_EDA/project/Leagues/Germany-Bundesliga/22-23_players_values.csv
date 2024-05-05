@@ -1,646 +1,646 @@
-,Name,Team,Position,Date of Birth,Age,Nationality,Market Value
-0,Manuel Neuer,Bayern Munich,Goalkeeper,"Mar 27, 1986",37,Germany,€7.00m
-1,Yann Sommer,Bayern Munich,Goalkeeper,"Dec 17, 1988",34,Switzerland,€5.00m
-2,Sven Ulreich,Bayern Munich,Goalkeeper,"Aug 3, 1988",34,Germany,€700k
-3,Johannes Schenk,Bayern Munich,Goalkeeper,"Jan 13, 2003",20,Germany,€300k
-4,Matthijs de Ligt,Bayern Munich,Centre-Back,"Aug 12, 1999",23,Netherlands,€75.00m
-5,Dayot Upamecano,Bayern Munich,Centre-Back,"Oct 27, 1998",24,France,€60.00m
-6,Benjamin Pavard,Bayern Munich,Centre-Back,"Mar 28, 1996",27,France,€40.00m
-7,Josip Stanisic,Bayern Munich,Centre-Back,"Apr 2, 2000",23,Croatia,€12.00m
-8,Tanguy Nianzou,Bayern Munich,Centre-Back,"Jun 7, 2002",21,France,€7.50m
-9,Daley Blind,Bayern Munich,Centre-Back,"Mar 9, 1990",33,Netherlands,€3.00m
-10,Justin Janitzek,Bayern Munich,Centre-Back,"Feb 10, 2004",19,Germany,€500k
-11,Liam Morrison,Bayern Munich,Centre-Back,"Apr 7, 2003",20,Scotland,€300k
-12,Gabriel Marusic,Bayern Munich,Centre-Back,"Mar 3, 2003",20,Croatia,€150k
-13,Alphonso Davies,Bayern Munich,Left-Back,"Nov 2, 2000",22,Canada,€70.00m
-14,Lucas Hernández,Bayern Munich,Left-Back,"Feb 14, 1996",27,France,€45.00m
-15,Joshua Kimmich,Bayern Munich,Right-Back,"Feb 8, 1995",28,Germany,€75.00m
-16,João Cancelo,Bayern Munich,Right-Back,"May 27, 1994",29,Portugal,€50.00m
-17,Noussair Mazraoui,Bayern Munich,Right-Back,"Nov 14, 1997",25,Morocco,€28.00m
-18,Bouna Sarr,Bayern Munich,Right-Back,"Jan 31, 1992",31,Senegal,€2.00m
-19,Aleksandar Pavlovic,Bayern Munich,Defensive Midfield,"May 3, 2004",19,Germany,-
-20,Leon Goretzka,Bayern Munich,Central Midfield,"Feb 6, 1995",28,Germany,€45.00m
-21,Ryan Gravenberch,Bayern Munich,Central Midfield,"May 16, 2002",21,Netherlands,€30.00m
-22,Marcel Sabitzer,Bayern Munich,Central Midfield,"Mar 17, 1994",29,Austria,€20.00m
-23,Jamal Musiala,Bayern Munich,Attacking Midfield,"Feb 26, 2003",20,Germany,€110.00m
-24,Paul Wanner,Bayern Munich,Attacking Midfield,"Dec 23, 2005",17,Germany,€3.00m
-25,Kingsley Coman,Bayern Munich,Left Winger,"Jun 13, 1996",27,France,€65.00m
-26,Sadio Mané,Bayern Munich,Left Winger,"Apr 10, 1992",31,Senegal,€25.00m
-27,Mathys Tel,Bayern Munich,Left Winger,"Apr 27, 2005",18,France,€20.00m
-28,Gabriel Vidovic,Bayern Munich,Left Winger,"Dec 1, 2003",19,Croatia,€2.50m
-29,Arijon Ibrahimovic,Bayern Munich,Left Winger,"Dec 11, 2005",17,Germany,€1.00m
-30,Leroy Sané,Bayern Munich,Right Winger,"Jan 11, 1996",27,Germany,€65.00m
-31,Serge Gnabry,Bayern Munich,Right Winger,"Jul 14, 1995",27,Germany,€55.00m
-32,Thomas Müller,Bayern Munich,Second Striker,"Sep 13, 1989",33,Germany,€12.00m
-33,Joshua Zirkzee,Bayern Munich,Centre-Forward,"May 22, 2001",22,Netherlands,€9.00m
-34,Eric-Maxim Choupo-Moting,Bayern Munich,Centre-Forward,"Mar 23, 1989",34,Cameroon,€5.00m
-35,Gregor Kobel,Borussia Dortmund,Goalkeeper,"Dec 6, 1997",25,Switzerland,€35.00m
-36,Marcel Lotka,Borussia Dortmund,Goalkeeper,"May 25, 2001",22,Germany,€1.50m
-37,Alexander Meyer,Borussia Dortmund,Goalkeeper,"Apr 13, 1991",32,Germany,€1.00m
-38,Luca Unbehaun,Borussia Dortmund,Goalkeeper,"Feb 27, 2001",22,Germany,€650k
-39,Silas Ostrzinski,Borussia Dortmund,Goalkeeper,"Nov 19, 2003",19,Germany,€150k
-40,Nico Schlotterbeck,Borussia Dortmund,Centre-Back,"Dec 1, 1999",23,Germany,€40.00m
-41,Niklas Süle,Borussia Dortmund,Centre-Back,"Sep 3, 1995",27,Germany,€35.00m
-42,Mats Hummels,Borussia Dortmund,Centre-Back,"Dec 16, 1988",34,Germany,€6.00m
-43,Soumaïla Coulibaly,Borussia Dortmund,Centre-Back,"Oct 14, 2003",19,France,€1.00m
-44,Antonios Papadopoulos,Borussia Dortmund,Centre-Back,"Sep 10, 1999",23,Germany,€600k
-45,Raphaël Guerreiro,Borussia Dortmund,Left-Back,"Dec 22, 1993",29,Portugal,€20.00m
-46,Tom Rothe,Borussia Dortmund,Left-Back,"Oct 29, 2004",18,Germany,€3.50m
-47,Nico Schulz,Borussia Dortmund,Left-Back,"Apr 1, 1993",30,Germany,€1.00m
-48,Julian Ryerson,Borussia Dortmund,Right-Back,"Nov 17, 1997",25,Norway,€13.00m
-49,Marius Wolf,Borussia Dortmund,Right-Back,"May 27, 1995",28,Germany,€10.00m
-50,Thomas Meunier,Borussia Dortmund,Right-Back,"Sep 12, 1991",31,Belgium,€5.00m
-51,Felix Passlack,Borussia Dortmund,Right-Back,"May 29, 1998",25,Germany,€1.50m
-52,Mateu Morey,Borussia Dortmund,Right-Back,"Mar 2, 2000",23,Spain,€1.00m
-53,Emre Can,Borussia Dortmund,Defensive Midfield,"Jan 12, 1994",29,Germany,€14.00m
-54,Salih Özcan,Borussia Dortmund,Defensive Midfield,"Jan 11, 1998",25,Türkiye,€13.00m
-55,Abdoulaye Kamara,Borussia Dortmund,Defensive Midfield,"Nov 6, 2004",18,France,€1.00m
-56,Mahmoud Dahoud,Borussia Dortmund,Central Midfield,"Jan 1, 1996",27,Syria,€12.00m
-57,Jude Bellingham,Borussia Dortmund,Attacking Midfield,"Jun 29, 2003",20,England,€120.00m
-58,Julian Brandt,Borussia Dortmund,Attacking Midfield,"May 2, 1996",27,Germany,€40.00m
-59,Giovanni Reyna,Borussia Dortmund,Attacking Midfield,"Nov 13, 2002",20,United States,€25.00m
-60,Marco Reus,Borussia Dortmund,Attacking Midfield,"May 31, 1989",34,Germany,€7.00m
-61,Göktan Gürpüz,Borussia Dortmund,Attacking Midfield,"Jan 22, 2003",20,Türkiye,€300k
-62,Karim Adeyemi,Borussia Dortmund,Left Winger,"Jan 18, 2002",21,Germany,€40.00m
-63,Jamie Bynoe-Gittens,Borussia Dortmund,Left Winger,"Aug 8, 2004",18,England,€14.00m
-64,Thorgan Hazard,Borussia Dortmund,Left Winger,"Mar 29, 1993",30,Belgium,€7.00m
-65,Donyell Malen,Borussia Dortmund,Right Winger,"Jan 19, 1999",24,Netherlands,€28.00m
-66,Julien Duranville,Borussia Dortmund,Right Winger,"May 5, 2006",17,Belgium,€8.50m
-67,Justin Njinmah,Borussia Dortmund,Right Winger,"Nov 15, 2000",22,Germany,€800k
-68,Marco Pasalic,Borussia Dortmund,Right Winger,"Sep 14, 2000",22,Croatia,€350k
-69,Sébastien Haller,Borussia Dortmund,Centre-Forward,"Jun 22, 1994",29,Cote d'Ivoire,€30.00m
-70,Youssoufa Moukoko,Borussia Dortmund,Centre-Forward,"Nov 20, 2004",18,Germany,€30.00m
-71,Anthony Modeste,Borussia Dortmund,Centre-Forward,"Apr 14, 1988",35,France,€700k
-72,Péter Gulácsi,RB Leipzig,Goalkeeper,"May 6, 1990",33,Hungary,€5.00m
-73,Janis Blaswich,RB Leipzig,Goalkeeper,"May 2, 1991",32,Germany,€2.50m
-74,Ørjan Nyland,RB Leipzig,Goalkeeper,"Sep 10, 1990",32,Norway,€600k
-75,Jonas Nickisch,RB Leipzig,Goalkeeper,"May 21, 2004",19,Germany,€200k
-76,Timo Schlieck,RB Leipzig,Goalkeeper,"Mar 2, 2006",17,Germany,€200k
-77,Oskar Preil,RB Leipzig,Goalkeeper,"Sep 14, 2003",19,Germany,€100k
-78,Josko Gvardiol,RB Leipzig,Centre-Back,"Jan 23, 2002",21,Croatia,€75.00m
-79,Mohamed Simakan,RB Leipzig,Centre-Back,"May 3, 2000",23,France,€25.00m
-80,Lukas Klostermann,RB Leipzig,Centre-Back,"Jun 3, 1996",27,Germany,€12.00m
-81,Willi Orbán,RB Leipzig,Centre-Back,"Nov 3, 1992",30,Hungary,€10.00m
-82,Abdou Diallo,RB Leipzig,Centre-Back,"May 4, 1996",27,Senegal,€10.00m
-83,Marcel Halstenberg,RB Leipzig,Centre-Back,"Sep 27, 1991",31,Germany,€3.50m
-84,David Raum,RB Leipzig,Left-Back,"Apr 22, 1998",25,Germany,€14.00m
-85,Sanoussy Ba,RB Leipzig,Left-Back,"Jan 5, 2004",19,Germany,€500k
-86,Benjamin Henrichs,RB Leipzig,Right-Back,"Feb 23, 1997",26,Germany,€15.00m
-87,Hugo Novoa,RB Leipzig,Right-Back,"Jan 24, 2003",20,Spain,€4.30m
-88,Dominik Szoboszlai,RB Leipzig,Central Midfield,"Oct 25, 2000",22,Hungary,€50.00m
-89,Konrad Laimer,RB Leipzig,Central Midfield,"May 27, 1997",26,Austria,€28.00m
-90,Xaver Schlager,RB Leipzig,Central Midfield,"Sep 28, 1997",25,Austria,€22.00m
-91,Amadou Haidara,RB Leipzig,Central Midfield,"Jan 31, 1998",25,Mali,€17.00m
-92,Kevin Kampl,RB Leipzig,Central Midfield,"Oct 9, 1990",32,Slovenia,€3.50m
-93,Christopher Nkunku,RB Leipzig,Attacking Midfield,"Nov 14, 1997",25,France,€80.00m
-94,Dani Olmo,RB Leipzig,Attacking Midfield,"May 7, 1998",25,Spain,€40.00m
-95,Emil Forsberg,RB Leipzig,Attacking Midfield,"Oct 23, 1991",31,Sweden,€7.00m
-96,Caden Clark,RB Leipzig,Attacking Midfield,"May 27, 2003",20,United States,€2.00m
-97,Timo Werner,RB Leipzig,Centre-Forward,"Mar 6, 1996",27,Germany,€25.00m
-98,André Silva,RB Leipzig,Centre-Forward,"Nov 6, 1995",27,Portugal,€15.00m
-99,Alexander Sørloth,RB Leipzig,Centre-Forward,"Dec 5, 1995",27,Norway,€12.00m
-100,Yussuf Poulsen,RB Leipzig,Centre-Forward,"Jun 15, 1994",29,Denmark,€7.00m
-101,Lukas Hradecky,Bayer 04 Leverkusen,Goalkeeper,"Nov 24, 1989",33,Finland,€2.50m
-102,Patrick Pentz,Bayer 04 Leverkusen,Goalkeeper,"Jan 2, 1997",26,Austria,€1.50m
-103,Andrey Lunev,Bayer 04 Leverkusen,Goalkeeper,"Nov 13, 1991",31,Russia,€1.20m
-104,Niklas Lomb,Bayer 04 Leverkusen,Goalkeeper,"Jul 28, 1993",29,Germany,€250k
-105,Maximilian Neutgens,Bayer 04 Leverkusen,Goalkeeper,"Mar 3, 2004",19,Germany,-
-106,Piero Hincapié,Bayer 04 Leverkusen,Centre-Back,"Jan 9, 2002",21,Ecuador,€35.00m
-107,Edmond Tapsoba,Bayer 04 Leverkusen,Centre-Back,"Feb 2, 1999",24,Burkina Faso,€30.00m
-108,Jonathan Tah,Bayer 04 Leverkusen,Centre-Back,"Feb 11, 1996",27,Germany,€20.00m
-109,Odilon Kossounou,Bayer 04 Leverkusen,Centre-Back,"Jan 4, 2001",22,Cote d'Ivoire,€18.00m
-110,Madi Monamay,Bayer 04 Leverkusen,Centre-Back,"Apr 6, 2006",17,Belgium,-
-111,Daley Sinkgraven,Bayer 04 Leverkusen,Left-Back,"Jul 4, 1995",27,Netherlands,€2.50m
-112,Timothy Fosu-Mensah,Bayer 04 Leverkusen,Right-Back,"Jan 2, 1998",25,Netherlands,€2.00m
-113,Robert Andrich,Bayer 04 Leverkusen,Defensive Midfield,"Sep 22, 1994",28,Germany,€11.00m
-114,Noah Mbamba,Bayer 04 Leverkusen,Defensive Midfield,"Jan 5, 2005",18,Belgium,€3.00m
-115,Ayman Azhil,Bayer 04 Leverkusen,Defensive Midfield,"Apr 10, 2001",22,Morocco,€400k
-116,Joshua Eze,Bayer 04 Leverkusen,Defensive Midfield,"Mar 20, 2003",20,Germany,€150k
-117,Leon Köhl,Bayer 04 Leverkusen,Defensive Midfield,"Feb 17, 2004",19,Germany,-
-118,Exequiel Palacios,Bayer 04 Leverkusen,Central Midfield,"Oct 5, 1998",24,Argentina,€22.00m
-119,Kerem Demirbay,Bayer 04 Leverkusen,Central Midfield,"Jul 3, 1993",29,Germany,€6.00m
-120,Nadiem Amiri,Bayer 04 Leverkusen,Central Midfield,"Oct 27, 1996",26,Germany,€6.00m
-121,Charles Aránguiz,Bayer 04 Leverkusen,Central Midfield,"Apr 17, 1989",34,Chile,€3.50m
-122,Zidan Sertdemir,Bayer 04 Leverkusen,Central Midfield,"Feb 4, 2005",18,Denmark,€1.00m
-123,Jeremie Frimpong,Bayer 04 Leverkusen,Right Midfield,"Dec 10, 2000",22,Netherlands,€40.00m
-124,Mitchel Bakker,Bayer 04 Leverkusen,Left Midfield,"Jun 20, 2000",23,Netherlands,€9.00m
-125,Florian Wirtz,Bayer 04 Leverkusen,Attacking Midfield,"May 3, 2003",20,Germany,€85.00m
-126,Ayman Aourir,Bayer 04 Leverkusen,Attacking Midfield,"Oct 6, 2004",18,Morocco,-
-127,Amine Adli,Bayer 04 Leverkusen,Left Winger,"May 10, 2000",23,Morocco,€20.00m
-128,Callum Hudson-Odoi,Bayer 04 Leverkusen,Left Winger,"Nov 7, 2000",22,England,€15.00m
-129,Paulinho,Bayer 04 Leverkusen,Left Winger,"Jul 15, 2000",22,Brazil,€7.50m
-130,Moussa Diaby,Bayer 04 Leverkusen,Right Winger,"Jul 7, 1999",23,France,€50.00m
-131,Karim Bellarabi,Bayer 04 Leverkusen,Right Winger,"Apr 8, 1990",33,Germany,€1.50m
-132,Patrik Schick,Bayer 04 Leverkusen,Centre-Forward,"Jan 24, 1996",27,Czech Republic,€25.00m
-133,Adam Hlozek,Bayer 04 Leverkusen,Centre-Forward,"Jul 25, 2002",20,Czech Republic,€18.00m
-134,Sardar Azmoun,Bayer 04 Leverkusen,Centre-Forward,"Jan 1, 1995",28,Iran,€12.00m
-135,Joel Pohjanpalo,Bayer 04 Leverkusen,Centre-Forward,"Sep 13, 1994",28,Finland,€3.50m
-136,Kevin Trapp,Eintracht Frankfurt,Goalkeeper,"Jul 8, 1990",32,Germany,€8.50m
-137,Diant Ramaj,Eintracht Frankfurt,Goalkeeper,"Sep 19, 2001",21,Germany,€750k
-138,Jannik Horz,Eintracht Frankfurt,Goalkeeper,"Apr 14, 2003",20,Germany,€200k
-139,Jens Grahl,Eintracht Frankfurt,Goalkeeper,"Sep 22, 1988",34,Germany,€200k
-140,Simon Simoni,Eintracht Frankfurt,Goalkeeper,"Jul 14, 2004",18,Albania,€200k
-141,Evan Ndicka,Eintracht Frankfurt,Centre-Back,"Aug 20, 1999",23,Cote d'Ivoire,€28.00m
-142,Tuta,Eintracht Frankfurt,Centre-Back,"Jul 4, 1999",23,Brazil,€15.00m
-143,Hrvoje Smolcic,Eintracht Frankfurt,Centre-Back,"Aug 17, 2000",22,Croatia,€4.00m
-144,Almamy Touré,Eintracht Frankfurt,Centre-Back,"Apr 28, 1996",27,Mali,€2.50m
-145,Jérôme Onguéné,Eintracht Frankfurt,Centre-Back,"Dec 22, 1997",25,Cameroon,€2.00m
-146,Makoto Hasebe,Eintracht Frankfurt,Centre-Back,"Jan 18, 1984",39,Japan,€800k
-147,Dario Gebuhr,Eintracht Frankfurt,Centre-Back,"May 6, 2003",20,Germany,€400k
-148,Luca Pellegrini,Eintracht Frankfurt,Left-Back,"Mar 7, 1999",24,Italy,€7.00m
-149,Philipp Max,Eintracht Frankfurt,Left-Back,"Sep 30, 1993",29,Germany,€3.00m
-150,Christopher Lenz,Eintracht Frankfurt,Left-Back,"Sep 22, 1994",28,Germany,€2.50m
-151,Jan Schröder,Eintracht Frankfurt,Left-Back,"Apr 15, 2003",20,Germany,€200k
-152,Aurélio Buta,Eintracht Frankfurt,Right-Back,"Feb 10, 1997",26,Portugal,€8.00m
-153,Timothy Chandler,Eintracht Frankfurt,Right-Back,"Mar 29, 1990",33,United States,€700k
-154,Kristijan Jakic,Eintracht Frankfurt,Defensive Midfield,"May 14, 1997",26,Croatia,€7.00m
-155,Djibril Sow,Eintracht Frankfurt,Central Midfield,"Feb 6, 1997",26,Switzerland,€22.00m
-156,Junior Dina Ebimbe,Eintracht Frankfurt,Central Midfield,"Nov 21, 2000",22,France,€10.00m
-157,Sebastian Rode,Eintracht Frankfurt,Central Midfield,"Oct 11, 1990",32,Germany,€2.00m
-158,Marcel Wenig,Eintracht Frankfurt,Central Midfield,"May 4, 2004",19,Germany,€800k
-159,Mehdi Loune,Eintracht Frankfurt,Central Midfield,"May 14, 2004",19,Germany,€300k
-160,Filip Kostić,Eintracht Frankfurt,Left Midfield,"Nov 1, 1992",30,Serbia,€22.00m
-161,Jesper Lindstrøm,Eintracht Frankfurt,Attacking Midfield,"Feb 29, 2000",23,Denmark,€28.00m
-162,Daichi Kamada,Eintracht Frankfurt,Attacking Midfield,"Aug 5, 1996",26,Japan,€27.00m
-163,Mario Götze,Eintracht Frankfurt,Attacking Midfield,"Jun 3, 1992",31,Germany,€12.00m
-164,Paxten Aaronson,Eintracht Frankfurt,Attacking Midfield,"Aug 26, 2003",19,United States,€4.50m
-165,Jens Petter Hauge,Eintracht Frankfurt,Left Winger,"Oct 12, 1999",23,Norway,€2.50m
-166,Faride Alidou,Eintracht Frankfurt,Left Winger,"Jul 18, 2001",21,Germany,€2.50m
-167,Ansgar Knauff,Eintracht Frankfurt,Right Winger,"Jan 10, 2002",21,Germany,€8.00m
-168,Randal Kolo Muani,Eintracht Frankfurt,Centre-Forward,"Dec 5, 1998",24,France,€80.00m
-169,Rafael Borré,Eintracht Frankfurt,Centre-Forward,"Sep 15, 1995",27,Colombia,€9.00m
-170,Lucas Alario,Eintracht Frankfurt,Centre-Forward,"Oct 8, 1992",30,Argentina,€2.50m
-171,Nacho Ferri,Eintracht Frankfurt,Centre-Forward,"Oct 5, 2004",18,Spain,€500k
-172,Jonas Omlin,Borussia Mönchengladbach,Goalkeeper,"Jan 10, 1994",29,Switzerland,€9.00m
-173,Yann Sommer,Borussia Mönchengladbach,Goalkeeper,"Dec 17, 1988",34,Switzerland,€5.00m
-174,Jan Olschowsky,Borussia Mönchengladbach,Goalkeeper,"Nov 18, 2001",21,Germany,€800k
-175,Tobias Sippel,Borussia Mönchengladbach,Goalkeeper,"Mar 22, 1988",35,Germany,€400k
-176,Moritz Nicolas,Borussia Mönchengladbach,Goalkeeper,"Oct 21, 1997",25,Germany,€350k
-177,Florian Dimmer,Borussia Mönchengladbach,Goalkeeper,"Jan 15, 2005",18,Germany,€100k
-178,Maximilian Brüll,Borussia Mönchengladbach,Goalkeeper,"Aug 26, 2002",20,Germany,€75k
-179,Nico Elvedi,Borussia Mönchengladbach,Centre-Back,"Sep 30, 1996",26,Switzerland,€18.00m
-180,Jordan Beyer,Borussia Mönchengladbach,Centre-Back,"May 19, 2000",23,Germany,€16.00m
-181,Ko Itakura,Borussia Mönchengladbach,Centre-Back,"Jan 27, 1997",26,Japan,€12.00m
-182,Marvin Friedrich,Borussia Mönchengladbach,Centre-Back,"Dec 13, 1995",27,Germany,€4.00m
-183,Tony Jantschke,Borussia Mönchengladbach,Centre-Back,"Apr 7, 1990",33,Germany,€600k
-184,Mamadou Doucouré,Borussia Mönchengladbach,Centre-Back,"May 21, 1998",25,France,€100k
-185,Ramy Bensebaini,Borussia Mönchengladbach,Left-Back,"Apr 16, 1995",28,Algeria,€20.00m
-186,Luca Netz,Borussia Mönchengladbach,Left-Back,"May 15, 2003",20,Germany,€6.50m
-187,Joe Scally,Borussia Mönchengladbach,Right-Back,"Dec 31, 2002",20,United States,€12.00m
-188,Stefan Lainer,Borussia Mönchengladbach,Right-Back,"Aug 27, 1992",30,Austria,€3.00m
-189,Simon Walde,Borussia Mönchengladbach,Right-Back,"Jan 4, 2005",18,Germany,€500k
-190,Julian Weigl,Borussia Mönchengladbach,Defensive Midfield,"Sep 8, 1995",27,Germany,€10.00m
-191,Christoph Kramer,Borussia Mönchengladbach,Defensive Midfield,"Feb 19, 1991",32,Germany,€2.50m
-192,Manu Koné,Borussia Mönchengladbach,Central Midfield,"May 17, 2001",22,France,€40.00m
-193,Florian Neuhaus,Borussia Mönchengladbach,Central Midfield,"Mar 16, 1997",26,Germany,€12.00m
-194,Oscar Fraulo,Borussia Mönchengladbach,Central Midfield,"Dec 6, 2003",19,Denmark,€2.00m
-195,Rocco Reitz,Borussia Mönchengladbach,Central Midfield,"May 29, 2002",21,Germany,€800k
-196,Torben Müsel,Borussia Mönchengladbach,Central Midfield,"Jul 25, 1999",23,Germany,€200k
-197,Jonas Hofmann,Borussia Mönchengladbach,Attacking Midfield,"Jul 14, 1992",30,Germany,€13.00m
-198,Lars Stindl,Borussia Mönchengladbach,Attacking Midfield,"Aug 26, 1988",34,Germany,€1.00m
-199,Conor Noß,Borussia Mönchengladbach,Attacking Midfield,"Jan 1, 2001",22,Ireland,€400k
-200,Hannes Wolf,Borussia Mönchengladbach,Left Winger,"Apr 16, 1999",24,Austria,€3.00m
-201,Yvandro Borges Sanches,Borussia Mönchengladbach,Left Winger,"May 24, 2004",19,Luxembourg,€1.50m
-202,Nathan Ngoumou,Borussia Mönchengladbach,Right Winger,"Mar 14, 2000",23,France,€5.00m
-203,Patrick Herrmann,Borussia Mönchengladbach,Right Winger,"Feb 12, 1991",32,Germany,€1.50m
-204,Marcus Thuram,Borussia Mönchengladbach,Centre-Forward,"Aug 6, 1997",25,France,€32.00m
-205,Alassane Plea,Borussia Mönchengladbach,Centre-Forward,"Mar 10, 1993",30,France,€8.00m
-206,Semir Telalovic,Borussia Mönchengladbach,Centre-Forward,"Dec 23, 1999",23,Germany,€350k
-207,Koen Casteels,VfL Wolfsburg,Goalkeeper,"Jun 25, 1992",31,Belgium,€8.00m
-208,Pavao Pervan,VfL Wolfsburg,Goalkeeper,"Nov 13, 1987",35,Austria,€400k
-209,Philipp Schulze,VfL Wolfsburg,Goalkeeper,"Jan 29, 2003",20,Germany,€200k
-210,Niklas Klinger,VfL Wolfsburg,Goalkeeper,"Oct 13, 1995",27,Germany,€100k
-211,Micky van de Ven,VfL Wolfsburg,Centre-Back,"Apr 19, 2001",22,Netherlands,€30.00m
-212,Maxence Lacroix,VfL Wolfsburg,Centre-Back,"Apr 6, 2000",23,France,€17.00m
-213,Sebastiaan Bornauw,VfL Wolfsburg,Centre-Back,"Mar 22, 1999",24,Belgium,€8.50m
-214,David Odogu,VfL Wolfsburg,Centre-Back,"Jun 3, 2006",17,Germany,-
-215,Paulo Otávio,VfL Wolfsburg,Left-Back,"Nov 23, 1994",28,Brazil,€4.00m
-216,Nicolas Cozza,VfL Wolfsburg,Left-Back,"Jan 8, 1999",24,France,€3.50m
-217,Jérôme Roussillon,VfL Wolfsburg,Left-Back,"Jan 6, 1993",30,Guadeloupe,€3.00m
-218,Ridle Baku,VfL Wolfsburg,Right-Back,"Apr 8, 1998",25,Germany,€13.00m
-219,Kilian Fischer,VfL Wolfsburg,Right-Back,"Oct 12, 2000",22,Germany,€2.00m
-220,Bartol Franjic,VfL Wolfsburg,Defensive Midfield,"Jan 14, 2000",23,Croatia,€3.00m
-221,Josuha Guilavogui,VfL Wolfsburg,Defensive Midfield,"Sep 19, 1990",32,France,€2.00m
-222,Mattias Svanberg,VfL Wolfsburg,Central Midfield,"Jan 5, 1999",24,Sweden,€18.00m
-223,Felix Nmecha,VfL Wolfsburg,Central Midfield,"Oct 10, 2000",22,Germany,€15.00m
-224,Maximilian Arnold,VfL Wolfsburg,Central Midfield,"May 27, 1994",29,Germany,€14.00m
-225,Aster Vranckx,VfL Wolfsburg,Central Midfield,"Oct 4, 2002",20,Belgium,€8.50m
-226,Yannick Gerhardt,VfL Wolfsburg,Central Midfield,"Mar 13, 1994",29,Germany,€6.00m
-227,Kevin Paredes,VfL Wolfsburg,Left Midfield,"May 7, 2003",20,United States,€5.00m
-228,Jakub Kaminski,VfL Wolfsburg,Left Winger,"Jun 5, 2002",21,Poland,€12.00m
-229,Josip Brekalo,VfL Wolfsburg,Left Winger,"Jun 23, 1998",25,Croatia,€5.00m
-230,Lukas Ambros,VfL Wolfsburg,Left Winger,"Jun 5, 2004",19,Czech Republic,€200k
-231,Patrick Wimmer,VfL Wolfsburg,Right Winger,"May 30, 2001",22,Austria,€18.00m
-232,Maximilian Philipp,VfL Wolfsburg,Second Striker,"Mar 1, 1994",29,Germany,€2.00m
-233,Max Kruse,VfL Wolfsburg,Second Striker,"Mar 19, 1988",35,Germany,€900k
-234,Jonas Wind,VfL Wolfsburg,Centre-Forward,"Feb 7, 1999",24,Denmark,€14.00m
-235,Lukas Nmecha,VfL Wolfsburg,Centre-Forward,"Dec 14, 1998",24,Germany,€12.00m
-236,Omar Marmoush,VfL Wolfsburg,Centre-Forward,"Feb 7, 1999",24,Egypt,€6.00m
-237,Bartosz Bialek,VfL Wolfsburg,Centre-Forward,"Nov 11, 2001",21,Poland,€3.00m
-238,Luca Waldschmidt,VfL Wolfsburg,Centre-Forward,"May 19, 1996",27,Germany,€3.00m
-239,Dzenan Pejcinovic,VfL Wolfsburg,Centre-Forward,"Feb 15, 2005",18,Germany,€1.00m
-240,Mark Flekken,SC Freiburg,Goalkeeper,"Jun 13, 1993",30,Netherlands,€10.00m
-241,Noah Atubolu,SC Freiburg,Goalkeeper,"May 25, 2002",21,Germany,€3.50m
-242,Benjamin Uphoff,SC Freiburg,Goalkeeper,"Aug 8, 1993",29,Germany,€500k
-243,Philipp Lienhart,SC Freiburg,Centre-Back,"Jul 11, 1996",26,Austria,€20.00m
-244,Matthias Ginter,SC Freiburg,Centre-Back,"Jan 19, 1994",29,Germany,€18.00m
-245,Keven Schlotterbeck,SC Freiburg,Centre-Back,"Apr 28, 1997",26,Germany,€3.00m
-246,Kenneth Schmidt,SC Freiburg,Centre-Back,"Jun 3, 2002",21,Germany,€3.00m
-247,Manuel Gulde,SC Freiburg,Centre-Back,"Feb 12, 1991",32,Germany,€1.50m
-248,Christian Günter,SC Freiburg,Left-Back,"Feb 28, 1993",30,Germany,€7.50m
-249,Kimberly Ezekwem,SC Freiburg,Left-Back,"Jun 19, 2001",22,Germany,€350k
-250,Kiliann Sildillia,SC Freiburg,Right-Back,"May 16, 2002",21,France,€12.00m
-251,Hugo Siquet,SC Freiburg,Right-Back,"Jul 9, 2002",20,Belgium,€3.30m
-252,Lukas Kübler,SC Freiburg,Right-Back,"Aug 30, 1992",30,Germany,€2.50m
-253,Yannik Keitel,SC Freiburg,Defensive Midfield,"Feb 15, 2000",23,Germany,€4.00m
-254,Nicolas Höfler,SC Freiburg,Defensive Midfield,"Mar 9, 1990",33,Germany,€2.50m
-255,Maximilian Eggestein,SC Freiburg,Central Midfield,"Dec 8, 1996",26,Germany,€10.00m
-256,Merlin Röhl,SC Freiburg,Central Midfield,"Jul 5, 2002",20,Germany,€2.00m
-257,Robert Wagner,SC Freiburg,Central Midfield,"Jul 14, 2003",19,Germany,€1.40m
-258,Jonathan Schmid,SC Freiburg,Right Midfield,"Jun 22, 1990",33,France,€900k
-259,Daniel-Kofi Kyereh,SC Freiburg,Attacking Midfield,"Mar 8, 1996",27,Ghana,€8.00m
-260,Woo-yeong Jeong,SC Freiburg,Attacking Midfield,"Sep 20, 1999",23,"Korea, South",€3.50m
-261,Vincenzo Grifo,SC Freiburg,Left Winger,"Apr 7, 1993",30,Italy,€12.00m
-262,Noah Weißhaupt,SC Freiburg,Left Winger,"Sep 20, 2001",21,Germany,€4.00m
-263,Kevin Schade,SC Freiburg,Right Winger,"Nov 27, 2001",21,Germany,€25.00m
-264,Ritsu Doan,SC Freiburg,Right Winger,"Jun 16, 1998",25,Japan,€18.00m
-265,Roland Sallai,SC Freiburg,Right Winger,"May 22, 1997",26,Hungary,€10.00m
-266,Michael Gregoritsch,SC Freiburg,Centre-Forward,"Apr 18, 1994",29,Austria,€8.00m
-267,Lucas Höler,SC Freiburg,Centre-Forward,"Jul 10, 1994",28,Germany,€5.00m
-268,Nils Petersen,SC Freiburg,Centre-Forward,"Dec 6, 1988",34,Germany,€1.50m
-269,Oliver Baumann,TSG 1899 Hoffenheim,Goalkeeper,"Jun 2, 1990",33,Germany,€4.00m
-270,Philipp Pentke,TSG 1899 Hoffenheim,Goalkeeper,"May 1, 1985",38,Germany,€300k
-271,Luca Philipp,TSG 1899 Hoffenheim,Goalkeeper,"Nov 28, 2000",22,Germany,€300k
-272,Nahuel Noll,TSG 1899 Hoffenheim,Goalkeeper,"Mar 17, 2003",20,Germany,€250k
-273,Ozan Kabak,TSG 1899 Hoffenheim,Centre-Back,"Mar 25, 2000",23,Türkiye,€10.00m
-274,Stanley Nsoki,TSG 1899 Hoffenheim,Centre-Back,"Apr 9, 1999",24,France,€5.50m
-275,Kevin Akpoguma,TSG 1899 Hoffenheim,Centre-Back,"Apr 19, 1995",28,Nigeria,€3.50m
-276,Kevin Vogt,TSG 1899 Hoffenheim,Centre-Back,"Sep 23, 1991",31,Germany,€2.50m
-277,Eduardo Quaresma,TSG 1899 Hoffenheim,Centre-Back,"Mar 2, 2002",21,Portugal,€2.50m
-278,John Brooks,TSG 1899 Hoffenheim,Centre-Back,"Jan 28, 1993",30,United States,€2.00m
-279,Ermin Bicakcic,TSG 1899 Hoffenheim,Centre-Back,"Jan 24, 1990",33,Bosnia-Herzegovina,€700k
-280,Joshua Quarshie,TSG 1899 Hoffenheim,Centre-Back,"Jul 26, 2004",18,Germany,€250k
-281,Benjamin Hübner,TSG 1899 Hoffenheim,Centre-Back,"Jul 4, 1989",33,Germany,-
-282,Angeliño,TSG 1899 Hoffenheim,Left-Back,"Jan 4, 1997",26,Spain,€12.00m
-283,Stefan Posch,TSG 1899 Hoffenheim,Right-Back,"May 14, 1997",26,Austria,€14.00m
-284,Pavel Kaderabek,TSG 1899 Hoffenheim,Right-Back,"Apr 25, 1992",31,Czech Republic,€3.00m
-285,Justin Che,TSG 1899 Hoffenheim,Right-Back,"Nov 18, 2003",19,United States,€1.50m
-286,Diadié Samassékou,TSG 1899 Hoffenheim,Defensive Midfield,"Jan 11, 1996",27,Mali,€7.00m
-287,Angelo Stiller,TSG 1899 Hoffenheim,Defensive Midfield,"Apr 4, 2001",22,Germany,€5.00m
-288,Sebastian Rudy,TSG 1899 Hoffenheim,Defensive Midfield,"Feb 28, 1990",33,Germany,€1.00m
-289,Melayro Bogarde,TSG 1899 Hoffenheim,Defensive Midfield,"May 28, 2002",21,Netherlands,€700k
-290,Dennis Geiger,TSG 1899 Hoffenheim,Central Midfield,"Jun 10, 1998",25,Germany,€8.00m
-291,Grischa Prömel,TSG 1899 Hoffenheim,Central Midfield,"Jan 9, 1995",28,Germany,€7.00m
-292,Finn Ole Becker,TSG 1899 Hoffenheim,Central Midfield,"Jun 8, 2000",23,Germany,€2.50m
-293,Thomas Delaney,TSG 1899 Hoffenheim,Central Midfield,"Sep 3, 1991",31,Denmark,€2.00m
-294,Umut Tohumcu,TSG 1899 Hoffenheim,Central Midfield,"Aug 11, 2004",18,Germany,€1.50m
-295,Robert Skov,TSG 1899 Hoffenheim,Left Midfield,"May 20, 1996",27,Denmark,€6.50m
-296,Christoph Baumgartner,TSG 1899 Hoffenheim,Attacking Midfield,"Aug 1, 1999",23,Austria,€24.00m
-297,Tom Bischof,TSG 1899 Hoffenheim,Attacking Midfield,"Jun 28, 2005",18,Germany,€3.50m
-298,Muhammed Damar,TSG 1899 Hoffenheim,Attacking Midfield,"Apr 9, 2004",19,Germany,€1.00m
-299,Jacob Bruun Larsen,TSG 1899 Hoffenheim,Left Winger,"Sep 19, 1998",24,Denmark,€3.00m
-300,Georginio Rutter,TSG 1899 Hoffenheim,Centre-Forward,"Apr 20, 2002",21,France,€18.00m
-301,Andrej Kramaric,TSG 1899 Hoffenheim,Centre-Forward,"Jun 19, 1991",32,Croatia,€8.00m
-302,Ihlas Bebou,TSG 1899 Hoffenheim,Centre-Forward,"Apr 23, 1994",29,Togo,€7.00m
-303,Kasper Dolberg,TSG 1899 Hoffenheim,Centre-Forward,"Oct 6, 1997",25,Denmark,€7.00m
-304,Munas Dabbur,TSG 1899 Hoffenheim,Centre-Forward,"May 14, 1992",31,Israel,€3.00m
-305,Fisnik Asllani,TSG 1899 Hoffenheim,Centre-Forward,"Aug 8, 2002",20,Germany,€800k
-306,Frederik Rönnow,1.FC Union Berlin,Goalkeeper,"Aug 4, 1992",30,Denmark,€5.50m
-307,Lennart Grill,1.FC Union Berlin,Goalkeeper,"Jan 25, 1999",24,Germany,€1.00m
-308,Jakob Busk,1.FC Union Berlin,Goalkeeper,"Sep 12, 1993",29,Denmark,€250k
-309,Yannic Stein,1.FC Union Berlin,Goalkeeper,"Sep 17, 2004",18,Germany,€200k
-310,Danilho Doekhi,1.FC Union Berlin,Centre-Back,"Jun 30, 1998",25,Netherlands,€17.00m
-311,Diogo Leite,1.FC Union Berlin,Centre-Back,"Jan 23, 1999",24,Portugal,€15.00m
-312,Paul Jaeckel,1.FC Union Berlin,Centre-Back,"Jul 22, 1998",24,Germany,€5.00m
-313,Robin Knoche,1.FC Union Berlin,Centre-Back,"May 22, 1992",31,Germany,€5.00m
-314,Timo Baumgartl,1.FC Union Berlin,Centre-Back,"Mar 4, 1996",27,Germany,€3.00m
-315,Dominique Heintz,1.FC Union Berlin,Centre-Back,"Aug 15, 1993",29,Germany,€1.20m
-316,Jérôme Roussillon,1.FC Union Berlin,Left-Back,"Jan 6, 1993",30,Guadeloupe,€3.00m
-317,Tymoteusz Puchacz,1.FC Union Berlin,Left-Back,"Jan 23, 1999",24,Poland,€1.20m
-318,Niko Gießelmann,1.FC Union Berlin,Left-Back,"Sep 26, 1991",31,Germany,€1.00m
-319,Julian Ryerson,1.FC Union Berlin,Right-Back,"Nov 17, 1997",25,Norway,€13.00m
-320,Josip Juranovic,1.FC Union Berlin,Right-Back,"Aug 16, 1995",27,Croatia,€12.00m
-321,Christopher Trimmel,1.FC Union Berlin,Right-Back,"Feb 24, 1987",36,Austria,€800k
-322,Rani Khedira,1.FC Union Berlin,Defensive Midfield,"Jan 27, 1994",29,Germany,€10.00m
-323,Aljoscha Kemlein,1.FC Union Berlin,Defensive Midfield,"Aug 2, 2004",18,Germany,€250k
-324,Janik Haberer,1.FC Union Berlin,Central Midfield,"Apr 2, 1994",29,Germany,€7.00m
-325,Aïssa Laïdouni,1.FC Union Berlin,Central Midfield,"Dec 13, 1996",26,Tunisia,€7.00m
-326,Morten Thorsby,1.FC Union Berlin,Central Midfield,"May 5, 1996",27,Norway,€5.50m
-327,András Schäfer,1.FC Union Berlin,Central Midfield,"Apr 13, 1999",24,Hungary,€5.00m
-328,Paul Seguin,1.FC Union Berlin,Central Midfield,"Mar 29, 1995",28,Germany,€2.50m
-329,Kevin Möhwald,1.FC Union Berlin,Central Midfield,"Jul 3, 1993",29,Germany,€600k
-330,Milos Pantovic,1.FC Union Berlin,Attacking Midfield,"Jul 7, 1996",26,Serbia,€1.50m
-331,Genki Haraguchi,1.FC Union Berlin,Attacking Midfield,"May 9, 1991",32,Japan,€1.00m
-332,Levin Öztunali,1.FC Union Berlin,Left Winger,"Mar 15, 1996",27,Germany,€1.20m
-333,Jamie Leweling,1.FC Union Berlin,Right Winger,"Feb 26, 2001",22,Germany,€3.00m
-334,Tim Skarke,1.FC Union Berlin,Right Winger,"Sep 7, 1996",26,Germany,€1.20m
-335,Tim Maciejewski,1.FC Union Berlin,Right Winger,"Mar 5, 2001",22,Germany,€350k
-336,Sheraldo Becker,1.FC Union Berlin,Centre-Forward,"Feb 9, 1995",28,Suriname,€17.00m
-337,Jordan,1.FC Union Berlin,Centre-Forward,"Apr 26, 1996",27,United States,€7.00m
-338,Kevin Behrens,1.FC Union Berlin,Centre-Forward,"Feb 3, 1991",32,Germany,€2.00m
-339,Sven Michel,1.FC Union Berlin,Centre-Forward,"Jul 15, 1990",32,Germany,€900k
-340,Andreas Voglsammer,1.FC Union Berlin,Centre-Forward,"Jan 9, 1992",31,Germany,€800k
-341,Malick Sanogo,1.FC Union Berlin,Centre-Forward,"Jun 30, 2004",19,United States,-
-342,Florian Müller,VfB Stuttgart,Goalkeeper,"Nov 13, 1997",25,Germany,€1.50m
-343,Fabian Bredlow,VfB Stuttgart,Goalkeeper,"Mar 2, 1995",28,Germany,€1.50m
-344,Dennis Seimen,VfB Stuttgart,Goalkeeper,"Dec 1, 2005",17,Germany,€200k
-345,Florian Schock,VfB Stuttgart,Goalkeeper,"May 22, 2001",22,Germany,€200k
-346,Nicolas Glaus,VfB Stuttgart,Goalkeeper,"May 10, 2002",21,Switzerland,€125k
-347,Konstantinos Mavropanos,VfB Stuttgart,Centre-Back,"Dec 11, 1997",25,Greece,€15.00m
-348,Hiroki Ito,VfB Stuttgart,Centre-Back,"May 12, 1999",24,Japan,€10.00m
-349,Waldemar Anton,VfB Stuttgart,Centre-Back,"Jul 20, 1996",26,Germany,€4.50m
-350,Dan-Axel Zagadou,VfB Stuttgart,Centre-Back,"Jun 3, 1999",24,France,€2.50m
-351,Leon Reichardt,VfB Stuttgart,Centre-Back,"Jun 28, 2004",19,Germany,-
-352,Borna Sosa,VfB Stuttgart,Left-Back,"Jan 21, 1998",25,Croatia,€12.00m
-353,Clinton Mola,VfB Stuttgart,Left-Back,"Mar 15, 2001",22,England,€500k
-354,Josha Vagnoman,VfB Stuttgart,Right-Back,"Dec 11, 2000",22,Germany,€8.00m
-355,Pascal Stenzel,VfB Stuttgart,Right-Back,"Mar 20, 1996",27,Germany,€1.50m
-356,Antonis Aidonis,VfB Stuttgart,Right-Back,"May 22, 2001",22,Germany,€350k
-357,Mattis Hoppe,VfB Stuttgart,Right-Back,"Jul 23, 2003",19,Germany,€150k
-358,Wataru Endo,VfB Stuttgart,Defensive Midfield,"Feb 9, 1993",30,Japan,€6.50m
-359,Atakan Karazor,VfB Stuttgart,Defensive Midfield,"Oct 13, 1996",26,Germany,€4.00m
-360,Luca Bazzoli,VfB Stuttgart,Defensive Midfield,"Nov 1, 2000",22,Germany,€225k
-361,Naouirou Ahamada,VfB Stuttgart,Central Midfield,"Mar 29, 2002",21,France,€10.00m
-362,Nikolas Nartey,VfB Stuttgart,Central Midfield,"Feb 22, 2000",23,Denmark,€1.50m
-363,Gil Dias,VfB Stuttgart,Left Midfield,"Sep 28, 1996",26,Portugal,€1.50m
-364,Enzo Millot,VfB Stuttgart,Attacking Midfield,"Jul 17, 2002",20,France,€7.00m
-365,Lilian Egloff,VfB Stuttgart,Attacking Midfield,"Aug 20, 2002",20,Germany,€1.50m
-366,Genki Haraguchi,VfB Stuttgart,Attacking Midfield,"May 9, 1991",32,Japan,€1.00m
-367,Ömer Beyaz,VfB Stuttgart,Attacking Midfield,"Aug 29, 2003",19,Türkiye,€700k
-368,Laurin Ulrich,VfB Stuttgart,Attacking Midfield,"Jan 31, 2005",18,Germany,€500k
-369,Chris Führich,VfB Stuttgart,Left Winger,"Jan 9, 1998",25,Germany,€4.00m
-370,Darko Churlinov,VfB Stuttgart,Left Winger,"Jul 11, 2000",22,North Macedonia,€2.20m
-371,Mateo Klimowicz,VfB Stuttgart,Left Winger,"Jul 6, 2000",22,Germany,€1.20m
-372,Silas,VfB Stuttgart,Right Winger,"Oct 6, 1998",24,DR Congo,€8.00m
-373,Tanguy Coulibaly,VfB Stuttgart,Right Winger,"Feb 18, 2001",22,France,€2.50m
-374,Sasa Kalajdzic,VfB Stuttgart,Centre-Forward,"Jul 7, 1997",25,Austria,€15.00m
-375,Serhou Guirassy,VfB Stuttgart,Centre-Forward,"Mar 12, 1996",27,Guinea,€14.00m
-376,Tiago Tomás,VfB Stuttgart,Centre-Forward,"Jun 16, 2002",21,Portugal,€7.00m
-377,Juan-José Perea,VfB Stuttgart,Centre-Forward,"Feb 23, 2000",23,Colombia,€2.00m
-378,Luca Pfeiffer,VfB Stuttgart,Centre-Forward,"Aug 20, 1996",26,Germany,€1.70m
-379,Thomas Kastanaras,VfB Stuttgart,Centre-Forward,"Jan 9, 2003",20,Germany,€700k
-380,Alou Kuol,VfB Stuttgart,Centre-Forward,"Jul 5, 2001",21,Australia,€300k
-381,Robin Zentner,1.FSV Mainz 05,Goalkeeper,"Oct 28, 1994",28,Germany,€5.00m
-382,Finn Dahmen,1.FSV Mainz 05,Goalkeeper,"Mar 27, 1998",25,Germany,€2.50m
-383,Lasse Rieß,1.FSV Mainz 05,Goalkeeper,"Jul 27, 2001",21,Germany,€200k
-384,Andreas Hanche-Olsen,1.FSV Mainz 05,Centre-Back,"Jan 17, 1997",26,Norway,€7.50m
-385,Edimilson Fernandes,1.FSV Mainz 05,Centre-Back,"Apr 15, 1996",27,Switzerland,€5.50m
-386,Alexander Hack,1.FSV Mainz 05,Centre-Back,"Sep 8, 1993",29,Germany,€2.50m
-387,Maxim Leitsch,1.FSV Mainz 05,Centre-Back,"May 18, 1998",25,Germany,€2.00m
-388,Stefan Bell,1.FSV Mainz 05,Centre-Back,"Aug 24, 1991",31,Germany,€2.00m
-389,Philipp Schulz,1.FSV Mainz 05,Centre-Back,"May 25, 2005",18,Germany,€300k
-390,Lucas Laux,1.FSV Mainz 05,Centre-Back,"Oct 14, 2002",20,Germany,€175k
-391,Anthony Caci,1.FSV Mainz 05,Left-Back,"Jul 1, 1997",25,France,€8.50m
-392,Aarón Martín,1.FSV Mainz 05,Left-Back,"Apr 22, 1997",26,Spain,€7.00m
-393,Anderson Lucoqui,1.FSV Mainz 05,Left-Back,"Jul 6, 1997",25,Angola,€600k
-394,Silvan Widmer,1.FSV Mainz 05,Right-Back,"Mar 5, 1993",30,Switzerland,€3.50m
-395,Danny da Costa,1.FSV Mainz 05,Right-Back,"Jul 13, 1993",29,Germany,€1.80m
-396,Dominik Kohr,1.FSV Mainz 05,Defensive Midfield,"Jan 31, 1994",29,Germany,€3.50m
-397,Niklas Tauer,1.FSV Mainz 05,Defensive Midfield,"Feb 17, 2001",22,Germany,€1.20m
-398,Anton Stach,1.FSV Mainz 05,Central Midfield,"Nov 15, 1998",24,Germany,€15.00m
-399,Leandro Barreiro,1.FSV Mainz 05,Central Midfield,"Jan 3, 2000",23,Luxembourg,€14.00m
-400,Merveille Papela,1.FSV Mainz 05,Central Midfield,"Jan 18, 2001",22,Germany,€1.00m
-401,Eniss Shabani,1.FSV Mainz 05,Central Midfield,"May 29, 2003",20,Albania,€200k
-402,Angelo Fulgini,1.FSV Mainz 05,Attacking Midfield,"Aug 20, 1996",26,France,€9.00m
-403,Jae-sung Lee,1.FSV Mainz 05,Attacking Midfield,"Aug 10, 1992",30,"Korea, South",€4.00m
-404,Aymen Barkok,1.FSV Mainz 05,Attacking Midfield,"May 21, 1998",25,Morocco,€2.00m
-405,Kaito Mizuta,1.FSV Mainz 05,Attacking Midfield,"Apr 8, 2000",23,Japan,€225k
-406,Delano Burgzorg,1.FSV Mainz 05,Left Winger,"Nov 7, 1998",24,Netherlands,€1.50m
-407,Ben Bobzien,1.FSV Mainz 05,Right Winger,"Apr 29, 2003",20,Germany,€600k
-408,Brajan Gruda,1.FSV Mainz 05,Right Winger,"May 31, 2004",19,Germany,€500k
-409,Jonathan Burkardt,1.FSV Mainz 05,Centre-Forward,"Jul 11, 2000",22,Germany,€10.00m
-410,Ludovic Ajorque,1.FSV Mainz 05,Centre-Forward,"Feb 25, 1994",29,France,€9.00m
-411,Marcus Ingvartsen,1.FSV Mainz 05,Centre-Forward,"Jan 4, 1996",27,Denmark,€5.50m
-412,Nelson Weiper,1.FSV Mainz 05,Centre-Forward,"Mar 17, 2005",18,Germany,€5.00m
-413,Karim Onisiwo,1.FSV Mainz 05,Centre-Forward,"Mar 17, 1992",31,Austria,€3.50m
-414,Marlon Mustapha,1.FSV Mainz 05,Centre-Forward,"May 24, 2001",22,Austria,€1.00m
-415,Tomas Koubek,FC Augsburg,Goalkeeper,"Aug 26, 1992",30,Czech Republic,€1.00m
-416,Rafal Gikiewicz,FC Augsburg,Goalkeeper,"Oct 26, 1987",35,Poland,€900k
-417,Daniel Klein,FC Augsburg,Goalkeeper,"Mar 13, 2001",22,Germany,€300k
-418,Benjamin Leneis,FC Augsburg,Goalkeeper,"Mar 8, 1999",24,Germany,€100k
-419,Felix Uduokhai,FC Augsburg,Centre-Back,"Sep 9, 1997",25,Germany,€8.50m
-420,Reece Oxford,FC Augsburg,Centre-Back,"Dec 16, 1998",24,England,€5.50m
-421,Maximilian Bauer,FC Augsburg,Centre-Back,"Feb 9, 2000",23,Germany,€3.50m
-422,Jeffrey Gouweleeuw,FC Augsburg,Centre-Back,"Jul 10, 1991",31,Netherlands,€3.00m
-423,Frederik Winther,FC Augsburg,Centre-Back,"Jan 4, 2001",22,Denmark,€1.00m
-424,Felix Götze,FC Augsburg,Centre-Back,"Feb 11, 1998",25,Germany,€400k
-425,Daniel Katic,FC Augsburg,Centre-Back,"Apr 26, 2003",20,Croatia,€125k
-426,Iago,FC Augsburg,Left-Back,"Mar 23, 1997",26,Brazil,€5.50m
-427,Mads Pedersen,FC Augsburg,Left-Back,"Sep 1, 1996",26,Denmark,€3.50m
-428,David Colina,FC Augsburg,Left-Back,"Jul 19, 2000",22,Croatia,€1.50m
-429,Robert Gumny,FC Augsburg,Right-Back,"Jun 4, 1998",25,Poland,€3.50m
-430,Raphael Framberger,FC Augsburg,Right-Back,"Sep 6, 1995",27,Germany,€800k
-431,Niklas Dorsch,FC Augsburg,Defensive Midfield,"Jan 15, 1998",25,Germany,€7.00m
-432,Carlos Gruezo,FC Augsburg,Defensive Midfield,"Apr 19, 1995",28,Ecuador,€3.00m
-433,Renato Veiga,FC Augsburg,Defensive Midfield,"Jul 29, 2003",19,Portugal,€1.00m
-434,Tobias Strobl,FC Augsburg,Defensive Midfield,"May 12, 1990",33,Germany,€500k
-435,Julian Baumgartlinger,FC Augsburg,Defensive Midfield,"Jan 2, 1988",35,Austria,€400k
-436,Arne Engels,FC Augsburg,Central Midfield,"Sep 8, 2003",19,Belgium,€7.50m
-437,Arne Maier,FC Augsburg,Central Midfield,"Jan 8, 1999",24,Germany,€6.50m
-438,Elvis Rexhbecaj,FC Augsburg,Central Midfield,"Nov 1, 1997",25,Germany,€3.50m
-439,Aaron Zehnter,FC Augsburg,Left Midfield,"Oct 31, 2004",18,Germany,€300k
-440,Fredrik Jensen,FC Augsburg,Attacking Midfield,"Sep 9, 1997",25,Finland,€2.50m
-441,Lukas Petkov,FC Augsburg,Attacking Midfield,"Nov 1, 2000",22,Bulgaria,€800k
-442,Josué Mbila,FC Augsburg,Attacking Midfield,"Aug 21, 1999",23,Germany,€100k
-443,Mert Kömür,FC Augsburg,Attacking Midfield,"Jul 17, 2005",17,Germany,-
-444,Nathanaël Mbuku,FC Augsburg,Left Winger,"Mar 16, 2002",21,France,€3.00m
-445,Rubén Vargas,FC Augsburg,Right Winger,"Aug 5, 1998",24,Switzerland,€6.50m
-446,André Hahn,FC Augsburg,Right Winger,"Aug 13, 1990",32,Germany,€1.20m
-447,Noah Sarenren Bazee,FC Augsburg,Right Winger,"Aug 21, 1996",26,Germany,€600k
-448,Daniel Caligiuri,FC Augsburg,Right Winger,"Jan 15, 1988",35,Italy,€600k
-449,Ermedin Demirovic,FC Augsburg,Centre-Forward,"Mar 25, 1998",25,Bosnia-Herzegovina,€12.00m
-450,Mergim Berisha,FC Augsburg,Centre-Forward,"May 11, 1998",25,Germany,€12.00m
-451,Ricardo Pepi,FC Augsburg,Centre-Forward,"Jan 9, 2003",20,United States,€9.00m
-452,Dion Beljo,FC Augsburg,Centre-Forward,"Mar 1, 2002",21,Croatia,€6.50m
-453,Kelvin Yeboah,FC Augsburg,Centre-Forward,"May 6, 2000",23,Italy,€3.50m
-454,Irvin Cardona,FC Augsburg,Centre-Forward,"Aug 8, 1997",25,France,€2.50m
-455,Maurice Malone,FC Augsburg,Centre-Forward,"Aug 17, 2000",22,Germany,€1.80m
-456,Florian Niederlechner,FC Augsburg,Centre-Forward,"Oct 24, 1990",32,Germany,€800k
-457,Marvin Schwäbe,1.FC Köln,Goalkeeper,"Apr 25, 1995",28,Germany,€7.00m
-458,Jonas Urbig,1.FC Köln,Goalkeeper,"Aug 8, 2003",19,Germany,€1.50m
-459,Timo Horn,1.FC Köln,Goalkeeper,"May 12, 1993",30,Germany,€1.50m
-460,Julian Roloff,1.FC Köln,Goalkeeper,"Jan 17, 2001",22,Germany,€100k
-461,Matthias Köbbing,1.FC Köln,Goalkeeper,"May 28, 1997",26,Germany,€100k
-462,Timo Hübers,1.FC Köln,Centre-Back,"Jul 20, 1996",26,Germany,€8.50m
-463,Jeff Chabot,1.FC Köln,Centre-Back,"Feb 12, 1998",25,Germany,€5.50m
-464,Luca Kilian,1.FC Köln,Centre-Back,"Sep 1, 1999",23,Germany,€3.50m
-465,Nikola Soldo,1.FC Köln,Centre-Back,"Jan 25, 2001",22,Croatia,€1.50m
-466,Elias Bakatukanda,1.FC Köln,Centre-Back,"Apr 13, 2004",19,Germany,€250k
-467,Rijad Smajic,1.FC Köln,Centre-Back,"May 2, 2004",19,Bosnia-Herzegovina,€150k
-468,Jonas Hector,1.FC Köln,Left-Back,"May 27, 1990",33,Germany,€3.50m
-469,Kristian Pedersen,1.FC Köln,Left-Back,"Aug 4, 1994",28,Denmark,€1.20m
-470,Benno Schmitz,1.FC Köln,Right-Back,"Nov 17, 1994",28,Germany,€3.00m
-471,Kingsley Ehizibue,1.FC Köln,Right-Back,"May 25, 1995",28,Netherlands,€2.50m
-472,Kingsley Schindler,1.FC Köln,Right-Back,"Jul 12, 1993",29,Ghana,€1.00m
-473,Ellyes Skhiri,1.FC Köln,Defensive Midfield,"May 10, 1995",28,Tunisia,€13.00m
-474,Dejan Ljubicic,1.FC Köln,Defensive Midfield,"Oct 8, 1997",25,Austria,€10.00m
-475,Eric Martel,1.FC Köln,Defensive Midfield,"Apr 29, 2002",21,Germany,€9.00m
-476,Georg Strauch,1.FC Köln,Defensive Midfield,"Mar 30, 2001",22,Germany,€200k
-477,Denis Huseinbasic,1.FC Köln,Central Midfield,"Jul 3, 2001",21,Bosnia-Herzegovina,€5.00m
-478,Ondrej Duda,1.FC Köln,Central Midfield,"Dec 5, 1994",28,Slovakia,€3.40m
-479,Mathias Olesen,1.FC Köln,Central Midfield,"Mar 21, 2001",22,Luxembourg,€1.20m
-480,Florian Kainz,1.FC Köln,Attacking Midfield,"Oct 24, 1992",30,Austria,€5.00m
-481,Joshua Schwirten,1.FC Köln,Attacking Midfield,"Jan 7, 2002",21,Germany,€200k
-482,Justin Diehl,1.FC Köln,Left Winger,"Nov 27, 2004",18,Germany,€500k
-483,Jan Thielmann,1.FC Köln,Right Winger,"May 26, 2002",21,Germany,€6.50m
-484,Linton Maina,1.FC Köln,Right Winger,"Jun 23, 1999",24,Germany,€6.00m
-485,Dimitrios Limnios,1.FC Köln,Right Winger,"May 27, 1998",25,Greece,€2.00m
-486,Steffen Tigges,1.FC Köln,Centre-Forward,"Jul 31, 1998",24,Germany,€3.50m
-487,Davie Selke,1.FC Köln,Centre-Forward,"Jan 20, 1995",28,Germany,€2.50m
-488,Mark Uth,1.FC Köln,Centre-Forward,"Aug 24, 1991",31,Germany,€1.50m
-489,Tim Lemperle,1.FC Köln,Centre-Forward,"Feb 5, 2002",21,Germany,€1.50m
-490,Sargis Adamyan,1.FC Köln,Centre-Forward,"May 23, 1993",30,Armenia,€1.00m
-491,Florian Dietz,1.FC Köln,Centre-Forward,"Aug 3, 1998",24,Germany,€1.00m
-492,Anthony Modeste,1.FC Köln,Centre-Forward,"Apr 14, 1988",35,France,€700k
-493,Sebastian Andersson,1.FC Köln,Centre-Forward,"Jul 15, 1991",31,Sweden,€700k
-494,Damion Downs,1.FC Köln,Centre-Forward,"Jul 6, 2004",18,United States,€250k
-495,Maximilian Schmid,1.FC Köln,Centre-Forward,"Mar 5, 2003",20,Germany,€200k
-496,Oliver Christensen,Hertha BSC,Goalkeeper,"Mar 22, 1999",24,Denmark,€4.00m
-497,Tjark Ernst,Hertha BSC,Goalkeeper,"Mar 15, 2003",20,Germany,€400k
-498,Rune Jarstein,Hertha BSC,Goalkeeper,"Sep 29, 1984",38,Norway,€300k
-499,Robert Kwasigroch,Hertha BSC,Goalkeeper,"Jun 26, 2004",19,Germany,€200k
-500,Marc Oliver Kempf,Hertha BSC,Centre-Back,"Jan 28, 1995",28,Germany,€3.50m
-501,Márton Dárdai,Hertha BSC,Centre-Back,"Feb 12, 2002",21,Hungary,€3.50m
-502,Linus Gechter,Hertha BSC,Centre-Back,"Feb 27, 2004",19,Germany,€2.50m
-503,Filip Uremovic,Hertha BSC,Centre-Back,"Feb 11, 1997",26,Croatia,€2.00m
-504,Agustín Rogel,Hertha BSC,Centre-Back,"Oct 17, 1997",25,Uruguay,€1.50m
-505,Dedryck Boyata,Hertha BSC,Centre-Back,"Nov 28, 1990",32,Belgium,€1.00m
-506,Joel da Silva Kiala,Hertha BSC,Centre-Back,"Jan 21, 2004",19,Germany,€250k
-507,Maximilian Mittelstädt,Hertha BSC,Left-Back,"Mar 18, 1997",26,Germany,€2.00m
-508,Marvin Plattenhardt,Hertha BSC,Left-Back,"Jan 26, 1992",31,Germany,€1.00m
-509,Lukas Ullrich,Hertha BSC,Left-Back,"Mar 16, 2004",19,Germany,€750k
-510,Jonjoe Kenny,Hertha BSC,Right-Back,"Mar 15, 1997",26,England,€3.00m
-511,Deyovaisio Zeefuik,Hertha BSC,Right-Back,"Mar 11, 1998",25,Netherlands,€1.20m
-512,Peter Pekarík,Hertha BSC,Right-Back,"Oct 30, 1986",36,Slovakia,€500k
-513,Julian Eitschberger,Hertha BSC,Right-Back,"Mar 5, 2004",19,Germany,€350k
-514,Lucas Tousart,Hertha BSC,Defensive Midfield,"Apr 29, 1997",26,France,€9.00m
-515,Ivan Sunjic,Hertha BSC,Defensive Midfield,"Oct 9, 1996",26,Croatia,€1.50m
-516,Tolga Ciğerci,Hertha BSC,Defensive Midfield,"Mar 23, 1992",31,Türkiye,€700k
-517,Pascal Klemens,Hertha BSC,Defensive Midfield,"Feb 23, 2005",18,Germany,€300k
-518,Veit Stange,Hertha BSC,Defensive Midfield,"Feb 8, 2004",19,Germany,€250k
-519,Suat Serdar,Hertha BSC,Central Midfield,"Apr 11, 1997",26,Germany,€4.50m
-520,Vladimír Darida,Hertha BSC,Central Midfield,"Aug 8, 1990",32,Czech Republic,€1.50m
-521,Marco Richter,Hertha BSC,Attacking Midfield,"Nov 24, 1997",25,Germany,€5.00m
-522,Jean-Paul Boëtius,Hertha BSC,Attacking Midfield,"Mar 22, 1994",29,Netherlands,€1.50m
-523,Kevin-Prince Boateng,Hertha BSC,Attacking Midfield,"Mar 6, 1987",36,Ghana,€700k
-524,Ibrahim Maza,Hertha BSC,Attacking Midfield,"Nov 24, 2005",17,Germany,€600k
-525,Tony Rölke,Hertha BSC,Attacking Midfield,"Jan 22, 2003",20,Germany,€200k
-526,Chidera Ejuke,Hertha BSC,Left Winger,"Jan 2, 1998",25,Nigeria,€5.50m
-527,Myziane Maolida,Hertha BSC,Left Winger,"Feb 14, 1999",24,Comoros,€1.50m
-528,Dodi Lukébakio,Hertha BSC,Right Winger,"Sep 24, 1997",25,Belgium,€12.00m
-529,Kelian Nsona,Hertha BSC,Right Winger,"May 11, 2002",21,France,€800k
-530,Krzysztof Piatek,Hertha BSC,Centre-Forward,"Jul 1, 1995",27,Poland,€7.00m
-531,Jessic Ngankam,Hertha BSC,Centre-Forward,"Jul 20, 2000",22,Germany,€5.00m
-532,Wilfried Kanga,Hertha BSC,Centre-Forward,"Feb 21, 1998",25,Cote d'Ivoire,€3.00m
-533,Davie Selke,Hertha BSC,Centre-Forward,"Jan 20, 1995",28,Germany,€2.50m
-534,Stevan Jovetic,Hertha BSC,Centre-Forward,"Nov 2, 1989",33,Montenegro,€1.50m
-535,Florian Niederlechner,Hertha BSC,Centre-Forward,"Oct 24, 1990",32,Germany,€800k
-536,Derry Scherhant,Hertha BSC,Centre-Forward,"Nov 10, 2002",20,Germany,€700k
-537,Jiri Pavlenka,SV Werder Bremen,Goalkeeper,"Apr 14, 1992",31,Czech Republic,€3.00m
-538,Michael Zetterer,SV Werder Bremen,Goalkeeper,"Jul 12, 1995",27,Germany,€500k
-539,Mio Backhaus,SV Werder Bremen,Goalkeeper,"Apr 16, 2004",19,Germany,€300k
-540,Dudu,SV Werder Bremen,Goalkeeper,"Feb 10, 1999",24,Germany,€200k
-541,Louis Lord,SV Werder Bremen,Goalkeeper,"Oct 22, 2003",19,Germany,€150k
-542,Marco Friedl,SV Werder Bremen,Centre-Back,"Mar 16, 1998",25,Austria,€7.00m
-543,Amos Pieper,SV Werder Bremen,Centre-Back,"Jan 17, 1998",25,Germany,€6.00m
-544,Niklas Stark,SV Werder Bremen,Centre-Back,"Apr 14, 1995",28,Germany,€5.50m
-545,Milos Veljkovic,SV Werder Bremen,Centre-Back,"Sep 26, 1995",27,Serbia,€5.50m
-546,Anthony Jung,SV Werder Bremen,Centre-Back,"Nov 3, 1991",31,Germany,€1.50m
-547,Fabio Chiarodia,SV Werder Bremen,Centre-Back,"Jun 5, 2005",18,Italy,€1.00m
-548,Tim-Justin Dietrich,SV Werder Bremen,Centre-Back,"Nov 8, 2002",20,Germany,€200k
-549,Lee Buchanan,SV Werder Bremen,Left-Back,"Mar 7, 2001",22,England,€3.50m
-550,Mitchell Weiser,SV Werder Bremen,Right-Back,"Apr 21, 1994",29,Germany,€6.00m
-551,Felix Agu,SV Werder Bremen,Right-Back,"Sep 27, 1999",23,Germany,€1.00m
-552,Ilia Gruev,SV Werder Bremen,Defensive Midfield,"May 6, 2000",23,Bulgaria,€3.00m
-553,Nicolai Rapp,SV Werder Bremen,Defensive Midfield,"Dec 13, 1996",26,Germany,€700k
-554,Christian Groß,SV Werder Bremen,Defensive Midfield,"Feb 8, 1989",34,Germany,€500k
-555,Tom Berger,SV Werder Bremen,Defensive Midfield,"Jul 31, 2001",21,Germany,€200k
-556,Jens Stage,SV Werder Bremen,Central Midfield,"Nov 8, 1996",26,Denmark,€5.00m
-557,Jean Manuel Mbom,SV Werder Bremen,Central Midfield,"Feb 24, 2000",23,Germany,€800k
-558,Dikeni Salifou,SV Werder Bremen,Central Midfield,"Jun 8, 2003",20,Togo,€200k
-559,Leon Opitz,SV Werder Bremen,Left Midfield,"Apr 11, 2005",18,Germany,-
-560,Romano Schmid,SV Werder Bremen,Attacking Midfield,"Jan 27, 2000",23,Austria,€4.50m
-561,Leonardo Bittencourt,SV Werder Bremen,Attacking Midfield,"Dec 19, 1993",29,Germany,€2.80m
-562,Niklas Schmidt,SV Werder Bremen,Attacking Midfield,"Mar 1, 1998",25,Germany,€2.50m
-563,Eren Dinkçi,SV Werder Bremen,Right Winger,"Dec 13, 2001",21,Germany,€1.00m
-564,Benjamin Goller,SV Werder Bremen,Right Winger,"Jan 1, 1999",24,Germany,€450k
-565,Maximilian Philipp,SV Werder Bremen,Second Striker,"Mar 1, 1994",29,Germany,€2.00m
-566,Nick Woltemade,SV Werder Bremen,Second Striker,"Feb 14, 2002",21,Germany,€1.50m
-567,Niclas Füllkrug,SV Werder Bremen,Centre-Forward,"Feb 9, 1993",30,Germany,€13.00m
-568,Marvin Ducksch,SV Werder Bremen,Centre-Forward,"Mar 7, 1994",29,Germany,€7.50m
-569,Oliver Burke,SV Werder Bremen,Centre-Forward,"Apr 7, 1997",26,Scotland,€2.50m
-570,Alexander Schwolow,FC Schalke 04,Goalkeeper,"Jun 2, 1992",31,Germany,€900k
-571,Ralf Fährmann,FC Schalke 04,Goalkeeper,"Sep 27, 1988",34,Germany,€400k
-572,Justin Heekeren,FC Schalke 04,Goalkeeper,"Nov 27, 2000",22,Germany,€250k
-573,Michael Langer,FC Schalke 04,Goalkeeper,"Jan 6, 1985",38,Austria,€50k
-574,Malick Thiaw,FC Schalke 04,Centre-Back,"Aug 8, 2001",21,Germany,€20.00m
-575,Moritz Jenz,FC Schalke 04,Centre-Back,"Apr 30, 1999",24,Germany,€7.50m
-576,Sepp van den Berg,FC Schalke 04,Centre-Back,"Dec 20, 2001",21,Netherlands,€5.00m
-577,Leo Greiml,FC Schalke 04,Centre-Back,"Jul 3, 2001",21,Austria,€1.20m
-578,Maya Yoshida,FC Schalke 04,Centre-Back,"Aug 24, 1988",34,Japan,€900k
-579,Marcin Kaminski,FC Schalke 04,Centre-Back,"Jan 15, 1992",31,Poland,€700k
-580,Timothée Kolodziejczak,FC Schalke 04,Centre-Back,"Oct 1, 1991",31,France,€400k
-581,Ibrahima Cissé,FC Schalke 04,Centre-Back,"Feb 15, 2001",22,Mali,€200k
-582,Julius Schell,FC Schalke 04,Centre-Back,"Jan 10, 2000",23,Germany,€125k
-583,Jere Uronen,FC Schalke 04,Left-Back,"Jul 13, 1994",28,Finland,€1.00m
-584,Kerim Calhanoglu,FC Schalke 04,Left-Back,"Aug 26, 2002",20,Germany,€800k
-585,Joey Müller,FC Schalke 04,Left-Back,"Aug 30, 2000",22,Germany,€175k
-586,Cédric Brunner,FC Schalke 04,Right-Back,"Feb 17, 1994",29,Switzerland,€1.80m
-587,Mehmet Aydın,FC Schalke 04,Right-Back,"Feb 9, 2002",21,Türkiye,€1.50m
-588,Henning Matriciani,FC Schalke 04,Right-Back,"Mar 14, 2000",23,Germany,€1.20m
-589,Alex Král,FC Schalke 04,Defensive Midfield,"May 19, 1998",25,Czech Republic,€7.00m
-590,Éder Balanta,FC Schalke 04,Defensive Midfield,"Feb 28, 1993",30,Colombia,€2.00m
-591,Florian Flick,FC Schalke 04,Defensive Midfield,"May 1, 2000",23,Germany,€1.50m
-592,Niklas Tauer,FC Schalke 04,Defensive Midfield,"Feb 17, 2001",22,Germany,€1.20m
-593,Tom Krauß,FC Schalke 04,Central Midfield,"Jun 22, 2001",22,Germany,€7.00m
-594,Rodrigo Zalazar,FC Schalke 04,Central Midfield,"Aug 12, 1999",23,Uruguay,€4.00m
-595,Danny Latza,FC Schalke 04,Central Midfield,"Dec 7, 1989",33,Germany,€500k
-596,Nassim Boujellab,FC Schalke 04,Central Midfield,"Jun 20, 1999",24,Morocco,€400k
-597,Thomas Ouwejan,FC Schalke 04,Left Midfield,"Sep 30, 1996",26,Netherlands,€2.00m
-598,Tobias Mohr,FC Schalke 04,Left Midfield,"Aug 24, 1995",27,Germany,€1.20m
-599,Florent Mollet,FC Schalke 04,Attacking Midfield,"Nov 19, 1991",31,France,€2.00m
-600,Dominick Drexler,FC Schalke 04,Attacking Midfield,"May 26, 1990",33,Germany,€750k
-601,Soichiro Kozuki,FC Schalke 04,Attacking Midfield,"Dec 22, 2000",22,Japan,€600k
-602,Blendi Idrizi,FC Schalke 04,Attacking Midfield,"May 2, 1998",25,Kosovo,€400k
-603,Marius Bülter,FC Schalke 04,Left Winger,"Mar 29, 1993",30,Germany,€3.00m
-604,Andreas Ivan,FC Schalke 04,Left Winger,"Jan 10, 1995",28,Romania,€125k
-605,Tim Skarke,FC Schalke 04,Right Winger,"Sep 7, 1996",26,Germany,€1.20m
-606,Sidi Sané,FC Schalke 04,Right Winger,"Apr 21, 2003",20,Germany,€200k
-607,Jordan Larsson,FC Schalke 04,Centre-Forward,"Jun 20, 1997",26,Sweden,€3.00m
-608,Michael Frey,FC Schalke 04,Centre-Forward,"Jul 19, 1994",28,Switzerland,€2.00m
-609,Kenan Karaman,FC Schalke 04,Centre-Forward,"Mar 5, 1994",29,Türkiye,€1.40m
-610,Simon Terodde,FC Schalke 04,Centre-Forward,"Mar 2, 1988",35,Germany,€900k
-611,Sebastian Polter,FC Schalke 04,Centre-Forward,"Apr 1, 1991",32,Germany,€800k
-612,Keke Topp,FC Schalke 04,Centre-Forward,"Mar 25, 2004",19,Germany,€500k
-613,Manuel Riemann,VfL Bochum,Goalkeeper,"Sep 9, 1988",34,Germany,€1.00m
-614,Marko Johansson,VfL Bochum,Goalkeeper,"Aug 25, 1998",24,Sweden,€400k
-615,Michael Esser,VfL Bochum,Goalkeeper,"Nov 22, 1987",35,Germany,€300k
-616,Paul Grave,VfL Bochum,Goalkeeper,"Apr 10, 2001",22,Germany,€100k
-617,Erhan Masovic,VfL Bochum,Centre-Back,"Nov 22, 1998",24,Serbia,€8.00m
-618,Ivan Ordets,VfL Bochum,Centre-Back,"Jul 8, 1992",30,Ukraine,€3.00m
-619,Keven Schlotterbeck,VfL Bochum,Centre-Back,"Apr 28, 1997",26,Germany,€3.00m
-620,Dominique Heintz,VfL Bochum,Centre-Back,"Aug 15, 1993",29,Germany,€1.20m
-621,Tim Oermann,VfL Bochum,Centre-Back,"Oct 6, 2003",19,Germany,€800k
-622,Vasilios Lampropoulos,VfL Bochum,Centre-Back,"Mar 31, 1990",33,Greece,€500k
-623,Mohammed Tolba,VfL Bochum,Centre-Back,"Jul 19, 2004",18,Germany,€200k
-624,Danilo Soares,VfL Bochum,Left-Back,"Oct 29, 1991",31,Brazil,€1.80m
-625,Jannes Horn,VfL Bochum,Left-Back,"Feb 6, 1997",26,Germany,€1.20m
-626,Konstantinos Stafylidis,VfL Bochum,Left-Back,"Dec 2, 1993",29,Greece,€1.20m
-627,Jordi Osei-Tutu,VfL Bochum,Right-Back,"Oct 2, 1998",24,England,€1.20m
-628,Saidy Janko,VfL Bochum,Right-Back,"Oct 22, 1995",27,The Gambia,€1.00m
-629,Cristian Gamboa,VfL Bochum,Right-Back,"Oct 24, 1989",33,Costa Rica,€600k
-630,Jacek Goralski,VfL Bochum,Defensive Midfield,"Sep 21, 1992",30,Poland,€700k
-631,Anthony Losilla,VfL Bochum,Defensive Midfield,"Mar 10, 1986",37,France,€500k
-632,Patrick Osterhage,VfL Bochum,Central Midfield,"Feb 1, 2000",23,Germany,€4.00m
-633,Pierre Kunde,VfL Bochum,Central Midfield,"Jul 26, 1995",27,Cameroon,€1.70m
-634,Kevin Stöger,VfL Bochum,Attacking Midfield,"Aug 27, 1993",29,Austria,€3.00m
-635,Philipp Förster,VfL Bochum,Attacking Midfield,"Feb 4, 1995",28,Germany,€2.80m
-636,Gerrit Holtmann,VfL Bochum,Left Winger,"Mar 25, 1995",28,Philippines,€2.50m
-637,Christopher Antwi-Adjei,VfL Bochum,Left Winger,"Feb 7, 1994",29,Ghana,€2.20m
-638,Takuma Asano,VfL Bochum,Right Winger,"Nov 10, 1994",28,Japan,€4.00m
-639,Tarsis Bonga,VfL Bochum,Right Winger,"Jan 10, 1997",26,Germany,€300k
-640,Philipp Hofmann,VfL Bochum,Centre-Forward,"Mar 30, 1993",30,Germany,€2.80m
-641,Simon Zoller,VfL Bochum,Centre-Forward,"Jun 26, 1991",32,Germany,€1.10m
-642,Lys Mousset,VfL Bochum,Centre-Forward,"Feb 8, 1996",27,France,€1.00m
-643,Moritz Broschinski,VfL Bochum,Centre-Forward,"Sep 23, 2000",22,Germany,€1.00m
-644,Silvere Ganvoula,VfL Bochum,Centre-Forward,"Jun 29, 1996",27,Congo,€600k
+Name,Team,Position,Date of Birth,Age,Nationality,Market Value
+Manuel Neuer,Bayern Munich,Goalkeeper,"Mar 27, 1986",37,Germany,€7.00m
+Yann Sommer,Bayern Munich,Goalkeeper,"Dec 17, 1988",34,Switzerland,€5.00m
+Sven Ulreich,Bayern Munich,Goalkeeper,"Aug 3, 1988",34,Germany,€700k
+Johannes Schenk,Bayern Munich,Goalkeeper,"Jan 13, 2003",20,Germany,€300k
+Matthijs de Ligt,Bayern Munich,Centre-Back,"Aug 12, 1999",23,Netherlands,€75.00m
+Dayot Upamecano,Bayern Munich,Centre-Back,"Oct 27, 1998",24,France,€60.00m
+Benjamin Pavard,Bayern Munich,Centre-Back,"Mar 28, 1996",27,France,€40.00m
+Josip Stanisic,Bayern Munich,Centre-Back,"Apr 2, 2000",23,Croatia,€12.00m
+Tanguy Nianzou,Bayern Munich,Centre-Back,"Jun 7, 2002",21,France,€7.50m
+Daley Blind,Bayern Munich,Centre-Back,"Mar 9, 1990",33,Netherlands,€3.00m
+Justin Janitzek,Bayern Munich,Centre-Back,"Feb 10, 2004",19,Germany,€500k
+Liam Morrison,Bayern Munich,Centre-Back,"Apr 7, 2003",20,Scotland,€300k
+Gabriel Marusic,Bayern Munich,Centre-Back,"Mar 3, 2003",20,Croatia,€150k
+Alphonso Davies,Bayern Munich,Left-Back,"Nov 2, 2000",22,Canada,€70.00m
+Lucas Hernández,Bayern Munich,Left-Back,"Feb 14, 1996",27,France,€45.00m
+Joshua Kimmich,Bayern Munich,Right-Back,"Feb 8, 1995",28,Germany,€75.00m
+João Cancelo,Bayern Munich,Right-Back,"May 27, 1994",29,Portugal,€50.00m
+Noussair Mazraoui,Bayern Munich,Right-Back,"Nov 14, 1997",25,Morocco,€28.00m
+Bouna Sarr,Bayern Munich,Right-Back,"Jan 31, 1992",31,Senegal,€2.00m
+Aleksandar Pavlovic,Bayern Munich,Defensive Midfield,"May 3, 2004",19,Germany,-
+Leon Goretzka,Bayern Munich,Central Midfield,"Feb 6, 1995",28,Germany,€45.00m
+Ryan Gravenberch,Bayern Munich,Central Midfield,"May 16, 2002",21,Netherlands,€30.00m
+Marcel Sabitzer,Bayern Munich,Central Midfield,"Mar 17, 1994",29,Austria,€20.00m
+Jamal Musiala,Bayern Munich,Attacking Midfield,"Feb 26, 2003",20,Germany,€110.00m
+Paul Wanner,Bayern Munich,Attacking Midfield,"Dec 23, 2005",17,Germany,€3.00m
+Kingsley Coman,Bayern Munich,Left Winger,"Jun 13, 1996",27,France,€65.00m
+Sadio Mané,Bayern Munich,Left Winger,"Apr 10, 1992",31,Senegal,€25.00m
+Mathys Tel,Bayern Munich,Left Winger,"Apr 27, 2005",18,France,€20.00m
+Gabriel Vidovic,Bayern Munich,Left Winger,"Dec 1, 2003",19,Croatia,€2.50m
+Arijon Ibrahimovic,Bayern Munich,Left Winger,"Dec 11, 2005",17,Germany,€1.00m
+Leroy Sané,Bayern Munich,Right Winger,"Jan 11, 1996",27,Germany,€65.00m
+Serge Gnabry,Bayern Munich,Right Winger,"Jul 14, 1995",27,Germany,€55.00m
+Thomas Müller,Bayern Munich,Second Striker,"Sep 13, 1989",33,Germany,€12.00m
+Joshua Zirkzee,Bayern Munich,Centre-Forward,"May 22, 2001",22,Netherlands,€9.00m
+Eric-Maxim Choupo-Moting,Bayern Munich,Centre-Forward,"Mar 23, 1989",34,Cameroon,€5.00m
+Gregor Kobel,Borussia Dortmund,Goalkeeper,"Dec 6, 1997",25,Switzerland,€35.00m
+Marcel Lotka,Borussia Dortmund,Goalkeeper,"May 25, 2001",22,Germany,€1.50m
+Alexander Meyer,Borussia Dortmund,Goalkeeper,"Apr 13, 1991",32,Germany,€1.00m
+Luca Unbehaun,Borussia Dortmund,Goalkeeper,"Feb 27, 2001",22,Germany,€650k
+Silas Ostrzinski,Borussia Dortmund,Goalkeeper,"Nov 19, 2003",19,Germany,€150k
+Nico Schlotterbeck,Borussia Dortmund,Centre-Back,"Dec 1, 1999",23,Germany,€40.00m
+Niklas Süle,Borussia Dortmund,Centre-Back,"Sep 3, 1995",27,Germany,€35.00m
+Mats Hummels,Borussia Dortmund,Centre-Back,"Dec 16, 1988",34,Germany,€6.00m
+Soumaïla Coulibaly,Borussia Dortmund,Centre-Back,"Oct 14, 2003",19,France,€1.00m
+Antonios Papadopoulos,Borussia Dortmund,Centre-Back,"Sep 10, 1999",23,Germany,€600k
+Raphaël Guerreiro,Borussia Dortmund,Left-Back,"Dec 22, 1993",29,Portugal,€20.00m
+Tom Rothe,Borussia Dortmund,Left-Back,"Oct 29, 2004",18,Germany,€3.50m
+Nico Schulz,Borussia Dortmund,Left-Back,"Apr 1, 1993",30,Germany,€1.00m
+Julian Ryerson,Borussia Dortmund,Right-Back,"Nov 17, 1997",25,Norway,€13.00m
+Marius Wolf,Borussia Dortmund,Right-Back,"May 27, 1995",28,Germany,€10.00m
+Thomas Meunier,Borussia Dortmund,Right-Back,"Sep 12, 1991",31,Belgium,€5.00m
+Felix Passlack,Borussia Dortmund,Right-Back,"May 29, 1998",25,Germany,€1.50m
+Mateu Morey,Borussia Dortmund,Right-Back,"Mar 2, 2000",23,Spain,€1.00m
+Emre Can,Borussia Dortmund,Defensive Midfield,"Jan 12, 1994",29,Germany,€14.00m
+Salih Özcan,Borussia Dortmund,Defensive Midfield,"Jan 11, 1998",25,Türkiye,€13.00m
+Abdoulaye Kamara,Borussia Dortmund,Defensive Midfield,"Nov 6, 2004",18,France,€1.00m
+Mahmoud Dahoud,Borussia Dortmund,Central Midfield,"Jan 1, 1996",27,Syria,€12.00m
+Jude Bellingham,Borussia Dortmund,Attacking Midfield,"Jun 29, 2003",20,England,€120.00m
+Julian Brandt,Borussia Dortmund,Attacking Midfield,"May 2, 1996",27,Germany,€40.00m
+Giovanni Reyna,Borussia Dortmund,Attacking Midfield,"Nov 13, 2002",20,United States,€25.00m
+Marco Reus,Borussia Dortmund,Attacking Midfield,"May 31, 1989",34,Germany,€7.00m
+Göktan Gürpüz,Borussia Dortmund,Attacking Midfield,"Jan 22, 2003",20,Türkiye,€300k
+Karim Adeyemi,Borussia Dortmund,Left Winger,"Jan 18, 2002",21,Germany,€40.00m
+Jamie Bynoe-Gittens,Borussia Dortmund,Left Winger,"Aug 8, 2004",18,England,€14.00m
+Thorgan Hazard,Borussia Dortmund,Left Winger,"Mar 29, 1993",30,Belgium,€7.00m
+Donyell Malen,Borussia Dortmund,Right Winger,"Jan 19, 1999",24,Netherlands,€28.00m
+Julien Duranville,Borussia Dortmund,Right Winger,"May 5, 2006",17,Belgium,€8.50m
+Justin Njinmah,Borussia Dortmund,Right Winger,"Nov 15, 2000",22,Germany,€800k
+Marco Pasalic,Borussia Dortmund,Right Winger,"Sep 14, 2000",22,Croatia,€350k
+Sébastien Haller,Borussia Dortmund,Centre-Forward,"Jun 22, 1994",29,Cote d'Ivoire,€30.00m
+Youssoufa Moukoko,Borussia Dortmund,Centre-Forward,"Nov 20, 2004",18,Germany,€30.00m
+Anthony Modeste,Borussia Dortmund,Centre-Forward,"Apr 14, 1988",35,France,€700k
+Péter Gulácsi,RB Leipzig,Goalkeeper,"May 6, 1990",33,Hungary,€5.00m
+Janis Blaswich,RB Leipzig,Goalkeeper,"May 2, 1991",32,Germany,€2.50m
+Ørjan Nyland,RB Leipzig,Goalkeeper,"Sep 10, 1990",32,Norway,€600k
+Jonas Nickisch,RB Leipzig,Goalkeeper,"May 21, 2004",19,Germany,€200k
+Timo Schlieck,RB Leipzig,Goalkeeper,"Mar 2, 2006",17,Germany,€200k
+Oskar Preil,RB Leipzig,Goalkeeper,"Sep 14, 2003",19,Germany,€100k
+Josko Gvardiol,RB Leipzig,Centre-Back,"Jan 23, 2002",21,Croatia,€75.00m
+Mohamed Simakan,RB Leipzig,Centre-Back,"May 3, 2000",23,France,€25.00m
+Lukas Klostermann,RB Leipzig,Centre-Back,"Jun 3, 1996",27,Germany,€12.00m
+Willi Orbán,RB Leipzig,Centre-Back,"Nov 3, 1992",30,Hungary,€10.00m
+Abdou Diallo,RB Leipzig,Centre-Back,"May 4, 1996",27,Senegal,€10.00m
+Marcel Halstenberg,RB Leipzig,Centre-Back,"Sep 27, 1991",31,Germany,€3.50m
+David Raum,RB Leipzig,Left-Back,"Apr 22, 1998",25,Germany,€14.00m
+Sanoussy Ba,RB Leipzig,Left-Back,"Jan 5, 2004",19,Germany,€500k
+Benjamin Henrichs,RB Leipzig,Right-Back,"Feb 23, 1997",26,Germany,€15.00m
+Hugo Novoa,RB Leipzig,Right-Back,"Jan 24, 2003",20,Spain,€4.30m
+Dominik Szoboszlai,RB Leipzig,Central Midfield,"Oct 25, 2000",22,Hungary,€50.00m
+Konrad Laimer,RB Leipzig,Central Midfield,"May 27, 1997",26,Austria,€28.00m
+Xaver Schlager,RB Leipzig,Central Midfield,"Sep 28, 1997",25,Austria,€22.00m
+Amadou Haidara,RB Leipzig,Central Midfield,"Jan 31, 1998",25,Mali,€17.00m
+Kevin Kampl,RB Leipzig,Central Midfield,"Oct 9, 1990",32,Slovenia,€3.50m
+Christopher Nkunku,RB Leipzig,Attacking Midfield,"Nov 14, 1997",25,France,€80.00m
+Dani Olmo,RB Leipzig,Attacking Midfield,"May 7, 1998",25,Spain,€40.00m
+Emil Forsberg,RB Leipzig,Attacking Midfield,"Oct 23, 1991",31,Sweden,€7.00m
+Caden Clark,RB Leipzig,Attacking Midfield,"May 27, 2003",20,United States,€2.00m
+Timo Werner,RB Leipzig,Centre-Forward,"Mar 6, 1996",27,Germany,€25.00m
+André Silva,RB Leipzig,Centre-Forward,"Nov 6, 1995",27,Portugal,€15.00m
+Alexander Sørloth,RB Leipzig,Centre-Forward,"Dec 5, 1995",27,Norway,€12.00m
+Yussuf Poulsen,RB Leipzig,Centre-Forward,"Jun 15, 1994",29,Denmark,€7.00m
+Lukas Hradecky,Bayer 04 Leverkusen,Goalkeeper,"Nov 24, 1989",33,Finland,€2.50m
+Patrick Pentz,Bayer 04 Leverkusen,Goalkeeper,"Jan 2, 1997",26,Austria,€1.50m
+Andrey Lunev,Bayer 04 Leverkusen,Goalkeeper,"Nov 13, 1991",31,Russia,€1.20m
+Niklas Lomb,Bayer 04 Leverkusen,Goalkeeper,"Jul 28, 1993",29,Germany,€250k
+Maximilian Neutgens,Bayer 04 Leverkusen,Goalkeeper,"Mar 3, 2004",19,Germany,-
+Piero Hincapié,Bayer 04 Leverkusen,Centre-Back,"Jan 9, 2002",21,Ecuador,€35.00m
+Edmond Tapsoba,Bayer 04 Leverkusen,Centre-Back,"Feb 2, 1999",24,Burkina Faso,€30.00m
+Jonathan Tah,Bayer 04 Leverkusen,Centre-Back,"Feb 11, 1996",27,Germany,€20.00m
+Odilon Kossounou,Bayer 04 Leverkusen,Centre-Back,"Jan 4, 2001",22,Cote d'Ivoire,€18.00m
+Madi Monamay,Bayer 04 Leverkusen,Centre-Back,"Apr 6, 2006",17,Belgium,-
+Daley Sinkgraven,Bayer 04 Leverkusen,Left-Back,"Jul 4, 1995",27,Netherlands,€2.50m
+Timothy Fosu-Mensah,Bayer 04 Leverkusen,Right-Back,"Jan 2, 1998",25,Netherlands,€2.00m
+Robert Andrich,Bayer 04 Leverkusen,Defensive Midfield,"Sep 22, 1994",28,Germany,€11.00m
+Noah Mbamba,Bayer 04 Leverkusen,Defensive Midfield,"Jan 5, 2005",18,Belgium,€3.00m
+Ayman Azhil,Bayer 04 Leverkusen,Defensive Midfield,"Apr 10, 2001",22,Morocco,€400k
+Joshua Eze,Bayer 04 Leverkusen,Defensive Midfield,"Mar 20, 2003",20,Germany,€150k
+Leon Köhl,Bayer 04 Leverkusen,Defensive Midfield,"Feb 17, 2004",19,Germany,-
+Exequiel Palacios,Bayer 04 Leverkusen,Central Midfield,"Oct 5, 1998",24,Argentina,€22.00m
+Kerem Demirbay,Bayer 04 Leverkusen,Central Midfield,"Jul 3, 1993",29,Germany,€6.00m
+Nadiem Amiri,Bayer 04 Leverkusen,Central Midfield,"Oct 27, 1996",26,Germany,€6.00m
+Charles Aránguiz,Bayer 04 Leverkusen,Central Midfield,"Apr 17, 1989",34,Chile,€3.50m
+Zidan Sertdemir,Bayer 04 Leverkusen,Central Midfield,"Feb 4, 2005",18,Denmark,€1.00m
+Jeremie Frimpong,Bayer 04 Leverkusen,Right Midfield,"Dec 10, 2000",22,Netherlands,€40.00m
+Mitchel Bakker,Bayer 04 Leverkusen,Left Midfield,"Jun 20, 2000",23,Netherlands,€9.00m
+Florian Wirtz,Bayer 04 Leverkusen,Attacking Midfield,"May 3, 2003",20,Germany,€85.00m
+Ayman Aourir,Bayer 04 Leverkusen,Attacking Midfield,"Oct 6, 2004",18,Morocco,-
+Amine Adli,Bayer 04 Leverkusen,Left Winger,"May 10, 2000",23,Morocco,€20.00m
+Callum Hudson-Odoi,Bayer 04 Leverkusen,Left Winger,"Nov 7, 2000",22,England,€15.00m
+Paulinho,Bayer 04 Leverkusen,Left Winger,"Jul 15, 2000",22,Brazil,€7.50m
+Moussa Diaby,Bayer 04 Leverkusen,Right Winger,"Jul 7, 1999",23,France,€50.00m
+Karim Bellarabi,Bayer 04 Leverkusen,Right Winger,"Apr 8, 1990",33,Germany,€1.50m
+Patrik Schick,Bayer 04 Leverkusen,Centre-Forward,"Jan 24, 1996",27,Czech Republic,€25.00m
+Adam Hlozek,Bayer 04 Leverkusen,Centre-Forward,"Jul 25, 2002",20,Czech Republic,€18.00m
+Sardar Azmoun,Bayer 04 Leverkusen,Centre-Forward,"Jan 1, 1995",28,Iran,€12.00m
+Joel Pohjanpalo,Bayer 04 Leverkusen,Centre-Forward,"Sep 13, 1994",28,Finland,€3.50m
+Kevin Trapp,Eintracht Frankfurt,Goalkeeper,"Jul 8, 1990",32,Germany,€8.50m
+Diant Ramaj,Eintracht Frankfurt,Goalkeeper,"Sep 19, 2001",21,Germany,€750k
+Jannik Horz,Eintracht Frankfurt,Goalkeeper,"Apr 14, 2003",20,Germany,€200k
+Jens Grahl,Eintracht Frankfurt,Goalkeeper,"Sep 22, 1988",34,Germany,€200k
+Simon Simoni,Eintracht Frankfurt,Goalkeeper,"Jul 14, 2004",18,Albania,€200k
+Evan Ndicka,Eintracht Frankfurt,Centre-Back,"Aug 20, 1999",23,Cote d'Ivoire,€28.00m
+Tuta,Eintracht Frankfurt,Centre-Back,"Jul 4, 1999",23,Brazil,€15.00m
+Hrvoje Smolcic,Eintracht Frankfurt,Centre-Back,"Aug 17, 2000",22,Croatia,€4.00m
+Almamy Touré,Eintracht Frankfurt,Centre-Back,"Apr 28, 1996",27,Mali,€2.50m
+Jérôme Onguéné,Eintracht Frankfurt,Centre-Back,"Dec 22, 1997",25,Cameroon,€2.00m
+Makoto Hasebe,Eintracht Frankfurt,Centre-Back,"Jan 18, 1984",39,Japan,€800k
+Dario Gebuhr,Eintracht Frankfurt,Centre-Back,"May 6, 2003",20,Germany,€400k
+Luca Pellegrini,Eintracht Frankfurt,Left-Back,"Mar 7, 1999",24,Italy,€7.00m
+Philipp Max,Eintracht Frankfurt,Left-Back,"Sep 30, 1993",29,Germany,€3.00m
+Christopher Lenz,Eintracht Frankfurt,Left-Back,"Sep 22, 1994",28,Germany,€2.50m
+Jan Schröder,Eintracht Frankfurt,Left-Back,"Apr 15, 2003",20,Germany,€200k
+Aurélio Buta,Eintracht Frankfurt,Right-Back,"Feb 10, 1997",26,Portugal,€8.00m
+Timothy Chandler,Eintracht Frankfurt,Right-Back,"Mar 29, 1990",33,United States,€700k
+Kristijan Jakic,Eintracht Frankfurt,Defensive Midfield,"May 14, 1997",26,Croatia,€7.00m
+Djibril Sow,Eintracht Frankfurt,Central Midfield,"Feb 6, 1997",26,Switzerland,€22.00m
+Junior Dina Ebimbe,Eintracht Frankfurt,Central Midfield,"Nov 21, 2000",22,France,€10.00m
+Sebastian Rode,Eintracht Frankfurt,Central Midfield,"Oct 11, 1990",32,Germany,€2.00m
+Marcel Wenig,Eintracht Frankfurt,Central Midfield,"May 4, 2004",19,Germany,€800k
+Mehdi Loune,Eintracht Frankfurt,Central Midfield,"May 14, 2004",19,Germany,€300k
+Filip Kostić,Eintracht Frankfurt,Left Midfield,"Nov 1, 1992",30,Serbia,€22.00m
+Jesper Lindstrøm,Eintracht Frankfurt,Attacking Midfield,"Feb 29, 2000",23,Denmark,€28.00m
+Daichi Kamada,Eintracht Frankfurt,Attacking Midfield,"Aug 5, 1996",26,Japan,€27.00m
+Mario Götze,Eintracht Frankfurt,Attacking Midfield,"Jun 3, 1992",31,Germany,€12.00m
+Paxten Aaronson,Eintracht Frankfurt,Attacking Midfield,"Aug 26, 2003",19,United States,€4.50m
+Jens Petter Hauge,Eintracht Frankfurt,Left Winger,"Oct 12, 1999",23,Norway,€2.50m
+Faride Alidou,Eintracht Frankfurt,Left Winger,"Jul 18, 2001",21,Germany,€2.50m
+Ansgar Knauff,Eintracht Frankfurt,Right Winger,"Jan 10, 2002",21,Germany,€8.00m
+Randal Kolo Muani,Eintracht Frankfurt,Centre-Forward,"Dec 5, 1998",24,France,€80.00m
+Rafael Borré,Eintracht Frankfurt,Centre-Forward,"Sep 15, 1995",27,Colombia,€9.00m
+Lucas Alario,Eintracht Frankfurt,Centre-Forward,"Oct 8, 1992",30,Argentina,€2.50m
+Nacho Ferri,Eintracht Frankfurt,Centre-Forward,"Oct 5, 2004",18,Spain,€500k
+Jonas Omlin,Borussia Mönchengladbach,Goalkeeper,"Jan 10, 1994",29,Switzerland,€9.00m
+Yann Sommer,Borussia Mönchengladbach,Goalkeeper,"Dec 17, 1988",34,Switzerland,€5.00m
+Jan Olschowsky,Borussia Mönchengladbach,Goalkeeper,"Nov 18, 2001",21,Germany,€800k
+Tobias Sippel,Borussia Mönchengladbach,Goalkeeper,"Mar 22, 1988",35,Germany,€400k
+Moritz Nicolas,Borussia Mönchengladbach,Goalkeeper,"Oct 21, 1997",25,Germany,€350k
+Florian Dimmer,Borussia Mönchengladbach,Goalkeeper,"Jan 15, 2005",18,Germany,€100k
+Maximilian Brüll,Borussia Mönchengladbach,Goalkeeper,"Aug 26, 2002",20,Germany,€75k
+Nico Elvedi,Borussia Mönchengladbach,Centre-Back,"Sep 30, 1996",26,Switzerland,€18.00m
+Jordan Beyer,Borussia Mönchengladbach,Centre-Back,"May 19, 2000",23,Germany,€16.00m
+Ko Itakura,Borussia Mönchengladbach,Centre-Back,"Jan 27, 1997",26,Japan,€12.00m
+Marvin Friedrich,Borussia Mönchengladbach,Centre-Back,"Dec 13, 1995",27,Germany,€4.00m
+Tony Jantschke,Borussia Mönchengladbach,Centre-Back,"Apr 7, 1990",33,Germany,€600k
+Mamadou Doucouré,Borussia Mönchengladbach,Centre-Back,"May 21, 1998",25,France,€100k
+Ramy Bensebaini,Borussia Mönchengladbach,Left-Back,"Apr 16, 1995",28,Algeria,€20.00m
+Luca Netz,Borussia Mönchengladbach,Left-Back,"May 15, 2003",20,Germany,€6.50m
+Joe Scally,Borussia Mönchengladbach,Right-Back,"Dec 31, 2002",20,United States,€12.00m
+Stefan Lainer,Borussia Mönchengladbach,Right-Back,"Aug 27, 1992",30,Austria,€3.00m
+Simon Walde,Borussia Mönchengladbach,Right-Back,"Jan 4, 2005",18,Germany,€500k
+Julian Weigl,Borussia Mönchengladbach,Defensive Midfield,"Sep 8, 1995",27,Germany,€10.00m
+Christoph Kramer,Borussia Mönchengladbach,Defensive Midfield,"Feb 19, 1991",32,Germany,€2.50m
+Manu Koné,Borussia Mönchengladbach,Central Midfield,"May 17, 2001",22,France,€40.00m
+Florian Neuhaus,Borussia Mönchengladbach,Central Midfield,"Mar 16, 1997",26,Germany,€12.00m
+Oscar Fraulo,Borussia Mönchengladbach,Central Midfield,"Dec 6, 2003",19,Denmark,€2.00m
+Rocco Reitz,Borussia Mönchengladbach,Central Midfield,"May 29, 2002",21,Germany,€800k
+Torben Müsel,Borussia Mönchengladbach,Central Midfield,"Jul 25, 1999",23,Germany,€200k
+Jonas Hofmann,Borussia Mönchengladbach,Attacking Midfield,"Jul 14, 1992",30,Germany,€13.00m
+Lars Stindl,Borussia Mönchengladbach,Attacking Midfield,"Aug 26, 1988",34,Germany,€1.00m
+Conor Noß,Borussia Mönchengladbach,Attacking Midfield,"Jan 1, 2001",22,Ireland,€400k
+Hannes Wolf,Borussia Mönchengladbach,Left Winger,"Apr 16, 1999",24,Austria,€3.00m
+Yvandro Borges Sanches,Borussia Mönchengladbach,Left Winger,"May 24, 2004",19,Luxembourg,€1.50m
+Nathan Ngoumou,Borussia Mönchengladbach,Right Winger,"Mar 14, 2000",23,France,€5.00m
+Patrick Herrmann,Borussia Mönchengladbach,Right Winger,"Feb 12, 1991",32,Germany,€1.50m
+Marcus Thuram,Borussia Mönchengladbach,Centre-Forward,"Aug 6, 1997",25,France,€32.00m
+Alassane Plea,Borussia Mönchengladbach,Centre-Forward,"Mar 10, 1993",30,France,€8.00m
+Semir Telalovic,Borussia Mönchengladbach,Centre-Forward,"Dec 23, 1999",23,Germany,€350k
+Koen Casteels,VfL Wolfsburg,Goalkeeper,"Jun 25, 1992",31,Belgium,€8.00m
+Pavao Pervan,VfL Wolfsburg,Goalkeeper,"Nov 13, 1987",35,Austria,€400k
+Philipp Schulze,VfL Wolfsburg,Goalkeeper,"Jan 29, 2003",20,Germany,€200k
+Niklas Klinger,VfL Wolfsburg,Goalkeeper,"Oct 13, 1995",27,Germany,€100k
+Micky van de Ven,VfL Wolfsburg,Centre-Back,"Apr 19, 2001",22,Netherlands,€30.00m
+Maxence Lacroix,VfL Wolfsburg,Centre-Back,"Apr 6, 2000",23,France,€17.00m
+Sebastiaan Bornauw,VfL Wolfsburg,Centre-Back,"Mar 22, 1999",24,Belgium,€8.50m
+David Odogu,VfL Wolfsburg,Centre-Back,"Jun 3, 2006",17,Germany,-
+Paulo Otávio,VfL Wolfsburg,Left-Back,"Nov 23, 1994",28,Brazil,€4.00m
+Nicolas Cozza,VfL Wolfsburg,Left-Back,"Jan 8, 1999",24,France,€3.50m
+Jérôme Roussillon,VfL Wolfsburg,Left-Back,"Jan 6, 1993",30,Guadeloupe,€3.00m
+Ridle Baku,VfL Wolfsburg,Right-Back,"Apr 8, 1998",25,Germany,€13.00m
+Kilian Fischer,VfL Wolfsburg,Right-Back,"Oct 12, 2000",22,Germany,€2.00m
+Bartol Franjic,VfL Wolfsburg,Defensive Midfield,"Jan 14, 2000",23,Croatia,€3.00m
+Josuha Guilavogui,VfL Wolfsburg,Defensive Midfield,"Sep 19, 1990",32,France,€2.00m
+Mattias Svanberg,VfL Wolfsburg,Central Midfield,"Jan 5, 1999",24,Sweden,€18.00m
+Felix Nmecha,VfL Wolfsburg,Central Midfield,"Oct 10, 2000",22,Germany,€15.00m
+Maximilian Arnold,VfL Wolfsburg,Central Midfield,"May 27, 1994",29,Germany,€14.00m
+Aster Vranckx,VfL Wolfsburg,Central Midfield,"Oct 4, 2002",20,Belgium,€8.50m
+Yannick Gerhardt,VfL Wolfsburg,Central Midfield,"Mar 13, 1994",29,Germany,€6.00m
+Kevin Paredes,VfL Wolfsburg,Left Midfield,"May 7, 2003",20,United States,€5.00m
+Jakub Kaminski,VfL Wolfsburg,Left Winger,"Jun 5, 2002",21,Poland,€12.00m
+Josip Brekalo,VfL Wolfsburg,Left Winger,"Jun 23, 1998",25,Croatia,€5.00m
+Lukas Ambros,VfL Wolfsburg,Left Winger,"Jun 5, 2004",19,Czech Republic,€200k
+Patrick Wimmer,VfL Wolfsburg,Right Winger,"May 30, 2001",22,Austria,€18.00m
+Maximilian Philipp,VfL Wolfsburg,Second Striker,"Mar 1, 1994",29,Germany,€2.00m
+Max Kruse,VfL Wolfsburg,Second Striker,"Mar 19, 1988",35,Germany,€900k
+Jonas Wind,VfL Wolfsburg,Centre-Forward,"Feb 7, 1999",24,Denmark,€14.00m
+Lukas Nmecha,VfL Wolfsburg,Centre-Forward,"Dec 14, 1998",24,Germany,€12.00m
+Omar Marmoush,VfL Wolfsburg,Centre-Forward,"Feb 7, 1999",24,Egypt,€6.00m
+Bartosz Bialek,VfL Wolfsburg,Centre-Forward,"Nov 11, 2001",21,Poland,€3.00m
+Luca Waldschmidt,VfL Wolfsburg,Centre-Forward,"May 19, 1996",27,Germany,€3.00m
+Dzenan Pejcinovic,VfL Wolfsburg,Centre-Forward,"Feb 15, 2005",18,Germany,€1.00m
+Mark Flekken,SC Freiburg,Goalkeeper,"Jun 13, 1993",30,Netherlands,€10.00m
+Noah Atubolu,SC Freiburg,Goalkeeper,"May 25, 2002",21,Germany,€3.50m
+Benjamin Uphoff,SC Freiburg,Goalkeeper,"Aug 8, 1993",29,Germany,€500k
+Philipp Lienhart,SC Freiburg,Centre-Back,"Jul 11, 1996",26,Austria,€20.00m
+Matthias Ginter,SC Freiburg,Centre-Back,"Jan 19, 1994",29,Germany,€18.00m
+Keven Schlotterbeck,SC Freiburg,Centre-Back,"Apr 28, 1997",26,Germany,€3.00m
+Kenneth Schmidt,SC Freiburg,Centre-Back,"Jun 3, 2002",21,Germany,€3.00m
+Manuel Gulde,SC Freiburg,Centre-Back,"Feb 12, 1991",32,Germany,€1.50m
+Christian Günter,SC Freiburg,Left-Back,"Feb 28, 1993",30,Germany,€7.50m
+Kimberly Ezekwem,SC Freiburg,Left-Back,"Jun 19, 2001",22,Germany,€350k
+Kiliann Sildillia,SC Freiburg,Right-Back,"May 16, 2002",21,France,€12.00m
+Hugo Siquet,SC Freiburg,Right-Back,"Jul 9, 2002",20,Belgium,€3.30m
+Lukas Kübler,SC Freiburg,Right-Back,"Aug 30, 1992",30,Germany,€2.50m
+Yannik Keitel,SC Freiburg,Defensive Midfield,"Feb 15, 2000",23,Germany,€4.00m
+Nicolas Höfler,SC Freiburg,Defensive Midfield,"Mar 9, 1990",33,Germany,€2.50m
+Maximilian Eggestein,SC Freiburg,Central Midfield,"Dec 8, 1996",26,Germany,€10.00m
+Merlin Röhl,SC Freiburg,Central Midfield,"Jul 5, 2002",20,Germany,€2.00m
+Robert Wagner,SC Freiburg,Central Midfield,"Jul 14, 2003",19,Germany,€1.40m
+Jonathan Schmid,SC Freiburg,Right Midfield,"Jun 22, 1990",33,France,€900k
+Daniel-Kofi Kyereh,SC Freiburg,Attacking Midfield,"Mar 8, 1996",27,Ghana,€8.00m
+Woo-yeong Jeong,SC Freiburg,Attacking Midfield,"Sep 20, 1999",23,"Korea, South",€3.50m
+Vincenzo Grifo,SC Freiburg,Left Winger,"Apr 7, 1993",30,Italy,€12.00m
+Noah Weißhaupt,SC Freiburg,Left Winger,"Sep 20, 2001",21,Germany,€4.00m
+Kevin Schade,SC Freiburg,Right Winger,"Nov 27, 2001",21,Germany,€25.00m
+Ritsu Doan,SC Freiburg,Right Winger,"Jun 16, 1998",25,Japan,€18.00m
+Roland Sallai,SC Freiburg,Right Winger,"May 22, 1997",26,Hungary,€10.00m
+Michael Gregoritsch,SC Freiburg,Centre-Forward,"Apr 18, 1994",29,Austria,€8.00m
+Lucas Höler,SC Freiburg,Centre-Forward,"Jul 10, 1994",28,Germany,€5.00m
+Nils Petersen,SC Freiburg,Centre-Forward,"Dec 6, 1988",34,Germany,€1.50m
+Oliver Baumann,TSG 1899 Hoffenheim,Goalkeeper,"Jun 2, 1990",33,Germany,€4.00m
+Philipp Pentke,TSG 1899 Hoffenheim,Goalkeeper,"May 1, 1985",38,Germany,€300k
+Luca Philipp,TSG 1899 Hoffenheim,Goalkeeper,"Nov 28, 2000",22,Germany,€300k
+Nahuel Noll,TSG 1899 Hoffenheim,Goalkeeper,"Mar 17, 2003",20,Germany,€250k
+Ozan Kabak,TSG 1899 Hoffenheim,Centre-Back,"Mar 25, 2000",23,Türkiye,€10.00m
+Stanley Nsoki,TSG 1899 Hoffenheim,Centre-Back,"Apr 9, 1999",24,France,€5.50m
+Kevin Akpoguma,TSG 1899 Hoffenheim,Centre-Back,"Apr 19, 1995",28,Nigeria,€3.50m
+Kevin Vogt,TSG 1899 Hoffenheim,Centre-Back,"Sep 23, 1991",31,Germany,€2.50m
+Eduardo Quaresma,TSG 1899 Hoffenheim,Centre-Back,"Mar 2, 2002",21,Portugal,€2.50m
+John Brooks,TSG 1899 Hoffenheim,Centre-Back,"Jan 28, 1993",30,United States,€2.00m
+Ermin Bicakcic,TSG 1899 Hoffenheim,Centre-Back,"Jan 24, 1990",33,Bosnia-Herzegovina,€700k
+Joshua Quarshie,TSG 1899 Hoffenheim,Centre-Back,"Jul 26, 2004",18,Germany,€250k
+Benjamin Hübner,TSG 1899 Hoffenheim,Centre-Back,"Jul 4, 1989",33,Germany,-
+Angeliño,TSG 1899 Hoffenheim,Left-Back,"Jan 4, 1997",26,Spain,€12.00m
+Stefan Posch,TSG 1899 Hoffenheim,Right-Back,"May 14, 1997",26,Austria,€14.00m
+Pavel Kaderabek,TSG 1899 Hoffenheim,Right-Back,"Apr 25, 1992",31,Czech Republic,€3.00m
+Justin Che,TSG 1899 Hoffenheim,Right-Back,"Nov 18, 2003",19,United States,€1.50m
+Diadié Samassékou,TSG 1899 Hoffenheim,Defensive Midfield,"Jan 11, 1996",27,Mali,€7.00m
+Angelo Stiller,TSG 1899 Hoffenheim,Defensive Midfield,"Apr 4, 2001",22,Germany,€5.00m
+Sebastian Rudy,TSG 1899 Hoffenheim,Defensive Midfield,"Feb 28, 1990",33,Germany,€1.00m
+Melayro Bogarde,TSG 1899 Hoffenheim,Defensive Midfield,"May 28, 2002",21,Netherlands,€700k
+Dennis Geiger,TSG 1899 Hoffenheim,Central Midfield,"Jun 10, 1998",25,Germany,€8.00m
+Grischa Prömel,TSG 1899 Hoffenheim,Central Midfield,"Jan 9, 1995",28,Germany,€7.00m
+Finn Ole Becker,TSG 1899 Hoffenheim,Central Midfield,"Jun 8, 2000",23,Germany,€2.50m
+Thomas Delaney,TSG 1899 Hoffenheim,Central Midfield,"Sep 3, 1991",31,Denmark,€2.00m
+Umut Tohumcu,TSG 1899 Hoffenheim,Central Midfield,"Aug 11, 2004",18,Germany,€1.50m
+Robert Skov,TSG 1899 Hoffenheim,Left Midfield,"May 20, 1996",27,Denmark,€6.50m
+Christoph Baumgartner,TSG 1899 Hoffenheim,Attacking Midfield,"Aug 1, 1999",23,Austria,€24.00m
+Tom Bischof,TSG 1899 Hoffenheim,Attacking Midfield,"Jun 28, 2005",18,Germany,€3.50m
+Muhammed Damar,TSG 1899 Hoffenheim,Attacking Midfield,"Apr 9, 2004",19,Germany,€1.00m
+Jacob Bruun Larsen,TSG 1899 Hoffenheim,Left Winger,"Sep 19, 1998",24,Denmark,€3.00m
+Georginio Rutter,TSG 1899 Hoffenheim,Centre-Forward,"Apr 20, 2002",21,France,€18.00m
+Andrej Kramaric,TSG 1899 Hoffenheim,Centre-Forward,"Jun 19, 1991",32,Croatia,€8.00m
+Ihlas Bebou,TSG 1899 Hoffenheim,Centre-Forward,"Apr 23, 1994",29,Togo,€7.00m
+Kasper Dolberg,TSG 1899 Hoffenheim,Centre-Forward,"Oct 6, 1997",25,Denmark,€7.00m
+Munas Dabbur,TSG 1899 Hoffenheim,Centre-Forward,"May 14, 1992",31,Israel,€3.00m
+Fisnik Asllani,TSG 1899 Hoffenheim,Centre-Forward,"Aug 8, 2002",20,Germany,€800k
+Frederik Rönnow,1.FC Union Berlin,Goalkeeper,"Aug 4, 1992",30,Denmark,€5.50m
+Lennart Grill,1.FC Union Berlin,Goalkeeper,"Jan 25, 1999",24,Germany,€1.00m
+Jakob Busk,1.FC Union Berlin,Goalkeeper,"Sep 12, 1993",29,Denmark,€250k
+Yannic Stein,1.FC Union Berlin,Goalkeeper,"Sep 17, 2004",18,Germany,€200k
+Danilho Doekhi,1.FC Union Berlin,Centre-Back,"Jun 30, 1998",25,Netherlands,€17.00m
+Diogo Leite,1.FC Union Berlin,Centre-Back,"Jan 23, 1999",24,Portugal,€15.00m
+Paul Jaeckel,1.FC Union Berlin,Centre-Back,"Jul 22, 1998",24,Germany,€5.00m
+Robin Knoche,1.FC Union Berlin,Centre-Back,"May 22, 1992",31,Germany,€5.00m
+Timo Baumgartl,1.FC Union Berlin,Centre-Back,"Mar 4, 1996",27,Germany,€3.00m
+Dominique Heintz,1.FC Union Berlin,Centre-Back,"Aug 15, 1993",29,Germany,€1.20m
+Jérôme Roussillon,1.FC Union Berlin,Left-Back,"Jan 6, 1993",30,Guadeloupe,€3.00m
+Tymoteusz Puchacz,1.FC Union Berlin,Left-Back,"Jan 23, 1999",24,Poland,€1.20m
+Niko Gießelmann,1.FC Union Berlin,Left-Back,"Sep 26, 1991",31,Germany,€1.00m
+Julian Ryerson,1.FC Union Berlin,Right-Back,"Nov 17, 1997",25,Norway,€13.00m
+Josip Juranovic,1.FC Union Berlin,Right-Back,"Aug 16, 1995",27,Croatia,€12.00m
+Christopher Trimmel,1.FC Union Berlin,Right-Back,"Feb 24, 1987",36,Austria,€800k
+Rani Khedira,1.FC Union Berlin,Defensive Midfield,"Jan 27, 1994",29,Germany,€10.00m
+Aljoscha Kemlein,1.FC Union Berlin,Defensive Midfield,"Aug 2, 2004",18,Germany,€250k
+Janik Haberer,1.FC Union Berlin,Central Midfield,"Apr 2, 1994",29,Germany,€7.00m
+Aïssa Laïdouni,1.FC Union Berlin,Central Midfield,"Dec 13, 1996",26,Tunisia,€7.00m
+Morten Thorsby,1.FC Union Berlin,Central Midfield,"May 5, 1996",27,Norway,€5.50m
+András Schäfer,1.FC Union Berlin,Central Midfield,"Apr 13, 1999",24,Hungary,€5.00m
+Paul Seguin,1.FC Union Berlin,Central Midfield,"Mar 29, 1995",28,Germany,€2.50m
+Kevin Möhwald,1.FC Union Berlin,Central Midfield,"Jul 3, 1993",29,Germany,€600k
+Milos Pantovic,1.FC Union Berlin,Attacking Midfield,"Jul 7, 1996",26,Serbia,€1.50m
+Genki Haraguchi,1.FC Union Berlin,Attacking Midfield,"May 9, 1991",32,Japan,€1.00m
+Levin Öztunali,1.FC Union Berlin,Left Winger,"Mar 15, 1996",27,Germany,€1.20m
+Jamie Leweling,1.FC Union Berlin,Right Winger,"Feb 26, 2001",22,Germany,€3.00m
+Tim Skarke,1.FC Union Berlin,Right Winger,"Sep 7, 1996",26,Germany,€1.20m
+Tim Maciejewski,1.FC Union Berlin,Right Winger,"Mar 5, 2001",22,Germany,€350k
+Sheraldo Becker,1.FC Union Berlin,Centre-Forward,"Feb 9, 1995",28,Suriname,€17.00m
+Jordan,1.FC Union Berlin,Centre-Forward,"Apr 26, 1996",27,United States,€7.00m
+Kevin Behrens,1.FC Union Berlin,Centre-Forward,"Feb 3, 1991",32,Germany,€2.00m
+Sven Michel,1.FC Union Berlin,Centre-Forward,"Jul 15, 1990",32,Germany,€900k
+Andreas Voglsammer,1.FC Union Berlin,Centre-Forward,"Jan 9, 1992",31,Germany,€800k
+Malick Sanogo,1.FC Union Berlin,Centre-Forward,"Jun 30, 2004",19,United States,-
+Florian Müller,VfB Stuttgart,Goalkeeper,"Nov 13, 1997",25,Germany,€1.50m
+Fabian Bredlow,VfB Stuttgart,Goalkeeper,"Mar 2, 1995",28,Germany,€1.50m
+Dennis Seimen,VfB Stuttgart,Goalkeeper,"Dec 1, 2005",17,Germany,€200k
+Florian Schock,VfB Stuttgart,Goalkeeper,"May 22, 2001",22,Germany,€200k
+Nicolas Glaus,VfB Stuttgart,Goalkeeper,"May 10, 2002",21,Switzerland,€125k
+Konstantinos Mavropanos,VfB Stuttgart,Centre-Back,"Dec 11, 1997",25,Greece,€15.00m
+Hiroki Ito,VfB Stuttgart,Centre-Back,"May 12, 1999",24,Japan,€10.00m
+Waldemar Anton,VfB Stuttgart,Centre-Back,"Jul 20, 1996",26,Germany,€4.50m
+Dan-Axel Zagadou,VfB Stuttgart,Centre-Back,"Jun 3, 1999",24,France,€2.50m
+Leon Reichardt,VfB Stuttgart,Centre-Back,"Jun 28, 2004",19,Germany,-
+Borna Sosa,VfB Stuttgart,Left-Back,"Jan 21, 1998",25,Croatia,€12.00m
+Clinton Mola,VfB Stuttgart,Left-Back,"Mar 15, 2001",22,England,€500k
+Josha Vagnoman,VfB Stuttgart,Right-Back,"Dec 11, 2000",22,Germany,€8.00m
+Pascal Stenzel,VfB Stuttgart,Right-Back,"Mar 20, 1996",27,Germany,€1.50m
+Antonis Aidonis,VfB Stuttgart,Right-Back,"May 22, 2001",22,Germany,€350k
+Mattis Hoppe,VfB Stuttgart,Right-Back,"Jul 23, 2003",19,Germany,€150k
+Wataru Endo,VfB Stuttgart,Defensive Midfield,"Feb 9, 1993",30,Japan,€6.50m
+Atakan Karazor,VfB Stuttgart,Defensive Midfield,"Oct 13, 1996",26,Germany,€4.00m
+Luca Bazzoli,VfB Stuttgart,Defensive Midfield,"Nov 1, 2000",22,Germany,€225k
+Naouirou Ahamada,VfB Stuttgart,Central Midfield,"Mar 29, 2002",21,France,€10.00m
+Nikolas Nartey,VfB Stuttgart,Central Midfield,"Feb 22, 2000",23,Denmark,€1.50m
+Gil Dias,VfB Stuttgart,Left Midfield,"Sep 28, 1996",26,Portugal,€1.50m
+Enzo Millot,VfB Stuttgart,Attacking Midfield,"Jul 17, 2002",20,France,€7.00m
+Lilian Egloff,VfB Stuttgart,Attacking Midfield,"Aug 20, 2002",20,Germany,€1.50m
+Genki Haraguchi,VfB Stuttgart,Attacking Midfield,"May 9, 1991",32,Japan,€1.00m
+Ömer Beyaz,VfB Stuttgart,Attacking Midfield,"Aug 29, 2003",19,Türkiye,€700k
+Laurin Ulrich,VfB Stuttgart,Attacking Midfield,"Jan 31, 2005",18,Germany,€500k
+Chris Führich,VfB Stuttgart,Left Winger,"Jan 9, 1998",25,Germany,€4.00m
+Darko Churlinov,VfB Stuttgart,Left Winger,"Jul 11, 2000",22,North Macedonia,€2.20m
+Mateo Klimowicz,VfB Stuttgart,Left Winger,"Jul 6, 2000",22,Germany,€1.20m
+Silas,VfB Stuttgart,Right Winger,"Oct 6, 1998",24,DR Congo,€8.00m
+Tanguy Coulibaly,VfB Stuttgart,Right Winger,"Feb 18, 2001",22,France,€2.50m
+Sasa Kalajdzic,VfB Stuttgart,Centre-Forward,"Jul 7, 1997",25,Austria,€15.00m
+Serhou Guirassy,VfB Stuttgart,Centre-Forward,"Mar 12, 1996",27,Guinea,€14.00m
+Tiago Tomás,VfB Stuttgart,Centre-Forward,"Jun 16, 2002",21,Portugal,€7.00m
+Juan-José Perea,VfB Stuttgart,Centre-Forward,"Feb 23, 2000",23,Colombia,€2.00m
+Luca Pfeiffer,VfB Stuttgart,Centre-Forward,"Aug 20, 1996",26,Germany,€1.70m
+Thomas Kastanaras,VfB Stuttgart,Centre-Forward,"Jan 9, 2003",20,Germany,€700k
+Alou Kuol,VfB Stuttgart,Centre-Forward,"Jul 5, 2001",21,Australia,€300k
+Robin Zentner,1.FSV Mainz 05,Goalkeeper,"Oct 28, 1994",28,Germany,€5.00m
+Finn Dahmen,1.FSV Mainz 05,Goalkeeper,"Mar 27, 1998",25,Germany,€2.50m
+Lasse Rieß,1.FSV Mainz 05,Goalkeeper,"Jul 27, 2001",21,Germany,€200k
+Andreas Hanche-Olsen,1.FSV Mainz 05,Centre-Back,"Jan 17, 1997",26,Norway,€7.50m
+Edimilson Fernandes,1.FSV Mainz 05,Centre-Back,"Apr 15, 1996",27,Switzerland,€5.50m
+Alexander Hack,1.FSV Mainz 05,Centre-Back,"Sep 8, 1993",29,Germany,€2.50m
+Maxim Leitsch,1.FSV Mainz 05,Centre-Back,"May 18, 1998",25,Germany,€2.00m
+Stefan Bell,1.FSV Mainz 05,Centre-Back,"Aug 24, 1991",31,Germany,€2.00m
+Philipp Schulz,1.FSV Mainz 05,Centre-Back,"May 25, 2005",18,Germany,€300k
+Lucas Laux,1.FSV Mainz 05,Centre-Back,"Oct 14, 2002",20,Germany,€175k
+Anthony Caci,1.FSV Mainz 05,Left-Back,"Jul 1, 1997",25,France,€8.50m
+Aarón Martín,1.FSV Mainz 05,Left-Back,"Apr 22, 1997",26,Spain,€7.00m
+Anderson Lucoqui,1.FSV Mainz 05,Left-Back,"Jul 6, 1997",25,Angola,€600k
+Silvan Widmer,1.FSV Mainz 05,Right-Back,"Mar 5, 1993",30,Switzerland,€3.50m
+Danny da Costa,1.FSV Mainz 05,Right-Back,"Jul 13, 1993",29,Germany,€1.80m
+Dominik Kohr,1.FSV Mainz 05,Defensive Midfield,"Jan 31, 1994",29,Germany,€3.50m
+Niklas Tauer,1.FSV Mainz 05,Defensive Midfield,"Feb 17, 2001",22,Germany,€1.20m
+Anton Stach,1.FSV Mainz 05,Central Midfield,"Nov 15, 1998",24,Germany,€15.00m
+Leandro Barreiro,1.FSV Mainz 05,Central Midfield,"Jan 3, 2000",23,Luxembourg,€14.00m
+Merveille Papela,1.FSV Mainz 05,Central Midfield,"Jan 18, 2001",22,Germany,€1.00m
+Eniss Shabani,1.FSV Mainz 05,Central Midfield,"May 29, 2003",20,Albania,€200k
+Angelo Fulgini,1.FSV Mainz 05,Attacking Midfield,"Aug 20, 1996",26,France,€9.00m
+Jae-sung Lee,1.FSV Mainz 05,Attacking Midfield,"Aug 10, 1992",30,"Korea, South",€4.00m
+Aymen Barkok,1.FSV Mainz 05,Attacking Midfield,"May 21, 1998",25,Morocco,€2.00m
+Kaito Mizuta,1.FSV Mainz 05,Attacking Midfield,"Apr 8, 2000",23,Japan,€225k
+Delano Burgzorg,1.FSV Mainz 05,Left Winger,"Nov 7, 1998",24,Netherlands,€1.50m
+Ben Bobzien,1.FSV Mainz 05,Right Winger,"Apr 29, 2003",20,Germany,€600k
+Brajan Gruda,1.FSV Mainz 05,Right Winger,"May 31, 2004",19,Germany,€500k
+Jonathan Burkardt,1.FSV Mainz 05,Centre-Forward,"Jul 11, 2000",22,Germany,€10.00m
+Ludovic Ajorque,1.FSV Mainz 05,Centre-Forward,"Feb 25, 1994",29,France,€9.00m
+Marcus Ingvartsen,1.FSV Mainz 05,Centre-Forward,"Jan 4, 1996",27,Denmark,€5.50m
+Nelson Weiper,1.FSV Mainz 05,Centre-Forward,"Mar 17, 2005",18,Germany,€5.00m
+Karim Onisiwo,1.FSV Mainz 05,Centre-Forward,"Mar 17, 1992",31,Austria,€3.50m
+Marlon Mustapha,1.FSV Mainz 05,Centre-Forward,"May 24, 2001",22,Austria,€1.00m
+Tomas Koubek,FC Augsburg,Goalkeeper,"Aug 26, 1992",30,Czech Republic,€1.00m
+Rafal Gikiewicz,FC Augsburg,Goalkeeper,"Oct 26, 1987",35,Poland,€900k
+Daniel Klein,FC Augsburg,Goalkeeper,"Mar 13, 2001",22,Germany,€300k
+Benjamin Leneis,FC Augsburg,Goalkeeper,"Mar 8, 1999",24,Germany,€100k
+Felix Uduokhai,FC Augsburg,Centre-Back,"Sep 9, 1997",25,Germany,€8.50m
+Reece Oxford,FC Augsburg,Centre-Back,"Dec 16, 1998",24,England,€5.50m
+Maximilian Bauer,FC Augsburg,Centre-Back,"Feb 9, 2000",23,Germany,€3.50m
+Jeffrey Gouweleeuw,FC Augsburg,Centre-Back,"Jul 10, 1991",31,Netherlands,€3.00m
+Frederik Winther,FC Augsburg,Centre-Back,"Jan 4, 2001",22,Denmark,€1.00m
+Felix Götze,FC Augsburg,Centre-Back,"Feb 11, 1998",25,Germany,€400k
+Daniel Katic,FC Augsburg,Centre-Back,"Apr 26, 2003",20,Croatia,€125k
+Iago,FC Augsburg,Left-Back,"Mar 23, 1997",26,Brazil,€5.50m
+Mads Pedersen,FC Augsburg,Left-Back,"Sep 1, 1996",26,Denmark,€3.50m
+David Colina,FC Augsburg,Left-Back,"Jul 19, 2000",22,Croatia,€1.50m
+Robert Gumny,FC Augsburg,Right-Back,"Jun 4, 1998",25,Poland,€3.50m
+Raphael Framberger,FC Augsburg,Right-Back,"Sep 6, 1995",27,Germany,€800k
+Niklas Dorsch,FC Augsburg,Defensive Midfield,"Jan 15, 1998",25,Germany,€7.00m
+Carlos Gruezo,FC Augsburg,Defensive Midfield,"Apr 19, 1995",28,Ecuador,€3.00m
+Renato Veiga,FC Augsburg,Defensive Midfield,"Jul 29, 2003",19,Portugal,€1.00m
+Tobias Strobl,FC Augsburg,Defensive Midfield,"May 12, 1990",33,Germany,€500k
+Julian Baumgartlinger,FC Augsburg,Defensive Midfield,"Jan 2, 1988",35,Austria,€400k
+Arne Engels,FC Augsburg,Central Midfield,"Sep 8, 2003",19,Belgium,€7.50m
+Arne Maier,FC Augsburg,Central Midfield,"Jan 8, 1999",24,Germany,€6.50m
+Elvis Rexhbecaj,FC Augsburg,Central Midfield,"Nov 1, 1997",25,Germany,€3.50m
+Aaron Zehnter,FC Augsburg,Left Midfield,"Oct 31, 2004",18,Germany,€300k
+Fredrik Jensen,FC Augsburg,Attacking Midfield,"Sep 9, 1997",25,Finland,€2.50m
+Lukas Petkov,FC Augsburg,Attacking Midfield,"Nov 1, 2000",22,Bulgaria,€800k
+Josué Mbila,FC Augsburg,Attacking Midfield,"Aug 21, 1999",23,Germany,€100k
+Mert Kömür,FC Augsburg,Attacking Midfield,"Jul 17, 2005",17,Germany,-
+Nathanaël Mbuku,FC Augsburg,Left Winger,"Mar 16, 2002",21,France,€3.00m
+Rubén Vargas,FC Augsburg,Right Winger,"Aug 5, 1998",24,Switzerland,€6.50m
+André Hahn,FC Augsburg,Right Winger,"Aug 13, 1990",32,Germany,€1.20m
+Noah Sarenren Bazee,FC Augsburg,Right Winger,"Aug 21, 1996",26,Germany,€600k
+Daniel Caligiuri,FC Augsburg,Right Winger,"Jan 15, 1988",35,Italy,€600k
+Ermedin Demirovic,FC Augsburg,Centre-Forward,"Mar 25, 1998",25,Bosnia-Herzegovina,€12.00m
+Mergim Berisha,FC Augsburg,Centre-Forward,"May 11, 1998",25,Germany,€12.00m
+Ricardo Pepi,FC Augsburg,Centre-Forward,"Jan 9, 2003",20,United States,€9.00m
+Dion Beljo,FC Augsburg,Centre-Forward,"Mar 1, 2002",21,Croatia,€6.50m
+Kelvin Yeboah,FC Augsburg,Centre-Forward,"May 6, 2000",23,Italy,€3.50m
+Irvin Cardona,FC Augsburg,Centre-Forward,"Aug 8, 1997",25,France,€2.50m
+Maurice Malone,FC Augsburg,Centre-Forward,"Aug 17, 2000",22,Germany,€1.80m
+Florian Niederlechner,FC Augsburg,Centre-Forward,"Oct 24, 1990",32,Germany,€800k
+Marvin Schwäbe,1.FC Köln,Goalkeeper,"Apr 25, 1995",28,Germany,€7.00m
+Jonas Urbig,1.FC Köln,Goalkeeper,"Aug 8, 2003",19,Germany,€1.50m
+Timo Horn,1.FC Köln,Goalkeeper,"May 12, 1993",30,Germany,€1.50m
+Julian Roloff,1.FC Köln,Goalkeeper,"Jan 17, 2001",22,Germany,€100k
+Matthias Köbbing,1.FC Köln,Goalkeeper,"May 28, 1997",26,Germany,€100k
+Timo Hübers,1.FC Köln,Centre-Back,"Jul 20, 1996",26,Germany,€8.50m
+Jeff Chabot,1.FC Köln,Centre-Back,"Feb 12, 1998",25,Germany,€5.50m
+Luca Kilian,1.FC Köln,Centre-Back,"Sep 1, 1999",23,Germany,€3.50m
+Nikola Soldo,1.FC Köln,Centre-Back,"Jan 25, 2001",22,Croatia,€1.50m
+Elias Bakatukanda,1.FC Köln,Centre-Back,"Apr 13, 2004",19,Germany,€250k
+Rijad Smajic,1.FC Köln,Centre-Back,"May 2, 2004",19,Bosnia-Herzegovina,€150k
+Jonas Hector,1.FC Köln,Left-Back,"May 27, 1990",33,Germany,€3.50m
+Kristian Pedersen,1.FC Köln,Left-Back,"Aug 4, 1994",28,Denmark,€1.20m
+Benno Schmitz,1.FC Köln,Right-Back,"Nov 17, 1994",28,Germany,€3.00m
+Kingsley Ehizibue,1.FC Köln,Right-Back,"May 25, 1995",28,Netherlands,€2.50m
+Kingsley Schindler,1.FC Köln,Right-Back,"Jul 12, 1993",29,Ghana,€1.00m
+Ellyes Skhiri,1.FC Köln,Defensive Midfield,"May 10, 1995",28,Tunisia,€13.00m
+Dejan Ljubicic,1.FC Köln,Defensive Midfield,"Oct 8, 1997",25,Austria,€10.00m
+Eric Martel,1.FC Köln,Defensive Midfield,"Apr 29, 2002",21,Germany,€9.00m
+Georg Strauch,1.FC Köln,Defensive Midfield,"Mar 30, 2001",22,Germany,€200k
+Denis Huseinbasic,1.FC Köln,Central Midfield,"Jul 3, 2001",21,Bosnia-Herzegovina,€5.00m
+Ondrej Duda,1.FC Köln,Central Midfield,"Dec 5, 1994",28,Slovakia,€3.40m
+Mathias Olesen,1.FC Köln,Central Midfield,"Mar 21, 2001",22,Luxembourg,€1.20m
+Florian Kainz,1.FC Köln,Attacking Midfield,"Oct 24, 1992",30,Austria,€5.00m
+Joshua Schwirten,1.FC Köln,Attacking Midfield,"Jan 7, 2002",21,Germany,€200k
+Justin Diehl,1.FC Köln,Left Winger,"Nov 27, 2004",18,Germany,€500k
+Jan Thielmann,1.FC Köln,Right Winger,"May 26, 2002",21,Germany,€6.50m
+Linton Maina,1.FC Köln,Right Winger,"Jun 23, 1999",24,Germany,€6.00m
+Dimitrios Limnios,1.FC Köln,Right Winger,"May 27, 1998",25,Greece,€2.00m
+Steffen Tigges,1.FC Köln,Centre-Forward,"Jul 31, 1998",24,Germany,€3.50m
+Davie Selke,1.FC Köln,Centre-Forward,"Jan 20, 1995",28,Germany,€2.50m
+Mark Uth,1.FC Köln,Centre-Forward,"Aug 24, 1991",31,Germany,€1.50m
+Tim Lemperle,1.FC Köln,Centre-Forward,"Feb 5, 2002",21,Germany,€1.50m
+Sargis Adamyan,1.FC Köln,Centre-Forward,"May 23, 1993",30,Armenia,€1.00m
+Florian Dietz,1.FC Köln,Centre-Forward,"Aug 3, 1998",24,Germany,€1.00m
+Anthony Modeste,1.FC Köln,Centre-Forward,"Apr 14, 1988",35,France,€700k
+Sebastian Andersson,1.FC Köln,Centre-Forward,"Jul 15, 1991",31,Sweden,€700k
+Damion Downs,1.FC Köln,Centre-Forward,"Jul 6, 2004",18,United States,€250k
+Maximilian Schmid,1.FC Köln,Centre-Forward,"Mar 5, 2003",20,Germany,€200k
+Oliver Christensen,Hertha BSC,Goalkeeper,"Mar 22, 1999",24,Denmark,€4.00m
+Tjark Ernst,Hertha BSC,Goalkeeper,"Mar 15, 2003",20,Germany,€400k
+Rune Jarstein,Hertha BSC,Goalkeeper,"Sep 29, 1984",38,Norway,€300k
+Robert Kwasigroch,Hertha BSC,Goalkeeper,"Jun 26, 2004",19,Germany,€200k
+Marc Oliver Kempf,Hertha BSC,Centre-Back,"Jan 28, 1995",28,Germany,€3.50m
+Márton Dárdai,Hertha BSC,Centre-Back,"Feb 12, 2002",21,Hungary,€3.50m
+Linus Gechter,Hertha BSC,Centre-Back,"Feb 27, 2004",19,Germany,€2.50m
+Filip Uremovic,Hertha BSC,Centre-Back,"Feb 11, 1997",26,Croatia,€2.00m
+Agustín Rogel,Hertha BSC,Centre-Back,"Oct 17, 1997",25,Uruguay,€1.50m
+Dedryck Boyata,Hertha BSC,Centre-Back,"Nov 28, 1990",32,Belgium,€1.00m
+Joel da Silva Kiala,Hertha BSC,Centre-Back,"Jan 21, 2004",19,Germany,€250k
+Maximilian Mittelstädt,Hertha BSC,Left-Back,"Mar 18, 1997",26,Germany,€2.00m
+Marvin Plattenhardt,Hertha BSC,Left-Back,"Jan 26, 1992",31,Germany,€1.00m
+Lukas Ullrich,Hertha BSC,Left-Back,"Mar 16, 2004",19,Germany,€750k
+Jonjoe Kenny,Hertha BSC,Right-Back,"Mar 15, 1997",26,England,€3.00m
+Deyovaisio Zeefuik,Hertha BSC,Right-Back,"Mar 11, 1998",25,Netherlands,€1.20m
+Peter Pekarík,Hertha BSC,Right-Back,"Oct 30, 1986",36,Slovakia,€500k
+Julian Eitschberger,Hertha BSC,Right-Back,"Mar 5, 2004",19,Germany,€350k
+Lucas Tousart,Hertha BSC,Defensive Midfield,"Apr 29, 1997",26,France,€9.00m
+Ivan Sunjic,Hertha BSC,Defensive Midfield,"Oct 9, 1996",26,Croatia,€1.50m
+Tolga Ciğerci,Hertha BSC,Defensive Midfield,"Mar 23, 1992",31,Türkiye,€700k
+Pascal Klemens,Hertha BSC,Defensive Midfield,"Feb 23, 2005",18,Germany,€300k
+Veit Stange,Hertha BSC,Defensive Midfield,"Feb 8, 2004",19,Germany,€250k
+Suat Serdar,Hertha BSC,Central Midfield,"Apr 11, 1997",26,Germany,€4.50m
+Vladimír Darida,Hertha BSC,Central Midfield,"Aug 8, 1990",32,Czech Republic,€1.50m
+Marco Richter,Hertha BSC,Attacking Midfield,"Nov 24, 1997",25,Germany,€5.00m
+Jean-Paul Boëtius,Hertha BSC,Attacking Midfield,"Mar 22, 1994",29,Netherlands,€1.50m
+Kevin-Prince Boateng,Hertha BSC,Attacking Midfield,"Mar 6, 1987",36,Ghana,€700k
+Ibrahim Maza,Hertha BSC,Attacking Midfield,"Nov 24, 2005",17,Germany,€600k
+Tony Rölke,Hertha BSC,Attacking Midfield,"Jan 22, 2003",20,Germany,€200k
+Chidera Ejuke,Hertha BSC,Left Winger,"Jan 2, 1998",25,Nigeria,€5.50m
+Myziane Maolida,Hertha BSC,Left Winger,"Feb 14, 1999",24,Comoros,€1.50m
+Dodi Lukébakio,Hertha BSC,Right Winger,"Sep 24, 1997",25,Belgium,€12.00m
+Kelian Nsona,Hertha BSC,Right Winger,"May 11, 2002",21,France,€800k
+Krzysztof Piatek,Hertha BSC,Centre-Forward,"Jul 1, 1995",27,Poland,€7.00m
+Jessic Ngankam,Hertha BSC,Centre-Forward,"Jul 20, 2000",22,Germany,€5.00m
+Wilfried Kanga,Hertha BSC,Centre-Forward,"Feb 21, 1998",25,Cote d'Ivoire,€3.00m
+Davie Selke,Hertha BSC,Centre-Forward,"Jan 20, 1995",28,Germany,€2.50m
+Stevan Jovetic,Hertha BSC,Centre-Forward,"Nov 2, 1989",33,Montenegro,€1.50m
+Florian Niederlechner,Hertha BSC,Centre-Forward,"Oct 24, 1990",32,Germany,€800k
+Derry Scherhant,Hertha BSC,Centre-Forward,"Nov 10, 2002",20,Germany,€700k
+Jiri Pavlenka,SV Werder Bremen,Goalkeeper,"Apr 14, 1992",31,Czech Republic,€3.00m
+Michael Zetterer,SV Werder Bremen,Goalkeeper,"Jul 12, 1995",27,Germany,€500k
+Mio Backhaus,SV Werder Bremen,Goalkeeper,"Apr 16, 2004",19,Germany,€300k
+Dudu,SV Werder Bremen,Goalkeeper,"Feb 10, 1999",24,Germany,€200k
+Louis Lord,SV Werder Bremen,Goalkeeper,"Oct 22, 2003",19,Germany,€150k
+Marco Friedl,SV Werder Bremen,Centre-Back,"Mar 16, 1998",25,Austria,€7.00m
+Amos Pieper,SV Werder Bremen,Centre-Back,"Jan 17, 1998",25,Germany,€6.00m
+Niklas Stark,SV Werder Bremen,Centre-Back,"Apr 14, 1995",28,Germany,€5.50m
+Milos Veljkovic,SV Werder Bremen,Centre-Back,"Sep 26, 1995",27,Serbia,€5.50m
+Anthony Jung,SV Werder Bremen,Centre-Back,"Nov 3, 1991",31,Germany,€1.50m
+Fabio Chiarodia,SV Werder Bremen,Centre-Back,"Jun 5, 2005",18,Italy,€1.00m
+Tim-Justin Dietrich,SV Werder Bremen,Centre-Back,"Nov 8, 2002",20,Germany,€200k
+Lee Buchanan,SV Werder Bremen,Left-Back,"Mar 7, 2001",22,England,€3.50m
+Mitchell Weiser,SV Werder Bremen,Right-Back,"Apr 21, 1994",29,Germany,€6.00m
+Felix Agu,SV Werder Bremen,Right-Back,"Sep 27, 1999",23,Germany,€1.00m
+Ilia Gruev,SV Werder Bremen,Defensive Midfield,"May 6, 2000",23,Bulgaria,€3.00m
+Nicolai Rapp,SV Werder Bremen,Defensive Midfield,"Dec 13, 1996",26,Germany,€700k
+Christian Groß,SV Werder Bremen,Defensive Midfield,"Feb 8, 1989",34,Germany,€500k
+Tom Berger,SV Werder Bremen,Defensive Midfield,"Jul 31, 2001",21,Germany,€200k
+Jens Stage,SV Werder Bremen,Central Midfield,"Nov 8, 1996",26,Denmark,€5.00m
+Jean Manuel Mbom,SV Werder Bremen,Central Midfield,"Feb 24, 2000",23,Germany,€800k
+Dikeni Salifou,SV Werder Bremen,Central Midfield,"Jun 8, 2003",20,Togo,€200k
+Leon Opitz,SV Werder Bremen,Left Midfield,"Apr 11, 2005",18,Germany,-
+Romano Schmid,SV Werder Bremen,Attacking Midfield,"Jan 27, 2000",23,Austria,€4.50m
+Leonardo Bittencourt,SV Werder Bremen,Attacking Midfield,"Dec 19, 1993",29,Germany,€2.80m
+Niklas Schmidt,SV Werder Bremen,Attacking Midfield,"Mar 1, 1998",25,Germany,€2.50m
+Eren Dinkçi,SV Werder Bremen,Right Winger,"Dec 13, 2001",21,Germany,€1.00m
+Benjamin Goller,SV Werder Bremen,Right Winger,"Jan 1, 1999",24,Germany,€450k
+Maximilian Philipp,SV Werder Bremen,Second Striker,"Mar 1, 1994",29,Germany,€2.00m
+Nick Woltemade,SV Werder Bremen,Second Striker,"Feb 14, 2002",21,Germany,€1.50m
+Niclas Füllkrug,SV Werder Bremen,Centre-Forward,"Feb 9, 1993",30,Germany,€13.00m
+Marvin Ducksch,SV Werder Bremen,Centre-Forward,"Mar 7, 1994",29,Germany,€7.50m
+Oliver Burke,SV Werder Bremen,Centre-Forward,"Apr 7, 1997",26,Scotland,€2.50m
+Alexander Schwolow,FC Schalke 04,Goalkeeper,"Jun 2, 1992",31,Germany,€900k
+Ralf Fährmann,FC Schalke 04,Goalkeeper,"Sep 27, 1988",34,Germany,€400k
+Justin Heekeren,FC Schalke 04,Goalkeeper,"Nov 27, 2000",22,Germany,€250k
+Michael Langer,FC Schalke 04,Goalkeeper,"Jan 6, 1985",38,Austria,€50k
+Malick Thiaw,FC Schalke 04,Centre-Back,"Aug 8, 2001",21,Germany,€20.00m
+Moritz Jenz,FC Schalke 04,Centre-Back,"Apr 30, 1999",24,Germany,€7.50m
+Sepp van den Berg,FC Schalke 04,Centre-Back,"Dec 20, 2001",21,Netherlands,€5.00m
+Leo Greiml,FC Schalke 04,Centre-Back,"Jul 3, 2001",21,Austria,€1.20m
+Maya Yoshida,FC Schalke 04,Centre-Back,"Aug 24, 1988",34,Japan,€900k
+Marcin Kaminski,FC Schalke 04,Centre-Back,"Jan 15, 1992",31,Poland,€700k
+Timothée Kolodziejczak,FC Schalke 04,Centre-Back,"Oct 1, 1991",31,France,€400k
+Ibrahima Cissé,FC Schalke 04,Centre-Back,"Feb 15, 2001",22,Mali,€200k
+Julius Schell,FC Schalke 04,Centre-Back,"Jan 10, 2000",23,Germany,€125k
+Jere Uronen,FC Schalke 04,Left-Back,"Jul 13, 1994",28,Finland,€1.00m
+Kerim Calhanoglu,FC Schalke 04,Left-Back,"Aug 26, 2002",20,Germany,€800k
+Joey Müller,FC Schalke 04,Left-Back,"Aug 30, 2000",22,Germany,€175k
+Cédric Brunner,FC Schalke 04,Right-Back,"Feb 17, 1994",29,Switzerland,€1.80m
+Mehmet Aydın,FC Schalke 04,Right-Back,"Feb 9, 2002",21,Türkiye,€1.50m
+Henning Matriciani,FC Schalke 04,Right-Back,"Mar 14, 2000",23,Germany,€1.20m
+Alex Král,FC Schalke 04,Defensive Midfield,"May 19, 1998",25,Czech Republic,€7.00m
+Éder Balanta,FC Schalke 04,Defensive Midfield,"Feb 28, 1993",30,Colombia,€2.00m
+Florian Flick,FC Schalke 04,Defensive Midfield,"May 1, 2000",23,Germany,€1.50m
+Niklas Tauer,FC Schalke 04,Defensive Midfield,"Feb 17, 2001",22,Germany,€1.20m
+Tom Krauß,FC Schalke 04,Central Midfield,"Jun 22, 2001",22,Germany,€7.00m
+Rodrigo Zalazar,FC Schalke 04,Central Midfield,"Aug 12, 1999",23,Uruguay,€4.00m
+Danny Latza,FC Schalke 04,Central Midfield,"Dec 7, 1989",33,Germany,€500k
+Nassim Boujellab,FC Schalke 04,Central Midfield,"Jun 20, 1999",24,Morocco,€400k
+Thomas Ouwejan,FC Schalke 04,Left Midfield,"Sep 30, 1996",26,Netherlands,€2.00m
+Tobias Mohr,FC Schalke 04,Left Midfield,"Aug 24, 1995",27,Germany,€1.20m
+Florent Mollet,FC Schalke 04,Attacking Midfield,"Nov 19, 1991",31,France,€2.00m
+Dominick Drexler,FC Schalke 04,Attacking Midfield,"May 26, 1990",33,Germany,€750k
+Soichiro Kozuki,FC Schalke 04,Attacking Midfield,"Dec 22, 2000",22,Japan,€600k
+Blendi Idrizi,FC Schalke 04,Attacking Midfield,"May 2, 1998",25,Kosovo,€400k
+Marius Bülter,FC Schalke 04,Left Winger,"Mar 29, 1993",30,Germany,€3.00m
+Andreas Ivan,FC Schalke 04,Left Winger,"Jan 10, 1995",28,Romania,€125k
+Tim Skarke,FC Schalke 04,Right Winger,"Sep 7, 1996",26,Germany,€1.20m
+Sidi Sané,FC Schalke 04,Right Winger,"Apr 21, 2003",20,Germany,€200k
+Jordan Larsson,FC Schalke 04,Centre-Forward,"Jun 20, 1997",26,Sweden,€3.00m
+Michael Frey,FC Schalke 04,Centre-Forward,"Jul 19, 1994",28,Switzerland,€2.00m
+Kenan Karaman,FC Schalke 04,Centre-Forward,"Mar 5, 1994",29,Türkiye,€1.40m
+Simon Terodde,FC Schalke 04,Centre-Forward,"Mar 2, 1988",35,Germany,€900k
+Sebastian Polter,FC Schalke 04,Centre-Forward,"Apr 1, 1991",32,Germany,€800k
+Keke Topp,FC Schalke 04,Centre-Forward,"Mar 25, 2004",19,Germany,€500k
+Manuel Riemann,VfL Bochum,Goalkeeper,"Sep 9, 1988",34,Germany,€1.00m
+Marko Johansson,VfL Bochum,Goalkeeper,"Aug 25, 1998",24,Sweden,€400k
+Michael Esser,VfL Bochum,Goalkeeper,"Nov 22, 1987",35,Germany,€300k
+Paul Grave,VfL Bochum,Goalkeeper,"Apr 10, 2001",22,Germany,€100k
+Erhan Masovic,VfL Bochum,Centre-Back,"Nov 22, 1998",24,Serbia,€8.00m
+Ivan Ordets,VfL Bochum,Centre-Back,"Jul 8, 1992",30,Ukraine,€3.00m
+Keven Schlotterbeck,VfL Bochum,Centre-Back,"Apr 28, 1997",26,Germany,€3.00m
+Dominique Heintz,VfL Bochum,Centre-Back,"Aug 15, 1993",29,Germany,€1.20m
+Tim Oermann,VfL Bochum,Centre-Back,"Oct 6, 2003",19,Germany,€800k
+Vasilios Lampropoulos,VfL Bochum,Centre-Back,"Mar 31, 1990",33,Greece,€500k
+Mohammed Tolba,VfL Bochum,Centre-Back,"Jul 19, 2004",18,Germany,€200k
+Danilo Soares,VfL Bochum,Left-Back,"Oct 29, 1991",31,Brazil,€1.80m
+Jannes Horn,VfL Bochum,Left-Back,"Feb 6, 1997",26,Germany,€1.20m
+Konstantinos Stafylidis,VfL Bochum,Left-Back,"Dec 2, 1993",29,Greece,€1.20m
+Jordi Osei-Tutu,VfL Bochum,Right-Back,"Oct 2, 1998",24,England,€1.20m
+Saidy Janko,VfL Bochum,Right-Back,"Oct 22, 1995",27,The Gambia,€1.00m
+Cristian Gamboa,VfL Bochum,Right-Back,"Oct 24, 1989",33,Costa Rica,€600k
+Jacek Goralski,VfL Bochum,Defensive Midfield,"Sep 21, 1992",30,Poland,€700k
+Anthony Losilla,VfL Bochum,Defensive Midfield,"Mar 10, 1986",37,France,€500k
+Patrick Osterhage,VfL Bochum,Central Midfield,"Feb 1, 2000",23,Germany,€4.00m
+Pierre Kunde,VfL Bochum,Central Midfield,"Jul 26, 1995",27,Cameroon,€1.70m
+Kevin Stöger,VfL Bochum,Attacking Midfield,"Aug 27, 1993",29,Austria,€3.00m
+Philipp Förster,VfL Bochum,Attacking Midfield,"Feb 4, 1995",28,Germany,€2.80m
+Gerrit Holtmann,VfL Bochum,Left Winger,"Mar 25, 1995",28,Philippines,€2.50m
+Christopher Antwi-Adjei,VfL Bochum,Left Winger,"Feb 7, 1994",29,Ghana,€2.20m
+Takuma Asano,VfL Bochum,Right Winger,"Nov 10, 1994",28,Japan,€4.00m
+Tarsis Bonga,VfL Bochum,Right Winger,"Jan 10, 1997",26,Germany,€300k
+Philipp Hofmann,VfL Bochum,Centre-Forward,"Mar 30, 1993",30,Germany,€2.80m
+Simon Zoller,VfL Bochum,Centre-Forward,"Jun 26, 1991",32,Germany,€1.10m
+Lys Mousset,VfL Bochum,Centre-Forward,"Feb 8, 1996",27,France,€1.00m
+Moritz Broschinski,VfL Bochum,Centre-Forward,"Sep 23, 2000",22,Germany,€1.00m
+Silvere Ganvoula,VfL Bochum,Centre-Forward,"Jun 29, 1996",27,Congo,€600k

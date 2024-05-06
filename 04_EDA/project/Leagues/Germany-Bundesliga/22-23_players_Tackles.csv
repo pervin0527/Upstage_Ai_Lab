@@ -1,0 +1,516 @@
+player_name,team_name,TotalTackles,DribbledPast,TotalAttemptedTackles
+Tjark Ernst,Hertha Berlin,0,0,0
+Jude Bellingham,Borussia Dortmund,2.5,0.5,3
+Joshua Kimmich,Bayern Munich,2.4,1,3.4
+Niclas Füllkrug,Werder Bremen,0.3,0.4,0.7
+Christopher Nkunku,RB Leipzig,0.2,0.2,0.4
+Jamal Musiala,Bayern Munich,1,0.7,1.7
+Dominik Szoboszlai,RB Leipzig,1.5,0.8,2.3
+Randal Kolo Muani,Eintracht Frankfurt,0.4,0.3,0.7
+Julian Brandt,Borussia Dortmund,0.9,1,1.9
+Raphaël Guerreiro,Borussia Dortmund,1.3,0.5,1.8
+Vincenzo Grifo,Freiburg,0.9,0.5,1.4
+Jonas Hofmann,Borussia M.Gladbach,1,1.2,2.2
+Sébastien Haller,Borussia Dortmund,0.3,0.2,0.5
+Donyell Malen,Borussia Dortmund,0.5,0.3,0.8
+Julien Duranville,Borussia Dortmund,1,0,1
+Kingsley Coman,Bayern Munich,0.5,0.4,0.9
+João Cancelo,Bayern Munich,1.5,0.9,2.4
+Eric Choupo-Moting,Bayern Munich,0.5,0.1,0.6
+Benjamin Pavard,Bayern Munich,2.3,0.4,2.7
+Alphonso Davies,Bayern Munich,1.7,0.8,2.5
+Florian Wirtz,Bayer Leverkusen,1.1,0.5,1.5
+Yann Sommer,Borussia M.Gladbach,0.1,0,0.1
+Thomas Müller,Bayern Munich,0.8,0.4,1.1
+Jeff Chabot,FC Koln,1.7,0.7,2.4
+Jeremie Frimpong,Bayer Leverkusen,1.6,0.6,2.2
+Michael Gregoritsch,Freiburg,0.6,0.6,1.2
+Serge Gnabry,Bayern Munich,1,0.8,1.8
+Marcus Thuram,Borussia M.Gladbach,0.5,0.2,0.7
+Leroy Sané,Bayern Munich,1.2,0.6,1.8
+Nico Schlotterbeck,Borussia Dortmund,2.1,0.6,2.7
+Frederik Winther,Augsburg,2,2,4
+Florian Kainz,FC Koln,0.7,0.6,1.2
+Moussa Diaby,Bayer Leverkusen,0.4,0.2,0.6
+Willi Orbán,RB Leipzig,1.5,0.5,2
+Ellyes Skhiri,FC Koln,2.5,1.3,3.7
+Maximilian Arnold,Wolfsburg,1.9,0.8,2.8
+Frederik Rønnow,Union Berlin,0,0.2,0.2
+Borna Sosa,VfB Stuttgart,1.1,0.4,1.5
+Philipp Hofmann,Bochum,0.5,0.2,0.7
+Konstantinos Mavropanos,VfB Stuttgart,1.8,0.4,2.1
+Paulo Otávio,Wolfsburg,2.9,0.9,3.8
+Marvin Ducksch,Werder Bremen,0.2,0.4,0.6
+Patrick Wimmer,Wolfsburg,1.5,1,2.5
+Jonas Hector,FC Koln,3.5,1.5,5
+Danilho Doekhi,Union Berlin,1.5,0.5,2
+Mats Hummels,Borussia Dortmund,2.1,0.8,2.8
+Wataru Endo,VfB Stuttgart,2.1,1.4,3.5
+Ørjan Nyland,RB Leipzig,0,0,0
+Ludovic Ajorque,Mainz 05,0.4,0.5,0.8
+Ramy Bensebaïni,Borussia M.Gladbach,1.2,0.5,1.7
+Matthias Ginter,Freiburg,1.3,0.4,1.7
+Ralf Fährmann,Schalke 04,0.1,0,0.1
+Diant Ramaj,Eintracht Frankfurt,0,0,0
+Mitchell Weiser,Werder Bremen,2.4,1.2,3.6
+Matthijs de Ligt,Bayern Munich,1,0.3,1.3
+Dani Olmo,RB Leipzig,0.7,0.3,1
+Christoph Baumgartner,Hoffenheim,1.1,1.3,2.4
+Sheraldo Becker,Union Berlin,0.4,0.3,0.7
+Michael Zetterer,Werder Bremen,0,0,0
+Rodrigo Zalazar,Schalke 04,0.7,0.7,1.4
+Ritsu Doan,Freiburg,1.8,0.9,2.7
+Finn Dahmen,Mainz 05,0,0,0
+Timo Hübers,FC Koln,1.5,1,2.4
+Leon Goretzka,Bayern Munich,1.6,0.8,2.4
+Julian Ryerson,Union Berlin,2.2,0.8,2.9
+Emre Can,Borussia Dortmund,2.1,0.8,2.9
+Lucas Tousart,Hertha Berlin,2.2,1,3.2
+Andreas Hanche-Olsen,Mainz 05,2.1,1,3.1
+Robin Knoche,Union Berlin,1.4,0.7,2.1
+Sasa Kalajdzic,VfB Stuttgart,1,0.7,1.7
+Marc Oliver Kempf,Hertha Berlin,1.4,0.2,1.6
+Noussair Mazraoui,Bayern Munich,1.5,0.5,2
+Konrad Laimer,RB Leipzig,2.9,1.1,4
+Felix Nmecha,Wolfsburg,1.4,0.6,2
+Karim Adeyemi,Borussia Dortmund,0.7,0.9,1.6
+Sadio Mané,Bayern Munich,0.4,0.3,0.8
+Anton Stach,Mainz 05,0.9,0.7,1.6
+Dodi Lukébakio,Hertha Berlin,0.6,0.7,1.2
+Robert Andrich,Bayer Leverkusen,2.1,0.7,2.8
+Lucas Höler,Freiburg,0.7,0.6,1.3
+Kevin Stöger,Bochum,2.6,2,4.6
+Kevin Behrens,Union Berlin,0.3,0.4,0.8
+Jan Olschowsky,Borussia M.Gladbach,0,0.3,0.3
+Georginio Rutter,Hoffenheim,0.5,0.1,0.6
+Ihlas Bebou,Hoffenheim,1,0.3,1.3
+Manuel Neuer,Bayern Munich,0,0,0
+Karim Onisiwo,Mainz 05,0.6,0.5,1.2
+Soichiro Kozuki,Schalke 04,1.2,0.4,1.6
+Timo Werner,RB Leipzig,0.4,0.3,0.7
+Exequiel Palacios,Bayer Leverkusen,2.4,0.8,3.1
+Marius Wolf,Borussia Dortmund,1,0.5,1.5
+Aurélio Buta,Eintracht Frankfurt,1.8,0.7,2.5
+Manu Koné,Borussia M.Gladbach,2.5,0.8,3.2
+Philipp Lienhart,Freiburg,1,0.5,1.5
+Lukas Kübler,Freiburg,1.7,0.5,2.2
+Lars Stindl,Borussia M.Gladbach,0.8,0.6,1.4
+Daichi Kamada,Eintracht Frankfurt,1.6,0.8,2.4
+Rafal Gikiewicz,Augsburg,0.1,0,0.1
+Tomás Koubek,Augsburg,0,0,0
+Mark Flekken,Freiburg,0,0,0
+Niklas Süle,Borussia Dortmund,0.9,0.3,1.2
+Julian Ryerson,Borussia Dortmund,1.6,1.1,2.6
+Nicolas Höfler,Freiburg,2.1,1.1,3.1
+Gregor Kobel,Borussia Dortmund,0,0,0
+Florian Niederlechner,Augsburg,0.7,0.2,0.9
+Josip Juranovic,Union Berlin,0.8,0.9,1.7
+Lee Jae-Sung,Mainz 05,1.1,0.6,1.7
+Koen Casteels,Wolfsburg,0,0,0
+Christopher Trimmel,Union Berlin,1.2,0.4,1.7
+Serhou Guirassy,VfB Stuttgart,0.2,0,0.2
+Benjamin Henrichs,RB Leipzig,2.4,0.8,3.2
+Ermedin Demirovic,Augsburg,1,0.4,1.5
+Stefan Bell,Mainz 05,1.4,0.7,2.2
+Abdou Diallo,RB Leipzig,0.8,0.3,1
+Ko Itakura,Borussia M.Gladbach,1.2,0.6,1.8
+Leandro Barreiro,Mainz 05,1.9,0.9,2.8
+Gabriel Vidovic,Bayern Munich,0,0,0
+Hrvoje Smolcic,Eintracht Frankfurt,0.9,0.6,1.4
+Ridle Baku,Wolfsburg,1.5,0.8,2.3
+Moritz Jenz,Schalke 04,1.3,0.3,1.5
+Angeliño,Hoffenheim,1.2,0.4,1.6
+Marcin Kaminski,Schalke 04,0.8,0.3,1
+Marius Bülter,Schalke 04,0.7,0.6,1.3
+Tuta,Eintracht Frankfurt,1.7,0.8,2.5
+Ivan Ordets,Bochum,1,0.4,1.4
+Junior Dina Ebimbe,Eintracht Frankfurt,1.6,0.9,2.5
+Dayot Upamecano,Bayern Munich,2.2,0.6,2.8
+Luca Pellegrini,Eintracht Frankfurt,1.4,0,1.4
+John Anthony Brooks,Hoffenheim,1.2,0.3,1.5
+Jakub Kaminski,Wolfsburg,1.2,0.6,1.8
+Marco Richter,Hertha Berlin,1.5,1,2.5
+Kevin Akpoguma,Hoffenheim,2.7,0.5,3.1
+Oliver Baumann,Hoffenheim,0,0,0
+Jonas Omlin,Borussia M.Gladbach,0.1,0.1,0.2
+Anthony Losilla,Bochum,2.5,1.3,3.7
+Xaver Schlager,RB Leipzig,1.9,1,2.9
+Kerem Demirbay,Bayer Leverkusen,1.4,0.6,2.1
+Hiroki Ito,VfB Stuttgart,1.3,0.6,1.9
+Anthony Caci,Mainz 05,1.9,0.5,2.3
+Amine Adli,Bayer Leverkusen,0.7,0.5,1.2
+Mërgim Berisha,Augsburg,0.5,0.4,0.9
+Marco Reus,Borussia Dortmund,1.2,0.7,1.9
+Nico Elvedi,Borussia M.Gladbach,1.4,0.4,1.9
+Eric Martel,FC Koln,2.3,1,3.3
+Davie Selke,FC Koln,0,0.2,0.2
+Ozan Kabak,Hoffenheim,1.7,0.4,2.1
+Maximilian Eggestein,Freiburg,1.6,0.6,2.2
+Philipp Max,Eintracht Frankfurt,1.2,1.1,2.3
+Jonas Wind,Wolfsburg,0.6,0.2,0.8
+Jamie Bynoe-Gittens,Borussia Dortmund,0.5,0.3,0.9
+Evan Ndicka,Eintracht Frankfurt,0.8,0.5,1.3
+Josko Gvardiol,RB Leipzig,0.8,0.4,1.2
+Marco Friedl,Werder Bremen,2.1,0.9,3
+André Hahn,Augsburg,1.3,0.6,1.9
+Piero Hincapié,Bayer Leverkusen,1.7,0.4,2.1
+Jesper Lindstrøm,Eintracht Frankfurt,1,0.6,1.5
+Patrik Schick,Bayer Leverkusen,0,0.1,0.1
+Aarón Martín,Mainz 05,1.5,0.7,2.2
+Tom Krauß,Schalke 04,3.5,1.5,5
+Micky van de Ven,Wolfsburg,1.4,0.3,1.7
+Suat Serdar,Hertha Berlin,1.6,0.7,2.3
+Maxence Lacroix,Wolfsburg,0.9,0.3,1.3
+Christopher Lenz,Eintracht Frankfurt,1.2,0.9,2.1
+Rani Khedira,Union Berlin,1.8,0.8,2.6
+Mario Götze,Eintracht Frankfurt,1.3,1,2.3
+Robin Zentner,Mainz 05,0,0.2,0.2
+Marcel Sabitzer,Bayern Munich,1.8,0.5,2.3
+Chris Führich,VfB Stuttgart,1.1,0.6,1.7
+Christian Günter,Freiburg,0.9,0.9,1.8
+Andrej Kramaric,Hoffenheim,0.2,0.3,0.5
+Mohamed Simakan,RB Leipzig,0.9,0.3,1.2
+Maximilian Mittelstädt,Hertha Berlin,2.3,1.3,3.6
+Roland Sallai,Freiburg,0.6,0.3,0.9
+Malick Thiaw,Schalke 04,1,0.3,1.3
+Clinton Mola,VfB Stuttgart,3,0,3
+Leonardo Bittencourt,Werder Bremen,2.1,1.5,3.6
+Lucas Hernández,Bayern Munich,0.9,0.1,1
+Janik Haberer,Union Berlin,0.9,1,1.9
+Edmond Tapsoba,Bayer Leverkusen,1.5,0.4,1.9
+David Raum,RB Leipzig,1.4,0.4,1.8
+Maya Yoshida,Schalke 04,1.2,0.4,1.6
+Mattias Svanberg,Wolfsburg,0.8,0.6,1.4
+André Silva,RB Leipzig,0.4,0.2,0.5
+Manuel Riemann,Bochum,0.1,0.1,0.1
+Janis Blaswich,RB Leipzig,0,0,0
+Niklas Schmidt,Werder Bremen,1,0.6,1.7
+Dominik Kohr,Mainz 05,2,1.1,3
+Jeffrey Gouweleeuw,Augsburg,1.3,0.8,2.1
+Yannick Gerhardt,Wolfsburg,1,0.6,1.6
+Silas Katompa Mvumpa,VfB Stuttgart,0.8,0.5,1.3
+Jirí Pavlenka,Werder Bremen,0,0.1,0.2
+Dennis Geiger,Hoffenheim,1.7,0.5,2.1
+Djibril Sow,Eintracht Frankfurt,1.3,0.7,2
+Aïssa Laïdouni,Union Berlin,1,0.9,1.9
+Gil Dias,VfB Stuttgart,1.1,1.3,2.4
+Edimilson Fernandes,Mainz 05,1.1,0.5,1.6
+Atakan Karazor,VfB Stuttgart,1.7,0.8,2.5
+Youssoufa Moukoko,Borussia Dortmund,0.5,0.1,0.6
+Christopher Antwi-Adjei,Bochum,0.8,0.7,1.4
+Sebastiaan Bornauw,Wolfsburg,1.1,0.2,1.3
+Stevan Jovetic,Hertha Berlin,0.2,0.6,0.8
+Philipp Förster,Bochum,1.2,1.1,2.4
+Alassane Pléa,Borussia M.Gladbach,0.6,0.6,1.2
+Steffen Tigges,FC Koln,0.4,0.3,0.7
+Sven Ulreich,Bayern Munich,0.3,0,0.3
+Niklas Stark,Werder Bremen,2.1,0.6,2.6
+Alexander Meyer,Borussia Dortmund,0,0.1,0.1
+Jonathan Tah,Bayer Leverkusen,0.8,0.2,0.9
+Diogo Leite,Union Berlin,1.3,0.5,1.7
+Grischa Prömel,Hoffenheim,1.5,0.9,2.4
+Giovanni Reyna,Borussia Dortmund,0.6,0.2,0.9
+Chidera Ejuke,Hertha Berlin,0.3,0.2,0.5
+Amos Pieper,Werder Bremen,1.6,0.6,2.1
+Timo Baumgartl,Union Berlin,1.4,1.6,3
+Julian Weigl,Borussia M.Gladbach,1.9,0.8,2.7
+Rubén Vargas,Augsburg,0.7,0.3,0.9
+Dion Beljo,Augsburg,0.4,0.6,1
+Keven Schlotterbeck,Bochum,1.3,0.2,1.5
+Robert Skov,Hoffenheim,1,0.7,1.7
+Almamy Touré,Eintracht Frankfurt,1.9,0.6,2.4
+Waldemar Anton,VfB Stuttgart,1.4,0.7,2.1
+Anthony Jung,Werder Bremen,1.4,0.8,2.1
+Jordan Siebatcheu,Union Berlin,0.5,0.5,1
+Jonjoe Kenny,Hertha Berlin,1.6,0.6,2.2
+Dejan Ljubicic,FC Koln,0.9,1,1.9
+Dan-Axel Zagadou,VfB Stuttgart,0.8,0.5,1.4
+Danilo Soares,Bochum,3.1,1.3,4.4
+Mahmoud Dahoud,Borussia Dortmund,1.2,0,1.2
+Erhan Masovic,Bochum,1.7,0.7,2.4
+Levin Öztunali,Union Berlin,0,0.5,0.5
+Felix Passlack,Borussia Dortmund,1.3,0,1.3
+Péter Gulácsi,RB Leipzig,0,0,0
+Mu'nas Dabbur,Hoffenheim,0.5,0.3,0.8
+Felix Uduokhai,Augsburg,1.6,0.7,2.3
+Lukás Hrádecky,Bayer Leverkusen,0,0,0
+Emil Forsberg,RB Leipzig,0.5,0.5,1
+Cédric Brunner,Schalke 04,1.4,0.5,1.9
+Konstantinos Stafylidis,Bochum,1.4,0.7,2.2
+Sebastian Rode,Eintracht Frankfurt,1.4,1.1,2.6
+Tanguy Coulibaly,VfB Stuttgart,0.9,0.5,1.4
+Tobias Sippel,Borussia M.Gladbach,0,0,0
+Silvan Widmer,Mainz 05,1,0.7,1.7
+Thomas Meunier,Borussia Dortmund,1.6,0.7,2.3
+Omar Marmoush,Wolfsburg,0.5,0.4,0.8
+Ansgar Knauff,Eintracht Frankfurt,1.5,0.8,2.3
+Christian Groß,Werder Bremen,2.2,1.2,3.3
+Milos Veljkovic,Werder Bremen,1,0.4,1.4
+Kristijan Jakic,Eintracht Frankfurt,1.4,0.8,2.2
+Paul Jaeckel,Union Berlin,1.5,1.1,2.6
+Lukas Klostermann,RB Leipzig,1.1,0.5,1.5
+Marcel Halstenberg,RB Leipzig,1.3,0.6,1.9
+Niko Gießelmann,Union Berlin,0.8,0.7,1.5
+Adam Hlozek,Bayer Leverkusen,0.3,0.2,0.5
+Odilon Kossounou,Bayer Leverkusen,0.9,0.3,1.2
+Lennart Grill,Union Berlin,0,0.2,0.2
+Kenneth Schmidt,Freiburg,1.2,0.2,1.4
+Tiago Tomás,VfB Stuttgart,0.4,0.2,0.6
+Arijon Ibrahimovic,Bayern Munich,1,0,1
+Simon Terodde,Schalke 04,0.5,0.3,0.8
+Salih Özcan,Borussia Dortmund,1.2,0.9,2.1
+Christoph Kramer,Borussia M.Gladbach,1.5,1.1,2.7
+Linton Maina,FC Koln,0.5,0.7,1.2
+Josuha Guilavogui,Wolfsburg,0.8,0.5,1.3
+Jérôme Roussillon,Union Berlin,1,0.3,1.3
+Jens Stage,Werder Bremen,1.1,0.8,1.9
+Lukas Nmecha,Wolfsburg,0.3,0,0.3
+Bartol Franjic,Wolfsburg,0.8,0.4,1.2
+Jonathan Burkardt,Mainz 05,0.3,0.3,0.5
+Arne Engels,Augsburg,1.1,0.6,1.7
+Jan Thielmann,FC Koln,0.4,0.4,0.8
+Joe Scally,Borussia M.Gladbach,1.1,0.3,1.4
+Naouirou Ahamada,VfB Stuttgart,1,0.7,1.7
+Maxim Leitsch,Mainz 05,1,0.1,1.1
+Tim Skarke,Schalke 04,1.4,0.3,1.8
+Dominique Heintz,Bochum,1.2,1,2.2
+Amadou Haidara,RB Leipzig,0.8,0.7,1.5
+Pavel Kaderábek,Hoffenheim,1,0.3,1.3
+Benno Schmitz,FC Koln,2.1,1.3,3.4
+Arne Maier,Augsburg,1,0.3,1.3
+Kelvin Yeboah,Augsburg,0.5,0.2,0.7
+Marvin Plattenhardt,Hertha Berlin,1.4,0.6,2
+Genki Haraguchi,VfB Stuttgart,1.5,1.1,2.5
+Ibrahim Maza,Hertha Berlin,0.5,0.5,1
+Josha Vagnoman,VfB Stuttgart,1.1,0.5,1.7
+Florian Neuhaus,Borussia M.Gladbach,0.8,0.8,1.7
+Anthony Modeste,Borussia Dortmund,0.2,0.2,0.4
+Sardar Azmoun,Bayer Leverkusen,0.3,0.3,0.5
+Kevin Trapp,Eintracht Frankfurt,0,0.1,0.1
+Kiliann Sildillia,Freiburg,1.2,0.4,1.6
+Kevin Vogt,Hoffenheim,0.7,0.6,1.3
+Michael Frey,Schalke 04,0.9,0.6,1.5
+Henning Matriciani,Schalke 04,2,1.5,3.5
+Florian Niederlechner,Hertha Berlin,0.6,0.4,0.9
+Wilfried Kanga,Hertha Berlin,0.2,0.1,0.3
+Enzo Millot,VfB Stuttgart,1,0.3,1.3
+Takuma Asano,Bochum,0.6,0.4,0.9
+Iago,Augsburg,1.5,0.8,2.4
+Pascal Klemens,Hertha Berlin,0,1,1
+Nadiem Amiri,Bayer Leverkusen,0.6,0.4,1
+Callum Hudson-Odoi,Bayer Leverkusen,0.4,0,0.4
+Jere Uronen,Schalke 04,1.3,0.4,1.6
+Carlos Gruezo,Augsburg,1.6,0.5,2.2
+Marcus Ingvartsen,Mainz 05,0.1,0.3,0.5
+Charles Aránguiz,Bayer Leverkusen,1.7,0.8,2.5
+Genki Haraguchi,Union Berlin,1.1,0.5,1.6
+Yussuf Poulsen,RB Leipzig,0.3,0.2,0.5
+Mads Pedersen,Augsburg,1.6,0.4,2
+Dominick Drexler,Schalke 04,0.9,0.5,1.4
+Alexander Hack,Mainz 05,1.6,0.7,2.3
+Paul Seguin,Union Berlin,0.9,0.5,1.4
+Tobias Mohr,Schalke 04,0.4,0.3,0.7
+Éder Balanta,Schalke 04,0.8,0.7,1.5
+Kevin Kampl,RB Leipzig,0.7,0.7,1.4
+Nikola Soldo,FC Koln,2.1,0.6,2.7
+Elvis Rexhbeçaj,Augsburg,1.6,1,2.6
+Filip Uremovic,Hertha Berlin,1.7,0.4,2.1
+Oliver Christensen,Hertha Berlin,0,0.1,0.1
+Danny da Costa,Mainz 05,0.9,0.3,1.2
+Marvin Friedrich,Borussia M.Gladbach,0.7,0.1,0.9
+Makoto Hasebe,Eintracht Frankfurt,1,0.8,1.8
+Kristian Pedersen,FC Koln,0.8,0.3,1.2
+Mitchel Bakker,Bayer Leverkusen,0.6,0.3,0.9
+Hugo Novoa,RB Leipzig,1.1,0.4,1.6
+András Schäfer,Union Berlin,1.3,0.5,1.8
+Stanley Nsoki,Hoffenheim,1.2,0.5,1.7
+Kevin Paredes,Wolfsburg,0.6,0.1,0.7
+Alex Král,Schalke 04,1.2,0.7,1.9
+Angelo Stiller,Hoffenheim,1.2,0.2,1.4
+Robert Gumny,Augsburg,1.2,0.6,1.7
+Nikolas Nartey,VfB Stuttgart,1.2,0.4,1.7
+Yann Sommer,Bayern Munich,0,0,0
+Romano Schmid,Werder Bremen,0.9,0.4,1.3
+Manuel Gulde,Freiburg,0.9,0.1,1.1
+Florian Flick,Schalke 04,1.5,1.3,2.8
+Niklas Dorsch,Augsburg,1.9,0.6,2.5
+Pascal Stenzel,VfB Stuttgart,1,0.3,1.3
+Mathys Tel,Bayern Munich,0.1,0,0.1
+Luca Netz,Borussia M.Gladbach,1.3,0.7,1.9
+Alexander Schwolow,Schalke 04,0,0.1,0.1
+Sebastian Polter,Schalke 04,0.2,0.2,0.4
+Tolga Cigerci,Hertha Berlin,1.5,0.5,2
+Josip Stanisic,Bayern Munich,1.4,0.4,1.7
+Cristian Gamboa,Bochum,2.2,0.5,2.7
+Kilian Fischer,Wolfsburg,0.9,0.5,1.4
+Sepp van den Berg,Schalke 04,0.6,0.3,0.9
+Daley Sinkgraven,Bayer Leverkusen,0.8,0.2,1
+Sebastian Rudy,Hoffenheim,1.2,0.6,1.8
+Kevin Schade,Freiburg,0.8,0.3,1
+Josip Brekalo,Wolfsburg,0.3,0.7,1
+Gerrit Holtmann,Bochum,0.6,0.4,1
+Kenan Karaman,Schalke 04,0.5,0.4,1
+Marvin Schwäbe,FC Koln,0,0,0
+Maximilian Bauer,Augsburg,1.1,0.6,1.8
+Jessic Ngankam,Hertha Berlin,0.8,0.4,1.2
+Fredrik Jensen,Augsburg,0.8,0.3,1
+Reece Oxford,Augsburg,0.3,0,0.3
+Jean-Paul Boëtius,Hertha Berlin,1.4,0.8,2.2
+Ivan Sunjic,Hertha Berlin,2.1,0.4,2.6
+Raphael Framberger,Augsburg,3.3,0.7,4
+Noah Weißhaupt,Freiburg,0.6,0.3,0.9
+Keven Schlotterbeck,Freiburg,0,0,0
+Ilia Gruev,Werder Bremen,1.4,0.4,1.8
+Davie Selke,Hertha Berlin,0.2,0.1,0.2
+Mehmet Aydin,Schalke 04,1.6,0.8,2.4
+Lee Buchanan,Werder Bremen,0.7,0.3,1
+Florian Dietz,FC Koln,0.2,0.3,0.5
+Márton Dárdai,Hertha Berlin,1,0.5,1.5
+Thomas Ouwejan,Schalke 04,1.2,0.2,1.4
+Denis Huseinbasic,FC Koln,1,0.6,1.6
+Fabian Bredlow,VfB Stuttgart,0.1,0,0.1
+David Colina,Augsburg,0.6,0,0.6
+Merlin Röhl,Freiburg,0.3,0,0.3
+Max Kruse,Wolfsburg,0.2,0.2,0.4
+Ryan Gravenberch,Bayern Munich,0.7,0.3,1
+Kingsley Schindler,FC Koln,0.8,0.3,1.1
+Finn Becker,Hoffenheim,0.8,0.2,1
+Rafael Borré,Eintracht Frankfurt,0.8,0.4,1.2
+Maximilian Philipp,Werder Bremen,0.4,0.5,0.9
+Daniel-Kofi Kyereh,Freiburg,0.5,0.3,0.8
+Stefan Lainer,Borussia M.Gladbach,0.9,0.8,1.7
+Dimitrios Limnios,FC Koln,0,0,0
+Tom Rothe,Borussia Dortmund,0.5,0,0.5
+Yannik Keitel,Freiburg,0.5,0.1,0.6
+Paulinho,Bayer Leverkusen,0,0,0
+Thorgan Hazard,Borussia Dortmund,1.2,0.4,1.6
+Sven Michel,Union Berlin,0.4,0.2,0.6
+Paul Wanner,Bayern Munich,1.5,0,1.5
+Aymen Barkok,Mainz 05,0.8,0.2,1
+Morten Thorsby,Union Berlin,0.9,0.3,1.3
+Jordi Osei-Tutu,Bochum,1.2,0.6,1.7
+Darko Churlinov,VfB Stuttgart,3,1,4
+Veit Stange,Hertha Berlin,1,0,1
+Paxten Aaronson,Eintracht Frankfurt,0.9,0.1,1
+Renato Veiga,Augsburg,0.7,0.2,0.8
+Nelson Weiper,Mainz 05,0.2,0.2,0.4
+Sargis Adamyan,FC Koln,0.6,0.4,1
+Ermin Bicakcic,Hoffenheim,0.9,0.4,1.3
+Pierre Kunde,Bochum,1,0.7,1.7
+Oliver Burke,Werder Bremen,0.1,0,0.1
+Hannes Wolf,Borussia M.Gladbach,0.6,0.4,1.1
+Agustín Rogel,Hertha Berlin,0.9,0.3,1.2
+Lilian Egloff,VfB Stuttgart,1.2,0.2,1.4
+Angelo Fulgini,Mainz 05,0.4,0.4,0.8
+Daniel Caligiuri,Augsburg,0.6,0.1,0.7
+Vasilios Lampropoulos,Bochum,0.7,0.2,0.9
+Daley Blind,Bayern Munich,0.5,0.3,0.8
+Luca Kilian,FC Koln,1.4,0.6,1.9
+Patrick Osterhage,Bochum,0.9,0.2,1.1
+Simon Zoller,Bochum,0.4,0.3,0.7
+Nathan Ngoumou,Borussia M.Gladbach,0.6,0.3,0.9
+Ondrej Duda,FC Koln,0.7,0.5,1.2
+Kasper Dolberg,Hoffenheim,0.5,0.2,0.7
+Keke Topp,Schalke 04,0,0,0
+Jacek Góralski,Bochum,1.5,0.5,2
+Florian Müller,VfB Stuttgart,0,0,0
+Moritz Broschinski,Bochum,0,0.5,0.5
+Luca Waldschmidt,Wolfsburg,0.3,0.4,0.7
+Saidy Janko,Bochum,1.2,0.4,1.5
+Jamie Leweling,Union Berlin,0.3,0.1,0.4
+Jacob Bruun Larsen,Hoffenheim,0.3,0.1,0.4
+Jeong Woo-Yeong,Freiburg,0.3,0.1,0.3
+Hugo Siquet,Freiburg,1,0,1
+Tom Bischof,Hoffenheim,1.4,0.3,1.6
+Lucas Alario,Eintracht Frankfurt,0.2,0.1,0.2
+Umut Tohumcu,Hoffenheim,1.3,0.8,2
+Maximilian Philipp,Wolfsburg,0.7,0,0.7
+Niklas Tauer,Mainz 05,0.7,0.7,1.3
+Peter Pekarík,Hertha Berlin,0.8,0.4,1.2
+Irvin Cardona,Augsburg,0.1,0.4,0.5
+Luca Pfeiffer,VfB Stuttgart,0.1,0.1,0.1
+Julian Baumgartlinger,Augsburg,0.9,0.8,1.8
+Antonios Papadopoulos,Borussia Dortmund,0,0,0
+Kingsley Ehizibue,FC Koln,0,0,0
+Derry Scherhant,Hertha Berlin,0.7,0.4,1.1
+Danny Latza,Schalke 04,0.9,0.6,1.5
+Eduardo Quaresma,Hoffenheim,1.3,0.5,1.8
+Diadié Samassékou,Hoffenheim,0.5,0.5,1
+Thomas Delaney,Hoffenheim,1,0.8,1.8
+Timothy Fosu-Mensah,Bayer Leverkusen,0.6,0,0.6
+Silvere Ganvoula,Bochum,0.1,0,0.1
+Tim Lemperle,FC Koln,0.5,0.2,0.7
+Jordan Larsson,Schalke 04,0.7,0.6,1.4
+Yvandro Borges Sanches,Borussia M.Gladbach,0.7,0,0.7
+Nicolas Cozza,Wolfsburg,0.6,0.2,0.8
+Milos Pantovic,Union Berlin,0.3,0.2,0.5
+Faride Alidou,Eintracht Frankfurt,0.5,0.4,0.9
+Juan José Perea,VfB Stuttgart,0.3,0.1,0.4
+Florent Mollet,Schalke 04,0.4,0.6,1
+Timothée Kolodziejczak,Schalke 04,0,1,1
+Tony Jantschke,Borussia M.Gladbach,0.3,0,0.3
+Leo Greiml,Schalke 04,1.4,1,2.4
+Mathias Olesen,FC Koln,0.7,0.2,0.9
+Aster Vranckx,Wolfsburg,0,0,0
+Nils Petersen,Freiburg,0.2,0.1,0.3
+Ricardo Pepi,Augsburg,0.3,0,0.3
+Kevin-Prince Boateng,Hertha Berlin,0.5,0.4,0.9
+Oscar Fraulo,Borussia M.Gladbach,0,0,0
+Fabio Chiarodia,Werder Bremen,0,0,0
+Noah Sarenren Bazee,Augsburg,0,0.5,0.5
+Laurin Ulrich,VfB Stuttgart,1,0,1
+Delano Burgzorg,Mainz 05,0.2,0.1,0.3
+Tim Skarke,Union Berlin,0.3,0,0.3
+Andrey Lunev,Bayer Leverkusen,0,0,0
+Mark Uth,FC Koln,0,0,0
+Marlon Mustapha,Mainz 05,0.3,0,0.3
+Fisnik Asllani,Hoffenheim,0,0.5,0.5
+Patrick Herrmann,Borussia M.Gladbach,0.3,0.1,0.4
+Nicolai Rapp,Werder Bremen,0.4,0.4,0.9
+Myziane Maolida,Hertha Berlin,0.3,0.3,0.7
+Nathanaël Mbuku,Augsburg,0.5,0,0.5
+Sidi Sané,Schalke 04,0.5,0.5,1
+Muhammed Damar,Hoffenheim,1,0.2,1.2
+Vladimír Darida,Hertha Berlin,0.3,0,0.3
+Eren Dinkçi,Werder Bremen,0.3,0.2,0.5
+Timothy Chandler,Eintracht Frankfurt,0.3,0,0.3
+Dzenan Pejcinovic,Wolfsburg,0,0,0
+Semir Telalovic,Borussia M.Gladbach,0,0,0
+Jérôme Roussillon,Wolfsburg,0,0,0
+Marco Pasalic,Borussia Dortmund,0,0,0
+Kerim Çalhanoglu,Schalke 04,0.7,0,0.7
+Karim Bellarabi,Bayer Leverkusen,0.3,0.1,0.4
+Justin Diehl,FC Koln,0,0,0
+Aaron Zehnter,Augsburg,0,1,1
+Ayman Azhil,Bayer Leverkusen,0,0,0
+Dikeni-Rafid Salifou,Werder Bremen,0,0,0
+Joshua Quarshie,Hoffenheim,0,0,0
+Julian Eitschberger,Hertha Berlin,0,0,0
+Noah Mbamba,Bayer Leverkusen,0,0,0
+Rocco Reitz,Borussia M.Gladbach,0,0,0
+Sanoussy Ba,RB Leipzig,0,0,0
+Lukas Petkov,Augsburg,0.7,0.1,0.9
+Bouna Sarr,Bayern Munich,0,0,0
+Brajan Gruda,Mainz 05,0,0,0
+Dario Gebuhr,Eintracht Frankfurt,0,1,1
+Kimberly Ezekwem,Freiburg,0,0,0
+Marcel Wenig,Eintracht Frankfurt,0,0,0
+Jonathan Schmid,Freiburg,0.3,0,0.3
+Robert Wagner,Freiburg,0,0,0
+Joel Pohjanpalo,Bayer Leverkusen,0,0,0
+Tony Rölke,Hertha Berlin,0,0,0
+Thomas Kastanaras,VfB Stuttgart,0,0,0
+Filip Kostic,Eintracht Frankfurt,2,0,2
+Alou Kuol,VfB Stuttgart,0,0,0
+Andreas Ivan,Schalke 04,0,1,1
+Justin Njinmah,Borussia Dortmund,0,0,0
+Felix Agu,Werder Bremen,0.3,0,0.3
+Tim Oermann,Bochum,0.5,0,0.5
+Jean-Manuel Mbom,Werder Bremen,0,0.5,0.5
+Alexander Sørloth,RB Leipzig,0,0,0
+Eniss Shabani,Mainz 05,0,0,0
+Jannes Horn,Bochum,1,0,1
+Tymoteusz Puchacz,Union Berlin,1,0,1
+Soumaïla Coulibaly,Borussia Dortmund,0,0,0
+Lukás Ambros,Wolfsburg,1,3,4
+Stefan Posch,Hoffenheim,0,0,0

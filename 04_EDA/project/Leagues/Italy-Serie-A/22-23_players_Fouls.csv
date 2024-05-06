@@ -1,0 +1,604 @@
+player_name,team_name,Fouled,Fouls
+Salvatore Sirigu,Fiorentina,0,0
+Victor Osimhen,Napoli,1.2,1.3
+Khvicha Kvaratskhelia,Napoli,1.3,0.6
+Francesco Bardi,Bologna,0,0
+Sergej Milinkovic-Savic,Lazio,2,1.3
+Paulo Dybala,Roma,2.2,0.4
+Rafael Leão,AC Milan,0.9,0.6
+Lautaro Martínez,Inter,1.7,1.2
+Mattia Zaccagni,Lazio,3.3,1.5
+Domenico Berardi,Sassuolo,1.9,1.3
+Armand Laurienté,Sassuolo,1.5,0.8
+Adrien Rabiot,Juventus,1.3,1.4
+Teun Koopmeiners,Atalanta,0.8,1.5
+Felipe Anderson,Lazio,0.9,1.1
+Lorenzo Pellegrini,Roma,1.8,0.8
+Mário Rui,Napoli,1.4,0.9
+Lucas Martínez,Fiorentina,0.9,0.8
+Hakan Çalhanoglu,Inter,0.8,1.4
+Kim Min-Jae,Napoli,0.2,0.9
+Gerard Deulofeu,Udinese,0.7,0.5
+Giovanni Di Lorenzo,Napoli,1,0.8
+Danilo,Juventus,0.5,0.9
+Frank Anguissa,Napoli,1.3,1.2
+Simone Perilli,Verona,0,0
+Carlos Augusto,Monza,0.5,1.2
+Luis Alberto,Lazio,0.4,0.4
+Stefan Posch,Bologna,0.9,1.6
+Romelu Lukaku,Inter,0.2,0.6
+Ismaël Bennacer,AC Milan,0.9,1.3
+Martin Turk,Sampdoria,0,0
+Nicolò Barella,Inter,1.3,0.9
+Armando Izzo,Monza,1.5,1.5
+Piotr Zielinski,Napoli,0.9,0.6
+Fabiano Parisi,Empoli,2.2,1
+Cristiano Biraghi,Fiorentina,1.2,0.9
+Bremer,Juventus,0.4,1
+Nicolás Domínguez,Bologna,1,1.4
+Chris Smalling,Roma,0.4,0.6
+Pierluigi Gollini,Fiorentina,0,0
+Sandro Tonali,AC Milan,0.9,1
+Ademola Lookman,Atalanta,1.2,0.8
+Ivan Provedel,Lazio,0.1,0
+Fikayo Tomori,AC Milan,0.8,0.8
+Juan Cuadrado,Juventus,1.4,1.1
+Olivier Giroud,AC Milan,0.7,1.2
+Manuel Locatelli,Juventus,1,1.4
+Boulaye Dia,Salernitana,1.3,0.8
+Andrei Radu,Cremonese,0.1,0
+Federico Dimarco,Inter,0.9,0.4
+Stanislav Lobotka,Napoli,1.4,0.7
+Pierluigi Gollini,Napoli,0,0
+Théo Hernández,AC Milan,1.8,0.7
+Ibañez,Roma,1.5,1.3
+Amir Rrahmani,Napoli,0.4,0.8
+Destiny Udogie,Udinese,1.8,1.1
+Stefan de Vrij,Inter,0.3,0.6
+Ciro Immobile,Lazio,0.8,0.7
+Matteo Pessina,Monza,1.5,1.2
+Jaka Bijol,Udinese,0.2,0.9
+Alessio Romagnoli,Lazio,0.6,1
+Ivan Ilic,Torino,1.4,0.9
+Mattia Perin,Juventus,0.1,0
+Guglielmo Vicario,Empoli,0.3,0
+Luigi Sepe,Salernitana,0.1,0.1
+Ángel Di María,Juventus,0.9,0.2
+Junior Messias,AC Milan,1,1
+Rafael Tolói,Atalanta,0.6,1.2
+Morten Hjulmand,Lecce,1.1,1.7
+Antonio Sanabria,Torino,0.8,1
+Rade Krunic,AC Milan,0.8,0.7
+Bryan Cristante,Roma,0.5,1.4
+Ardian Ismajli,Empoli,0.5,0.8
+Leo Østigård,Napoli,0.6,0.3
+Giorgos Kyriakopoulos,Sassuolo,1.1,0.8
+Guillermo Ochoa,Salernitana,0.1,0
+Davide Zappacosta,Atalanta,0.6,0.9
+Davide Frattesi,Sassuolo,1.6,1.1
+Lukasz Skorupski,Bologna,0.2,0
+Brahim Díaz,AC Milan,1.5,0.9
+Christian Kouamé,Fiorentina,2,1.1
+Francesco Acerbi,Inter,0.4,0.5
+Nicolás González,Fiorentina,2.3,0.7
+Stephan El Shaarawy,Roma,0.6,0.6
+Michele Di Gregorio,Monza,0.1,0
+Jérémie Boga,Atalanta,0.7,0.2
+Marcelo Brozovic,Inter,0.5,0.9
+Nicolò Rovella,Monza,0.8,1
+Emil Audero,Sampdoria,0.1,0
+Filip Kostic,Juventus,0.3,0.8
+Marten de Roon,Atalanta,0.7,1.3
+Nikola Milenkovic,Fiorentina,0.8,1.4
+Davide Calabria,AC Milan,0.6,0.6
+Roberto Pereyra,Udinese,1.4,0.9
+Wojciech Szczesny,Juventus,0,0
+Hirving Lozano,Napoli,1,0.8
+Riccardo Orsolini,Bologna,1.3,1.2
+Alessandro Buongiorno,Torino,1.1,1.9
+Juan Jesus,Napoli,0.3,0.7
+Gabriel Strefezza,Lecce,2,1.5
+Malick Thiaw,AC Milan,0.4,0.7
+Edin Dzeko,Inter,0.7,0.8
+Ivan Ilic,Verona,0.8,0.8
+Dusan Vlahovic,Juventus,1,0.7
+Tammy Abraham,Roma,1.3,0.9
+Rodrigo Becão,Udinese,1.1,1.4
+Razvan Marin,Empoli,0.6,0.9
+Marco Carnesecchi,Cremonese,0.2,0
+Patrick Ciurria,Monza,1.1,0.9
+Pasquale Mazzocchi,Salernitana,0.6,1
+Nikola Vlasic,Torino,1.1,0.9
+Patric,Lazio,0.2,0.2
+Milan Djuric,Verona,1,0.9
+Lewis Ferguson,Bologna,1.3,1.6
+Federico Gatti,Juventus,0.7,0.9
+Michele Cerofolini,Fiorentina,0,0
+André Onana,Inter,0.1,0
+Lassana Coulibaly,Salernitana,1.4,1.5
+Federico Baschirotto,Lecce,0.3,1
+Rolando Mandragora,Fiorentina,0.6,1.1
+Berat Djimsiti,Atalanta,0.3,0.6
+Norbert Gyömbér,Salernitana,0.3,0.8
+Éderson,Atalanta,1.2,0.8
+Alex Sandro,Juventus,1,1.1
+Lazar Samardzic,Udinese,0.4,0.7
+Marko Arnautovic,Bologna,1,1
+Jerdy Schouten,Bologna,0.9,0.8
+Nicolò Casale,Lazio,0.2,0.8
+Giacomo Bonaventura,Fiorentina,1.3,0.8
+Alex Meret,Napoli,0,0
+Denzel Dumfries,Inter,1.1,0.9
+Arkadiusz Milik,Juventus,1.1,1
+Henrikh Mkhitaryan,Inter,0.9,0.9
+Daniele Rugani,Juventus,0,0.6
+Alessandro Bastoni,Inter,0.5,0.7
+Adam Marusic,Lazio,0.4,0.7
+Samir Handanovic,Inter,0,0
+Antonio Candreva,Salernitana,1,0.2
+Ola Aina,Torino,0.8,0.8
+Alessandro Tuia,Lecce,0.3,1.3
+Perr Schuurs,Torino,0.1,1
+Andrea Ranocchia,Monza,0,2
+Bram Nuytinck,Sampdoria,0.4,1.2
+Rasmus Højlund,Atalanta,1,0.7
+Hans Hateboer,Atalanta,0.2,1.1
+Gianluca Mancini,Roma,0.7,1.1
+Darko Lazovic,Verona,0.1,0.3
+Sandi Lovric,Udinese,0.9,0.8
+Mathías Olivera,Napoli,0.8,0.7
+Beto,Udinese,0.8,1.1
+Johan Vásquez,Cremonese,0.8,0.8
+Koray Günter,Verona,0.8,1.3
+Walace,Udinese,1.1,1.1
+Nehuén Pérez,Udinese,0.3,0.9
+Simone Bastoni,Spezia,0.6,1.5
+Leonardo Sernicola,Cremonese,1.3,1.3
+Sebastiano Luperto,Empoli,0.6,0.6
+Wladimiro Falcone,Lecce,0.1,0
+Denis Zakaria,Juventus,0,0
+Ricardo Rodríguez,Torino,0.2,0.7
+Nemanja Matic,Roma,0.5,0.5
+Mike Maignan,AC Milan,0.1,0
+Aleksey Miranchuk,Torino,0.8,0.3
+M'Bala Nzola,Spezia,1.3,1.8
+Stefano Sensi,Monza,1.8,0.6
+Eljif Elmas,Napoli,0.4,0.6
+Emil Holm,Spezia,0.8,1.1
+Nikola Moro,Bologna,0.4,0.6
+Tyronne Ebuehi,Empoli,0.7,0.5
+Wilfried Singo,Torino,1.1,1.4
+Dany Mota,Monza,1.1,0.7
+Dodô,Fiorentina,1.2,0.8
+Giorgio Scalvini,Atalanta,0.2,1.7
+Ethan Ampadu,Spezia,0.6,1.4
+Nicola Ravaglia,Sampdoria,0.2,0.1
+Lorenzo Montipò,Verona,0.1,0
+Pedro,Lazio,0.8,0.7
+Matteo Darmian,Inter,0.6,0.7
+Panagiotis Retsos,Verona,1,2
+Samuel Umtiti,Lecce,1.1,1.3
+Giorgos Kyriakopoulos,Bologna,1,0.8
+Federico Fazio,Salernitana,0.4,0.8
+Jakub Kiwior,Spezia,0.3,0.9
+Mehdi Léris,Sampdoria,1.5,1.6
+Musa Barrow,Bologna,0.6,0.6
+Valentin Gendrey,Lecce,0.7,0.6
+Simone Verdi,Verona,1.1,0.6
+Samuele Ricci,Torino,2.1,0.8
+Marin Pongracic,Lecce,0,1.7
+Nicolò Cambiaghi,Empoli,2.1,0.9
+Pablo Marí,Monza,0.3,1
+Arthur Cabral,Fiorentina,0.6,0.9
+Janis Antiste,Sassuolo,0,2
+Vlad Chiriches,Cremonese,0.5,1
+Alexis Blin,Lecce,0.9,1.3
+Danilo Cataldi,Lazio,0.7,0.4
+David Okereke,Cremonese,1,0.6
+Georginio Wijnaldum,Roma,0.6,0.2
+Matteo Politano,Napoli,0.8,0.4
+Jhon Lucumí,Bologna,0.5,0.9
+Isak Hien,Verona,0.7,1.6
+José Palomino,Atalanta,0.3,0.6
+Ciprian Tatarusanu,AC Milan,0.2,0
+Martin Erlic,Sassuolo,0.4,0.8
+Krzysztof Piatek,Salernitana,1.3,1.2
+Nicola Zalewski,Roma,1.5,0.7
+Alessandro Zanoli,Sampdoria,0.5,0.2
+Federico Chiesa,Juventus,0.6,0.6
+Weston McKennie,Juventus,0.5,0.9
+Alexis Saelemaekers,AC Milan,0.7,0.8
+Pierre Kalulu,AC Milan,0.7,0.7
+Andrea Cambiaso,Bologna,0.9,0.8
+Juan Musso,Atalanta,0.2,0
+Bartlomiej Dragowski,Spezia,0.2,0
+Diego Llorente,Roma,0.3,1
+Sasa Lukic,Torino,0.6,1.6
+Jonathan Ikoné,Fiorentina,0.8,0.8
+Jean-Daniel Akpa Akpro,Empoli,0.8,1.3
+Vanja Milinkovic-Savic,Torino,0.1,0
+Luca D'Andrea,Sassuolo,1.8,0.8
+Frank Tsadjout,Cremonese,0.9,1.1
+Remi Oudin,Lecce,0.5,0.3
+Aleksa Terzic,Fiorentina,0.5,0.2
+Matteo Ruggeri,Atalanta,0.3,0.7
+Merih Demiral,Atalanta,0.5,0.5
+Denso Kasius,Bologna,0.1,0.4
+Ruslan Malinovskyi,Atalanta,0.7,0.7
+Pawel Dawidowicz,Verona,0.6,1.6
+Matheus Henrique,Sassuolo,1.1,0.7
+Fodé Ballo-Touré,AC Milan,1.3,0.5
+Lorenzo Pirola,Salernitana,0.3,1.1
+Cyril Ngonge,Verona,0.8,0.9
+Manolo Gabbiadini,Sampdoria,1.9,1.2
+Mile Svilar,Roma,0,0
+Manuel Lazzari,Lazio,1.3,0.5
+Alessandro Florenzi,AC Milan,0.2,0.3
+Samuele Perisan,Empoli,0.1,0
+Marco Silvestri,Udinese,0.1,0
+Luka Lochoshvili,Cremonese,0.4,1.1
+Ondrej Duda,Verona,1.7,1.1
+Cristian Volpato,Roma,0.9,1
+Rogério,Sassuolo,1.1,0.8
+Leonardo Spinazzola,Roma,0.5,0.5
+Filippo Bandinelli,Empoli,1.1,1.5
+Luca Ranieri,Fiorentina,0.2,0.7
+Tommaso Baldanzi,Empoli,1.4,0.5
+Alex Ferrari,Cremonese,0.8,0.5
+Isaac Success,Udinese,2.6,1.1
+Marco Sportiello,Atalanta,0.1,0
+Andrea Colpani,Monza,1,0.8
+Gaetano Castrovilli,Fiorentina,0.8,0.8
+James Abankwah,Udinese,0.5,1
+Santiago Ascacíbar,Cremonese,0.7,0.8
+Jeroen Zoet,Spezia,0,0
+Caleb Okoli,Atalanta,0.5,0.9
+Matías Vecino,Lazio,0.3,0.8
+Francesco Caputo,Empoli,1,0.6
+Mouhamadou Sarr,Cremonese,0,0
+Fabio Depaoli,Sampdoria,2.3,0.3
+Charalampos Lykogiannis,Bologna,0.5,0.7
+Flavius Daniliuc,Salernitana,0.1,1.2
+Kevin Agudelo,Spezia,1,1
+Nadir Zortea,Atalanta,0,0.4
+Elseid Hysaj,Lazio,0.4,0.6
+Antonino Gallo,Lecce,0.5,0.4
+Luka Jovic,Fiorentina,0.3,0.7
+Nicolò Fagioli,Juventus,0.9,0.8
+Mehdi Bourabia,Spezia,0.5,0.9
+Tommaso Augello,Sampdoria,0.7,0.4
+Soualiho Meïté,Cremonese,1.5,0.9
+Valentino Lazaro,Torino,0.1,0.6
+Mario Pasalic,Atalanta,0.5,0.8
+Andrea Petagna,Monza,1,0.9
+Omar Colley,Sampdoria,1.1,0.9
+Przemyslaw Wisniewski,Spezia,0.5,0.9
+Pietro Terracciano,Fiorentina,0,0.1
+Simon Kjær,AC Milan,0.1,0.5
+Arkadiusz Reca,Spezia,0.5,1.1
+Alberto Grassi,Empoli,0.5,0.9
+Matteo Bianchetti,Cremonese,0.4,0.7
+Maxime Lopez,Sassuolo,0.4,1
+Duván Zapata,Atalanta,1.5,0.7
+Joakim Mæhle,Atalanta,0.6,0.5
+Emanuel Aiwu,Cremonese,0.7,0.9
+Bartosz Bereszynski,Napoli,0.7,0.7
+Matías Soulé,Juventus,0.4,0.2
+Nicola Sansone,Bologna,0.9,0.7
+Luis Muriel,Atalanta,0.5,0.6
+Giangiacomo Magnani,Verona,0.3,0.9
+Koffi Djidji,Torino,0.1,0.8
+Nadir Zortea,Sassuolo,0.6,1.1
+Gianluca Caprari,Monza,1.4,0.9
+Leonardo Bonucci,Juventus,0.3,0.6
+Josh Doig,Verona,0.3,0.6
+Sam Lammers,Empoli,0.6,0.4
+Nemanja Radonjic,Torino,0.6,0.6
+Sebastian Walukiewicz,Empoli,0.2,0.5
+Adama Soumaoro,Bologna,0.5,0.9
+Bruno Amione,Sampdoria,0.6,0.9
+Josip Brekalo,Fiorentina,0.8,0.5
+Grigoris Kastanos,Salernitana,1.5,0.8
+Adam Masina,Udinese,0.1,0.8
+Roberto Soriano,Bologna,1.2,0.7
+Zeki Çelik,Roma,0.3,1.1
+Federico Ceccherini,Verona,0.9,1.4
+Pablo Galdames,Cremonese,0.3,1
+Mërgim Vojvoda,Torino,0.2,0.7
+Luca Caldirola,Monza,0.8,1
+Marco Benassi,Fiorentina,0.5,0.5
+Enzo Barrenechea,Juventus,0.3,1
+Riccardo Saponara,Fiorentina,0.8,0.5
+Marco Benassi,Cremonese,0.4,0.7
+Emanuele Valeri,Cremonese,1,0.7
+Igor Julio,Fiorentina,0.5,1.1
+Oliver Abildgaard,Verona,0.5,1
+Kingsley Ehizibue,Udinese,0.7,1.2
+Tonny Vilhena,Salernitana,1,1
+Ante Rebic,AC Milan,0.7,0.8
+Bram Nuytinck,Udinese,0.3,0.7
+Danilo D'Ambrosio,Inter,0.7,1.1
+Sofyan Amrabat,Fiorentina,1,1.9
+Harry Winks,Sampdoria,0.7,0.8
+Kevin Bonifazi,Bologna,0.1,0.5
+Rui Patrício,Roma,0,0
+Alex Cordaz,Inter,0,0
+Michele Castagnetti,Cremonese,0.4,0.6
+Jayden Braaf,Verona,0.2,1.3
+Kelvin Amian,Spezia,0.2,1.2
+Joshua Zirkzee,Bologna,0.5,0.4
+Milan Skriniar,Inter,0.7,1.7
+Abdelhamid Sabiri,Sampdoria,2.2,1.6
+Filip Djuricic,Sampdoria,1.5,1.2
+Daniel Maldini,Spezia,1,0.7
+Tommaso De Nipoti,Atalanta,0,0
+Robin Gosens,Inter,0.1,0.5
+William Troost-Ekong,Salernitana,0.1,0.8
+Giacomo Raspadori,Napoli,0.5,0.3
+Bartosz Bereszynski,Sampdoria,0.7,0.9
+Sam Lammers,Sampdoria,1.2,1
+Salvatore Esposito,Spezia,1.6,0.7
+Liberato Cacace,Empoli,0.3,0.8
+Assan Ceesay,Lecce,0.8,1.1
+Davide Faraoni,Verona,0.5,0.9
+Karol Linetty,Torino,0.7,1.6
+Paul Pogba,Juventus,1.2,0.3
+Marcos Antônio,Lazio,0.9,0.6
+Petar Stojanovic,Empoli,0.6,0.4
+Koray Günter,Sampdoria,0.3,0.7
+Koni De Winter,Empoli,0.1,0.9
+Tommaso Pobega,AC Milan,0.3,1.6
+Yann Karamoh,Torino,0.6,0.5
+Zlatan Ibrahimovic,AC Milan,0.3,0.5
+Leandro Paredes,Juventus,0.4,0.8
+Nedim Bajrami,Sassuolo,0.5,0.3
+Filippo Ranocchia,Monza,0.9,0.5
+Adrien Tameze,Verona,0.8,0.9
+Sergiño Dest,AC Milan,0.5,0.8
+Dylan Bronn,Salernitana,0.4,1.2
+Jean-Victor Makengo,Udinese,0.8,0.6
+Alfred Duncan,Fiorentina,0.5,1
+Mattia De Sciglio,Juventus,0.6,0.2
+Mattia Caldara,Spezia,0.5,0.8
+Gary Medel,Bologna,0.6,0.7
+Tomás Rincón,Sampdoria,0.8,1.7
+Miguel Veloso,Verona,0.4,0.9
+Fabio Miretti,Juventus,1,0.9
+Luca Zanimacchia,Cremonese,0.7,0.6
+Joan González,Lecce,1.3,1
+Riccardo Sottil,Fiorentina,1.5,0.2
+Domagoj Bradaric,Salernitana,0.6,0.5
+Filippo Terracciano,Verona,0.9,0.4
+Joaquín Correa,Inter,0.7,0.5
+Thomas Henry,Verona,1,1.7
+Antonín Barák,Fiorentina,0.6,0.4
+Marko Pjaca,Empoli,0.4,0.1
+Pedro Obiang,Sassuolo,0.5,0.9
+Cyriel Dessers,Cremonese,0.5,1.3
+Andrea Pinamonti,Sassuolo,1,0.7
+Petar Zovko,Spezia,0,0
+Charles De Ketelaere,AC Milan,0.5,0.6
+Emil Bohinen,Salernitana,0.5,0.6
+Brandon Soppy,Atalanta,1.3,1.2
+Fabio Depaoli,Verona,1,1.4
+Alex Ferrari,Sampdoria,0.6,1
+Jeremy Toljan,Sassuolo,0.5,0.3
+Federico Di Francesco,Lecce,0.9,1.2
+Albin Ekdal,Spezia,0.9,1
+Paolo Ghiglione,Cremonese,0.5,1.1
+Lameck Banda,Lecce,1,0.9
+Diego Coppola,Verona,0,0.5
+Dimitrios Nikolaou,Spezia,0.6,0.8
+David Zima,Torino,0.2,0.4
+Hamed Traorè,Sassuolo,0.2,0.8
+Roberto Piccoli,Empoli,0.2,0.5
+Samuel Iling-Junior,Juventus,0.2,0.8
+Martin Hongla,Verona,0.4,1.2
+José Machín,Monza,0.5,0.8
+Juan Cabal,Verona,0.2,0.6
+Adam Ounas,Napoli,0,0
+Cristian Buonaiuto,Cremonese,0.8,0.6
+Gianluca Gaetano,Napoli,0.1,0.3
+Mady Camara,Roma,0.5,1
+Michaël Cuisance,Sampdoria,0.4,0.7
+Rick Karsdorp,Roma,0,0.3
+Jacopo Fazzini,Empoli,0.6,1
+Samuel Ntanda,Sampdoria,0,0
+Daniel Ciofani,Cremonese,0.5,0.3
+Marvin Zeegelaar,Udinese,0.1,1.9
+Marlon,Monza,0.2,0.8
+Nedim Bajrami,Empoli,0.3,0.3
+Adolfo Gaich,Verona,0.8,1.1
+Edoardo Bove,Roma,1,1.1
+Festy Ebosele,Udinese,0.4,0.6
+Luca Pellegrini,Lazio,0.1,0.7
+Matteo Gabbia,AC Milan,0.1,0.7
+Daniele Verde,Spezia,0.6,0.1
+Martín Satriano,Empoli,0.9,0.6
+Axel Guessand,Udinese,0,1
+Pietro Ceccaroni,Lecce,0,0
+Charles Pickel,Cremonese,0.5,1
+Samuele Birindelli,Monza,0.5,0.5
+Matías Viña,Roma,0.3,1.3
+Moise Kean,Juventus,0.6,0.5
+Junior Sambia,Salernitana,0.8,0.5
+Divock Origi,AC Milan,0.6,0.5
+Ruan Tressoldi,Sassuolo,0.6,1.2
+Ola Solbakken,Roma,0.5,0.4
+Ibrahim Sulemana,Verona,0.2,0.7
+Lorenzo Venuti,Fiorentina,0.5,0.4
+Domen Crnigoj,Salernitana,0.3,0.9
+Andrea Consigli,Sassuolo,0.1,0
+Enzo Ebosse,Udinese,0.2,0.5
+Abdou Harroui,Sassuolo,0.1,0.6
+Alessandro Zanoli,Napoli,0,0
+Vincenzo Fiorillo,Salernitana,0,0
+Giuseppe Pezzella,Lecce,0.7,1
+Ilija Nestorovski,Udinese,1,0.9
+Gian Marco Ferrari,Sassuolo,0.9,0.7
+Emanuel Vignato,Empoli,0,0.2
+Brian Bayeye,Torino,0.5,0.5
+Gianluca Pegolo,Sassuolo,0.5,0
+Lorenzo Colombo,Lecce,0.5,1.1
+Kristian Thorstvedt,Sassuolo,0.7,0.6
+Franco Carboni,Monza,0,0.7
+Raoul Bellanova,Inter,0.5,0.2
+Jaime Báez,Cremonese,0.5,0.5
+Eldor Shomurodov,Spezia,0.5,0.6
+Yayah Kallon,Verona,1,0.6
+Giovanni Simeone,Napoli,0.4,0.3
+Andreaw Gravillon,Torino,0.1,1.3
+Tolgay Arslan,Udinese,1,0.4
+Valerio Verre,Sampdoria,0.7,0.8
+Michel Adopo,Torino,0.2,0.7
+Lorenzo De Silvestri,Bologna,0.4,0.4
+Nicolas Haas,Empoli,0.5,0.8
+Giulio Maggiore,Salernitana,0.9,1.3
+Mario Gila,Lazio,0.3,0.3
+Federico Bonazzoli,Salernitana,1.3,0.8
+Roberto Gagliardini,Inter,0.5,1.1
+Gonzalo Escalante,Cremonese,0.6,0.7
+Samuele Vignato,Monza,0,0
+Luka Romero,Lazio,1,0.5
+Francesco Rossi,Atalanta,0,0
+Benjamin Tahirovic,Roma,0.2,0.5
+Joaquín Sosa,Bologna,0.7,1.6
+Yacine Adli,AC Milan,0.2,0.7
+Szymon Zurkowski,Spezia,1.1,1.5
+Emmanuel Gyasi,Spezia,1.1,1.3
+Szymon Zurkowski,Fiorentina,0,0.5
+Mattia Valoti,Monza,0.8,1
+Kristjan Asllani,Inter,0.4,0.3
+Andrea Belotti,Roma,1.2,0.7
+Tanguy Ndombélé,Napoli,0.8,0.5
+Jeison Murillo,Sampdoria,1,0.9
+Kaan Ayhan,Sassuolo,0.8,0.4
+Kevin Lasagna,Verona,0.8,0.9
+Nicolò Cocetta,Udinese,0,0
+Tommaso Cassandro,Lecce,0,1
+Demba Seck,Torino,0.9,0.4
+Simone Romagnoli,Lecce,0,0.4
+Ignacio Pussetto,Sampdoria,0.2,1.4
+Alberto Basso,Cremonese,0,0
+Filippo Missori,Roma,0,1.3
+Toma Basic,Lazio,0.7,0.5
+Lukas Vorlicky,Atalanta,0,0
+Liam Henderson,Empoli,0.5,1.4
+Nicolò Zaniolo,Roma,2.5,1.7
+Kristoffer Askildsen,Lecce,0.3,1
+Giacomo Quagliata,Cremonese,0.6,0.7
+Florian Thauvin,Udinese,0.4,0.6
+Alessio Zerbin,Napoli,0.6,0.9
+Pietro Pellegri,Torino,0.8,0.8
+Petko Hristov,Spezia,0.4,0.1
+Andrea Barberis,Monza,0.2,0.1
+Emil Ceïde,Sassuolo,0.4,0.2
+Grégoire Defrel,Sassuolo,0.5,0.5
+Viktor Kovalenko,Spezia,0.7,0.5
+Salvatore Molina,Monza,0.6,0.8
+Tiémoué Bakayoko,AC Milan,0.3,1
+Tio Cipot,Spezia,0.3,0.1
+Emanuel Vignato,Bologna,0.1,0.4
+Erik Botheim,Salernitana,0.4,0.4
+Simone Pafundi,Udinese,0.4,0
+Emirhan Ilkhan,Torino,0,1.3
+Youssef Maleh,Lecce,0.6,1.3
+Ronaldo Vieira,Sampdoria,0.6,1.3
+Michel Aebischer,Bologna,0.7,0.7
+Agustín Álvarez,Sassuolo,0.2,0.4
+Mato Jajalo,Udinese,0,0.3
+Warren Bondo,Monza,0.8,0.5
+Diego Demme,Napoli,0.4,0.3
+Jesé,Sampdoria,0.5,0.3
+Niklas Pyyhtiä,Bologna,0,0
+Francesco Caputo,Sampdoria,1.6,0.3
+Marash Kumbulla,Roma,0.7,0.4
+Aster Vranckx,AC Milan,0.4,0.7
+Ivan Radovanovic,Salernitana,0.7,0.4
+Kristijan Bistrovic,Lecce,0.4,0.2
+Nicolò Rovella,Juventus,0.3,0.3
+Fabio Quagliarella,Sampdoria,0.8,0.2
+Salvador Ferrer,Spezia,0.8,0.4
+Gerard Yepes,Sampdoria,0.8,1.4
+Jack Hendry,Cremonese,0.3,0.5
+Matteo Lovato,Salernitana,0.2,0.4
+Emirhan Ilkhan,Sampdoria,0.3,0
+Mattia Destro,Empoli,0.3,0.7
+Nicola Murru,Sampdoria,0.3,0.8
+Valentin Antov,Monza,0.2,0.4
+João Moutinho,Spezia,0,0.3
+Antonio Iervolino,Salernitana,1,0
+Giulio Donati,Monza,0.7,0.8
+Thórir Helgason,Lecce,0.2,0.2
+Youssef Maleh,Fiorentina,0.4,1.1
+Matteo Cancellieri,Lazio,0.5,0.7
+Marios Oikonomou,Sampdoria,0.3,0.5
+Alessandro Cortinovis,Verona,0,0
+Antonio Mirante,AC Milan,0,0
+Jordan Majchrzak,Roma,0,0
+Alessandro Bianco,Fiorentina,0.6,1
+Mert Müldür,Sassuolo,0,0.5
+Tommaso Milanese,Cremonese,0.5,0.5
+Riccardo Marchizza,Sassuolo,0,0.7
+Hans Nicolussi Caviglia,Salernitana,0.5,1.1
+Roberto Piccoli,Verona,0.4,0.3
+Leandro Sanca,Spezia,0,0
+Marco D'Alessandro,Monza,1.1,0.8
+Daniele Montevago,Sampdoria,0.7,1.3
+Eldor Shomurodov,Roma,0.3,0.2
+Ronaldo Vieira,Torino,0,0.5
+Gonzalo Villar,Sampdoria,1.2,1.1
+Diego Valencia,Salernitana,0.5,0.7
+Flavio Paoletti,Sampdoria,0.3,0.4
+Lorenzo Malagrida,Sampdoria,0.2,0.7
+Tommaso Barbieri,Juventus,1.3,1.7
+Christian Gytkjær,Monza,0.3,0.5
+Filippo Romagna,Sassuolo,0,0
+Marcin Listkowski,Lecce,0.2,0.4
+Joel Voelkerling Persson,Lecce,0.1,0.3
+Vivaldo Semedo,Udinese,0.2,0.2
+Felix Afena-Gyan,Cremonese,0.5,0.8
+Karim Zedadka,Napoli,1.3,0
+Valentín Carboni,Inter,0.6,0
+David Strelec,Spezia,0.1,0.6
+Antonio Raimondo,Bologna,0,0
+Julius Beck,Spezia,0,1
+Pablo Rodríguez,Lecce,0.5,0.3
+Raimonds Krollis,Spezia,0,0.5
+Gvidas Gineitis,Torino,0.3,2
+Samuel Di Carmine,Cremonese,0,0
+Leonardo Buta,Udinese,0,0
+Mattia Zanotti,Inter,0,1
+Deyovaisio Zeefuik,Verona,0,0
+Mert Çetin,Lecce,1,0
+Ajdin Hrustic,Verona,0.3,1.2
+Antonín Barák,Verona,0,0
+Duccio Degli Innocenti,Empoli,0,0
+Herculano Nabian,Empoli,0,0
+Marco Bertini,Lazio,0,0
+Mihailo Ivanovic,Sampdoria,0,0
+Niccolò Pisilli,Roma,0,0
+Stefan Radu,Lazio,0,0
+Telasco Segovia,Sampdoria,0,0
+Jacopo Sala,Spezia,0.5,0.5
+Emmanuel Ekong,Empoli,0,0
+Franck Ribéry,Salernitana,1,0
+Jacopo Segre,Torino,0,0
+Mikael Ellertsson,Spezia,0.3,0.5
+Federico Marchetti,Spezia,0,0
+Andrea Carboni,Monza,0.3,0.3
+Julian Kristoffersen,Salernitana,0,2
+Christian Acella,Cremonese,0,0
+Samir Ujkani,Empoli,0,0
+Lorenzo Tonelli,Empoli,0,0
+Kastriot Dermaku,Lecce,0,0
+Manuel De Luca,Sampdoria,1,1.5
+Andrea Conti,Sampdoria,1,0
+Brandon Soppy,Udinese,2,2
+Luca Marrone,Monza,1,0.5
+Giacomo Raspadori,Sassuolo,0,0
+Marko Lazetic,AC Milan,0,0
+Bruno Amione,Verona,0,3
+Alessio Cragno,Monza,0,0
+Luís Maximiano,Lazio,0,1
+Alessandro Russo,Sassuolo,1,0

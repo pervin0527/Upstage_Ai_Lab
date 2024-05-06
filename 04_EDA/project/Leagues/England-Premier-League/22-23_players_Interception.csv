@@ -1,0 +1,570 @@
+player_name,team_name,Total_Interception
+Asmir Begovic,Everton,0
+Kevin De Bruyne,Manchester City,0.3
+Stefan Ortega,Manchester City,0
+Erling Haaland,Manchester City,0.1
+Harry Kane,Tottenham,0.1
+Bruno Fernandes,Manchester United,0.7
+Gabriel Jesus,Arsenal,0.4
+Kieran Trippier,Newcastle,1.1
+Bukayo Saka,Arsenal,0.4
+Solly March,Brighton,0.7
+Jack Grealish,Manchester City,0.3
+Martin Ødegaard,Arsenal,0.2
+Rodri,Manchester City,0.9
+Gabriel Martinelli,Arsenal,0.3
+Ivan Toney,Brentford,0.4
+Joelinton,Newcastle,1.5
+James Maddison,Leicester,0.4
+Rodrigo Bentancur,Tottenham,1.1
+Bruno Guimarães,Newcastle,1.1
+Casemiro,Manchester United,1.2
+Mohamed Salah,Liverpool,0.2
+Phil Foden,Manchester City,0.2
+Ilkay Gündogan,Manchester City,0.6
+Trent Alexander-Arnold,Liverpool,1.2
+Ethan Pinnock,Brentford,1.2
+Aleksandar Mitrovic,Fulham,0.1
+Marcus Rashford,Manchester United,0.2
+Reece James,Chelsea,0.8
+Thomas Partey,Arsenal,0.8
+Felipe,Nottingham Forest,2.3
+Cody Gakpo,Liverpool,0.2
+Alexander Isak,Newcastle,0.2
+João Cancelo,Manchester City,1.1
+Alexis Mac Allister,Brighton,0.6
+Fabian Schär,Newcastle,1.4
+Declan Rice,West Ham,1.7
+Pierre-Emile Højbjerg,Tottenham,1.4
+Eberechi Eze,Crystal Palace,0.3
+Riyad Mahrez,Manchester City,0.3
+Bryan Mbeumo,Brentford,0.3
+Yerry Mina,Everton,0.9
+Kaoru Mitoma,Brighton,0.5
+Pascal Groß,Brighton,0.4
+Michael Olise,Crystal Palace,0.7
+Dwight McNeil,Everton,0.9
+Willian,Fulham,0.3
+Leandro Trossard,Brighton,0.4
+Ben Mee,Brentford,1.3
+Kenny Tete,Fulham,1.7
+Granit Xhaka,Arsenal,0.4
+Lucas Paquetá,West Ham,0.6
+Martin Dúbravka,Newcastle,0
+James Tarkowski,Everton,1.3
+Luis Díaz,Liverpool,0.4
+Ollie Watkins,Aston Villa,0.3
+Diogo Dalot,Manchester United,1.4
+Pedro Porro,Tottenham,1
+Marcus Tavernier,Bournemouth,0.4
+Rúben Neves,Wolves,1.4
+James Ward-Prowse,Southampton,1.4
+Thiago Silva,Chelsea,1.3
+David Raya,Brentford,0
+Son Heung-Min,Tottenham,0.4
+N'Golo Kanté,Chelsea,0.9
+Virgil van Dijk,Liverpool,1
+João Palhinha,Fulham,1.3
+Aaron Wan-Bissaka,Manchester United,1.2
+Douglas Luiz,Aston Villa,1.1
+Alisson Becker,Liverpool,0
+Bernd Leno,Fulham,0
+Callum Wilson,Newcastle,0
+Moisés Caicedo,Brighton,1.5
+Miguel Almirón,Newcastle,0.3
+Benoît Badiashile,Chelsea,1.5
+Wesley Fofana,Leicester,4.5
+Christian Nørgaard,Brentford,1.5
+Lewis Hall,Chelsea,1.2
+Luke Shaw,Manchester United,1.2
+Joe Willock,Newcastle,0.7
+Emiliano Martínez,Aston Villa,0
+Oleksandr Zinchenko,Arsenal,0.8
+Jacob Ramsey,Aston Villa,0.7
+Roberto Firmino,Liverpool,0.3
+Sèrge Aurier,Nottingham Forest,1.2
+Leandro Trossard,Arsenal,0.3
+Gabriel Magalhães,Arsenal,0.8
+Lisandro Martínez,Manchester United,1.2
+Morgan Gibbs-White,Nottingham Forest,0.4
+Kalidou Koulibaly,Chelsea,1.3
+Jadon Sancho,Manchester United,0.3
+Çaglar Söyüncü,Leicester,1
+Philip Billing,Bournemouth,0.9
+Antony,Manchester United,0.4
+Michael Keane,Everton,1.2
+Alex Iwobi,Everton,0.7
+Thiago Alcântara,Liverpool,1.2
+Wilfried Zaha,Crystal Palace,0.6
+Mathias Jensen,Brentford,0.9
+John McGinn,Aston Villa,0.7
+Kepa,Chelsea,0
+Jarrod Bowen,West Ham,0.9
+Tomás Soucek,West Ham,1.5
+Bernardo Silva,Manchester City,0.5
+Allan Saint-Maximin,Newcastle,0.2
+Noni Madueke,Chelsea,0.3
+Jordan Ayew,Crystal Palace,0.4
+Enzo Fernández,Chelsea,0.9
+John Stones,Manchester City,0.4
+Cristian Romero,Tottenham,1.6
+Youri Tielemans,Leicester,0.9
+Rúben Dias,Manchester City,0.7
+Joachim Andersen,Crystal Palace,0.8
+Hamed Traorè,Bournemouth,0.3
+Darwin Núñez,Liverpool,0.1
+Pervis Estupiñán,Brighton,1.1
+Dominic Solanke,Bournemouth,0.2
+Ibrahima Konaté,Liverpool,1.4
+Mohammed Salisu,Southampton,1.4
+Ben White,Arsenal,0.6
+Andy Robertson,Liverpool,0.5
+Julio Enciso,Brighton,0.2
+Dejan Kulusevski,Tottenham,0.4
+William Saliba,Arsenal,0.7
+Emerson Royal,Tottenham,0.7
+Dan Burn,Newcastle,0.8
+Neto,Bournemouth,0
+Vicente Guaita,Crystal Palace,0
+Danny Welbeck,Brighton,0.2
+Kai Havertz,Chelsea,0.2
+Nathan Aké,Manchester City,0.8
+Antonee Robinson,Fulham,1.5
+Tyrone Mings,Aston Villa,1.5
+Sven Botman,Newcastle,0.9
+Ivan Perisic,Tottenham,0.6
+Tosin Adarabioyo,Fulham,1
+Dango Ouattara,Bournemouth,0.7
+Raheem Sterling,Chelsea,0.1
+Diogo Jota,Liverpool,0.1
+Jason Steele,Brighton,0
+Sam Johnstone,Crystal Palace,0
+Tyler Adams,Leeds,1.5
+James Justin,Leicester,1.1
+Andreas Pereira,Fulham,0.2
+Jack Harrison,Leeds,0.6
+Cheick Doucouré,Crystal Palace,1.6
+Timothy Castagne,Leicester,1.2
+Armel Bella-Kotchap,Southampton,1.8
+Kiernan Dewsbury-Hall,Leicester,0.9
+Álex Moreno,Aston Villa,0.4
+Shea Charles,Manchester City,1
+Fabinho,Liverpool,1
+Danilo,Nottingham Forest,0.7
+Matt Doherty,Tottenham,0.7
+Amadou Onana,Everton,1.1
+Victor Lindelöf,Manchester United,1.1
+Julián Álvarez,Manchester City,0.1
+Nick Pope,Newcastle,0
+Saïd Benrahma,West Ham,0.3
+Emiliano Buendía,Aston Villa,0.5
+Mason Mount,Chelsea,0.3
+Christian Eriksen,Manchester United,0.4
+Aymeric Laporte,Manchester City,0.3
+Jordan Pickford,Everton,0.1
+Joe Gomez,Liverpool,1.1
+Kurt Zouma,West Ham,1.2
+Marc Guéhi,Crystal Palace,1.2
+Rodrigo,Leeds,0.2
+Reiss Nelson,Arsenal,0
+Lukasz Fabianski,West Ham,0
+Nayef Aguerd,West Ham,1
+Curtis Jones,Liverpool,0.2
+Evan Ferguson,Brighton,0.1
+David de Gea,Manchester United,0
+Jan Bednarek,Southampton,2.5
+Pascal Struijk,Leeds,1.1
+Eric Dier,Tottenham,1.1
+Tim Ream,Fulham,1.2
+Issa Diop,Fulham,1.4
+Jeffrey Schlupp,Crystal Palace,0.7
+Harvey Barnes,Leicester,0.2
+Wout Faes,Leicester,1.3
+Idrissa Gueye,Everton,1.7
+Jefferson Lerma,Bournemouth,1.3
+Marc Cucurella,Chelsea,0.7
+Jorginho,Chelsea,1.2
+Joel Ward,Crystal Palace,0.9
+Wesley Fofana,Chelsea,1.3
+Raphaël Varane,Manchester United,0.5
+Rico Henry,Brentford,0.8
+Marcel Sabitzer,Manchester United,0.7
+Sean Longstaff,Newcastle,0.5
+Tyrell Malacia,Manchester United,1.1
+Vladimír Coufal,West Ham,1.4
+Harry Souttar,Leicester,1
+Maximilian Wöber,Leeds,1.7
+Vitaly Janelt,Brentford,0.8
+Ben Davies,Tottenham,0.6
+Maximilian Kilman,Wolves,0.5
+Matheus Cunha,Wolves,0.5
+Aaron Ramsdale,Arsenal,0
+Duje Caleta-Car,Southampton,1.2
+João Félix,Chelsea,0.1
+Rasmus Kristensen,Leeds,1.3
+Demarai Gray,Everton,0.4
+Dominic Calvert-Lewin,Everton,0.2
+Kamaldeen Sulemana,Southampton,0.3
+Lewis Dunk,Brighton,0.9
+Toti Gomes,Wolves,0.6
+Liam Cooper,Leeds,1.9
+Craig Dawson,Wolves,0.7
+Ben Chilwell,Chelsea,0.8
+Robin Olsen,Aston Villa,0
+Leon Bailey,Aston Villa,0.2
+Willy-Arnaud Boly,Nottingham Forest,1.1
+Anthony Gordon,Everton,0.3
+Aaron Cresswell,West Ham,1
+Jorginho,Arsenal,0.6
+Matheus Nunes,Wolves,0.5
+Jakub Kiwior,Arsenal,0.9
+Neco Williams,Nottingham Forest,1.1
+Ché Adams,Southampton,0.1
+Lloyd Kelly,Bournemouth,1.1
+Joël Veltman,Brighton,0.6
+Anthony Martial,Manchester United,0
+Manuel Akanji,Manchester City,0.6
+Harry Maguire,Manchester United,0.8
+Dan Bentley,Wolves,0
+Vitalii Mykolenko,Everton,1.4
+Kyle Walker-Peters,Southampton,0.9
+Chris Mepham,Bournemouth,1.2
+Caoimhín Kelleher,Liverpool,0
+Luis Sinisterra,Leeds,0.4
+Joe Worrall,Nottingham Forest,0.9
+Ashley Young,Aston Villa,0.7
+Pontus Jansson,Brentford,0.8
+Ezri Konsa,Aston Villa,0.7
+Dean Henderson,Nottingham Forest,0
+Jordan Henderson,Liverpool,0.6
+Danny Ings,Aston Villa,0.1
+Séamus Coleman,Everton,1
+Ryan Christie,Bournemouth,0.8
+Rico Lewis,Manchester City,0.4
+Matty Cash,Aston Villa,1
+Roméo Lavia,Southampton,1.1
+Ruben Loftus-Cheek,Chelsea,0.5
+João Gomes,Wolves,0.4
+Boubacar Kamara,Aston Villa,0.8
+Luke Ayling,Leeds,0.9
+Hugo Lloris,Tottenham,0
+Leander Dendoncker,Wolves,2.3
+Joe Aribo,Southampton,0.5
+Ayoze Pérez,Leicester,0.3
+Clément Lenglet,Tottenham,0.7
+Levi Colwill,Brighton,0.9
+Conor Gallagher,Chelsea,0.7
+Renan Lodi,Nottingham Forest,1.2
+Stefan Bajcetic,Liverpool,0.8
+Kyle Walker,Manchester City,0.7
+Daniel Amartey,Leicester,0.4
+Tyrick Mitchell,Crystal Palace,1.2
+Angelo Ogbonna,West Ham,1.1
+Sam Amo-Ameyaw,Southampton,0
+Keylor Navas,Nottingham Forest,0.1
+José Sá,Wolves,0
+Harvey Elliott,Liverpool,0.5
+Marcos Senesi,Bournemouth,1.4
+Adam Webster,Brighton,0.7
+Manor Solomon,Fulham,0.3
+Robin Koch,Leeds,1.2
+Scott McTominay,Manchester United,0.6
+Adama Traoré,Wolves,0.1
+César Azpilicueta,Chelsea,0.8
+Matías Viña,Bournemouth,0.3
+Yoane Wissa,Brentford,0.2
+Rayan Aït-Nouri,Wolves,0.4
+Gianluca Scamacca,West Ham,0.3
+Jack Stephens,Bournemouth,1.1
+Cody Drameh,Leeds,1
+Nathan Patterson,Everton,0.8
+João Moutinho,Wolves,0.6
+Taiwo Awoniyi,Nottingham Forest,0.1
+Daniel Podence,Wolves,0.2
+Joël Matip,Liverpool,1.5
+Morgan Gibbs-White,Wolves,0.5
+Thilo Kehrer,West Ham,1.3
+Marc Roca,Leeds,0.7
+Nélson Semedo,Wolves,0.8
+Ainsley Maitland-Niles,Southampton,1
+Harrison Reed,Fulham,0.5
+Carlos Alcaraz,Southampton,0.1
+Wilfred Ndidi,Leicester,1.4
+Michail Antonio,West Ham,0.2
+Matthew Craig,Tottenham,0
+Boubakary Soumaré,Leicester,1.3
+Jordan Zemura,Bournemouth,0.8
+Brennan Johnson,Nottingham Forest,0.1
+Mohamed Elyounoussi,Southampton,0.8
+Jonny Evans,Leicester,1.4
+David Datro Fofana,Chelsea,0
+Nathan Collins,Wolves,0.8
+Tetê,Leicester,0.2
+Fred,Manchester United,0.5
+Moussa Niakhaté,Nottingham Forest,1.4
+Abdoulaye Doucouré,Everton,0.5
+Kostas Tsimikas,Liverpool,0.6
+Mateo Kovacic,Chelsea,0.7
+Wilfried Gnonto,Leeds,0.2
+Orel Mangala,Nottingham Forest,0.9
+Fraser Forster,Tottenham,0
+Lyanco,Southampton,1
+Davinson Sánchez,Tottenham,0.7
+Kelechi Iheanacho,Leicester,0
+Trevoh Chalobah,Chelsea,1
+Diego Llorente,Leeds,1.9
+Bobby De Cordova-Reid,Fulham,0.6
+Romain Perraud,Southampton,0.7
+Danny Ward,Leicester,0
+Richarlison,Tottenham,0.2
+Crysencio Summerville,Leeds,0.5
+Ryan Yates,Nottingham Forest,0.4
+Marc Albrighton,Leicester,0.2
+Mario Lemina,Wolves,0.7
+Moussa Djenepo,Southampton,0.7
+Adam Lallana,Brighton,0.1
+Aaron Hickey,Brentford,0.7
+Hakim Ziyech,Chelsea,0.3
+Patson Daka,Leicester,0.2
+Jonny Otto,Wolves,0.8
+Kevin Schade,Brentford,0.2
+Conor Coady,Everton,0.6
+Tino Livramento,Southampton,1
+Josh Dasilva,Brentford,0.1
+Joe Rothwell,Bournemouth,0.5
+Daniel James,Leeds,0.5
+Victor Kristiansen,Leicester,0.3
+Ederson,Manchester City,0
+Paul Onuachu,Southampton,0
+Jacob Murphy,Newcastle,0.2
+Eddie Nketiah,Arsenal,0
+Gavin Bazunu,Southampton,0
+Hugo Bueno,Wolves,0.5
+Craig Dawson,West Ham,0.8
+Emmanuel Dennis,Nottingham Forest,0.1
+Harry Wilson,Fulham,0.2
+Mads Roerslev,Brentford,0.5
+James Garner,Everton,0.8
+Odsonne Édouard,Crystal Palace,0.1
+Luke Thomas,Leicester,1.6
+Bryan Gil,Tottenham,0.3
+Wayne Hennessey,Nottingham Forest,0
+Albert Sambi Lokonga,Crystal Palace,0.8
+Illan Meslier,Leeds,0
+Robert Sánchez,Brighton,0.1
+Weston McKennie,Leeds,1.2
+Joel Robles,Leeds,0
+Oliver Skipp,Tottenham,0.7
+Emerson,West Ham,0.7
+Junior Firpo,Leeds,1.3
+Brenden Aaronson,Leeds,0.1
+Lewis Cook,Bournemouth,0.8
+Enock Mwepu,Brighton,0.2
+Neeskens Kebano,Fulham,0.1
+Kristoffer Ajer,Brentford,0.8
+Pablo Fornals,West Ham,0.4
+Lucas Digne,Aston Villa,0.6
+Chris Richards,Crystal Palace,0.9
+Ryan Sessegnon,Tottenham,0.4
+Juan Larios,Southampton,0.6
+Nathaniel Phillips,Liverpool,1
+Cristiano Ronaldo,Manchester United,0.1
+Frank Onyeka,Brentford,0.5
+Denis Zakaria,Chelsea,0.4
+Scott McKenna,Nottingham Forest,0.6
+Ben Johnson,West Ham,0.5
+Matt Targett,Newcastle,0.5
+Cheikhou Kouyaté,Nottingham Forest,0.5
+James Bree,Southampton,1.2
+Gonçalo Guedes,Wolves,0.1
+Remo Freuler,Nottingham Forest,1
+Pedro Neto,Wolves,0.2
+Pablo Sarabia,Wolves,0.2
+Theo Walcott,Southampton,0.5
+Wout Weghorst,Manchester United,0.4
+Ricardo Pereira,Leicester,0.4
+Philippe Coutinho,Aston Villa,0.2
+Fábio Carvalho,Liverpool,0.5
+Ludwig Augustinsson,Aston Villa,0
+Steve Cook,Nottingham Forest,1
+Bertrand Traoré,Aston Villa,0.3
+Zanka,Brentford,0.9
+Patrick Bamford,Leeds,0.2
+Édouard Mendy,Chelsea,0
+Alejandro Garnacho,Manchester United,0.3
+Jeremy Sarmiento,Brighton,0.1
+Kieffer Moore,Bournemouth,0
+Raúl Jiménez,Wolves,0
+Jaidon Anthony,Bournemouth,0.3
+Danny Ings,West Ham,0.2
+Isaac Price,Everton,0
+Mark Travers,Bournemouth,0
+Mikkel Damsgaard,Brentford,0.4
+Mason Holgate,Everton,0.9
+Deniz Undav,Brighton,0
+Cole Palmer,Manchester City,0.1
+James Milner,Liverpool,0.4
+Takehiro Tomiyasu,Arsenal,0.7
+Billy Gilmour,Brighton,0.4
+Lewis Miley,Newcastle,0
+Jamie Vardy,Leicester,0.1
+Cédric Soares,Fulham,0.2
+Ben Godfrey,Everton,0.6
+Hwang Hee-Chan,Wolves,0.2
+Carlos Vinícius,Fulham,0
+Jan Bednarek,Aston Villa,0.7
+Adam Smith,Bournemouth,0.7
+Alex Oxlade Chamberlain,Liverpool,0.1
+Samuel Edozie,Southampton,0.4
+Lewis O'Brien,Nottingham Forest,0.4
+Nampalys Mendy,Leicester,0.7
+Mykhailo Mudryk,Chelsea,0
+Fábio Vieira,Arsenal,0.2
+Leander Dendoncker,Aston Villa,0.5
+Alphonse Areola,West Ham,0
+Stuart Armstrong,Southampton,0.3
+Rob Holding,Arsenal,0.2
+Tom Cairney,Fulham,0.2
+Chris Wood,Nottingham Forest,0.1
+Elliot Anderson,Newcastle,0.3
+Sam Greenwood,Leeds,0.1
+Daniel Iversen,Leicester,0
+Nathaniel Clyne,Crystal Palace,0.9
+Chris Wood,Newcastle,0.1
+Armando Broja,Chelsea,0.1
+Yves Bissouma,Tottenham,0.5
+Harry Toffolo,Nottingham Forest,0.5
+Darko Gyabi,Leeds,0
+Facundo Buonanotte,Brighton,0.3
+Albert Sambi Lokonga,Arsenal,0.8
+Jack Colback,Nottingham Forest,0.3
+Oriol Romeu,Southampton,1
+Sékou Mara,Southampton,0
+Adam Armstrong,Southampton,0.2
+Daniel James,Fulham,0.1
+Christian Pulisic,Chelsea,0.2
+Will Hughes,Crystal Palace,0.6
+Kalvin Phillips,Manchester City,0.4
+Siriki Dembélé,Bournemouth,0.2
+Adam Forshaw,Leeds,0.3
+Anthony Elanga,Manchester United,0.1
+Jan Paul van Hecke,Brighton,0.8
+Carney Chukwuemeka,Chelsea,0.4
+Kieran Tierney,Arsenal,0.4
+Anthony Gordon,Newcastle,0.1
+Boubacar Traoré,Wolves,0.7
+Georginio Rutter,Leeds,0.3
+Keane Lewis-Potter,Brentford,0
+Diego Costa,Wolves,0.1
+Sergio Gómez,Manchester City,0.2
+Ryan Fraser,Newcastle,0
+Kevin Mbabu,Fulham,0.5
+Arnaut Danjuma,Tottenham,0
+Illia Zabarnyi,Bournemouth,0.6
+Shandon Baptiste,Brentford,0.3
+Marek Rodák,Fulham,0
+Sasa Kalajdzic,Wolves,1
+Giulian Biancone,Nottingham Forest,0.5
+Ibrahima Diallo,Southampton,0.3
+Tariq Lamptey,Brighton,0.4
+Neal Maupay,Everton,0.2
+Rúben Vinagre,Everton,0
+Gustavo Scarpa,Nottingham Forest,0
+Dennis Praet,Leicester,0.2
+Javier Manquillo,Newcastle,0.3
+Luka Milivojevic,Crystal Palace,0.7
+Donny van de Beek,Manchester United,0.1
+Facundo Pellistri,Manchester United,0
+Emile Smith Rowe,Arsenal,0
+Thomas Cannon,Everton,0
+Antoine Semenyo,Bournemouth,0.2
+Japhet Tanganga,Tottenham,0.5
+Sasa Lukic,Fulham,0.4
+Pape Sarr,Tottenham,0.5
+Jean-Philippe Mateta,Crystal Palace,0.1
+Joe Gelhardt,Leeds,0
+Yasin Ayari,Brighton,0
+Jesse Lingard,Nottingham Forest,0.3
+Jack Stephens,Southampton,0.5
+Ellis Simms,Everton,0
+Divin Mubama,West Ham,0
+Jonjo Shelvey,Nottingham Forest,0.6
+Naby Keïta,Liverpool,0.3
+Manuel Lanzini,West Ham,0.2
+Flynn Downes,West Ham,0.3
+James Tomkins,Crystal Palace,0.8
+James McArthur,Crystal Palace,0.3
+Harvey White,Tottenham,0
+Ryan Fredericks,Bournemouth,0.1
+Saman Ghoddos,Brentford,0.3
+Mateusz Klich,Leeds,0
+Matt Ritchie,Newcastle,0.1
+Tom Davies,Everton,0.2
+Pierre-Emerick Aubameyang,Chelsea,0.1
+Mislav Orsic,Southampton,0
+Omari Hutchinson,Chelsea,1
+Sergi Canós,Brentford,0
+Salomón Rondón,Everton,0
+Calum Chambers,Aston Villa,0.5
+Kobbie Mainoo,Manchester United,0
+Jairo Riedewald,Crystal Palace,0
+Chem Campbell,Wolves,0.2
+Cafú,Nottingham Forest,0
+Diego Carlos,Aston Villa,0.3
+Ben Doak,Liverpool,0
+Mads Bech,Brentford,0.3
+Jay Stansfield,Fulham,0.3
+Jhon Durán,Aston Villa,0.2
+Maxwel Cornet,West Ham,0.1
+Lucas Moura,Tottenham,0.1
+Sam Surridge,Nottingham Forest,0
+Jack Stacey,Bournemouth,0.5
+Layvin Kurzawa,Fulham,0.7
+André Ayew,Nottingham Forest,0
+David Brooks,Bournemouth,0.3
+Jack Hinshelwood,Brighton,0
+Mohamed Elneny,Arsenal,0
+Cédric Soares,Arsenal,0
+Joe Whitworth,Crystal Palace,0
+Morgan Sanson,Aston Villa,0
+Ben Pearson,Bournemouth,0.3
+Mateo Joseph,Leeds,0
+Jamaal Lascelles,Newcastle,0
+Bobby Clark,Liverpool,0
+Malcolm Ebiowei,Crystal Palace,0
+Jonjo Shelvey,Newcastle,0
+Junior Stanislas,Bournemouth,0
+Halil Dervisoglu,Brentford,0
+Lewis Brunt,Leicester,0
+Connor Ronan,Wolves,0
+Conor Coventry,West Ham,0
+David Ozoh,Crystal Palace,0
+Emil Krafth,Newcastle,0
+Ethan Nwaneri,Arsenal,0
+George Abbott,Tottenham,1
+Marquinhos,Arsenal,0
+Nathan Redmond,Southampton,0
+Tyrese Francois,Fulham,0
+Naouirou Ahamada,Crystal Palace,0
+Djed Spence,Tottenham,0
+Joe Hodge,Wolves,0
+Emiliano Marcondes,Bournemouth,0
+Jamal Lowe,Bournemouth,0
+Cameron Archer,Aston Villa,0
+Alex McCarthy,Southampton,0.2
+Josh Onomah,Fulham,0
+Luke Harris,Fulham,0
+Dom Ballard,Southampton,0.5
+Odeluga Offiah,Brighton,0
+Dele Alli,Everton,0
+Alex Mighten,Nottingham Forest,0
+Jamal Lewis,Newcastle,0
+Máximo Perrone,Manchester City,0
+Kamari Doyle,Southampton,0
+Owen Bevan,Bournemouth,0
+Nathaniel Chalobah,Fulham,0
+Dexter Lembikisa,Wolves,0
+Cameron Peupion,Brighton,0
+Andrew Moran,Brighton,0
+Shane Duffy,Fulham,0
+Yan Valery,Southampton,0

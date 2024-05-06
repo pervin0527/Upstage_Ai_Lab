@@ -1,0 +1,598 @@
+player_name,team_name,Total_Clearances
+Antoine Griezmann,Atletico Madrid,0.8
+Karim Benzema,Real Madrid,0.2
+Robert Lewandowski,Barcelona,0.4
+Leo Román,Mallorca,0
+Vinícius Júnior,Real Madrid,0
+Rodrygo,Real Madrid,0.1
+Memphis Depay,Barcelona,0
+Pedri,Barcelona,0.3
+Joselu,Espanyol,1.2
+Frenkie de Jong,Barcelona,0.6
+Gerónimo Rulli,Villarreal,0.7
+Ousmane Dembélé,Barcelona,0
+Mikel Merino,Real Sociedad,1.5
+Gonzalo Escalante,Cadiz,1.7
+Lee Kang-In,Mallorca,0.1
+Federico Valverde,Real Madrid,0.4
+Sergi Darder,Espanyol,0.6
+Enes Ünal,Getafe,1
+Juan Foyth,Villarreal,2.4
+Isi Palazón,Rayo Vallecano,0.7
+Raphinha,Barcelona,0.3
+Toni Kroos,Real Madrid,0.2
+Aleix García,Girona,0.9
+Aurélien Tchouaméni,Real Madrid,1.5
+David Gil,Cadiz,1.3
+Conan Ledesma,Cadiz,1.5
+Éder Militão,Real Madrid,3
+Vedat Muriqi,Mallorca,2.1
+Sergio Busquets,Barcelona,1
+Takefusa Kubo,Real Sociedad,0.1
+Guido Rodríguez,Real Betis,2
+José Gayà,Valencia,1.3
+Javi Galán,Celta Vigo,1.5
+Jules Koundé,Barcelona,1.9
+José Giménez,Atletico Madrid,4.8
+Dani Parejo,Villarreal,0.8
+Marco Asensio,Real Madrid,0.1
+Thibaut Courtois,Real Madrid,0.3
+Gerard Moreno,Villarreal,0.5
+Brais Méndez,Real Sociedad,0.4
+Loïc Badé,Sevilla,3.9
+Iago Aspas,Celta Vigo,0.6
+Viktor Tsygankov,Girona,0.5
+Ronald Araujo,Barcelona,1.8
+Yeremy Pino,Villarreal,0.7
+Lucas Robertone,Almeria,1.1
+Reinildo,Atletico Madrid,2.4
+Félix Garreta,Real Betis,4
+Alejandro Balde,Barcelona,0.4
+Nico Williams,Athletic Club,0.2
+Samuel Chukwueze,Villarreal,0.4
+Claudio Bravo,Real Betis,0.7
+Antonio Raíllo,Mallorca,5.1
+Nicolas Jackson,Villarreal,0.1
+Ayoze Pérez,Real Betis,0.2
+Marc-André ter Stegen,Barcelona,0.6
+Yannick Carrasco,Atletico Madrid,0.5
+Umar Sadiq,Almeria,1
+Alexander Sørloth,Real Sociedad,0.8
+David Silva,Real Sociedad,0.6
+Álvaro Morata,Atletico Madrid,0.6
+Gerard Piqué,Barcelona,2.7
+Aitor Fernández,Osasuna,1.4
+André Almeida,Valencia,0.4
+David Soria,Getafe,0.9
+Gavi,Barcelona,0.6
+Álex Moreno,Real Betis,2.2
+Iñaki Williams,Athletic Club,0.9
+Jordi Masip,Real Valladolid,0.5
+Giovani Lo Celso,Villarreal,0.1
+Jordi Alba,Barcelona,0.6
+Andreas Christensen,Barcelona,2
+Álvaro García,Rayo Vallecano,0.5
+Gabri Veiga,Celta Vigo,0.1
+Iñigo Martínez,Athletic Club,3.5
+Samuel Lino,Valencia,0.2
+Juan Miranda,Real Betis,2.4
+Marcos Llorente,Atletico Madrid,0.8
+Rodrigo De Paul,Atletico Madrid,0.1
+Pau Torres,Villarreal,4.1
+Adri Embarba,Almeria,0.2
+Anuar Tuhami,Real Valladolid,0.7
+Yuri Berchiche,Athletic Club,1.7
+Yeray Álvarez,Athletic Club,3.6
+Nahuel Molina,Atletico Madrid,1.4
+Lucas Boyé,Elche,1.3
+Iza Carcelén,Cadiz,2.5
+Selim Amallah,Real Valladolid,0.1
+Eduardo Camavinga,Real Madrid,0.5
+Youssouf Sabaly,Real Betis,2
+Pablo Maffeo,Mallorca,1.7
+Marcos Acuña,Sevilla,1.1
+Javi Guerra,Valencia,0.9
+Pape Gueye,Sevilla,0.6
+Santi Comesaña,Rayo Vallecano,0.4
+David García,Osasuna,4.7
+Robin Le Normand,Real Sociedad,2.8
+Dominik Greif,Mallorca,0
+Ivo Grbic,Atletico Madrid,1.4
+David López,Girona,3.2
+Gonzalo Plata,Real Valladolid,0.2
+Diego Rico,Real Sociedad,2
+Alexander Isak,Real Sociedad,1
+Dani Ceballos,Real Madrid,0.2
+Gerard Gumbau,Elche,1.1
+Alex Berenguer,Athletic Club,0.1
+Copete,Mallorca,3.5
+Omar Alderete,Getafe,3.3
+Arnau Martínez,Girona,1.4
+Diego López,Valencia,0.2
+Germán Pezzella,Real Betis,4.2
+Unai Núñez,Celta Vigo,3.7
+Edgar Badia,Elche,1.1
+Fernando Pacheco,Espanyol,1.1
+Iker Muniain,Athletic Club,0.1
+Alfonso Espino,Cadiz,2.4
+Oihan Sancet,Athletic Club,0.3
+Mario Hermoso,Atletico Madrid,2.9
+João Félix,Atletico Madrid,0.1
+William Carvalho,Real Betis,0.6
+Adri Embarba,Espanyol,0
+Koke,Atletico Madrid,0.6
+Fran García,Rayo Vallecano,1.3
+Étienne Capoue,Villarreal,0.7
+Sergio Canales,Real Betis,0.2
+Stefan Savic,Atletico Madrid,2.7
+Cyle Larin,Real Valladolid,0.8
+Lucas Torró,Osasuna,1.9
+Lucas Ocampos,Sevilla,0.3
+Álex Remiro,Real Sociedad,0.7
+Carlos García,Cadiz,2
+Valentín Castellanos,Girona,0.7
+Moi Gómez,Osasuna,0.2
+Martín Zubimendi,Real Sociedad,1.4
+Héctor Bellerín,Barcelona,0.3
+Oriol Romeu,Girona,1.5
+Lucas Vázquez,Real Madrid,0.4
+Eray Cömert,Valencia,3.2
+Rui Silva,Real Betis,0.6
+El Bilal Touré,Almeria,1
+Ante Budimir,Osasuna,0.6
+Paulo Gazzaniga,Girona,0.4
+Predrag Rajkovic,Mallorca,0.9
+Luis Suárez,Almeria,0.5
+Nabil Fekir,Real Betis,0
+Sergio Escudero,Real Valladolid,1.7
+Aitor Ruibal,Real Betis,1.2
+Vinicius Souza,Espanyol,1.4
+Thierry Correia,Valencia,1.7
+Rubén Sobrino,Cadiz,0.5
+Jan Oblak,Atletico Madrid,0.5
+Omar Mascarell,Elche,1.9
+Nemanja Gudelj,Sevilla,2.9
+Íñigo Ruíz de Galarreta,Mallorca,0.6
+Suso,Sevilla,0.1
+Marko Dmitrovic,Sevilla,0.9
+Justin Kluivert,Valencia,0.1
+Óscar De Marcos,Athletic Club,1.5
+Fernando Martínez,Almeria,0.6
+Aridane Hernández,Osasuna,4.1
+Alfonso Pedraza,Villarreal,0.8
+Abde Ezzalzouli,Osasuna,0.2
+Raúl Albiol,Villarreal,4.3
+Luka Modric,Real Madrid,0.2
+Luiz Felipe,Real Betis,4.3
+Sergi Roberto,Barcelona,0.6
+Mouctar Diakhaby,Valencia,3.6
+Joseph Aidoo,Celta Vigo,4.1
+Igor Zubeldia,Real Sociedad,2.9
+Luiz Henrique,Real Betis,0.4
+Ander Barrenetxea,Real Sociedad,0.3
+Hugo Mallo,Celta Vigo,2.5
+Óscar Trejo,Rayo Vallecano,0.2
+Chris Ramos,Cadiz,1.3
+Thomas Lemar,Atletico Madrid,0.4
+Mikel Vesga,Athletic Club,1
+Carlos Clerc,Elche,2.6
+Borja Iglesias,Real Betis,0.5
+Aimar Oroz,Osasuna,0.1
+Rodrigo Riquelme,Girona,0.1
+Luis Milla,Getafe,0.9
+Martin Valjent,Mallorca,4.4
+Memphis Depay,Atletico Madrid,0
+Carlos Soler,Valencia,0.7
+Nacho,Real Madrid,1.2
+Federico Fernández,Elche,12
+Álex Collado,Elche,0.3
+Eric García,Barcelona,1.4
+Aihen Muñoz,Real Sociedad,1.3
+Cenk Özkacar,Valencia,2.7
+Manu Morlanes,Mallorca,0.8
+Kike Barja,Osasuna,0.1
+Álvaro Aceves,Real Valladolid,0
+Léo Baptistão,Almeria,0.3
+Alejandro Catena,Rayo Vallecano,4.5
+Aïssa Mandi,Villarreal,2.8
+Brian Oliván,Espanyol,1.9
+César Montes,Espanyol,5
+Dani Rodríguez,Mallorca,0.3
+José Gragera,Espanyol,1.9
+Umar Sadiq,Real Sociedad,0
+Carles Pérez,Celta Vigo,0.2
+Jawad El Yamiq,Real Valladolid,3.8
+Théo Bongonda,Cadiz,0.3
+Óscar Valentín,Rayo Vallecano,0.8
+Álex Baena,Villarreal,0.4
+Martín Montoya,Real Betis,2.2
+Chimy Ávila,Osasuna,0.5
+Dani Vivian,Athletic Club,3
+Nico González,Valencia,0.5
+Sergi Guardiola,Cadiz,0.4
+Álex Centelles,Almeria,2.1
+David Alaba,Real Madrid,1.6
+Santiago Bueno,Girona,3
+Tete Morente,Elche,0.8
+Pepe Reina,Villarreal,0.4
+Gonzalo Melero,Almeria,0.7
+Edgar González,Real Betis,4.8
+Ferland Mendy,Real Madrid,0.7
+Franco Cervi,Celta Vigo,0.4
+Fernando,Sevilla,1.2
+Samu Castillejo,Valencia,0
+Kike Pérez,Real Valladolid,0.7
+Florian Lejeune,Rayo Vallecano,3.8
+Iván Sánchez,Real Valladolid,0.2
+Rodri,Real Betis,0
+Isco,Sevilla,0.3
+Miguel Gutiérrez,Girona,1
+Iván Fresneda,Real Valladolid,2
+Martin Braithwaite,Espanyol,0.4
+Saúl Ñíguez,Atletico Madrid,0.8
+Nemanja Maksimovic,Getafe,0.9
+Youssef En-Nesyri,Sevilla,0.5
+Samú Costa,Almeria,1.9
+Geoffrey Kondogbia,Atletico Madrid,0.5
+Óliver Torres,Sevilla,0.2
+Lázaro,Almeria,0.1
+Iván Martín,Girona,0.5
+Ansu Fati,Barcelona,0.1
+Borja García,Girona,0.4
+Axel Witsel,Atletico Madrid,2.2
+Íñigo Lekue,Athletic Club,1.3
+Asier Illarramendi,Real Sociedad,0.7
+Damián Suárez,Getafe,1.1
+Sergio Camello,Rayo Vallecano,0.7
+Jorge Cuenca,Villarreal,4.3
+Sergio Herrera,Osasuna,0.4
+Javi Sánchez,Real Valladolid,3.5
+Fernando Pacheco,Almeria,1
+Ramon Terrats,Villarreal,0.4
+Álex Sola,Real Sociedad,1
+Luis Pérez,Real Valladolid,1.4
+Giorgi Mamardashvili,Valencia,0.6
+Ivan Rakitic,Sevilla,0.6
+Manu Sánchez,Osasuna,1.2
+Marcão,Sevilla,2.6
+Érik Lamela,Sevilla,0.1
+Bryan Gil,Sevilla,0.5
+Rubén Peña,Osasuna,1.2
+Lucas Rosa,Real Valladolid,1.1
+Djené Dakonam,Getafe,2.3
+Diego Mariño,Almeria,1
+Iker Benito,Osasuna,0.8
+Julen Agirrezabala,Athletic Club,0.4
+Srdjan Babic,Almeria,3.6
+Marcos Alonso,Barcelona,1.3
+Antonio Rüdiger,Real Madrid,2.1
+Rodrigo Ely,Almeria,5.6
+Monchu,Real Valladolid,0.5
+Joaquín Fernández,Real Valladolid,3.6
+Jaume Costa,Mallorca,1.2
+Jorge Meré,Cadiz,3.1
+Yan Couto,Girona,0.4
+Alex Telles,Sevilla,1.3
+Agustín Marchesín,Celta Vigo,0.6
+Gorka Guruzeta,Athletic Club,0.2
+Manu Bueno,Sevilla,1
+Javi Puado,Espanyol,0.3
+Andrés Guardado,Real Betis,0.8
+Óscar Plano,Real Valladolid,0.5
+Brian Ocampo,Cadiz,0.1
+Juan Iglesias,Getafe,2.2
+Ángel Correa,Atletico Madrid,0.1
+Domingos Duarte,Getafe,4.5
+Jon Pacheco,Real Sociedad,2.2
+Borja Mayoral,Getafe,0.2
+Giovanni González,Mallorca,1.3
+Rubén Alcaraz,Cadiz,1.1
+Gastón Álvarez,Getafe,1.5
+Darwin Machís,Real Valladolid,0.4
+Fran Beltrán,Celta Vigo,0.9
+Andoni Gorosabel,Real Sociedad,0.8
+Leandro Cabrera,Espanyol,3.3
+Víctor Ruiz,Real Betis,3.2
+Óscar Rodríguez,Celta Vigo,0.4
+Ferran Torres,Barcelona,0.1
+Álex Pozo,Almeria,1.1
+José Luís Morales,Villarreal,0.1
+Jørgen Strand Larsen,Celta Vigo,0.8
+Unai Simón,Athletic Club,0.4
+Mauro Arambarri,Getafe,1.5
+Stefan Mitrovic,Getafe,4
+Edu Expósito,Espanyol,0.7
+Toni Villa,Girona,0
+Dani García,Athletic Club,0.8
+Rubén Sánchez,Espanyol,0.8
+Mohamed-Ali Cho,Real Sociedad,0.1
+Andriy Lunin,Real Madrid,0.3
+Hugo Guillamón,Valencia,1.1
+Lucas Olaza,Real Valladolid,1.3
+Luis Hernández,Cadiz,4
+Álvaro Aguado,Real Valladolid,0.4
+Unai García,Osasuna,2.7
+Óscar Mingueza,Celta Vigo,1
+Jesús Navas,Sevilla,1.3
+Paul Akouokou,Real Betis,1.3
+Nacho Vidal,Osasuna,1.4
+Yangel Herrera,Girona,0.6
+Javi Hernández,Girona,1.4
+Fernando Calero,Espanyol,1.9
+Luca Koleosho,Espanyol,0
+Karim Rekik,Sevilla,1.4
+Raúl de Tomás,Rayo Vallecano,0.3
+Haris Seferovic,Celta Vigo,0.3
+Fali,Cadiz,2.7
+Stole Dimitrievski,Rayo Vallecano,0.8
+Lisandro Magallán,Elche,2.1
+Kiko Femenía,Villarreal,1.1
+Jon Moncayola,Osasuna,0.8
+Rubén García,Osasuna,0.3
+Dani Carvajal,Real Madrid,1.5
+Iván Balliu,Rayo Vallecano,1.8
+Jesús Corona,Sevilla,0.3
+Ronaël Pierre-Gabriel,Espanyol,1.3
+Gabriel Paulista,Valencia,3.7
+Denis Suárez,Espanyol,0.2
+Felipe,Atletico Madrid,2.3
+Johan Mojica,Elche,1.7
+Jorge Pascual,Villarreal,0
+Munir El Haddadi,Getafe,0.1
+Josan,Elche,0.5
+Sergi Gómez,Espanyol,4.1
+Miguel Rodríguez,Celta Vigo,0.4
+Alberto Moreno,Villarreal,1
+Papu Gómez,Sevilla,0.3
+Francis Coquelin,Villarreal,0.4
+Edinson Cavani,Valencia,0.4
+Pere Milla,Elche,0.5
+Sergio Akieme,Almeria,1.3
+Yassine Bounou,Sevilla,0.7
+Matheus Cunha,Atletico Madrid,0.3
+Yunus Musah,Valencia,0.5
+Mikel Oyarzabal,Real Sociedad,0.2
+Iván Villar,Celta Vigo,0.8
+Álvaro Fernández,Espanyol,0.6
+John Donald,Elche,1.5
+Aritz Elustondo,Real Sociedad,1.6
+Juanmi Latasa,Getafe,0.4
+Pedro Bigas,Elche,3.3
+Randy Nteka,Elche,0.6
+Ander Guevara,Real Sociedad,0.4
+Adrià Pedrosa,Espanyol,0.3
+Óscar Gil,Espanyol,1.2
+César de la Hoz,Almeria,1.4
+Roque Mesa,Real Valladolid,0.6
+Fidel,Elche,0.3
+Dimitri Foulquier,Valencia,1.2
+Rafa Mir,Sevilla,0.4
+Iddrisu Baba,Mallorca,1.1
+Matija Nastasic,Mallorca,3.1
+Manu Vallejo,Girona,0.1
+Bernardo Espinosa,Girona,3.5
+Dennis Hadzikadunic,Mallorca,3.4
+Renato Tapia,Celta Vigo,1.2
+Manuel Pozo,Real Valladolid,0
+Tino Kadewere,Mallorca,0.1
+Joseba Zaldúa,Cadiz,2.1
+Tanguy Nianzou,Sevilla,2.1
+Pablo Ibáñez,Osasuna,0.8
+Helibelton Palacios,Elche,2.1
+Ander Herrera,Athletic Club,0.6
+Jon Olasagasti,Real Sociedad,0.3
+Victor Chust,Cadiz,3.8
+Nico Melamed,Espanyol,0
+Fernando Medrano,Celta Vigo,1
+Juan Cruz,Osasuna,2
+José Ángel Carmona,Elche,0.8
+Sergio Asenjo,Real Valladolid,1.1
+José Carlos Lazo,Espanyol,0.5
+Gonzalo Montiel,Sevilla,1.2
+Hugo Sotelo,Celta Vigo,0
+Unai López,Rayo Vallecano,0.2
+Joan Jordán,Sevilla,0.6
+Pathé Ciss,Rayo Vallecano,1.1
+Juanpe,Girona,3.1
+Álvaro Negredo,Cadiz,0.4
+José Ángel Carmona,Sevilla,1.6
+Álex Fernández,Cadiz,0.7
+Darko Brasanac,Osasuna,0.4
+Pol Lirola,Elche,1.1
+Rober,Real Betis,0
+Chumi,Almeria,2.2
+Kike Salas,Sevilla,3.8
+Alberto Perea,Cadiz,0
+Reinier,Girona,0.2
+Raúl García,Athletic Club,0.2
+Adnan Januzaj,Sevilla,0
+Cristhian Stuani,Girona,0.2
+Toni Lato,Valencia,0.5
+Juan Carlos,Girona,1.1
+Juanmi,Real Betis,0.1
+Largie Ramazani,Almeria,0.2
+Luca de la Torre,Celta Vigo,0.2
+Anthony Lozano,Cadiz,0.6
+Ilaix Moriba,Valencia,0.5
+Carlos Domínguez,Celta Vigo,2.3
+Portu,Getafe,0.4
+Momo Mbaye,Cadiz,3.5
+José Antonio de la Rosa,Cadiz,0
+Kasper Dolberg,Sevilla,1.3
+Valery Fernández,Girona,0.2
+Pablo Barrios,Atletico Madrid,0.2
+Joaquín,Real Betis,0.2
+Fede San Emeterio,Cadiz,0.8
+Zouhair Feddal,Real Valladolid,3.4
+Franck Kessié,Barcelona,0.4
+Pablo Marín,Real Sociedad,0.2
+Juan Cruz,Real Betis,0
+Jesús Vallejo,Real Madrid,0
+Juan Cala,Cadiz,4
+Johan Mojica,Villarreal,0.6
+Pep Chavarría,Rayo Vallecano,0.4
+Amath Ndiaye,Mallorca,0.1
+Jesús Vázquez,Valencia,0.8
+Malcom Adu,Athletic Club,0.1
+Lucas Pérez,Cadiz,0.2
+Gonzalo Villar,Getafe,0.3
+Haissem Hassan,Villarreal,0
+Sergio León,Real Valladolid,0.1
+Abdul Mumin,Rayo Vallecano,2.2
+Dyego Sousa,Almeria,0.7
+Aitor Paredes,Athletic Club,1.6
+Álvaro Rodríguez,Real Madrid,0.2
+Manu Trigueros,Villarreal,0.2
+Enzo Roco,Elche,2.8
+Francisco Portillo,Almeria,0.3
+Eden Hazard,Real Madrid,0
+Lautaro Blanco,Elche,0.5
+Oscar Ureña,Girona,0
+Raúl Parra,Cadiz,1.3
+Martin Hongla,Real Valladolid,2.9
+Gonzalo Verdú,Elche,1.9
+Diego Moreno,Osasuna,1.8
+Álvaro Odriozola,Real Madrid,0
+Carles Aleñá,Getafe,0.4
+Aleix Vidal,Espanyol,0.4
+Carlos Fernández,Real Sociedad,0.2
+Arnaut Danjuma,Villarreal,0.1
+Jaime Mata,Getafe,0.3
+Arnau Puigmal,Almeria,0.2
+Aleix Garrido,Barcelona,0
+Roberto Torres,Osasuna,0
+Keidi Bare,Espanyol,0.4
+Joel Roca,Girona,0.2
+Kike García,Osasuna,0.4
+Gonçalo Paciência,Celta Vigo,0.2
+Roger Martí,Cadiz,0.5
+Pablo Torre,Barcelona,0.1
+Cristhian Mosquera,Valencia,1
+Braian Cufré,Mallorca,0.2
+Iván Alejo,Cadiz,0.3
+Íñigo Eguaras,Almeria,0.6
+Iker Muñoz,Osasuna,1
+Kaiky,Almeria,2.2
+Ángel Algobia,Getafe,0.3
+Willian José,Real Betis,0.5
+Mamadou Fall,Villarreal,1
+Mikel Balenziaga,Athletic Club,0.7
+Pierre-Emerick Aubameyang,Barcelona,0
+Marcos André,Valencia,0
+Oier Zarraga,Athletic Club,0.2
+Ander Martín,Real Sociedad,0.3
+Clément Grenier,Mallorca,0.3
+Abner,Real Betis,1.5
+Sergio Reguilón,Atletico Madrid,0.2
+Alberto Marí,Valencia,0
+Benjamin Lecomte,Espanyol,1
+Augusto Solari,Celta Vigo,0.1
+Jon Magunazelaia,Real Sociedad,0.5
+José Mari Martín,Cadiz,0.4
+Kevin Vázquez,Celta Vigo,0.7
+Andrés Martín,Rayo Vallecano,0.2
+Thomas Delaney,Sevilla,0.4
+Franco Russo,Mallorca,1.3
+Nicolás Fernández Mercau,Elche,0.1
+Ezequiel Ponce,Elche,0.4
+José Carlos Lazo,Almeria,0
+Hugo Duro,Valencia,0.2
+Samu Sáiz,Girona,0
+Bebé,Rayo Vallecano,0
+Robert Navarro,Real Sociedad,0.1
+Antonio Blanco,Cadiz,1
+Antonio Sánchez,Mallorca,0.2
+Jon Morcillo,Athletic Club,0
+Alexander Callens,Girona,1
+Sergi Guardiola,Real Valladolid,0.4
+Manu Morlanes,Villarreal,0.4
+Diego González,Elche,3.1
+Rodrigo Battaglia,Mallorca,1.2
+Ander Capa,Athletic Club,0.3
+Ricard Artero,Girona,0.4
+Axel Werner,Elche,0
+Asier Villalibre,Athletic Club,0.2
+Ángel Rodríguez,Mallorca,0.1
+Toni Villa,Real Valladolid,0
+Lamine Yamal,Barcelona,0
+Abdón Prats,Mallorca,0.1
+Raúl Guti,Elche,0.2
+Ludwig Augustinsson,Mallorca,0.5
+Omar El Hilali,Espanyol,1
+Filip Jørgensen,Villarreal,1
+Josep Gayá,Mallorca,3
+Roger Martí,Elche,0.6
+Jaime Seoane,Getafe,0.1
+Diego Collado,Villarreal,0
+Curro Sánchez,Almeria,0
+Radamel Falcao,Rayo Vallecano,0.4
+José Pozo,Rayo Vallecano,0.1
+Williot Swedberg,Celta Vigo,0.3
+Moi Parra,Getafe,0
+Mickaël Malsa,Real Valladolid,0.4
+Beñat Turrientes,Real Sociedad,0.3
+David Torres,Real Valladolid,1
+Pablo Durán,Celta Vigo,0.3
+Carlos Martín,Atletico Madrid,0
+Francisco Mwepu,Cadiz,0
+Nabili Zoubdi Touaizi,Espanyol,0
+Salvi Sánchez,Rayo Vallecano,0
+Lago Junior,Mallorca,0
+Kenedy,Real Valladolid,0
+Fabrizio Angileri,Getafe,0.6
+Shon Weissman,Real Valladolid,0.3
+Simo,Espanyol,0.4
+Houboulang Mendes,Almeria,1.2
+Loren Morón,Real Betis,0.5
+Mamady Diarra,Cadiz,0
+Roberto Arroyo,Real Valladolid,0
+Dani Gómez,Espanyol,0
+Iñaki Peña,Barcelona,0
+Javi Llabrés,Mallorca,1
+Santiago Arzamendia,Cadiz,1.2
+Mariano Díaz,Real Madrid,0
+Ramon Terrats,Girona,0.4
+Fran Delgado,Real Betis,0
+Jordan Amavi,Getafe,0.7
+Matt Doherty,Atletico Madrid,0
+Juanjo Narváez,Real Valladolid,0
+Ángel Alarcón,Barcelona,0
+Randy Nteka,Rayo Vallecano,0.3
+Jon Karrikaburu,Real Sociedad,0
+Casemiro,Real Madrid,1
+Maxi Gómez,Valencia,0.7
+Pablo Muñoz,Rayo Vallecano,0
+Sergio Arribas,Real Madrid,0
+Domingos Quina,Elche,0
+Rubén Quintanilla,Mallorca,0
+Unai Vencedor,Athletic Club,0.1
+Youba Diarra,Cadiz,0.6
+Fran Pérez,Valencia,0.1
+Álex Revuelta,Getafe,0
+Arnau Tenas,Barcelona,0
+Chadi Riad,Barcelona,0
+Diego Méndez,Rayo Vallecano,0
+Esteban Saveljich,Rayo Vallecano,0
+Pedro Ortiz,Sevilla,0
+Mario Hernández,Rayo Vallecano,0
+Alberto del Moral,Villarreal,0
+Marezi,Almeria,0
+Awer Mabil,Cadiz,0.2
+Antonio Gomis,Atletico Madrid,1
+Tunde Akinsola,Real Valladolid,0
+Mario Suárez,Rayo Vallecano,0
+Pol Lozano,Espanyol,0.3
+Fer Niño,Villarreal,0
+Alejandro Alfaro,Elche,0
+Javier Pastore,Elche,0
+Iván Romero,Sevilla,0
+Roger Martínez,Espanyol,0
+Carlos Álvarez,Sevilla,0
+Pape Cheikh,Elche,0
+Sekou Gassama,Real Valladolid,0
+Diego Hormigo,Sevilla,1
+Tomás Alarcón,Cadiz,0.5
+Álvaro Giménez,Cadiz,0
+Joan García,Espanyol,0
+Jorge Herrando,Osasuna,3
+Diego López,Rayo Vallecano,0.5

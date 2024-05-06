@@ -1,0 +1,608 @@
+player_name,team_name,Unsuccessful,Successful,Total Dribbles
+Armand Laurienté,Lorient,1,4.7,5.7
+Lionel Messi,Paris Saint-Germain,2.6,3.2,5.8
+Kylian Mbappé,Paris Saint-Germain,3.7,2.2,5.9
+Martin Terrier,Rennes,1.1,0.6,1.6
+Neymar,Paris Saint-Germain,2.9,1.9,4.8
+Sofiane Diop,Monaco,4,1,5
+Dango Ouattara,Lorient,2.8,1.6,4.4
+Alexandre Lacazette,Lyon,1.1,1.1,2.2
+Rémy Cabella,Lille,1.2,1.3,2.4
+Lucas Paquetá,Lyon,1,0.5,1.5
+Téji Savanier,Montpellier,2.2,2.4,4.6
+Enzo Le Fée,Lorient,2.5,1.9,4.4
+Romain Faivre,Lorient,2.5,3,5.5
+Terem Moffi,Nice,1.1,1.6,2.6
+Joaquín Blázquez,Brest,0,0,0
+Jonathan David,Lille,1.3,0.8,2.1
+Benjamin André,Lille,0.5,0.6,1.1
+Benjamin Lecomte,Montpellier,0,0.1,0.1
+Benjamin Bourigeaud,Rennes,0.5,0.4,0.9
+Issiaga Sylla,Montpellier,1.3,0.6,1.9
+Florian Sotoca,Lens,0.6,0.4,1.1
+Amine Gouiri,Rennes,1.4,1,2.4
+Gaëtan Laborde,Nice,0.9,0.8,1.7
+Aleksandr Golovin,Monaco,0.6,0.8,1.4
+Seko Fofana,Lens,1.4,1.7,3.1
+Kiki Kouyaté,Montpellier,0.1,0.2,0.3
+Ghjuvanni Quilichini,AC Ajaccio,0,0,0
+Andrei Girotto,Nantes,0.2,0.1,0.3
+Edon Zhegrova,Lille,2.6,2.4,5
+Donovan Léon,Auxerre,0,0.5,0.5
+Branco van den Boomen,Toulouse,0.5,0.5,1.1
+Jérémy Doku,Rennes,2.2,3.3,5.5
+Jean-Ricner Bellegarde,Strasbourg,1.8,1.9,3.7
+Steve Mounié,Brest,0.5,0.4,0.9
+Wissam Ben Yedder,Monaco,0.9,0.7,1.6
+Fabien Centonze,Nantes,1.2,1.7,2.9
+Nathan Ngoumou,Toulouse,2,1,3
+Sofiane Boufal,Angers,3.2,3,6.2
+Nuno Mendes,Paris Saint-Germain,1.7,1.2,2.9
+Maxence Caqueret,Lyon,1.3,1.1,2.4
+Alexis Sánchez,Marseille,1.1,1.2,2.3
+Habib Diallo,Strasbourg,1.1,0.8,1.9
+Nabil Bentaleb,Angers,1.6,2.1,3.7
+Przemyslaw Frankowski,Lens,0.5,0.4,0.9
+Ludovic Blas,Nantes,2.4,2.2,4.6
+Terem Moffi,Lorient,1,1.1,2.1
+Valentin Rongier,Marseille,0.4,0.8,1.3
+Franck Honorat,Brest,1.2,0.5,1.7
+Loïs Openda,Lens,0.9,0.5,1.4
+Rayan Cherki,Lyon,2.3,2.3,4.6
+Pierre Lees-Melou,Brest,0.7,0.7,1.4
+Hicham Boudaoui,Nice,1.4,1.1,2.5
+Nicolas Pépé,Nice,2.2,1.8,4
+Jonathan Clauss,Marseille,0.9,0.9,1.9
+Jonathan Gradit,Lens,0.4,0.4,0.8
+Dante,Nice,0.1,0.2,0.4
+Yunis Abdelhamid,Reims,0.4,0.6,1
+Rasmus Nicolaisen,Toulouse,0.2,0.3,0.4
+Achraf Hakimi,Paris Saint-Germain,1.6,1,2.6
+Yehvann Diouf,Reims,0,0.1,0.1
+Kevin Danso,Lens,0.5,0.5,1
+Bradley Barcola,Lyon,1.5,1.5,3.1
+Marco Verratti,Paris Saint-Germain,0.8,1,1.8
+Vanderson,Monaco,1.3,0.9,2.2
+Kenny Lala,Brest,0.8,0.7,1.5
+Tetê,Lyon,1.9,1.2,3.2
+Adrien Thomasson,Lens,0.3,0.6,0.9
+Alexander Djiku,Strasbourg,0.1,0.1,0.2
+Caio Henrique,Monaco,0.4,0.5,0.9
+Karl Toko-Ekambi,Lyon,1.4,1.4,2.8
+Jonathan Bamba,Lille,1.9,1,2.9
+Dejan Lovren,Lyon,0.1,0.1,0.1
+Neto Borges,Clermont Foot,1.4,1.4,2.8
+Khéphren Thuram,Nice,0.9,1.3,2.2
+Folarin Balogun,Reims,1.4,0.9,2.4
+Azor Matusiwa,Reims,0.2,0.5,0.8
+Mateusz Lis,Troyes,0,0,0
+Youssouf Fofana,Monaco,1.3,1.3,2.5
+Fabián Ruiz,Paris Saint-Germain,0.4,0.7,1.1
+Junya Ito,Reims,2.3,1.8,4
+Romain Del Castillo,Brest,1.6,1,2.6
+Gianluigi Donnarumma,Paris Saint-Germain,0,0,0
+Marshall Munetsi,Reims,0.7,0.6,1.3
+Youcef Belaïli,AC Ajaccio,2.1,1.7,3.8
+Paul Joly,Auxerre,1.5,1.3,2.8
+Cengiz Ünder,Marseille,1.5,1.1,2.6
+Elye Wahi,Montpellier,1.4,0.9,2.3
+Rony Lopes,Troyes,1.3,1.4,2.7
+Nicolás Tagliafico,Lyon,0.8,0.3,1.1
+Malo Gusto,Lyon,1.4,1,2.4
+Benoît Badiashile,Monaco,0.1,0,0.1
+Gaëtan Laborde,Rennes,0,0.5,0.5
+Morgan Sanson,Strasbourg,1.6,0.9,2.6
+Nuno Tavares,Marseille,2.7,1.7,4.5
+Jordan Veretout,Marseille,0.2,0.3,0.5
+Baptiste Santamaría,Rennes,0.3,0.4,0.7
+Rafael Ratão,Toulouse,1.6,1.3,2.8
+Frédéric Guilbert,Strasbourg,1.1,0.8,1.9
+Axel Disasi,Monaco,0.2,0.6,0.8
+Samuel Gigot,Marseille,0.2,0.2,0.3
+Breel Embolo,Monaco,1.3,1,2.3
+Adrien Truffert,Rennes,0.9,0.8,1.6
+Ismaily,Lille,1,0.7,1.7
+Corentin Tolisso,Lyon,0.4,0.2,0.6
+Jaouen Hadjam,Nantes,1.2,2.2,3.4
+Alexis Flips,Reims,0.9,0.4,1.3
+Mory Diaw,Clermont Foot,0,0,0
+Nathan Zézé,Nantes,0,0,0
+Hamari Traoré,Rennes,0.3,0.3,0.6
+Djed Spence,Rennes,1.5,1.9,3.4
+Sergio Ramos,Paris Saint-Germain,0.3,0.2,0.4
+Jordan Lotomba,Nice,1.1,1.2,2.2
+Chancel Mbemba,Marseille,0.3,0.4,0.7
+Angelo Fulgini,Lens,1.1,0.8,1.9
+Stijn Spierings,Toulouse,0.7,0.4,1.1
+Pau López,Marseille,0,0,0
+Alban Lafont,Nantes,0.1,0,0.1
+Luis Suárez,Marseille,0,0.6,0.6
+Florian Tardieu,Troyes,0.3,0.5,0.8
+Mikkel Desler,Toulouse,0.9,1,1.9
+Facundo Medina,Lens,0.4,0.8,1.2
+Maxime Dupé,Toulouse,0,0.1,0.1
+Adam Ounas,Lille,2.1,1.8,3.9
+Brendan Chardonnet,Brest,0,0.1,0.1
+Montassar Talbi,Lorient,0.1,0.2,0.3
+Andrei Radu,Auxerre,0,0.1,0.1
+Johan Gastien,Clermont Foot,0.5,0.3,0.8
+Alexsandro Ribeiro,Lille,0.3,0.7,1
+Salis Abdul Samed,Lens,0.6,0.9,1.5
+Emmanuel Agbadou,Reims,0.2,0.3,0.5
+Kasper Schmeichel,Nice,0,0,0
+Jean-Clair Todibo,Nice,0.2,0.6,0.8
+Mohamed Camara,Monaco,0.9,0.8,1.7
+Krépin Diatta,Monaco,0.9,1,2
+Himad Abdelli,Angers,1.1,1.4,2.5
+Rominigue Kouamé,Troyes,0.7,1.6,2.2
+Brice Samba,Lens,0,0,0
+Arnaud Nordin,Montpellier,1.7,1.1,2.7
+Danilo Pereira,Paris Saint-Germain,0.2,0.3,0.5
+Guillermo Maripán,Monaco,0.2,0,0.2
+Nordi Mukiele,Paris Saint-Germain,0.9,0.3,1.3
+Youcef Atal,Nice,1.3,1.1,2.4
+Melvin Bard,Nice,0.9,0.7,1.6
+Sinaly Diomandé,Lyon,0.4,0.4,0.8
+Alidu Seidu,Clermont Foot,1.1,1.1,2.2
+Faitout Maouassa,Montpellier,1.1,0.8,1.9
+Jimmy Cabot,Lens,1.1,1.1,2.2
+Sead Kolasinac,Marseille,0.3,0.1,0.4
+Vitinha,Paris Saint-Germain,0.6,0.9,1.5
+Christopher Jullien,Montpellier,0,0.2,0.2
+Saîf-Eddine Khaoui,Clermont Foot,0.8,0.7,1.5
+Jérémy Le Douaron,Brest,1.6,0.7,2.3
+Azzedine Ounahi,Angers,2.3,2.7,4.9
+Castello Lukeba,Lyon,0.2,0.3,0.5
+Mama Baldé,Troyes,2,1.6,3.6
+Gideon Mensah,Auxerre,1.3,1,2.3
+Ante Palaversa,Troyes,0,0,0
+Sofiane Diop,Nice,1.2,1,2.2
+Jubal,Auxerre,0.1,0.1,0.2
+Leonardo Balerdi,Marseille,0.1,0.3,0.4
+Quentin Merlin,Nantes,0.7,0.9,1.6
+Badredine Bouanani,Nice,1.3,1.4,2.7
+Lovro Majer,Rennes,0.5,0.9,1.4
+Laurent Abergel,Lorient,0.6,0.8,1.4
+Deiver Machado,Lens,1.1,0.5,1.6
+Warmed Omari,Rennes,0.1,0.2,0.3
+Marquinhos,Paris Saint-Germain,0.1,0,0.1
+Théo Sainte-Luce,Montpellier,0.6,0.9,1.4
+Lucien Agoumé,Troyes,0.5,0.3,0.9
+Désiré Doué,Rennes,1.2,1.8,3
+Vito Mannone,Lorient,0,0,0
+Mario Lemina,Nice,0.4,0.8,1.1
+Angel Gomes,Lille,0.7,0.8,1.6
+Arthur Theate,Rennes,0.2,0.2,0.4
+André Gomes,Lille,0.5,1.1,1.6
+Steve Mandanda,Rennes,0,0,0
+Marco Bizot,Brest,0,0,0
+Zakaria Aboukhlal,Toulouse,1.8,1.1,2.9
+Farès Chaïbi,Toulouse,0.7,0.3,1
+Jean-Charles Castelletto,Nantes,0.2,0.3,0.6
+Aaron Ramsey,Nice,0.4,0.5,0.9
+Tiago Djaló,Lille,0.4,0.2,0.6
+Gédéon Kalulu,Lorient,0.7,0.7,1.4
+Han-Noah Massengo,Auxerre,1.5,1.2,2.7
+Nuno da Costa,Auxerre,1.9,1.4,3.3
+Anthony Lopes,Lyon,0.1,0,0.1
+Andy Delort,Nice,0.6,0.3,0.9
+Jeffinho,Lyon,2.4,1.7,4.1
+Alexander Nübel,Monaco,0,0,0
+Jonas Omlin,Montpellier,0.1,0,0.1
+Karl Toko-Ekambi,Rennes,0.4,0.7,1.1
+Youssouf Ndayishimiye,Nice,0.2,0.3,0.5
+Joris Chotard,Montpellier,0.4,0.4,0.7
+Bamo Meïté,Lorient,0.2,0.4,0.6
+Nicolas Pallois,Nantes,0.1,0.3,0.3
+Dimitri Payet,Marseille,0.6,0.8,1.3
+Bafodé Diakité,Lille,0.3,0.6,0.9
+Chrislain Matsima,Monaco,0,0.1,0.1
+Jeanuël Belocian,Rennes,0.3,0.3,0.5
+Quentin Bernard,Auxerre,0.4,0.1,0.6
+Lilian Brassier,Brest,0.4,0.4,0.8
+Anthony Rouault,Toulouse,0.2,0.1,0.3
+Maximiliano Caufriez,Clermont Foot,0.3,0.2,0.5
+Cheick Keita,Reims,0.1,0.2,0.3
+Maxime Le Marchand,Strasbourg,0.1,0.6,0.7
+Issiaga Sylla,Toulouse,1.4,0.6,2
+Grejohn Kyei,Clermont Foot,0.9,1.1,2
+Thijs Dallinga,Toulouse,0.4,0.3,0.7
+Ruslan Malinovskyi,Marseille,0.8,1.4,2.1
+Ismaël Doukouré,Strasbourg,0.6,1,1.6
+Joe Rodon,Rennes,0,0.2,0.2
+Mostafa Mohamed,Nantes,0.5,0.6,1.1
+Julien Laporte,Lorient,0,0.1,0.1
+Eliesse Ben Seghir,Monaco,1.2,0.7,1.9
+Gabriel Suazo,Toulouse,0.7,1.2,1.9
+Vincent Le Goff,Lorient,0.5,0.3,0.9
+Mahdi Camara,Brest,0.7,0.8,1.5
+Mattéo Guendouzi,Marseille,0.5,0.4,0.9
+Hamza Sakhi,Auxerre,0.4,0.6,1
+Lucas Chevalier,Lille,0,0,0
+Flavien Tait,Rennes,0.8,0.7,1.5
+Arnaud Kalimuendo,Rennes,1,0.8,1.8
+Christopher Wooh,Rennes,0,0.2,0.2
+Xavier Chavalerin,Troyes,0.2,0.3,0.5
+Matz Sels,Strasbourg,0,0,0
+Wahbi Khazri,Montpellier,1.2,1,2.3
+Quentin Boisgard,Lorient,0.6,0.2,0.8
+Presnel Kimpembe,Paris Saint-Germain,0.1,0.2,0.3
+Isaak Touré,Auxerre,0.5,0.4,0.9
+Jens Cajuste,Reims,1.3,1.3,2.5
+Thiago Mendes,Lyon,0.2,0.2,0.4
+Saël Kumbedi,Lyon,1.3,0.8,2.1
+Mateusz Wieteska,Clermont Foot,0.1,0.3,0.4
+Thomas Foket,Reims,0.5,0.4,0.9
+Juan Bernat,Paris Saint-Germain,0.7,0.8,1.4
+Gauthier Gallon,Troyes,0,0,0
+Thibault De Smet,Reims,0.4,0.2,0.6
+Kevin Gameiro,Strasbourg,0.9,0.6,1.4
+Yvon Mvogo,Lorient,0,0,0
+Jackson Porozo,Troyes,0.2,0.3,0.5
+Habib Diarra,Strasbourg,1.3,0.9,2.1
+Birama Touré,Auxerre,0.3,0.3,0.6
+Lilian Raolisoa,Angers,0.3,0.4,0.7
+Lucas Perrin,Strasbourg,0.2,0.2,0.5
+Hugo Ekitike,Paris Saint-Germain,0.9,0.6,1.6
+Jean Lucas,Monaco,0.8,1.5,2.3
+Cheick Oumar Konaté,Clermont Foot,0.7,2.8,3.4
+Dénys Bain,Auxerre,0,0.5,0.5
+Rhys Healey,Toulouse,0,0,0
+Bradley Locko,Reims,1.4,1,2.4
+José Fonte,Lille,0,0.1,0.1
+Yan Valery,Angers,1.2,1.1,2.3
+Elbasan Rashani,Clermont Foot,1.1,0.7,1.8
+Ludovic Ajorque,Strasbourg,0.2,0.2,0.4
+Loïc Badé,Rennes,0,0,0
+Issa Kaboré,Marseille,1.4,1,2.5
+Yahia Fofana,Angers,0,0.1,0.1
+Ignatius Ganago,Nantes,0.7,0.4,1.1
+Mounaïm El Idrissy,AC Ajaccio,0.5,0.3,0.8
+Alexis Claude-Maurice,Lens,0.9,0.6,1.5
+Andreaw Gravillon,Reims,0.4,0.5,0.9
+Mathias Autret,Auxerre,0.7,0.4,1.1
+Yusuf Yazici,Lille,1.3,0.3,1.5
+Bingourou Kamara,Montpellier,0,0,0
+Muhammed Cham,Clermont Foot,0.9,0.8,1.7
+Jordan Ferri,Montpellier,1,0.6,1.6
+Renaud Ripart,Troyes,1.2,0.4,1.6
+Moses Simon,Nantes,1.8,1,2.8
+Thomas Delaine,Strasbourg,0.9,0.7,1.6
+Leandro Paredes,Paris Saint-Germain,0,0,0
+Maxime Gonalons,Clermont Foot,0.5,0.6,1.1
+Faouzi Ghoulam,Angers,0.3,0.4,0.7
+Jean-Kévin Duverne,Brest,1.1,0.8,1.9
+Ross Barkley,Nice,0.3,0.4,0.8
+Nicolas Cozza,Montpellier,0.6,0.3,0.9
+Stephy Mavididi,Montpellier,1.6,1.2,2.8
+Jean-Louis Leca,Lens,0,0,0
+Amine Harit,Marseille,2.3,1.3,3.6
+Henrique,Lyon,0.7,0.1,0.9
+Rémy Riou,Lyon,0,0,0
+Edan Diop,Monaco,1.1,0.4,1.6
+David Pereira da Costa,Lens,0.7,0.9,1.5
+Maxime Esteve,Montpellier,0.1,0.2,0.3
+Timothy Weah,Lille,0.6,0.7,1.3
+Gabriel Gudmundsson,Lille,0.8,1,1.8
+Mohamed Youssouf,AC Ajaccio,0.7,0.4,1.1
+Igor Silva,Lorient,1.3,0.9,2.1
+Noah Fadiga,Brest,1,0.9,1.9
+Falaye Sacko,Montpellier,0.5,0.5,1
+Dimitri Liénard,Strasbourg,0.6,0.4,1
+Florent Mollet,Nantes,0.9,0.5,1.4
+Antoine Mendy,Nice,0.1,0.3,0.4
+Pedro Chirivella,Nantes,0.3,0.3,0.6
+Akim Zedadka,Auxerre,1.3,0.5,1.8
+Rayan Raveloson,Auxerre,0.6,0.2,0.8
+Pape Gueye,Marseille,0.4,0.1,0.5
+Ronaël Pierre-Gabriel,Strasbourg,0.4,0.8,1.1
+Kamory Doumbia,Reims,0.7,0.7,1.4
+Haris Belkebla,Brest,0.6,0.3,0.9
+Evann Guessand,Nantes,1.3,1.2,2.6
+Brecht Dejaegere,Toulouse,1,0.6,1.7
+Jean Onana,Lens,0,0.3,0.3
+Kenji-Van Boto,Auxerre,0,0,0
+Yohann Magnin,Clermont Foot,0.7,0.2,0.8
+Johann Lepenant,Lyon,0.9,0.7,1.5
+Mickaël Barreto,AC Ajaccio,1.3,1.2,2.5
+Vincent Marchetti,AC Ajaccio,1.1,1.5,2.5
+Arkadiusz Milik,Marseille,0.5,0,0.5
+Bamba Dieng,Lorient,1.5,0.6,2.1
+Lesley Ugochukwu,Rennes,0.3,0.5,0.8
+Théo Le Bris,Lorient,0.9,0.6,1.4
+Sanjin Prcic,Strasbourg,0.2,0.5,0.7
+Gerson,Marseille,0.5,0.2,0.7
+Massadio Haïdara,Lens,0.3,0.2,0.6
+Xeka,Rennes,0.6,0.1,0.8
+Aiman Maurer,Clermont Foot,1.3,1.7,3
+Youssouf Koné,AC Ajaccio,0.8,0.6,1.5
+Gaetan Perrin,Auxerre,0.9,1.6,2.5
+Kamaldeen Sulemana,Rennes,1.2,1.1,2.3
+Reda Belahyane,Nice,0,1.3,1.3
+Damien Da Silva,Lyon,0.1,0.1,0.3
+Abdu Conté,Troyes,0.8,0.1,0.9
+Ibrahima Koné,Lorient,0.2,0.4,0.6
+Carlos Soler,Paris Saint-Germain,0.3,0.2,0.5
+Yuito Suzuki,Strasbourg,0.3,0.7,1
+Hugo Magnetti,Brest,0.4,0.7,1.1
+Mehdi Zeffane,Clermont Foot,0.3,0.2,0.5
+Stéphane Diarra,Lorient,1.9,0.9,2.8
+Mathias Pereira Lage,Brest,0.7,0.4,1.1
+Jim Allevinah,Clermont Foot,1.5,0.9,2.4
+Wesley Saïd,Lens,0.4,0.8,1.2
+Léo Leroy,Montpellier,0.7,0.4,1.1
+Achraf Dari,Brest,0,0.1,0.1
+Kays Ruiz-Atil,Auxerre,0,1,1
+Yasser Larouci,Troyes,1.6,1.3,2.9
+Warren Kamanzi,Toulouse,0.7,0.9,1.6
+Myziane Maolida,Reims,0.3,0.9,1.2
+Leny Yoro,Lille,0,0.2,0.2
+Fernand Mayembo,AC Ajaccio,0.2,0.4,0.5
+Colin Dagba,Strasbourg,0.7,0.5,1.2
+Bradley Locko,Brest,0.7,1.3,2
+Takumi Minamino,Monaco,0.6,0.4,1
+Eduard Sobol,Strasbourg,0.9,0.7,1.7
+Rudy Kohon,Troyes,1,0,1
+Bevic Moussiti-Oko,AC Ajaccio,0.8,0.8,1.5
+Jean-Victor Makengo,Lorient,0.9,1.4,2.3
+Gerzino Nyamsi,Strasbourg,0.3,0.5,0.8
+Renato Sanches,Paris Saint-Germain,0.4,0.6,1
+Jean-Eudes Aholou,Strasbourg,0.7,0.5,1.1
+Yoann Salmier,Troyes,0.2,0.2,0.4
+Mattia Viti,Nice,0.8,0.6,1.3
+Wilson Odobert,Troyes,1.9,1,3
+Jere Uronen,Brest,0,0.3,0.3
+Rubén Blanco,Marseille,0,0,0
+Kevin Volland,Monaco,0.2,0.1,0.3
+Dion Lopy,Reims,0.7,0.6,1.2
+Jodel Dossou,Clermont Foot,1.4,0.9,2.3
+Darlin Yongwa,Lorient,2.5,0.9,3.4
+Houssem Aouar,Lyon,0.8,0.6,1.4
+Jean-Claude Billong,Clermont Foot,0,0,0
+Miha Blazic,Angers,0,0,0
+Logan Costa,Toulouse,0.3,0.2,0.5
+Samuel Moutoussamy,Nantes,0.4,0.5,0.8
+Calvin Stengs,Nice,1,1.5,2.5
+Adil Rami,Troyes,0.3,0.2,0.5
+Ibrahima Sissoko,Strasbourg,0.3,0.3,0.7
+Cédric Bakambu,Marseille,0.7,0,0.7
+Ibrahim Diakité,Reims,0.7,0.3,1
+Youcef Belaïli,Brest,1.8,0.7,2.5
+Soungoutou Magassa,Monaco,0.5,0.5,1
+Paul Bernardoni,Angers,0,0,0
+Julian Jeanvier,Auxerre,0,0.1,0.1
+Jeff Reine-Adélaïde,Lyon,0.7,0.9,1.6
+Lassine Sinayoko,Auxerre,1,0.8,1.8
+Pablo Rosario,Nice,0.4,0.2,0.6
+Adrien Thomasson,Strasbourg,0.5,0.5,1.1
+Julien Ponceau,Lorient,0.6,0.3,1
+Souleyman Doumbia,Angers,2.1,1.1,3.2
+Cyrille Bayala,AC Ajaccio,1.3,0.8,2.1
+Akim Zedadka,Lille,0.6,0.4,1
+Arbër Zeneli,Reims,1.9,0.7,2.6
+Billal Brahimi,Nice,0.6,0.7,1.3
+Oumar Gonzalez,AC Ajaccio,0.3,0.2,0.5
+Vincent Sierro,Toulouse,0.1,0.4,0.5
+Sacha Delaye,Montpellier,0,0,0
+Siriki Dembélé,Auxerre,1,1.6,2.6
+Moussa Sissoko,Nantes,0.7,0.5,1.2
+Thierno Baldé,Troyes,1,1.2,2.2
+Alexandre Coeff,Auxerre,0.3,0,0.3
+Matis Carvalho,Montpellier,0,0,0
+Yoann Cathline,Lorient,1.7,1,2.7
+Ibrahima Niané,Angers,1.3,0.5,1.8
+Abdallah Sima,Angers,0.9,0.6,1.5
+Christophe Hérelle,Brest,0.1,0.1,0.1
+Brayann Pereira,Auxerre,3.5,3,6.5
+Birger Meling,Rennes,0.6,0.2,0.8
+Wout Faes,Reims,0.3,0.3,0.7
+Bamba Dieng,Marseille,0.1,0.2,0.3
+Adrien Hunou,Angers,0.6,0.4,1
+Cédric Hountondji,Angers,0,0,0.1
+Vítinha,Marseille,0.4,0.4,0.8
+Eric Bailly,Marseille,0.1,0.1,0.2
+Tanguy Zoukrou,Troyes,0.1,0.3,0.4
+Pierrick Capelle,Angers,0.6,0.5,1.1
+Romain Faivre,Lyon,1.7,0.3,2
+Franci Bouebari,Strasbourg,0,0.5,0.5
+Ismaël Diallo,AC Ajaccio,0.7,0.5,1.2
+Batista Mendy,Angers,0.7,1.1,1.7
+Amine Salama,Angers,1.4,0.9,2.2
+Mitchell van Bergen,Reims,0.9,0.5,1.4
+Amine Gouiri,Nice,1,0,1
+Mickaël Alphonse,AC Ajaccio,0.3,0.4,0.7
+Moussa Diarra,Toulouse,0.7,0.4,1
+Denis Genreau,Toulouse,0.8,0.4,1.2
+Rémy Descamps,Nantes,0,0,0
+Jeff Reine-Adélaïde,Troyes,1.2,1.7,2.8
+João Victor,Nantes,0.4,0.5,0.8
+Komnen Andric,Clermont Foot,0.3,0.2,0.4
+Ruben Aguilar,Monaco,0.4,0.4,0.7
+Maxime Busi,Reims,0.9,0.3,1.2
+Khalil Fayad,Montpellier,0.3,0.3,0.7
+Dennis Appiah,Nantes,0.8,0.4,1.2
+Bonke Innocent,Lorient,0.1,0.2,0.3
+Erik Palmer-Brown,Troyes,0.2,0.2,0.4
+Amin Sarr,Lyon,0.8,0.3,1.1
+Timothée Pembélé,Paris Saint-Germain,0.2,0.8,1
+Florent Ogier,Clermont Foot,0.2,0.2,0.3
+Nordine Kandil,Strasbourg,1,0.9,1.9
+Jérôme Boateng,Lyon,0,0,0
+Gauthier Hein,Auxerre,0.9,0.5,1.4
+Azzedine Ounahi,Marseille,0.3,0.9,1.1
+Arnaud Souquet,Montpellier,0.4,0.2,0.6
+Thomas Mangani,AC Ajaccio,0.1,0.2,0.2
+Moussa Dembélé,Lyon,0.3,0.2,0.5
+Benoît Costil,Auxerre,0,0.1,0.1
+Alexis Beka Beka,Nice,0.6,0.6,1.2
+Enzo Tchato,Montpellier,0.4,0.2,0.6
+Marcus Coco,Nantes,0.3,0.3,0.6
+Malang Sarr,Monaco,0.2,0.2,0.3
+Romain Hamouma,AC Ajaccio,1.2,0.8,2
+Papa Ndiaga Yade,Troyes,0.8,0.4,1.2
+Farid El Melali,Angers,1.6,1.5,3.2
+M'Baye Niang,Auxerre,1.1,0.3,1.4
+Warren Zaïre-Emery,Paris Saint-Germain,0.5,0.6,1.1
+Gelson Martins,Monaco,0.8,0.4,1.2
+Mamadou Sakho,Montpellier,0.1,0.1,0.1
+Julien Le Cardinal,Lens,0.3,0.3,0.5
+Clément Vidal,AC Ajaccio,0,0,0
+Ibrahim Salah,Rennes,0.4,1,1.4
+Myron Boadu,Monaco,0.3,0.1,0.3
+Youssouf M'Changama,Auxerre,0.5,0.4,0.9
+Mohamed Bayo,Lille,0.2,0.4,0.6
+Eliot Matazo,Monaco,0.5,0.2,0.7
+Ayoub Amraoui,Nice,0.3,0.3,0.6
+Maghnes Akliouche,Monaco,0.6,0.5,1.2
+Steven Fortès,Lens,0,0,0
+Andy Delort,Nantes,0.3,0.5,0.8
+Jérémie Bela,Clermont Foot,0.9,0.5,1.4
+Ismail Jakobs,Monaco,0.2,0.2,0.4
+Yanis Cimignani,AC Ajaccio,0.5,0.3,0.8
+Fallou Fall,Reims,0,0,0
+Kévin Danois,Auxerre,0,0,0
+Carlos Baleba,Lille,0.7,0.8,1.5
+Sada Thioub,Angers,0.7,0.6,1.3
+Andreas Bruus,Troyes,0.8,0.6,1.4
+Rares Ilie,Nice,0.3,1.3,1.5
+Kevin Spadanuda,AC Ajaccio,1,1,2
+Sébastien Corchia,Nantes,0.4,0.1,0.5
+Benjamin Leroy,AC Ajaccio,0,0,0
+Marcin Bulka,Nice,0,0,0
+Siriné Doucouré,Lorient,0.7,0.6,1.3
+Ismaël Boura,Lens,0.2,0.4,0.7
+Pablo Sarabia,Paris Saint-Germain,0.3,0.1,0.4
+Alexis Claude-Maurice,Nice,0,0,0
+Ibrahim Amadou,Angers,0.1,0.1,0.3
+Oliver Zandén,Toulouse,0.6,0.6,1.2
+Souleymane Cissé,Clermont Foot,0.5,0,0.5
+Islam Slimani,Brest,0.6,0.3,0.8
+Charles Traoré,Nantes,0.2,0,0.2
+Mathieu Coutadeur,AC Ajaccio,0.3,0.2,0.5
+Riad Nouri,AC Ajaccio,0.8,0.4,1.2
+Ruan,AC Ajaccio,0,0.7,0.7
+Arial Mendy,Clermont Foot,1,0,1
+Taïryk Arconte,Brest,0.5,0.8,1.3
+Valère Germain,Montpellier,0,0,0.1
+Matthis Abline,Auxerre,0.6,0.6,1.2
+Halid Sabanovic,Angers,0.5,0.3,0.8
+Lebo Mothiba,Strasbourg,0.3,0.2,0.5
+Ado Onaiwu,Toulouse,0.3,0.2,0.4
+Lukasz Poreba,Lens,0.1,0.1,0.2
+Matthis Abline,Rennes,0,0,0
+Jonas Martin,Lille,0.1,0,0.1
+Ayman Kari,Lorient,0.6,0.8,1.4
+Lois Diony,Angers,0.7,0.3,1
+Abdoulaye Bamba,Angers,0.2,0.2,0.4
+Gaëtan Charbonnier,Auxerre,0.3,0.3,0.7
+Iké Ugbo,Troyes,0.4,0.2,0.7
+Serhou Guirassy,Rennes,0,0,0
+Lorenz Assignon,Rennes,0.3,0.1,0.4
+Mehdi Puch-Herrantz,AC Ajaccio,0,0.3,0.3
+Fábio,Nantes,0.5,0.2,0.7
+Ismaël Gharbi,Paris Saint-Germain,0.2,0.8,1
+Karol Fila,Strasbourg,0,0,0
+Tony Strata,AC Ajaccio,0,0,0
+Cédric Avinel,AC Ajaccio,0,0,0
+Theocharis Tsingaras,Toulouse,0,0,0
+Justin-Noel Kalumba,Angers,1.3,1.4,2.7
+Gaël Kakuta,Lens,0,0,0
+Amar Fatah,Troyes,0,1,1
+Joe Bryan,Nice,0.3,0,0.3
+Marin Jakolis,Angers,2,0,2
+Martin Adeline,Reims,0.4,0.2,0.6
+Kyliane Dong,Troyes,1,0.8,1.8
+Flavius Daniliuc,Nice,0,0,0
+Théo Pellenard,Auxerre,0,0,0
+Lohann Doucet,Nantes,0.1,0.1,0.2
+Qazim Laçi,AC Ajaccio,0.2,0.2,0.4
+Derek Mazou-Sacko,Troyes,0,0,0
+Antonin Bobichon,Angers,0,0,0
+Axel Camblan,Brest,0.4,0.1,0.6
+Ousmane Camara,Angers,0.1,0.2,0.3
+Adil Aouchiche,Lorient,0.5,0.2,0.6
+Duje Caleta-Car,Marseille,0,0,0
+Rémy Dugimont,Auxerre,0.1,0,0.1
+Mohamed Achi,Nantes,0.5,0,0.5
+Alexis Tibidi,Troyes,0.3,0.7,1
+Ben Touré,AC Ajaccio,0.3,0.8,1
+Samuel Koeberlé,Reims,1,1,2
+Yanis Massolin,Clermont Foot,0.5,0,0.5
+Waniss Taïbi,Angers,0.1,0.2,0.3
+Chrislain Matsima,Lorient,0,0,0
+Stredair Appuah,Nantes,0.2,0.8,1
+Ivane Chegra,AC Ajaccio,0.8,0.5,1.3
+Noah Holm,Reims,0.8,0.4,1.1
+Félix Lemaréchal,Brest,0.5,0.2,0.8
+Mamadou Diakhon,Reims,0.5,0.5,1
+Ilyés Chétti,Angers,0.3,0,0.3
+Jean-Mattéo Bahoya,Angers,0.9,0.4,1.3
+Brandon Baiye,Clermont Foot,0,0.1,0.1
+Eli Kroupi,Lorient,0,0,0
+Marvin Senaya,Strasbourg,0,0,0
+Rémy Labeau-Lascary,Lens,0.5,0.2,0.7
+Marlos Moreno,Troyes,0.5,0,0.5
+El Chadaille Bitshiabu,Paris Saint-Germain,0.1,0.1,0.2
+Veljko Birmancevic,Toulouse,0.7,0.2,0.9
+Valentin Atangana Edoa,Reims,0.7,0,0.7
+Tristan Dingomé,Troyes,0.1,0.1,0.3
+Dogan Alemdar,Rennes,0,0,0
+Mohamed Touré,Reims,0.7,0.7,1.3
+Kaj Sierhuis,Reims,0.2,0.1,0.4
+Abdoul Kader Bamba,Nantes,0.2,0,0.2
+Patrick Pentz,Reims,0,0,0
+Jean Botué,AC Ajaccio,0.5,0.1,0.6
+Hianga'a M'Bock,Brest,0,0.5,0.5
+Naatan Skyttä,Toulouse,0,0,0
+Baïla Diallo,Clermont Foot,0.2,0,0.2
+Alan Virginius,Lille,0.5,0,0.5
+Nathanaël Mbuku,Reims,0.2,0.2,0.3
+Zinédine Ould Khaled,Angers,0.5,0,0.5
+Ousmane Camara,Auxerre,0.3,0,0.3
+Moussa Soumano,AC Ajaccio,0.1,0.4,0.5
+Ilyes Housni,Paris Saint-Germain,0,0,0
+Guela Doué,Rennes,0,0,0
+Béni Makouana,Montpellier,0.9,0.3,1.1
+Karamoko Dembélé,Brest,0.3,0.1,0.4
+Sérigné Faye,Montpellier,0.5,0,0.5
+Mamadou Sarr,Lyon,0,0,0
+Florian Chabrolle,AC Ajaccio,0.1,0,0.1
+Irvin Cardona,Brest,0.4,0.1,0.5
+Rafik Guitane,Reims,0,0,0
+Thibault Tamas,Montpellier,0,0,0
+Alberth Elis,Brest,0.9,0.2,1.1
+El Bilal Touré,Reims,0.3,0.3,0.7
+Jason Berthomier,Clermont Foot,0,0,0
+Alan Do Marcolino,Rennes,0,0,0
+Kévin Keben,Toulouse,0.8,0.1,0.9
+Christopher Wooh,Lens,0,0,0
+Isaak Touré,Marseille,0.2,0,0.2
+Yanis Begraoui,Toulouse,0.3,0.3,0.7
+Saïd Hamulic,Toulouse,0.3,0.5,0.8
+Alexandre Letellier,Paris Saint-Germain,0,0,0
+Amine Messoussa,Lille,0,0,0
+Andréa Dacourt,Nice,0,0,0
+Axel Gueguin,Montpellier,0,0,0
+Mohamed El Arouch,Lyon,1,0,1
+Paolo Lebas,AC Ajaccio,0,1,1
+Romain Salin,Rennes,0,0,0
+Simon Ramet,Lille,0,0,0
+Théo Trinker,Nice,0,0,0
+Danel Dongmo,Troyes,0.5,0,0.5
+Yoann Touzghar,AC Ajaccio,0.4,0.2,0.5
+Adrian Grbic,Lorient,0,0,0
+Ignatius Ganago,Lens,0.3,0,0.3
+Adam Buksa,Lens,0,0,0
+Moussa Djitté,AC Ajaccio,0.7,0,0.7
+Patrick Berg,Lens,0.3,0,0.3
+Anthony Khelifa,AC Ajaccio,0,0,0
+Dany Jean,Strasbourg,0.5,0,0.5
+Jason Mbock,Angers,0.5,0,0.5
+Salim Ben Seghir,Marseille,0,0,0
+François Mughe,Marseille,0,0,0
+François-Joseph Sollacaro,AC Ajaccio,0,0,0
+Ouparine Djoco,Clermont Foot,0,0,0
+Mathis Hamdi,Troyes,0.5,0,0.5
+Pedro Mendes,Montpellier,0,0,0
+Léo Jardim,Lille,0,0,0
+Christian Mawissa,Toulouse,0.5,0,0.5

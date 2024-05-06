@@ -1,0 +1,756 @@
+Name,Team,Position,Date of Birth,Age,Nationality,Market Value
+Gianluigi Donnarumma,Paris Saint-Germain,Goalkeeper,"Feb 25, 1999",24,Italy,€45.00m
+Keylor Navas,Paris Saint-Germain,Goalkeeper,"Dec 15, 1986",36,Costa Rica,€4.00m
+Sergio Rico,Paris Saint-Germain,Goalkeeper,"Sep 1, 1993",29,Spain,€3.00m
+Lucas Lavallée,Paris Saint-Germain,Goalkeeper,"Feb 18, 2003",20,France,€300k
+Alexandre Letellier,Paris Saint-Germain,Goalkeeper,"Dec 11, 1990",32,France,€300k
+Marquinhos,Paris Saint-Germain,Centre-Back,"May 14, 1994",29,Brazil,€65.00m
+Presnel Kimpembe,Paris Saint-Germain,Centre-Back,"Aug 13, 1995",27,France,€28.00m
+Abdou Diallo,Paris Saint-Germain,Centre-Back,"May 4, 1996",27,Senegal,€10.00m
+El Chadaille Bitshiabu,Paris Saint-Germain,Centre-Back,"May 16, 2005",18,France,€7.00m
+Sergio Ramos,Paris Saint-Germain,Centre-Back,"Mar 30, 1986",37,Spain,€4.50m
+Nehemiah Fernandez,Paris Saint-Germain,Centre-Back,"Dec 11, 2004",18,France,€250k
+Nuno Mendes,Paris Saint-Germain,Left-Back,"Jun 19, 2002",21,Portugal,€65.00m
+Juan Bernat,Paris Saint-Germain,Left-Back,"Mar 1, 1993",30,Spain,€10.00m
+Serif Nhaga,Paris Saint-Germain,Left-Back,"Sep 1, 2005",17,Portugal,€150k
+Achraf Hakimi,Paris Saint-Germain,Right-Back,"Nov 4, 1998",24,Morocco,€65.00m
+Nordi Mukiele,Paris Saint-Germain,Right-Back,"Nov 1, 1997",25,France,€18.00m
+Timothée Pembélé,Paris Saint-Germain,Right-Back,"Sep 9, 2002",20,France,€5.00m
+Hugo Lamy,Paris Saint-Germain,Right-Back,"Jan 16, 2004",19,France,€250k
+Leandro Paredes,Paris Saint-Germain,Defensive Midfield,"Jun 29, 1994",29,Argentina,€12.00m
+Danilo Pereira,Paris Saint-Germain,Defensive Midfield,"Sep 9, 1991",31,Portugal,€10.00m
+Vitinha,Paris Saint-Germain,Central Midfield,"Feb 13, 2000",23,Portugal,€42.00m
+Marco Verratti,Paris Saint-Germain,Central Midfield,"Nov 5, 1992",30,Italy,€40.00m
+Fabián Ruiz,Paris Saint-Germain,Central Midfield,"Apr 3, 1996",27,Spain,€32.00m
+Carlos Soler,Paris Saint-Germain,Central Midfield,"Jan 2, 1997",26,Spain,€25.00m
+Warren Zaïre-Emery,Paris Saint-Germain,Central Midfield,"Mar 8, 2006",17,France,€20.00m
+Renato Sanches,Paris Saint-Germain,Central Midfield,"Aug 18, 1997",25,Portugal,€15.00m
+Idrissa Gueye,Paris Saint-Germain,Central Midfield,"Sep 26, 1989",33,Senegal,€5.00m
+Ayman Kari,Paris Saint-Germain,Central Midfield,"Nov 19, 2004",18,France,€1.00m
+Ismaël Gharbi,Paris Saint-Germain,Attacking Midfield,"Apr 10, 2004",19,Spain,€5.00m
+Neymar,Paris Saint-Germain,Left Winger,"Feb 5, 1992",31,Brazil,€60.00m
+Lionel Messi,Paris Saint-Germain,Right Winger,"Jun 24, 1987",36,Argentina,€35.00m
+Pablo Sarabia,Paris Saint-Germain,Right Winger,"May 11, 1992",31,Spain,€14.00m
+Kylian Mbappé,Paris Saint-Germain,Centre-Forward,"Dec 20, 1998",24,France,€180.00m
+Arnaud Kalimuendo,Paris Saint-Germain,Centre-Forward,"Jan 20, 2002",21,France,€22.00m
+Hugo Ekitiké,Paris Saint-Germain,Centre-Forward,"Jun 20, 2002",21,France,€20.00m
+Mauro Icardi,Paris Saint-Germain,Centre-Forward,"Feb 19, 1993",30,Argentina,€19.00m
+Ilyes Housni,Paris Saint-Germain,Centre-Forward,"May 14, 2005",18,Morocco,€3.50m
+Doğan Alemdar,Stade Rennais FC,Goalkeeper,"Oct 29, 2002",20,Türkiye,€4.00m
+Steve Mandanda,Stade Rennais FC,Goalkeeper,"Mar 28, 1985",38,France,€1.00m
+Elias Damergy,Stade Rennais FC,Goalkeeper,"Oct 17, 2002",20,Tunisia,€150k
+Romain Salin,Stade Rennais FC,Goalkeeper,"Jul 29, 1984",38,France,€150k
+Arthur Theate,Stade Rennais FC,Centre-Back,"May 25, 2000",23,Belgium,€22.00m
+Loïc Badé,Stade Rennais FC,Centre-Back,"Apr 11, 2000",23,France,€12.00m
+Warmed Omari,Stade Rennais FC,Centre-Back,"Apr 23, 2000",23,France,€9.00m
+Joe Rodon,Stade Rennais FC,Centre-Back,"Oct 22, 1997",25,Wales,€7.00m
+Jeanuël Belocian,Stade Rennais FC,Centre-Back,"Feb 17, 2005",18,France,€7.00m
+Christopher Wooh,Stade Rennais FC,Centre-Back,"Sep 18, 2001",21,Cameroon,€6.00m
+Jérémy Jacquet,Stade Rennais FC,Centre-Back,"Jul 13, 2005",17,France,€50k
+Adrien Truffert,Stade Rennais FC,Left-Back,"Nov 20, 2001",21,France,€18.00m
+Birger Meling,Stade Rennais FC,Left-Back,"Dec 17, 1994",28,Norway,€5.00m
+Léo Rouillé,Stade Rennais FC,Left-Back,"Feb 9, 2004",19,France,€50k
+Hamari Traoré,Stade Rennais FC,Right-Back,"Jan 27, 1992",31,Mali,€10.00m
+Djed Spence,Stade Rennais FC,Right-Back,"Aug 9, 2000",22,England,€10.00m
+Lorenz Assignon,Stade Rennais FC,Right-Back,"Jun 22, 2000",23,France,€5.00m
+Guéla Doué,Stade Rennais FC,Right-Back,"Oct 17, 2002",20,Cote d'Ivoire,€300k
+Baptiste Santamaria,Stade Rennais FC,Defensive Midfield,"Mar 9, 1995",28,France,€14.00m
+Lesley Ugochukwu,Stade Rennais FC,Defensive Midfield,"Mar 26, 2004",19,France,€9.00m
+Noah Françoise,Stade Rennais FC,Defensive Midfield,"Jul 5, 2003",19,France,€350k
+Benjamin Bourigeaud,Stade Rennais FC,Central Midfield,"Jan 14, 1994",29,France,€18.00m
+Flavien Tait,Stade Rennais FC,Central Midfield,"Feb 2, 1993",30,France,€6.00m
+Xeka,Stade Rennais FC,Central Midfield,"Nov 10, 1994",28,Portugal,€6.00m
+Gabriel Tutu,Stade Rennais FC,Right Midfield,"Jan 29, 2004",19,France,€50k
+Lovro Majer,Stade Rennais FC,Attacking Midfield,"Jan 17, 1998",25,Croatia,€20.00m
+Désiré Doué,Stade Rennais FC,Attacking Midfield,"Jun 3, 2005",18,France,€15.00m
+Amine Gouiri,Stade Rennais FC,Left Winger,"Feb 16, 2000",23,Algeria,€35.00m
+Martin Terrier,Stade Rennais FC,Left Winger,"Mar 4, 1997",26,France,€30.00m
+Jérémy Doku,Stade Rennais FC,Left Winger,"May 27, 2002",21,Belgium,€28.00m
+Kamaldeen Sulemana,Stade Rennais FC,Left Winger,"Feb 15, 2002",21,Ghana,€22.00m
+Ibrahim Salah,Stade Rennais FC,Left Winger,"Aug 30, 2001",21,Morocco,€3.00m
+Arnaud Kalimuendo,Stade Rennais FC,Centre-Forward,"Jan 20, 2002",21,France,€22.00m
+Gaëtan Laborde,Stade Rennais FC,Centre-Forward,"May 3, 1994",29,France,€16.00m
+Serhou Guirassy,Stade Rennais FC,Centre-Forward,"Mar 12, 1996",27,Guinea,€14.00m
+Karl Toko Ekambi,Stade Rennais FC,Centre-Forward,"Sep 14, 1992",30,Cameroon,€8.00m
+Matthis Abline,Stade Rennais FC,Centre-Forward,"Mar 28, 2003",20,France,€4.50m
+Alan Do Marcolino,Stade Rennais FC,Centre-Forward,"Mar 19, 2002",21,Gabon,€150k
+Alexander Nübel,AS Monaco,Goalkeeper,"Sep 30, 1996",26,Germany,€8.00m
+Thomas Didillon,AS Monaco,Goalkeeper,"Nov 28, 1995",27,France,€1.00m
+Yann Lienard,AS Monaco,Goalkeeper,"Mar 16, 2003",20,France,€200k
+Benoît Badiashile,AS Monaco,Centre-Back,"Mar 26, 2001",22,France,€40.00m
+Axel Disasi,AS Monaco,Centre-Back,"Mar 11, 1998",25,France,€30.00m
+Guillermo Maripán,AS Monaco,Centre-Back,"May 6, 1994",29,Chile,€10.00m
+Malang Sarr,AS Monaco,Centre-Back,"Jan 23, 1999",24,France,€6.00m
+Chrislain Matsima,AS Monaco,Centre-Back,"May 15, 2002",21,France,€6.00m
+Soungoutou Magassa,AS Monaco,Centre-Back,"Oct 8, 2003",19,France,€800k
+Yllan Okou,AS Monaco,Centre-Back,"Dec 23, 2002",20,France,€300k
+Caio Henrique,AS Monaco,Left-Back,"Jul 31, 1997",25,Brazil,€20.00m
+Ismail Jakobs,AS Monaco,Left-Back,"Aug 17, 1999",23,Senegal,€6.00m
+Vanderson,AS Monaco,Right-Back,"Jun 21, 2001",22,Brazil,€20.00m
+Ruben Aguilar,AS Monaco,Right-Back,"Apr 26, 1993",30,France,€7.00m
+Nazim Babaï,AS Monaco,Right-Back,"Jan 14, 2003",20,Algeria,-
+Mohamed Camara,AS Monaco,Defensive Midfield,"Jan 6, 2000",23,Mali,€30.00m
+Youssouf Fofana,AS Monaco,Central Midfield,"Jan 10, 1999",24,France,€25.00m
+Eliot Matazo,AS Monaco,Central Midfield,"Feb 15, 2002",21,Belgium,€7.00m
+Jean Lucas,AS Monaco,Central Midfield,"Jun 22, 1998",25,Brazil,€5.00m
+Edan Diop,AS Monaco,Central Midfield,"Aug 28, 2004",18,France,€2.00m
+Félix Lemaréchal,AS Monaco,Central Midfield,"Aug 7, 2003",19,France,€1.00m
+Aleksandr Golovin,AS Monaco,Attacking Midfield,"May 30, 1996",27,Russia,€28.00m
+Eliesse Ben Seghir,AS Monaco,Attacking Midfield,"Feb 16, 2005",18,Morocco,€18.00m
+Maghnes Akliouche,AS Monaco,Attacking Midfield,"Feb 25, 2002",21,France,€6.00m
+Sofiane Diop,AS Monaco,Left Winger,"Jun 9, 2000",23,Morocco,€15.00m
+Takumi Minamino,AS Monaco,Left Winger,"Jan 16, 1995",28,Japan,€6.00m
+Krépin Diatta,AS Monaco,Right Winger,"Feb 25, 1999",24,Senegal,€15.00m
+Gelson Martins,AS Monaco,Right Winger,"May 11, 1995",28,Portugal,€5.00m
+Breel Embolo,AS Monaco,Centre-Forward,"Feb 14, 1997",26,Switzerland,€20.00m
+Wissam Ben Yedder,AS Monaco,Centre-Forward,"Aug 12, 1990",32,France,€15.00m
+Kevin Volland,AS Monaco,Centre-Forward,"Jul 30, 1992",30,Germany,€8.00m
+Myron Boadu,AS Monaco,Centre-Forward,"Jan 14, 2001",22,Netherlands,€7.00m
+Anthony Lopes,Olympique Lyon,Goalkeeper,"Oct 1, 1990",32,Portugal,€8.00m
+Rémy Riou,Olympique Lyon,Goalkeeper,"Aug 6, 1987",35,France,€400k
+Kayne Bonnevie,Olympique Lyon,Goalkeeper,"Jul 22, 2001",21,France,€200k
+Castello Lukeba,Olympique Lyon,Centre-Back,"Dec 17, 2002",20,France,€25.00m
+Sinaly Diomandé,Olympique Lyon,Centre-Back,"Apr 9, 2001",22,Cote d'Ivoire,€9.00m
+Dejan Lovren,Olympique Lyon,Centre-Back,"Jul 5, 1989",33,Croatia,€2.50m
+Mamadou Sarr,Olympique Lyon,Centre-Back,"Aug 29, 2005",17,France,€1.00m
+Jérôme Boateng,Olympique Lyon,Centre-Back,"Sep 3, 1988",34,Germany,€800k
+Damien Da Silva,Olympique Lyon,Centre-Back,"May 17, 1988",35,France,€500k
+Nicolás Tagliafico,Olympique Lyon,Left-Back,"Aug 31, 1992",30,Argentina,€9.00m
+Henrique Silva,Olympique Lyon,Left-Back,"Apr 25, 1994",29,Brazil,€1.00m
+Achraf Laâziri,Olympique Lyon,Left-Back,"Jul 8, 2003",19,Morocco,€250k
+Malo Gusto,Olympique Lyon,Right-Back,"May 19, 2003",20,France,€25.00m
+Saël Kumbedi,Olympique Lyon,Right-Back,"Mar 26, 2005",18,France,€12.00m
+Johann Lepenant,Olympique Lyon,Defensive Midfield,"Oct 22, 2002",20,France,€10.00m
+Thiago Mendes,Olympique Lyon,Defensive Midfield,"Mar 15, 1992",31,Brazil,€5.00m
+Maxence Caqueret,Olympique Lyon,Central Midfield,"Feb 15, 2000",23,France,€25.00m
+Corentin Tolisso,Olympique Lyon,Central Midfield,"Aug 3, 1994",28,France,€14.00m
+Houssem Aouar,Olympique Lyon,Central Midfield,"Jun 30, 1998",25,Algeria,€13.00m
+Mohamed El Arouch,Olympique Lyon,Central Midfield,"Apr 6, 2004",19,France,€2.00m
+Romain Faivre,Olympique Lyon,Right Midfield,"Jul 14, 1998",24,France,€10.00m
+Lucas Paquetá,Olympique Lyon,Attacking Midfield,"Aug 27, 1997",25,Brazil,€45.00m
+Rayan Cherki,Olympique Lyon,Attacking Midfield,"Aug 17, 2003",19,France,€30.00m
+Jeff Reine-Adélaïde,Olympique Lyon,Attacking Midfield,"Jan 17, 1998",25,France,€5.00m
+Djibrail Dib,Olympique Lyon,Attacking Midfield,"Jul 3, 2002",20,Algeria,€150k
+Bradley Barcola,Olympique Lyon,Left Winger,"Sep 2, 2002",20,France,€18.00m
+Jeffinho,Olympique Lyon,Left Winger,"Dec 30, 1999",23,Brazil,€8.00m
+Tetê,Olympique Lyon,Right Winger,"Feb 15, 2000",23,Brazil,€25.00m
+Alexandre Lacazette,Olympique Lyon,Centre-Forward,"May 28, 1991",32,France,€14.00m
+Moussa Dembélé,Olympique Lyon,Centre-Forward,"Jul 12, 1996",26,France,€12.00m
+Karl Toko Ekambi,Olympique Lyon,Centre-Forward,"Sep 14, 1992",30,Cameroon,€8.00m
+Amin Sarr,Olympique Lyon,Centre-Forward,"Mar 11, 2001",22,Sweden,€8.00m
+Tino Kadewere,Olympique Lyon,Centre-Forward,"Jan 5, 1996",27,Zimbabwe,€4.00m
+Sekou Lega,Olympique Lyon,Centre-Forward,"Jan 21, 2003",20,France,€150k
+Pau López,Olympique Marseille,Goalkeeper,"Dec 13, 1994",28,Spain,€14.00m
+Rubén Blanco,Olympique Marseille,Goalkeeper,"Jul 25, 1995",27,Spain,€4.00m
+Simon Ngapandouetnbu,Olympique Marseille,Goalkeeper,"Apr 12, 2003",20,Cameroon,€400k
+Chancel Mbemba,Olympique Marseille,Centre-Back,"Aug 8, 1994",28,DR Congo,€20.00m
+Duje Caleta-Car,Olympique Marseille,Centre-Back,"Sep 17, 1996",26,Croatia,€11.00m
+Samuel Gigot,Olympique Marseille,Centre-Back,"Oct 12, 1993",29,France,€10.00m
+Leonardo Balerdi,Olympique Marseille,Centre-Back,"Jan 26, 1999",24,Argentina,€10.00m
+Sead Kolasinac,Olympique Marseille,Centre-Back,"Jun 20, 1993",30,Bosnia-Herzegovina,€8.00m
+Isaak Touré,Olympique Marseille,Centre-Back,"Mar 28, 2003",20,France,€6.00m
+Eric Bailly,Olympique Marseille,Centre-Back,"Apr 12, 1994",29,Cote d'Ivoire,€5.00m
+Yakine Said M'Madi,Olympique Marseille,Centre-Back,"Mar 11, 2004",19,Comoros,€150k
+Nuno Tavares,Olympique Marseille,Left-Back,"Jan 26, 2000",23,Portugal,€18.00m
+Jonathan Clauss,Olympique Marseille,Right-Back,"Sep 25, 1992",30,France,€14.00m
+Issa Kaboré,Olympique Marseille,Right-Back,"May 12, 2001",22,Burkina Faso,€7.00m
+Pol Lirola,Olympique Marseille,Right-Back,"Aug 13, 1997",25,Spain,€2.00m
+Pape Gueye,Olympique Marseille,Defensive Midfield,"Jan 24, 1999",24,Senegal,€10.00m
+Bartuğ Elmaz,Olympique Marseille,Defensive Midfield,"Feb 19, 2003",20,Türkiye,€300k
+Raimane Daou,Olympique Marseille,Defensive Midfield,"Nov 20, 2004",18,Comoros,-
+Mattéo Guendouzi,Olympique Marseille,Central Midfield,"Apr 14, 1999",24,France,€25.00m
+Valentin Rongier,Olympique Marseille,Central Midfield,"Dec 7, 1994",28,France,€22.00m
+Gerson,Olympique Marseille,Central Midfield,"May 20, 1997",26,Brazil,€16.00m
+Jordan Veretout,Olympique Marseille,Central Midfield,"Mar 1, 1993",30,France,€16.00m
+Azzedine Ounahi,Olympique Marseille,Central Midfield,"Apr 19, 2000",23,Morocco,€12.00m
+Esey Gebreyesus,Olympique Marseille,Right Midfield,"Jan 23, 2004",19,Switzerland,€100k
+Emran Soglo,Olympique Marseille,Left Midfield,"Jul 11, 2005",17,England,-
+Ruslan Malinovskyi,Olympique Marseille,Attacking Midfield,"May 4, 1993",30,Ukraine,€15.00m
+Amine Harit,Olympique Marseille,Attacking Midfield,"Jun 18, 1997",26,Morocco,€12.00m
+Dimitri Payet,Olympique Marseille,Attacking Midfield,"Mar 29, 1987",36,France,€1.80m
+Salim Ben Seghir,Olympique Marseille,Left Winger,"Feb 24, 2003",20,France,€500k
+Cengiz Ünder,Olympique Marseille,Right Winger,"Jul 14, 1997",25,Türkiye,€20.00m
+François Mughe,Olympique Marseille,Right Winger,"Jun 16, 2004",19,Cameroon,€300k
+Vitinha,Olympique Marseille,Centre-Forward,"Mar 15, 2000",23,Portugal,€18.00m
+Arkadiusz Milik,Olympique Marseille,Centre-Forward,"Feb 28, 1994",29,Poland,€8.00m
+Luis Suárez,Olympique Marseille,Centre-Forward,"Dec 2, 1997",25,Colombia,€8.00m
+Bamba Dieng,Olympique Marseille,Centre-Forward,"Mar 23, 2000",23,Senegal,€8.00m
+Cédric Bakambu,Olympique Marseille,Centre-Forward,"Apr 11, 1991",32,DR Congo,€5.00m
+Alexis Sánchez,Olympique Marseille,Centre-Forward,"Dec 19, 1988",34,Chile,€4.00m
+Kasper Schmeichel,OGC Nice,Goalkeeper,"Nov 5, 1986",36,Denmark,€2.00m
+Marcin Bulka,OGC Nice,Goalkeeper,"Oct 4, 1999",23,Poland,€2.00m
+Teddy Boulhendi,OGC Nice,Goalkeeper,"Apr 9, 2001",22,Algeria,€150k
+Enzo Garrido,OGC Nice,Goalkeeper,"Jul 26, 2003",19,France,-
+Jean-Clair Todibo,OGC Nice,Centre-Back,"Dec 30, 1999",23,France,€30.00m
+Flavius Daniliuc,OGC Nice,Centre-Back,"Apr 27, 2001",22,Austria,€8.00m
+Mattia Viti,OGC Nice,Centre-Back,"Jan 24, 2002",21,Italy,€7.00m
+Mads Bech Sörensen,OGC Nice,Centre-Back,"Jan 7, 1999",24,Denmark,€2.50m
+Dante,OGC Nice,Centre-Back,"Oct 18, 1983",39,Brazil,€600k
+Yannis Nahounou,OGC Nice,Centre-Back,"May 16, 2004",19,France,€150k
+Melvin Bard,OGC Nice,Left-Back,"Nov 6, 2000",22,France,€7.00m
+Ayoub Amraoui,OGC Nice,Left-Back,"May 14, 2004",19,Morocco,€2.50m
+Joe Bryan,OGC Nice,Left-Back,"Sep 17, 1993",29,England,€2.20m
+Jordan Lotomba,OGC Nice,Right-Back,"Sep 29, 1998",24,Switzerland,€8.00m
+Youcef Atal,OGC Nice,Right-Back,"May 17, 1996",27,Algeria,€7.00m
+Antoine Mendy,OGC Nice,Right-Back,"May 27, 2004",19,France,€1.00m
+Youssouf Ndayishimiye,OGC Nice,Defensive Midfield,"Oct 27, 1998",24,Burundi,€12.00m
+Mario Lemina,OGC Nice,Defensive Midfield,"Sep 1, 1993",29,Gabon,€10.00m
+Pablo Rosario,OGC Nice,Defensive Midfield,"Jan 7, 1997",26,Netherlands,€6.00m
+Alexis Beka Beka,OGC Nice,Defensive Midfield,"Mar 29, 2001",22,France,€4.50m
+Reda Belahyane,OGC Nice,Defensive Midfield,"Jun 1, 2004",19,France,€300k
+Théo Trinker,OGC Nice,Defensive Midfield,"Jun 20, 2001",22,France,€100k
+Khéphren Thuram,OGC Nice,Central Midfield,"Mar 26, 2001",22,France,€40.00m
+Hicham Boudaoui,OGC Nice,Central Midfield,"Sep 23, 1999",23,Algeria,€8.00m
+Ross Barkley,OGC Nice,Central Midfield,"Dec 5, 1993",29,England,€6.00m
+Aaron Ramsey,OGC Nice,Central Midfield,"Dec 26, 1990",32,Wales,€2.50m
+Soudeysse Kari,OGC Nice,Central Midfield,"Feb 7, 2002",21,France,€100k
+Tom Louchet,OGC Nice,Central Midfield,"May 4, 2003",20,France,€100k
+Daouda Traoré,OGC Nice,Central Midfield,"Jul 22, 2006",16,France,€100k
+Calvin Stengs,OGC Nice,Attacking Midfield,"Dec 18, 1998",24,Netherlands,€10.00m
+Alexis Claude-Maurice,OGC Nice,Attacking Midfield,"Jun 6, 1998",25,France,€4.50m
+Andrea Dacourt,OGC Nice,Attacking Midfield,"Jul 30, 2005",17,France,-
+Amine Gouiri,OGC Nice,Left Winger,"Feb 16, 2000",23,Algeria,€35.00m
+Sofiane Diop,OGC Nice,Left Winger,"Jun 9, 2000",23,Morocco,€15.00m
+Billal Brahimi,OGC Nice,Left Winger,"Mar 14, 2000",23,Algeria,€7.00m
+Rares Ilie,OGC Nice,Left Winger,"Apr 19, 2003",20,Romania,€2.50m
+Nicolas Pépé,OGC Nice,Right Winger,"May 29, 1995",28,Cote d'Ivoire,€18.00m
+Badredine Bouanani,OGC Nice,Right Winger,"Dec 8, 2004",18,Algeria,€6.00m
+Terem Moffi,OGC Nice,Centre-Forward,"May 25, 1999",24,Nigeria,€20.00m
+Gaëtan Laborde,OGC Nice,Centre-Forward,"May 3, 1994",29,France,€16.00m
+Andy Delort,OGC Nice,Centre-Forward,"Oct 9, 1991",31,Algeria,€7.00m
+Lucas Chevalier,LOSC Lille,Goalkeeper,"Nov 6, 2001",21,France,€10.00m
+Léo Jardim,LOSC Lille,Goalkeeper,"Mar 20, 1995",28,Brazil,€3.00m
+Benoît Costil,LOSC Lille,Goalkeeper,"Jul 3, 1987",35,France,€1.00m
+Adam Jakubech,LOSC Lille,Goalkeeper,"Jan 2, 1997",26,Slovakia,€300k
+Tom Negrel,LOSC Lille,Goalkeeper,"Apr 13, 2003",20,France,€50k
+Tiago Djaló,LOSC Lille,Centre-Back,"Apr 9, 2000",23,Portugal,€16.00m
+Leny Yoro,LOSC Lille,Centre-Back,"Nov 13, 2005",17,France,€10.00m
+Alexsandro,LOSC Lille,Centre-Back,"Aug 9, 1999",23,Brazil,€5.00m
+José Fonte,LOSC Lille,Centre-Back,"Dec 22, 1983",39,Portugal,€600k
+Abdoulaye Ousmane,LOSC Lille,Centre-Back,"Feb 22, 2000",23,Mauritania,€50k
+Gabriel Gudmundsson,LOSC Lille,Left-Back,"Apr 29, 1999",24,Sweden,€4.50m
+Ismaily,LOSC Lille,Left-Back,"Jan 11, 1990",33,Brazil,€2.50m
+Bafodé Diakité,LOSC Lille,Right-Back,"Jan 6, 2001",22,France,€10.00m
+Akim Zedadka,LOSC Lille,Right-Back,"May 30, 1995",28,Algeria,€2.50m
+Simon Ramet,LOSC Lille,Right-Back,"Mar 13, 2003",20,France,€150k
+Benjamin André,LOSC Lille,Defensive Midfield,"Aug 3, 1990",32,France,€9.00m
+Carlos Baleba,LOSC Lille,Defensive Midfield,"Jan 3, 2004",19,Cameroon,€5.00m
+Jonas Martin,LOSC Lille,Defensive Midfield,"Apr 9, 1990",33,France,€1.50m
+André Gomes,LOSC Lille,Central Midfield,"Jul 30, 1993",29,Portugal,€16.00m
+Timothy Weah,LOSC Lille,Right Midfield,"Feb 22, 2000",23,United States,€14.00m
+Angel Gomes,LOSC Lille,Attacking Midfield,"Aug 31, 2000",22,England,€16.00m
+Yusuf Yazıcı,LOSC Lille,Attacking Midfield,"Jan 29, 1997",26,Türkiye,€9.00m
+Rémy Cabella,LOSC Lille,Attacking Midfield,"Mar 8, 1990",33,France,€5.00m
+Mattéo Makhabe,LOSC Lille,Attacking Midfield,"Nov 28, 2003",19,France,€100k
+Jonathan Bamba,LOSC Lille,Left Winger,"Mar 26, 1996",27,Cote d'Ivoire,€20.00m
+Alan Virginius,LOSC Lille,Left Winger,"Jan 3, 2003",20,France,€4.00m
+Edon Zhegrova,LOSC Lille,Right Winger,"Mar 31, 1999",24,Kosovo,€8.00m
+Adam Ounas,LOSC Lille,Right Winger,"Nov 11, 1996",26,Algeria,€7.00m
+Isaac Lihadji,LOSC Lille,Right Winger,"Apr 10, 2002",21,France,€1.20m
+Ichem Ferrah,LOSC Lille,Right Winger,"Sep 23, 2005",17,France,€100k
+Jonathan David,LOSC Lille,Centre-Forward,"Jan 14, 2000",23,Canada,€60.00m
+Mohamed Bayo,LOSC Lille,Centre-Forward,"Jun 4, 1998",25,Guinea,€6.00m
+Amine Messoussa,LOSC Lille,Centre-Forward,"Oct 12, 2004",18,France,€400k
+Brice Samba,RC Lens,Goalkeeper,"Apr 25, 1994",29,France,€13.00m
+Wuilker Fariñez,RC Lens,Goalkeeper,"Feb 15, 1998",25,Venezuela,€3.50m
+Jean-Louis Leca,RC Lens,Goalkeeper,"Sep 21, 1985",37,France,€200k
+Yannick Pandor,RC Lens,Goalkeeper,"May 1, 2001",22,Comoros,€150k
+Kevin Danso,RC Lens,Centre-Back,"Sep 19, 1998",24,Austria,€22.00m
+Facundo Medina,RC Lens,Centre-Back,"May 28, 1999",24,Argentina,€22.00m
+Christopher Wooh,RC Lens,Centre-Back,"Sep 18, 2001",21,Cameroon,€6.00m
+Jonathan Gradit,RC Lens,Centre-Back,"Nov 24, 1992",30,France,€5.00m
+Julien Le Cardinal,RC Lens,Centre-Back,"Aug 3, 1997",25,France,€2.00m
+Steven Fortes,RC Lens,Centre-Back,"Apr 17, 1992",31,Cape Verde,€400k
+Adrien Louveau,RC Lens,Centre-Back,"Feb 1, 2000",23,France,€100k
+Ismaëlo Ganiou,RC Lens,Centre-Back,"Mar 14, 2005",18,France,€50k
+Deiver Machado,RC Lens,Left-Back,"Sep 2, 1993",29,Colombia,€4.00m
+Massadio Haidara,RC Lens,Left-Back,"Dec 2, 1992",30,Mali,€3.00m
+Ismaël Boura,RC Lens,Left-Back,"Aug 14, 2000",22,Comoros,€1.00m
+Salis Abdul Samed,RC Lens,Defensive Midfield,"Mar 26, 2000",23,Ghana,€18.00m
+Jean Onana,RC Lens,Defensive Midfield,"Jan 8, 2000",23,Cameroon,€6.00m
+Patrick Berg,RC Lens,Defensive Midfield,"Nov 24, 1997",25,Norway,€4.50m
+Yacouba Barry,RC Lens,Defensive Midfield,"Nov 25, 2002",20,France,€100k
+Fodé Sylla,RC Lens,Defensive Midfield,"Apr 16, 2006",17,France,-
+Seko Fofana,RC Lens,Central Midfield,"May 7, 1995",28,Cote d'Ivoire,€32.00m
+Lukasz Poreba,RC Lens,Central Midfield,"Mar 13, 2000",23,Poland,€2.00m
+Mamadou Camara,RC Lens,Central Midfield,"Oct 15, 2002",20,Senegal,€250k
+Yaya Fofana,RC Lens,Central Midfield,"Jun 12, 2004",19,Cote d'Ivoire,€150k
+Przemyslaw Frankowski,RC Lens,Right Midfield,"Apr 12, 1995",28,Poland,€9.00m
+Jimmy Cabot,RC Lens,Right Midfield,"Apr 18, 1994",29,France,€3.50m
+Angelo Fulgini,RC Lens,Attacking Midfield,"Aug 20, 1996",26,France,€9.00m
+David Pereira da Costa,RC Lens,Attacking Midfield,"Jan 5, 2001",22,Portugal,€8.00m
+Adrien Thomasson,RC Lens,Attacking Midfield,"Dec 10, 1993",29,France,€6.00m
+Alexis Claude-Maurice,RC Lens,Attacking Midfield,"Jun 6, 1998",25,France,€4.50m
+Gaël Kakuta,RC Lens,Attacking Midfield,"Jun 21, 1991",32,DR Congo,€1.80m
+Nolan Bonte,RC Lens,Attacking Midfield,"Jan 19, 2004",19,France,€100k
+Loïs Openda,RC Lens,Centre-Forward,"Feb 16, 2000",23,Belgium,€35.00m
+Adam Buksa,RC Lens,Centre-Forward,"Jul 12, 1996",26,Poland,€5.00m
+Ignatius Ganago,RC Lens,Centre-Forward,"Feb 16, 1999",24,Cameroon,€4.00m
+Florian Sotoca,RC Lens,Centre-Forward,"Oct 25, 1990",32,France,€4.00m
+Wesley Saïd,RC Lens,Centre-Forward,"Apr 19, 1995",28,France,€2.00m
+Rémy Labeau Lascary,RC Lens,Centre-Forward,"Mar 3, 2003",20,Guadeloupe,€500k
+Ibrahima Baldé,RC Lens,Centre-Forward,"Jan 17, 2003",20,France,€400k
+Yvon Mvogo,FC Lorient,Goalkeeper,"Jun 6, 1994",29,Switzerland,€3.50m
+Paul Nardi,FC Lorient,Goalkeeper,"May 18, 1994",29,France,€3.00m
+Julian Pollersbeck,FC Lorient,Goalkeeper,"Aug 16, 1994",28,Germany,€500k
+Vito Mannone,FC Lorient,Goalkeeper,"Mar 2, 1988",35,Italy,€300k
+Teddy Bartouche,FC Lorient,Goalkeeper,"Jun 5, 1997",26,Guadeloupe,€150k
+Montassar Talbi,FC Lorient,Centre-Back,"May 26, 1998",25,Tunisia,€8.00m
+Chrislain Matsima,FC Lorient,Centre-Back,"May 15, 2002",21,France,€6.00m
+Julien Laporte,FC Lorient,Centre-Back,"Nov 4, 1993",29,France,€2.50m
+Bamo Meïté,FC Lorient,Centre-Back,"Dec 3, 2001",21,Cote d'Ivoire,€2.50m
+Léo Pétrot,FC Lorient,Centre-Back,"Apr 15, 1997",26,France,€900k
+Loris Mouyokolo,FC Lorient,Centre-Back,"May 22, 2001",22,France,€500k
+Maxime Wackers,FC Lorient,Centre-Back,"Jan 1, 1998",25,France,€150k
+Aurélien Pelon,FC Lorient,Centre-Back,"May 6, 2004",19,France,€50k
+Paul Mbelek,FC Lorient,Centre-Back,"Jul 22, 1999",23,France,-
+Darlin Yongwa,FC Lorient,Left-Back,"Sep 22, 2000",22,Cameroon,€1.20m
+Vincent Le Goff,FC Lorient,Left-Back,"Oct 15, 1989",33,France,€1.00m
+Samuel Loric,FC Lorient,Left-Back,"Jul 5, 2000",22,France,€500k
+Gédéon Kalulu,FC Lorient,Right-Back,"Aug 29, 1997",25,DR Congo,€5.00m
+Igor Silva,FC Lorient,Right-Back,"Aug 21, 1996",26,Brazil,€1.50m
+Laurent Abergel,FC Lorient,Defensive Midfield,"Feb 1, 1993",30,France,€3.00m
+Bonke Innocent,FC Lorient,Defensive Midfield,"Jan 20, 1996",27,Nigeria,€2.00m
+Jean-Victor Makengo,FC Lorient,Central Midfield,"Jun 12, 1998",25,France,€10.00m
+Ayman Kari,FC Lorient,Central Midfield,"Nov 19, 2004",18,France,€1.00m
+Paul Bellon,FC Lorient,Central Midfield,"Jan 15, 2000",23,France,€100k
+Romain Faivre,FC Lorient,Right Midfield,"Jul 14, 1998",24,France,€10.00m
+Théo Le Bris,FC Lorient,Left Midfield,"Oct 1, 2002",20,France,€3.00m
+Enzo Le Fée,FC Lorient,Attacking Midfield,"Feb 3, 2000",23,France,€20.00m
+Julien Ponceau,FC Lorient,Attacking Midfield,"Nov 28, 2000",22,France,€2.50m
+Adil Aouchiche,FC Lorient,Attacking Midfield,"Jul 15, 2002",20,France,€2.20m
+Quentin Boisgard,FC Lorient,Attacking Midfield,"Mar 17, 1997",26,France,€1.00m
+Eli Junior Kroupi,FC Lorient,Attacking Midfield,"Jun 23, 2006",17,France,€400k
+Armand Laurienté,FC Lorient,Left Winger,"Dec 4, 1998",24,France,€18.00m
+Yoann Cathline,FC Lorient,Left Winger,"Jul 22, 2002",20,France,€2.00m
+Erwan Colas,FC Lorient,Left Winger,"Apr 22, 1997",26,France,-
+Dango Ouattara,FC Lorient,Right Winger,"Feb 11, 2002",21,Burkina Faso,€25.00m
+Stéphane Diarra,FC Lorient,Right Winger,"Dec 9, 1998",24,Cote d'Ivoire,€2.50m
+Terem Moffi,FC Lorient,Centre-Forward,"May 25, 1999",24,Nigeria,€20.00m
+Bamba Dieng,FC Lorient,Centre-Forward,"Mar 23, 2000",23,Senegal,€8.00m
+Ibrahima Koné,FC Lorient,Centre-Forward,"Jun 16, 1999",24,Mali,€4.00m
+Adrian Grbic,FC Lorient,Centre-Forward,"Aug 4, 1996",26,Austria,€1.50m
+Pablo Pagis,FC Lorient,Centre-Forward,"Dec 29, 2002",20,France,€1.50m
+Siriné Doucouré,FC Lorient,Centre-Forward,"Apr 8, 2002",21,Mali,€500k
+Yehvann Diouf,Stade Reims,Goalkeeper,"Nov 16, 1999",23,France,€8.00m
+Patrick Pentz,Stade Reims,Goalkeeper,"Jan 2, 1997",26,Austria,€1.50m
+Alexandre Olliero,Stade Reims,Goalkeeper,"Feb 15, 1996",27,France,€600k
+Nicolas Penneteau,Stade Reims,Goalkeeper,"Feb 28, 1981",42,France,€100k
+Florent Duparchy,Stade Reims,Goalkeeper,"Jun 20, 2000",23,France,€100k
+Soumaïla Sylla,Stade Reims,Goalkeeper,"Mar 15, 2004",19,France,€50k
+Wout Faes,Stade Reims,Centre-Back,"Apr 3, 1998",25,Belgium,€20.00m
+Emmanuel Agbadou,Stade Reims,Centre-Back,"Jun 17, 1997",26,Cote d'Ivoire,€7.50m
+Andreaw Gravillon,Stade Reims,Centre-Back,"Feb 8, 1998",25,Guadeloupe,€4.00m
+Check Keita,Stade Reims,Centre-Back,"Apr 2, 2003",20,France,€1.50m
+Yunis Abdelhamid,Stade Reims,Centre-Back,"Sep 28, 1987",35,Morocco,€700k
+Moustapha Mbow,Stade Reims,Centre-Back,"Mar 8, 2000",23,Senegal,€600k
+Fallou Fall,Stade Reims,Centre-Back,"Apr 15, 2004",19,Senegal,€150k
+Thibault De Smet,Stade Reims,Left-Back,"Jun 5, 1998",25,Belgium,€3.00m
+Bradley Locko,Stade Reims,Left-Back,"May 6, 2002",21,France,€2.50m
+Thomas Foket,Stade Reims,Right-Back,"Sep 25, 1994",28,Belgium,€5.00m
+Maxime Busi,Stade Reims,Right-Back,"Oct 14, 1999",23,Belgium,€2.50m
+Ibrahim Diakité,Stade Reims,Right-Back,"Oct 31, 2003",19,Guinea,€350k
+Thérence Koudou,Stade Reims,Right-Back,"Dec 13, 2004",18,France,€100k
+Azor Matusiwa,Stade Reims,Defensive Midfield,"Apr 28, 1998",25,Netherlands,€7.50m
+Dion Lopy,Stade Reims,Defensive Midfield,"Feb 2, 2002",21,Senegal,€4.00m
+Samuel Koeberlé,Stade Reims,Defensive Midfield,"Nov 26, 2004",18,France,€250k
+Valentin Atangana,Stade Reims,Defensive Midfield,"Aug 25, 2005",17,France,€250k
+Marshall Munetsi,Stade Reims,Central Midfield,"Jun 22, 1996",27,Zimbabwe,€9.00m
+Jens Cajuste,Stade Reims,Central Midfield,"Aug 10, 1999",23,Sweden,€6.00m
+Martin Adeline,Stade Reims,Central Midfield,"Dec 2, 2003",19,France,€800k
+Kamory Doumbia,Stade Reims,Attacking Midfield,"Feb 18, 2003",20,Mali,€2.50m
+Alexis Flips,Stade Reims,Left Winger,"Jan 18, 2000",23,France,€6.00m
+Arbër Zeneli,Stade Reims,Left Winger,"Feb 25, 1995",28,Kosovo,€3.50m
+Nathanaël Mbuku,Stade Reims,Left Winger,"Mar 16, 2002",21,France,€3.00m
+Myziane Maolida,Stade Reims,Left Winger,"Feb 14, 1999",24,Comoros,€1.50m
+Mamadou Diakhon,Stade Reims,Left Winger,"Sep 22, 2005",17,France,-
+Junya Ito,Stade Reims,Right Winger,"Mar 9, 1993",30,Japan,€10.00m
+Mitchell van Bergen,Stade Reims,Right Winger,"Aug 27, 1999",23,Netherlands,€1.20m
+Rafik Guitane,Stade Reims,Right Winger,"May 26, 1999",24,Algeria,€1.00m
+Folarin Balogun,Stade Reims,Centre-Forward,"Jul 3, 2001",21,United States,€30.00m
+El Bilal Touré,Stade Reims,Centre-Forward,"Oct 3, 2001",21,Mali,€12.00m
+Kaj Sierhuis,Stade Reims,Centre-Forward,"Apr 27, 1998",25,Netherlands,€1.20m
+Noah Jean Holm,Stade Reims,Centre-Forward,"May 23, 2001",22,Norway,€700k
+Mohamed Touré,Stade Reims,Centre-Forward,"Mar 26, 2004",19,Australia,€400k
+Jonas Omlin,Montpellier HSC,Goalkeeper,"Jan 10, 1994",29,Switzerland,€9.00m
+Benjamin Lecomte,Montpellier HSC,Goalkeeper,"Apr 26, 1991",32,France,€4.00m
+Dimitry Bertaud,Montpellier HSC,Goalkeeper,"Jun 6, 1998",25,DR Congo,€1.50m
+Bingourou Kamara,Montpellier HSC,Goalkeeper,"Oct 21, 1996",26,Senegal,€800k
+Matis Carvalho,Montpellier HSC,Goalkeeper,"Apr 28, 1999",24,Portugal,€300k
+Maxime Estève,Montpellier HSC,Centre-Back,"May 26, 2002",21,France,€7.00m
+Kiki Kouyaté,Montpellier HSC,Centre-Back,"Apr 15, 1997",26,Mali,€5.00m
+Christopher Jullien,Montpellier HSC,Centre-Back,"Mar 22, 1993",30,France,€3.50m
+Mamadou Sakho,Montpellier HSC,Centre-Back,"Feb 13, 1990",33,France,€2.50m
+Pedro Mendes,Montpellier HSC,Centre-Back,"Oct 1, 1990",32,Portugal,€1.80m
+Téo Allix,Montpellier HSC,Centre-Back,"Jul 5, 2004",18,France,€150k
+Redouane Halhal,Montpellier HSC,Centre-Back,"Mar 5, 2003",20,Morocco,€100k
+Faitout Maouassa,Montpellier HSC,Left-Back,"Jul 6, 1998",24,France,€6.00m
+Nicolas Cozza,Montpellier HSC,Left-Back,"Jan 8, 1999",24,France,€3.50m
+Issiaga Sylla,Montpellier HSC,Left-Back,"Jan 1, 1994",29,Guinea,€2.50m
+Théo Sainte-Luce,Montpellier HSC,Left-Back,"Oct 20, 1998",24,France,€2.00m
+Thibault Tamas,Montpellier HSC,Left-Back,"Feb 20, 2001",22,France,€150k
+Falaye Sacko,Montpellier HSC,Right-Back,"May 1, 1995",28,Mali,€4.00m
+Enzo Tchato,Montpellier HSC,Right-Back,"Nov 23, 2002",20,Cameroon,€2.50m
+Arnaud Souquet,Montpellier HSC,Right-Back,"Feb 12, 1992",31,France,€2.00m
+Mathías Suárez,Montpellier HSC,Right-Back,"Jun 24, 1996",27,Uruguay,€300k
+Ryan Tchato,Montpellier HSC,Right-Back,"Sep 13, 2004",18,Cameroon,€150k
+Joris Chotard,Montpellier HSC,Defensive Midfield,"Sep 24, 2001",21,France,€9.00m
+Jordan Ferri,Montpellier HSC,Central Midfield,"Mar 12, 1992",31,France,€5.00m
+Khalil Fayad,Montpellier HSC,Central Midfield,"Jun 9, 2004",19,France,€4.50m
+Léo Leroy,Montpellier HSC,Central Midfield,"Feb 14, 2000",23,France,€1.20m
+Matéo Loubatières,Montpellier HSC,Central Midfield,"Sep 15, 2003",19,France,€150k
+Téji Savanier,Montpellier HSC,Attacking Midfield,"Dec 22, 1991",31,France,€10.00m
+Sacha Delaye,Montpellier HSC,Attacking Midfield,"Apr 23, 2002",21,France,€400k
+Stephy Mavididi,Montpellier HSC,Left Winger,"May 31, 1998",25,England,€6.00m
+Wahbi Khazri,Montpellier HSC,Left Winger,"Feb 8, 1991",32,Tunisia,€2.50m
+Béni Makouana,Montpellier HSC,Left Winger,"Sep 28, 2002",20,Congo,€600k
+Arnaud Nordin,Montpellier HSC,Right Winger,"Jun 17, 1998",25,France,€7.00m
+Axel Gueguin,Montpellier HSC,Right Winger,"Mar 24, 2005",18,France,€800k
+Elye Wahi,Montpellier HSC,Centre-Forward,"Jan 2, 2003",20,France,€35.00m
+Valère Germain,Montpellier HSC,Centre-Forward,"Apr 17, 1990",33,France,€1.50m
+Serigne Faye,Montpellier HSC,Centre-Forward,"Apr 5, 2004",19,Senegal,€300k
+Yanis Guermouche,Montpellier HSC,Centre-Forward,"Apr 15, 2001",22,Algeria,€150k
+Edvin Bongemba,Montpellier HSC,Centre-Forward,"Jan 14, 2004",19,France,€50k
+Matz Sels,RC Strasbourg Alsace,Goalkeeper,"Feb 26, 1992",31,Belgium,€7.00m
+Eiji Kawashima,RC Strasbourg Alsace,Goalkeeper,"Mar 20, 1983",40,Japan,€150k
+Robin Risser,RC Strasbourg Alsace,Goalkeeper,"Dec 2, 2004",18,France,€150k
+Alexandre Pierre,RC Strasbourg Alsace,Goalkeeper,"Feb 25, 2001",22,Haiti,€100k
+Alexander Djiku,RC Strasbourg Alsace,Centre-Back,"Aug 9, 1994",28,Ghana,€8.00m
+Ismaël Doukouré,RC Strasbourg Alsace,Centre-Back,"Jul 24, 2003",19,France,€6.00m
+Gerzino Nyamsi,RC Strasbourg Alsace,Centre-Back,"Jan 22, 1997",26,France,€5.00m
+Lucas Perrin,RC Strasbourg Alsace,Centre-Back,"Nov 19, 1998",24,France,€3.00m
+Maxime Le Marchand,RC Strasbourg Alsace,Centre-Back,"Oct 11, 1989",33,France,€1.00m
+Franci Bouebari,RC Strasbourg Alsace,Centre-Back,"Sep 12, 2003",19,France,€250k
+Eduard Sobol,RC Strasbourg Alsace,Left-Back,"Apr 20, 1995",28,Ukraine,€2.50m
+Thomas Delaine,RC Strasbourg Alsace,Left-Back,"Mar 24, 1992",31,France,€1.20m
+Anas Nanah,RC Strasbourg Alsace,Left-Back,"Mar 12, 2003",20,Morocco,€50k
+Colin Dagba,RC Strasbourg Alsace,Right-Back,"Sep 9, 1998",24,France,€4.50m
+Frédéric Guilbert,RC Strasbourg Alsace,Right-Back,"Dec 24, 1994",28,France,€4.50m
+Ronaël Pierre-Gabriel,RC Strasbourg Alsace,Right-Back,"Jun 13, 1998",25,France,€3.50m
+Karol Fila,RC Strasbourg Alsace,Right-Back,"Jun 13, 1998",25,Poland,€900k
+Marvin Senaya,RC Strasbourg Alsace,Right-Back,"Jan 28, 2001",22,France,€900k
+Antoine Nuss,RC Strasbourg Alsace,Right-Back,"Dec 19, 2003",19,France,€100k
+Ibrahima Sissoko,RC Strasbourg Alsace,Defensive Midfield,"Oct 27, 1997",25,Mali,€6.00m
+Jean-Eudes Aholou,RC Strasbourg Alsace,Defensive Midfield,"Mar 20, 1994",29,Cote d'Ivoire,€2.50m
+Jean-Ricner Bellegarde,RC Strasbourg Alsace,Central Midfield,"Jun 27, 1998",25,France,€10.00m
+Morgan Sanson,RC Strasbourg Alsace,Central Midfield,"Aug 18, 1994",28,France,€6.00m
+Sanjin Prcic,RC Strasbourg Alsace,Central Midfield,"Nov 20, 1993",29,Bosnia-Herzegovina,€3.00m
+Dimitri Liénard,RC Strasbourg Alsace,Left Midfield,"Feb 13, 1988",35,France,€500k
+Habib Diarra,RC Strasbourg Alsace,Attacking Midfield,"Jan 3, 2004",19,Senegal,€10.00m
+Adrien Thomasson,RC Strasbourg Alsace,Attacking Midfield,"Dec 10, 1993",29,France,€6.00m
+Nordine Kandil,RC Strasbourg Alsace,Attacking Midfield,"Oct 31, 2001",21,Morocco,€400k
+Jordan Robinand,RC Strasbourg Alsace,Attacking Midfield,"Sep 16, 2003",19,France,€50k
+Dany Jean,RC Strasbourg Alsace,Left Winger,"Nov 28, 2002",20,Haiti,€150k
+Tom Saettel,RC Strasbourg Alsace,Left Winger,"Jun 19, 2005",18,France,€150k
+Habib Diallo,RC Strasbourg Alsace,Centre-Forward,"Jun 18, 1995",28,Senegal,€18.00m
+Ludovic Ajorque,RC Strasbourg Alsace,Centre-Forward,"Feb 25, 1994",29,France,€9.00m
+Kévin Gameiro,RC Strasbourg Alsace,Centre-Forward,"May 9, 1987",36,France,€1.20m
+Lebo Mothiba,RC Strasbourg Alsace,Centre-Forward,"Jan 28, 1996",27,South Africa,€1.20m
+Yuito Suzuki,RC Strasbourg Alsace,Centre-Forward,"Oct 25, 2001",21,Japan,€600k
+Alban Lafont,FC Nantes,Goalkeeper,"Jan 23, 1999",24,France,€16.00m
+Rémy Descamps,FC Nantes,Goalkeeper,"Jun 25, 1996",27,France,€700k
+Denis Petric,FC Nantes,Goalkeeper,"May 24, 1988",35,Slovenia,€150k
+João Victor,FC Nantes,Centre-Back,"Jul 17, 1998",24,Brazil,€7.00m
+Andrei Girotto,FC Nantes,Centre-Back,"Feb 17, 1992",31,Brazil,€4.00m
+Jean-Charles Castelletto,FC Nantes,Centre-Back,"Jan 26, 1995",28,Cameroon,€3.50m
+Nicolas Pallois,FC Nantes,Centre-Back,"Sep 19, 1987",35,France,€900k
+Nathan Zeze,FC Nantes,Centre-Back,"Jun 18, 2005",18,France,€400k
+Robin Voisine,FC Nantes,Centre-Back,"Apr 7, 2002",21,France,€150k
+Junior Diaz,FC Nantes,Centre-Back,"Jul 23, 2003",19,Cote d'Ivoire,€100k
+Quentin Merlin,FC Nantes,Left-Back,"May 16, 2002",21,France,€7.00m
+Jaouen Hadjam,FC Nantes,Left-Back,"Mar 26, 2003",20,Algeria,€2.00m
+Charles Traoré,FC Nantes,Left-Back,"Jan 1, 1992",31,Mali,€600k
+Fabien Centonze,FC Nantes,Right-Back,"Jan 16, 1996",27,France,€4.00m
+Dennis Appiah,FC Nantes,Right-Back,"Jun 9, 1992",31,France,€1.50m
+Fábio,FC Nantes,Right-Back,"Jul 9, 1990",32,Brazil,€1.20m
+Sébastien Corchia,FC Nantes,Right-Back,"Nov 1, 1990",32,France,€1.00m
+Mathieu Acapandié,FC Nantes,Right-Back,"Dec 14, 2004",18,France,-
+Pedro Chirivella,FC Nantes,Defensive Midfield,"May 23, 1997",26,Spain,€6.00m
+Lohann Doucet,FC Nantes,Defensive Midfield,"Sep 14, 2002",20,France,€700k
+Samuel Moutoussamy,FC Nantes,Central Midfield,"Aug 12, 1996",26,DR Congo,€5.00m
+Moussa Sissoko,FC Nantes,Central Midfield,"Aug 16, 1989",33,France,€2.50m
+Mohamed Achi,FC Nantes,Central Midfield,"Jan 16, 2002",21,France,€300k
+Ludovic Blas,FC Nantes,Attacking Midfield,"Dec 31, 1997",25,France,€20.00m
+Florent Mollet,FC Nantes,Attacking Midfield,"Nov 19, 1991",31,France,€2.00m
+Samuel Yépié Yépié,FC Nantes,Attacking Midfield,"Oct 2, 2002",20,France,€150k
+Moses Simon,FC Nantes,Left Winger,"Jul 12, 1995",27,Nigeria,€8.00m
+Gor Manvelyan,FC Nantes,Left Winger,"Apr 9, 2002",21,Armenia,€400k
+Santiago Eneme,FC Nantes,Left Winger,"Sep 29, 2000",22,Equatorial Guinea,€150k
+Stredair Appuah,FC Nantes,Left Winger,"Jun 27, 2004",19,France,€150k
+Marcus Coco,FC Nantes,Right Winger,"Jun 24, 1996",27,Guadeloupe,€1.20m
+Abdoul Kader Bamba,FC Nantes,Right Winger,"Apr 25, 1994",29,France,€900k
+Andy Delort,FC Nantes,Centre-Forward,"Oct 9, 1991",31,Algeria,€7.00m
+Mostafa Mohamed,FC Nantes,Centre-Forward,"Nov 28, 1997",25,Egypt,€6.00m
+Evann Guessand,FC Nantes,Centre-Forward,"Jul 1, 2001",21,Cote d'Ivoire,€4.50m
+Ignatius Ganago,FC Nantes,Centre-Forward,"Feb 16, 1999",24,Cameroon,€4.00m
+Joe-Loïc Affamah,FC Nantes,Centre-Forward,"Jun 29, 2002",21,France,€125k
+Maxime Dupé,FC Toulouse,Goalkeeper,"Mar 4, 1993",30,France,€2.50m
+Kjetil Haug,FC Toulouse,Goalkeeper,"Jun 12, 1998",25,Norway,€400k
+Thomas Himeur,FC Toulouse,Goalkeeper,"Jan 17, 2001",22,France,€150k
+Guillaume Restes,FC Toulouse,Goalkeeper,"Mar 11, 2005",18,France,-
+Anthony Rouault,FC Toulouse,Centre-Back,"May 29, 2001",22,France,€10.00m
+Rasmus Nicolaisen,FC Toulouse,Centre-Back,"Mar 16, 1997",26,Denmark,€6.00m
+Logan Costa,FC Toulouse,Centre-Back,"Apr 1, 2001",22,Cape Verde,€1.20m
+Moussa Diarra,FC Toulouse,Centre-Back,"Nov 10, 2000",22,Mali,€800k
+Kévin Keben,FC Toulouse,Centre-Back,"Jan 26, 2004",19,Cameroon,€400k
+Christian Mawissa,FC Toulouse,Centre-Back,"Apr 18, 2005",18,France,€250k
+Issiaga Sylla,FC Toulouse,Left-Back,"Jan 1, 1994",29,Guinea,€2.50m
+Gabriel Suazo,FC Toulouse,Left-Back,"Aug 9, 1997",25,Chile,€2.50m
+Oliver Zandén,FC Toulouse,Left-Back,"Aug 14, 2001",21,Sweden,€1.00m
+Ylies Aradj,FC Toulouse,Left-Back,"Jun 5, 2005",18,France,€50k
+Mikkel Desler,FC Toulouse,Right-Back,"Feb 19, 1995",28,Denmark,€2.50m
+Warren Kamanzi,FC Toulouse,Right-Back,"Nov 11, 2000",22,Norway,€1.20m
+Stijn Spierings,FC Toulouse,Defensive Midfield,"Mar 12, 1996",27,Netherlands,€6.00m
+Branco van den Boomen,FC Toulouse,Central Midfield,"Jul 21, 1995",27,Netherlands,€12.00m
+Brecht Dejaegere,FC Toulouse,Central Midfield,"May 29, 1991",32,Belgium,€1.80m
+Vincent Sierro,FC Toulouse,Central Midfield,"Oct 8, 1995",27,Switzerland,€1.50m
+Theocharis Tsingaras,FC Toulouse,Central Midfield,"Aug 20, 2000",22,Greece,€1.20m
+Steve Mvoué,FC Toulouse,Central Midfield,"Feb 2, 2002",21,Cameroon,€400k
+Farès Chaïbi,FC Toulouse,Attacking Midfield,"Nov 28, 2002",20,Algeria,€10.00m
+Denis Genreau,FC Toulouse,Attacking Midfield,"May 21, 1999",24,Australia,€1.50m
+Naatan Skyttä,FC Toulouse,Attacking Midfield,"May 7, 2002",21,Finland,€500k
+Edhy Zuliani,FC Toulouse,Attacking Midfield,"Aug 11, 2004",18,Algeria,€50k
+Rafael Ratão,FC Toulouse,Left Winger,"Nov 30, 1995",27,Brazil,€2.50m
+Junior Flemmings,FC Toulouse,Left Winger,"Jan 16, 1996",27,Jamaica,€350k
+Zakaria Aboukhlal,FC Toulouse,Right Winger,"Feb 18, 2000",23,Morocco,€9.00m
+Nathan Ngoumou,FC Toulouse,Right Winger,"Mar 14, 2000",23,France,€5.00m
+Veljko Birmancevic,FC Toulouse,Right Winger,"Mar 5, 1998",25,Serbia,€3.00m
+Thijs Dallinga,FC Toulouse,Centre-Forward,"Aug 3, 2000",22,Netherlands,€12.00m
+Rhys Healey,FC Toulouse,Centre-Forward,"Dec 6, 1994",28,England,€2.50m
+Ado Onaiwu,FC Toulouse,Centre-Forward,"Nov 8, 1995",27,Japan,€1.50m
+Said Hamulic,FC Toulouse,Centre-Forward,"Nov 12, 2000",22,Bosnia-Herzegovina,€1.50m
+Yanis Begraoui,FC Toulouse,Centre-Forward,"Jul 4, 2001",21,Morocco,€1.00m
+Bonota Traoré,FC Toulouse,Centre-Forward,"Jun 30, 2003",20,France,€50k
+Marco Bizot,Stade Brestois 29,Goalkeeper,"Mar 10, 1991",32,Netherlands,€3.50m
+Joaquín Blázquez,Stade Brestois 29,Goalkeeper,"Jan 28, 2001",22,Argentina,€400k
+Grégoire Coudert,Stade Brestois 29,Goalkeeper,"Apr 3, 1999",24,France,€150k
+Lilian Brassier,Stade Brestois 29,Centre-Back,"Nov 2, 1999",23,France,€5.00m
+Brendan Chardonnet,Stade Brestois 29,Centre-Back,"Dec 22, 1994",28,France,€5.00m
+Jean-Kévin Duverne,Stade Brestois 29,Centre-Back,"Jul 12, 1997",25,Haiti,€4.00m
+Achraf Dari,Stade Brestois 29,Centre-Back,"May 6, 1999",24,Morocco,€2.00m
+Christophe Hérelle,Stade Brestois 29,Centre-Back,"Aug 22, 1992",30,Martinique,€2.00m
+Josué Escartin,Stade Brestois 29,Centre-Back,"Mar 21, 2003",20,France,€150k
+Bradley Locko,Stade Brestois 29,Left-Back,"May 6, 2002",21,France,€2.50m
+Jere Uronen,Stade Brestois 29,Left-Back,"Jul 13, 1994",28,Finland,€1.00m
+Kenny Lala,Stade Brestois 29,Right-Back,"Oct 3, 1991",31,France,€1.50m
+Noah Fadiga,Stade Brestois 29,Right-Back,"Dec 3, 1999",23,Senegal,€1.20m
+Pierre Lees-Melou,Stade Brestois 29,Defensive Midfield,"May 25, 1993",30,France,€4.00m
+Haris Belkebla,Stade Brestois 29,Central Midfield,"Jan 28, 1994",29,Algeria,€3.00m
+Mahdi Camara,Stade Brestois 29,Central Midfield,"Jun 30, 1998",25,France,€3.00m
+Hugo Magnetti,Stade Brestois 29,Central Midfield,"May 30, 1998",25,France,€2.00m
+Hianga'a Mbock,Stade Brestois 29,Central Midfield,"Dec 28, 1999",23,France,€1.20m
+Félix Lemaréchal,Stade Brestois 29,Central Midfield,"Aug 7, 2003",19,France,€1.00m
+Axel Camblan,Stade Brestois 29,Left Midfield,"Aug 30, 2003",19,France,€400k
+Karamoko Dembélé,Stade Brestois 29,Attacking Midfield,"Feb 22, 2003",20,England,€500k
+Jérémy Le Douaron,Stade Brestois 29,Left Winger,"Apr 21, 1998",25,France,€4.50m
+Mathias Pereira Lage,Stade Brestois 29,Left Winger,"Nov 30, 1996",26,France,€2.00m
+Youcef Belaïli,Stade Brestois 29,Left Winger,"Mar 14, 1992",31,Algeria,€1.50m
+Franck Honorat,Stade Brestois 29,Right Winger,"Aug 11, 1996",26,France,€10.00m
+Romain Del Castillo,Stade Brestois 29,Right Winger,"Mar 29, 1996",27,France,€3.00m
+Alberth Elis,Stade Brestois 29,Right Winger,"Feb 12, 1996",27,Honduras,€2.50m
+Steve Mounié,Stade Brestois 29,Centre-Forward,"Sep 29, 1994",28,Benin,€5.00m
+Irvin Cardona,Stade Brestois 29,Centre-Forward,"Aug 8, 1997",25,France,€2.50m
+Islam Slimani,Stade Brestois 29,Centre-Forward,"Jun 18, 1988",35,Algeria,€1.50m
+Taïryk Arconte,Stade Brestois 29,Centre-Forward,"Nov 12, 2003",19,Guadeloupe,€500k
+Loïc Rémy,Stade Brestois 29,Centre-Forward,"Jan 2, 1987",36,France,€150k
+Gauthier Gallon,ESTAC Troyes,Goalkeeper,"Apr 23, 1993",30,France,€2.00m
+Mateusz Lis,ESTAC Troyes,Goalkeeper,"Feb 27, 1997",26,Poland,€900k
+Jessy Moulin,ESTAC Troyes,Goalkeeper,"Jan 13, 1986",37,France,€200k
+Corentin Michel,ESTAC Troyes,Goalkeeper,"Mar 20, 2000",23,Belgium,€150k
+Jackson Porozo,ESTAC Troyes,Centre-Back,"Aug 4, 2000",22,Ecuador,€3.00m
+Erik Palmer-Brown,ESTAC Troyes,Centre-Back,"Apr 24, 1997",26,United States,€2.50m
+Yoann Salmier,ESTAC Troyes,Centre-Back,"Nov 21, 1992",30,French Guiana,€2.00m
+Tanguy Zoukrou,ESTAC Troyes,Centre-Back,"May 7, 2003",20,France,€1.00m
+Adil Rami,ESTAC Troyes,Centre-Back,"Dec 27, 1985",37,France,€250k
+Eric N'Jo,ESTAC Troyes,Centre-Back,"Jun 1, 2004",19,France,€200k
+Rudy Kohon,ESTAC Troyes,Centre-Back,"May 23, 2004",19,France,€100k
+Yasser Larouci,ESTAC Troyes,Left-Back,"Jan 1, 2001",22,Algeria,€3.50m
+Abdu Conté,ESTAC Troyes,Left-Back,"Mar 24, 1998",25,Portugal,€2.00m
+Mathis Hamdi,ESTAC Troyes,Left-Back,"Oct 18, 2003",19,France,€150k
+Thierno Baldé,ESTAC Troyes,Right-Back,"Jun 10, 2002",21,France,€4.00m
+Andreas Bruus,ESTAC Troyes,Right-Back,"Jan 16, 1999",24,Denmark,€2.00m
+Lucien Agoumé,ESTAC Troyes,Defensive Midfield,"Feb 9, 2002",21,France,€7.00m
+Rominigue Kouamé,ESTAC Troyes,Central Midfield,"Dec 17, 1996",26,Mali,€4.50m
+Florian Tardieu,ESTAC Troyes,Central Midfield,"Apr 22, 1992",31,France,€2.00m
+Xavier Chavalerin,ESTAC Troyes,Central Midfield,"Mar 7, 1991",32,France,€1.50m
+Ante Palaversa,ESTAC Troyes,Central Midfield,"Apr 6, 2000",23,Croatia,€700k
+Tristan Dingomé,ESTAC Troyes,Central Midfield,"Feb 17, 1991",32,Cameroon,€500k
+Derek Mazou-Sacko,ESTAC Troyes,Central Midfield,"Oct 6, 2004",18,France,€250k
+Danel Dongmo,ESTAC Troyes,Central Midfield,"Jan 31, 2001",22,Cameroon,€100k
+Jeff Reine-Adélaïde,ESTAC Troyes,Attacking Midfield,"Jan 17, 1998",25,France,€5.00m
+Ryan Fage,ESTAC Troyes,Attacking Midfield,"Oct 31, 2003",19,France,€50k
+Wilson Odobert,ESTAC Troyes,Left Winger,"Nov 28, 2004",18,France,€6.00m
+Alexis Tibidi,ESTAC Troyes,Left Winger,"Nov 3, 2003",19,France,€2.00m
+Amar Fatah,ESTAC Troyes,Left Winger,"Feb 19, 2004",19,Sweden,€1.20m
+Papa Ndiaga Yade,ESTAC Troyes,Left Winger,"Jan 5, 2000",23,Mauritania,€1.20m
+Marlos Moreno,ESTAC Troyes,Left Winger,"Sep 20, 1996",26,Colombia,€950k
+Levi Lumeka,ESTAC Troyes,Left Winger,"Sep 5, 1998",24,England,€200k
+Rony Lopes,ESTAC Troyes,Right Winger,"Dec 28, 1995",27,Portugal,€4.00m
+Renaud Ripart,ESTAC Troyes,Right Winger,"Mar 14, 1993",30,France,€2.50m
+Kyliane Dong,ESTAC Troyes,Right Winger,"Sep 27, 2004",18,France,€500k
+Alexis Lefebvre,ESTAC Troyes,Right Winger,"May 21, 2003",20,France,€250k
+Mama Baldé,ESTAC Troyes,Centre-Forward,"Nov 6, 1995",27,Guinea-Bissau,€8.00m
+Iké Ugbo,ESTAC Troyes,Centre-Forward,"Sep 21, 1998",24,Canada,€3.00m
+Mykola Kukharevych,ESTAC Troyes,Centre-Forward,"Jul 1, 2001",21,Ukraine,€500k
+Yoann Touzghar,ESTAC Troyes,Centre-Forward,"Nov 28, 1986",36,Tunisia,€300k
+Yoann Beaka,ESTAC Troyes,Centre-Forward,"Apr 6, 2003",20,France,€150k
+Paul Bernardoni,Angers SCO,Goalkeeper,"Apr 18, 1997",26,France,€2.50m
+Yahia Fofana,Angers SCO,Goalkeeper,"Aug 21, 2000",22,Cote d'Ivoire,€2.00m
+Melvin Zinga,Angers SCO,Goalkeeper,"Mar 16, 2002",21,France,€100k
+Théo Borne,Angers SCO,Goalkeeper,"Jul 15, 2002",20,France,€100k
+Cédric Hountondji,Angers SCO,Centre-Back,"Jan 19, 1994",29,Benin,€2.00m
+Miha Blazic,Angers SCO,Centre-Back,"May 8, 1993",30,Slovenia,€1.80m
+Ousmane Camara,Angers SCO,Centre-Back,"Mar 6, 2003",20,France,€1.50m
+Abdoulaye Bamba,Angers SCO,Centre-Back,"Apr 25, 1990",33,Cote d'Ivoire,€400k
+Yacine Gaya,Angers SCO,Centre-Back,"Nov 15, 2004",18,Algeria,€50k
+Ismaël Dramé,Angers SCO,Centre-Back,"May 27, 2001",22,France,-
+Demba N'Diaye,Angers SCO,Centre-Back,"Aug 18, 2005",17,France,-
+Demba N'Diaye,Angers SCO,Centre-Back,"Apr 13, 1992",31,France,-
+Souleyman Doumbia,Angers SCO,Left-Back,"Sep 24, 1996",26,Cote d'Ivoire,€2.50m
+Faouzi Ghoulam,Angers SCO,Left-Back,"Feb 1, 1991",32,Algeria,€900k
+Ilyes Chetti,Angers SCO,Left-Back,"Jan 22, 1995",28,Algeria,€400k
+Yan Valery,Angers SCO,Right-Back,"Feb 22, 1999",24,Tunisia,€2.00m
+Halid Sabanovic,Angers SCO,Right-Back,"Aug 22, 1999",23,Bosnia-Herzegovina,€700k
+Lilian Raolisoa,Angers SCO,Right-Back,"Jun 16, 2000",23,France,€200k
+Ali Kalla,Angers SCO,Right-Back,"Apr 23, 1998",25,France,€100k
+Nabil Bentaleb,Angers SCO,Defensive Midfield,"Nov 24, 1994",28,Algeria,€7.00m
+Batista Mendy,Angers SCO,Defensive Midfield,"Jan 12, 2000",23,France,€3.00m
+Ibrahim Amadou,Angers SCO,Defensive Midfield,"Apr 6, 1993",30,France,€1.50m
+Zinédine Ould Khaled,Angers SCO,Defensive Midfield,"Jan 14, 2000",23,France,€200k
+Azzedine Ounahi,Angers SCO,Central Midfield,"Apr 19, 2000",23,Morocco,€12.00m
+Antonin Bobichon,Angers SCO,Central Midfield,"Sep 14, 1995",27,France,€900k
+Pierrick Capelle,Angers SCO,Central Midfield,"Apr 15, 1987",36,France,€250k
+Yassin Belkhdim,Angers SCO,Central Midfield,"Feb 14, 2002",21,Morocco,€100k
+Salim Akkal,Angers SCO,Central Midfield,"Feb 17, 2000",23,France,€50k
+Himad Abdelli,Angers SCO,Attacking Midfield,"Nov 17, 1999",23,Algeria,€2.50m
+Waniss Taïbi,Angers SCO,Attacking Midfield,"Mar 7, 2002",21,France,€500k
+Sofiane Boufal,Angers SCO,Left Winger,"Sep 17, 1993",29,Morocco,€8.00m
+Jean-Mattéo Bahoya,Angers SCO,Left Winger,"May 7, 2005",18,France,€1.50m
+Marin Jakolis,Angers SCO,Left Winger,"Dec 26, 1996",26,Croatia,€600k
+Farid El Melali,Angers SCO,Left Winger,"Jul 13, 1997",25,Algeria,€600k
+Jason Mbock,Angers SCO,Left Winger,"Nov 1, 1999",23,France,€150k
+Abdallah Sima,Angers SCO,Right Winger,"Jun 17, 2001",22,Senegal,€6.00m
+Sada Thioub,Angers SCO,Right Winger,"Jun 1, 1995",28,Senegal,€1.20m
+Justin-Noël Kalumba,Angers SCO,Right Winger,"Dec 25, 2004",18,France,€250k
+Ibrahima Niane,Angers SCO,Centre-Forward,"Mar 11, 1999",24,Senegal,€3.00m
+Adrien Hunou,Angers SCO,Centre-Forward,"Jan 19, 1994",29,France,€2.50m
+Amine Salama,Angers SCO,Centre-Forward,"Jul 18, 2000",22,France,€1.50m
+Loïs Diony,Angers SCO,Centre-Forward,"Dec 20, 1992",30,France,€900k
+Ulrick Eneme-Ella,Angers SCO,Centre-Forward,"May 22, 2001",22,Gabon,€200k
+Guédé Nadje,Angers SCO,Centre-Forward,"Nov 12, 2003",19,France,€150k
+Andrei Radu,AJ Auxerre,Goalkeeper,"May 28, 1997",26,Romania,€3.50m
+Benoît Costil,AJ Auxerre,Goalkeeper,"Jul 3, 1987",35,France,€1.00m
+Donovan Léon,AJ Auxerre,Goalkeeper,"Nov 3, 1992",30,French Guiana,€500k
+Théo De Percin,AJ Auxerre,Goalkeeper,"Feb 2, 2001",22,Martinique,€150k
+Vincenzo Cozzella,AJ Auxerre,Goalkeeper,"Dec 21, 2001",21,Italy,€100k
+Isaak Touré,AJ Auxerre,Centre-Back,"Mar 28, 2003",20,France,€6.00m
+Jubal,AJ Auxerre,Centre-Back,"Aug 29, 1993",29,Brazil,€2.00m
+Théo Pellenard,AJ Auxerre,Centre-Back,"Mar 4, 1994",29,France,€1.00m
+Julian Jeanvier,AJ Auxerre,Centre-Back,"Mar 31, 1992",31,Guinea,€800k
+Alexandre Coeff,AJ Auxerre,Centre-Back,"Feb 20, 1992",31,France,€700k
+Denys Bain,AJ Auxerre,Centre-Back,"Jul 2, 1993",29,France,€500k
+Lamine Buhanga,AJ Auxerre,Centre-Back,"Oct 3, 2001",21,France,€100k
+Gideon Mensah,AJ Auxerre,Left-Back,"Jul 18, 1998",24,Ghana,€2.50m
+Kenji-Van Boto,AJ Auxerre,Left-Back,"Mar 7, 1996",27,Madagascar,€400k
+Quentin Bernard,AJ Auxerre,Left-Back,"Jul 7, 1989",33,France,€350k
+Raphaël Lipinski,AJ Auxerre,Left-Back,"Jul 30, 2002",20,France,€100k
+Akim Zedadka,AJ Auxerre,Right-Back,"May 30, 1995",28,Algeria,€2.50m
+Paul Joly,AJ Auxerre,Right-Back,"Jun 7, 2000",23,France,€1.20m
+Brayann Pereira,AJ Auxerre,Right-Back,"May 21, 2003",20,Congo,€600k
+Han-Noah Massengo,AJ Auxerre,Defensive Midfield,"Jul 7, 2001",21,France,€5.00m
+Elisha Owusu,AJ Auxerre,Defensive Midfield,"Nov 7, 1997",25,Ghana,€2.00m
+Birama Touré,AJ Auxerre,Defensive Midfield,"Jun 6, 1992",31,Mali,€1.80m
+Rayan Raveloson,AJ Auxerre,Defensive Midfield,"Jan 16, 1997",26,Madagascar,€1.80m
+Ousoumane Camara,AJ Auxerre,Defensive Midfield,"Dec 19, 1998",24,France,€150k
+Natanaël Bouekou,AJ Auxerre,Defensive Midfield,"May 10, 2002",21,France,€100k
+Kays Ruiz-Atil,AJ Auxerre,Central Midfield,"Aug 26, 2002",20,Morocco,€800k
+Gaëtan Perrin,AJ Auxerre,Right Midfield,"Jun 7, 1996",27,France,€1.20m
+Hamza Sakhi,AJ Auxerre,Attacking Midfield,"Jun 7, 1996",27,Morocco,€2.00m
+Youssouf M'Changama,AJ Auxerre,Attacking Midfield,"Aug 29, 1990",32,Comoros,€900k
+Mathias Autret,AJ Auxerre,Attacking Midfield,"Mar 1, 1991",32,France,€800k
+Kévin Danois,AJ Auxerre,Attacking Midfield,"Jun 28, 2004",19,France,€100k
+Siriki Dembélé,AJ Auxerre,Left Winger,"Sep 7, 1996",26,Scotland,€2.00m
+Rémy Dugimont,AJ Auxerre,Left Winger,"Jul 1, 1986",36,France,€100k
+Gauthier Hein,AJ Auxerre,Right Winger,"Aug 7, 1996",26,France,€2.00m
+Lassine Sinayoko,AJ Auxerre,Right Winger,"Dec 8, 1999",23,Mali,€1.20m
+Kylian Silvestre,AJ Auxerre,Right Winger,"Aug 16, 2002",20,France,€100k
+Matthis Abline,AJ Auxerre,Centre-Forward,"Mar 28, 2003",20,France,€4.50m
+M'Baye Niang,AJ Auxerre,Centre-Forward,"Dec 19, 1994",28,Senegal,€2.50m
+Nuno Da Costa,AJ Auxerre,Centre-Forward,"Feb 10, 1991",32,Cape Verde,€1.00m
+Gaëtan Charbonnier,AJ Auxerre,Centre-Forward,"Dec 27, 1988",34,France,€500k
+Ousmane Camara,AJ Auxerre,Centre-Forward,"Nov 3, 2001",21,Guinea,€150k
+Idjessi Metsoko,AJ Auxerre,Centre-Forward,"Mar 14, 2002",21,Togo,€100k
+Mory Diaw,Clermont Foot 63,Goalkeeper,"Jun 22, 1993",30,Senegal,€2.00m
+Ouparine Djoco,Clermont Foot 63,Goalkeeper,"Apr 22, 1998",25,Guinea-Bissau,€500k
+Lucas Margueron,Clermont Foot 63,Goalkeeper,"Feb 12, 2001",22,France,€150k
+Alidu Seidu,Clermont Foot 63,Centre-Back,"Jun 4, 2000",23,Ghana,€7.00m
+Mateusz Wieteska,Clermont Foot 63,Centre-Back,"Feb 11, 1997",26,Poland,€3.00m
+Maximiliano Caufriez,Clermont Foot 63,Centre-Back,"Feb 16, 1997",26,Belgium,€2.50m
+Florent Ogier,Clermont Foot 63,Centre-Back,"Mar 21, 1989",34,France,€450k
+Jean-Claude Billong,Clermont Foot 63,Centre-Back,"Dec 28, 1993",29,Cameroon,€250k
+Souleymane Cissé,Clermont Foot 63,Centre-Back,"Aug 8, 2002",20,France,€100k
+Neto Borges,Clermont Foot 63,Left-Back,"Sep 13, 1996",26,Brazil,€4.00m
+Arial Mendy,Clermont Foot 63,Left-Back,"Nov 7, 1994",28,Senegal,€600k
+Baïla Diallo,Clermont Foot 63,Left-Back,"Jun 24, 2001",22,Senegal,€200k
+Cheick Oumar Konaté,Clermont Foot 63,Right-Back,"Apr 2, 2004",19,Mali,€1.00m
+Mehdi Zeffane,Clermont Foot 63,Right-Back,"May 19, 1992",31,Algeria,€450k
+Oliver Kamdem,Clermont Foot 63,Right-Back,"Oct 15, 2002",20,France,€100k
+Yohann Magnin,Clermont Foot 63,Defensive Midfield,"Jun 21, 1997",26,France,€2.50m
+Maxime Gonalons,Clermont Foot 63,Defensive Midfield,"Mar 10, 1989",34,France,€900k
+Johan Gastien,Clermont Foot 63,Defensive Midfield,"Jan 25, 1988",35,France,€700k
+Brandon Baiye,Clermont Foot 63,Defensive Midfield,"Dec 27, 2000",22,Belgium,€500k
+Stan Berkani,Clermont Foot 63,Defensive Midfield,"Aug 13, 2003",19,Algeria,€50k
+Muhammed Cham,Clermont Foot 63,Attacking Midfield,"Sep 26, 2000",22,Austria,€6.00m
+Saîf-Eddine Khaoui,Clermont Foot 63,Attacking Midfield,"Apr 27, 1995",28,Tunisia,€2.00m
+Aïman Maurer,Clermont Foot 63,Attacking Midfield,"Sep 25, 2004",18,Morocco,€800k
+Jason Berthomier,Clermont Foot 63,Attacking Midfield,"Jan 6, 1990",33,France,€500k
+Yanis Massolin,Clermont Foot 63,Attacking Midfield,"Sep 20, 2002",20,France,€250k
+Elbasan Rashani,Clermont Foot 63,Left Winger,"May 9, 1993",30,Kosovo,€2.00m
+Jérémie Bela,Clermont Foot 63,Left Winger,"Apr 8, 1993",30,Angola,€1.50m
+Sofyan Chader,Clermont Foot 63,Left Winger,"May 12, 2000",23,France,€800k
+Jim Allevinah,Clermont Foot 63,Right Winger,"Feb 27, 1995",28,Gabon,€2.00m
+Jodel Dossou,Clermont Foot 63,Right Winger,"Mar 17, 1992",31,Benin,€800k
+Giovani Versini,Clermont Foot 63,Right Winger,"Mar 18, 2004",19,France,€100k
+Grejohn Kyei,Clermont Foot 63,Centre-Forward,"Aug 12, 1995",27,France,€2.50m
+Komnen Andric,Clermont Foot 63,Centre-Forward,"Jul 1, 1995",27,Serbia,€1.80m
+Benjamin Leroy,AC Ajaccio,Goalkeeper,"Apr 7, 1989",34,France,€500k
+François-Joseph Sollacaro,AC Ajaccio,Goalkeeper,"Mar 21, 1994",29,France,€300k
+Ghjuvanni Quilichini,AC Ajaccio,Goalkeeper,"Sep 1, 2002",20,France,€150k
+Oumar Gonzalez,AC Ajaccio,Centre-Back,"Feb 25, 1998",25,Cameroon,€2.50m
+Clément Vidal,AC Ajaccio,Centre-Back,"Jun 18, 2000",23,France,€1.80m
+Fernand Mayembo,AC Ajaccio,Centre-Back,"Jan 9, 1996",27,Congo,€600k
+Cédric Avinel,AC Ajaccio,Centre-Back,"Sep 11, 1986",36,Guadeloupe,€250k
+Anthony Khelifa,AC Ajaccio,Centre-Back,"Sep 20, 2005",17,Algeria,€150k
+Ismaël Diallo,AC Ajaccio,Left-Back,"Jan 29, 1997",26,Cote d'Ivoire,€1.50m
+Youssouf Koné,AC Ajaccio,Left-Back,"Jul 5, 1995",27,Mali,€1.50m
+Chaker Alhadhur,AC Ajaccio,Left-Back,"Dec 4, 1991",31,Comoros,€150k
+Victor Lebas,AC Ajaccio,Left-Back,"Sep 14, 2004",18,Portugal,€50k
+Mickaël Alphonse,AC Ajaccio,Right-Back,"Jul 12, 1989",33,Guadeloupe,€250k
+Mohamed Youssouf,AC Ajaccio,Right-Back,"Mar 26, 1988",35,Comoros,€200k
+Tony Strata,AC Ajaccio,Right-Back,"Sep 7, 2004",18,Romania,€50k
+Mehdi Puch-Herrantz,AC Ajaccio,Defensive Midfield,"Jan 20, 2004",19,Algeria,€150k
+Vincent Marchetti,AC Ajaccio,Central Midfield,"Jul 4, 1997",25,France,€2.50m
+Qazim Laci,AC Ajaccio,Central Midfield,"Jan 19, 1996",27,Albania,€1.70m
+Thomas Mangani,AC Ajaccio,Central Midfield,"Apr 29, 1987",36,France,€400k
+Mathieu Coutadeur,AC Ajaccio,Central Midfield,"Mar 20, 1986",37,France,€200k
+Paolo Lebas,AC Ajaccio,Central Midfield,"Apr 20, 2003",20,Portugal,€100k
+Alassane N'Diaye,AC Ajaccio,Right Midfield,"Jun 14, 1991",32,France,€150k
+Yanis Cimignani,AC Ajaccio,Left Midfield,"Jan 22, 2002",21,France,€1.20m
+Michaël Barreto,AC Ajaccio,Attacking Midfield,"Jan 18, 1991",32,France,€400k
+Florian Chabrolle,AC Ajaccio,Attacking Midfield,"Apr 7, 1998",25,France,€200k
+Youcef Belaïli,AC Ajaccio,Left Winger,"Mar 14, 1992",31,Algeria,€1.50m
+Kevin Spadanuda,AC Ajaccio,Left Winger,"Jan 16, 1997",26,Switzerland,€700k
+Cyrille Bayala,AC Ajaccio,Right Winger,"May 24, 1996",27,Burkina Faso,€900k
+Romain Hamouma,AC Ajaccio,Right Winger,"Mar 29, 1987",36,France,€400k
+Riad Nouri,AC Ajaccio,Right Winger,"Jun 7, 1985",38,France,€200k
+Ivane Chegra,AC Ajaccio,Right Winger,"Mar 3, 2004",19,Algeria,€150k
+Ruan Levine,AC Ajaccio,Right Winger,"Jan 19, 1999",24,Brazil,€100k
+Mounaïm El Idrissy,AC Ajaccio,Centre-Forward,"Feb 10, 1999",24,France,€2.00m
+Moussa Djitté,AC Ajaccio,Centre-Forward,"Oct 4, 1999",23,Senegal,€1.50m
+Moussa Soumano,AC Ajaccio,Centre-Forward,"Jul 9, 2005",17,France,€900k
+Bevic Moussiti-Oko,AC Ajaccio,Centre-Forward,"Jan 28, 1995",28,Congo,€500k
+Gaëtan Courtet,AC Ajaccio,Centre-Forward,"Feb 22, 1989",34,France,€400k
+Jean Botué,AC Ajaccio,Centre-Forward,"Aug 7, 2002",20,Burkina Faso,€400k
+Yoann Touzghar,AC Ajaccio,Centre-Forward,"Nov 28, 1986",36,Tunisia,€300k
+Ben Hamed Touré,AC Ajaccio,Centre-Forward,"Aug 21, 2003",19,Cote d'Ivoire,€100k
+Mamadu Silla,AC Ajaccio,Centre-Forward,"Nov 30, 2006",16,Portugal,-

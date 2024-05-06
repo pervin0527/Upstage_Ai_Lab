@@ -1,0 +1,99 @@
+Club,Squad,Avg age,Foreigners,Avg market values,Total Market Values
+Manchester City,34,25.5,21,€33.70m,€1.15bn
+Arsenal FC,42,23.5,25,€23.83m,€1.00bn
+Chelsea FC,43,24.7,28,€23.14m,€994.95m
+Manchester United,48,24.9,28,€17.67m,€848.00m
+Liverpool FC,39,25.1,24,€20.82m,€811.85m
+Tottenham Hotspur,34,25.4,21,€19.09m,€649.10m
+Newcastle United,38,27.8,21,€14.25m,€541.60m
+Brighton & Hove Albion,42,23.6,28,€12.61m,€529.80m
+Aston Villa,43,24.9,24,€11.85m,€509.55m
+Wolverhampton Wanderers,43,25.3,34,€11.57m,€497.65m
+Leicester City,38,25.9,22,€12.92m,€490.80m
+West Ham United,44,24.9,24,€10.59m,€465.75m
+Southampton FC,46,24.2,25,€9.13m,€419.95m
+Everton FC,40,26.3,20,€10.33m,€413.15m
+Nottingham Forest,50,26.1,29,€7.53m,€376.25m
+Brentford FC,36,24.8,26,€10.31m,€371.20m
+Leeds United,47,23.5,31,€7.34m,€345.15m
+Crystal Palace,39,24.9,19,€8.28m,€323.05m
+Fulham FC,47,25.3,34,€6.28m,€295.25m
+AFC Bournemouth,47,24.4,23,€6.11m,€287.20m
+Paris Saint-Germain,37,25.5,24,€24.09m,€891.25m
+Stade Rennais FC,38,23.8,18,€10.20m,€387.75m
+AS Monaco,32,23.8,18,€11.51m,€368.30m
+Olympique Lyon,34,24.9,16,€10.32m,€350.95m
+Olympique Marseille,37,25.2,29,€8.96m,€331.55m
+OGC Nice,41,23.9,26,€7.58m,€310.80m
+LOSC Lille,33,24.8,19,€7.51m,€247.95m
+RC Lens,39,24.9,23,€6.11m,€238.20m
+FC Lorient,42,24.1,17,€4.18m,€175.45m
+Stade Reims,40,23.4,26,€3.98m,€159.05m
+Montpellier HSC,39,24.6,17,€3.66m,€142.90m
+RC Strasbourg Alsace,36,25.6,16,€3.43m,€123.55m
+FC Nantes,37,25.5,18,€3.22m,€119.28m
+FC Toulouse,37,23.5,29,€2.83m,€104.80m
+Stade Brestois 29,32,25.8,14,€2.40m,€76.65m
+ESTAC Troyes,41,24.4,21,€1.86m,€76.30m
+Angers SCO,44,24.6,21,€1.63m,€71.80m
+AJ Auxerre,42,26.0,22,€1.30m,€54.80m
+Clermont Foot 63,33,25.8,21,€1.45m,€48.00m
+AC Ajaccio,41,26.6,25,€659k,€27.00m
+Bayern Munich,35,25.3,22,€27.11m,€948.95m
+Borussia Dortmund,37,24.6,19,€15.34m,€567.55m
+RB Leipzig,29,25.6,19,€16.77m,€486.40m
+Bayer 04 Leverkusen,35,24.2,25,€12.93m,€452.50m
+Eintracht Frankfurt,36,25.0,22,€9.02m,€324.55m
+Borussia Mönchengladbach,35,25.4,16,€6.91m,€241.68m
+VfL Wolfsburg,33,24.7,20,€7.22m,€238.30m
+SC Freiburg,29,26.0,11,€6.93m,€200.95m
+TSG 1899 Hoffenheim,37,25.8,21,€4.83m,€178.80m
+1.FC Union Berlin,36,26.9,17,€4.39m,€157.95m
+VfB Stuttgart,39,23.2,21,€3.87m,€151.05m
+1.FSV Mainz 05,34,24.7,17,€3.99m,€135.80m
+FC Augsburg,42,25.0,24,€3.15m,€132.23m
+1.FC Köln,39,24.9,16,€2.97m,€115.65m
+Hertha BSC,41,25.4,22,€2.29m,€94.00m
+SV Werder Bremen,33,24.7,10,€2.71m,€89.50m
+FC Schalke 04,43,26.4,22,€2.04m,€87.78m
+VfL Bochum,32,27.7,18,€1.68m,€53.70m
+SSC Napoli,31,26.2,20,€21.10m,€654.08m
+Inter Milan,35,26.4,22,€16.22m,€567.55m
+AC Milan,36,25.8,27,€15.14m,€545.10m
+Juventus FC,40,25.4,19,€12.08m,€483.13m
+AS Roma,47,23.7,27,€7.69m,€361.38m
+Atalanta BC,38,24.4,20,€8.90m,€338.38m
+SS Lazio,33,25.9,20,€8.07m,€266.43m
+ACF Fiorentina,38,25.2,18,€6.81m,€258.80m
+US Sassuolo,35,25.0,19,€6.63m,€232.20m
+Torino FC,38,23.8,29,€5.19m,€197.19m
+Udinese Calcio,38,24.9,28,€4.97m,€188.86m
+Bologna FC 1909,38,24.9,22,€4.04m,€153.63m
+AC Monza,41,26.1,12,€3.31m,€135.70m
+FC Empoli,44,24.3,19,€2.85m,€125.53m
+Hellas Verona,46,24.7,26,€2.69m,€123.89m
+US Salernitana 1919,45,26.4,27,€2.63m,€118.35m
+Spezia Calcio,48,24.4,33,€2.41m,€115.81m
+US Lecce,39,24.6,23,€2.70m,€105.20m
+US Cremonese,42,25.6,19,€1.99m,€83.78m
+UC Sampdoria,48,25.9,26,€1.73m,€82.96m
+Real Madrid,36,25.4,20,€25.65m,€923.45m
+FC Barcelona,41,24.0,14,€20.41m,€836.80m
+Atlético de Madrid,40,25.4,22,€13.36m,€534.30m
+Real Sociedad,37,24.5,6,€11.94m,€441.70m
+Villarreal CF,43,25.8,15,€8.45m,€363.50m
+Valencia CF,40,24.0,18,€6.24m,€249.78m
+Real Betis Balompié,38,27.1,13,€6.48m,€246.40m
+Sevilla FC,42,26.3,23,€5.54m,€232.58m
+Athletic Bilbao,31,26.6,1,€7.18m,€222.45m
+CA Osasuna,31,26.7,4,€4.84m,€150.05m
+Girona FC,37,25.1,13,€3.78m,€139.90m
+Celta de Vigo,36,25.2,12,€3.86m,€139.10m
+Getafe CF,34,26.0,14,€3.50m,€118.90m
+RCD Espanyol Barcelona,36,25.5,10,€3.23m,€116.35m
+UD Almería,36,25.4,18,€3.17m,€114.20m
+RCD Mallorca,38,26.3,19,€2.82m,€107.00m
+Rayo Vallecano,29,28.1,10,€3.57m,€103.40m
+Real Valladolid CF,41,26.3,17,€2.21m,€90.75m
+Elche CF,40,26.5,16,€1.69m,€67.50m
+Cádiz CF,47,26.8,17,€1.40m,€65.60m

@@ -1,754 +1,754 @@
-Name,Team,Position,Date of Birth,Age,Nationality,Market Value
-Thibaut Courtois,Real Madrid,Goalkeeper,"May 11, 1992",31,Belgium,€45.00m
-Andriy Lunin,Real Madrid,Goalkeeper,"Feb 11, 1999",24,Ukraine,€5.00m
-Mario de Luis,Real Madrid,Goalkeeper,"May 6, 2002",21,Spain,€500k
-Luis López,Real Madrid,Goalkeeper,"May 8, 2001",22,Spain,€300k
-Lucas Cañizares,Real Madrid,Goalkeeper,"May 10, 2002",21,Spain,€200k
-Diego Piñeiro,Real Madrid,Goalkeeper,"Feb 13, 2004",19,Spain,-
-Fran González,Real Madrid,Goalkeeper,"Jun 24, 2005",18,Spain,-
-Éder Militão,Real Madrid,Centre-Back,"Jan 18, 1998",25,Brazil,€70.00m
-David Alaba,Real Madrid,Centre-Back,"Jun 24, 1992",31,Austria,€40.00m
-Antonio Rüdiger,Real Madrid,Centre-Back,"Mar 3, 1993",30,Germany,€32.00m
-Nacho Fernández,Real Madrid,Centre-Back,"Jan 18, 1990",33,Spain,€6.00m
-Jesús Vallejo,Real Madrid,Centre-Back,"Jan 5, 1997",26,Spain,€2.00m
-Marvel,Real Madrid,Centre-Back,"Jan 7, 2003",20,Spain,€1.00m
-Ferland Mendy,Real Madrid,Left-Back,"Jun 8, 1995",28,France,€25.00m
-Daniel Carvajal,Real Madrid,Right-Back,"Jan 11, 1992",31,Spain,€12.00m
-Lucas Vázquez,Real Madrid,Right-Back,"Jul 1, 1991",31,Spain,€8.00m
-Álvaro Odriozola,Real Madrid,Right-Back,"Dec 14, 1995",27,Spain,€5.00m
-Vinícius Tobias,Real Madrid,Right-Back,"Feb 23, 2004",19,Brazil,€3.00m
-Aurélien Tchouaméni,Real Madrid,Defensive Midfield,"Jan 27, 2000",23,France,€85.00m
-Casemiro,Real Madrid,Defensive Midfield,"Feb 23, 1992",31,Brazil,€40.00m
-Mario Martín,Real Madrid,Defensive Midfield,"Mar 5, 2004",19,Spain,€250k
-Federico Valverde,Real Madrid,Central Midfield,"Jul 22, 1998",24,Uruguay,€100.00m
-Eduardo Camavinga,Real Madrid,Central Midfield,"Nov 10, 2002",20,France,€85.00m
-Toni Kroos,Real Madrid,Central Midfield,"Jan 4, 1990",33,Germany,€15.00m
-Dani Ceballos,Real Madrid,Central Midfield,"Aug 7, 1996",26,Spain,€12.00m
-Luka Modric,Real Madrid,Central Midfield,"Sep 9, 1985",37,Croatia,€10.00m
-Carlos Dotor,Real Madrid,Central Midfield,"Mar 15, 2001",22,Spain,€700k
-Sergio Arribas,Real Madrid,Attacking Midfield,"Sep 30, 2001",21,Spain,€5.00m
-Nico Paz,Real Madrid,Attacking Midfield,"Sep 8, 2004",18,Argentina,€2.00m
-Vinicius Junior,Real Madrid,Left Winger,"Jul 12, 2000",22,Brazil,€150.00m
-Eden Hazard,Real Madrid,Left Winger,"Jan 7, 1991",32,Belgium,€5.00m
-Rodrygo,Real Madrid,Right Winger,"Jan 9, 2001",22,Brazil,€100.00m
-Marco Asensio,Real Madrid,Right Winger,"Jan 21, 1996",27,Spain,€25.00m
-Karim Benzema,Real Madrid,Centre-Forward,"Dec 19, 1987",35,France,€25.00m
-Álvaro Rodríguez,Real Madrid,Centre-Forward,"Jul 14, 2004",18,Uruguay,€6.00m
-Mariano Díaz,Real Madrid,Centre-Forward,"Aug 1, 1993",29,Dominican Republic,€2.50m
-Marc-André ter Stegen,FC Barcelona,Goalkeeper,"Apr 30, 1992",31,Germany,€35.00m
-Iñaki Peña,FC Barcelona,Goalkeeper,"Mar 2, 1999",24,Spain,€4.00m
-Arnau Tenas,FC Barcelona,Goalkeeper,"May 30, 2001",22,Spain,€2.00m
-Ander Astralaga,FC Barcelona,Goalkeeper,"Mar 3, 2004",19,Spain,-
-Ronald Araujo,FC Barcelona,Centre-Back,"Mar 7, 1999",24,Uruguay,€70.00m
-Jules Koundé,FC Barcelona,Centre-Back,"Nov 12, 1998",24,France,€60.00m
-Andreas Christensen,FC Barcelona,Centre-Back,"Apr 10, 1996",27,Denmark,€40.00m
-Eric García,FC Barcelona,Centre-Back,"Jan 9, 2001",22,Spain,€10.00m
-Chadi Riad,FC Barcelona,Centre-Back,"Jun 17, 2003",20,Morocco,€500k
-Gerard Piqué,FC Barcelona,Centre-Back,"Feb 2, 1987",36,Spain,-
-Alejandro Balde,FC Barcelona,Left-Back,"Oct 18, 2003",19,Spain,€50.00m
-Marcos Alonso,FC Barcelona,Left-Back,"Dec 28, 1990",32,Spain,€5.00m
-Jordi Alba,FC Barcelona,Left-Back,"Mar 21, 1989",34,Spain,€5.00m
-Álex Valle,FC Barcelona,Left-Back,"Apr 25, 2004",19,Spain,€500k
-Héctor Bellerín,FC Barcelona,Right-Back,"Mar 19, 1995",28,Spain,€8.00m
-Sergio Busquets,FC Barcelona,Defensive Midfield,"Jul 16, 1988",34,Spain,€5.00m
-Álvaro Sanz,FC Barcelona,Defensive Midfield,"Feb 14, 2001",22,Spain,€700k
-Marc Casadó,FC Barcelona,Defensive Midfield,"Sep 14, 2003",19,Spain,€300k
-Pau Prim,FC Barcelona,Defensive Midfield,"Feb 22, 2006",17,Spain,-
-Pedri,FC Barcelona,Central Midfield,"Nov 25, 2002",20,Spain,€100.00m
-Gavi,FC Barcelona,Central Midfield,"Aug 5, 2004",18,Spain,€90.00m
-Frenkie de Jong,FC Barcelona,Central Midfield,"May 12, 1997",26,Netherlands,€75.00m
-Franck Kessié,FC Barcelona,Central Midfield,"Dec 19, 1996",26,Cote d'Ivoire,€25.00m
-Miralem Pjanic,FC Barcelona,Central Midfield,"Apr 2, 1990",33,Bosnia-Herzegovina,€6.00m
-Sergi Roberto,FC Barcelona,Central Midfield,"Feb 7, 1992",31,Spain,€5.00m
-Pablo Torre,FC Barcelona,Central Midfield,"Apr 3, 2003",20,Spain,€3.00m
-Aleix Garrido,FC Barcelona,Central Midfield,"Feb 22, 2004",19,Spain,€300k
-Unai Hernández,FC Barcelona,Central Midfield,"Dec 14, 2004",18,Spain,-
-Ansu Fati,FC Barcelona,Left Winger,"Oct 31, 2002",20,Spain,€35.00m
-Ferran Torres,FC Barcelona,Left Winger,"Feb 29, 2000",23,Spain,€30.00m
-Estanis Pedrola,FC Barcelona,Left Winger,"Aug 24, 2003",19,Spain,€500k
-Ángel Alarcón,FC Barcelona,Left Winger,"May 15, 2004",19,Spain,-
-Dani Rodríguez,FC Barcelona,Left Winger,"Aug 9, 2005",17,Spain,-
-Ousmane Dembélé,FC Barcelona,Right Winger,"May 15, 1997",26,France,€60.00m
-Raphinha,FC Barcelona,Right Winger,"Dec 14, 1996",26,Brazil,€60.00m
-Ilias Akhomach,FC Barcelona,Right Winger,"Apr 16, 2004",19,Morocco,€3.00m
-Lamine Yamal,FC Barcelona,Right Winger,"Jul 13, 2007",15,Spain,-
-Robert Lewandowski,FC Barcelona,Centre-Forward,"Aug 21, 1988",34,Poland,€30.00m
-Memphis Depay,FC Barcelona,Centre-Forward,"Feb 13, 1994",29,Netherlands,€14.00m
-Pierre-Emerick Aubameyang,FC Barcelona,Centre-Forward,"Jun 18, 1989",34,Gabon,€4.00m
-Marc Guiu,FC Barcelona,Centre-Forward,"Jan 4, 2006",17,Spain,-
-Jan Oblak,Atlético de Madrid,Goalkeeper,"Jan 7, 1993",30,Slovenia,€35.00m
-Ivo Grbic,Atlético de Madrid,Goalkeeper,"Jan 18, 1996",27,Croatia,€3.50m
-Alejandro Iturbe,Atlético de Madrid,Goalkeeper,"Sep 2, 2003",19,Spain,€150k
-Antonio Gomis,Atlético de Madrid,Goalkeeper,"May 20, 2003",20,Spain,€150k
-Sergio Mestre,Atlético de Madrid,Goalkeeper,"Feb 13, 2005",18,Spain,-
-José María Giménez,Atlético de Madrid,Centre-Back,"Jan 20, 1995",28,Uruguay,€35.00m
-Mario Hermoso,Atlético de Madrid,Centre-Back,"Jun 18, 1995",28,Spain,€20.00m
-Stefan Savic,Atlético de Madrid,Centre-Back,"Jan 8, 1991",32,Montenegro,€6.00m
-Axel Witsel,Atlético de Madrid,Centre-Back,"Jan 12, 1989",34,Belgium,€5.00m
-Felipe,Atlético de Madrid,Centre-Back,"May 16, 1989",34,Brazil,€2.00m
-Marco Moreno,Atlético de Madrid,Centre-Back,"Feb 20, 2001",22,Spain,€200k
-Ilias Kostis,Atlético de Madrid,Centre-Back,"Feb 27, 2003",20,Greece,€100k
-Reinildo Mandava,Atlético de Madrid,Left-Back,"Jan 21, 1994",29,Mozambique,€25.00m
-Renan Lodi,Atlético de Madrid,Left-Back,"Apr 8, 1998",25,Brazil,€20.00m
-Sergio Reguilón,Atlético de Madrid,Left-Back,"Dec 16, 1996",26,Spain,€10.00m
-Adrián Corral,Atlético de Madrid,Left-Back,"Jan 5, 2003",20,Spain,€50k
-Nahuel Molina,Atlético de Madrid,Right-Back,"Apr 6, 1998",25,Argentina,€35.00m
-Matt Doherty,Atlético de Madrid,Right-Back,"Jan 16, 1992",31,Ireland,€5.00m
-Sergio Diez,Atlético de Madrid,Right-Back,"Jul 28, 2003",19,Spain,€200k
-Geoffrey Kondogbia,Atlético de Madrid,Defensive Midfield,"Feb 15, 1993",30,Central African Republic,€14.00m
-Rodrigo de Paul,Atlético de Madrid,Central Midfield,"May 24, 1994",29,Argentina,€40.00m
-Marcos Llorente,Atlético de Madrid,Central Midfield,"Jan 30, 1995",28,Spain,€35.00m
-Koke,Atlético de Madrid,Central Midfield,"Jan 8, 1992",31,Spain,€16.00m
-Saúl Ñíguez,Atlético de Madrid,Central Midfield,"Nov 21, 1994",28,Spain,€10.00m
-Pablo Barrios,Atlético de Madrid,Central Midfield,"Jun 15, 2003",20,Spain,€5.00m
-Alberto Moreno,Atlético de Madrid,Central Midfield,"Apr 19, 2002",21,Spain,€150k
-Aitor Gismera,Atlético de Madrid,Central Midfield,"Feb 21, 2004",19,Spain,€150k
-Thomas Lemar,Atlético de Madrid,Attacking Midfield,"Nov 12, 1995",27,France,€22.00m
-Antonio Alemán,Atlético de Madrid,Attacking Midfield,"Jan 27, 2001",22,Spain,-
-João Félix,Atlético de Madrid,Left Winger,"Nov 10, 1999",23,Portugal,€50.00m
-Yannick Carrasco,Atlético de Madrid,Left Winger,"Sep 4, 1993",29,Belgium,€25.00m
-Salim El Jebari,Atlético de Madrid,Left Winger,"Feb 5, 2004",19,Morocco,-
-Ángel Correa,Atlético de Madrid,Right Winger,"Mar 9, 1995",28,Argentina,€30.00m
-Matheus Cunha,Atlético de Madrid,Centre-Forward,"May 27, 1999",24,Brazil,€25.00m
-Antoine Griezmann,Atlético de Madrid,Centre-Forward,"Mar 21, 1991",32,France,€25.00m
-Álvaro Morata,Atlético de Madrid,Centre-Forward,"Oct 23, 1992",30,Spain,€20.00m
-Memphis Depay,Atlético de Madrid,Centre-Forward,"Feb 13, 1994",29,Netherlands,€14.00m
-Carlos Martín,Atlético de Madrid,Centre-Forward,"Apr 22, 2002",21,Spain,€500k
-Diego Bri,Atlético de Madrid,Centre-Forward,"Sep 12, 2002",20,Spain,€150k
-Abde Raihani,Atlético de Madrid,Centre-Forward,"Feb 3, 2004",19,Morocco,-
-Álex Remiro,Real Sociedad,Goalkeeper,"Mar 24, 1995",28,Spain,€25.00m
-Andoni Zubiaurre,Real Sociedad,Goalkeeper,"Dec 4, 1996",26,Spain,€300k
-Unai Marrero,Real Sociedad,Goalkeeper,"Oct 9, 2001",21,Spain,€250k
-Egoitz Arana,Real Sociedad,Goalkeeper,"Feb 19, 2002",21,Spain,€50k
-Robin Le Normand,Real Sociedad,Centre-Back,"Nov 11, 1996",26,Spain,€35.00m
-Igor Zubeldia,Real Sociedad,Centre-Back,"Mar 30, 1997",26,Spain,€15.00m
-Aritz Elustondo,Real Sociedad,Centre-Back,"Mar 28, 1994",29,Spain,€14.00m
-Jon Pacheco,Real Sociedad,Centre-Back,"Jan 8, 2001",22,Spain,€6.00m
-Aritz Arambarri,Real Sociedad,Centre-Back,"Jan 31, 1998",25,Spain,€500k
-Aihen Muñoz,Real Sociedad,Left-Back,"Aug 16, 1997",25,Spain,€6.00m
-Diego Rico,Real Sociedad,Left-Back,"Feb 23, 1993",30,Spain,€3.00m
-Jonathan Gómez,Real Sociedad,Left-Back,"Sep 1, 2003",19,United States,€500k
-Andoni Gorosabel,Real Sociedad,Right-Back,"Aug 4, 1996",26,Spain,€9.00m
-Martín Zubimendi,Real Sociedad,Defensive Midfield,"Feb 2, 1999",24,Spain,€40.00m
-Asier Illarramendi,Real Sociedad,Defensive Midfield,"Mar 8, 1990",33,Spain,€2.00m
-Urko González de Zarate,Real Sociedad,Defensive Midfield,"Mar 20, 2001",22,Spain,€700k
-Mikel Merino,Real Sociedad,Central Midfield,"Jun 22, 1996",27,Spain,€50.00m
-Ander Guevara,Real Sociedad,Central Midfield,"Jul 7, 1997",25,Spain,€2.50m
-Beñat Turrientes,Real Sociedad,Central Midfield,"Jan 31, 2002",21,Spain,€2.00m
-Jon Ander Olasagasti,Real Sociedad,Central Midfield,"Aug 16, 2000",22,Spain,€1.00m
-Brais Méndez,Real Sociedad,Attacking Midfield,"Jan 7, 1997",26,Spain,€25.00m
-David Silva,Real Sociedad,Attacking Midfield,"Jan 8, 1986",37,Spain,€4.00m
-Robert Navarro,Real Sociedad,Attacking Midfield,"Apr 12, 2002",21,Spain,€3.00m
-Pablo Marín,Real Sociedad,Attacking Midfield,"Jul 3, 2003",19,Spain,€1.00m
-Jon Magunazelaia,Real Sociedad,Attacking Midfield,"Jul 13, 2001",21,Spain,€700k
-Mikel Oyarzabal,Real Sociedad,Left Winger,"Apr 21, 1997",26,Spain,€40.00m
-Mohamed-Ali Cho,Real Sociedad,Left Winger,"Jan 19, 2004",19,France,€12.00m
-Ander Barrenetxea,Real Sociedad,Left Winger,"Dec 27, 2001",21,Spain,€6.00m
-Martín Merquelanz,Real Sociedad,Left Winger,"Jun 12, 1995",28,Spain,€800k
-Takefusa Kubo,Real Sociedad,Right Winger,"Jun 4, 2001",22,Japan,€25.00m
-Álex Sola,Real Sociedad,Right Winger,"Jun 9, 1999",24,Spain,€3.00m
-Ander Martín,Real Sociedad,Right Winger,"Nov 16, 2000",22,Spain,€400k
-Alexander Isak,Real Sociedad,Centre-Forward,"Sep 21, 1999",23,Sweden,€70.00m
-Umar Sadiq,Real Sociedad,Centre-Forward,"Feb 2, 1997",26,Nigeria,€18.00m
-Alexander Sørloth,Real Sociedad,Centre-Forward,"Dec 5, 1995",27,Norway,€12.00m
-Jon Karrikaburu,Real Sociedad,Centre-Forward,"Sep 19, 2002",20,Spain,€5.00m
-Carlos Fernández,Real Sociedad,Centre-Forward,"May 22, 1996",27,Spain,€3.00m
-Gerónimo Rulli,Villarreal CF,Goalkeeper,"May 20, 1992",31,Argentina,€10.00m
-Filip Jørgensen,Villarreal CF,Goalkeeper,"Apr 16, 2002",21,Denmark,€1.50m
-Pepe Reina,Villarreal CF,Goalkeeper,"Aug 31, 1982",40,Spain,€700k
-Iker Álvarez,Villarreal CF,Goalkeeper,"Jul 25, 2001",21,Andorra,€500k
-Gianni Cassaro,Villarreal CF,Goalkeeper,"Apr 10, 1992",31,Spain,€100k
-Pau Torres,Villarreal CF,Centre-Back,"Jan 16, 1997",26,Spain,€45.00m
-Jorge Cuenca,Villarreal CF,Centre-Back,"Nov 17, 1999",23,Spain,€5.00m
-Aïssa Mandi,Villarreal CF,Centre-Back,"Oct 22, 1991",31,Algeria,€3.00m
-Mamadou Mbacke,Villarreal CF,Centre-Back,"Nov 21, 2002",20,Senegal,€2.80m
-Raúl Albiol,Villarreal CF,Centre-Back,"Sep 4, 1985",37,Spain,€2.50m
-Adrián de la Fuente,Villarreal CF,Centre-Back,"Feb 26, 1999",24,Spain,€800k
-Pervis Estupiñán,Villarreal CF,Left-Back,"Jan 21, 1998",25,Ecuador,€32.00m
-Alfonso Pedraza,Villarreal CF,Left-Back,"Apr 9, 1996",27,Spain,€15.00m
-Johan Mojica,Villarreal CF,Left-Back,"Aug 21, 1992",30,Colombia,€3.00m
-Alberto Moreno,Villarreal CF,Left-Back,"Jul 5, 1992",30,Spain,€3.00m
-Dani Tasende,Villarreal CF,Left-Back,"Jul 6, 2000",22,Spain,€700k
-Carlos Romero,Villarreal CF,Left-Back,"Oct 29, 2001",21,Spain,€100k
-Juan Foyth,Villarreal CF,Right-Back,"Jan 12, 1998",25,Argentina,€25.00m
-Kiko Femenía,Villarreal CF,Right-Back,"Feb 2, 1991",32,Spain,€2.50m
-Sergio Carreira,Villarreal CF,Right-Back,"Oct 13, 2000",22,Spain,€1.50m
-Marcos Sánchez,Villarreal CF,Right-Back,"Oct 26, 2003",19,Spain,-
-Ramón Terrats,Villarreal CF,Defensive Midfield,"Oct 18, 2000",22,Spain,€4.00m
-Étienne Capoue,Villarreal CF,Defensive Midfield,"Jul 11, 1988",34,France,€3.00m
-Francis Coquelin,Villarreal CF,Defensive Midfield,"May 13, 1991",32,France,€3.00m
-Dani Parejo,Villarreal CF,Central Midfield,"Apr 16, 1989",34,Spain,€6.00m
-Manu Morlanes,Villarreal CF,Central Midfield,"Jan 12, 1999",24,Spain,€4.00m
-Manu Trigueros,Villarreal CF,Central Midfield,"Oct 17, 1991",31,Spain,€4.00m
-Alberto del Moral,Villarreal CF,Central Midfield,"Jul 20, 2000",22,Spain,€1.00m
-Antonio Pacheco,Villarreal CF,Central Midfield,"Jan 3, 2002",21,Spain,€400k
-Rodri Alonso,Villarreal CF,Central Midfield,"Jan 4, 2003",20,Spain,€100k
-Álex Baena,Villarreal CF,Attacking Midfield,"Jul 20, 2001",21,Spain,€20.00m
-Giovani Lo Celso,Villarreal CF,Attacking Midfield,"Apr 9, 1996",27,Argentina,€14.00m
-Carlo García,Villarreal CF,Attacking Midfield,"Feb 12, 2001",22,Spain,€800k
-Arnaut Danjuma,Villarreal CF,Left Winger,"Jan 31, 1997",26,Netherlands,€25.00m
-Diego Collado,Villarreal CF,Left Winger,"Jan 9, 2001",22,Spain,€1.00m
-Yéremy Pino,Villarreal CF,Right Winger,"Oct 20, 2002",20,Spain,€40.00m
-Samuel Chukwueze,Villarreal CF,Right Winger,"May 22, 1999",24,Nigeria,€25.00m
-Haissem Hassan,Villarreal CF,Right Winger,"Feb 8, 2002",21,France,€1.50m
-Nicolas Jackson,Villarreal CF,Centre-Forward,"Jun 20, 2001",22,Senegal,€30.00m
-Gerard Moreno,Villarreal CF,Centre-Forward,"Apr 7, 1992",31,Spain,€20.00m
-Fer Niño,Villarreal CF,Centre-Forward,"Oct 24, 2000",22,Spain,€3.00m
-José Luis Morales,Villarreal CF,Centre-Forward,"Jul 23, 1987",35,Spain,€3.00m
-Jorge Pascual,Villarreal CF,Centre-Forward,"Apr 9, 2003",20,Spain,-
-Giorgi Mamardashvili,Valencia CF,Goalkeeper,"Sep 29, 2000",22,Georgia,€25.00m
-Jaume Doménech,Valencia CF,Goalkeeper,"Nov 5, 1990",32,Spain,€1.00m
-Iago Herrerín,Valencia CF,Goalkeeper,"Jan 25, 1988",35,Spain,€500k
-Emilio Bernad,Valencia CF,Goalkeeper,"Sep 22, 1999",23,Spain,€300k
-Cristian Rivero,Valencia CF,Goalkeeper,"Mar 21, 1998",25,Spain,€200k
-Charlie Pérez,Valencia CF,Goalkeeper,"Jun 7, 2002",21,Spain,€25k
-Mouctar Diakhaby,Valencia CF,Centre-Back,"Dec 19, 1996",26,Guinea,€6.00m
-Cenk Özkacar,Valencia CF,Centre-Back,"Oct 6, 2000",22,Türkiye,€5.00m
-Eray Cömert,Valencia CF,Centre-Back,"Feb 4, 1998",25,Switzerland,€3.50m
-Gabriel Paulista,Valencia CF,Centre-Back,"Nov 26, 1990",32,Brazil,€2.50m
-Cristhian Mosquera,Valencia CF,Centre-Back,"Jun 27, 2004",19,Spain,€1.00m
-Rubén Iranzo,Valencia CF,Centre-Back,"Mar 14, 2003",20,Spain,€200k
-José Gayà,Valencia CF,Left-Back,"May 25, 1995",28,Spain,€30.00m
-Jesús Vázquez,Valencia CF,Left-Back,"Jan 2, 2003",20,Spain,€3.00m
-Toni Lato,Valencia CF,Left-Back,"Nov 21, 1997",25,Spain,€2.50m
-Thierry Correia,Valencia CF,Right-Back,"Mar 9, 1999",24,Portugal,€8.00m
-Dimitri Foulquier,Valencia CF,Right-Back,"Mar 23, 1993",30,Guadeloupe,€2.50m
-Hugo Guillamón,Valencia CF,Defensive Midfield,"Jan 31, 2000",23,Spain,€14.00m
-Uroš Račić,Valencia CF,Defensive Midfield,"Mar 17, 1998",25,Serbia,€6.50m
-Carlos Soler,Valencia CF,Central Midfield,"Jan 2, 1997",26,Spain,€25.00m
-André Almeida,Valencia CF,Central Midfield,"May 30, 2000",23,Portugal,€20.00m
-Yunus Musah,Valencia CF,Central Midfield,"Nov 29, 2002",20,United States,€18.00m
-Nico González,Valencia CF,Central Midfield,"Jan 3, 2002",21,Spain,€10.00m
-Ilaix Moriba,Valencia CF,Central Midfield,"Jan 19, 2003",20,Guinea,€4.00m
-Javi Guerra,Valencia CF,Central Midfield,"May 13, 2003",20,Spain,€2.00m
-Koba Koindredi,Valencia CF,Central Midfield,"Oct 27, 2001",21,France,€1.00m
-Tiago Ribeiro,Valencia CF,Central Midfield,"Mar 14, 2002",21,Portugal,€200k
-Yellu Santiago,Valencia CF,Central Midfield,"May 25, 2004",19,Spain,€100k
-Samuel Lino,Valencia CF,Left Winger,"Dec 23, 1999",23,Brazil,€16.00m
-Justin Kluivert,Valencia CF,Left Winger,"May 5, 1999",24,Netherlands,€14.00m
-Diego López,Valencia CF,Left Winger,"May 13, 2002",21,Spain,€1.50m
-Samu Castillejo,Valencia CF,Right Winger,"Jan 18, 1995",28,Spain,€6.00m
-Fran Pérez,Valencia CF,Right Winger,"Sep 9, 2002",20,Spain,€500k
-Manu Vallejo,Valencia CF,Second Striker,"Feb 14, 1997",26,Spain,€2.40m
-Maxi Gómez,Valencia CF,Centre-Forward,"Aug 14, 1996",26,Uruguay,€7.00m
-Hugo Duro,Valencia CF,Centre-Forward,"Nov 10, 1999",23,Spain,€4.00m
-Edinson Cavani,Valencia CF,Centre-Forward,"Feb 14, 1987",36,Uruguay,€3.00m
-Marcos André,Valencia CF,Centre-Forward,"Oct 20, 1996",26,Brazil,€2.50m
-Alberto Marí,Valencia CF,Centre-Forward,"Jul 11, 2001",21,Spain,€800k
-Mario Dominguez,Valencia CF,Centre-Forward,"Feb 10, 2004",19,Spain,€25k
-Rui Silva,Real Betis Balompié,Goalkeeper,"Feb 7, 1994",29,Portugal,€15.00m
-Dani Martín,Real Betis Balompié,Goalkeeper,"Jul 8, 1998",24,Spain,€1.50m
-Claudio Bravo,Real Betis Balompié,Goalkeeper,"Apr 13, 1983",40,Chile,€1.00m
-Fran Vieites,Real Betis Balompié,Goalkeeper,"May 7, 1999",24,Spain,€200k
-Germán García,Real Betis Balompié,Goalkeeper,"Feb 1, 2004",19,Spain,-
-Luiz Felipe,Real Betis Balompié,Centre-Back,"Mar 22, 1997",26,Italy,€15.00m
-Edgar González,Real Betis Balompié,Centre-Back,"Apr 1, 1997",26,Spain,€9.00m
-Germán Pezzella,Real Betis Balompié,Centre-Back,"Jun 27, 1991",32,Argentina,€5.00m
-Víctor Ruiz,Real Betis Balompié,Centre-Back,"Jan 25, 1989",34,Spain,€1.20m
-Félix Garreta,Real Betis Balompié,Centre-Back,"Apr 21, 2004",19,Spain,€200k
-Ricardo Visus,Real Betis Balompié,Centre-Back,"Apr 24, 2001",22,Spain,€150k
-Álex Moreno,Real Betis Balompié,Left-Back,"Jun 8, 1993",30,Spain,€15.00m
-Abner,Real Betis Balompié,Left-Back,"May 27, 2000",23,Brazil,€7.00m
-Juan Miranda,Real Betis Balompié,Left-Back,"Jan 19, 2000",23,Spain,€7.00m
-Youssouf Sabaly,Real Betis Balompié,Right-Back,"Mar 5, 1993",30,Senegal,€5.00m
-Martín Montoya,Real Betis Balompié,Right-Back,"Apr 14, 1991",32,Spain,€1.20m
-Fran Delgado,Real Betis Balompié,Right-Back,"Jul 11, 2001",21,Spain,€350k
-Guido Rodríguez,Real Betis Balompié,Defensive Midfield,"Apr 12, 1994",29,Argentina,€28.00m
-William Carvalho,Real Betis Balompié,Defensive Midfield,"Apr 7, 1992",31,Portugal,€14.00m
-Paul Akouokou,Real Betis Balompié,Defensive Midfield,"Dec 20, 1997",25,Cote d'Ivoire,€3.50m
-Andrés Guardado,Real Betis Balompié,Central Midfield,"Sep 28, 1986",36,Mexico,€1.50m
-Víctor Camarasa,Real Betis Balompié,Central Midfield,"May 28, 1994",29,Spain,€800k
-Quique Fernández,Real Betis Balompié,Central Midfield,"Sep 16, 2003",19,Spain,€150k
-Nabil Fekir,Real Betis Balompié,Attacking Midfield,"Jul 18, 1993",29,France,€20.00m
-Sergio Canales,Real Betis Balompié,Attacking Midfield,"Feb 16, 1991",32,Spain,€15.00m
-Rodri Sánchez,Real Betis Balompié,Attacking Midfield,"May 16, 2000",23,Spain,€8.00m
-Dani Pérez,Real Betis Balompié,Attacking Midfield,"Jul 26, 2005",17,Spain,€300k
-Juanmi,Real Betis Balompié,Left Winger,"May 20, 1993",30,Spain,€12.00m
-Ayoze Pérez,Real Betis Balompié,Left Winger,"Jul 29, 1993",29,Spain,€6.00m
-José Alonso Lara,Real Betis Balompié,Left Winger,"Mar 7, 2000",23,Spain,€350k
-Luiz Henrique,Real Betis Balompié,Right Winger,"Jan 2, 2001",22,Brazil,€15.00m
-Aitor Ruibal,Real Betis Balompié,Right Winger,"Mar 22, 1996",27,Spain,€5.00m
-Rober González,Real Betis Balompié,Right Winger,"Jan 8, 2001",22,Spain,€2.00m
-Joaquín,Real Betis Balompié,Right Winger,"Jul 21, 1981",41,Spain,€1.50m
-Juan Cruz,Real Betis Balompié,Right Winger,"Apr 25, 2000",23,Spain,€1.50m
-Borja Iglesias,Real Betis Balompié,Centre-Forward,"Jan 17, 1993",30,Spain,€20.00m
-Willian José,Real Betis Balompié,Centre-Forward,"Nov 23, 1991",31,Brazil,€6.00m
-Loren Morón,Real Betis Balompié,Centre-Forward,"Dec 30, 1993",29,Spain,€2.00m
-Bono,Sevilla FC,Goalkeeper,"Apr 5, 1991",32,Morocco,€12.00m
-Marko Dmitrovic,Sevilla FC,Goalkeeper,"Jan 24, 1992",31,Serbia,€4.00m
-Alberto Flores,Sevilla FC,Goalkeeper,"Nov 10, 2003",19,Spain,€200k
-Matías Árbol,Sevilla FC,Goalkeeper,"Sep 12, 2002",20,Spain,€50k
-Marius Herzig,Sevilla FC,Goalkeeper,"Dec 17, 1999",23,Germany,-
-Loïc Badé,Sevilla FC,Centre-Back,"Apr 11, 2000",23,France,€12.00m
-Tanguy Nianzou,Sevilla FC,Centre-Back,"Jun 7, 2002",21,France,€7.50m
-Marcão,Sevilla FC,Centre-Back,"Jun 5, 1996",27,Brazil,€7.50m
-Karim Rekik,Sevilla FC,Centre-Back,"Dec 2, 1994",28,Netherlands,€4.00m
-Nemanja Gudelj,Sevilla FC,Centre-Back,"Nov 16, 1991",31,Serbia,€4.00m
-Kike Salas,Sevilla FC,Centre-Back,"Apr 23, 2002",21,Spain,€1.00m
-Marcos Acuña,Sevilla FC,Left-Back,"Oct 28, 1991",31,Argentina,€10.00m
-Alex Telles,Sevilla FC,Left-Back,"Dec 15, 1992",30,Brazil,€7.50m
-Pablo Pérez,Sevilla FC,Left-Back,"Aug 18, 2001",21,Spain,€200k
-Diego Hormigo,Sevilla FC,Left-Back,"Apr 16, 2003",20,Spain,€100k
-Gonzalo Montiel,Sevilla FC,Right-Back,"Jan 1, 1997",26,Argentina,€12.00m
-José Ángel Carmona,Sevilla FC,Right-Back,"Jan 29, 2002",21,Spain,€4.00m
-Jesús Navas,Sevilla FC,Right-Back,"Nov 21, 1985",37,Spain,€3.00m
-Pape Gueye,Sevilla FC,Defensive Midfield,"Jan 24, 1999",24,Senegal,€10.00m
-Fernando,Sevilla FC,Defensive Midfield,"Jul 25, 1987",35,Brazil,€3.00m
-Pedro Ortiz,Sevilla FC,Defensive Midfield,"Aug 19, 2000",22,Spain,€200k
-Joan Jordán,Sevilla FC,Central Midfield,"Jul 6, 1994",28,Spain,€9.00m
-Óliver Torres,Sevilla FC,Central Midfield,"Nov 10, 1994",28,Spain,€9.00m
-Ivan Rakitic,Sevilla FC,Central Midfield,"Mar 10, 1988",35,Croatia,€4.00m
-Thomas Delaney,Sevilla FC,Central Midfield,"Sep 3, 1991",31,Denmark,€2.00m
-Manu Bueno,Sevilla FC,Central Midfield,"Jul 27, 2004",18,Spain,€300k
-Xavi Sintes,Sevilla FC,Central Midfield,"Aug 5, 2001",21,Spain,€150k
-Isco,Sevilla FC,Attacking Midfield,"Apr 21, 1992",31,Spain,€5.00m
-Carlos Álvarez,Sevilla FC,Attacking Midfield,"Aug 6, 2003",19,Spain,€400k
-Nacho Quintana,Sevilla FC,Attacking Midfield,"Feb 23, 2001",22,Spain,€200k
-Lucas Ocampos,Sevilla FC,Left Winger,"Jul 11, 1994",28,Argentina,€12.00m
-Papu Gómez,Sevilla FC,Left Winger,"Feb 15, 1988",35,Argentina,€3.00m
-Bryan Gil,Sevilla FC,Right Winger,"Feb 11, 2001",22,Spain,€15.00m
-Erik Lamela,Sevilla FC,Right Winger,"Mar 4, 1992",31,Argentina,€9.00m
-Jesús Corona,Sevilla FC,Right Winger,"Jan 6, 1993",30,Mexico,€8.00m
-Adnan Januzaj,Sevilla FC,Right Winger,"Feb 5, 1995",28,Belgium,€6.00m
-Suso,Sevilla FC,Right Winger,"Nov 19, 1993",29,Spain,€6.00m
-Munir El Haddadi,Sevilla FC,Right Winger,"Sep 1, 1995",27,Morocco,€3.50m
-Youssef En-Nesyri,Sevilla FC,Centre-Forward,"Jun 1, 1997",26,Morocco,€20.00m
-Rafa Mir,Sevilla FC,Centre-Forward,"Jun 18, 1997",26,Spain,€10.00m
-Kasper Dolberg,Sevilla FC,Centre-Forward,"Oct 6, 1997",25,Denmark,€7.00m
-Iván Romero,Sevilla FC,Centre-Forward,"Apr 10, 2001",22,Spain,€800k
-Unai Simón,Athletic Bilbao,Goalkeeper,"Jun 11, 1997",26,Spain,€25.00m
-Julen Agirrezabala,Athletic Bilbao,Goalkeeper,"Dec 26, 2000",22,Spain,€5.00m
-Ibon Ispizua,Athletic Bilbao,Goalkeeper,"Apr 8, 2003",20,Spain,€100k
-Ander Iru,Athletic Bilbao,Goalkeeper,"Aug 22, 1998",24,Spain,€100k
-Yeray Álvarez,Athletic Bilbao,Centre-Back,"Jan 24, 1995",28,Spain,€15.00m
-Dani Vivian,Athletic Bilbao,Centre-Back,"Jul 5, 1999",23,Spain,€14.00m
-Iñigo Martínez,Athletic Bilbao,Centre-Back,"May 17, 1991",32,Spain,€10.00m
-Aitor Paredes,Athletic Bilbao,Centre-Back,"Apr 29, 2000",23,Spain,€1.00m
-Yuri Berchiche,Athletic Bilbao,Left-Back,"Feb 10, 1990",33,Spain,€2.00m
-Mikel Balenziaga,Athletic Bilbao,Left-Back,"Feb 29, 1988",35,Spain,€500k
-Iñigo Lekue,Athletic Bilbao,Right-Back,"May 4, 1993",30,Spain,€3.00m
-Óscar de Marcos,Athletic Bilbao,Right-Back,"Apr 14, 1989",34,Spain,€1.80m
-Ander Capa,Athletic Bilbao,Right-Back,"Feb 8, 1992",31,Spain,€1.80m
-Mikel Vesga,Athletic Bilbao,Defensive Midfield,"Apr 8, 1993",30,Spain,€6.00m
-Peru Nolaskoain,Athletic Bilbao,Defensive Midfield,"Oct 25, 1998",24,Spain,€1.00m
-Unai Vencedor,Athletic Bilbao,Central Midfield,"Nov 15, 2000",22,Spain,€9.00m
-Oier Zarraga,Athletic Bilbao,Central Midfield,"Jan 4, 1999",24,Spain,€3.00m
-Ander Herrera,Athletic Bilbao,Central Midfield,"Aug 14, 1989",33,Spain,€2.50m
-Dani García,Athletic Bilbao,Central Midfield,"May 24, 1990",33,Spain,€2.00m
-Junior Bita,Athletic Bilbao,Central Midfield,"Jun 8, 2005",18,Spain,€50k
-Oihan Sancet,Athletic Bilbao,Attacking Midfield,"Apr 25, 2000",23,Spain,€30.00m
-Iker Muniain,Athletic Bilbao,Attacking Midfield,"Dec 19, 1992",30,Spain,€9.00m
-Unai Gómez,Athletic Bilbao,Attacking Midfield,"May 25, 2003",20,Spain,€100k
-Nico Williams,Athletic Bilbao,Left Winger,"Jul 12, 2002",20,Spain,€30.00m
-Álex Berenguer,Athletic Bilbao,Left Winger,"Jul 4, 1995",27,Spain,€15.00m
-Jon Morcillo,Athletic Bilbao,Left Winger,"Sep 15, 1998",24,Spain,€3.00m
-Adu Ares,Athletic Bilbao,Left Winger,"Oct 12, 2001",21,Spain,€500k
-Iñaki Williams,Athletic Bilbao,Right Winger,"Jun 15, 1994",29,Ghana,€25.00m
-Asier Villalibre,Athletic Bilbao,Centre-Forward,"Sep 30, 1997",25,Spain,€2.50m
-Raúl García,Athletic Bilbao,Centre-Forward,"Jul 11, 1986",36,Spain,€2.50m
-Gorka Guruzeta,Athletic Bilbao,Centre-Forward,"Sep 12, 1996",26,Spain,€2.00m
-Sergio Herrera,CA Osasuna,Goalkeeper,"Jun 5, 1993",30,Spain,€8.00m
-Aitor Fernández,CA Osasuna,Goalkeeper,"May 3, 1991",32,Spain,€3.00m
-Juan Pérez,CA Osasuna,Goalkeeper,"Jul 15, 1996",26,Spain,€600k
-Darío Ramos,CA Osasuna,Goalkeeper,"Oct 19, 1999",23,Spain,€200k
-Pablo Valencia,CA Osasuna,Goalkeeper,"Mar 16, 2001",22,Spain,€200k
-Yoel Ramírez,CA Osasuna,Goalkeeper,"Feb 5, 2002",21,Spain,€50k
-David García,CA Osasuna,Centre-Back,"Feb 14, 1994",29,Spain,€20.00m
-Unai García,CA Osasuna,Centre-Back,"Feb 3, 1992",31,Spain,€2.50m
-Aridane Hernández,CA Osasuna,Centre-Back,"Mar 23, 1989",34,Spain,€1.00m
-Jorge Herrando,CA Osasuna,Centre-Back,"Feb 28, 2001",22,Spain,€400k
-Manu Sánchez,CA Osasuna,Left-Back,"Aug 24, 2000",22,Spain,€10.00m
-Juan Cruz,CA Osasuna,Left-Back,"Jul 28, 1992",30,Spain,€2.50m
-Nacho Vidal,CA Osasuna,Right-Back,"Jan 24, 1995",28,Spain,€5.00m
-Rubén Peña,CA Osasuna,Right-Back,"Jul 18, 1991",31,Spain,€2.50m
-Diego Moreno,CA Osasuna,Right-Back,"Jun 21, 2001",22,Spain,€800k
-Lucas Torró,CA Osasuna,Defensive Midfield,"Jul 19, 1994",28,Spain,€8.00m
-Iker Muñoz,CA Osasuna,Defensive Midfield,"Sep 5, 2002",20,Spain,€500k
-Jon Moncayola,CA Osasuna,Central Midfield,"May 13, 1998",25,Spain,€12.00m
-Darko Brasanac,CA Osasuna,Central Midfield,"Feb 12, 1992",31,Serbia,€2.00m
-Pablo Ibáñez,CA Osasuna,Central Midfield,"Sep 20, 1998",24,Spain,€1.50m
-Aimar Oroz,CA Osasuna,Attacking Midfield,"Nov 27, 2001",21,Spain,€15.00m
-Roberto Torres,CA Osasuna,Attacking Midfield,"Mar 7, 1989",34,Spain,€1.20m
-Javi Martínez,CA Osasuna,Attacking Midfield,"Dec 22, 1999",23,Spain,€1.00m
-Abde Ezzalzouli,CA Osasuna,Left Winger,"Dec 17, 2001",21,Morocco,€15.00m
-Moi Gómez,CA Osasuna,Left Winger,"Jun 23, 1994",29,Spain,€10.00m
-Rubén García,CA Osasuna,Left Winger,"Jul 14, 1993",29,Spain,€6.00m
-Kike Barja,CA Osasuna,Right Winger,"Apr 1, 1997",26,Spain,€4.00m
-Iker Benito,CA Osasuna,Right Winger,"Aug 10, 2002",20,Spain,€300k
-Chimy Ávila,CA Osasuna,Centre-Forward,"Feb 6, 1994",29,Argentina,€9.00m
-Ante Budimir,CA Osasuna,Centre-Forward,"Jul 22, 1991",31,Croatia,€6.00m
-Kike García,CA Osasuna,Centre-Forward,"Nov 25, 1989",33,Spain,€1.80m
-Paulo Gazzaniga,Girona FC,Goalkeeper,"Jan 2, 1992",31,Argentina,€3.00m
-Juan Carlos,Girona FC,Goalkeeper,"Jan 20, 1988",35,Spain,€300k
-Toni Fuidias,Girona FC,Goalkeeper,"Apr 15, 2001",22,Spain,€300k
-Lluc Matas,Girona FC,Goalkeeper,"Jul 5, 2003",19,Spain,-
-Santiago Bueno,Girona FC,Centre-Back,"Nov 9, 1998",24,Uruguay,€8.00m
-David López,Girona FC,Centre-Back,"Oct 9, 1989",33,Spain,€2.00m
-Alexander Callens,Girona FC,Centre-Back,"May 4, 1992",31,Peru,€1.80m
-Bernardo Espinosa,Girona FC,Centre-Back,"Jul 11, 1989",33,Colombia,€1.50m
-Juanpe,Girona FC,Centre-Back,"Apr 30, 1991",32,Spain,€1.50m
-Eric Monjonell,Girona FC,Centre-Back,"Dec 6, 2001",21,Spain,€300k
-Biel Farrés,Girona FC,Centre-Back,"May 1, 2002",21,Spain,-
-Miguel Gutiérrez,Girona FC,Left-Back,"Jul 27, 2001",21,Spain,€10.00m
-Javi Hernández,Girona FC,Left-Back,"May 2, 1998",25,Spain,€2.50m
-Arnau Martínez,Girona FC,Right-Back,"Apr 25, 2003",20,Spain,€15.00m
-Yan Couto,Girona FC,Right-Back,"Jun 3, 2002",21,Brazil,€4.00m
-Oriol Romeu,Girona FC,Defensive Midfield,"Sep 24, 1991",31,Spain,€5.00m
-Ramón Terrats,Girona FC,Defensive Midfield,"Oct 18, 2000",22,Spain,€4.00m
-Ibrahima Kébé,Girona FC,Defensive Midfield,"Aug 2, 2000",22,Mali,€500k
-Aleix García,Girona FC,Central Midfield,"Jun 28, 1997",26,Spain,€10.00m
-Yangel Herrera,Girona FC,Central Midfield,"Jan 7, 1998",25,Venezuela,€5.00m
-Álex Sala,Girona FC,Central Midfield,"Apr 9, 2001",22,Spain,€200k
-Iván Martín,Girona FC,Attacking Midfield,"Feb 14, 1999",24,Spain,€3.00m
-Reinier,Girona FC,Attacking Midfield,"Jan 19, 2002",21,Brazil,€2.00m
-Borja García,Girona FC,Attacking Midfield,"Nov 2, 1990",32,Spain,€1.00m
-Samu Saiz,Girona FC,Attacking Midfield,"Jan 22, 1991",32,Spain,€900k
-Ricard Artero,Girona FC,Attacking Midfield,"Feb 5, 2003",20,Spain,-
-Rodrigo Riquelme,Girona FC,Left Winger,"Apr 2, 2000",23,Spain,€12.00m
-Toni Villa,Girona FC,Left Winger,"Jan 7, 1995",28,Spain,€2.50m
-Óscar Ureña,Girona FC,Left Winger,"May 31, 2003",20,Dominican Republic,€400k
-Joel Roca,Girona FC,Left Winger,"Jun 7, 2005",18,Spain,-
-Viktor Tsygankov,Girona FC,Right Winger,"Nov 15, 1997",25,Ukraine,€22.00m
-Valery Fernández,Girona FC,Right Winger,"Nov 23, 1999",23,Spain,€1.50m
-Manu Vallejo,Girona FC,Second Striker,"Feb 14, 1997",26,Spain,€2.40m
-Taty Castellanos,Girona FC,Centre-Forward,"Oct 3, 1998",24,Argentina,€15.00m
-Cristhian Stuani,Girona FC,Centre-Forward,"Oct 12, 1986",36,Uruguay,€2.00m
-Pau Víctor,Girona FC,Centre-Forward,"Nov 26, 2001",21,Spain,€300k
-Dawda Camara,Girona FC,Centre-Forward,"Nov 4, 2002",20,Mauritania,-
-Agustín Marchesín,Celta de Vigo,Goalkeeper,"Mar 16, 1988",35,Argentina,€2.00m
-Iván Villar,Celta de Vigo,Goalkeeper,"Jul 9, 1997",25,Spain,€2.00m
-Christian Joel,Celta de Vigo,Goalkeeper,"Jul 9, 1999",23,Cuba,€500k
-Diego Alves,Celta de Vigo,Goalkeeper,"Jun 24, 1985",38,Brazil,€300k
-Coke Carrillo,Celta de Vigo,Goalkeeper,"Jan 7, 2002",21,Spain,€100k
-Ruly García,Celta de Vigo,Goalkeeper,"Jan 27, 2000",23,Spain,€50k
-Joseph Aidoo,Celta de Vigo,Centre-Back,"Sep 29, 1995",27,Ghana,€8.00m
-Unai Núñez,Celta de Vigo,Centre-Back,"Jan 30, 1997",26,Spain,€6.00m
-Carlos Domínguez,Celta de Vigo,Centre-Back,"Feb 11, 2001",22,Spain,€800k
-Sergio Barcia,Celta de Vigo,Centre-Back,"Dec 31, 2000",22,Spain,€300k
-Javi Domínguez,Celta de Vigo,Centre-Back,"Mar 26, 2001",22,Spain,€200k
-Javi Galán,Celta de Vigo,Left-Back,"Nov 19, 1994",28,Spain,€12.00m
-Fernando Medrano,Celta de Vigo,Left-Back,"Mar 26, 2000",23,Spain,€200k
-Tincho,Celta de Vigo,Left-Back,"Mar 25, 2003",20,Spain,€150k
-Hugo Mallo,Celta de Vigo,Right-Back,"Jun 22, 1991",32,Spain,€3.00m
-Óscar Mingueza,Celta de Vigo,Right-Back,"May 13, 1999",24,Spain,€2.50m
-Kevin Vázquez,Celta de Vigo,Right-Back,"Mar 23, 1993",30,Spain,€1.00m
-Renato Tapia,Celta de Vigo,Defensive Midfield,"Jul 28, 1995",27,Peru,€6.00m
-Gabri Veiga,Celta de Vigo,Central Midfield,"May 27, 2002",21,Spain,€30.00m
-Fran Beltrán,Celta de Vigo,Central Midfield,"Feb 3, 1999",24,Spain,€15.00m
-Luca de la Torre,Celta de Vigo,Central Midfield,"May 23, 1998",25,United States,€3.00m
-Hugo Sotelo,Celta de Vigo,Central Midfield,"Dec 19, 2003",19,Spain,€150k
-Óscar Rodríguez,Celta de Vigo,Attacking Midfield,"Jun 28, 1998",25,Spain,€8.00m
-Williot Swedberg,Celta de Vigo,Attacking Midfield,"Feb 1, 2004",19,Sweden,€3.00m
-Miguel Baeza,Celta de Vigo,Attacking Midfield,"Mar 27, 2000",23,Spain,€900k
-Franco Cervi,Celta de Vigo,Left Winger,"May 26, 1994",29,Argentina,€3.00m
-Hugo Álvarez,Celta de Vigo,Left Winger,"Jul 2, 2003",19,Spain,€200k
-Carles Pérez,Celta de Vigo,Right Winger,"Feb 16, 1998",25,Spain,€5.00m
-Augusto Solari,Celta de Vigo,Right Winger,"Jan 3, 1992",31,Argentina,€1.50m
-Miguel Rodríguez,Celta de Vigo,Right Winger,"Apr 29, 2003",20,Spain,€1.00m
-Jørgen Strand Larsen,Celta de Vigo,Centre-Forward,"Feb 6, 2000",23,Norway,€11.00m
-Iago Aspas,Celta de Vigo,Centre-Forward,"Aug 1, 1987",35,Spain,€6.00m
-Haris Seferovic,Celta de Vigo,Centre-Forward,"Feb 22, 1992",31,Switzerland,€4.00m
-Gonçalo Paciência,Celta de Vigo,Centre-Forward,"Aug 1, 1994",28,Portugal,€2.00m
-Pablo Durán,Celta de Vigo,Centre-Forward,"May 25, 2001",22,Spain,€250k
-Fran López,Celta de Vigo,Centre-Forward,"Jan 24, 2002",21,Spain,-
-David Soria,Getafe CF,Goalkeeper,"Apr 4, 1993",30,Spain,€8.00m
-Diego Conde,Getafe CF,Goalkeeper,"Oct 28, 1998",24,Spain,€300k
-Kiko Casilla,Getafe CF,Goalkeeper,"Oct 2, 1986",36,Spain,€300k
-Vicente Bellmunt,Getafe CF,Goalkeeper,"Jan 28, 2000",23,Spain,-
-Djené,Getafe CF,Centre-Back,"Dec 31, 1991",31,Togo,€5.00m
-Gastón Álvarez,Getafe CF,Centre-Back,"Mar 24, 2000",23,Uruguay,€5.00m
-Domingos Duarte,Getafe CF,Centre-Back,"Mar 10, 1995",28,Portugal,€5.00m
-Omar Alderete,Getafe CF,Centre-Back,"Dec 26, 1996",26,Paraguay,€4.00m
-Stefan Mitrovic,Getafe CF,Centre-Back,"May 22, 1990",33,Serbia,€2.00m
-Álex Revuelta,Getafe CF,Centre-Back,"Apr 16, 2000",23,Spain,-
-Pablo Ramirez,Getafe CF,Centre-Back,"Mar 18, 2003",20,Spain,-
-Fabrizio Angileri,Getafe CF,Left-Back,"Mar 15, 1994",29,Argentina,€2.00m
-Jordan Amavi,Getafe CF,Left-Back,"Mar 9, 1994",29,France,€2.00m
-Koffi,Getafe CF,Left-Back,"Nov 20, 2001",21,Ghana,€200k
-Gorka Rivera,Getafe CF,Left-Back,"Aug 1, 2004",18,Spain,-
-Juan Iglesias,Getafe CF,Right-Back,"Jul 3, 1998",24,Spain,€3.50m
-Damián Suárez,Getafe CF,Right-Back,"Apr 27, 1988",35,Uruguay,€1.00m
-Alex Rodríguez,Getafe CF,Right-Back,"Mar 21, 2002",21,Spain,€50k
-Ángel Algobia,Getafe CF,Defensive Midfield,"Jun 23, 1999",24,Spain,€1.50m
-Carles Aleñá,Getafe CF,Central Midfield,"Jan 5, 1998",25,Spain,€9.00m
-Mauro Arambarri,Getafe CF,Central Midfield,"Sep 30, 1995",27,Uruguay,€9.00m
-Nemanja Maksimovic,Getafe CF,Central Midfield,"Jan 26, 1995",28,Serbia,€6.00m
-Luis Milla,Getafe CF,Central Midfield,"Oct 7, 1994",28,Spain,€4.00m
-Gonzalo Villar,Getafe CF,Central Midfield,"Mar 23, 1998",25,Spain,€2.80m
-Jaime Seoane,Getafe CF,Central Midfield,"Jan 22, 1997",26,Spain,€2.50m
-John Joe Patrick Finn,Getafe CF,Central Midfield,"Sep 24, 2003",19,Ireland,€500k
-Santi García,Getafe CF,Attacking Midfield,"Aug 29, 2001",21,Spain,€50k
-Moi Parra,Getafe CF,Left Winger,"Jun 24, 2002",21,Spain,-
-Portu,Getafe CF,Right Winger,"May 21, 1992",31,Spain,€3.50m
-Munir El Haddadi,Getafe CF,Right Winger,"Sep 1, 1995",27,Morocco,€3.50m
-Enes Ünal,Getafe CF,Centre-Forward,"May 10, 1997",26,Türkiye,€25.00m
-Borja Mayoral,Getafe CF,Centre-Forward,"Apr 5, 1997",26,Spain,€9.00m
-Juanmi Latasa,Getafe CF,Centre-Forward,"Mar 23, 2001",22,Spain,€3.00m
-Jaime Mata,Getafe CF,Centre-Forward,"Oct 24, 1988",34,Spain,€1.20m
-Benjamin Lecomte,RCD Espanyol Barcelona,Goalkeeper,"Apr 26, 1991",32,France,€4.00m
-Fernando Pacheco,RCD Espanyol Barcelona,Goalkeeper,"May 18, 1992",31,Spain,€2.50m
-Álvaro Fernández,RCD Espanyol Barcelona,Goalkeeper,"Apr 13, 1998",25,Spain,€2.50m
-Joan García,RCD Espanyol Barcelona,Goalkeeper,"May 4, 2001",22,Spain,€400k
-Ángel Fortuño,RCD Espanyol Barcelona,Goalkeeper,"Oct 5, 2001",21,Spain,€300k
-César Montes,RCD Espanyol Barcelona,Centre-Back,"Feb 24, 1997",26,Mexico,€8.00m
-Leandro Cabrera,RCD Espanyol Barcelona,Centre-Back,"Jun 17, 1991",32,Uruguay,€2.50m
-Fernando Calero,RCD Espanyol Barcelona,Centre-Back,"Sep 14, 1995",27,Spain,€2.00m
-Sergi Gómez,RCD Espanyol Barcelona,Centre-Back,"Mar 28, 1992",31,Spain,€2.00m
-Simo Keddari,RCD Espanyol Barcelona,Centre-Back,"Feb 3, 2005",18,Spain,€500k
-Brian Oliván,RCD Espanyol Barcelona,Left-Back,"Apr 1, 1994",29,Spain,€6.00m
-Adrià Pedrosa,RCD Espanyol Barcelona,Left-Back,"May 13, 1998",25,Spain,€5.00m
-Ronaël Pierre-Gabriel,RCD Espanyol Barcelona,Right-Back,"Jun 13, 1998",25,France,€3.50m
-Óscar Gil,RCD Espanyol Barcelona,Right-Back,"Apr 26, 1998",25,Spain,€3.00m
-Rubén Sánchez,RCD Espanyol Barcelona,Right-Back,"Feb 4, 2001",22,Spain,€700k
-Omar El Hilali,RCD Espanyol Barcelona,Right-Back,"Sep 12, 2003",19,Morocco,€500k
-Vini Souza,RCD Espanyol Barcelona,Defensive Midfield,"Jun 17, 1999",24,Brazil,€6.00m
-Sergi Darder,RCD Espanyol Barcelona,Central Midfield,"Dec 22, 1993",29,Spain,€16.00m
-Edu Expósito,RCD Espanyol Barcelona,Central Midfield,"Aug 1, 1996",26,Spain,€4.00m
-Keidi Bare,RCD Espanyol Barcelona,Central Midfield,"Aug 28, 1997",25,Albania,€3.00m
-José Gragera,RCD Espanyol Barcelona,Central Midfield,"May 14, 2000",23,Spain,€2.50m
-Pol Lozano,RCD Espanyol Barcelona,Central Midfield,"Oct 6, 1999",23,Spain,€1.50m
-Roger Martínez,RCD Espanyol Barcelona,Central Midfield,"Apr 5, 2004",19,Spain,€400k
-Dani Villahermosa,RCD Espanyol Barcelona,Central Midfield,"Jan 2, 2001",22,Spain,€250k
-Nico Melamed,RCD Espanyol Barcelona,Attacking Midfield,"Apr 11, 2001",22,Spain,€6.00m
-Denis Suárez,RCD Espanyol Barcelona,Attacking Midfield,"Jan 6, 1994",29,Spain,€5.00m
-Javi Puado,RCD Espanyol Barcelona,Left Winger,"May 25, 1998",25,Spain,€8.00m
-José Carlos Lazo,RCD Espanyol Barcelona,Left Winger,"Feb 16, 1996",27,Spain,€2.50m
-Luca Koleosho,RCD Espanyol Barcelona,Left Winger,"Sep 15, 2004",18,Italy,€1.00m
-Kenneth Soler,RCD Espanyol Barcelona,Left Winger,"Feb 16, 2001",22,Spain,€100k
-Adrián Embarba,RCD Espanyol Barcelona,Right Winger,"May 7, 1992",31,Spain,€2.50m
-Aleix Vidal,RCD Espanyol Barcelona,Right Winger,"Aug 21, 1989",33,Spain,€1.50m
-Joselu,RCD Espanyol Barcelona,Centre-Forward,"Mar 27, 1990",33,Spain,€6.00m
-Martin Braithwaite,RCD Espanyol Barcelona,Centre-Forward,"Jun 5, 1991",32,Denmark,€5.00m
-Dani Gómez,RCD Espanyol Barcelona,Centre-Forward,"Jul 30, 1998",24,Spain,€1.50m
-Nabil Touaizi,RCD Espanyol Barcelona,Centre-Forward,"Feb 1, 2001",22,Morocco,€200k
-Fernando Pacheco,UD Almería,Goalkeeper,"May 18, 1992",31,Spain,€2.50m
-Fernando Martínez,UD Almería,Goalkeeper,"Jun 10, 1990",33,Spain,€2.00m
-Diego Mariño,UD Almería,Goalkeeper,"May 9, 1990",33,Spain,€300k
-Diego Fuoli,UD Almería,Goalkeeper,"Oct 20, 1997",25,Spain,€200k
-Srdjan Babic,UD Almería,Centre-Back,"Apr 22, 1996",27,Serbia,€3.50m
-Kaiky,UD Almería,Centre-Back,"Jan 12, 2004",19,Brazil,€3.00m
-Rodrigo Ely,UD Almería,Centre-Back,"Nov 3, 1993",29,Brazil,€3.00m
-Chumi,UD Almería,Centre-Back,"Mar 2, 1999",24,Spain,€2.00m
-Sergio Akieme,UD Almería,Left-Back,"Dec 16, 1997",25,Spain,€7.50m
-Álex Centelles,UD Almería,Left-Back,"Aug 30, 1999",23,Spain,€1.50m
-Alejandro Pozo,UD Almería,Right-Back,"Feb 22, 1999",24,Spain,€3.00m
-Houboulang Mendes,UD Almería,Right-Back,"May 4, 1998",25,Guinea-Bissau,€2.00m
-Samú Costa,UD Almería,Defensive Midfield,"Nov 27, 2000",22,Portugal,€5.00m
-Iñigo Eguaras,UD Almería,Defensive Midfield,"Mar 7, 1992",31,Spain,€1.20m
-Lucas Robertone,UD Almería,Central Midfield,"Mar 18, 1997",26,Argentina,€7.00m
-Gonzalo Melero,UD Almería,Central Midfield,"Jan 2, 1994",29,Spain,€4.00m
-Arnau Puigmal,UD Almería,Central Midfield,"Jan 10, 2001",22,Spain,€2.00m
-Gui Guedes,UD Almería,Central Midfield,"Apr 17, 2002",21,Portugal,€1.20m
-César de la Hoz,UD Almería,Central Midfield,"Mar 30, 1992",31,Spain,€1.20m
-Martin Svidersky,UD Almería,Central Midfield,"Oct 4, 2002",20,Slovakia,€500k
-Marcos Peña,UD Almería,Central Midfield,"Jan 22, 2005",18,Spain,-
-Largie Ramazani,UD Almería,Left Winger,"Feb 27, 2001",22,Belgium,€6.00m
-Lázaro,UD Almería,Left Winger,"Mar 12, 2002",21,Brazil,€6.00m
-José Carlos Lazo,UD Almería,Left Winger,"Feb 16, 1996",27,Spain,€2.50m
-Adrián Embarba,UD Almería,Right Winger,"May 7, 1992",31,Spain,€2.50m
-Francisco Portillo,UD Almería,Right Winger,"Jun 13, 1990",33,Spain,€1.50m
-Curro Sánchez,UD Almería,Right Winger,"Jan 3, 1996",27,Spain,€1.00m
-Arvin Appiah,UD Almería,Right Winger,"Jan 5, 2001",22,England,€500k
-Carlos Rojas,UD Almería,Right Winger,"Apr 18, 2002",21,Spain,-
-Umar Sadiq,UD Almería,Centre-Forward,"Feb 2, 1997",26,Nigeria,€18.00m
-El Bilal Touré,UD Almería,Centre-Forward,"Oct 3, 2001",21,Mali,€12.00m
-Luis Suárez,UD Almería,Centre-Forward,"Dec 2, 1997",25,Colombia,€8.00m
-Léo Baptistão,UD Almería,Centre-Forward,"Aug 26, 1992",30,Brazil,€1.80m
-Marko Milovanovic,UD Almería,Centre-Forward,"Aug 4, 2003",19,Serbia,€1.00m
-Dyego Sousa,UD Almería,Centre-Forward,"Sep 14, 1989",33,Portugal,€800k
-Marciano Sanca,UD Almería,Centre-Forward,"Mar 3, 2004",19,Guinea-Bissau,-
-Predrag Rajkovic,RCD Mallorca,Goalkeeper,"Oct 31, 1995",27,Serbia,€10.00m
-Dominik Greif,RCD Mallorca,Goalkeeper,"Apr 6, 1997",26,Slovakia,€1.50m
-Leo Román,RCD Mallorca,Goalkeeper,"Jul 6, 2000",22,Spain,€300k
-Pere García,RCD Mallorca,Goalkeeper,"Mar 22, 2002",21,Spain,€25k
-Martin Valjent,RCD Mallorca,Centre-Back,"Dec 11, 1995",27,Slovakia,€4.50m
-Antonio Raíllo,RCD Mallorca,Centre-Back,"Oct 8, 1991",31,Spain,€4.00m
-José Copete,RCD Mallorca,Centre-Back,"Oct 10, 1999",23,Spain,€3.50m
-Dennis Hadzikadunic,RCD Mallorca,Centre-Back,"Jul 9, 1998",24,Bosnia-Herzegovina,€3.00m
-Matija Nastasic,RCD Mallorca,Centre-Back,"Mar 28, 1993",30,Serbia,€1.50m
-Franco Russo,RCD Mallorca,Centre-Back,"Oct 25, 1994",28,Argentina,€800k
-Benjamín Garay,RCD Mallorca,Centre-Back,"Apr 19, 2000",23,Argentina,€100k
-Josep Gayá,RCD Mallorca,Centre-Back,"Jul 7, 2000",22,Spain,€100k
-Ludwig Augustinsson,RCD Mallorca,Left-Back,"Apr 21, 1994",29,Sweden,€2.50m
-Braian Cufré,RCD Mallorca,Left-Back,"Dec 15, 1996",26,Argentina,€1.20m
-Jaume Costa,RCD Mallorca,Left-Back,"Mar 18, 1988",35,Spain,€1.20m
-Marcos Fernández,RCD Mallorca,Left-Back,"Jul 17, 2003",19,Spain,€25k
-Pablo Maffeo,RCD Mallorca,Right-Back,"Jul 12, 1997",25,Argentina,€8.00m
-Giovanni González,RCD Mallorca,Right-Back,"Sep 20, 1994",28,Uruguay,€2.00m
-Miguelito,RCD Mallorca,Right-Back,"Jan 12, 2001",22,Spain,€50k
-Rodrigo Battaglia,RCD Mallorca,Defensive Midfield,"Jul 12, 1991",31,Argentina,€1.50m
-Manu Morlanes,RCD Mallorca,Central Midfield,"Jan 12, 1999",24,Spain,€4.00m
-Iñigo Ruiz de Galarreta,RCD Mallorca,Central Midfield,"Aug 6, 1993",29,Spain,€3.00m
-Iddrisu Baba,RCD Mallorca,Central Midfield,"Jan 22, 1996",27,Ghana,€3.00m
-Antonio Sánchez,RCD Mallorca,Central Midfield,"Apr 22, 1997",26,Spain,€2.50m
-Clément Grenier,RCD Mallorca,Central Midfield,"Jan 7, 1991",32,France,€800k
-Miquel Llabrés,RCD Mallorca,Central Midfield,"Jan 28, 2000",23,Spain,€100k
-Luis Montiel,RCD Mallorca,Central Midfield,"Jan 19, 2004",19,Spain,€25k
-Rubén Quintanilla,RCD Mallorca,Central Midfield,"Apr 3, 2002",21,Spain,€25k
-Kang-in Lee,RCD Mallorca,Attacking Midfield,"Feb 19, 2001",22,"Korea, South",€22.00m
-Dani Rodríguez,RCD Mallorca,Attacking Midfield,"Jun 6, 1988",35,Spain,€1.20m
-Amath Ndiaye,RCD Mallorca,Left Winger,"Jul 16, 1996",26,Senegal,€2.00m
-Lago Júnior,RCD Mallorca,Left Winger,"Dec 31, 1990",32,Cote d'Ivoire,€900k
-Javi Llabrés,RCD Mallorca,Left Winger,"Sep 11, 2002",20,Spain,€300k
-Tòfol Montiel,RCD Mallorca,Right Winger,"Apr 11, 2000",23,Spain,€150k
-Vedat Muriqi,RCD Mallorca,Centre-Forward,"Apr 24, 1994",29,Kosovo,€15.00m
-Tino Kadewere,RCD Mallorca,Centre-Forward,"Jan 5, 1996",27,Zimbabwe,€4.00m
-Abdón Prats,RCD Mallorca,Centre-Forward,"Dec 7, 1992",30,Spain,€1.20m
-Ángel Rodríguez,RCD Mallorca,Centre-Forward,"Apr 26, 1987",36,Spain,€1.00m
-Stole Dimitrievski,Rayo Vallecano,Goalkeeper,"Dec 25, 1993",29,North Macedonia,€4.00m
-Miguel Ángel Morro,Rayo Vallecano,Goalkeeper,"Sep 11, 2000",22,Spain,€600k
-Diego López,Rayo Vallecano,Goalkeeper,"Nov 3, 1981",41,Spain,€300k
-Alejandro Catena,Rayo Vallecano,Centre-Back,"Oct 28, 1994",28,Spain,€8.00m
-Florian Lejeune,Rayo Vallecano,Centre-Back,"May 20, 1991",32,France,€4.00m
-Abdul Mumin,Rayo Vallecano,Centre-Back,"Jun 6, 1998",25,Ghana,€1.50m
-Esteban Saveljich,Rayo Vallecano,Centre-Back,"May 20, 1991",32,Montenegro,€500k
-Fran García,Rayo Vallecano,Left-Back,"Aug 14, 1999",23,Spain,€12.00m
-Pep Chavarría,Rayo Vallecano,Left-Back,"Apr 10, 1998",25,Spain,€1.50m
-Iván Balliu,Rayo Vallecano,Right-Back,"Jan 1, 1992",31,Albania,€4.00m
-Mario Hernández,Rayo Vallecano,Right-Back,"Jan 25, 1999",24,Spain,€600k
-Mario Suárez,Rayo Vallecano,Defensive Midfield,"Feb 24, 1987",36,Spain,€300k
-Santi Comesaña,Rayo Vallecano,Central Midfield,"Oct 5, 1996",26,Spain,€7.50m
-Óscar Valentín,Rayo Vallecano,Central Midfield,"Aug 20, 1994",28,Spain,€5.00m
-Unai López,Rayo Vallecano,Central Midfield,"Oct 30, 1995",27,Spain,€3.50m
-Pathé Ciss,Rayo Vallecano,Central Midfield,"Mar 16, 1994",29,Senegal,€3.00m
-Diego Méndez,Rayo Vallecano,Central Midfield,"Aug 29, 2003",19,Spain,-
-Óscar Trejo,Rayo Vallecano,Attacking Midfield,"Apr 26, 1988",35,Argentina,€3.00m
-Randy Nteka,Rayo Vallecano,Attacking Midfield,"Dec 6, 1997",25,France,€1.80m
-José Pozo,Rayo Vallecano,Attacking Midfield,"Mar 15, 1996",27,Spain,€1.00m
-Pablo Muñoz,Rayo Vallecano,Attacking Midfield,"Sep 4, 2003",19,Spain,-
-Álvaro García,Rayo Vallecano,Left Winger,"Oct 27, 1992",30,Spain,€6.00m
-Bebé,Rayo Vallecano,Left Winger,"Jul 12, 1990",32,Cape Verde,€800k
-Isi Palazón,Rayo Vallecano,Right Winger,"Dec 27, 1994",28,Spain,€12.00m
-Salvi Sánchez,Rayo Vallecano,Right Winger,"Mar 30, 1991",32,Spain,€1.50m
-Sergio Camello,Rayo Vallecano,Centre-Forward,"Feb 10, 2001",22,Spain,€10.00m
-Raúl de Tomás,Rayo Vallecano,Centre-Forward,"Oct 17, 1994",28,Spain,€8.00m
-Radamel Falcao,Rayo Vallecano,Centre-Forward,"Feb 10, 1986",37,Colombia,€2.00m
-Andrés Martín,Rayo Vallecano,Centre-Forward,"Jul 11, 1999",23,Spain,€1.00m
-Jordi Masip,Real Valladolid CF,Goalkeeper,"Jan 3, 1989",34,Spain,€1.00m
-Sergio Asenjo,Real Valladolid CF,Goalkeeper,"Jun 28, 1989",34,Spain,€1.00m
-Álvaro Aceves,Real Valladolid CF,Goalkeeper,"Jul 26, 2003",19,Spain,€200k
-Javi Sánchez,Real Valladolid CF,Centre-Back,"Mar 14, 1997",26,Spain,€3.00m
-Joaquín Fernández,Real Valladolid CF,Centre-Back,"May 31, 1996",27,Spain,€3.00m
-Jawad El Yamiq,Real Valladolid CF,Centre-Back,"Feb 29, 1992",31,Morocco,€2.00m
-Zouhair Feddal,Real Valladolid CF,Centre-Back,"Dec 23, 1989",33,Morocco,€1.30m
-Víctor Rofino,Real Valladolid CF,Centre-Back,"Jul 28, 2002",20,Spain,€100k
-David Torres,Real Valladolid CF,Centre-Back,"Mar 5, 2003",20,Spain,€50k
-Lucas Olaza,Real Valladolid CF,Left-Back,"Jul 21, 1994",28,Uruguay,€2.50m
-Sergio Escudero,Real Valladolid CF,Left-Back,"Sep 2, 1989",33,Spain,€1.50m
-Diego Moreno,Real Valladolid CF,Left-Back,"Jan 18, 2002",21,Spain,€100k
-Iván Fresneda,Real Valladolid CF,Right-Back,"Sep 28, 2004",18,Spain,€15.00m
-Luis Pérez,Real Valladolid CF,Right-Back,"Feb 4, 1995",28,Spain,€1.50m
-Lucas Rosa,Real Valladolid CF,Right-Back,"Apr 3, 2000",23,Brazil,€1.00m
-Martin Hongla,Real Valladolid CF,Defensive Midfield,"Mar 16, 1998",25,Cameroon,€3.00m
-Mickaël Malsa,Real Valladolid CF,Defensive Midfield,"Oct 12, 1995",27,Martinique,€1.50m
-Monchu,Real Valladolid CF,Central Midfield,"Sep 13, 1999",23,Spain,€5.00m
-Kike Pérez,Real Valladolid CF,Central Midfield,"Feb 14, 1997",26,Spain,€4.50m
-Álvaro Aguado,Real Valladolid CF,Central Midfield,"May 1, 1996",27,Spain,€3.00m
-Roque Mesa,Real Valladolid CF,Central Midfield,"Jun 7, 1989",34,Spain,€2.50m
-Anuar,Real Valladolid CF,Central Midfield,"Jan 15, 1995",28,Morocco,€900k
-Mario Maroto,Real Valladolid CF,Central Midfield,"Nov 28, 2003",19,Spain,€150k
-Alberto Quintana,Real Valladolid CF,Central Midfield,"Oct 5, 2001",21,Spain,€100k
-Selim Amallah,Real Valladolid CF,Attacking Midfield,"Nov 15, 1996",26,Morocco,€3.00m
-Darwin Machís,Real Valladolid CF,Left Winger,"Feb 7, 1993",30,Venezuela,€3.00m
-Toni Villa,Real Valladolid CF,Left Winger,"Jan 7, 1995",28,Spain,€2.50m
-Kenedy,Real Valladolid CF,Left Winger,"Feb 8, 1996",27,Brazil,€1.50m
-Tunde Akinsola,Real Valladolid CF,Left Winger,"Mar 10, 2003",20,Nigeria,€50k
-Gonzalo Plata,Real Valladolid CF,Right Winger,"Nov 1, 2000",22,Ecuador,€5.00m
-Óscar Plano,Real Valladolid CF,Right Winger,"Feb 11, 1991",32,Spain,€3.00m
-Iván Sánchez,Real Valladolid CF,Right Winger,"Sep 23, 1992",30,Spain,€800k
-Manuel Pozo,Real Valladolid CF,Right Winger,"Dec 12, 2001",21,Spain,€300k
-Cyle Larin,Real Valladolid CF,Centre-Forward,"Apr 17, 1995",28,Canada,€8.00m
-Shon Weissman,Real Valladolid CF,Centre-Forward,"Feb 14, 1996",27,Israel,€4.00m
-Sergi Guardiola,Real Valladolid CF,Centre-Forward,"May 29, 1991",32,Spain,€2.00m
-Sergio León,Real Valladolid CF,Centre-Forward,"Jan 6, 1989",34,Spain,€2.00m
-Juanjo Narváez,Real Valladolid CF,Centre-Forward,"Feb 12, 1995",28,Colombia,€800k
-Sekou Gassama,Real Valladolid CF,Centre-Forward,"May 6, 1995",28,Senegal,€300k
-Iván Cédric,Real Valladolid CF,Centre-Forward,"Dec 22, 2001",21,Cameroon,€300k
-Roberto Arroyo,Real Valladolid CF,Centre-Forward,"Aug 25, 2003",19,Spain,€300k
-Edgar Badia,Elche CF,Goalkeeper,"Feb 12, 1992",31,Spain,€3.00m
-Axel Werner,Elche CF,Goalkeeper,"Feb 28, 1996",27,Argentina,€800k
-Juanpe Navarro,Elche CF,Goalkeeper,"Aug 21, 1998",24,Spain,-
-Jesús López,Elche CF,Goalkeeper,"Aug 1, 2002",20,Spain,-
-Luismi Quirant,Elche CF,Goalkeeper,"Jan 1, 2004",19,Spain,-
-Lisandro Magallán,Elche CF,Centre-Back,"Sep 27, 1993",29,Argentina,€1.80m
-Enzo Roco,Elche CF,Centre-Back,"Aug 16, 1992",30,Chile,€1.50m
-Diego González,Elche CF,Centre-Back,"Jan 28, 1995",28,Spain,€1.50m
-Pedro Bigas,Elche CF,Centre-Back,"May 15, 1990",33,Spain,€1.00m
-John Donald,Elche CF,Centre-Back,"Sep 25, 2000",22,Spain,€1.00m
-Federico Fernández,Elche CF,Centre-Back,"Feb 21, 1989",34,Argentina,€700k
-Gonzalo Verdú,Elche CF,Centre-Back,"Oct 21, 1988",34,Spain,€700k
-Javi Pamies,Elche CF,Centre-Back,"Mar 17, 2003",20,Spain,-
-Manuel Cocca,Elche CF,Centre-Back,"Nov 8, 2002",20,Argentina,-
-Johan Mojica,Elche CF,Left-Back,"Aug 21, 1992",30,Colombia,€3.00m
-Lautaro Blanco,Elche CF,Left-Back,"Feb 19, 1999",24,Argentina,€2.80m
-Nicolás Fernández Mercau,Elche CF,Left-Back,"Jan 11, 2000",23,Argentina,€2.00m
-Carlos Clerc,Elche CF,Left-Back,"Feb 21, 1992",31,Spain,€1.50m
-José Ángel Carmona,Elche CF,Right-Back,"Jan 29, 2002",21,Spain,€4.00m
-Pol Lirola,Elche CF,Right-Back,"Aug 13, 1997",25,Spain,€2.00m
-Helibelton Palacios,Elche CF,Right-Back,"Jun 11, 1993",30,Colombia,€1.20m
-Carles Marco,Elche CF,Right-Back,"Apr 5, 2000",23,Spain,-
-Gerard Gumbau,Elche CF,Defensive Midfield,"Dec 18, 1994",28,Spain,€3.50m
-Omar Mascarell,Elche CF,Defensive Midfield,"Feb 2, 1993",30,Spain,€3.00m
-Raúl Guti,Elche CF,Central Midfield,"Dec 30, 1996",26,Spain,€2.50m
-Domingos Quina,Elche CF,Central Midfield,"Nov 18, 1999",23,Portugal,€1.80m
-Pape Cheikh,Elche CF,Central Midfield,"Aug 8, 1997",25,Senegal,€900k
-Branislav Knezevic,Elche CF,Central Midfield,"Jul 21, 2002",20,Serbia,-
-Alejandro Alfaro,Elche CF,Central Midfield,"Jun 15, 2002",21,Spain,-
-Rodrigo Mendoza,Elche CF,Central Midfield,"Mar 15, 2005",18,Spain,-
-Randy Nteka,Elche CF,Attacking Midfield,"Dec 6, 1997",25,France,€1.80m
-Javier Pastore,Elche CF,Attacking Midfield,"Jun 20, 1989",34,Argentina,€500k
-Pere Milla,Elche CF,Left Winger,"Sep 23, 1992",30,Spain,€3.00m
-Tete Morente,Elche CF,Left Winger,"Dec 4, 1996",26,Spain,€2.50m
-Fidel,Elche CF,Left Winger,"Oct 27, 1989",33,Spain,€1.00m
-Álex Collado,Elche CF,Right Winger,"Apr 22, 1999",24,Spain,€3.00m
-Josan,Elche CF,Right Winger,"Dec 3, 1989",33,Spain,€1.00m
-Lucas Boyé,Elche CF,Centre-Forward,"Feb 28, 1996",27,Argentina,€10.00m
-Ezequiel Ponce,Elche CF,Centre-Forward,"Mar 29, 1997",26,Argentina,€2.50m
-Roger Martí,Elche CF,Centre-Forward,"Jan 3, 1991",32,Spain,€2.00m
-Conan Ledesma,Cádiz CF,Goalkeeper,"Feb 13, 1993",30,Argentina,€8.00m
-David Gil,Cádiz CF,Goalkeeper,"Jan 11, 1994",29,Spain,€700k
-Victor Aznar,Cádiz CF,Goalkeeper,"Oct 17, 2002",20,Brazil,€50k
-Nando Almodóvar,Cádiz CF,Goalkeeper,"Nov 3, 2003",19,Spain,€50k
-Fali,Cádiz CF,Centre-Back,"Aug 12, 1993",29,Spain,€2.50m
-Víctor Chust,Cádiz CF,Centre-Back,"Mar 5, 2000",23,Spain,€2.50m
-Jorge Meré,Cádiz CF,Centre-Back,"Apr 17, 1997",26,Spain,€1.20m
-Luis Hernández,Cádiz CF,Centre-Back,"Apr 14, 1989",34,Spain,€1.00m
-Momo Mbaye,Cádiz CF,Centre-Back,"Jun 28, 1998",25,Senegal,€700k
-Juan Cala,Cádiz CF,Centre-Back,"Nov 26, 1989",33,Spain,€600k
-Carlos García,Cádiz CF,Centre-Back,"Jul 7, 2000",22,Spain,€200k
-Lautaro Spatz,Cádiz CF,Centre-Back,"Oct 19, 2001",21,Argentina,€150k
-Alfonso Espino,Cádiz CF,Left-Back,"Jan 5, 1992",31,Uruguay,€3.50m
-Santiago Arzamendia,Cádiz CF,Left-Back,"May 5, 1998",25,Paraguay,€1.20m
-Joseba Zaldua,Cádiz CF,Right-Back,"Jun 24, 1992",31,Spain,€2.50m
-Iza Carcelén,Cádiz CF,Right-Back,"Apr 23, 1993",30,Spain,€1.50m
-Raúl Parra,Cádiz CF,Right-Back,"Nov 26, 1999",23,Spain,€300k
-Kikín,Cádiz CF,Right-Back,"Jan 20, 2003",20,Spain,€50k
-Antonio Blanco,Cádiz CF,Defensive Midfield,"Jul 23, 2000",22,Spain,€2.50m
-Tomás Alarcón,Cádiz CF,Defensive Midfield,"Jan 19, 1999",24,Chile,€1.50m
-José Mari,Cádiz CF,Defensive Midfield,"Dec 6, 1987",35,Spain,€400k
-Jon Ander Garrido,Cádiz CF,Defensive Midfield,"Oct 9, 1989",33,Spain,€300k
-Rubén Alcaraz,Cádiz CF,Central Midfield,"May 1, 1991",32,Spain,€2.00m
-Gonzalo Escalante,Cádiz CF,Central Midfield,"Mar 27, 1993",30,Argentina,€2.00m
-Fede San Emeterio,Cádiz CF,Central Midfield,"Mar 16, 1997",26,Spain,€2.00m
-Youba Diarra,Cádiz CF,Central Midfield,"Mar 24, 1998",25,Mali,€900k
-Álvaro Bastida,Cádiz CF,Central Midfield,"May 12, 2004",19,Spain,€600k
-Curro Muñoz,Cádiz CF,Central Midfield,"Jan 7, 2003",20,Spain,€50k
-Moussa Diakité,Cádiz CF,Central Midfield,"Nov 4, 2003",19,Mali,€50k
-Álex Fernández,Cádiz CF,Attacking Midfield,"Oct 15, 1992",30,Spain,€4.00m
-Brian Ocampo,Cádiz CF,Left Winger,"Jun 25, 1999",24,Uruguay,€2.00m
-Awer Mabil,Cádiz CF,Left Winger,"Sep 15, 1995",27,Australia,€1.20m
-Alberto Perea,Cádiz CF,Left Winger,"Dec 19, 1990",32,Spain,€1.00m
-José Antonio de la Rosa,Cádiz CF,Left Winger,"Jul 28, 2004",18,Spain,€300k
-Théo Bongonda,Cádiz CF,Right Winger,"Nov 20, 1995",27,DR Congo,€4.00m
-Iván Alejo,Cádiz CF,Right Winger,"Feb 10, 1995",28,Spain,€1.20m
-Mamady Diarra,Cádiz CF,Right Winger,"Jun 26, 2000",23,Mali,€300k
-Choco Lozano,Cádiz CF,Centre-Forward,"Apr 25, 1993",30,Honduras,€2.50m
-Rubén Sobrino,Cádiz CF,Centre-Forward,"Jun 1, 1992",31,Spain,€2.00m
-Roger Martí,Cádiz CF,Centre-Forward,"Jan 3, 1991",32,Spain,€2.00m
-Sergi Guardiola,Cádiz CF,Centre-Forward,"May 29, 1991",32,Spain,€2.00m
-Chris Ramos,Cádiz CF,Centre-Forward,"Jan 18, 1997",26,Spain,€1.50m
-Álvaro Negredo,Cádiz CF,Centre-Forward,"Aug 20, 1985",37,Spain,€1.00m
-Lucas Pérez,Cádiz CF,Centre-Forward,"Sep 10, 1988",34,Spain,€800k
-Álvaro Giménez,Cádiz CF,Centre-Forward,"May 19, 1991",32,Spain,€600k
-Francisco Mwepu,Cádiz CF,Centre-Forward,"Feb 29, 2000",23,Zambia,€150k
-Etta Eyong,Cádiz CF,Centre-Forward,"Oct 14, 2003",19,Cameroon,€50k
+,Name,Team,Position,Date of Birth,Age,Nationality,Market Value
+0,Thibaut Courtois,Real Madrid,Goalkeeper,"May 11, 1992",31,Belgium,€45.00m
+1,Andriy Lunin,Real Madrid,Goalkeeper,"Feb 11, 1999",24,Ukraine,€5.00m
+2,Mario de Luis,Real Madrid,Goalkeeper,"May 6, 2002",21,Spain,€500k
+3,Luis López,Real Madrid,Goalkeeper,"May 8, 2001",22,Spain,€300k
+4,Lucas Cañizares,Real Madrid,Goalkeeper,"May 10, 2002",21,Spain,€200k
+5,Diego Piñeiro,Real Madrid,Goalkeeper,"Feb 13, 2004",19,Spain,-
+6,Fran González,Real Madrid,Goalkeeper,"Jun 24, 2005",18,Spain,-
+7,Éder Militão,Real Madrid,Centre-Back,"Jan 18, 1998",25,Brazil,€70.00m
+8,David Alaba,Real Madrid,Centre-Back,"Jun 24, 1992",31,Austria,€40.00m
+9,Antonio Rüdiger,Real Madrid,Centre-Back,"Mar 3, 1993",30,Germany,€32.00m
+10,Nacho Fernández,Real Madrid,Centre-Back,"Jan 18, 1990",33,Spain,€6.00m
+11,Jesús Vallejo,Real Madrid,Centre-Back,"Jan 5, 1997",26,Spain,€2.00m
+12,Marvel,Real Madrid,Centre-Back,"Jan 7, 2003",20,Spain,€1.00m
+13,Ferland Mendy,Real Madrid,Left-Back,"Jun 8, 1995",28,France,€25.00m
+14,Daniel Carvajal,Real Madrid,Right-Back,"Jan 11, 1992",31,Spain,€12.00m
+15,Lucas Vázquez,Real Madrid,Right-Back,"Jul 1, 1991",31,Spain,€8.00m
+16,Álvaro Odriozola,Real Madrid,Right-Back,"Dec 14, 1995",27,Spain,€5.00m
+17,Vinícius Tobias,Real Madrid,Right-Back,"Feb 23, 2004",19,Brazil,€3.00m
+18,Aurélien Tchouaméni,Real Madrid,Defensive Midfield,"Jan 27, 2000",23,France,€85.00m
+19,Casemiro,Real Madrid,Defensive Midfield,"Feb 23, 1992",31,Brazil,€40.00m
+20,Mario Martín,Real Madrid,Defensive Midfield,"Mar 5, 2004",19,Spain,€250k
+21,Federico Valverde,Real Madrid,Central Midfield,"Jul 22, 1998",24,Uruguay,€100.00m
+22,Eduardo Camavinga,Real Madrid,Central Midfield,"Nov 10, 2002",20,France,€85.00m
+23,Toni Kroos,Real Madrid,Central Midfield,"Jan 4, 1990",33,Germany,€15.00m
+24,Dani Ceballos,Real Madrid,Central Midfield,"Aug 7, 1996",26,Spain,€12.00m
+25,Luka Modric,Real Madrid,Central Midfield,"Sep 9, 1985",37,Croatia,€10.00m
+26,Carlos Dotor,Real Madrid,Central Midfield,"Mar 15, 2001",22,Spain,€700k
+27,Sergio Arribas,Real Madrid,Attacking Midfield,"Sep 30, 2001",21,Spain,€5.00m
+28,Nico Paz,Real Madrid,Attacking Midfield,"Sep 8, 2004",18,Argentina,€2.00m
+29,Vinicius Junior,Real Madrid,Left Winger,"Jul 12, 2000",22,Brazil,€150.00m
+30,Eden Hazard,Real Madrid,Left Winger,"Jan 7, 1991",32,Belgium,€5.00m
+31,Rodrygo,Real Madrid,Right Winger,"Jan 9, 2001",22,Brazil,€100.00m
+32,Marco Asensio,Real Madrid,Right Winger,"Jan 21, 1996",27,Spain,€25.00m
+33,Karim Benzema,Real Madrid,Centre-Forward,"Dec 19, 1987",35,France,€25.00m
+34,Álvaro Rodríguez,Real Madrid,Centre-Forward,"Jul 14, 2004",18,Uruguay,€6.00m
+35,Mariano Díaz,Real Madrid,Centre-Forward,"Aug 1, 1993",29,Dominican Republic,€2.50m
+36,Marc-André ter Stegen,FC Barcelona,Goalkeeper,"Apr 30, 1992",31,Germany,€35.00m
+37,Iñaki Peña,FC Barcelona,Goalkeeper,"Mar 2, 1999",24,Spain,€4.00m
+38,Arnau Tenas,FC Barcelona,Goalkeeper,"May 30, 2001",22,Spain,€2.00m
+39,Ander Astralaga,FC Barcelona,Goalkeeper,"Mar 3, 2004",19,Spain,-
+40,Ronald Araujo,FC Barcelona,Centre-Back,"Mar 7, 1999",24,Uruguay,€70.00m
+41,Jules Koundé,FC Barcelona,Centre-Back,"Nov 12, 1998",24,France,€60.00m
+42,Andreas Christensen,FC Barcelona,Centre-Back,"Apr 10, 1996",27,Denmark,€40.00m
+43,Eric García,FC Barcelona,Centre-Back,"Jan 9, 2001",22,Spain,€10.00m
+44,Chadi Riad,FC Barcelona,Centre-Back,"Jun 17, 2003",20,Morocco,€500k
+45,Gerard Piqué,FC Barcelona,Centre-Back,"Feb 2, 1987",36,Spain,-
+46,Alejandro Balde,FC Barcelona,Left-Back,"Oct 18, 2003",19,Spain,€50.00m
+47,Marcos Alonso,FC Barcelona,Left-Back,"Dec 28, 1990",32,Spain,€5.00m
+48,Jordi Alba,FC Barcelona,Left-Back,"Mar 21, 1989",34,Spain,€5.00m
+49,Álex Valle,FC Barcelona,Left-Back,"Apr 25, 2004",19,Spain,€500k
+50,Héctor Bellerín,FC Barcelona,Right-Back,"Mar 19, 1995",28,Spain,€8.00m
+51,Sergio Busquets,FC Barcelona,Defensive Midfield,"Jul 16, 1988",34,Spain,€5.00m
+52,Álvaro Sanz,FC Barcelona,Defensive Midfield,"Feb 14, 2001",22,Spain,€700k
+53,Marc Casadó,FC Barcelona,Defensive Midfield,"Sep 14, 2003",19,Spain,€300k
+54,Pau Prim,FC Barcelona,Defensive Midfield,"Feb 22, 2006",17,Spain,-
+55,Pedri,FC Barcelona,Central Midfield,"Nov 25, 2002",20,Spain,€100.00m
+56,Gavi,FC Barcelona,Central Midfield,"Aug 5, 2004",18,Spain,€90.00m
+57,Frenkie de Jong,FC Barcelona,Central Midfield,"May 12, 1997",26,Netherlands,€75.00m
+58,Franck Kessié,FC Barcelona,Central Midfield,"Dec 19, 1996",26,Cote d'Ivoire,€25.00m
+59,Miralem Pjanic,FC Barcelona,Central Midfield,"Apr 2, 1990",33,Bosnia-Herzegovina,€6.00m
+60,Sergi Roberto,FC Barcelona,Central Midfield,"Feb 7, 1992",31,Spain,€5.00m
+61,Pablo Torre,FC Barcelona,Central Midfield,"Apr 3, 2003",20,Spain,€3.00m
+62,Aleix Garrido,FC Barcelona,Central Midfield,"Feb 22, 2004",19,Spain,€300k
+63,Unai Hernández,FC Barcelona,Central Midfield,"Dec 14, 2004",18,Spain,-
+64,Ansu Fati,FC Barcelona,Left Winger,"Oct 31, 2002",20,Spain,€35.00m
+65,Ferran Torres,FC Barcelona,Left Winger,"Feb 29, 2000",23,Spain,€30.00m
+66,Estanis Pedrola,FC Barcelona,Left Winger,"Aug 24, 2003",19,Spain,€500k
+67,Ángel Alarcón,FC Barcelona,Left Winger,"May 15, 2004",19,Spain,-
+68,Dani Rodríguez,FC Barcelona,Left Winger,"Aug 9, 2005",17,Spain,-
+69,Ousmane Dembélé,FC Barcelona,Right Winger,"May 15, 1997",26,France,€60.00m
+70,Raphinha,FC Barcelona,Right Winger,"Dec 14, 1996",26,Brazil,€60.00m
+71,Ilias Akhomach,FC Barcelona,Right Winger,"Apr 16, 2004",19,Morocco,€3.00m
+72,Lamine Yamal,FC Barcelona,Right Winger,"Jul 13, 2007",15,Spain,-
+73,Robert Lewandowski,FC Barcelona,Centre-Forward,"Aug 21, 1988",34,Poland,€30.00m
+74,Memphis Depay,FC Barcelona,Centre-Forward,"Feb 13, 1994",29,Netherlands,€14.00m
+75,Pierre-Emerick Aubameyang,FC Barcelona,Centre-Forward,"Jun 18, 1989",34,Gabon,€4.00m
+76,Marc Guiu,FC Barcelona,Centre-Forward,"Jan 4, 2006",17,Spain,-
+77,Jan Oblak,Atlético de Madrid,Goalkeeper,"Jan 7, 1993",30,Slovenia,€35.00m
+78,Ivo Grbic,Atlético de Madrid,Goalkeeper,"Jan 18, 1996",27,Croatia,€3.50m
+79,Alejandro Iturbe,Atlético de Madrid,Goalkeeper,"Sep 2, 2003",19,Spain,€150k
+80,Antonio Gomis,Atlético de Madrid,Goalkeeper,"May 20, 2003",20,Spain,€150k
+81,Sergio Mestre,Atlético de Madrid,Goalkeeper,"Feb 13, 2005",18,Spain,-
+82,José María Giménez,Atlético de Madrid,Centre-Back,"Jan 20, 1995",28,Uruguay,€35.00m
+83,Mario Hermoso,Atlético de Madrid,Centre-Back,"Jun 18, 1995",28,Spain,€20.00m
+84,Stefan Savic,Atlético de Madrid,Centre-Back,"Jan 8, 1991",32,Montenegro,€6.00m
+85,Axel Witsel,Atlético de Madrid,Centre-Back,"Jan 12, 1989",34,Belgium,€5.00m
+86,Felipe,Atlético de Madrid,Centre-Back,"May 16, 1989",34,Brazil,€2.00m
+87,Marco Moreno,Atlético de Madrid,Centre-Back,"Feb 20, 2001",22,Spain,€200k
+88,Ilias Kostis,Atlético de Madrid,Centre-Back,"Feb 27, 2003",20,Greece,€100k
+89,Reinildo Mandava,Atlético de Madrid,Left-Back,"Jan 21, 1994",29,Mozambique,€25.00m
+90,Renan Lodi,Atlético de Madrid,Left-Back,"Apr 8, 1998",25,Brazil,€20.00m
+91,Sergio Reguilón,Atlético de Madrid,Left-Back,"Dec 16, 1996",26,Spain,€10.00m
+92,Adrián Corral,Atlético de Madrid,Left-Back,"Jan 5, 2003",20,Spain,€50k
+93,Nahuel Molina,Atlético de Madrid,Right-Back,"Apr 6, 1998",25,Argentina,€35.00m
+94,Matt Doherty,Atlético de Madrid,Right-Back,"Jan 16, 1992",31,Ireland,€5.00m
+95,Sergio Diez,Atlético de Madrid,Right-Back,"Jul 28, 2003",19,Spain,€200k
+96,Geoffrey Kondogbia,Atlético de Madrid,Defensive Midfield,"Feb 15, 1993",30,Central African Republic,€14.00m
+97,Rodrigo de Paul,Atlético de Madrid,Central Midfield,"May 24, 1994",29,Argentina,€40.00m
+98,Marcos Llorente,Atlético de Madrid,Central Midfield,"Jan 30, 1995",28,Spain,€35.00m
+99,Koke,Atlético de Madrid,Central Midfield,"Jan 8, 1992",31,Spain,€16.00m
+100,Saúl Ñíguez,Atlético de Madrid,Central Midfield,"Nov 21, 1994",28,Spain,€10.00m
+101,Pablo Barrios,Atlético de Madrid,Central Midfield,"Jun 15, 2003",20,Spain,€5.00m
+102,Alberto Moreno,Atlético de Madrid,Central Midfield,"Apr 19, 2002",21,Spain,€150k
+103,Aitor Gismera,Atlético de Madrid,Central Midfield,"Feb 21, 2004",19,Spain,€150k
+104,Thomas Lemar,Atlético de Madrid,Attacking Midfield,"Nov 12, 1995",27,France,€22.00m
+105,Antonio Alemán,Atlético de Madrid,Attacking Midfield,"Jan 27, 2001",22,Spain,-
+106,João Félix,Atlético de Madrid,Left Winger,"Nov 10, 1999",23,Portugal,€50.00m
+107,Yannick Carrasco,Atlético de Madrid,Left Winger,"Sep 4, 1993",29,Belgium,€25.00m
+108,Salim El Jebari,Atlético de Madrid,Left Winger,"Feb 5, 2004",19,Morocco,-
+109,Ángel Correa,Atlético de Madrid,Right Winger,"Mar 9, 1995",28,Argentina,€30.00m
+110,Matheus Cunha,Atlético de Madrid,Centre-Forward,"May 27, 1999",24,Brazil,€25.00m
+111,Antoine Griezmann,Atlético de Madrid,Centre-Forward,"Mar 21, 1991",32,France,€25.00m
+112,Álvaro Morata,Atlético de Madrid,Centre-Forward,"Oct 23, 1992",30,Spain,€20.00m
+113,Memphis Depay,Atlético de Madrid,Centre-Forward,"Feb 13, 1994",29,Netherlands,€14.00m
+114,Carlos Martín,Atlético de Madrid,Centre-Forward,"Apr 22, 2002",21,Spain,€500k
+115,Diego Bri,Atlético de Madrid,Centre-Forward,"Sep 12, 2002",20,Spain,€150k
+116,Abde Raihani,Atlético de Madrid,Centre-Forward,"Feb 3, 2004",19,Morocco,-
+117,Álex Remiro,Real Sociedad,Goalkeeper,"Mar 24, 1995",28,Spain,€25.00m
+118,Andoni Zubiaurre,Real Sociedad,Goalkeeper,"Dec 4, 1996",26,Spain,€300k
+119,Unai Marrero,Real Sociedad,Goalkeeper,"Oct 9, 2001",21,Spain,€250k
+120,Egoitz Arana,Real Sociedad,Goalkeeper,"Feb 19, 2002",21,Spain,€50k
+121,Robin Le Normand,Real Sociedad,Centre-Back,"Nov 11, 1996",26,Spain,€35.00m
+122,Igor Zubeldia,Real Sociedad,Centre-Back,"Mar 30, 1997",26,Spain,€15.00m
+123,Aritz Elustondo,Real Sociedad,Centre-Back,"Mar 28, 1994",29,Spain,€14.00m
+124,Jon Pacheco,Real Sociedad,Centre-Back,"Jan 8, 2001",22,Spain,€6.00m
+125,Aritz Arambarri,Real Sociedad,Centre-Back,"Jan 31, 1998",25,Spain,€500k
+126,Aihen Muñoz,Real Sociedad,Left-Back,"Aug 16, 1997",25,Spain,€6.00m
+127,Diego Rico,Real Sociedad,Left-Back,"Feb 23, 1993",30,Spain,€3.00m
+128,Jonathan Gómez,Real Sociedad,Left-Back,"Sep 1, 2003",19,United States,€500k
+129,Andoni Gorosabel,Real Sociedad,Right-Back,"Aug 4, 1996",26,Spain,€9.00m
+130,Martín Zubimendi,Real Sociedad,Defensive Midfield,"Feb 2, 1999",24,Spain,€40.00m
+131,Asier Illarramendi,Real Sociedad,Defensive Midfield,"Mar 8, 1990",33,Spain,€2.00m
+132,Urko González de Zarate,Real Sociedad,Defensive Midfield,"Mar 20, 2001",22,Spain,€700k
+133,Mikel Merino,Real Sociedad,Central Midfield,"Jun 22, 1996",27,Spain,€50.00m
+134,Ander Guevara,Real Sociedad,Central Midfield,"Jul 7, 1997",25,Spain,€2.50m
+135,Beñat Turrientes,Real Sociedad,Central Midfield,"Jan 31, 2002",21,Spain,€2.00m
+136,Jon Ander Olasagasti,Real Sociedad,Central Midfield,"Aug 16, 2000",22,Spain,€1.00m
+137,Brais Méndez,Real Sociedad,Attacking Midfield,"Jan 7, 1997",26,Spain,€25.00m
+138,David Silva,Real Sociedad,Attacking Midfield,"Jan 8, 1986",37,Spain,€4.00m
+139,Robert Navarro,Real Sociedad,Attacking Midfield,"Apr 12, 2002",21,Spain,€3.00m
+140,Pablo Marín,Real Sociedad,Attacking Midfield,"Jul 3, 2003",19,Spain,€1.00m
+141,Jon Magunazelaia,Real Sociedad,Attacking Midfield,"Jul 13, 2001",21,Spain,€700k
+142,Mikel Oyarzabal,Real Sociedad,Left Winger,"Apr 21, 1997",26,Spain,€40.00m
+143,Mohamed-Ali Cho,Real Sociedad,Left Winger,"Jan 19, 2004",19,France,€12.00m
+144,Ander Barrenetxea,Real Sociedad,Left Winger,"Dec 27, 2001",21,Spain,€6.00m
+145,Martín Merquelanz,Real Sociedad,Left Winger,"Jun 12, 1995",28,Spain,€800k
+146,Takefusa Kubo,Real Sociedad,Right Winger,"Jun 4, 2001",22,Japan,€25.00m
+147,Álex Sola,Real Sociedad,Right Winger,"Jun 9, 1999",24,Spain,€3.00m
+148,Ander Martín,Real Sociedad,Right Winger,"Nov 16, 2000",22,Spain,€400k
+149,Alexander Isak,Real Sociedad,Centre-Forward,"Sep 21, 1999",23,Sweden,€70.00m
+150,Umar Sadiq,Real Sociedad,Centre-Forward,"Feb 2, 1997",26,Nigeria,€18.00m
+151,Alexander Sørloth,Real Sociedad,Centre-Forward,"Dec 5, 1995",27,Norway,€12.00m
+152,Jon Karrikaburu,Real Sociedad,Centre-Forward,"Sep 19, 2002",20,Spain,€5.00m
+153,Carlos Fernández,Real Sociedad,Centre-Forward,"May 22, 1996",27,Spain,€3.00m
+154,Gerónimo Rulli,Villarreal CF,Goalkeeper,"May 20, 1992",31,Argentina,€10.00m
+155,Filip Jørgensen,Villarreal CF,Goalkeeper,"Apr 16, 2002",21,Denmark,€1.50m
+156,Pepe Reina,Villarreal CF,Goalkeeper,"Aug 31, 1982",40,Spain,€700k
+157,Iker Álvarez,Villarreal CF,Goalkeeper,"Jul 25, 2001",21,Andorra,€500k
+158,Gianni Cassaro,Villarreal CF,Goalkeeper,"Apr 10, 1992",31,Spain,€100k
+159,Pau Torres,Villarreal CF,Centre-Back,"Jan 16, 1997",26,Spain,€45.00m
+160,Jorge Cuenca,Villarreal CF,Centre-Back,"Nov 17, 1999",23,Spain,€5.00m
+161,Aïssa Mandi,Villarreal CF,Centre-Back,"Oct 22, 1991",31,Algeria,€3.00m
+162,Mamadou Mbacke,Villarreal CF,Centre-Back,"Nov 21, 2002",20,Senegal,€2.80m
+163,Raúl Albiol,Villarreal CF,Centre-Back,"Sep 4, 1985",37,Spain,€2.50m
+164,Adrián de la Fuente,Villarreal CF,Centre-Back,"Feb 26, 1999",24,Spain,€800k
+165,Pervis Estupiñán,Villarreal CF,Left-Back,"Jan 21, 1998",25,Ecuador,€32.00m
+166,Alfonso Pedraza,Villarreal CF,Left-Back,"Apr 9, 1996",27,Spain,€15.00m
+167,Johan Mojica,Villarreal CF,Left-Back,"Aug 21, 1992",30,Colombia,€3.00m
+168,Alberto Moreno,Villarreal CF,Left-Back,"Jul 5, 1992",30,Spain,€3.00m
+169,Dani Tasende,Villarreal CF,Left-Back,"Jul 6, 2000",22,Spain,€700k
+170,Carlos Romero,Villarreal CF,Left-Back,"Oct 29, 2001",21,Spain,€100k
+171,Juan Foyth,Villarreal CF,Right-Back,"Jan 12, 1998",25,Argentina,€25.00m
+172,Kiko Femenía,Villarreal CF,Right-Back,"Feb 2, 1991",32,Spain,€2.50m
+173,Sergio Carreira,Villarreal CF,Right-Back,"Oct 13, 2000",22,Spain,€1.50m
+174,Marcos Sánchez,Villarreal CF,Right-Back,"Oct 26, 2003",19,Spain,-
+175,Ramón Terrats,Villarreal CF,Defensive Midfield,"Oct 18, 2000",22,Spain,€4.00m
+176,Étienne Capoue,Villarreal CF,Defensive Midfield,"Jul 11, 1988",34,France,€3.00m
+177,Francis Coquelin,Villarreal CF,Defensive Midfield,"May 13, 1991",32,France,€3.00m
+178,Dani Parejo,Villarreal CF,Central Midfield,"Apr 16, 1989",34,Spain,€6.00m
+179,Manu Morlanes,Villarreal CF,Central Midfield,"Jan 12, 1999",24,Spain,€4.00m
+180,Manu Trigueros,Villarreal CF,Central Midfield,"Oct 17, 1991",31,Spain,€4.00m
+181,Alberto del Moral,Villarreal CF,Central Midfield,"Jul 20, 2000",22,Spain,€1.00m
+182,Antonio Pacheco,Villarreal CF,Central Midfield,"Jan 3, 2002",21,Spain,€400k
+183,Rodri Alonso,Villarreal CF,Central Midfield,"Jan 4, 2003",20,Spain,€100k
+184,Álex Baena,Villarreal CF,Attacking Midfield,"Jul 20, 2001",21,Spain,€20.00m
+185,Giovani Lo Celso,Villarreal CF,Attacking Midfield,"Apr 9, 1996",27,Argentina,€14.00m
+186,Carlo García,Villarreal CF,Attacking Midfield,"Feb 12, 2001",22,Spain,€800k
+187,Arnaut Danjuma,Villarreal CF,Left Winger,"Jan 31, 1997",26,Netherlands,€25.00m
+188,Diego Collado,Villarreal CF,Left Winger,"Jan 9, 2001",22,Spain,€1.00m
+189,Yéremy Pino,Villarreal CF,Right Winger,"Oct 20, 2002",20,Spain,€40.00m
+190,Samuel Chukwueze,Villarreal CF,Right Winger,"May 22, 1999",24,Nigeria,€25.00m
+191,Haissem Hassan,Villarreal CF,Right Winger,"Feb 8, 2002",21,France,€1.50m
+192,Nicolas Jackson,Villarreal CF,Centre-Forward,"Jun 20, 2001",22,Senegal,€30.00m
+193,Gerard Moreno,Villarreal CF,Centre-Forward,"Apr 7, 1992",31,Spain,€20.00m
+194,Fer Niño,Villarreal CF,Centre-Forward,"Oct 24, 2000",22,Spain,€3.00m
+195,José Luis Morales,Villarreal CF,Centre-Forward,"Jul 23, 1987",35,Spain,€3.00m
+196,Jorge Pascual,Villarreal CF,Centre-Forward,"Apr 9, 2003",20,Spain,-
+197,Giorgi Mamardashvili,Valencia CF,Goalkeeper,"Sep 29, 2000",22,Georgia,€25.00m
+198,Jaume Doménech,Valencia CF,Goalkeeper,"Nov 5, 1990",32,Spain,€1.00m
+199,Iago Herrerín,Valencia CF,Goalkeeper,"Jan 25, 1988",35,Spain,€500k
+200,Emilio Bernad,Valencia CF,Goalkeeper,"Sep 22, 1999",23,Spain,€300k
+201,Cristian Rivero,Valencia CF,Goalkeeper,"Mar 21, 1998",25,Spain,€200k
+202,Charlie Pérez,Valencia CF,Goalkeeper,"Jun 7, 2002",21,Spain,€25k
+203,Mouctar Diakhaby,Valencia CF,Centre-Back,"Dec 19, 1996",26,Guinea,€6.00m
+204,Cenk Özkacar,Valencia CF,Centre-Back,"Oct 6, 2000",22,Türkiye,€5.00m
+205,Eray Cömert,Valencia CF,Centre-Back,"Feb 4, 1998",25,Switzerland,€3.50m
+206,Gabriel Paulista,Valencia CF,Centre-Back,"Nov 26, 1990",32,Brazil,€2.50m
+207,Cristhian Mosquera,Valencia CF,Centre-Back,"Jun 27, 2004",19,Spain,€1.00m
+208,Rubén Iranzo,Valencia CF,Centre-Back,"Mar 14, 2003",20,Spain,€200k
+209,José Gayà,Valencia CF,Left-Back,"May 25, 1995",28,Spain,€30.00m
+210,Jesús Vázquez,Valencia CF,Left-Back,"Jan 2, 2003",20,Spain,€3.00m
+211,Toni Lato,Valencia CF,Left-Back,"Nov 21, 1997",25,Spain,€2.50m
+212,Thierry Correia,Valencia CF,Right-Back,"Mar 9, 1999",24,Portugal,€8.00m
+213,Dimitri Foulquier,Valencia CF,Right-Back,"Mar 23, 1993",30,Guadeloupe,€2.50m
+214,Hugo Guillamón,Valencia CF,Defensive Midfield,"Jan 31, 2000",23,Spain,€14.00m
+215,Uroš Račić,Valencia CF,Defensive Midfield,"Mar 17, 1998",25,Serbia,€6.50m
+216,Carlos Soler,Valencia CF,Central Midfield,"Jan 2, 1997",26,Spain,€25.00m
+217,André Almeida,Valencia CF,Central Midfield,"May 30, 2000",23,Portugal,€20.00m
+218,Yunus Musah,Valencia CF,Central Midfield,"Nov 29, 2002",20,United States,€18.00m
+219,Nico González,Valencia CF,Central Midfield,"Jan 3, 2002",21,Spain,€10.00m
+220,Ilaix Moriba,Valencia CF,Central Midfield,"Jan 19, 2003",20,Guinea,€4.00m
+221,Javi Guerra,Valencia CF,Central Midfield,"May 13, 2003",20,Spain,€2.00m
+222,Koba Koindredi,Valencia CF,Central Midfield,"Oct 27, 2001",21,France,€1.00m
+223,Tiago Ribeiro,Valencia CF,Central Midfield,"Mar 14, 2002",21,Portugal,€200k
+224,Yellu Santiago,Valencia CF,Central Midfield,"May 25, 2004",19,Spain,€100k
+225,Samuel Lino,Valencia CF,Left Winger,"Dec 23, 1999",23,Brazil,€16.00m
+226,Justin Kluivert,Valencia CF,Left Winger,"May 5, 1999",24,Netherlands,€14.00m
+227,Diego López,Valencia CF,Left Winger,"May 13, 2002",21,Spain,€1.50m
+228,Samu Castillejo,Valencia CF,Right Winger,"Jan 18, 1995",28,Spain,€6.00m
+229,Fran Pérez,Valencia CF,Right Winger,"Sep 9, 2002",20,Spain,€500k
+230,Manu Vallejo,Valencia CF,Second Striker,"Feb 14, 1997",26,Spain,€2.40m
+231,Maxi Gómez,Valencia CF,Centre-Forward,"Aug 14, 1996",26,Uruguay,€7.00m
+232,Hugo Duro,Valencia CF,Centre-Forward,"Nov 10, 1999",23,Spain,€4.00m
+233,Edinson Cavani,Valencia CF,Centre-Forward,"Feb 14, 1987",36,Uruguay,€3.00m
+234,Marcos André,Valencia CF,Centre-Forward,"Oct 20, 1996",26,Brazil,€2.50m
+235,Alberto Marí,Valencia CF,Centre-Forward,"Jul 11, 2001",21,Spain,€800k
+236,Mario Dominguez,Valencia CF,Centre-Forward,"Feb 10, 2004",19,Spain,€25k
+237,Rui Silva,Real Betis Balompié,Goalkeeper,"Feb 7, 1994",29,Portugal,€15.00m
+238,Dani Martín,Real Betis Balompié,Goalkeeper,"Jul 8, 1998",24,Spain,€1.50m
+239,Claudio Bravo,Real Betis Balompié,Goalkeeper,"Apr 13, 1983",40,Chile,€1.00m
+240,Fran Vieites,Real Betis Balompié,Goalkeeper,"May 7, 1999",24,Spain,€200k
+241,Germán García,Real Betis Balompié,Goalkeeper,"Feb 1, 2004",19,Spain,-
+242,Luiz Felipe,Real Betis Balompié,Centre-Back,"Mar 22, 1997",26,Italy,€15.00m
+243,Edgar González,Real Betis Balompié,Centre-Back,"Apr 1, 1997",26,Spain,€9.00m
+244,Germán Pezzella,Real Betis Balompié,Centre-Back,"Jun 27, 1991",32,Argentina,€5.00m
+245,Víctor Ruiz,Real Betis Balompié,Centre-Back,"Jan 25, 1989",34,Spain,€1.20m
+246,Félix Garreta,Real Betis Balompié,Centre-Back,"Apr 21, 2004",19,Spain,€200k
+247,Ricardo Visus,Real Betis Balompié,Centre-Back,"Apr 24, 2001",22,Spain,€150k
+248,Álex Moreno,Real Betis Balompié,Left-Back,"Jun 8, 1993",30,Spain,€15.00m
+249,Abner,Real Betis Balompié,Left-Back,"May 27, 2000",23,Brazil,€7.00m
+250,Juan Miranda,Real Betis Balompié,Left-Back,"Jan 19, 2000",23,Spain,€7.00m
+251,Youssouf Sabaly,Real Betis Balompié,Right-Back,"Mar 5, 1993",30,Senegal,€5.00m
+252,Martín Montoya,Real Betis Balompié,Right-Back,"Apr 14, 1991",32,Spain,€1.20m
+253,Fran Delgado,Real Betis Balompié,Right-Back,"Jul 11, 2001",21,Spain,€350k
+254,Guido Rodríguez,Real Betis Balompié,Defensive Midfield,"Apr 12, 1994",29,Argentina,€28.00m
+255,William Carvalho,Real Betis Balompié,Defensive Midfield,"Apr 7, 1992",31,Portugal,€14.00m
+256,Paul Akouokou,Real Betis Balompié,Defensive Midfield,"Dec 20, 1997",25,Cote d'Ivoire,€3.50m
+257,Andrés Guardado,Real Betis Balompié,Central Midfield,"Sep 28, 1986",36,Mexico,€1.50m
+258,Víctor Camarasa,Real Betis Balompié,Central Midfield,"May 28, 1994",29,Spain,€800k
+259,Quique Fernández,Real Betis Balompié,Central Midfield,"Sep 16, 2003",19,Spain,€150k
+260,Nabil Fekir,Real Betis Balompié,Attacking Midfield,"Jul 18, 1993",29,France,€20.00m
+261,Sergio Canales,Real Betis Balompié,Attacking Midfield,"Feb 16, 1991",32,Spain,€15.00m
+262,Rodri Sánchez,Real Betis Balompié,Attacking Midfield,"May 16, 2000",23,Spain,€8.00m
+263,Dani Pérez,Real Betis Balompié,Attacking Midfield,"Jul 26, 2005",17,Spain,€300k
+264,Juanmi,Real Betis Balompié,Left Winger,"May 20, 1993",30,Spain,€12.00m
+265,Ayoze Pérez,Real Betis Balompié,Left Winger,"Jul 29, 1993",29,Spain,€6.00m
+266,José Alonso Lara,Real Betis Balompié,Left Winger,"Mar 7, 2000",23,Spain,€350k
+267,Luiz Henrique,Real Betis Balompié,Right Winger,"Jan 2, 2001",22,Brazil,€15.00m
+268,Aitor Ruibal,Real Betis Balompié,Right Winger,"Mar 22, 1996",27,Spain,€5.00m
+269,Rober González,Real Betis Balompié,Right Winger,"Jan 8, 2001",22,Spain,€2.00m
+270,Joaquín,Real Betis Balompié,Right Winger,"Jul 21, 1981",41,Spain,€1.50m
+271,Juan Cruz,Real Betis Balompié,Right Winger,"Apr 25, 2000",23,Spain,€1.50m
+272,Borja Iglesias,Real Betis Balompié,Centre-Forward,"Jan 17, 1993",30,Spain,€20.00m
+273,Willian José,Real Betis Balompié,Centre-Forward,"Nov 23, 1991",31,Brazil,€6.00m
+274,Loren Morón,Real Betis Balompié,Centre-Forward,"Dec 30, 1993",29,Spain,€2.00m
+275,Bono,Sevilla FC,Goalkeeper,"Apr 5, 1991",32,Morocco,€12.00m
+276,Marko Dmitrovic,Sevilla FC,Goalkeeper,"Jan 24, 1992",31,Serbia,€4.00m
+277,Alberto Flores,Sevilla FC,Goalkeeper,"Nov 10, 2003",19,Spain,€200k
+278,Matías Árbol,Sevilla FC,Goalkeeper,"Sep 12, 2002",20,Spain,€50k
+279,Marius Herzig,Sevilla FC,Goalkeeper,"Dec 17, 1999",23,Germany,-
+280,Loïc Badé,Sevilla FC,Centre-Back,"Apr 11, 2000",23,France,€12.00m
+281,Tanguy Nianzou,Sevilla FC,Centre-Back,"Jun 7, 2002",21,France,€7.50m
+282,Marcão,Sevilla FC,Centre-Back,"Jun 5, 1996",27,Brazil,€7.50m
+283,Karim Rekik,Sevilla FC,Centre-Back,"Dec 2, 1994",28,Netherlands,€4.00m
+284,Nemanja Gudelj,Sevilla FC,Centre-Back,"Nov 16, 1991",31,Serbia,€4.00m
+285,Kike Salas,Sevilla FC,Centre-Back,"Apr 23, 2002",21,Spain,€1.00m
+286,Marcos Acuña,Sevilla FC,Left-Back,"Oct 28, 1991",31,Argentina,€10.00m
+287,Alex Telles,Sevilla FC,Left-Back,"Dec 15, 1992",30,Brazil,€7.50m
+288,Pablo Pérez,Sevilla FC,Left-Back,"Aug 18, 2001",21,Spain,€200k
+289,Diego Hormigo,Sevilla FC,Left-Back,"Apr 16, 2003",20,Spain,€100k
+290,Gonzalo Montiel,Sevilla FC,Right-Back,"Jan 1, 1997",26,Argentina,€12.00m
+291,José Ángel Carmona,Sevilla FC,Right-Back,"Jan 29, 2002",21,Spain,€4.00m
+292,Jesús Navas,Sevilla FC,Right-Back,"Nov 21, 1985",37,Spain,€3.00m
+293,Pape Gueye,Sevilla FC,Defensive Midfield,"Jan 24, 1999",24,Senegal,€10.00m
+294,Fernando,Sevilla FC,Defensive Midfield,"Jul 25, 1987",35,Brazil,€3.00m
+295,Pedro Ortiz,Sevilla FC,Defensive Midfield,"Aug 19, 2000",22,Spain,€200k
+296,Joan Jordán,Sevilla FC,Central Midfield,"Jul 6, 1994",28,Spain,€9.00m
+297,Óliver Torres,Sevilla FC,Central Midfield,"Nov 10, 1994",28,Spain,€9.00m
+298,Ivan Rakitic,Sevilla FC,Central Midfield,"Mar 10, 1988",35,Croatia,€4.00m
+299,Thomas Delaney,Sevilla FC,Central Midfield,"Sep 3, 1991",31,Denmark,€2.00m
+300,Manu Bueno,Sevilla FC,Central Midfield,"Jul 27, 2004",18,Spain,€300k
+301,Xavi Sintes,Sevilla FC,Central Midfield,"Aug 5, 2001",21,Spain,€150k
+302,Isco,Sevilla FC,Attacking Midfield,"Apr 21, 1992",31,Spain,€5.00m
+303,Carlos Álvarez,Sevilla FC,Attacking Midfield,"Aug 6, 2003",19,Spain,€400k
+304,Nacho Quintana,Sevilla FC,Attacking Midfield,"Feb 23, 2001",22,Spain,€200k
+305,Lucas Ocampos,Sevilla FC,Left Winger,"Jul 11, 1994",28,Argentina,€12.00m
+306,Papu Gómez,Sevilla FC,Left Winger,"Feb 15, 1988",35,Argentina,€3.00m
+307,Bryan Gil,Sevilla FC,Right Winger,"Feb 11, 2001",22,Spain,€15.00m
+308,Erik Lamela,Sevilla FC,Right Winger,"Mar 4, 1992",31,Argentina,€9.00m
+309,Jesús Corona,Sevilla FC,Right Winger,"Jan 6, 1993",30,Mexico,€8.00m
+310,Adnan Januzaj,Sevilla FC,Right Winger,"Feb 5, 1995",28,Belgium,€6.00m
+311,Suso,Sevilla FC,Right Winger,"Nov 19, 1993",29,Spain,€6.00m
+312,Munir El Haddadi,Sevilla FC,Right Winger,"Sep 1, 1995",27,Morocco,€3.50m
+313,Youssef En-Nesyri,Sevilla FC,Centre-Forward,"Jun 1, 1997",26,Morocco,€20.00m
+314,Rafa Mir,Sevilla FC,Centre-Forward,"Jun 18, 1997",26,Spain,€10.00m
+315,Kasper Dolberg,Sevilla FC,Centre-Forward,"Oct 6, 1997",25,Denmark,€7.00m
+316,Iván Romero,Sevilla FC,Centre-Forward,"Apr 10, 2001",22,Spain,€800k
+317,Unai Simón,Athletic Bilbao,Goalkeeper,"Jun 11, 1997",26,Spain,€25.00m
+318,Julen Agirrezabala,Athletic Bilbao,Goalkeeper,"Dec 26, 2000",22,Spain,€5.00m
+319,Ibon Ispizua,Athletic Bilbao,Goalkeeper,"Apr 8, 2003",20,Spain,€100k
+320,Ander Iru,Athletic Bilbao,Goalkeeper,"Aug 22, 1998",24,Spain,€100k
+321,Yeray Álvarez,Athletic Bilbao,Centre-Back,"Jan 24, 1995",28,Spain,€15.00m
+322,Dani Vivian,Athletic Bilbao,Centre-Back,"Jul 5, 1999",23,Spain,€14.00m
+323,Iñigo Martínez,Athletic Bilbao,Centre-Back,"May 17, 1991",32,Spain,€10.00m
+324,Aitor Paredes,Athletic Bilbao,Centre-Back,"Apr 29, 2000",23,Spain,€1.00m
+325,Yuri Berchiche,Athletic Bilbao,Left-Back,"Feb 10, 1990",33,Spain,€2.00m
+326,Mikel Balenziaga,Athletic Bilbao,Left-Back,"Feb 29, 1988",35,Spain,€500k
+327,Iñigo Lekue,Athletic Bilbao,Right-Back,"May 4, 1993",30,Spain,€3.00m
+328,Óscar de Marcos,Athletic Bilbao,Right-Back,"Apr 14, 1989",34,Spain,€1.80m
+329,Ander Capa,Athletic Bilbao,Right-Back,"Feb 8, 1992",31,Spain,€1.80m
+330,Mikel Vesga,Athletic Bilbao,Defensive Midfield,"Apr 8, 1993",30,Spain,€6.00m
+331,Peru Nolaskoain,Athletic Bilbao,Defensive Midfield,"Oct 25, 1998",24,Spain,€1.00m
+332,Unai Vencedor,Athletic Bilbao,Central Midfield,"Nov 15, 2000",22,Spain,€9.00m
+333,Oier Zarraga,Athletic Bilbao,Central Midfield,"Jan 4, 1999",24,Spain,€3.00m
+334,Ander Herrera,Athletic Bilbao,Central Midfield,"Aug 14, 1989",33,Spain,€2.50m
+335,Dani García,Athletic Bilbao,Central Midfield,"May 24, 1990",33,Spain,€2.00m
+336,Junior Bita,Athletic Bilbao,Central Midfield,"Jun 8, 2005",18,Spain,€50k
+337,Oihan Sancet,Athletic Bilbao,Attacking Midfield,"Apr 25, 2000",23,Spain,€30.00m
+338,Iker Muniain,Athletic Bilbao,Attacking Midfield,"Dec 19, 1992",30,Spain,€9.00m
+339,Unai Gómez,Athletic Bilbao,Attacking Midfield,"May 25, 2003",20,Spain,€100k
+340,Nico Williams,Athletic Bilbao,Left Winger,"Jul 12, 2002",20,Spain,€30.00m
+341,Álex Berenguer,Athletic Bilbao,Left Winger,"Jul 4, 1995",27,Spain,€15.00m
+342,Jon Morcillo,Athletic Bilbao,Left Winger,"Sep 15, 1998",24,Spain,€3.00m
+343,Adu Ares,Athletic Bilbao,Left Winger,"Oct 12, 2001",21,Spain,€500k
+344,Iñaki Williams,Athletic Bilbao,Right Winger,"Jun 15, 1994",29,Ghana,€25.00m
+345,Asier Villalibre,Athletic Bilbao,Centre-Forward,"Sep 30, 1997",25,Spain,€2.50m
+346,Raúl García,Athletic Bilbao,Centre-Forward,"Jul 11, 1986",36,Spain,€2.50m
+347,Gorka Guruzeta,Athletic Bilbao,Centre-Forward,"Sep 12, 1996",26,Spain,€2.00m
+348,Sergio Herrera,CA Osasuna,Goalkeeper,"Jun 5, 1993",30,Spain,€8.00m
+349,Aitor Fernández,CA Osasuna,Goalkeeper,"May 3, 1991",32,Spain,€3.00m
+350,Juan Pérez,CA Osasuna,Goalkeeper,"Jul 15, 1996",26,Spain,€600k
+351,Darío Ramos,CA Osasuna,Goalkeeper,"Oct 19, 1999",23,Spain,€200k
+352,Pablo Valencia,CA Osasuna,Goalkeeper,"Mar 16, 2001",22,Spain,€200k
+353,Yoel Ramírez,CA Osasuna,Goalkeeper,"Feb 5, 2002",21,Spain,€50k
+354,David García,CA Osasuna,Centre-Back,"Feb 14, 1994",29,Spain,€20.00m
+355,Unai García,CA Osasuna,Centre-Back,"Feb 3, 1992",31,Spain,€2.50m
+356,Aridane Hernández,CA Osasuna,Centre-Back,"Mar 23, 1989",34,Spain,€1.00m
+357,Jorge Herrando,CA Osasuna,Centre-Back,"Feb 28, 2001",22,Spain,€400k
+358,Manu Sánchez,CA Osasuna,Left-Back,"Aug 24, 2000",22,Spain,€10.00m
+359,Juan Cruz,CA Osasuna,Left-Back,"Jul 28, 1992",30,Spain,€2.50m
+360,Nacho Vidal,CA Osasuna,Right-Back,"Jan 24, 1995",28,Spain,€5.00m
+361,Rubén Peña,CA Osasuna,Right-Back,"Jul 18, 1991",31,Spain,€2.50m
+362,Diego Moreno,CA Osasuna,Right-Back,"Jun 21, 2001",22,Spain,€800k
+363,Lucas Torró,CA Osasuna,Defensive Midfield,"Jul 19, 1994",28,Spain,€8.00m
+364,Iker Muñoz,CA Osasuna,Defensive Midfield,"Sep 5, 2002",20,Spain,€500k
+365,Jon Moncayola,CA Osasuna,Central Midfield,"May 13, 1998",25,Spain,€12.00m
+366,Darko Brasanac,CA Osasuna,Central Midfield,"Feb 12, 1992",31,Serbia,€2.00m
+367,Pablo Ibáñez,CA Osasuna,Central Midfield,"Sep 20, 1998",24,Spain,€1.50m
+368,Aimar Oroz,CA Osasuna,Attacking Midfield,"Nov 27, 2001",21,Spain,€15.00m
+369,Roberto Torres,CA Osasuna,Attacking Midfield,"Mar 7, 1989",34,Spain,€1.20m
+370,Javi Martínez,CA Osasuna,Attacking Midfield,"Dec 22, 1999",23,Spain,€1.00m
+371,Abde Ezzalzouli,CA Osasuna,Left Winger,"Dec 17, 2001",21,Morocco,€15.00m
+372,Moi Gómez,CA Osasuna,Left Winger,"Jun 23, 1994",29,Spain,€10.00m
+373,Rubén García,CA Osasuna,Left Winger,"Jul 14, 1993",29,Spain,€6.00m
+374,Kike Barja,CA Osasuna,Right Winger,"Apr 1, 1997",26,Spain,€4.00m
+375,Iker Benito,CA Osasuna,Right Winger,"Aug 10, 2002",20,Spain,€300k
+376,Chimy Ávila,CA Osasuna,Centre-Forward,"Feb 6, 1994",29,Argentina,€9.00m
+377,Ante Budimir,CA Osasuna,Centre-Forward,"Jul 22, 1991",31,Croatia,€6.00m
+378,Kike García,CA Osasuna,Centre-Forward,"Nov 25, 1989",33,Spain,€1.80m
+379,Paulo Gazzaniga,Girona FC,Goalkeeper,"Jan 2, 1992",31,Argentina,€3.00m
+380,Juan Carlos,Girona FC,Goalkeeper,"Jan 20, 1988",35,Spain,€300k
+381,Toni Fuidias,Girona FC,Goalkeeper,"Apr 15, 2001",22,Spain,€300k
+382,Lluc Matas,Girona FC,Goalkeeper,"Jul 5, 2003",19,Spain,-
+383,Santiago Bueno,Girona FC,Centre-Back,"Nov 9, 1998",24,Uruguay,€8.00m
+384,David López,Girona FC,Centre-Back,"Oct 9, 1989",33,Spain,€2.00m
+385,Alexander Callens,Girona FC,Centre-Back,"May 4, 1992",31,Peru,€1.80m
+386,Bernardo Espinosa,Girona FC,Centre-Back,"Jul 11, 1989",33,Colombia,€1.50m
+387,Juanpe,Girona FC,Centre-Back,"Apr 30, 1991",32,Spain,€1.50m
+388,Eric Monjonell,Girona FC,Centre-Back,"Dec 6, 2001",21,Spain,€300k
+389,Biel Farrés,Girona FC,Centre-Back,"May 1, 2002",21,Spain,-
+390,Miguel Gutiérrez,Girona FC,Left-Back,"Jul 27, 2001",21,Spain,€10.00m
+391,Javi Hernández,Girona FC,Left-Back,"May 2, 1998",25,Spain,€2.50m
+392,Arnau Martínez,Girona FC,Right-Back,"Apr 25, 2003",20,Spain,€15.00m
+393,Yan Couto,Girona FC,Right-Back,"Jun 3, 2002",21,Brazil,€4.00m
+394,Oriol Romeu,Girona FC,Defensive Midfield,"Sep 24, 1991",31,Spain,€5.00m
+395,Ramón Terrats,Girona FC,Defensive Midfield,"Oct 18, 2000",22,Spain,€4.00m
+396,Ibrahima Kébé,Girona FC,Defensive Midfield,"Aug 2, 2000",22,Mali,€500k
+397,Aleix García,Girona FC,Central Midfield,"Jun 28, 1997",26,Spain,€10.00m
+398,Yangel Herrera,Girona FC,Central Midfield,"Jan 7, 1998",25,Venezuela,€5.00m
+399,Álex Sala,Girona FC,Central Midfield,"Apr 9, 2001",22,Spain,€200k
+400,Iván Martín,Girona FC,Attacking Midfield,"Feb 14, 1999",24,Spain,€3.00m
+401,Reinier,Girona FC,Attacking Midfield,"Jan 19, 2002",21,Brazil,€2.00m
+402,Borja García,Girona FC,Attacking Midfield,"Nov 2, 1990",32,Spain,€1.00m
+403,Samu Saiz,Girona FC,Attacking Midfield,"Jan 22, 1991",32,Spain,€900k
+404,Ricard Artero,Girona FC,Attacking Midfield,"Feb 5, 2003",20,Spain,-
+405,Rodrigo Riquelme,Girona FC,Left Winger,"Apr 2, 2000",23,Spain,€12.00m
+406,Toni Villa,Girona FC,Left Winger,"Jan 7, 1995",28,Spain,€2.50m
+407,Óscar Ureña,Girona FC,Left Winger,"May 31, 2003",20,Dominican Republic,€400k
+408,Joel Roca,Girona FC,Left Winger,"Jun 7, 2005",18,Spain,-
+409,Viktor Tsygankov,Girona FC,Right Winger,"Nov 15, 1997",25,Ukraine,€22.00m
+410,Valery Fernández,Girona FC,Right Winger,"Nov 23, 1999",23,Spain,€1.50m
+411,Manu Vallejo,Girona FC,Second Striker,"Feb 14, 1997",26,Spain,€2.40m
+412,Taty Castellanos,Girona FC,Centre-Forward,"Oct 3, 1998",24,Argentina,€15.00m
+413,Cristhian Stuani,Girona FC,Centre-Forward,"Oct 12, 1986",36,Uruguay,€2.00m
+414,Pau Víctor,Girona FC,Centre-Forward,"Nov 26, 2001",21,Spain,€300k
+415,Dawda Camara,Girona FC,Centre-Forward,"Nov 4, 2002",20,Mauritania,-
+416,Agustín Marchesín,Celta de Vigo,Goalkeeper,"Mar 16, 1988",35,Argentina,€2.00m
+417,Iván Villar,Celta de Vigo,Goalkeeper,"Jul 9, 1997",25,Spain,€2.00m
+418,Christian Joel,Celta de Vigo,Goalkeeper,"Jul 9, 1999",23,Cuba,€500k
+419,Diego Alves,Celta de Vigo,Goalkeeper,"Jun 24, 1985",38,Brazil,€300k
+420,Coke Carrillo,Celta de Vigo,Goalkeeper,"Jan 7, 2002",21,Spain,€100k
+421,Ruly García,Celta de Vigo,Goalkeeper,"Jan 27, 2000",23,Spain,€50k
+422,Joseph Aidoo,Celta de Vigo,Centre-Back,"Sep 29, 1995",27,Ghana,€8.00m
+423,Unai Núñez,Celta de Vigo,Centre-Back,"Jan 30, 1997",26,Spain,€6.00m
+424,Carlos Domínguez,Celta de Vigo,Centre-Back,"Feb 11, 2001",22,Spain,€800k
+425,Sergio Barcia,Celta de Vigo,Centre-Back,"Dec 31, 2000",22,Spain,€300k
+426,Javi Domínguez,Celta de Vigo,Centre-Back,"Mar 26, 2001",22,Spain,€200k
+427,Javi Galán,Celta de Vigo,Left-Back,"Nov 19, 1994",28,Spain,€12.00m
+428,Fernando Medrano,Celta de Vigo,Left-Back,"Mar 26, 2000",23,Spain,€200k
+429,Tincho,Celta de Vigo,Left-Back,"Mar 25, 2003",20,Spain,€150k
+430,Hugo Mallo,Celta de Vigo,Right-Back,"Jun 22, 1991",32,Spain,€3.00m
+431,Óscar Mingueza,Celta de Vigo,Right-Back,"May 13, 1999",24,Spain,€2.50m
+432,Kevin Vázquez,Celta de Vigo,Right-Back,"Mar 23, 1993",30,Spain,€1.00m
+433,Renato Tapia,Celta de Vigo,Defensive Midfield,"Jul 28, 1995",27,Peru,€6.00m
+434,Gabri Veiga,Celta de Vigo,Central Midfield,"May 27, 2002",21,Spain,€30.00m
+435,Fran Beltrán,Celta de Vigo,Central Midfield,"Feb 3, 1999",24,Spain,€15.00m
+436,Luca de la Torre,Celta de Vigo,Central Midfield,"May 23, 1998",25,United States,€3.00m
+437,Hugo Sotelo,Celta de Vigo,Central Midfield,"Dec 19, 2003",19,Spain,€150k
+438,Óscar Rodríguez,Celta de Vigo,Attacking Midfield,"Jun 28, 1998",25,Spain,€8.00m
+439,Williot Swedberg,Celta de Vigo,Attacking Midfield,"Feb 1, 2004",19,Sweden,€3.00m
+440,Miguel Baeza,Celta de Vigo,Attacking Midfield,"Mar 27, 2000",23,Spain,€900k
+441,Franco Cervi,Celta de Vigo,Left Winger,"May 26, 1994",29,Argentina,€3.00m
+442,Hugo Álvarez,Celta de Vigo,Left Winger,"Jul 2, 2003",19,Spain,€200k
+443,Carles Pérez,Celta de Vigo,Right Winger,"Feb 16, 1998",25,Spain,€5.00m
+444,Augusto Solari,Celta de Vigo,Right Winger,"Jan 3, 1992",31,Argentina,€1.50m
+445,Miguel Rodríguez,Celta de Vigo,Right Winger,"Apr 29, 2003",20,Spain,€1.00m
+446,Jørgen Strand Larsen,Celta de Vigo,Centre-Forward,"Feb 6, 2000",23,Norway,€11.00m
+447,Iago Aspas,Celta de Vigo,Centre-Forward,"Aug 1, 1987",35,Spain,€6.00m
+448,Haris Seferovic,Celta de Vigo,Centre-Forward,"Feb 22, 1992",31,Switzerland,€4.00m
+449,Gonçalo Paciência,Celta de Vigo,Centre-Forward,"Aug 1, 1994",28,Portugal,€2.00m
+450,Pablo Durán,Celta de Vigo,Centre-Forward,"May 25, 2001",22,Spain,€250k
+451,Fran López,Celta de Vigo,Centre-Forward,"Jan 24, 2002",21,Spain,-
+452,David Soria,Getafe CF,Goalkeeper,"Apr 4, 1993",30,Spain,€8.00m
+453,Diego Conde,Getafe CF,Goalkeeper,"Oct 28, 1998",24,Spain,€300k
+454,Kiko Casilla,Getafe CF,Goalkeeper,"Oct 2, 1986",36,Spain,€300k
+455,Vicente Bellmunt,Getafe CF,Goalkeeper,"Jan 28, 2000",23,Spain,-
+456,Djené,Getafe CF,Centre-Back,"Dec 31, 1991",31,Togo,€5.00m
+457,Gastón Álvarez,Getafe CF,Centre-Back,"Mar 24, 2000",23,Uruguay,€5.00m
+458,Domingos Duarte,Getafe CF,Centre-Back,"Mar 10, 1995",28,Portugal,€5.00m
+459,Omar Alderete,Getafe CF,Centre-Back,"Dec 26, 1996",26,Paraguay,€4.00m
+460,Stefan Mitrovic,Getafe CF,Centre-Back,"May 22, 1990",33,Serbia,€2.00m
+461,Álex Revuelta,Getafe CF,Centre-Back,"Apr 16, 2000",23,Spain,-
+462,Pablo Ramirez,Getafe CF,Centre-Back,"Mar 18, 2003",20,Spain,-
+463,Fabrizio Angileri,Getafe CF,Left-Back,"Mar 15, 1994",29,Argentina,€2.00m
+464,Jordan Amavi,Getafe CF,Left-Back,"Mar 9, 1994",29,France,€2.00m
+465,Koffi,Getafe CF,Left-Back,"Nov 20, 2001",21,Ghana,€200k
+466,Gorka Rivera,Getafe CF,Left-Back,"Aug 1, 2004",18,Spain,-
+467,Juan Iglesias,Getafe CF,Right-Back,"Jul 3, 1998",24,Spain,€3.50m
+468,Damián Suárez,Getafe CF,Right-Back,"Apr 27, 1988",35,Uruguay,€1.00m
+469,Alex Rodríguez,Getafe CF,Right-Back,"Mar 21, 2002",21,Spain,€50k
+470,Ángel Algobia,Getafe CF,Defensive Midfield,"Jun 23, 1999",24,Spain,€1.50m
+471,Carles Aleñá,Getafe CF,Central Midfield,"Jan 5, 1998",25,Spain,€9.00m
+472,Mauro Arambarri,Getafe CF,Central Midfield,"Sep 30, 1995",27,Uruguay,€9.00m
+473,Nemanja Maksimovic,Getafe CF,Central Midfield,"Jan 26, 1995",28,Serbia,€6.00m
+474,Luis Milla,Getafe CF,Central Midfield,"Oct 7, 1994",28,Spain,€4.00m
+475,Gonzalo Villar,Getafe CF,Central Midfield,"Mar 23, 1998",25,Spain,€2.80m
+476,Jaime Seoane,Getafe CF,Central Midfield,"Jan 22, 1997",26,Spain,€2.50m
+477,John Joe Patrick Finn,Getafe CF,Central Midfield,"Sep 24, 2003",19,Ireland,€500k
+478,Santi García,Getafe CF,Attacking Midfield,"Aug 29, 2001",21,Spain,€50k
+479,Moi Parra,Getafe CF,Left Winger,"Jun 24, 2002",21,Spain,-
+480,Portu,Getafe CF,Right Winger,"May 21, 1992",31,Spain,€3.50m
+481,Munir El Haddadi,Getafe CF,Right Winger,"Sep 1, 1995",27,Morocco,€3.50m
+482,Enes Ünal,Getafe CF,Centre-Forward,"May 10, 1997",26,Türkiye,€25.00m
+483,Borja Mayoral,Getafe CF,Centre-Forward,"Apr 5, 1997",26,Spain,€9.00m
+484,Juanmi Latasa,Getafe CF,Centre-Forward,"Mar 23, 2001",22,Spain,€3.00m
+485,Jaime Mata,Getafe CF,Centre-Forward,"Oct 24, 1988",34,Spain,€1.20m
+486,Benjamin Lecomte,RCD Espanyol Barcelona,Goalkeeper,"Apr 26, 1991",32,France,€4.00m
+487,Fernando Pacheco,RCD Espanyol Barcelona,Goalkeeper,"May 18, 1992",31,Spain,€2.50m
+488,Álvaro Fernández,RCD Espanyol Barcelona,Goalkeeper,"Apr 13, 1998",25,Spain,€2.50m
+489,Joan García,RCD Espanyol Barcelona,Goalkeeper,"May 4, 2001",22,Spain,€400k
+490,Ángel Fortuño,RCD Espanyol Barcelona,Goalkeeper,"Oct 5, 2001",21,Spain,€300k
+491,César Montes,RCD Espanyol Barcelona,Centre-Back,"Feb 24, 1997",26,Mexico,€8.00m
+492,Leandro Cabrera,RCD Espanyol Barcelona,Centre-Back,"Jun 17, 1991",32,Uruguay,€2.50m
+493,Fernando Calero,RCD Espanyol Barcelona,Centre-Back,"Sep 14, 1995",27,Spain,€2.00m
+494,Sergi Gómez,RCD Espanyol Barcelona,Centre-Back,"Mar 28, 1992",31,Spain,€2.00m
+495,Simo Keddari,RCD Espanyol Barcelona,Centre-Back,"Feb 3, 2005",18,Spain,€500k
+496,Brian Oliván,RCD Espanyol Barcelona,Left-Back,"Apr 1, 1994",29,Spain,€6.00m
+497,Adrià Pedrosa,RCD Espanyol Barcelona,Left-Back,"May 13, 1998",25,Spain,€5.00m
+498,Ronaël Pierre-Gabriel,RCD Espanyol Barcelona,Right-Back,"Jun 13, 1998",25,France,€3.50m
+499,Óscar Gil,RCD Espanyol Barcelona,Right-Back,"Apr 26, 1998",25,Spain,€3.00m
+500,Rubén Sánchez,RCD Espanyol Barcelona,Right-Back,"Feb 4, 2001",22,Spain,€700k
+501,Omar El Hilali,RCD Espanyol Barcelona,Right-Back,"Sep 12, 2003",19,Morocco,€500k
+502,Vini Souza,RCD Espanyol Barcelona,Defensive Midfield,"Jun 17, 1999",24,Brazil,€6.00m
+503,Sergi Darder,RCD Espanyol Barcelona,Central Midfield,"Dec 22, 1993",29,Spain,€16.00m
+504,Edu Expósito,RCD Espanyol Barcelona,Central Midfield,"Aug 1, 1996",26,Spain,€4.00m
+505,Keidi Bare,RCD Espanyol Barcelona,Central Midfield,"Aug 28, 1997",25,Albania,€3.00m
+506,José Gragera,RCD Espanyol Barcelona,Central Midfield,"May 14, 2000",23,Spain,€2.50m
+507,Pol Lozano,RCD Espanyol Barcelona,Central Midfield,"Oct 6, 1999",23,Spain,€1.50m
+508,Roger Martínez,RCD Espanyol Barcelona,Central Midfield,"Apr 5, 2004",19,Spain,€400k
+509,Dani Villahermosa,RCD Espanyol Barcelona,Central Midfield,"Jan 2, 2001",22,Spain,€250k
+510,Nico Melamed,RCD Espanyol Barcelona,Attacking Midfield,"Apr 11, 2001",22,Spain,€6.00m
+511,Denis Suárez,RCD Espanyol Barcelona,Attacking Midfield,"Jan 6, 1994",29,Spain,€5.00m
+512,Javi Puado,RCD Espanyol Barcelona,Left Winger,"May 25, 1998",25,Spain,€8.00m
+513,José Carlos Lazo,RCD Espanyol Barcelona,Left Winger,"Feb 16, 1996",27,Spain,€2.50m
+514,Luca Koleosho,RCD Espanyol Barcelona,Left Winger,"Sep 15, 2004",18,Italy,€1.00m
+515,Kenneth Soler,RCD Espanyol Barcelona,Left Winger,"Feb 16, 2001",22,Spain,€100k
+516,Adrián Embarba,RCD Espanyol Barcelona,Right Winger,"May 7, 1992",31,Spain,€2.50m
+517,Aleix Vidal,RCD Espanyol Barcelona,Right Winger,"Aug 21, 1989",33,Spain,€1.50m
+518,Joselu,RCD Espanyol Barcelona,Centre-Forward,"Mar 27, 1990",33,Spain,€6.00m
+519,Martin Braithwaite,RCD Espanyol Barcelona,Centre-Forward,"Jun 5, 1991",32,Denmark,€5.00m
+520,Dani Gómez,RCD Espanyol Barcelona,Centre-Forward,"Jul 30, 1998",24,Spain,€1.50m
+521,Nabil Touaizi,RCD Espanyol Barcelona,Centre-Forward,"Feb 1, 2001",22,Morocco,€200k
+522,Fernando Pacheco,UD Almería,Goalkeeper,"May 18, 1992",31,Spain,€2.50m
+523,Fernando Martínez,UD Almería,Goalkeeper,"Jun 10, 1990",33,Spain,€2.00m
+524,Diego Mariño,UD Almería,Goalkeeper,"May 9, 1990",33,Spain,€300k
+525,Diego Fuoli,UD Almería,Goalkeeper,"Oct 20, 1997",25,Spain,€200k
+526,Srdjan Babic,UD Almería,Centre-Back,"Apr 22, 1996",27,Serbia,€3.50m
+527,Kaiky,UD Almería,Centre-Back,"Jan 12, 2004",19,Brazil,€3.00m
+528,Rodrigo Ely,UD Almería,Centre-Back,"Nov 3, 1993",29,Brazil,€3.00m
+529,Chumi,UD Almería,Centre-Back,"Mar 2, 1999",24,Spain,€2.00m
+530,Sergio Akieme,UD Almería,Left-Back,"Dec 16, 1997",25,Spain,€7.50m
+531,Álex Centelles,UD Almería,Left-Back,"Aug 30, 1999",23,Spain,€1.50m
+532,Alejandro Pozo,UD Almería,Right-Back,"Feb 22, 1999",24,Spain,€3.00m
+533,Houboulang Mendes,UD Almería,Right-Back,"May 4, 1998",25,Guinea-Bissau,€2.00m
+534,Samú Costa,UD Almería,Defensive Midfield,"Nov 27, 2000",22,Portugal,€5.00m
+535,Iñigo Eguaras,UD Almería,Defensive Midfield,"Mar 7, 1992",31,Spain,€1.20m
+536,Lucas Robertone,UD Almería,Central Midfield,"Mar 18, 1997",26,Argentina,€7.00m
+537,Gonzalo Melero,UD Almería,Central Midfield,"Jan 2, 1994",29,Spain,€4.00m
+538,Arnau Puigmal,UD Almería,Central Midfield,"Jan 10, 2001",22,Spain,€2.00m
+539,Gui Guedes,UD Almería,Central Midfield,"Apr 17, 2002",21,Portugal,€1.20m
+540,César de la Hoz,UD Almería,Central Midfield,"Mar 30, 1992",31,Spain,€1.20m
+541,Martin Svidersky,UD Almería,Central Midfield,"Oct 4, 2002",20,Slovakia,€500k
+542,Marcos Peña,UD Almería,Central Midfield,"Jan 22, 2005",18,Spain,-
+543,Largie Ramazani,UD Almería,Left Winger,"Feb 27, 2001",22,Belgium,€6.00m
+544,Lázaro,UD Almería,Left Winger,"Mar 12, 2002",21,Brazil,€6.00m
+545,José Carlos Lazo,UD Almería,Left Winger,"Feb 16, 1996",27,Spain,€2.50m
+546,Adrián Embarba,UD Almería,Right Winger,"May 7, 1992",31,Spain,€2.50m
+547,Francisco Portillo,UD Almería,Right Winger,"Jun 13, 1990",33,Spain,€1.50m
+548,Curro Sánchez,UD Almería,Right Winger,"Jan 3, 1996",27,Spain,€1.00m
+549,Arvin Appiah,UD Almería,Right Winger,"Jan 5, 2001",22,England,€500k
+550,Carlos Rojas,UD Almería,Right Winger,"Apr 18, 2002",21,Spain,-
+551,Umar Sadiq,UD Almería,Centre-Forward,"Feb 2, 1997",26,Nigeria,€18.00m
+552,El Bilal Touré,UD Almería,Centre-Forward,"Oct 3, 2001",21,Mali,€12.00m
+553,Luis Suárez,UD Almería,Centre-Forward,"Dec 2, 1997",25,Colombia,€8.00m
+554,Léo Baptistão,UD Almería,Centre-Forward,"Aug 26, 1992",30,Brazil,€1.80m
+555,Marko Milovanovic,UD Almería,Centre-Forward,"Aug 4, 2003",19,Serbia,€1.00m
+556,Dyego Sousa,UD Almería,Centre-Forward,"Sep 14, 1989",33,Portugal,€800k
+557,Marciano Sanca,UD Almería,Centre-Forward,"Mar 3, 2004",19,Guinea-Bissau,-
+558,Predrag Rajkovic,RCD Mallorca,Goalkeeper,"Oct 31, 1995",27,Serbia,€10.00m
+559,Dominik Greif,RCD Mallorca,Goalkeeper,"Apr 6, 1997",26,Slovakia,€1.50m
+560,Leo Román,RCD Mallorca,Goalkeeper,"Jul 6, 2000",22,Spain,€300k
+561,Pere García,RCD Mallorca,Goalkeeper,"Mar 22, 2002",21,Spain,€25k
+562,Martin Valjent,RCD Mallorca,Centre-Back,"Dec 11, 1995",27,Slovakia,€4.50m
+563,Antonio Raíllo,RCD Mallorca,Centre-Back,"Oct 8, 1991",31,Spain,€4.00m
+564,José Copete,RCD Mallorca,Centre-Back,"Oct 10, 1999",23,Spain,€3.50m
+565,Dennis Hadzikadunic,RCD Mallorca,Centre-Back,"Jul 9, 1998",24,Bosnia-Herzegovina,€3.00m
+566,Matija Nastasic,RCD Mallorca,Centre-Back,"Mar 28, 1993",30,Serbia,€1.50m
+567,Franco Russo,RCD Mallorca,Centre-Back,"Oct 25, 1994",28,Argentina,€800k
+568,Benjamín Garay,RCD Mallorca,Centre-Back,"Apr 19, 2000",23,Argentina,€100k
+569,Josep Gayá,RCD Mallorca,Centre-Back,"Jul 7, 2000",22,Spain,€100k
+570,Ludwig Augustinsson,RCD Mallorca,Left-Back,"Apr 21, 1994",29,Sweden,€2.50m
+571,Braian Cufré,RCD Mallorca,Left-Back,"Dec 15, 1996",26,Argentina,€1.20m
+572,Jaume Costa,RCD Mallorca,Left-Back,"Mar 18, 1988",35,Spain,€1.20m
+573,Marcos Fernández,RCD Mallorca,Left-Back,"Jul 17, 2003",19,Spain,€25k
+574,Pablo Maffeo,RCD Mallorca,Right-Back,"Jul 12, 1997",25,Argentina,€8.00m
+575,Giovanni González,RCD Mallorca,Right-Back,"Sep 20, 1994",28,Uruguay,€2.00m
+576,Miguelito,RCD Mallorca,Right-Back,"Jan 12, 2001",22,Spain,€50k
+577,Rodrigo Battaglia,RCD Mallorca,Defensive Midfield,"Jul 12, 1991",31,Argentina,€1.50m
+578,Manu Morlanes,RCD Mallorca,Central Midfield,"Jan 12, 1999",24,Spain,€4.00m
+579,Iñigo Ruiz de Galarreta,RCD Mallorca,Central Midfield,"Aug 6, 1993",29,Spain,€3.00m
+580,Iddrisu Baba,RCD Mallorca,Central Midfield,"Jan 22, 1996",27,Ghana,€3.00m
+581,Antonio Sánchez,RCD Mallorca,Central Midfield,"Apr 22, 1997",26,Spain,€2.50m
+582,Clément Grenier,RCD Mallorca,Central Midfield,"Jan 7, 1991",32,France,€800k
+583,Miquel Llabrés,RCD Mallorca,Central Midfield,"Jan 28, 2000",23,Spain,€100k
+584,Luis Montiel,RCD Mallorca,Central Midfield,"Jan 19, 2004",19,Spain,€25k
+585,Rubén Quintanilla,RCD Mallorca,Central Midfield,"Apr 3, 2002",21,Spain,€25k
+586,Kang-in Lee,RCD Mallorca,Attacking Midfield,"Feb 19, 2001",22,"Korea, South",€22.00m
+587,Dani Rodríguez,RCD Mallorca,Attacking Midfield,"Jun 6, 1988",35,Spain,€1.20m
+588,Amath Ndiaye,RCD Mallorca,Left Winger,"Jul 16, 1996",26,Senegal,€2.00m
+589,Lago Júnior,RCD Mallorca,Left Winger,"Dec 31, 1990",32,Cote d'Ivoire,€900k
+590,Javi Llabrés,RCD Mallorca,Left Winger,"Sep 11, 2002",20,Spain,€300k
+591,Tòfol Montiel,RCD Mallorca,Right Winger,"Apr 11, 2000",23,Spain,€150k
+592,Vedat Muriqi,RCD Mallorca,Centre-Forward,"Apr 24, 1994",29,Kosovo,€15.00m
+593,Tino Kadewere,RCD Mallorca,Centre-Forward,"Jan 5, 1996",27,Zimbabwe,€4.00m
+594,Abdón Prats,RCD Mallorca,Centre-Forward,"Dec 7, 1992",30,Spain,€1.20m
+595,Ángel Rodríguez,RCD Mallorca,Centre-Forward,"Apr 26, 1987",36,Spain,€1.00m
+596,Stole Dimitrievski,Rayo Vallecano,Goalkeeper,"Dec 25, 1993",29,North Macedonia,€4.00m
+597,Miguel Ángel Morro,Rayo Vallecano,Goalkeeper,"Sep 11, 2000",22,Spain,€600k
+598,Diego López,Rayo Vallecano,Goalkeeper,"Nov 3, 1981",41,Spain,€300k
+599,Alejandro Catena,Rayo Vallecano,Centre-Back,"Oct 28, 1994",28,Spain,€8.00m
+600,Florian Lejeune,Rayo Vallecano,Centre-Back,"May 20, 1991",32,France,€4.00m
+601,Abdul Mumin,Rayo Vallecano,Centre-Back,"Jun 6, 1998",25,Ghana,€1.50m
+602,Esteban Saveljich,Rayo Vallecano,Centre-Back,"May 20, 1991",32,Montenegro,€500k
+603,Fran García,Rayo Vallecano,Left-Back,"Aug 14, 1999",23,Spain,€12.00m
+604,Pep Chavarría,Rayo Vallecano,Left-Back,"Apr 10, 1998",25,Spain,€1.50m
+605,Iván Balliu,Rayo Vallecano,Right-Back,"Jan 1, 1992",31,Albania,€4.00m
+606,Mario Hernández,Rayo Vallecano,Right-Back,"Jan 25, 1999",24,Spain,€600k
+607,Mario Suárez,Rayo Vallecano,Defensive Midfield,"Feb 24, 1987",36,Spain,€300k
+608,Santi Comesaña,Rayo Vallecano,Central Midfield,"Oct 5, 1996",26,Spain,€7.50m
+609,Óscar Valentín,Rayo Vallecano,Central Midfield,"Aug 20, 1994",28,Spain,€5.00m
+610,Unai López,Rayo Vallecano,Central Midfield,"Oct 30, 1995",27,Spain,€3.50m
+611,Pathé Ciss,Rayo Vallecano,Central Midfield,"Mar 16, 1994",29,Senegal,€3.00m
+612,Diego Méndez,Rayo Vallecano,Central Midfield,"Aug 29, 2003",19,Spain,-
+613,Óscar Trejo,Rayo Vallecano,Attacking Midfield,"Apr 26, 1988",35,Argentina,€3.00m
+614,Randy Nteka,Rayo Vallecano,Attacking Midfield,"Dec 6, 1997",25,France,€1.80m
+615,José Pozo,Rayo Vallecano,Attacking Midfield,"Mar 15, 1996",27,Spain,€1.00m
+616,Pablo Muñoz,Rayo Vallecano,Attacking Midfield,"Sep 4, 2003",19,Spain,-
+617,Álvaro García,Rayo Vallecano,Left Winger,"Oct 27, 1992",30,Spain,€6.00m
+618,Bebé,Rayo Vallecano,Left Winger,"Jul 12, 1990",32,Cape Verde,€800k
+619,Isi Palazón,Rayo Vallecano,Right Winger,"Dec 27, 1994",28,Spain,€12.00m
+620,Salvi Sánchez,Rayo Vallecano,Right Winger,"Mar 30, 1991",32,Spain,€1.50m
+621,Sergio Camello,Rayo Vallecano,Centre-Forward,"Feb 10, 2001",22,Spain,€10.00m
+622,Raúl de Tomás,Rayo Vallecano,Centre-Forward,"Oct 17, 1994",28,Spain,€8.00m
+623,Radamel Falcao,Rayo Vallecano,Centre-Forward,"Feb 10, 1986",37,Colombia,€2.00m
+624,Andrés Martín,Rayo Vallecano,Centre-Forward,"Jul 11, 1999",23,Spain,€1.00m
+625,Jordi Masip,Real Valladolid CF,Goalkeeper,"Jan 3, 1989",34,Spain,€1.00m
+626,Sergio Asenjo,Real Valladolid CF,Goalkeeper,"Jun 28, 1989",34,Spain,€1.00m
+627,Álvaro Aceves,Real Valladolid CF,Goalkeeper,"Jul 26, 2003",19,Spain,€200k
+628,Javi Sánchez,Real Valladolid CF,Centre-Back,"Mar 14, 1997",26,Spain,€3.00m
+629,Joaquín Fernández,Real Valladolid CF,Centre-Back,"May 31, 1996",27,Spain,€3.00m
+630,Jawad El Yamiq,Real Valladolid CF,Centre-Back,"Feb 29, 1992",31,Morocco,€2.00m
+631,Zouhair Feddal,Real Valladolid CF,Centre-Back,"Dec 23, 1989",33,Morocco,€1.30m
+632,Víctor Rofino,Real Valladolid CF,Centre-Back,"Jul 28, 2002",20,Spain,€100k
+633,David Torres,Real Valladolid CF,Centre-Back,"Mar 5, 2003",20,Spain,€50k
+634,Lucas Olaza,Real Valladolid CF,Left-Back,"Jul 21, 1994",28,Uruguay,€2.50m
+635,Sergio Escudero,Real Valladolid CF,Left-Back,"Sep 2, 1989",33,Spain,€1.50m
+636,Diego Moreno,Real Valladolid CF,Left-Back,"Jan 18, 2002",21,Spain,€100k
+637,Iván Fresneda,Real Valladolid CF,Right-Back,"Sep 28, 2004",18,Spain,€15.00m
+638,Luis Pérez,Real Valladolid CF,Right-Back,"Feb 4, 1995",28,Spain,€1.50m
+639,Lucas Rosa,Real Valladolid CF,Right-Back,"Apr 3, 2000",23,Brazil,€1.00m
+640,Martin Hongla,Real Valladolid CF,Defensive Midfield,"Mar 16, 1998",25,Cameroon,€3.00m
+641,Mickaël Malsa,Real Valladolid CF,Defensive Midfield,"Oct 12, 1995",27,Martinique,€1.50m
+642,Monchu,Real Valladolid CF,Central Midfield,"Sep 13, 1999",23,Spain,€5.00m
+643,Kike Pérez,Real Valladolid CF,Central Midfield,"Feb 14, 1997",26,Spain,€4.50m
+644,Álvaro Aguado,Real Valladolid CF,Central Midfield,"May 1, 1996",27,Spain,€3.00m
+645,Roque Mesa,Real Valladolid CF,Central Midfield,"Jun 7, 1989",34,Spain,€2.50m
+646,Anuar,Real Valladolid CF,Central Midfield,"Jan 15, 1995",28,Morocco,€900k
+647,Mario Maroto,Real Valladolid CF,Central Midfield,"Nov 28, 2003",19,Spain,€150k
+648,Alberto Quintana,Real Valladolid CF,Central Midfield,"Oct 5, 2001",21,Spain,€100k
+649,Selim Amallah,Real Valladolid CF,Attacking Midfield,"Nov 15, 1996",26,Morocco,€3.00m
+650,Darwin Machís,Real Valladolid CF,Left Winger,"Feb 7, 1993",30,Venezuela,€3.00m
+651,Toni Villa,Real Valladolid CF,Left Winger,"Jan 7, 1995",28,Spain,€2.50m
+652,Kenedy,Real Valladolid CF,Left Winger,"Feb 8, 1996",27,Brazil,€1.50m
+653,Tunde Akinsola,Real Valladolid CF,Left Winger,"Mar 10, 2003",20,Nigeria,€50k
+654,Gonzalo Plata,Real Valladolid CF,Right Winger,"Nov 1, 2000",22,Ecuador,€5.00m
+655,Óscar Plano,Real Valladolid CF,Right Winger,"Feb 11, 1991",32,Spain,€3.00m
+656,Iván Sánchez,Real Valladolid CF,Right Winger,"Sep 23, 1992",30,Spain,€800k
+657,Manuel Pozo,Real Valladolid CF,Right Winger,"Dec 12, 2001",21,Spain,€300k
+658,Cyle Larin,Real Valladolid CF,Centre-Forward,"Apr 17, 1995",28,Canada,€8.00m
+659,Shon Weissman,Real Valladolid CF,Centre-Forward,"Feb 14, 1996",27,Israel,€4.00m
+660,Sergi Guardiola,Real Valladolid CF,Centre-Forward,"May 29, 1991",32,Spain,€2.00m
+661,Sergio León,Real Valladolid CF,Centre-Forward,"Jan 6, 1989",34,Spain,€2.00m
+662,Juanjo Narváez,Real Valladolid CF,Centre-Forward,"Feb 12, 1995",28,Colombia,€800k
+663,Sekou Gassama,Real Valladolid CF,Centre-Forward,"May 6, 1995",28,Senegal,€300k
+664,Iván Cédric,Real Valladolid CF,Centre-Forward,"Dec 22, 2001",21,Cameroon,€300k
+665,Roberto Arroyo,Real Valladolid CF,Centre-Forward,"Aug 25, 2003",19,Spain,€300k
+666,Edgar Badia,Elche CF,Goalkeeper,"Feb 12, 1992",31,Spain,€3.00m
+667,Axel Werner,Elche CF,Goalkeeper,"Feb 28, 1996",27,Argentina,€800k
+668,Juanpe Navarro,Elche CF,Goalkeeper,"Aug 21, 1998",24,Spain,-
+669,Jesús López,Elche CF,Goalkeeper,"Aug 1, 2002",20,Spain,-
+670,Luismi Quirant,Elche CF,Goalkeeper,"Jan 1, 2004",19,Spain,-
+671,Lisandro Magallán,Elche CF,Centre-Back,"Sep 27, 1993",29,Argentina,€1.80m
+672,Enzo Roco,Elche CF,Centre-Back,"Aug 16, 1992",30,Chile,€1.50m
+673,Diego González,Elche CF,Centre-Back,"Jan 28, 1995",28,Spain,€1.50m
+674,Pedro Bigas,Elche CF,Centre-Back,"May 15, 1990",33,Spain,€1.00m
+675,John Donald,Elche CF,Centre-Back,"Sep 25, 2000",22,Spain,€1.00m
+676,Federico Fernández,Elche CF,Centre-Back,"Feb 21, 1989",34,Argentina,€700k
+677,Gonzalo Verdú,Elche CF,Centre-Back,"Oct 21, 1988",34,Spain,€700k
+678,Javi Pamies,Elche CF,Centre-Back,"Mar 17, 2003",20,Spain,-
+679,Manuel Cocca,Elche CF,Centre-Back,"Nov 8, 2002",20,Argentina,-
+680,Johan Mojica,Elche CF,Left-Back,"Aug 21, 1992",30,Colombia,€3.00m
+681,Lautaro Blanco,Elche CF,Left-Back,"Feb 19, 1999",24,Argentina,€2.80m
+682,Nicolás Fernández Mercau,Elche CF,Left-Back,"Jan 11, 2000",23,Argentina,€2.00m
+683,Carlos Clerc,Elche CF,Left-Back,"Feb 21, 1992",31,Spain,€1.50m
+684,José Ángel Carmona,Elche CF,Right-Back,"Jan 29, 2002",21,Spain,€4.00m
+685,Pol Lirola,Elche CF,Right-Back,"Aug 13, 1997",25,Spain,€2.00m
+686,Helibelton Palacios,Elche CF,Right-Back,"Jun 11, 1993",30,Colombia,€1.20m
+687,Carles Marco,Elche CF,Right-Back,"Apr 5, 2000",23,Spain,-
+688,Gerard Gumbau,Elche CF,Defensive Midfield,"Dec 18, 1994",28,Spain,€3.50m
+689,Omar Mascarell,Elche CF,Defensive Midfield,"Feb 2, 1993",30,Spain,€3.00m
+690,Raúl Guti,Elche CF,Central Midfield,"Dec 30, 1996",26,Spain,€2.50m
+691,Domingos Quina,Elche CF,Central Midfield,"Nov 18, 1999",23,Portugal,€1.80m
+692,Pape Cheikh,Elche CF,Central Midfield,"Aug 8, 1997",25,Senegal,€900k
+693,Branislav Knezevic,Elche CF,Central Midfield,"Jul 21, 2002",20,Serbia,-
+694,Alejandro Alfaro,Elche CF,Central Midfield,"Jun 15, 2002",21,Spain,-
+695,Rodrigo Mendoza,Elche CF,Central Midfield,"Mar 15, 2005",18,Spain,-
+696,Randy Nteka,Elche CF,Attacking Midfield,"Dec 6, 1997",25,France,€1.80m
+697,Javier Pastore,Elche CF,Attacking Midfield,"Jun 20, 1989",34,Argentina,€500k
+698,Pere Milla,Elche CF,Left Winger,"Sep 23, 1992",30,Spain,€3.00m
+699,Tete Morente,Elche CF,Left Winger,"Dec 4, 1996",26,Spain,€2.50m
+700,Fidel,Elche CF,Left Winger,"Oct 27, 1989",33,Spain,€1.00m
+701,Álex Collado,Elche CF,Right Winger,"Apr 22, 1999",24,Spain,€3.00m
+702,Josan,Elche CF,Right Winger,"Dec 3, 1989",33,Spain,€1.00m
+703,Lucas Boyé,Elche CF,Centre-Forward,"Feb 28, 1996",27,Argentina,€10.00m
+704,Ezequiel Ponce,Elche CF,Centre-Forward,"Mar 29, 1997",26,Argentina,€2.50m
+705,Roger Martí,Elche CF,Centre-Forward,"Jan 3, 1991",32,Spain,€2.00m
+706,Conan Ledesma,Cádiz CF,Goalkeeper,"Feb 13, 1993",30,Argentina,€8.00m
+707,David Gil,Cádiz CF,Goalkeeper,"Jan 11, 1994",29,Spain,€700k
+708,Victor Aznar,Cádiz CF,Goalkeeper,"Oct 17, 2002",20,Brazil,€50k
+709,Nando Almodóvar,Cádiz CF,Goalkeeper,"Nov 3, 2003",19,Spain,€50k
+710,Fali,Cádiz CF,Centre-Back,"Aug 12, 1993",29,Spain,€2.50m
+711,Víctor Chust,Cádiz CF,Centre-Back,"Mar 5, 2000",23,Spain,€2.50m
+712,Jorge Meré,Cádiz CF,Centre-Back,"Apr 17, 1997",26,Spain,€1.20m
+713,Luis Hernández,Cádiz CF,Centre-Back,"Apr 14, 1989",34,Spain,€1.00m
+714,Momo Mbaye,Cádiz CF,Centre-Back,"Jun 28, 1998",25,Senegal,€700k
+715,Juan Cala,Cádiz CF,Centre-Back,"Nov 26, 1989",33,Spain,€600k
+716,Carlos García,Cádiz CF,Centre-Back,"Jul 7, 2000",22,Spain,€200k
+717,Lautaro Spatz,Cádiz CF,Centre-Back,"Oct 19, 2001",21,Argentina,€150k
+718,Alfonso Espino,Cádiz CF,Left-Back,"Jan 5, 1992",31,Uruguay,€3.50m
+719,Santiago Arzamendia,Cádiz CF,Left-Back,"May 5, 1998",25,Paraguay,€1.20m
+720,Joseba Zaldua,Cádiz CF,Right-Back,"Jun 24, 1992",31,Spain,€2.50m
+721,Iza Carcelén,Cádiz CF,Right-Back,"Apr 23, 1993",30,Spain,€1.50m
+722,Raúl Parra,Cádiz CF,Right-Back,"Nov 26, 1999",23,Spain,€300k
+723,Kikín,Cádiz CF,Right-Back,"Jan 20, 2003",20,Spain,€50k
+724,Antonio Blanco,Cádiz CF,Defensive Midfield,"Jul 23, 2000",22,Spain,€2.50m
+725,Tomás Alarcón,Cádiz CF,Defensive Midfield,"Jan 19, 1999",24,Chile,€1.50m
+726,José Mari,Cádiz CF,Defensive Midfield,"Dec 6, 1987",35,Spain,€400k
+727,Jon Ander Garrido,Cádiz CF,Defensive Midfield,"Oct 9, 1989",33,Spain,€300k
+728,Rubén Alcaraz,Cádiz CF,Central Midfield,"May 1, 1991",32,Spain,€2.00m
+729,Gonzalo Escalante,Cádiz CF,Central Midfield,"Mar 27, 1993",30,Argentina,€2.00m
+730,Fede San Emeterio,Cádiz CF,Central Midfield,"Mar 16, 1997",26,Spain,€2.00m
+731,Youba Diarra,Cádiz CF,Central Midfield,"Mar 24, 1998",25,Mali,€900k
+732,Álvaro Bastida,Cádiz CF,Central Midfield,"May 12, 2004",19,Spain,€600k
+733,Curro Muñoz,Cádiz CF,Central Midfield,"Jan 7, 2003",20,Spain,€50k
+734,Moussa Diakité,Cádiz CF,Central Midfield,"Nov 4, 2003",19,Mali,€50k
+735,Álex Fernández,Cádiz CF,Attacking Midfield,"Oct 15, 1992",30,Spain,€4.00m
+736,Brian Ocampo,Cádiz CF,Left Winger,"Jun 25, 1999",24,Uruguay,€2.00m
+737,Awer Mabil,Cádiz CF,Left Winger,"Sep 15, 1995",27,Australia,€1.20m
+738,Alberto Perea,Cádiz CF,Left Winger,"Dec 19, 1990",32,Spain,€1.00m
+739,José Antonio de la Rosa,Cádiz CF,Left Winger,"Jul 28, 2004",18,Spain,€300k
+740,Théo Bongonda,Cádiz CF,Right Winger,"Nov 20, 1995",27,DR Congo,€4.00m
+741,Iván Alejo,Cádiz CF,Right Winger,"Feb 10, 1995",28,Spain,€1.20m
+742,Mamady Diarra,Cádiz CF,Right Winger,"Jun 26, 2000",23,Mali,€300k
+743,Choco Lozano,Cádiz CF,Centre-Forward,"Apr 25, 1993",30,Honduras,€2.50m
+744,Rubén Sobrino,Cádiz CF,Centre-Forward,"Jun 1, 1992",31,Spain,€2.00m
+745,Roger Martí,Cádiz CF,Centre-Forward,"Jan 3, 1991",32,Spain,€2.00m
+746,Sergi Guardiola,Cádiz CF,Centre-Forward,"May 29, 1991",32,Spain,€2.00m
+747,Chris Ramos,Cádiz CF,Centre-Forward,"Jan 18, 1997",26,Spain,€1.50m
+748,Álvaro Negredo,Cádiz CF,Centre-Forward,"Aug 20, 1985",37,Spain,€1.00m
+749,Lucas Pérez,Cádiz CF,Centre-Forward,"Sep 10, 1988",34,Spain,€800k
+750,Álvaro Giménez,Cádiz CF,Centre-Forward,"May 19, 1991",32,Spain,€600k
+751,Francisco Mwepu,Cádiz CF,Centre-Forward,"Feb 29, 2000",23,Zambia,€150k
+752,Etta Eyong,Cádiz CF,Centre-Forward,"Oct 14, 2003",19,Cameroon,€50k

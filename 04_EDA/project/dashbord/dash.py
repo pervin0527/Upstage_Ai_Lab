@@ -16,12 +16,12 @@ with open('./position_stats.json', 'r') as f:
     STATS_PER_POSITION = json.load(f)
 
 st.title('Football Player Similarity Analysis')
-TARGET = st.selectbox('Select a position', sorted(list(STATS_PER_POSITION.keys())))
+TARGET = st.selectbox('Select a position', sorted(list(STATS_PER_POSITION.keys())), index=3)
 N_MOST_SIMILAR_PLAYERS = st.slider(label='Number of most similar players', 
-                                   min_value=10, 
-                                   max_value=50, 
-                                   value=10, 
-                                   step=10)
+                                   min_value=50, 
+                                   max_value=100, 
+                                   value=50, 
+                                   step=5)
 
 
 ## 상위권 선수들, 하위권 선수들을 포지션별로 그룹화.
@@ -69,8 +69,10 @@ merged_data = pd.merge(similar_players_stats, plot_data[['player_name', 'Similar
 sorted_data = merged_data.sort_values('Similarity Score', ascending=False)
 top_n_similar_players = sorted_data.head(10)
 
+# top_n_similar_players에서 top_market_value_player 제외
 top_n_similar_players = top_n_similar_players[top_n_similar_players['player_name'] != top_market_value_player['player_name']]
 
+# selected_players_stats에서 중복되는 값 제외하고 가장 먼저 나오는 것만 남기기
 selected_players_stats = pd.concat([top_market_value_player.to_frame().T, top_n_similar_players], ignore_index=True)
 selected_players_stats = selected_players_stats.drop_duplicates(subset='player_name', keep='first')
 
@@ -80,13 +82,15 @@ selected_players_stats_normalized = selected_players_stats[stat_columns].apply(n
 angles = np.linspace(0, 2 * np.pi, len(stat_columns), endpoint=False).tolist()
 angles += angles[:1]
 
-fig2, ax2 = plt.subplots(figsize=(15, 15), subplot_kw=dict(polar=True))
+fig2, ax2 = plt.subplots(figsize=(10, 10), subplot_kw=dict(polar=True))
 
 colors = plt.cm.rainbow(np.linspace(0, 1, len(selected_players_stats)))
+lines = []
 for i, player in enumerate(selected_players_stats['player_name']):
     player_stats = selected_players_stats_normalized.iloc[i].values.flatten().tolist()
     player_stats += player_stats[:1]
-    ax2.plot(angles, player_stats, linewidth=1, linestyle='--', marker='o', color=colors[i], label=player)
+    line, = ax2.plot(angles, player_stats, linewidth=1, linestyle='--', marker='o', color=colors[i], label=player, picker=5)
+    lines.append(line)
 
 ax2.set_theta_offset(np.pi / 2)
 ax2.set_theta_direction(-1)

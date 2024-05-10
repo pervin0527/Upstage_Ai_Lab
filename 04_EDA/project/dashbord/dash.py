@@ -35,6 +35,8 @@ top_players_stats = players_totals[players_totals['team_name'].isin(top_teams)]
 bottom_players_stats = players_totals[~players_totals['team_name'].isin(top_teams)]
 
 ## 유사 선수 찾기
+top_players_stats = top_players_stats.fillna(0)
+bottom_players_stats = bottom_players_stats.fillna(0)
 most_similar_players, similarity_scores = find_similar_players(STATS_PER_POSITION, top_players_stats, top_position_groups, bottom_players_stats, bottom_position_groups, TARGET, N_MOST_SIMILAR_PLAYERS)
 top_players_stats_filtered = top_players_stats[top_players_stats['player_name'].isin(top_position_groups[TARGET])]
 similar_players_stats = bottom_players_stats[bottom_players_stats['player_name'].isin(most_similar_players['player_name'])]
@@ -63,9 +65,9 @@ fig1.add_trace(go.Scatter(
     mode='markers+text',
     text=plot_data[plot_data['player_name'] != top_market_value_player_name]['player_name'],
     textposition='bottom center',
-    textfont=dict(size=9),
+    textfont=dict(size=12),
     marker=dict(
-        size=12,
+        size=15,
         color=plot_data[plot_data['player_name'] != top_market_value_player_name]['Similarity Score'],
         colorscale='rainbow',
         showscale=True,
@@ -81,6 +83,7 @@ fig1.add_trace(go.Scatter(
     mode='markers+text',
     text=top_market_value_player_name,
     textposition='bottom center',
+    textfont=dict(size=12),
     marker=dict(
         size=15,
         color='red',

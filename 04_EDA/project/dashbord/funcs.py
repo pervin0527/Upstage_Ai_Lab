@@ -9,8 +9,13 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-def normalize(x):
-    return (x - x.min()) / (x.max() - x.min() + 1e-10)
+def normalize(column):
+    max_val = column.max()
+    min_val = column.min()
+    if max_val == min_val:
+        return column.apply(lambda x: 0)
+    else:
+        return (column - min_val) / (max_val - min_val)
 
 
 def group_top_teams_by_position(all_players_stats, all_teams_stats):

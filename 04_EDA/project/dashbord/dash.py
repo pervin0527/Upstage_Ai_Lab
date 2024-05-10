@@ -8,8 +8,6 @@ import matplotlib.ticker as ticker
 from adjustText import adjust_text
 from funcs import group_top_teams_by_position, group_lower_teams_by_position_per_league, find_similar_players, normalize
 
-
-
 players_totals = pd.read_csv('./all_players_stats_total.csv')
 teams_stats = pd.read_csv('./all_teams_stats.csv')
 with open('./position_stats.json', 'r') as f:

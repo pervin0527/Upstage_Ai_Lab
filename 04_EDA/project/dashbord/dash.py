@@ -23,10 +23,9 @@ with open('./position_stats.json', 'r') as f:
 st.sidebar.title('Options')
 TARGET = st.sidebar.selectbox('Positions', sorted(list(STATS_PER_POSITION.keys())), index=3)
 N_MOST_SIMILAR_PLAYERS = st.sidebar.slider(label='Num Players', 
-                                           min_value=50, 
-                                           max_value=100, 
-                                           value=50, 
-                                           step=5)
+                                           min_value=1, 
+                                           max_value=20, 
+                                           value=10)
 
 st.title('Finding cost-effective players in the transfer market')
 ## 상위권 선수들, 하위권 선수들을 포지션별로 그룹화.
@@ -125,7 +124,7 @@ st.plotly_chart(fig1)
 # top_market_value_player = similar_players_stats.loc[similar_players_stats['Market Value'].idxmax()]
 merged_data = pd.merge(similar_players_stats, plot_data[['player_name', 'Similarity Score']], on='player_name', how='left')
 sorted_data = merged_data.sort_values('Similarity Score', ascending=False)
-top_n_similar_players = sorted_data.head(N_MOST_SIMILAR_PLAYERS//5)
+top_n_similar_players = sorted_data.head(N_MOST_SIMILAR_PLAYERS)
 
 ## top_n_similar_players에서 top_market_value_player 제외
 top_n_similar_players = top_n_similar_players[top_n_similar_players['player_name'] != top_market_value_player['player_name']]

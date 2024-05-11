@@ -12,7 +12,7 @@ from funcs import group_top_teams_by_position, group_lower_teams_by_position_per
 players_totals = pd.read_csv('./all_players_stats_total.csv')
 teams_stats = pd.read_csv('./all_teams_stats.csv')
 
-normalized_columns = players_totals.columns.drop(['Apps', 'player_name', 'team_name', 'position'])
+normalized_columns = players_totals.columns.drop(['Apps', 'player_name', 'team_name', 'position', 'Market Value'])
 players_totals[normalized_columns] = players_totals[normalized_columns].apply(normalize)
 
 with open('./position_stats.json', 'r') as f:
@@ -98,7 +98,7 @@ fig1.update_layout(
     showlegend=False,
     xaxis=dict(
         title='Market Value',
-        tickformat=',.0f€',
+        tickformat=',.0f',
         gridcolor='lightgrey',
         gridwidth=0.5
     ),
@@ -188,7 +188,7 @@ fig2.update_layout(
         tickfont=dict(size=10)
     ),
     yaxis=dict(
-        range=[0, 1.1],
+        range=[0.0, 1.1],
         tickfont=dict(size=10),
         fixedrange=True
     ),

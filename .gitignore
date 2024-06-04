@@ -6,3 +6,4 @@ order_products__*.csv
 orders.csv
 products.csv
 sample_submission.csv
+train.csv

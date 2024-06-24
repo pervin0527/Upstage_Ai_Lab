@@ -35,8 +35,14 @@
 
     pip install python-multipart
 
-## EDA
+## 4.EDA
 
 - [https://www.kaggle.com/competitions/instacart-market-basket-analysis/data](https://www.kaggle.com/competitions/instacart-market-basket-analysis/data)
 - [https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
 - [https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
+
+## 5.Coding Test
+
+## 6.MachineLearning Basic
+
+## 7.DeepLearning

@@ -1,5 +1,7 @@
 import os
 import torch
+import random
+import numpy as np
 import albumentations as A
 
 from tqdm import tqdm
@@ -10,7 +12,14 @@ from torch.utils.tensorboard import SummaryWriter
 
 from data.dataset import AlbumentationsDataset
 from models.cnn import CNN_V1, CNN_V2, CNN_V3, CNN_V4
+from models.rnn import RNN_V1, RNN_V2
 from utils.util import load_config, mk_savedir, save_config
+
+def set_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
 
 
 def train(model, dataloader, criterion, optimizer, device, writer, epoch):
@@ -18,6 +27,8 @@ def train(model, dataloader, criterion, optimizer, device, writer, epoch):
     train_loss, train_acc = 0.0, 0.0
     for x, y in tqdm(dataloader, desc="Train", leave=False):
         x, y = x.to(device), y.to(device)
+        if isinstance(model, RNN_V1) or isinstance(model, RNN_V2):
+            x = x.squeeze(1).reshape(-1, 28, 28)  ## RNN 모델일 경우 [batch_size, 28, 28]로 바꿔주고 행단위로 데이터를 입력.
 
         optimizer.zero_grad()
         y_pred = model(x)
@@ -46,6 +57,8 @@ def eval(model, dataloader, criterion, device, writer, epoch):
     with torch.no_grad():
         for x, y in tqdm(dataloader, desc="Valid", leave=False):
             x, y = x.to(device), y.to(device)
+            if isinstance(model, RNN_V1) or isinstance(model, RNN_V2):
+                x = x.squeeze(1).reshape(-1, 28, 28)
             y_pred = model(x)
 
             loss = criterion(y_pred, y)
@@ -71,6 +84,8 @@ def final_test(model, dataloader, device):
     with torch.no_grad():
         for x, y in tqdm(dataloader, desc="Final Test", leave=False):
             x, y = x.to(device), y.to(device)
+            if isinstance(model, RNN_V1) or isinstance(model, RNN_V2):
+                x = x.squeeze(1).reshape(-1, 28, 28)
             y_pred = model(x)
 
             _, predicted = torch.max(y_pred.data, 1)
@@ -83,8 +98,11 @@ def final_test(model, dataloader, device):
 
 def main():
     cfg = load_config(config_path="./config.yaml")
+
     save_dir = mk_savedir(cfg['save_path'])
     save_config(cfg, save_dir)
+
+    set_seed(cfg['seed'])
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     writer = SummaryWriter(log_dir=f"{save_dir}/logs")
 
@@ -117,6 +135,10 @@ def main():
         model = CNN_V3().to(device)
     elif cfg['model'] == 'CNN_V4':
         model = CNN_V4(drop_prob=cfg['drop_prob']).to(device)
+    elif cfg['model'] == 'RNN_V1':  # RNN_V1 모델 추가
+        model = RNN_V1(input_size=28, hidden_size=cfg['hidden_dim'], output_size=10, num_layers=cfg['num_layers']).to(device)
+    elif cfg['model'] == 'RNN_V2':  # RNN_V1 모델 추가
+        model = RNN_V2(input_size=28, hidden_size=cfg['hidden_dim'], output_size=10, num_layers=cfg['num_layers']).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', patience=cfg['lr_patience'], factor=cfg['lr_factor'], verbose=True)

@@ -1,5 +1,5 @@
 .DS_Store
-__pycache__
+__pycache__/
 aisles.csv
 departments.csv
 order_products__*.csv
@@ -9,3 +9,5 @@ sample_submission.csv
 train.csv
 submission.csv
 more_features.csv
+
+runs/

@@ -2,7 +2,7 @@ seed: 17
 dataset_path: "/home/pervinco/Datasets/pytorch-mnist"
 save_path: "./runs"
 
-model: "RNN_V2"
+model: "CNN_V5"
 weight_init: True
 
 num_workers: 4

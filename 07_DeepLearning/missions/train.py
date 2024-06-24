@@ -11,7 +11,7 @@ from albumentations.pytorch import ToTensorV2
 from torch.utils.tensorboard import SummaryWriter
 
 from data.dataset import AlbumentationsDataset
-from models.cnn import CNN_V1, CNN_V2, CNN_V3, CNN_V4
+from models.cnn import CNN_V1, CNN_V2, CNN_V3, CNN_V4, CNN_V5
 from models.rnn import RNN_V1, RNN_V2
 from utils.util import load_config, mk_savedir, save_config
 
@@ -134,10 +134,12 @@ def main():
     elif cfg['model'] == "CNN_V3":
         model = CNN_V3().to(device)
     elif cfg['model'] == 'CNN_V4':
-        model = CNN_V4(drop_prob=cfg['drop_prob']).to(device)
-    elif cfg['model'] == 'RNN_V1':  # RNN_V1 모델 추가
+        model = CNN_V4(drop_prob=cfg['drop_prob'], weight_init=cfg['weight_init']).to(device)
+    elif cfg['model'] == 'CNN_V5':
+        model = CNN_V5(drop_prob=cfg['drop_prob'], weight_init=cfg['weight_init']).to(device)
+    elif cfg['model'] == 'RNN_V1':
         model = RNN_V1(input_size=28, hidden_size=cfg['hidden_dim'], output_size=10, num_layers=cfg['num_layers']).to(device)
-    elif cfg['model'] == 'RNN_V2':  # RNN_V1 모델 추가
+    elif cfg['model'] == 'RNN_V2':
         model = RNN_V2(input_size=28, hidden_size=cfg['hidden_dim'], output_size=10, num_layers=cfg['num_layers']).to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])

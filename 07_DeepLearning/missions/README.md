@@ -20,6 +20,9 @@ Deep Learning의 기본에 대해 공부하고 관련된 미션들을 풀어보�
 
 1. Convolution과 Activation 레이어만을 활용하여 MNIST 분류기 만들기
 
+   - Flatten 연산 및 Fully Connected 레이어 없이 CNN을 만들기 위해서는 Global Average Pooling을 이용해 (b, 1, 1, dim)의 형태로 만든다.
+   - 이후 1 x 1 conv를 사용해서 (b, 1, 1, num_classes) 형태로 바꿔준다.
+
 2. Semi-supervised learning을 이용한 MNIST 분류기 만들기
    - 참고1 : [https://blog.est.ai/2020/11/ssl/](https://blog.est.ai/2020/11/ssl/)
    - 참고2 : [https://github.com/rubicco/mnist-semi-supervised](https://github.com/rubicco/mnist-semi-supervised)

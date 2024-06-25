@@ -17,3 +17,13 @@ class AlbumentationsDataset(Dataset):
             image = augmented['image']
             
         return image, label
+    
+
+def ssl_preprocessing(train_dataset, test_dataset):
+    x_train = train_dataset.data.numpy()
+    y_train = train_dataset.targets.numpy()
+    x_test = test_dataset.data.numpy()
+    y_test = test_dataset.targets.numpy()
+
+    labels = list(set(y_train))
+    print(f"Labels: {labels}")

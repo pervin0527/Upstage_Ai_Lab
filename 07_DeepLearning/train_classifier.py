@@ -97,7 +97,7 @@ def final_test(model, dataloader, device):
 
 
 def main():
-    cfg = load_config(config_path="./config.yaml")
+    cfg = load_config(config_path="./classifier_config.yaml")
 
     save_dir = mk_savedir(cfg['save_path'])
     save_config(cfg, save_dir)

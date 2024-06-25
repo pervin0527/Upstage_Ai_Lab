@@ -1,0 +1,21 @@
+seed: 17
+dataset_path: "/home/pervinco/Datasets/pytorch-mnist"
+save_path: "./runs"
+
+weight_init: True
+num_workers: 4
+
+classifier_epochs: 100
+autoencoder_epochs: 100
+batch_size: 128
+latent_dim: 32
+
+classifier_lr: 0.001
+classifier_weight_decay: 0.000001
+
+autoencoder_lr: 0.0001
+autoencoder_weight_decay: 0.000001
+
+lr_patience: 5
+lr_factor: 0.1
+earlystop_patience: 10

@@ -5,17 +5,9 @@ save_path: "./runs"
 weight_init: True
 num_workers: 4
 
-classifier_epochs: 100
-autoencoder_epochs: 100
-batch_size: 128
-latent_dim: 32
+num_labeled: 1
+num_unlabeled: 0
 
-classifier_lr: 0.001
-classifier_weight_decay: 0.000001
-
-autoencoder_lr: 0.0001
-autoencoder_weight_decay: 0.000001
-
-lr_patience: 5
-lr_factor: 0.1
-earlystop_patience: 10
+epochs: 100
+batch_size: 64
+learning_rate: 0.001

@@ -1,40 +1,61 @@
+import torch
 from torch import nn
 
 class AutoEncoder(nn.Module):
-    def __init__(self, latent_dim=32):
-        super(AutoEncoder, self).__init__()
-        self.encoder = nn.Sequential(
-            nn.Conv2d(1, 32, kernel_size=3, stride=2, padding=1),  # Output: (32, 14, 14)
-            nn.ReLU(),
-            nn.Conv2d(32, 64, kernel_size=3, stride=2, padding=1),  # Output: (64, 7, 7)
-            nn.ReLU(),
-            nn.Flatten(),
-            nn.Linear(64 * 7 * 7, latent_dim)
-        )
-        self.decoder = nn.Sequential(
-            nn.Linear(latent_dim, 64 * 7 * 7),
-            nn.ReLU(),
-            nn.Unflatten(1, (64, 7, 7)),
-            nn.ConvTranspose2d(64, 32, kernel_size=3, stride=2, padding=1, output_padding=1),  # Output: (32, 14, 14)
-            nn.ReLU(),
-            nn.ConvTranspose2d(32, 1, kernel_size=3, stride=2, padding=1, output_padding=1),  # Output: (1, 28, 28)
-            nn.Sigmoid()
-        )
-
-    def forward(self, x):
-        z = self.encoder(x)
-        x_recon = self.decoder(z)
-        return x_recon, z
-
-
-class Classifier(nn.Module):
-    def __init__(self, input_dim=32, num_classes=10):
+    def __init__(self):
         super().__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(input_dim, 128),
-            nn.ReLU(),
-            nn.Linear(128, num_classes)
-        )
-
+        self.activation = nn.ReLU()
+        self.output_activation = torch.sigmoid
+        
+        # Encoder layers
+        self.encoder1 = nn.Linear(784, 512)
+        self.encoder2 = nn.Linear(512, 256)
+        self.encoder3 = nn.Linear(256, 128)
+        
+        # Decoder layers
+        self.decoder1 = nn.Linear(128, 256)
+        self.decoder2 = nn.Linear(256, 512)
+        self.decoder3 = nn.Linear(512, 784)
+        
     def forward(self, x):
-        return self.fc(x)
+        x = x.view(-1, 784)
+        
+        # Encoding
+        x = self.activation(self.encoder1(x))
+        x = self.activation(self.encoder2(x))
+        x = self.activation(self.encoder3(x))
+        
+        # Decoding
+        x = self.activation(self.decoder1(x))
+        x = self.activation(self.decoder2(x))
+        x = self.output_activation(self.decoder3(x))
+        
+        # Reshape back to image format
+        x = x.view(-1, 1, 28, 28)
+
+        return x
+
+
+class EncoderClassifier(nn.Module):
+    def __init__(self, autoencoder, num_classes=10):
+        super().__init__()
+        self.encoder1 = autoencoder.encoder1
+        self.encoder2 = autoencoder.encoder2
+        self.encoder3 = autoencoder.encoder3
+        self.activation = autoencoder.activation
+        
+        # Classification layer
+        self.classifier = nn.Linear(128, num_classes)
+        
+    def forward(self, x):
+        x = x.view(-1, 784)
+        
+        # Encoding
+        x = self.activation(self.encoder1(x))
+        x = self.activation(self.encoder2(x))
+        x = self.activation(self.encoder3(x))
+        
+        # Classification
+        x = self.classifier(x)
+        
+        return x

@@ -10,6 +10,7 @@
     conda install pytorch torchvision torchaudio torchtext=0.18.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 
     conda install pytorch-lightning==2.0.0 hydra-core==1.3.2 -c conda-forge
+    conda install tensorboard tensorboardX
 
     ## 주피터 노트북 커널
     conda install pexpect jupyter

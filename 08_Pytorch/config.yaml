@@ -1,0 +1,21 @@
+seed: 17
+dataset_path: "/home/pervinco/Datasets/FashionMNIST"
+save_path: "./runs"
+
+model: "CNN_V1"
+weight_init: True
+
+num_workers: 4
+epochs: 1000
+labeled_epoch: 20
+batch_size: 128
+learning_rate: 0.001
+weight_decay: 0.000001
+drop_prob: 0.2
+
+lr_patience: 5
+lr_factor: 0.1
+early_stop_patience: 10
+
+hidden_dim: 128
+num_layers: 2

@@ -5,8 +5,9 @@ import numpy as np
 import albumentations as A
 
 from tqdm import tqdm
+from torch.backends import cudnn
+from torchvision import datasets
 from torch.utils.data import DataLoader
-from torchvision import datasets, transforms
 from albumentations.pytorch import ToTensorV2
 from torch.utils.tensorboard import SummaryWriter
 
@@ -15,11 +16,15 @@ from models.cnn import CNN_V1, CNN_V2, CNN_V3, CNN_V4, CNN_V5
 from models.rnn import RNN_V1, RNN_V2
 from utils.util import load_config, mk_savedir, save_config
 
-def set_seed(seed):
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
+def set_seed(seed_num):
+    random.seed(seed_num)
+    np.random.seed(seed_num)
+    
+    torch.manual_seed(seed_num)
+    torch.cuda.manual_seed(seed_num)
+    torch.cuda.manual_seed_all(seed_num)
+    cudnn.benchmark = False
+    cudnn.deterministic = True
 
 
 def train(model, dataloader, criterion, optimizer, device, writer, epoch):

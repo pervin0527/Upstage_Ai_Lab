@@ -1,0 +1,48 @@
+# config.yaml
+defaults:
+  - _self_
+
+hydra:
+  run:
+    dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  verbose: True
+
+data:
+  data_dir: /home/pervinco/Datasets/MNIST
+  batch_size: 32
+  num_workers: 32
+
+model:
+  num_classes: 10
+  learning_rate: 0.01
+  dropout_ratio: 0.2
+  use_scheduler: False
+
+trainer:
+  max_epochs: 100
+  accelerator: gpu
+
+callbacks:
+  early_stop:
+    monitor: valid_loss
+    mode: min
+  model_checkpoint:
+    dirpath: ./weights
+    monitor: valid_loss
+    mode: min
+    filename: "{epoch}-{valid_loss:.2f}.pth"
+    save_last: True
+    save_weights_only: True
+    verbose: True
+    save_top_k: 1
+
+logger:
+  csv:
+    save_dir: ./logs
+    name: csv
+  tensorboard:
+    save_dir: ./logs
+    name: tensorboard
+
+test:
+  weight_file: /home/pervinco/Upstage_Ai_Lab/08_Pytorch/pytorch_lightning/outputs/2024-06-28/14-24-22/weights/epoch=4-valid_loss=0.03.pth.ckpt

@@ -1,3 +1,6 @@
+import os
+os.environ['HYDRA_FULL_ERROR'] = '1'
+
 import hydra
 
 from omegaconf import DictConfig
@@ -37,12 +40,7 @@ def main(cfg: DictConfig):
         num_workers=cfg.data.num_workers,
         transform=transforms.ToTensor()
     )
-    model = CNN(
-        num_classes=cfg.model.num_classes,
-        learning_rate=cfg.model.learning_rate,
-        dropout_ratio=cfg.model.dropout_ratio,
-        use_scheduler=cfg.model.use_scheduler
-    )
+    model = CNN(cfg)
 
     trainer = Trainer(
         max_epochs=cfg.trainer.max_epochs,

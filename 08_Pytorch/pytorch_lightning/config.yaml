@@ -1,15 +1,14 @@
-# config.yaml
 defaults:
   - _self_
 
 hydra:
   run:
     dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
-  verbose: True
+  verbose: False
 
 data:
   data_dir: /home/pervinco/Datasets/MNIST
-  batch_size: 32
+  batch_size: 128
   num_workers: 32
 
 model:
@@ -17,6 +16,12 @@ model:
   learning_rate: 0.01
   dropout_ratio: 0.2
   use_scheduler: False
+
+criterion:
+  _target_: torch.nn.CrossEntropyLoss
+
+optimizer:
+  _target_: torch.optim.Adam
 
 trainer:
   max_epochs: 100

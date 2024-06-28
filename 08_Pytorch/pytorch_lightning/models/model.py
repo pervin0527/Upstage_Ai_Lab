@@ -1,19 +1,21 @@
 import torch
+
 from torch import nn
 from torchmetrics import Accuracy
+from hydra.utils import instantiate
 from pytorch_lightning import LightningModule
 
 class CNN(LightningModule):
-    def __init__(self, num_classes, learning_rate, dropout_ratio, use_scheduler):
+    def __init__(self, cfg):
         super().__init__()
-        self.num_classes = num_classes
-        self.learning_rate = learning_rate
-        self.dropout_ratio = dropout_ratio
-        self.use_scheduler = use_scheduler
+        self.num_classes = cfg.model.num_classes
+        self.learning_rate = cfg.model.learning_rate
+        self.dropout_ratio = cfg.model.dropout_ratio
+        self.use_scheduler = cfg.model.use_scheduler
+        self.criterion = instantiate(cfg.criterion)
+        self.optimizer = cfg.optimizer
+        self.accuracy = Accuracy(task="multiclass", num_classes=self.num_classes)
         self.save_hyperparameters()
-
-        self.criterion = nn.CrossEntropyLoss()
-        self.accuracy = Accuracy(task="multiclass", num_classes=num_classes)
 
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=16, kernel_size=5)  # [BATCH_SIZE, 1, 28, 28] -> [BATCH_SIZE, 16, 24, 24]
         self.relu1 = nn.ReLU()
@@ -21,12 +23,12 @@ class CNN(LightningModule):
         self.conv2 = nn.Conv2d(in_channels=16, out_channels=32, kernel_size=5) # [BATCH_SIZE, 16, 24, 24] -> [BATCH_SIZE, 32, 20, 20]
         self.relu2 = nn.ReLU()
         self.pool2 = nn.MaxPool2d(kernel_size=2) # [BATCH_SIZE, 32, 20, 20] -> [BATCH_SIZE, 32, 10, 10]
-        self.dropout2 = nn.Dropout(dropout_ratio)
+        self.dropout2 = nn.Dropout(self.dropout_ratio)
         
         self.conv3 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=5) # [BATCH_SIZE, 32, 10, 10] -> [BATCH_SIZE, 64, 6, 6]
         self.relu3 = nn.ReLU()
         self.pool3 = nn.MaxPool2d(kernel_size=2) # 크기를 1/2로 줄입니다. [BATCH_SIZE, 64, 6, 6] -> [BATCH_SIZE, 64, 3, 3]
-        self.dropout3 = nn.Dropout(dropout_ratio)
+        self.dropout3 = nn.Dropout(self.dropout_ratio)
 
         self.output = nn.Linear(64 * 3 * 3, self.num_classes)
     
@@ -52,7 +54,7 @@ class CNN(LightningModule):
     
 
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=1e-3)
+        optimizer = instantiate(self.optimizer, self.parameters())
 
         if self.use_scheduler:
             scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='max', patience=10, factor=0.1, verbose=True)

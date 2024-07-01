@@ -1,3 +1,5 @@
+## python train.py -m "criterion._target_=torch.nn.CrossEntropyLoss" "criterion._target_=torch.nn.MSELoss"
+
 import os
 os.environ['HYDRA_FULL_ERROR'] = '1'
 

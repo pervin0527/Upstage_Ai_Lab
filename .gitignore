@@ -14,3 +14,5 @@ runs/
 best/
 outputs/
 multirun/
+
+*.pkl

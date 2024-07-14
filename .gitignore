@@ -18,3 +18,4 @@ multirun/
 *.pkl
 DATA/
 baseline
+*.csv

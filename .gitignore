@@ -16,3 +16,5 @@ outputs/
 multirun/
 
 *.pkl
+DATA/
+baseline

@@ -1,0 +1,37 @@
+seed: 42
+valid_ratio: 0.2
+save_batch_imgs: True
+
+save_path: ./runs
+meta_path: ./dataset/meta.csv
+
+train_img_path: ./dataset/train_augment
+train_csv_path: ./dataset/train_augment.csv
+
+valid_img_path: ./dataset/test
+valid_csv_path: ./dataset/mini_submission.csv
+
+test_img_path: ./dataset/test
+test_csv_path: ./dataset/sample_submission.csv
+
+one_hot_encoding: False
+model_name: efficientnet_b4 ## resnet50, efficientnet_b0, efficientnetv2_rw_m.agc_in1k
+pretrained: True
+
+num_workers: 32
+epochs: 1000
+img_h: 380
+img_w: 380
+batch_size: 32
+
+learning_rate: 0.00001
+weight_decay: 0.0001
+reduce_factor: 0.1
+reduce_patience: 10
+early_stop_patience: 50
+
+warmup_epochs: 100
+min_lr: 0.0000001
+max_lr: 0.0001
+T_0: 200
+T_mult: 2

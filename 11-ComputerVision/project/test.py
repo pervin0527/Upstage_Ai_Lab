@@ -27,7 +27,7 @@ def inference(model, dataloader, device):
     ids_list = []
     preds_list = []
     with torch.no_grad():
-        for id, images in tqdm(dataloader):
+        for id, images, _ in tqdm(dataloader):
             images = images.to(device)
             preds = model(images)
 
@@ -62,7 +62,7 @@ def save_predictions(ids, preds, classes, cfg):
         os.makedirs(f"{pred_dir}/{kor_c}", exist_ok=True)
     
     for id, pred in zip(ids, preds):
-        image = cv2.imread(f"{cfg['data_path']}/test/{id}")
+        image = cv2.imread(f"{cfg['test_img_path']}/{id}")
         en_str_label = classes[pred]
         ko_str_label = kr_classes[en_str_label]
         cv2.imwrite(f"{pred_dir}/{ko_str_label}/{id}", image)
@@ -81,10 +81,8 @@ def main(cfg):
     ids, preds = inference(model, test_dataloader, device)
 
     file_name = cfg['saved_dir'].split('/')[-1]
-    print(file_name)
     output_file = f"{cfg['saved_dir']}/{file_name}.csv"
-    print(output_file)
-    save_predictions(ids, preds, output_file)
+    save_predictions(ids, preds, test_dataset.classes, cfg)
 
 
 def parse_args():

@@ -19,5 +19,7 @@ multirun/
 DATA/
 baseline
 *.csv
-data/
 pretrained/
+dataset/
+cifar*
+fonts/

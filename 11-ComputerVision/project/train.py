@@ -10,12 +10,20 @@ from torch.utils.data import DataLoader
 from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score
 
-from utils.config_util import load_config, save_config
 from utils.data_util import train_valid_split
+from utils.config_util import load_config, save_config
 from utils.train_util import set_seed, make_save_dir, save_batch_images
 
+from loss import FocalLoss
 from data.dataset import DocTypeDataset
 from data.augmentation import batch_transform
+
+def initialize_weights_he(model):
+    for layer in model.modules():
+        if isinstance(layer, (nn.Conv2d, nn.Linear)):
+            nn.init.kaiming_normal_(layer.weight, mode='fan_out', nonlinearity='relu')
+            if layer.bias is not None:
+                nn.init.zeros_(layer.bias)
 
 
 def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
@@ -122,15 +130,20 @@ def main(cfg):
             break
 
     model = timm.create_model(cfg['model_name'], pretrained=cfg['pretrained'], num_classes=len(classes)).to(device)
-    
-    if not cfg['one_hot_encoding']:
-        loss_func = nn.CrossEntropyLoss()
+    initialize_weights_he(model)
+
+    if not cfg['focal_loss']:
+        if not cfg['one_hot_encoding']:
+            loss_func = nn.CrossEntropyLoss()
+        else:
+            loss_func = nn.BCEWithLogitsLoss()
     else:
-        loss_func = nn.BCEWithLogitsLoss()
+        loss_func = FocalLoss(cfg['one_hot_encoding'], alpha=cfg['focal_alpha'], gamma=cfg['focal_gamma'])
 
     optimizer = optim.AdamW(model.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])
-    # scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=cfg['reduce_factor'], patience=cfg['reduce_patience'])
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=cfg['T_0'], T_mult=cfg['T_mult'], eta_min=cfg['min_lr'])
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=cfg['reduce_factor'], patience=cfg['reduce_patience'])
+    # scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=cfg['T_0'], T_mult=cfg['T_mult'], eta_min=cfg['min_lr'])
+    # scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=cfg['exp_gamma'])
 
     save_config(cfg, save_dir)
     best_valid_loss = float('inf')
@@ -138,6 +151,7 @@ def main(cfg):
     early_stopping_patience = cfg.get('early_stop_patience', 10)
     for epoch in range(1, cfg['epochs'] + 1):
         current_lr = optimizer.param_groups[0]['lr']
+        writer.add_scalar('learning_rate', current_lr, epoch)
         print(f"Epoch [{epoch} | {cfg['epochs']}], LR : {current_lr}")
         
         train_result = train(model, train_dataloader, optimizer, loss_func, device, writer, epoch, cfg['one_hot_encoding'])
@@ -146,8 +160,8 @@ def main(cfg):
         valid_result = valid(model, valid_dataloader, loss_func, device, writer, epoch, cfg['one_hot_encoding'])
         print(f"Valid Loss : {valid_result['valid_loss']:.4f}, Valid Acc : {valid_result['valid_acc']:.4f}, Valid F1 : {valid_result['valid_f1']:.4f}")
 
-        # scheduler.step(valid_result['valid_loss'])
-        scheduler.step()
+        scheduler.step(valid_result['valid_loss'])
+        # scheduler.step()
         if valid_result['valid_loss'] < best_valid_loss:
             print(f"Valid Loss Updated | prev : {best_valid_loss:.4f} --> cur : {valid_result['valid_loss']:.4f}")
             best_valid_loss = valid_result['valid_loss']
@@ -169,7 +183,7 @@ def main(cfg):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--config_path', type=str, default='./configs/train_base.yaml', help='Path to the config file')
+    parser.add_argument('--config_path', type=str, default='./config.yaml', help='Path to the config file')
     args = parser.parse_args()
 
     return args

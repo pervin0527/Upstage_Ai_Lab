@@ -23,3 +23,5 @@ pretrained/
 dataset/
 cifar*
 fonts/
+batch_images
+augraphy_cache/

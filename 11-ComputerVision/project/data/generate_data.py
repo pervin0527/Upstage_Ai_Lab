@@ -12,6 +12,8 @@ from tqdm import tqdm
 from augraphy import *
 from torchvision import transforms
 
+from augmentation import QuarterDivide, HalfDivide
+
 def augraphy_transform():
     paper_phase = [
         OneOf([
@@ -77,7 +79,7 @@ def augraphy_transform():
                     shadow_blur_kernel_range = (101, 301),
                     p=0.25)
 
-        ], p=0.15),      
+        ], p=0.25),      
     ]
     
     return AugraphyPipeline(
@@ -100,7 +102,12 @@ def albumentation_transform(img_h, img_w):
             A.Compose([
                 A.LongestMaxSize(max_size=max(img_h, img_w), p=1),
                 A.PadIfNeeded(min_height=img_h, min_width=img_w, border_mode=0, value=(255, 255, 255), p=1),
-            ], p=0.35),
+
+                A.OneOf([
+                    QuarterDivide(p=0.5),
+                    HalfDivide(p=0.5)
+                ], p=0.5),
+            ], p=0.25),
 
             A.ShiftScaleRotate(shift_limit_x=(-0.2, 0.2), 
                                shift_limit_y=(-0.2, 0.2), 
@@ -110,7 +117,13 @@ def albumentation_transform(img_h, img_w):
                                border_mode=0, 
                                value=(255, 255, 255),
                                rotate_method='largest_box',
-                               p=0.35),
+                               p=0.25),
+
+            A.Affine(keep_ratio=True, 
+                     interpolation=0, 
+                     rotate=(-45, 45), 
+                     scale=(1.5, 2),
+                     p=0.25),
 
             A.OpticalDistortion(distort_limit=(-0.3, 0.3), 
                                 shift_limit=(-0.05, 0.05), 
@@ -118,7 +131,7 @@ def albumentation_transform(img_h, img_w):
                                 border_mode=0, 
                                 value=(255, 255, 255), 
                                 mask_value=None,
-                                p=0.3)
+                                p=0.25)
         ], p=0.5),
 
         A.Resize(height=img_h, width=img_w, always_apply=True, p=1.0),
@@ -130,7 +143,7 @@ def albumentation_transform(img_h, img_w):
 def main():
     data_path = "../dataset"
     save_path = f"{data_path}/train_augment"
-    aug_iter = 5
+    aug_iter = 10
     img_h, img_w = 380, 380
 
     df = pd.read_csv(f"{data_path}/train.csv").sample(frac=1).reset_index(drop=True)
@@ -152,9 +165,13 @@ def main():
         file_name = df.iloc[idx1, 0]
         target = df.iloc[idx1, 1]
 
-        wrong_files = ["45f0d2dfc7e47c03.jpg", "aec62dced7af97cd.jpg", "c5182ab809478f12", "1ec14a14bbe633db""aec62dced7af97cd.jpg", "c5182ab809478f12.jpg"]
-        if file_name in wrong_files:
-            continue
+        map_dict = {"45f0d2dfc7e47c03.jpg" : 7,
+                    "aec62dced7af97cd.jpg" : 14,
+                    "0583254a73b48ece.jpg" : 10,
+                    "1ec14a14bbe633db.jpg" : 7,
+                    "c5182ab809478f12.jpg" : 14}
+        if file_name in map_dict:
+            target = map_dict[file_name]
 
         image_path = f"{data_path}/train/{file_name}"
         image = cv2.imread(image_path)

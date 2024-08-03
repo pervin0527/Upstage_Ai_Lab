@@ -80,8 +80,6 @@ def main(cfg):
     model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], test_dataset.num_classes, device)
     ids, preds = inference(model, test_dataloader, device)
 
-    file_name = cfg['saved_dir'].split('/')[-1]
-    output_file = f"{cfg['saved_dir']}/{file_name}.csv"
     save_predictions(ids, preds, test_dataset.classes, cfg)
 
 

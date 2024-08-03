@@ -3,6 +3,7 @@ import numpy as np
 import albumentations as A
 
 from albumentations.pytorch import ToTensorV2
+from albumentations.core.transforms_interface import ImageOnlyTransform
 
 
 def batch_transform(img_h, img_w):
@@ -77,3 +78,46 @@ def cutout(image, mask_color=(0, 0, 0)):
     cutout_image[top:bottom, left:right] = mask_color
 
     return cutout_image
+
+
+def quarter_divide(image):
+    height, width, _ = image.shape
+    center_x, center_y = width // 2, height // 2
+
+    top_left = image[0:center_y, 0:center_x]
+    top_right = image[0:center_y, center_x:width]
+    bottom_left = image[center_y:height, 0:center_x]
+    bottom_right = image[center_y:height, center_x:width]
+
+    results = [top_left, top_right, bottom_left, bottom_right]
+    
+    return results[random.randint(0, 3)]
+
+
+def half_divide(image):
+    height, width, _ = image.shape    
+    center_y = height // 2
+
+    top_half = image[0:center_y, :]
+    bottom_half = image[center_y:height, :]
+
+    results = [top_half, bottom_half]
+    idx = random.randint(0, 1)
+    
+    return results[idx]
+
+
+class QuarterDivide(ImageOnlyTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply=always_apply, p=p)
+    
+    def apply(self, img, **params):
+        return quarter_divide(img)
+    
+
+class HalfDivide(ImageOnlyTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply=always_apply, p=p)
+
+    def apply(self, img, **params):
+        return half_divide(img)

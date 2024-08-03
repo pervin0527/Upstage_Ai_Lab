@@ -10,6 +10,8 @@ from torch.utils.data import DataLoader
 from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score
 
+from transformers import AutoImageProcessor, AutoModelForImageClassification
+
 from loss import FocalLoss
 from data.dataset import DocTypeDataset
 from data.augmentation import batch_transform
@@ -29,7 +31,7 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
             images = images.to(device)
             labels = labels.to(device)
 
-            preds = model(images)
+            preds = model(images).logits
             loss = loss_func(preds, labels)
             valid_loss += loss.item() * images.size(0)
 
@@ -57,24 +59,27 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
     return result
 
 
-def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot):
+def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot, gradient_accumulation_steps):
     model.train()
     train_loss = 0
     preds_list = []
     targets_list = []
+    optimizer.zero_grad()
 
-    for _, images, labels in tqdm(dataloader, desc="Train", leave=False):
+    for step, (_, images, labels) in enumerate(tqdm(dataloader, desc="Train", leave=False)):
         images = images.to(device)
         labels = labels.to(device)
 
-        optimizer.zero_grad()
-        preds = model(images)
+        preds = model(images).logits
         loss = loss_func(preds, labels)
-        
-        loss.backward()
-        optimizer.step()
+        loss = loss / gradient_accumulation_steps
 
-        train_loss += loss.item() * images.size(0)
+        loss.backward()
+        if (step + 1) % gradient_accumulation_steps == 0:
+            optimizer.step()
+            optimizer.zero_grad()
+
+        train_loss += loss.item() * images.size(0) * gradient_accumulation_steps
 
         if not is_onehot:
             preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
@@ -121,7 +126,11 @@ def main(cfg):
 
             break
 
-    model = timm.create_model(cfg['model_name'], pretrained=cfg['pretrained'], num_classes=len(classes)).to(device)
+    # transformers 모델과 프로세서 로드
+    processor = AutoImageProcessor.from_pretrained("amaye15/SwinV2-Base-Document-Classifier")
+    model = AutoModelForImageClassification.from_pretrained("amaye15/SwinV2-Base-Document-Classifier", 
+                                                            ignore_mismatched_sizes=True,
+                                                            num_labels=len(classes)).to(device)
 
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
@@ -149,7 +158,7 @@ def main(cfg):
         writer.add_scalar('learning_rate', current_lr, epoch)
         print(f"Epoch [{epoch} | {cfg['epochs']}], LR : {current_lr}")
         
-        train_result = train(model, train_dataloader, optimizer, loss_func, device, writer, epoch, cfg['one_hot_encoding'])
+        train_result = train(model, train_dataloader, optimizer, loss_func, device, writer, epoch, cfg['one_hot_encoding'], cfg['gradient_accumulation_steps'])
         print(f"Train Loss : {train_result['train_loss']:.4f}, Train Acc : {train_result['train_acc']:.4f}, Train F1 : {train_result['train_f1']:.4f}")
 
         valid_result = valid(model, valid_dataloader, loss_func, device, writer, epoch, cfg['one_hot_encoding'])

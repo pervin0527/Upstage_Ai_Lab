@@ -20,6 +20,16 @@ class DocTypeDataset(Dataset):
         self.classes = list(meta_df['class_name'].unique())
         self.num_classes = len(self.classes)
 
+        # ## 자주 틀리는 클래스들만 선별해서 학습
+        # target_classes = [3, 4, 7, 10, 11, 12, 13, 14]
+        # self.df = self.df[self.df['target'].isin(target_classes)] ## 리스트에 해당하는 target인 행들만 선별
+        # target_map_dict = {(idx, label) for idx, label in enumerate(target_classes)}
+        # self.df['target'] = self.df['target'].map(target_map_dict)
+
+        # meta_df = meta_df[meta_df['target'].isin(target_classes)]
+        # self.classes = list(meta_df['class_name'].unique())
+        # self.num_classes = len(self.classes)
+
     def __len__(self):
         return len(self.df)
     

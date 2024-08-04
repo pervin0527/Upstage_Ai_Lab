@@ -13,6 +13,15 @@ def main():
         id = file_df.iloc[idx, 0]
         target = file_df.iloc[idx, 1]
 
+        map_dict = {"45f0d2dfc7e47c03.jpg" : 7,
+                    "aec62dced7af97cd.jpg" : 14,
+                    "0583254a73b48ece.jpg" : 10,
+                    "1ec14a14bbe633db.jpg" : 7,
+                    "c5182ab809478f12.jpg" : 14,
+                    "8646f2c3280a4f49.jpg" : 3}
+        if id in map_dict:
+            target = map_dict[id]
+
         str_class = classes[target]
         os.makedirs(f"{data_path}/images/{str_class}", exist_ok=True)
 

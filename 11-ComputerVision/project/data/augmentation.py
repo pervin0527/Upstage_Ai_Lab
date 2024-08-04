@@ -59,22 +59,18 @@ def cutout(image, mask_color=(0, 0, 0)):
     h, w, _ = image.shape
     mask_size = (h // random.randint(4, 6))
 
-    # 마스크의 좌표를 임의로 선택
     top = np.random.randint(0 - mask_size // 2, h - mask_size)
     left = np.random.randint(0 - mask_size // 2, w - mask_size)
     bottom = top + mask_size
     right = left + mask_size
 
-    # 이미지의 복사본 생성
     cutout_image = image.copy()
 
-    # 이미지 범위를 벗어나지 않도록 조정
     top = max(0, top)
     left = max(0, left)
     bottom = min(h, bottom)
     right = min(w, right)
 
-    # 선택된 영역을 마스크 색상으로 채움
     cutout_image[top:bottom, left:right] = mask_color
 
     return cutout_image
@@ -107,6 +103,39 @@ def half_divide(image):
     return results[idx]
 
 
+def divide_three_parts(image):
+    height, width = image.shape[:2]
+
+    part_height = height // 3
+    top_part = image[:part_height, :]
+    middle_part = image[part_height:2*part_height, :]
+    bottom_part = image[2*part_height:, :]
+
+    results = [top_part, middle_part, bottom_part]
+    idx = random.randint(0, 2)
+
+    return results[idx]
+
+
+def divide_six_parts(image):
+    height, width = image.shape[:2]
+
+    block_height = height // 2
+    block_width = width // 3
+
+    block_1 = image[:block_height, :block_width]
+    block_2 = image[:block_height, block_width:2*block_width]
+    block_3 = image[:block_height, 2*block_width:]
+    block_4 = image[block_height:, :block_width]
+    block_5 = image[block_height:, block_width:2*block_width]
+    block_6 = image[block_height:, 2*block_width:]
+
+    results = [block_1, block_2, block_3, block_4, block_5, block_6]
+    idx = random.randint(0, 5)
+
+    return results[idx]
+
+
 class QuarterDivide(ImageOnlyTransform):
     def __init__(self, always_apply=False, p=1):
         super().__init__(always_apply=always_apply, p=p)
@@ -121,3 +150,19 @@ class HalfDivide(ImageOnlyTransform):
 
     def apply(self, img, **params):
         return half_divide(img)
+    
+
+class DivideThreeParts(ImageOnlyTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply=always_apply, p=p)
+
+    def apply(self, img, **params):
+        return divide_three_parts(img)
+    
+
+class DivideSixParts(ImageOnlyTransform):
+    def __init__(self, always_apply=False, p=1):
+        super().__init__(always_apply=always_apply, p=p)
+
+    def apply(self, img, **params):
+        return divide_six_parts(img)

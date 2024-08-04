@@ -12,7 +12,7 @@ from tqdm import tqdm
 from augraphy import *
 from torchvision import transforms
 
-from augmentation import QuarterDivide, HalfDivide
+from augmentation import QuarterDivide, HalfDivide, DivideThreeParts, DivideSixParts
 
 def augraphy_transform():
     paper_phase = [
@@ -104,9 +104,12 @@ def albumentation_transform(img_h, img_w):
                 A.PadIfNeeded(min_height=img_h, min_width=img_w, border_mode=0, value=(255, 255, 255), p=1),
 
                 A.OneOf([
-                    QuarterDivide(p=0.5),
-                    HalfDivide(p=0.5)
+                    QuarterDivide(p=0.25),
+                    HalfDivide(p=0.25),
+                    DivideThreeParts(p=0.25),
+                    DivideSixParts(p=0.25)
                 ], p=0.5),
+
             ], p=0.25),
 
             A.ShiftScaleRotate(shift_limit_x=(-0.2, 0.2), 
@@ -142,8 +145,9 @@ def albumentation_transform(img_h, img_w):
 
 def main():
     data_path = "../dataset"
-    save_path = f"{data_path}/train_augment"
-    aug_iter = 10
+    aug_iter = 50
+    name = f"train_aug_{aug_iter}"
+    save_path = f"{data_path}/{name}"
     img_h, img_w = 380, 380
 
     df = pd.read_csv(f"{data_path}/train.csv").sample(frac=1).reset_index(drop=True)
@@ -165,16 +169,21 @@ def main():
         file_name = df.iloc[idx1, 0]
         target = df.iloc[idx1, 1]
 
-        map_dict = {"45f0d2dfc7e47c03.jpg" : 7,
-                    "aec62dced7af97cd.jpg" : 14,
-                    "0583254a73b48ece.jpg" : 10,
-                    "1ec14a14bbe633db.jpg" : 7,
-                    "c5182ab809478f12.jpg" : 14}
+        map_dict = {
+            "45f0d2dfc7e47c03.jpg" : 7,
+            "aec62dced7af97cd.jpg" : 14,
+            "0583254a73b48ece.jpg" : 10,
+            "1ec14a14bbe633db.jpg" : 7,
+            "c5182ab809478f12.jpg" : 14,
+            "8646f2c3280a4f49.jpg" : 3
+        }
         if file_name in map_dict:
             target = map_dict[file_name]
 
         image_path = f"{data_path}/train/{file_name}"
         image = cv2.imread(image_path)
+        cv2.imwrite(f"{save_path}/{file_name}", image)
+        augmented_data.append({"ID": file_name, "target": target})
 
         for idx2 in tqdm(range(aug_iter), leave=False):
             ## augraphy + albumentations
@@ -197,7 +206,7 @@ def main():
             augmented_data.append({"ID": op3_name, "target": target})
 
     augmented_df = pd.DataFrame(augmented_data)
-    augmented_df.to_csv(f"{data_path}/train_augment.csv", index=False)
+    augmented_df.to_csv(f"{data_path}/{name}.csv", index=False)
 
 if __name__ == "__main__":
     main()

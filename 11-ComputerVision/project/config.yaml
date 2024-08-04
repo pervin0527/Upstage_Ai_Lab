@@ -5,8 +5,8 @@ save_batch_imgs: True
 save_path: ./runs
 meta_path: ./dataset/meta.csv
 
-train_img_path: ./dataset/train_augment
-train_csv_path: ./dataset/train_augment.csv
+train_img_path: ./dataset/train_augment_ver2
+train_csv_path: ./dataset/train_augment_ver2.csv
 
 valid_img_path: ./dataset/test
 valid_csv_path: ./dataset/mini_submission.csv
@@ -22,24 +22,23 @@ focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
-num_workers: 32
 epochs: 500
 img_h: 380
 img_w: 380
-batch_size: 8
+batch_size: 32
+num_workers: 32
 
-learning_rate: 0
-weight_decay: 0.05
-early_stop_patience: 20
-
+learning_rate: 0.00001
+weight_decay: 0
+early_stop_patience: 500
 gradient_accumulation_steps: 4
 
 ## CosineAnnealingWarmUpRestarts
 min_lr: 0.00001
-max_lr: 0.01
+max_lr: 0.001
 warmup_epochs: 10
-T_0: 100
-T_mult: 1
+T_0: 100 ## 50
+T_mult: 1 ## 2
 T_gamma: 0.5
 
 ## Exponential Scheduler

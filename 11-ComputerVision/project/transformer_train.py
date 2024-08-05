@@ -10,10 +10,10 @@ from torch.utils.data import DataLoader
 from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score
 
-from transformers import AutoImageProcessor, AutoModelForImageClassification
+from transformers import AutoImageProcessor, AutoFeatureExtractor, AutoModelForImageClassification
 
 from loss import FocalLoss
-from data.dataset import DocTypeDataset
+from data.dataset import TransformerDataset
 from data.augmentation import batch_transform
 
 from utils.data_util import train_valid_split
@@ -35,12 +35,11 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
             loss = loss_func(preds, labels)
             valid_loss += loss.item() * images.size(0)
 
-            if not is_onehot:
-                preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
-                targets_list.extend(labels.detach().cpu().numpy())
-            else:
-                preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+            if is_onehot:
                 targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
+            else:
+                targets_list.extend(labels.detach().cpu().numpy())
 
     valid_loss /= len(dataloader.dataset)
     valid_acc = accuracy_score(targets_list, preds_list)
@@ -59,11 +58,12 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
     return result
 
 
-def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot, gradient_accumulation_steps):
+def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot, accumulation_steps=1):
     model.train()
     train_loss = 0
     preds_list = []
     targets_list = []
+
     optimizer.zero_grad()
 
     for step, (_, images, labels) in enumerate(tqdm(dataloader, desc="Train", leave=False)):
@@ -72,21 +72,22 @@ def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_one
 
         preds = model(images).logits
         loss = loss_func(preds, labels)
-        loss = loss / gradient_accumulation_steps
+        loss = loss / accumulation_steps
 
         loss.backward()
-        if (step + 1) % gradient_accumulation_steps == 0:
+
+        if (step + 1) % accumulation_steps == 0:
             optimizer.step()
             optimizer.zero_grad()
 
-        train_loss += loss.item() * images.size(0) * gradient_accumulation_steps
+        train_loss += loss.item() * images.size(0) * accumulation_steps
 
-        if not is_onehot:
-            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
-            targets_list.extend(labels.detach().cpu().numpy())
-        else:
-            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+        # 예측 결과와 타깃 준비
+        preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+        if is_onehot:
             targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
+        else:
+            targets_list.extend(labels.detach().cpu().numpy())
 
     train_loss /= len(dataloader.dataset)
     train_acc = accuracy_score(targets_list, preds_list)
@@ -105,18 +106,38 @@ def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_one
     return result
 
 
+
 def main(cfg):
     save_dir = make_save_dir(cfg['save_path'])
     writer = SummaryWriter(log_dir=f"{save_dir}/logs")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    train_dataset = DocTypeDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], batch_transform(cfg['img_h'], cfg['img_w']), cfg['one_hot_encoding'])
-    valid_dataset = DocTypeDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], batch_transform(cfg['img_h'], cfg['img_w']), cfg['one_hot_encoding'])
+    processor = AutoImageProcessor.from_pretrained(cfg['model_name'])
+    train_dataset = TransformerDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor)
+    valid_dataset = TransformerDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor)
     print(f"Total train : {len(train_dataset)}, Total Valid : {len(valid_dataset)}")
 
     train_dataloader = DataLoader(train_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'], shuffle=True)
     valid_dataloader = DataLoader(valid_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
     classes = train_dataset.classes
+
+    model = AutoModelForImageClassification.from_pretrained(cfg['model_name'], 
+                                                            num_labels=len(classes),
+                                                            ignore_mismatched_sizes=True)
+    
+    if cfg['pretrained_path']:
+        model.load_state_dict(torch.load(cfg['pretrained_path']))
+    
+    if hasattr(model, 'classifier'):
+        in_features = model.classifier.in_features
+        model.classifier = nn.Linear(in_features, len(classes))
+    elif hasattr(model, 'head'):
+        in_features = model.head.in_features
+        model.head = nn.Linear(in_features, len(classes))
+    else:
+        raise ValueError("Unable to find the classifier in the model")
+    
+    model = model.to(device)
 
     if cfg['save_batch_imgs']:
         for batch_idx, data in enumerate(train_dataloader):
@@ -126,33 +147,22 @@ def main(cfg):
 
             break
 
-    # transformers 모델과 프로세서 로드
-    processor = AutoImageProcessor.from_pretrained("amaye15/SwinV2-Base-Document-Classifier")
-    model = AutoModelForImageClassification.from_pretrained("amaye15/SwinV2-Base-Document-Classifier", 
-                                                            ignore_mismatched_sizes=True,
-                                                            num_labels=len(classes)).to(device)
-
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
             print("Loss function : CrossEntropy")
             loss_func = nn.CrossEntropyLoss()
         else:
-            print("Loss function : BCEWithLogitsLoss")
-            loss_func = nn.BCEWithLogitsLoss()
+            print("Loss function : SoftTargetCrossEntropy")
+            loss_func = timm.loss.SoftTargetCrossEntropy()
     else:
         print("Loss function : FocalLoss")
         loss_func = FocalLoss(cfg['one_hot_encoding'], alpha=cfg['focal_alpha'], gamma=cfg['focal_gamma'])
 
     optimizer = optim.AdamW(model.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])
-    # scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=cfg['exp_gamma'])
-    # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=cfg['reduce_factor'], patience=cfg['reduce_patience'])
-    # scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(optimizer, T_0=cfg['T_0'], T_mult=cfg['T_mult'], eta_min=cfg['min_lr'])
     scheduler = CosineAnnealingWarmUpRestarts(optimizer, T_0=cfg['T_0'], T_mult=cfg['T_mult'], eta_max=cfg['max_lr'],  T_up=cfg['warmup_epochs'], gamma=cfg['T_gamma'])
 
     save_config(cfg, save_dir)
-    best_valid_loss = float('inf')
-    early_stopping_counter = 0
-    early_stopping_patience = cfg['early_stop_patience']
+    best_f1_score = 0
     for epoch in range(1, cfg['epochs'] + 1):
         current_lr = optimizer.param_groups[0]['lr']
         writer.add_scalar('learning_rate', current_lr, epoch)
@@ -164,30 +174,20 @@ def main(cfg):
         valid_result = valid(model, valid_dataloader, loss_func, device, writer, epoch, cfg['one_hot_encoding'])
         print(f"Valid Loss : {valid_result['valid_loss']:.4f}, Valid Acc : {valid_result['valid_acc']:.4f}, Valid F1 : {valid_result['valid_f1']:.4f}")
 
-        # scheduler.step(valid_result['valid_loss'])
         scheduler.step()
-        if valid_result['valid_loss'] < best_valid_loss:
-            print(f"Valid Loss Updated | prev : {best_valid_loss:.4f} --> cur : {valid_result['valid_loss']:.4f}")
-            best_valid_loss = valid_result['valid_loss']
+        if valid_result['valid_f1'] > best_f1_score:
+            print(f"Valid F1 Updated | prev : {best_f1_score:.4f} --> cur : {valid_result['valid_f1']:.4f}")
+            best_f1_score = valid_result['valid_f1']
             torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'best.pth'))
-            early_stopping_counter = 0
-        else:
-            early_stopping_counter += 1
-            print(f"Valid Loss Not Updated | early_stop_counter : {early_stopping_counter}")
 
-        if early_stopping_counter >= early_stopping_patience:
-            print("Early stopping")
-            break
-
+        torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'last.pth'))
         print()
 
-    torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'last.pth'))
     writer.close()
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--config_path', type=str, default='./config.yaml', help='Path to the config file')
+    parser.add_argument('--config_path', type=str, default='./transformer_config.yaml', help='Path to the config file')
     args = parser.parse_args()
 
     return args

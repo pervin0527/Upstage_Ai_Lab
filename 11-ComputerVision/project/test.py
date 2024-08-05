@@ -73,8 +73,7 @@ def save_predictions(ids, preds, classes, cfg):
 
 def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    transform = batch_transform(cfg['img_h'], cfg['img_w'])
-    test_dataset = DocTypeDataset(cfg['test_img_path'], cfg['test_csv_path'], cfg['meta_path'], transform, cfg["one_hot_encoding"])
+    test_dataset = DocTypeDataset(cfg['test_img_path'], cfg['test_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg["one_hot_encoding"])
     test_dataloader = DataLoader(test_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
     
     model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], test_dataset.num_classes, device)

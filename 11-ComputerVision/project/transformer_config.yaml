@@ -9,33 +9,34 @@ train_img_path: ./dataset/train
 train_csv_path: ./dataset/train.csv
 
 valid_img_path: ./dataset/test
-valid_csv_path: ./dataset/valid_dataset.csv
+valid_csv_path: ./dataset/mini_submission.csv
 
 test_img_path: ./dataset/test
 test_csv_path: ./dataset/sample_submission.csv
 
 one_hot_encoding: False
-model_name: efficientnet_b5 ## resnet50, efficientnet_b0, efficientnetv2_rw_m.agc_in1k, swin_transformer
+model_name: microsoft/swin-tiny-patch4-window7-224 ## amaye15/SwinV2-Base-Document-Classifier, microsoft/swin-base-patch4-window12-384
 pretrained: True
-pretrained_path: null ## ./runs/best_9352/weights/best.pth
+pretrained_path: ./runs/2024-08-05-16-29-50/weights/best.pth
 
 focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
 epochs: 500
-img_h: 456
-img_w: 456
-batch_size: 16
+img_h: 224
+img_w: 224
+batch_size: 32
 num_workers: 32
 
-learning_rate: 0.00001
+learning_rate: 0.0000005
 weight_decay: 0
+gradient_accumulation_steps: 4
 
 ## CosineAnnealingWarmUpRestarts
-max_lr: 0.001
-warmup_epochs: 10
-T_0: 100 ## 50
+max_lr: 0.00005
+warmup_epochs: 100
+T_0: 200 ## 50
 T_mult: 1 ## 2
 T_gamma: 0.5
 

@@ -1,5 +1,6 @@
 import os
 import timm
+import timm.loss
 import torch
 import argparse
 
@@ -12,11 +13,10 @@ from sklearn.metrics import accuracy_score, f1_score
 
 from loss import FocalLoss
 from data.dataset import DocTypeDataset
-from data.augmentation import batch_transform
 
-from utils.data_util import train_valid_split
 from utils.config_util import load_config, save_config
 from utils.train_util import set_seed, make_save_dir, save_batch_images, CosineAnnealingWarmUpRestarts
+
 
 def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
     model.eval()
@@ -33,12 +33,11 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
             loss = loss_func(preds, labels)
             valid_loss += loss.item() * images.size(0)
 
-            if not is_onehot:
-                preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
-                targets_list.extend(labels.detach().cpu().numpy())
-            else:
-                preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+            if is_onehot:
                 targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
+            else:
+                targets_list.extend(labels.detach().cpu().numpy())
 
     valid_loss /= len(dataloader.dataset)
     valid_acc = accuracy_score(targets_list, preds_list)
@@ -73,15 +72,13 @@ def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_one
         
         loss.backward()
         optimizer.step()
-
         train_loss += loss.item() * images.size(0)
 
-        if not is_onehot:
-            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
-            targets_list.extend(labels.detach().cpu().numpy())
-        else:
-            preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+        preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+        if is_onehot:
             targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
+        else:
+            targets_list.extend(labels.detach().cpu().numpy())
 
     train_loss /= len(dataloader.dataset)
     train_acc = accuracy_score(targets_list, preds_list)
@@ -105,8 +102,9 @@ def main(cfg):
     writer = SummaryWriter(log_dir=f"{save_dir}/logs")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    train_dataset = DocTypeDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], batch_transform(cfg['img_h'], cfg['img_w']), cfg['one_hot_encoding'])
-    valid_dataset = DocTypeDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], batch_transform(cfg['img_h'], cfg['img_w']), cfg['one_hot_encoding'])
+    ## 데이터셋
+    train_dataset = DocTypeDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'])
+    valid_dataset = DocTypeDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'])
     print(f"Total train : {len(train_dataset)}, Total Valid : {len(valid_dataset)}")
 
     train_dataloader = DataLoader(train_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'], shuffle=True)
@@ -121,26 +119,32 @@ def main(cfg):
 
             break
 
+    ## 모델 로드
     model = timm.create_model(cfg['model_name'], pretrained=cfg['pretrained'], num_classes=len(classes)).to(device)
 
+    ## 사전 학습 가중치 로드
+    if cfg['pretrained_path']:
+        model.load_state_dict(torch.load(cfg['pretrained_path']))
+
+    ## 손실함수 설정
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
             print("Loss function : CrossEntropy")
             loss_func = nn.CrossEntropyLoss()
         else:
-            print("Loss function : BCEWithLogitsLoss")
-            loss_func = nn.BCEWithLogitsLoss()
+            print("Loss function : SoftTargetCrossEntropy")
+            loss_func = timm.loss.SoftTargetCrossEntropy()
     else:
         print("Loss function : FocalLoss")
         loss_func = FocalLoss(cfg['one_hot_encoding'], alpha=cfg['focal_alpha'], gamma=cfg['focal_gamma'])
 
+    ## 최적화 알고리즘, 스케쥴러
     optimizer = optim.AdamW(model.parameters(), lr=cfg['learning_rate'], weight_decay=cfg['weight_decay'])
     scheduler = CosineAnnealingWarmUpRestarts(optimizer, T_0=cfg['T_0'], T_mult=cfg['T_mult'], eta_max=cfg['max_lr'],  T_up=cfg['warmup_epochs'], gamma=cfg['T_gamma'])
 
+    ## 학습 루프
     save_config(cfg, save_dir)
     best_f1_score = 0
-    early_stopping_counter = 0
-    early_stopping_patience = cfg['early_stop_patience']
     for epoch in range(1, cfg['epochs'] + 1):
         current_lr = optimizer.param_groups[0]['lr']
         writer.add_scalar('learning_rate', current_lr, epoch)
@@ -154,21 +158,13 @@ def main(cfg):
 
         scheduler.step()
         if valid_result['valid_f1'] > best_f1_score:
-            print(f"Valid F1 Updated | prev : {best_f1_score:.4f} --> cur : {valid_result['valid_f1']:.4f}")
+            print(f"Valid F1 Updated. {best_f1_score:.4f} --> cur : {valid_result['valid_f1']:.4f}")
             best_f1_score = valid_result['valid_f1']
             torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'best.pth'))
-            early_stopping_counter = 0
-        else:
-            early_stopping_counter += 1
-            print(f"Valid F1 Not Updated | early_stop_counter : {early_stopping_counter}")
 
-        if early_stopping_counter >= early_stopping_patience:
-            print("Early stopping")
-            break
-
+        torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'last.pth'))
         print()
 
-    torch.save(model.state_dict(), os.path.join(save_dir, 'weights', 'last.pth'))
     writer.close()
 
 

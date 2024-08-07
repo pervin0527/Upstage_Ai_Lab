@@ -14,6 +14,7 @@ valid_csv_path: ./dataset/mini_submission.csv
 test_img_path: ./dataset/test
 test_csv_path: ./dataset/sample_submission.csv
 
+total_train: True
 one_hot_encoding: False
 model_name: microsoft/swin-tiny-patch4-window7-224 ## amaye15/SwinV2-Base-Document-Classifier, microsoft/swin-base-patch4-window12-384
 pretrained: True

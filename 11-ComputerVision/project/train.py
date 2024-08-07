@@ -56,24 +56,72 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
     return result
 
 
-def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot):
+# def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot):
+#     model.train()
+#     train_loss = 0
+#     preds_list = []
+#     targets_list = []
+
+#     for _, images, labels in tqdm(dataloader, desc="Train", leave=False):
+#         images = images.to(device)
+#         labels = labels.to(device)
+
+#         optimizer.zero_grad()
+#         preds = model(images)
+#         loss = loss_func(preds, labels)
+        
+#         loss.backward()
+#         optimizer.step()
+#         train_loss += loss.item() * images.size(0)
+
+#         preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
+#         if is_onehot:
+#             targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
+#         else:
+#             targets_list.extend(labels.detach().cpu().numpy())
+
+#     train_loss /= len(dataloader.dataset)
+#     train_acc = accuracy_score(targets_list, preds_list)
+#     train_f1 = f1_score(targets_list, preds_list, average='macro')
+
+#     writer.add_scalars('train', {'Loss': train_loss}, epoch)
+#     writer.add_scalars('train', {'Accuracy': train_acc}, epoch)
+#     writer.add_scalars('train', {'F1_Score': train_f1}, epoch)
+
+#     result = {
+#         "train_loss": train_loss,
+#         "train_acc": train_acc,
+#         "train_f1": train_f1,
+#     }
+
+#     return result
+
+
+def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot, accumulation_steps=1):
     model.train()
     train_loss = 0
     preds_list = []
     targets_list = []
 
-    for _, images, labels in tqdm(dataloader, desc="Train", leave=False):
+    optimizer.zero_grad()
+
+    for step, (_, images, labels) in enumerate(tqdm(dataloader, desc="Train", leave=False)):
         images = images.to(device)
         labels = labels.to(device)
 
-        optimizer.zero_grad()
         preds = model(images)
         loss = loss_func(preds, labels)
-        
-        loss.backward()
-        optimizer.step()
-        train_loss += loss.item() * images.size(0)
+        loss = loss / accumulation_steps
 
+        loss.backward()
+
+        if (step + 1) % accumulation_steps == 0:
+            optimizer.step()
+            optimizer.zero_grad()
+
+        train_loss += loss.item() * images.size(0) * accumulation_steps
+
+        # 예측 결과와 타깃 준비
         preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
         if is_onehot:
             targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
@@ -103,13 +151,14 @@ def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     ## 데이터셋
-    train_dataset = DocTypeDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'])
-    valid_dataset = DocTypeDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'])
+    train_dataset = DocTypeDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], total_train=cfg['total_train'])
+    valid_dataset = DocTypeDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], total_train=cfg['total_train'])
     print(f"Total train : {len(train_dataset)}, Total Valid : {len(valid_dataset)}")
 
     train_dataloader = DataLoader(train_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'], shuffle=True)
     valid_dataloader = DataLoader(valid_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
     classes = train_dataset.classes
+    print(f"Total Classes : {len(classes)}")
 
     if cfg['save_batch_imgs']:
         for batch_idx, data in enumerate(train_dataloader):
@@ -124,12 +173,27 @@ def main(cfg):
 
     ## 사전 학습 가중치 로드
     if cfg['pretrained_path']:
-        model.load_state_dict(torch.load(cfg['pretrained_path']))
+        # model.load_state_dict(torch.load(cfg['pretrained_path']))
+
+        ## 출력층을 제외한 나머지 층만 사전학습 가중치를 사용.
+        pretrained_dict = torch.load(cfg['pretrained_path'])
+        model_dict = model.state_dict()
+        pretrained_dict = {k: v for k, v in pretrained_dict.items() if 'classifier' not in k}
+
+        model_dict.update(pretrained_dict)
+        model.load_state_dict(model_dict, strict=False)
+        model.classifier.reset_parameters()        
 
     ## 손실함수 설정
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
             print("Loss function : CrossEntropy")
+            # class_weights = torch.tensor([[0.0169, 0.0255, 0.2472, 0.2176, 0.1192,
+            #                                0.2472, 0.2472, 0.2191, 0.2472, 0.2472,
+            #                                0.0226, 0.0344, 0.0113, 0.0805, 0.2472,
+            #                                0.0057, 0.2472]]).to(device)
+            # loss_func = nn.CrossEntropyLoss(weight=class_weights.squeeze())
+
             loss_func = nn.CrossEntropyLoss()
         else:
             print("Loss function : SoftTargetCrossEntropy")

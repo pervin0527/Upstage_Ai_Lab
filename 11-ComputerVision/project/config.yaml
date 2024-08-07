@@ -14,29 +14,31 @@ valid_csv_path: ./dataset/valid_dataset.csv
 test_img_path: ./dataset/test
 test_csv_path: ./dataset/sample_submission.csv
 
-one_hot_encoding: False
-model_name: efficientnet_b5 ## resnet50, efficientnet_b0, efficientnetv2_rw_m.agc_in1k, swin_transformer
+total_train: True
+one_hot_encoding: True
+model_name: tf_efficientnetv2_xl.in21k
 pretrained: True
-pretrained_path: null ## ./runs/best_9352/weights/best.pth
+pretrained_path: null ## ./runs/best_9559/weights/best.pth
 
 focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
 epochs: 500
-img_h: 456
-img_w: 456
-batch_size: 16
+img_h: 348 ## 456, 528
+img_w: 348 ## 456, 528
+batch_size: 8
 num_workers: 32
 
 learning_rate: 0.00001
 weight_decay: 0
+gradient_accumulation_steps: 4
 
 ## CosineAnnealingWarmUpRestarts
 max_lr: 0.001
-warmup_epochs: 10
-T_0: 100 ## 50
-T_mult: 1 ## 2
+warmup_epochs: 10 ## 10
+T_0: 200 ## 100, 200
+T_mult: 1
 T_gamma: 0.5
 
 ## Exponential Scheduler

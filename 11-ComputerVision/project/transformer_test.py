@@ -8,9 +8,8 @@ from tqdm import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoImageProcessor, AutoModelForImageClassification
 
-from data.dataset import DocTypeDataset
-from data.augmentation import batch_transform
 from utils.config_util import load_config
+from data.dataset import TransformerDataset
 
 
 def load_model(model_path, model_name, num_classes, device):
@@ -76,8 +75,8 @@ def save_predictions(ids, preds, classes, cfg):
 
 def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    transform = batch_transform(cfg['img_h'], cfg['img_w'])
-    test_dataset = DocTypeDataset(cfg['test_img_path'], cfg['test_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg["one_hot_encoding"])
+    processor = AutoImageProcessor.from_pretrained(cfg['model_name'])
+    test_dataset = TransformerDataset(cfg['test_img_path'], cfg['test_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg["one_hot_encoding"], processor, cfg['total_train'])
     test_dataloader = DataLoader(test_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
 
     model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], test_dataset.num_classes, device)

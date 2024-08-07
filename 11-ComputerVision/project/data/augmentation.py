@@ -166,23 +166,57 @@ def rand_bbox(size, lam):
     return bbx1, bby1, bbx2, bby2
 
 
-def cutmix(image1, image2, label1, label2, alpha=1.0):
-    lam = np.random.beta(alpha, alpha)
-    bbx1, bby1, bbx2, bby2 = rand_bbox(image1.shape, lam)
+# def cutmix(image1, image2, label1, label2, alpha=1.0):
+#     lam = np.random.beta(alpha, alpha)
+#     bbx1, bby1, bbx2, bby2 = rand_bbox(image1.shape, lam)
     
-    image1[bbx1:bbx2, bby1:bby2, :] = image2[bbx1:bbx2, bby1:bby2, :]
+#     image1[bbx1:bbx2, bby1:bby2, :] = image2[bbx1:bbx2, bby1:bby2, :]
+#     label = lam * label1 + (1 - lam) * label2
+    
+#     return image1, label
+
+def cutmix(image1, image2, label1, label2):
+    height, width, _ = image1.shape
+    center_x, center_y = width // 2, height // 2
+
+    # 랜덤하게 1/4 영역 선택
+    quarter = random.randint(0, 3)
+    if quarter == 0:  # top_left
+        x1, y1, x2, y2 = 0, 0, center_x, center_y
+    elif quarter == 1:  # top_right
+        x1, y1, x2, y2 = center_x, 0, width, center_y
+    elif quarter == 2:  # bottom_left
+        x1, y1, x2, y2 = 0, center_y, center_x, height
+    else:  # bottom_right
+        x1, y1, x2, y2 = center_x, center_y, width, height
+
+    area = (x2 - x1) * (y2 - y1)
+    total_area = height * width
+    
+    lam = 1 - (area / total_area)
+    image1[y1:y2, x1:x2] = image2[y1:y2, x1:x2]
+    
     label = lam * label1 + (1 - lam) * label2
     
     return image1, label
 
 
+# def mixup(image1, image2, label1, label2, alpha=1.0):
+#     lam = np.random.beta(alpha, alpha)
+    
+#     mixup_image = lam * image1 + (1 - lam) * image2
+#     mixup_image = mixup_image.astype(np.uint8)
+    
+#     mixup_label = lam * label1 + (1 - lam) * label2
+    
+#     return mixup_image, mixup_label
+
+
 def mixup(image1, image2, label1, label2, alpha=1.0):
     lam = np.random.beta(alpha, alpha)
-    
-    mixup_image = lam * image1 + (1 - lam) * image2
-    mixup_image = mixup_image.astype(np.uint8)
-    
+    mixup_image = lam * image1.astype(np.float32) + (1 - lam) * image2.astype(np.float32)
     mixup_label = lam * label1 + (1 - lam) * label2
+    mixup_image = np.clip(mixup_image, 0, 255).astype(np.uint8)
     
     return mixup_image, mixup_label
 

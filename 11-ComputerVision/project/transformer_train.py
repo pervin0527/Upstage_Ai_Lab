@@ -113,8 +113,8 @@ def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     processor = AutoImageProcessor.from_pretrained(cfg['model_name'])
-    train_dataset = TransformerDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor)
-    valid_dataset = TransformerDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor)
+    train_dataset = TransformerDataset(cfg['train_img_path'], cfg['train_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor, total_train=cfg['total_train'])
+    valid_dataset = TransformerDataset(cfg['valid_img_path'], cfg['valid_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg['one_hot_encoding'], processor, total_train=cfg['total_train'])
     print(f"Total train : {len(train_dataset)}, Total Valid : {len(valid_dataset)}")
 
     train_dataloader = DataLoader(train_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'], shuffle=True)

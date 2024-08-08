@@ -8,25 +8,19 @@ import pandas as pd
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 
-from data.dataset import DocTypeDataset
 from utils.config_util import load_config
-from utils.test_util import load_model, inference, save_predictions
-
+from utils.test_util import tta, augment_image, predict, load_model
 
 def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    test_dataset = DocTypeDataset(cfg['test_img_path'], cfg['test_csv_path'], cfg['meta_path'], cfg['img_h'], cfg['img_w'], cfg["one_hot_encoding"], cfg['total_train'])
-    test_dataloader = DataLoader(test_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
     
-    model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], test_dataset.num_classes, device)
-    ids, preds = inference(model, test_dataloader, device)
-
-    save_predictions(ids, preds, test_dataset.classes, cfg)
+    model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], 17, device)
+    tta(model, cfg["test_img_path"], cfg['test_csv_path'], f"{cfg['saved_dir']}/preds", cfg['img_h'], cfg['img_w'], device)
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--saved_dir', type=str, default='./runs/2024-08-08-08-54-10', help='Path to Trained Dir')
+    parser.add_argument('--saved_dir', type=str, default='./runs/best_9564', help='Path to Trained Dir')
     parser.add_argument('--img_h', type=int, default=0)
     parser.add_argument('--img_w', type=int, default=0)
     args = parser.parse_args()

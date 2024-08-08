@@ -12,6 +12,7 @@ from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score
 
 from loss import FocalLoss
+from model import CBAMNetwork
 from data.dataset import DocTypeDataset
 
 from utils.config_util import load_config, save_config
@@ -54,47 +55,6 @@ def valid(model, dataloader, loss_func, device, writer, epoch, is_onehot):
     }
 
     return result
-
-
-# def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot):
-#     model.train()
-#     train_loss = 0
-#     preds_list = []
-#     targets_list = []
-
-#     for _, images, labels in tqdm(dataloader, desc="Train", leave=False):
-#         images = images.to(device)
-#         labels = labels.to(device)
-
-#         optimizer.zero_grad()
-#         preds = model(images)
-#         loss = loss_func(preds, labels)
-        
-#         loss.backward()
-#         optimizer.step()
-#         train_loss += loss.item() * images.size(0)
-
-#         preds_list.extend(preds.argmax(dim=1).detach().cpu().numpy())
-#         if is_onehot:
-#             targets_list.extend(labels.argmax(dim=1).detach().cpu().numpy())
-#         else:
-#             targets_list.extend(labels.detach().cpu().numpy())
-
-#     train_loss /= len(dataloader.dataset)
-#     train_acc = accuracy_score(targets_list, preds_list)
-#     train_f1 = f1_score(targets_list, preds_list, average='macro')
-
-#     writer.add_scalars('train', {'Loss': train_loss}, epoch)
-#     writer.add_scalars('train', {'Accuracy': train_acc}, epoch)
-#     writer.add_scalars('train', {'F1_Score': train_f1}, epoch)
-
-#     result = {
-#         "train_loss": train_loss,
-#         "train_acc": train_acc,
-#         "train_f1": train_f1,
-#     }
-
-#     return result
 
 
 def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_onehot, accumulation_steps=1):
@@ -169,31 +129,27 @@ def main(cfg):
             break
 
     ## 모델 로드
-    model = timm.create_model(cfg['model_name'], pretrained=cfg['pretrained'], num_classes=len(classes)).to(device)
-
+    model = timm.create_model(cfg['model_name'], pretrained=cfg['pretrained'], num_classes=len(classes))
     ## 사전 학습 가중치 로드
     if cfg['pretrained_path']:
-        # model.load_state_dict(torch.load(cfg['pretrained_path']))
+        model.load_state_dict(torch.load(cfg['pretrained_path']))
 
         ## 출력층을 제외한 나머지 층만 사전학습 가중치를 사용.
-        pretrained_dict = torch.load(cfg['pretrained_path'])
-        model_dict = model.state_dict()
-        pretrained_dict = {k: v for k, v in pretrained_dict.items() if 'classifier' not in k}
+        # pretrained_dict = torch.load(cfg['pretrained_path'])
+        # model_dict = model.state_dict()
+        # pretrained_dict = {k: v for k, v in pretrained_dict.items() if 'classifier' not in k}
 
-        model_dict.update(pretrained_dict)
-        model.load_state_dict(model_dict, strict=False)
-        model.classifier.reset_parameters()        
+        # model_dict.update(pretrained_dict)
+        # model.load_state_dict(model_dict, strict=False)
+        # model.classifier.reset_parameters()    
+
+    model = CBAMNetwork(model)
+    model = model.to(device)    
 
     ## 손실함수 설정
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
             print("Loss function : CrossEntropy")
-            # class_weights = torch.tensor([[0.0169, 0.0255, 0.2472, 0.2176, 0.1192,
-            #                                0.2472, 0.2472, 0.2191, 0.2472, 0.2472,
-            #                                0.0226, 0.0344, 0.0113, 0.0805, 0.2472,
-            #                                0.0057, 0.2472]]).to(device)
-            # loss_func = nn.CrossEntropyLoss(weight=class_weights.squeeze())
-
             loss_func = nn.CrossEntropyLoss()
         else:
             print("Loss function : SoftTargetCrossEntropy")

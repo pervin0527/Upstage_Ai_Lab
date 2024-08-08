@@ -16,29 +16,29 @@ test_csv_path: ./dataset/sample_submission.csv
 
 total_train: True
 one_hot_encoding: False
-model_name: microsoft/swin-tiny-patch4-window7-224 ## amaye15/SwinV2-Base-Document-Classifier, microsoft/swin-base-patch4-window12-384
+model_name: facebook/convnextv2-huge.fcmae_ft_in22k_in1k_384 ## amaye15/SwinV2-Base-Document-Classifier, microsoft/swin-base-patch4-window12-384
 pretrained: True
-pretrained_path: ./runs/2024-08-05-16-29-50/weights/best.pth
+pretrained_path: null
 
 focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
 epochs: 500
-img_h: 224
-img_w: 224
-batch_size: 32
+img_h: 384
+img_w: 384
+batch_size: 4
 num_workers: 32
 
-learning_rate: 0.0000005
+learning_rate: 0.00001
 weight_decay: 0
 gradient_accumulation_steps: 4
 
 ## CosineAnnealingWarmUpRestarts
-max_lr: 0.00005
-warmup_epochs: 100
-T_0: 200 ## 50
-T_mult: 1 ## 2
+max_lr: 0.001
+warmup_epochs: 10 ## 10
+T_0: 200 ## 100, 200
+T_mult: 1
 T_gamma: 0.5
 
 ## Exponential Scheduler

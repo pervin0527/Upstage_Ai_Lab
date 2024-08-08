@@ -15,19 +15,19 @@ test_img_path: ./dataset/test
 test_csv_path: ./dataset/sample_submission.csv
 
 total_train: True
-one_hot_encoding: True
+one_hot_encoding: False
 model_name: tf_efficientnetv2_xl.in21k
 pretrained: True
-pretrained_path: null ## ./runs/best_9559/weights/best.pth
+pretrained_path: ./runs/best_9564/weights/best.pth
 
 focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
 epochs: 500
-img_h: 348 ## 456, 528
-img_w: 348 ## 456, 528
-batch_size: 8
+img_h: 384
+img_w: 384
+batch_size: 4
 num_workers: 32
 
 learning_rate: 0.00001

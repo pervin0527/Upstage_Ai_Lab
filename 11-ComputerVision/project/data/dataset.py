@@ -91,12 +91,7 @@ class DocTypeDataset(Dataset):
                 bg_img = cv2.resize(bg_img, (img_w, img_h))
 
                 prob = random.random()
-                if prob < 0.3:
-                    image, y = mixup(image, bg_img, y, bg_target, alpha=0.5)
-                elif 0.3 <= prob < 0.6:
-                    image, y = cutmix(image, bg_img, y, bg_target)
-                else:
-                    image = cutout(image)
+                image, y = mixup(image, bg_img, y, bg_target, alpha=0.5)
         else:
             y = target
 

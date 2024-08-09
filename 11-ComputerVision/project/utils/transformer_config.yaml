@@ -1,0 +1,49 @@
+seed: 42
+valid_ratio: 0.2
+save_batch_imgs: True
+
+save_path: ./runs
+meta_path: ./dataset/meta.csv
+
+train_img_path: ./dataset/train
+train_csv_path: ./dataset/train.csv
+
+valid_img_path: ./dataset/test
+valid_csv_path: ./dataset/mini_submission.csv
+
+test_img_path: ./dataset/test
+test_csv_path: ./dataset/sample_submission.csv
+
+total_train: True
+one_hot_encoding: False
+model_name: facebook/convnextv2-large-22k-384 ## facebook/convnextv2-huge-22k-384
+pretrained: True
+pretrained_path: null
+
+focal_loss: False
+focal_alpha: 1
+focal_gamma: 2
+
+epochs: 600
+img_h: 384
+img_w: 384
+batch_size: 8
+num_workers: 32
+
+learning_rate: 0.0000001
+weight_decay: 0
+gradient_accumulation_steps: 4
+
+## CosineAnnealingWarmUpRestarts
+max_lr: 0.001
+warmup_epochs: 10 ## 10
+T_0: 200 ## 100, 200
+T_mult: 1
+T_gamma: 0.5
+
+## Exponential Scheduler
+exp_gamma: 0.9
+
+## ReduceLROnPlateau
+reduce_factor: 0.1
+reduce_patience: 10

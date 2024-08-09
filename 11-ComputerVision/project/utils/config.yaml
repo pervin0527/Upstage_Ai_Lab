@@ -1,0 +1,50 @@
+seed: 42
+valid_ratio: 0.2
+save_batch_imgs: True
+
+save_path: ./runs
+meta_path: ./dataset/meta.csv
+
+train_img_path: ./dataset/train
+train_csv_path: ./dataset/train.csv
+
+valid_img_path: ./dataset/test
+valid_csv_path: ./dataset/valid_dataset.csv
+
+test_img_path: ./dataset/test
+test_csv_path: ./dataset/sample_submission.csv
+
+total_train: True
+one_hot_encoding: False
+model_name: tf_efficientnetv2_xl.in21k
+pretrained: True
+pretrained_path: ./runs/best_9564/weights/best.pth
+label_smoothing: 0
+
+focal_loss: False
+focal_alpha: 1
+focal_gamma: 2
+
+epochs: 1200
+img_h: 456
+img_w: 456
+batch_size: 8
+num_workers: 32
+
+learning_rate: 0.00001
+weight_decay: 0
+gradient_accumulation_steps: 4
+
+## CosineAnnealingWarmUpRestarts
+max_lr: 0.001
+warmup_epochs: 10 ## 10
+T_0: 300 ## 100, 200
+T_mult: 1
+T_gamma: 0.5
+
+## Exponential Scheduler
+exp_gamma: 0.9
+
+## ReduceLROnPlateau
+reduce_factor: 0.1
+reduce_patience: 10

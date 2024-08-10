@@ -1,3 +1,5 @@
+import os
+import cv2
 import random
 import numpy as np
 import albumentations as A
@@ -5,7 +7,6 @@ import albumentations as A
 from augraphy import *
 from albumentations.pytorch import ToTensorV2
 from albumentations.core.transforms_interface import ImageOnlyTransform
-
 
 def batch_transform(img_h, img_w):
     transform = A.Compose([
@@ -93,6 +94,7 @@ def augraphy_transform():
     )
 
 
+
 def albumentation_transform(img_h, img_w):
     transform = A.Compose([
         A.Compose([
@@ -145,6 +147,74 @@ def albumentation_transform(img_h, img_w):
         A.Resize(height=img_h, width=img_w, always_apply=True, p=1.0),
     ])
 
+    return transform
+
+
+def read_coordinates_from_file(file_path):
+    with open(file_path, 'r') as file:
+        return [line.strip() for line in file if line.strip()]
+
+def augment_text_regions(image_path, coordinate_path, output_path=None, num_augmentations=1, mixup_ratio=0.5):
+    image = cv2.imread(image_path)
+    coords = read_coordinates_from_file(coordinate_path)
+
+    for i in range(num_augmentations):
+        avg_color = np.mean(image, axis=(0, 1)).astype(int)
+        background_color = avg_color + np.random.randint(-20, 21, 3)
+        background_color = np.clip(background_color, 0, 255)
+        
+        h, w = image.shape[:2]
+        background = np.zeros((h, w, 3), dtype=np.uint8)
+        for c in range(3):
+            background[:, :, c] = np.linspace(background_color[c] - 30, background_color[c] + 30, w)
+        
+        mask = np.zeros(image.shape[:2], dtype=np.uint8)
+        for coord in coords:
+            x1, y1, x2, y2, x3, y3, x4, y4 = map(int, coord.split(','))
+            
+            pts = np.array([[x1,y1], [x2,y2], [x3,y3], [x4,y4]], np.int32)
+            pts = pts.reshape((-1,1,2))
+            cv2.fillPoly(mask, [pts], (255))
+
+        blurred_mask = cv2.GaussianBlur(mask, (21, 21), 0)
+        blurred_mask = blurred_mask.reshape(h, w, 1) / 255.0
+
+        text_regions = image * blurred_mask
+        background = background * (1 - blurred_mask)
+        result = text_regions + background
+
+        # Mixup: 원본 이미지와 최종 결과물을 지정된 비율로 혼합
+        mixup_result = cv2.addWeighted(image, mixup_ratio, result.astype(np.uint8), 1 - mixup_ratio, 0)
+
+        if not output_path is None:
+            output_file = os.path.join(output_path, f"augmented_mixup_{i}.png")
+            cv2.imwrite(output_file, mixup_result)
+        else:
+            return mixup_result
+
+
+def test_transform(img_h, img_w):
+    transform = A.Compose([
+        A.Rotate(limit=(-180, 180), p=1),
+        A.Transpose(p=1),
+
+        A.Compose([
+            A.OneOf([
+                QuarterDivide(p=0.2),
+                HalfDivide(p=0.2),
+                DivideThreeParts(p=0.2),
+                DivideSixParts(p=0.2),
+                A.RandomCrop(height=img_h//2, width=img_w//2, p=0.2)
+            ], p=0.55),
+
+            A.LongestMaxSize(max_size=max(img_h, img_w), p=1), 
+            A.PadIfNeeded(min_height=img_h, min_width=img_w, border_mode=0, value=(255, 255, 255), p=1),
+        ], p=0.7),
+
+        A.Resize(height=img_h, width=img_w),
+        A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+        ToTensorV2(),
+    ])
     return transform
 
 

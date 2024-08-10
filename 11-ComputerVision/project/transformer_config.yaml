@@ -16,7 +16,7 @@ test_csv_path: ./dataset/sample_submission.csv
 
 total_train: True
 one_hot_encoding: False
-model_name: facebook/convnextv2-huge.fcmae_ft_in22k_in1k_384 ## amaye15/SwinV2-Base-Document-Classifier, microsoft/swin-base-patch4-window12-384
+model_name: facebook/convnextv2-large-22k-384 ## facebook/convnextv2-huge-22k-384
 pretrained: True
 pretrained_path: null
 
@@ -24,13 +24,13 @@ focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
-epochs: 500
+epochs: 600
 img_h: 384
 img_w: 384
-batch_size: 4
+batch_size: 8
 num_workers: 32
 
-learning_rate: 0.00001
+learning_rate: 0.0000001
 weight_decay: 0
 gradient_accumulation_steps: 4
 

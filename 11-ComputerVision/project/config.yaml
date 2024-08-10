@@ -16,18 +16,19 @@ test_csv_path: ./dataset/sample_submission.csv
 
 total_train: True
 one_hot_encoding: False
-model_name: tf_efficientnetv2_xl.in21k
+model_name: efficientnet_b5 ## tf_efficientnetv2_xl.in21k
 pretrained: True
-pretrained_path: ./runs/best_9564/weights/best.pth
+pretrained_path: null ## ./runs/best_9564/weights/best.pth
+label_smoothing: 0.1 ## 0
 
 focal_loss: False
 focal_alpha: 1
 focal_gamma: 2
 
-epochs: 500
-img_h: 384
-img_w: 384
-batch_size: 4
+epochs: 500 ## 500
+img_h: 528  ## 384, 456, 528
+img_w: 528  ## 384, 455, 528
+batch_size: 8 ## 8
 num_workers: 32
 
 learning_rate: 0.00001
@@ -37,7 +38,7 @@ gradient_accumulation_steps: 4
 ## CosineAnnealingWarmUpRestarts
 max_lr: 0.001
 warmup_epochs: 10 ## 10
-T_0: 200 ## 100, 200
+T_0: 200 ## 200
 T_mult: 1
 T_gamma: 0.5
 

@@ -25,3 +25,5 @@ cifar*
 fonts/
 batch_images
 augraphy_cache/
+experiments/
+results/

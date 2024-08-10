@@ -5,7 +5,7 @@ import pandas as pd
 
 from torch.nn import functional as F
 from torch.utils.data import Dataset
-from data.augmentation import mixup, cutmix, cutout, albumentation_transform, augraphy_transform, batch_transform
+from data.augmentation import mixup, cutmix, cutout, albumentation_transform, augraphy_transform, batch_transform, augment_text_regions
 
 class DocTypeDataset(Dataset):
     def __init__(self, img_path, csv_path, meta_path, img_h, img_w, one_hot=False, total_train=True):
@@ -45,7 +45,7 @@ class DocTypeDataset(Dataset):
 
         if not total_train:
             ## 자주 틀리는 클래스들만 선별해서 학습
-            target_classes = [0, 1, 3, 4, 6, 7, 10, 11, 12, 13, 14] ## [3, 4, 7, 13, 14]
+            target_classes = [3, 4, 7, 13, 14] ## [0, 1, 3, 4, 6, 7, 10, 11, 12, 13, 14]
             self.df = self.df[self.df['target'].isin(target_classes)] ## 리스트에 해당하는 target인 행들만 선별
             target_map_dict = dict()
             for i, c in enumerate(target_classes):
@@ -67,12 +67,22 @@ class DocTypeDataset(Dataset):
         image = cv2.imread(img_path)
 
         if self.is_train:
+            ##### TEST #####
+            t = random.random()
+            if t <= 0.15:
+                file_name = id.split('.')[0]
+                coords_path = f"/home/pervinco/upstage-cv-classification-cv7/dataset/train_with_bbox/res_{file_name}.txt"
+                image = augment_text_regions(img_path, coords_path, mixup_ratio=random.uniform(0.1, 0.5))
+            ################
+
             prob = random.random()
             if prob < 0.4:
                 image = self.aup_transform(image)
                 image = self.alb_transform(image=image)['image']
+
             elif 0.4 <= prob < 0.6:
                 image = self.aup_transform(image)
+
             elif 0.6 <= prob < 0.8:
                 image = self.alb_transform(image=image)['image']
             
@@ -125,7 +135,7 @@ class TransformerDataset(Dataset):
 
         if not total_train:
             ## 자주 틀리는 클래스들만 선별해서 학습
-            target_classes = [0, 1, 3, 4, 6, 7, 10, 11, 12, 13, 14]
+            target_classes = [3, 4, 7, 13, 14] ## [0, 1, 3, 4, 6, 7, 10, 11, 12, 13, 14]
             self.df = self.df[self.df['target'].isin(target_classes)] ## 리스트에 해당하는 target인 행들만 선별
             target_map_dict = dict()
             for i, c in enumerate(target_classes):
@@ -147,6 +157,14 @@ class TransformerDataset(Dataset):
         image = cv2.imread(img_path)
 
         if self.is_train:
+            ##### TEST #####
+            t = random.random()
+            if t <= 0.15:
+                file_name = id.split('.')[0]
+                coords_path = f"../dataset/train_with_bbox/res_{file_name}.txt"
+                image = augment_text_regions(img_path, coords_path)
+            ################
+
             prob = random.random()
             if prob < 0.4:
                 image = self.aup_transform(image)

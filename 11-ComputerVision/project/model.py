@@ -51,13 +51,13 @@ class CBAM(nn.Module):
 
 
 class CBAMNetwork(nn.Module):
-    def __init__(self, model):
+    def __init__(self, model_name, pretrained, num_classes):
         super().__init__()
-        self.model = model
-        self.cbam = CBAM(self.model.num_features)
+        self.model = timm.create_model(model_name, pretrained=pretrained, num_classes=num_classes)
+        self.cbam = CBAM(self.model.num_features)  # CBAM 추가
 
     def forward(self, x):
         x = self.model.forward_features(x)
-        x = self.cbam(x)
+        x = self.cbam(x)  # CBAM 적용
         x = self.model.forward_head(x, pre_logits=False)
         return x

@@ -9,7 +9,7 @@ from tqdm import tqdm
 from torch.utils.data import DataLoader
 
 from utils.config_util import load_config
-from utils.test_util import tta, augment_image, predict, load_model
+from utils.test_util import tta, load_model
 
 def main(cfg):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

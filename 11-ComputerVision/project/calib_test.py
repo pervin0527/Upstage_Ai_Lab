@@ -80,7 +80,7 @@ def save_predictions(ids, preds, classes, cfg):
         cv2.imwrite(f"{pred_dir}/{ko_str_label}/{id}", image)
 
     df = pd.DataFrame(list(zip(ids, preds)), columns=['ID', 'target'])
-    df.to_csv(f"{pred_dir}/submission.csv", index=False)
+    df.to_csv(f"{pred_dir}/calib_submission.csv", index=False)
 
 
 def main(cfg):
@@ -89,7 +89,7 @@ def main(cfg):
     test_dataloader = DataLoader(test_dataset, batch_size=cfg['batch_size'], num_workers=cfg['num_workers'])
     
     model = load_model(f"{cfg['saved_dir']}/weights/best.pth", cfg['model_name'], test_dataset.num_classes, device)
-    calib_model = load_model(f"{cfg['calib_dir']}/weights/best.pth", cfg['model_name'], 11, device)
+    calib_model = load_model(f"{cfg['calib_dir']}/weights/best.pth", cfg['calib_model_name'], 11, device)
     ids, preds = inference(model, calib_model, test_dataloader, device)
 
     save_predictions(ids, preds, test_dataset.classes, cfg)
@@ -97,9 +97,10 @@ def main(cfg):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--saved_dir', type=str, default='./runs/best_9559_single_efficientnet_528', help='Path to Trained Dir')
-    parser.add_argument('--calib_dir', type=str, default='./runs/2024-08-06-18-01-08', help='Path to Calibration Model Dir')
+    parser.add_argument('--saved_dir', type=str, default='./runs/best_9544', help='Path to Trained Dir')
+    parser.add_argument('--calib_dir', type=str, default='./runs/2024-08-09-14-37-14', help='Path to Calibration Model Dir')
     parser.add_argument('--calib_classes', type=int, default=11, help='calibration model classes.')
+    parser.add_argument('--calib_model_name', type=str, default='efficientnet_b5')
     args = parser.parse_args()
 
     return args
@@ -110,10 +111,12 @@ if __name__ == "__main__":
     dir_path = args.saved_dir
     calib_path = args.calib_dir
     calib_classes = args.calib_classes
+    calib_model_name = args.calib_model_name
 
     cfg = load_config(f"{dir_path}/config.yaml")
     cfg['saved_dir'] = dir_path
     cfg['calib_dir'] = calib_path
     cfg['calib_classes'] = calib_classes
+    cfg['calib_model_name'] = calib_model_name
 
     main(cfg)

@@ -106,7 +106,6 @@ def train(model, dataloader, optimizer, loss_func, device, writer, epoch, is_one
     return result
 
 
-
 def main(cfg):
     save_dir = make_save_dir(cfg['save_path'])
     writer = SummaryWriter(log_dir=f"{save_dir}/logs")

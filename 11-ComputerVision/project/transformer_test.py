@@ -87,7 +87,7 @@ def main(cfg):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--saved_dir', type=str, default='./runs/2024-07-31-16-30-20', help='Path to Trained Dir')
+    parser.add_argument('--saved_dir', type=str, default='./runs/2024-08-08-23-05-39', help='Path to Trained Dir')
     args = parser.parse_args()
 
     return args

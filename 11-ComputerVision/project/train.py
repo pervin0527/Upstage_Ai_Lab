@@ -12,7 +12,6 @@ from tensorboardX import SummaryWriter
 from sklearn.metrics import accuracy_score, f1_score
 
 from loss import FocalLoss
-from model import CBAMNetwork
 from data.dataset import DocTypeDataset
 
 from utils.config_util import load_config, save_config
@@ -133,24 +132,13 @@ def main(cfg):
     ## 사전 학습 가중치 로드
     if cfg['pretrained_path']:
         model.load_state_dict(torch.load(cfg['pretrained_path']))
-
-        ## 출력층을 제외한 나머지 층만 사전학습 가중치를 사용.
-        # pretrained_dict = torch.load(cfg['pretrained_path'])
-        # model_dict = model.state_dict()
-        # pretrained_dict = {k: v for k, v in pretrained_dict.items() if 'classifier' not in k}
-
-        # model_dict.update(pretrained_dict)
-        # model.load_state_dict(model_dict, strict=False)
-        # model.classifier.reset_parameters()    
-
-    model = CBAMNetwork(model)
     model = model.to(device)    
 
     ## 손실함수 설정
     if not cfg['focal_loss']:
         if not cfg['one_hot_encoding']:
             print("Loss function : CrossEntropy")
-            loss_func = nn.CrossEntropyLoss()
+            loss_func = nn.CrossEntropyLoss(label_smoothing=cfg['label_smoothing'])
         else:
             print("Loss function : SoftTargetCrossEntropy")
             loss_func = timm.loss.SoftTargetCrossEntropy()

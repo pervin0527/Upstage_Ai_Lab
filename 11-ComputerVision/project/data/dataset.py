@@ -69,10 +69,10 @@ class DocTypeDataset(Dataset):
         if self.is_train:
             ##### TEST #####
             t = random.random()
-            if t <= 0.15:
+            if t <= 0.3: ## 0.15
                 file_name = id.split('.')[0]
                 coords_path = f"/home/pervinco/upstage-cv-classification-cv7/dataset/train_with_bbox/res_{file_name}.txt"
-                image = augment_text_regions(img_path, coords_path, mixup_ratio=random.uniform(0.1, 0.5))
+                image = augment_text_regions(img_path, coords_path, mixup_ratio=random.uniform(0.0, 0.3))
             ################
 
             prob = random.random()

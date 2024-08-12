@@ -84,6 +84,31 @@ def augment_image(image):
     return rotated_images + [h_flip, v_flip, transpose]
 
 
+# def augment_image(image):
+#     rotated_images = []
+    
+#     # 45도 단위로 0도부터 360도까지 회전
+#     for angle in range(0, 360, 45):
+#         # 이미지의 중심 좌표 계산
+#         image_center = tuple(np.array(image.shape[1::-1]) / 2)
+        
+#         # 회전 행렬 계산
+#         rotation_matrix = cv2.getRotationMatrix2D(image_center, angle, 1.0)
+        
+#         # Affine 변환을 사용하여 이미지를 회전
+#         rotated_image = cv2.warpAffine(image, rotation_matrix, image.shape[1::-1], flags=cv2.INTER_LINEAR)
+#         rotated_images.append(rotated_image)
+    
+#     # 좌우 반전
+#     h_flip = cv2.flip(image, 1)
+#     # 상하 반전
+#     v_flip = cv2.flip(image, 0)
+#     # 전치(대각선) 반전
+#     transpose = cv2.transpose(image)
+    
+#     return rotated_images + [h_flip, v_flip, transpose]
+
+
 def predict(model, image, device, transform):
     model.eval()
     with torch.no_grad():

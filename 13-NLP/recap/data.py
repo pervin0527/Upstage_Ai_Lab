@@ -54,15 +54,18 @@ class MNTDataset(Dataset):
         self.source2index = {'<PAD>': 0, '<UNK>': 1, '<SOS>': 2, '<EOS>': 3}
         self.target2index = {'<PAD>': 0, '<UNK>': 1, '<SOS>': 2, '<EOS>': 3}
 
+        # 소스 사전을 구축
         for vocab in self.source_vocab:
-            if self.source2index.get(vocab) is None: ## 단어가 사전에 없다면
+            if vocab not in self.source2index:  # 단어가 사전에 없으면 추가
                 self.source2index[vocab] = len(self.source2index)
-        self.index2source = {v:k for k, v in self.source2index.items()}
+        self.index2source = {v: k for k, v in self.source2index.items()}
 
+        # 타겟 사전을 구축
         for vocab in self.target_vocab:
-            if self.target2index.get(vocab) is None:
+            if vocab not in self.target2index:  # 단어가 사전에 없으면 추가
                 self.target2index[vocab] = len(self.target2index)
-        self.index2target = {v:k for k, v in self.target2index.items()}
+        self.index2target = {v: k for k, v in self.target2index.items()}
+
 
     def prepare_sequence(self, seq, to_index, max_len=None):
         idxs = list(map(lambda w: to_index[w] if to_index.get(w) is not None else to_index["<UNK>"], seq))

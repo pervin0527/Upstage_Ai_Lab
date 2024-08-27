@@ -185,10 +185,11 @@ class Decoder(nn.Module):
             context, alpha = self.Attention(hidden, encoder_outputs, encoder_maskings)
 
         # decode 리스트를 텐서로 변환
-        scores = torch.cat(decode, 1)
+        scores = torch.cat(decode, 1)  # [batch_size, max_length, vocab_size]
 
-        # scores의 크기를 변경
-        return scores.view(inputs.size(0) * max_length, -1)
+        return scores  # [batch_size, max_length, vocab_size]
+
+
 
     # 디코딩 함수
     def decode(self, context, encoder_outputs):

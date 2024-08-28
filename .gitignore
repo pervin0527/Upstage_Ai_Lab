@@ -27,3 +27,6 @@ batch_images
 augraphy_cache/
 experiments/
 results/
+logs/
+best_model/
+prediction/

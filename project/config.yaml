@@ -1,0 +1,65 @@
+general:
+  data_path: "./dataset" # 학습에 사용할 데이터셋 경로
+  model_name: "digit82/kobart-summarization" # 불러올 모델의 이름을 사용자 환경에 맞게 지정할 수 있습니다.
+  output_dir: "./" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
+
+tokenizer:
+  encoder_max_len: 512
+  decoder_max_len: 100
+  bos_token: "<s>"
+  eos_token: "</s>"
+  # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
+  special_tokens:
+    - '#Person1#'
+    - '#Person2#'
+    - '#Person3#'
+    - '#PhoneNumber#'
+    - '#Address#'
+    - '#PassportNumber#'
+
+training:
+  overwrite_output_dir: true
+  num_train_epochs: 20
+  learning_rate: 1e-5
+  per_device_train_batch_size: 50
+  per_device_eval_batch_size: 32
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  lr_scheduler_type: 'cosine'
+  optim: 'adamw_torch'
+  gradient_accumulation_steps: 1
+  evaluation_strategy: 'epoch'
+  save_strategy: 'epoch'
+  save_total_limit: 5
+  fp16: true
+  load_best_model_at_end: true
+  seed: 42
+  logging_dir: "./logs"
+  logging_strategy: "epoch"
+  predict_with_generate: true
+  generation_max_length: 100
+  do_train: true
+  do_eval: true
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.001
+  report_to: "wandb" # (선택) wandb를 사용할 때 설정합니다.
+
+wandb:
+  entity: "wandb_repo"
+  project: "project_name"
+  name: "run_name"
+
+inference:
+  ckt_path: "model ckt path" # 사전 학습이 진행된 모델의 checkpoint를 저장할 경로를 설정합니다.
+  result_path: "./prediction/"
+  no_repeat_ngram_size: 2
+  early_stopping: true
+  generate_max_length: 100
+  num_beams: 4
+  batch_size: 32
+  # 정확한 모델 평가를 위해 제거할 불필요한 생성 토큰들을 정의합니다.
+  remove_tokens:
+    - '<usr>'
+    - "<s>"
+    - "</s>"
+    - "<pad>"

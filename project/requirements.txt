@@ -1,3 +1,14 @@
 wandb==0.17.8
 rouge==1.0.1
 python-mecab-ko==2.1.1
+nltk==3.9.1
+pandas==2.2.2
+pytorch_lightning==2.4.0
+pytorch==2.3.0
+torchaudio==2.3.0
+torchmetrics==1.4.1
+torchtext==0.18.0
+torchvision==0.18.0
+transformers==4.44.2
+datasets==2.21.0
+evaluate==0.4.2

@@ -31,7 +31,8 @@ def main(args: argparse.Namespace):
         # 데이터 파일 읽기
         train_df = pd.read_csv("./dataset/cleaned_train.csv")
         valid_df = pd.read_csv("./dataset/cleaned_dev.csv")
-        df = pd.concat([train_df, valid_df], ignore_index=True)
+        new_df = pd.read_csv("./dataset/new_data.csv")
+        df = pd.concat([train_df, valid_df, new_df], ignore_index=True)
         
         # dialogue와 summary 컬럼의 데이터를 합치기
         text_data = df['dialogue'].astype(str) + " " + df['summary'].astype(str)

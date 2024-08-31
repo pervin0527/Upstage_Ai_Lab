@@ -39,8 +39,8 @@ training:
 
   num_train_epochs: 20
   learning_rate: 0.00001
-  per_device_train_batch_size: 16
-  per_device_eval_batch_size: 16
+  per_device_train_batch_size: 32
+  per_device_eval_batch_size: 4
   optim: 'adamw_torch'
   warmup_ratio: 0.1
   weight_decay: 0.01

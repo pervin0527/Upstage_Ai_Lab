@@ -30,3 +30,4 @@ results/
 logs/
 best_model/
 prediction/
+pretrain/

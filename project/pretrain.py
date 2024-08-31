@@ -8,7 +8,6 @@ from tqdm import tqdm
 class AugmentedDialogueDataset(Dataset):
     def __init__(self, dataframe, tokenizer, max_length):
         self.dialogues = dataframe['dialogue'].tolist()
-        self.summaries = dataframe['summary'].tolist()
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -40,7 +39,6 @@ class AugmentedDialogueDataset(Dataset):
 
     def __getitem__(self, idx):
         dialogue = self.dialogues[idx]
-        summary = self.summaries[idx]
 
         # 대화에 [SEP] 토큰 추가
         dialogue = dialogue.replace('\n', f' {self.tokenizer.sep_token} ')
@@ -124,19 +122,25 @@ def train(model, train_loader, val_loader, optimizer, device, num_epochs):
 
         avg_val_loss = val_loss / len(val_loader)
         print(f"Validation Loss: {avg_val_loss:.4f}")
+        print()
 
     return model
 
 def main():
-    MAX_LENGTH = 512
-    BATCH_SIZE = 16
-    LEARNING_RATE = 2e-5
+    MAX_LENGTH = 1000
+    BATCH_SIZE = 12
+    LEARNING_RATE = 0.0001
     NUM_EPOCHS = 10
-
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    train_df = load_data('./dataset/train.csv')
-    val_df = load_data('./dataset/dev.csv')
+    train_df = load_data('./dataset/cleaned_train.csv')
+    val_df = load_data('./dataset/cleaned_dev.csv')
+    new_df = load_data('./dataset/new_data.csv')
+
+    train_dialogues = train_df[['dialogue']]
+    new_dialogues = new_df[['dialogue']]
+    train_df = pd.concat([train_dialogues, new_dialogues], ignore_index=True)
+    # train_df = train_df.sample(frac=0.45, random_state=42)
 
     tokenizer = BartTokenizerFast.from_pretrained('./tokenizer')
 
@@ -148,11 +152,9 @@ def main():
 
     model = BartForConditionalGeneration.from_pretrained('facebook/bart-base')
     model.resize_token_embeddings(len(tokenizer))
-
     optimizer = AdamW(model.parameters(), lr=LEARNING_RATE)
 
     trained_model = train(model, train_loader, val_loader, optimizer, device, NUM_EPOCHS)
-
     trained_model.save_pretrained('./pretrain')
     tokenizer.save_pretrained('./pretrain/tokenizer')
 

@@ -1,16 +1,17 @@
+import re
 import os
 import pandas as pd
 
 from torch.utils.data import Dataset
 
-# 데이터 전처리를 위한 클래스로, 데이터셋을 데이터프레임으로 변환하고 인코더와 디코더의 입력을 생성합니다.
 class Preprocess:
-    def __init__(self, bos_token: str, eos_token: str) -> None:
+    def __init__(self, bos_token: str, eos_token: str, sep_token: str) -> None:
         self.bos_token = bos_token
         self.eos_token = eos_token
+        self.sep_token = sep_token
+
 
     @staticmethod
-    # 실험에 필요한 컬럼을 가져옵니다.
     def make_set_as_df(file_path, is_train = True):
         if is_train:
             df = pd.read_csv(file_path)
@@ -21,30 +22,36 @@ class Preprocess:
             test_df = df[['fname','dialogue']]
             return test_df
 
-    # BART 모델의 입력, 출력 형태를 맞추기 위해 전처리를 진행합니다.
-    def make_input(self, dataset,is_test = False):
-        ## 테스트 단계에서의 데이터
+    def add_sep_tokens(self, dialogue):
+        # 화자가 바뀔 때 SEP 토큰을 추가하는 함수
+        pattern = r'(#Person\d+#)'
+        parts = re.split(pattern, dialogue)
+        result = []
+        prev_speaker = None
+        for part in parts:
+            if re.match(pattern, part):
+                if prev_speaker and prev_speaker != part:
+                    result.append(self.sep_token)
+                prev_speaker = part
+            result.append(part)
+        return ''.join(result)
+
+    def make_input(self, dataset, is_test = False):
         if is_test:
-            encoder_input = dataset['dialogue']
+            encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
             decoder_input = [self.bos_token] * len(dataset['dialogue'])
-
             return encoder_input.tolist(), list(decoder_input)
-        
-        ## 학습, 검증 단계에서의 데이터
         else:
-            encoder_input = dataset['dialogue'] ## 인코더에는 본문
-            decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x)) ## 디코더에 입력될 시작 토큰과 'summary' 열의 값들
-            decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token) ##  디코더가 예측해야 하는 실제 'summary' 값들. + 종료 토큰
-
+            encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
+            decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
+            decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
         
 
-# tokenization 과정까지 진행된 최종적으로 모델에 입력될 데이터를 출력합니다.
 def prepare_train_dataset(config, preprocessor: Preprocess, data_path, tokenizer):
     train_file_path = os.path.join(data_path, config['general']['train_file'])
     val_file_path = os.path.join(data_path, config['general']['valid_file'])
 
-    # train, validation에 대해 각각 데이터프레임을 구축합니다.
     train_data = preprocessor.make_set_as_df(train_file_path)
     val_data = preprocessor.make_set_as_df(val_file_path)
 

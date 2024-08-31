@@ -1,21 +1,12 @@
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-import re
-import json
-import yaml
 import torch
 import argparse
-import pandas as pd
-import pytorch_lightning as pl
-
-from glob import glob
-from tqdm import tqdm
-from pprint import pprint
-from rouge import Rouge
 
 from transformers import EarlyStoppingCallback
-from torch.utils.data import Dataset , DataLoader
+from transformers import PreTrainedTokenizerFast
+from torch.utils.data import Dataset, DataLoader
 from transformers import Trainer, TrainingArguments
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
@@ -37,8 +28,10 @@ def load_tokenizer_and_model_for_train(config,device):
     print('-'*10, f'Model Name : {config["general"]["model_name"]}', '-'*10,)
     model_name = config['general']['model_name']
     bart_config = BartConfig().from_pretrained(model_name)
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    generate_model = BartForConditionalGeneration.from_pretrained(config['general']['model_name'],config=bart_config)
+    
+    # tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'])
+    generate_model = BartForConditionalGeneration.from_pretrained(config['general']['model_name'], config=bart_config)
 
     special_tokens_dict={'additional_special_tokens':config['tokenizer']['special_tokens']}
     tokenizer.add_special_tokens(special_tokens_dict)
@@ -103,10 +96,6 @@ def load_trainer_for_train(config,generate_model,tokenizer,train_inputs_dataset,
     return trainer
 
 def main(cfg):
-    tokenizer = AutoTokenizer.from_pretrained("digit82/kobart-summarization")
-    print(tokenizer.special_tokens_map)
-
-    # 사용할 device를 정의합니다.
     device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')
     print('-'*10, f'device : {device}', '-'*10,)
     print(torch.__version__)
@@ -116,7 +105,7 @@ def main(cfg):
     print('-'*10,"tokenizer special tokens : ",tokenizer.special_tokens_map,'-'*10)
 
     # 학습에 사용할 데이터셋을 불러옵니다.
-    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token']) # decoder_start_token: str, eos_token: str
+    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'], cfg['tokenizer']['sep_token'])
     data_path = cfg['general']['data_path']
     train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg,preprocessor, data_path, tokenizer)
 

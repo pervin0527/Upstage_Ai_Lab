@@ -6,10 +6,12 @@ general:
   output_dir: "./runs" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
 
 tokenizer:
-  encoder_max_len: 1024 ## 512
-  decoder_max_len: 512 ## 100
-  bos_token: "<s>"
-  eos_token: "</s>"
+  path: "./tokenizer"
+  encoder_max_len: 1000 ## 512
+  decoder_max_len: 200 ## 100
+  bos_token: "[BOS]"  # "<s>"
+  eos_token: "[EOS]"  # "</s>"
+  sep_token: "[SEP]"
   
   # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
   special_tokens:
@@ -23,7 +25,9 @@ tokenizer:
     - '#SSN#'
     - '#Email#'
     - '#Address#'
+    - '#Reaction#'
     - '#CarNumber#'
+    - '#Movietitle#'
     - '#DateOfBirth#'
     - '#CardNumber#'
     - '#PhoneNumber#'
@@ -44,7 +48,7 @@ training:
   gradient_accumulation_steps: 4
   evaluation_strategy: 'epoch'
   save_strategy: 'epoch'
-  save_total_limit: 5
+  save_total_limit: 1000
   fp16: false
   load_best_model_at_end: true
   logging_dir: "./logs"
@@ -53,7 +57,7 @@ training:
   generation_max_length: 200
   do_train: true
   do_eval: true
-  early_stopping_patience: 5
+  early_stopping_patience: 10
   early_stopping_threshold: 0.001
   report_to: tensorboard ## "wandb" # (선택) wandb를 사용할 때 설정합니다.
 
@@ -63,17 +67,19 @@ training:
 #   name: "run"
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-08-30-09-21-38/checkpoint-2337"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-08-31-14-08-57/checkpoint-3880"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true
-  generate_max_length: 100
+  generate_max_length: 200
   num_beams: 4
   batch_size: 32
 
   # 정확한 모델 평가를 위해 제거할 불필요한 생성 토큰들을 정의합니다.
   remove_tokens:
-    - '<usr>'
-    - "<s>"
-    - "</s>"
-    - "<pad>"
+    - "[PAD]"
+    - "[UNK]"
+    - "[BOS]"
+    - "[EOS]"
+    - "[MASK]"
+    - "[SEP]"

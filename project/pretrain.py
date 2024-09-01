@@ -8,6 +8,7 @@ from tqdm import tqdm
 class AugmentedDialogueDataset(Dataset):
     def __init__(self, dataframe, tokenizer, max_length):
         self.dialogues = dataframe['dialogue'].tolist()
+        
         self.tokenizer = tokenizer
         self.max_length = max_length
 
@@ -137,9 +138,9 @@ def main():
     val_df = load_data('./dataset/cleaned_dev.csv')
     new_df = load_data('./dataset/new_data.csv')
 
-    train_dialogues = train_df[['dialogue']]
-    new_dialogues = new_df[['dialogue']]
-    train_df = pd.concat([train_dialogues, new_dialogues], ignore_index=True)
+    # train_dialogues = train_df[['dialogue']]
+    # new_dialogues = new_df[['dialogue']]
+    # train_df = pd.concat([train_dialogues, new_dialogues], ignore_index=True)
     # train_df = train_df.sample(frac=0.45, random_state=42)
 
     tokenizer = BartTokenizerFast.from_pretrained('./tokenizer')

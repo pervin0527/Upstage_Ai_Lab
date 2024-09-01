@@ -5,14 +5,14 @@ import tempfile
 import httpimport
 import pandas as pd
 import sentencepiece as spm
-
+from konlpy.tag import Mecab
 from glob import glob
 from transformers import PreTrainedTokenizerFast
 from tokenizers import SentencePieceUnigramTokenizer
 
-parser = argparse.ArgumentParser(prog="train_tokenizer", description="Training Huggingface Tokenizer")
+parser = argparse.ArgumentParser(prog="train_tokenizer", description="Training Huggingface Tokenizer with Mecab preprocessing")
 parser.add_argument("--tokenizer-path", type=str, default="/home/pervinco/Upstage_Ai_Lab/project/tokenizer", help="path to save tokenizer")
-parser.add_argument("--vocab-size", type=int, default=32000, help="vocab size of tokenizer")
+parser.add_argument("--vocab-size", type=int, default=8105, help="vocab size of tokenizer")
 
 special_words = [
     '#Person1#', '#Person2#', '#Person3#', '#Person4#', '#Person5#', '#Person6#', '#Person7#',
@@ -24,6 +24,10 @@ SENTENCEPIECE_URI = "https://raw.githubusercontent.com/google/sentencepiece/mast
 
 PAD, UNK, BOS, EOS, MASK, SEP = "[PAD]", "[UNK]", "[BOS]", "[EOS]", "[MASK]", "[SEP]"
 
+def mecab_tokenize(text):
+    mecab = Mecab()
+    return ' '.join(mecab.morphs(text))
+
 def main(args: argparse.Namespace):
     with tempfile.TemporaryDirectory() as tmpdir:
         model_prefix = os.path.join(tmpdir, "tokenizer")
@@ -31,16 +35,19 @@ def main(args: argparse.Namespace):
         # 데이터 파일 읽기
         train_df = pd.read_csv("./dataset/cleaned_train.csv")
         valid_df = pd.read_csv("./dataset/cleaned_dev.csv")
-        new_df = pd.read_csv("./dataset/new_data.csv")
-        df = pd.concat([train_df, valid_df, new_df], ignore_index=True)
+        # new_df = pd.read_csv("./dataset/new_data.csv")
+        df = pd.concat([train_df, valid_df], ignore_index=True)
         
-        # dialogue와 summary 컬럼의 데이터를 합치기
-        text_data = df['dialogue'].astype(str) + " " + df['summary'].astype(str)
+        # dialogue 컬럼의 데이터만 사용
+        text_data = df['dialogue'].astype(str)
+        
+        # Mecab으로 분절화
+        tokenized_text_data = text_data.apply(mecab_tokenize)
         
         # 텍스트 데이터를 임시 파일로 저장
         temp_input_file = os.path.join(tmpdir, "input.txt")
         with open(temp_input_file, 'w', encoding='utf-8') as f:
-            for line in text_data:
+            for line in tokenized_text_data:
                 f.write(line + "\n")
 
         spm.SentencePieceTrainer.train(
@@ -71,12 +78,14 @@ def main(args: argparse.Namespace):
     print("\n샘플 대화:")
     print(sample_dialogue)
     
-    tokens = pretrained_tokenizer.tokenize(sample_dialogue)
-    print("\n토큰화 결과:")
+    # Mecab으로 분절화 후 토큰화
+    mecab_tokenized = mecab_tokenize(sample_dialogue)
+    tokens = pretrained_tokenizer.tokenize(mecab_tokenized)
+    print("\n토큰화 결과 (Mecab + SentencePiece):")
     print(tokens)
     
     # 토큰 ID 출력
-    token_ids = pretrained_tokenizer.encode(sample_dialogue)
+    token_ids = pretrained_tokenizer.encode(mecab_tokenized)
     print("\n토큰 ID:")
     print(token_ids)
     

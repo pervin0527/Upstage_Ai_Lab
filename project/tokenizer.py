@@ -12,12 +12,34 @@ from tokenizers import SentencePieceUnigramTokenizer
 
 parser = argparse.ArgumentParser(prog="train_tokenizer", description="Training Huggingface Tokenizer with Mecab preprocessing")
 parser.add_argument("--tokenizer-path", type=str, default="/home/pervinco/Upstage_Ai_Lab/project/tokenizer", help="path to save tokenizer")
-parser.add_argument("--vocab-size", type=int, default=8105, help="vocab size of tokenizer")
+parser.add_argument("--vocab-size", type=int, default=32000, help="vocab size of tokenizer")
 
 special_words = [
-    '#Person1#', '#Person2#', '#Person3#', '#Person4#', '#Person5#', '#Person6#', '#Person7#',
-    '#SSN#', '#Email#', '#Address#', '#CarNumber#', '#DateOfBirth#', '#CardNumber#', '#PhoneNumber#', '#PassportNumber#',
-    '#Reaction#', '#Movietitle#'
+    '#Person1#',
+    '#Person2#',
+    '#Person3#',
+    '#Person4#',
+    '#Person5#',
+    '#Person6#',
+    '#Person7#',
+    '#SSN#',
+    '#Email#',
+    '#Address#',
+    '#Reaction#',
+    '#CarNumber#',
+    '#Movietitle#',
+    '#DateOfBirth#',
+    '#CardNumber#',
+    '#PhoneNumber#',
+    '#PassportNumber#',
+    "#PersonName#",
+    "#System#",
+    "#Affiliation#",
+    "#Account#",
+    "#Other#",
+    "#Identity#",
+    "#Number#",
+    "#Financial#",
 ]
 
 SENTENCEPIECE_URI = "https://raw.githubusercontent.com/google/sentencepiece/master/python/src/sentencepiece/"
@@ -35,8 +57,8 @@ def main(args: argparse.Namespace):
         # 데이터 파일 읽기
         train_df = pd.read_csv("./dataset/cleaned_train.csv")
         valid_df = pd.read_csv("./dataset/cleaned_dev.csv")
-        # new_df = pd.read_csv("./dataset/new_data.csv")
-        df = pd.concat([train_df, valid_df], ignore_index=True)
+        new_df = pd.read_csv("./dataset/new_data.csv")
+        df = pd.concat([train_df, valid_df, new_df], ignore_index=True)
         
         # dialogue 컬럼의 데이터만 사용
         text_data = df['dialogue'].astype(str)

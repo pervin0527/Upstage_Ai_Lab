@@ -1,9 +1,19 @@
-import pandas as pd
 import torch
 import random
+import pandas as pd
+
+from tqdm import tqdm
 from torch.utils.data import Dataset, DataLoader
 from transformers import BartForConditionalGeneration, BartTokenizerFast, AdamW
-from tqdm import tqdm
+from sklearn.metrics import accuracy_score, f1_score, precision_score
+
+
+def compute_metrics(predictions, labels):
+    predictions = predictions.argmax(dim=-1)
+    accuracy = accuracy_score(labels.cpu().numpy(), predictions.cpu().numpy())
+    f1 = f1_score(labels.cpu().numpy(), predictions.cpu().numpy(), average='weighted')
+    precision = precision_score(labels.cpu().numpy(), predictions.cpu().numpy(), average='weighted')
+    return accuracy, f1, precision
 
 class AugmentedDialogueDataset(Dataset):
     def __init__(self, dataframe, tokenizer, max_length):
@@ -109,6 +119,8 @@ def train(model, train_loader, val_loader, optimizer, device, num_epochs):
         # Validation
         model.eval()
         val_loss = 0
+        all_predictions = []
+        all_labels = []
         with torch.no_grad():
             for batch in val_loader:
                 input_ids = batch['input_ids'].to(device)
@@ -120,9 +132,14 @@ def train(model, train_loader, val_loader, optimizer, device, num_epochs):
                                 labels=labels)
                 
                 val_loss += outputs.loss.item()
+                all_predictions.extend(outputs.logits.cpu())
+                all_labels.extend(labels.cpu())
 
         avg_val_loss = val_loss / len(val_loader)
+        accuracy, f1, precision = compute_metrics(torch.stack(all_predictions), torch.stack(all_labels))
+        
         print(f"Validation Loss: {avg_val_loss:.4f}")
+        print(f"Accuracy: {accuracy:.4f}, F1 Score: {f1:.4f}, Precision: {precision:.4f}")
         print()
 
     return model
@@ -138,10 +155,10 @@ def main():
     val_df = load_data('./dataset/cleaned_dev.csv')
     new_df = load_data('./dataset/new_data.csv')
 
-    # train_dialogues = train_df[['dialogue']]
-    # new_dialogues = new_df[['dialogue']]
-    # train_df = pd.concat([train_dialogues, new_dialogues], ignore_index=True)
-    # train_df = train_df.sample(frac=0.45, random_state=42)
+    train_dialogues = train_df[['dialogue']]
+    new_dialogues = new_df[['dialogue']]
+    new_dialogues = new_dialogues.sample(frac=0.45, random_state=42)
+    train_df = pd.concat([train_dialogues, new_dialogues], ignore_index=True)
 
     tokenizer = BartTokenizerFast.from_pretrained('./tokenizer')
 
@@ -151,7 +168,7 @@ def main():
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE)
 
-    model = BartForConditionalGeneration.from_pretrained('facebook/bart-base')
+    model = BartForConditionalGeneration.from_pretrained('EbanLee/kobart-summary-v3')
     model.resize_token_embeddings(len(tokenizer))
     optimizer = AdamW(model.parameters(), lr=LEARNING_RATE)
 

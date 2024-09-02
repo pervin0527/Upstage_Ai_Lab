@@ -89,13 +89,11 @@ def prepare_train_dataset(config, preprocessor: Preprocess, data_path, tokenizer
     train_data = preprocessor.make_set_as_df(train_file_path)
     val_data = preprocessor.make_set_as_df(val_file_path)
 
-    new_file_path = os.path.join(data_path, config['general']['new_file'])
-    new_data = pd.read_csv(new_file_path)
-
-    start_index = len(train_data)
-    new_data['fname'] = ['train_' + str(i) for i in range(start_index, start_index + len(new_data))]
-    
-    train_data = pd.concat([train_data, new_data[['fname', 'dialogue', 'summary']]], ignore_index=True)
+    # new_file_path = os.path.join(data_path, config['general']['new_file'])
+    # new_data = pd.read_csv(new_file_path)
+    # start_index = len(train_data)
+    # new_data['fname'] = ['train_' + str(i) for i in range(start_index, start_index + len(new_data))]
+    # train_data = pd.concat([train_data, new_data[['fname', 'dialogue', 'summary']]], ignore_index=True)
 
 
     encoder_input_train , decoder_input_train, decoder_output_train = preprocessor.make_input(train_data)

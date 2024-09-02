@@ -3,7 +3,7 @@ general:
   train_file: "cleaned_train.csv"
   valid_file: "cleaned_dev.csv"
   new_file: "new_data.csv"
-  model_name: "digit82/kobart-summarization" ## "EbanLee/kobart-summary-v3"
+  model_name: "EbanLee/kobart-summary-v3" ## "digit82/kobart-summarization", "eenzeenee/t5-base-korean-summarization"
   output_dir: "./runs" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
   model_cfg: "./configs/model_config.json" 
 
@@ -36,7 +36,6 @@ tokenizer:
     - "#PersonName#"
     - "#System#"
     - "#Affiliation#"
-    - "#Address#"
     - "#Account#"
     - "#Other#"
     - "#Identity#"

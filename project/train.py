@@ -6,10 +6,7 @@ import argparse
 
 from transformers import EarlyStoppingCallback
 from transformers import PreTrainedTokenizerFast
-from torch.utils.data import Dataset, DataLoader
-from transformers import Trainer, TrainingArguments
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
-from transformers import get_cosine_with_hard_restarts_schedule_with_warmup
 from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
 
 from utils.metrics import compute_metrics
@@ -76,9 +73,8 @@ def load_trainer_for_train(config,generate_model,tokenizer,train_inputs_dataset,
         early_stopping_threshold=config['training']['early_stopping_threshold']
     )
 
-    # Trainer 클래스를 정의합니다.
     trainer = Seq2SeqTrainer(
-        model=generate_model, # 사용자가 사전 학습하기 위해 사용할 모델을 입력합니다.
+        model=generate_model,
         args=training_args,
         train_dataset=train_inputs_dataset,
         eval_dataset=val_inputs_dataset,
@@ -92,16 +88,14 @@ def load_trainer_for_train(config,generate_model,tokenizer,train_inputs_dataset,
 def main(cfg):
     device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')
 
-    generate_model , tokenizer = load_tokenizer_and_model_for_train(cfg,device)
-    print('-'*10,"tokenizer special tokens : ",'-'*10)
+    generate_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
     print(tokenizer.special_tokens_map)
 
     preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'])
     data_path = cfg['general']['data_path']
-    train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg,preprocessor, data_path, tokenizer)
-    print(len(train_inputs_dataset))
+    train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg, preprocessor, data_path, tokenizer)
 
-    trainer = load_trainer_for_train(cfg, generate_model,tokenizer,train_inputs_dataset,val_inputs_dataset)
+    trainer = load_trainer_for_train(cfg, generate_model, tokenizer, train_inputs_dataset, val_inputs_dataset)
     save_config(cfg, cfg['general']['output_dir'])
     trainer.train()
 

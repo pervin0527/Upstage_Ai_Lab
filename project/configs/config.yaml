@@ -2,16 +2,16 @@ general:
   data_path: "./dataset" # 학습에 사용할 데이터셋 경로
   train_file: "cleaned_train.csv"
   valid_file: "cleaned_dev.csv"
-  model_name: "digit82/kobart-summarization" # 불러올 모델의 이름을 사용자 환경에 맞게 지정할 수 있습니다.
+  model_name: "digit82/kobart-summarization"
   output_dir: "./runs" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
+  model_cfg: "./configs/model_config.json"
 
 tokenizer:
   path: "./tokenizer"
   encoder_max_len: 1000 ## 512
   decoder_max_len: 200 ## 100
-  bos_token: "[BOS]"  # "<s>"
-  eos_token: "[EOS]"  # "</s>"
-  sep_token: "[SEP]"
+  bos_token: "<s>" # "[BOS]"
+  eos_token: "</s>" # "[EOS]"
   
   # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
   special_tokens:
@@ -40,13 +40,11 @@ training:
   num_train_epochs: 500
   learning_rate: 0.00001
   per_device_train_batch_size: 32
-  per_device_eval_batch_size: 4
+  per_device_eval_batch_size: 16
   optim: 'adamw_torch'
-  num_warmup_steps: 100
-  num_training_steps: 194500
   warmup_ratio: 0.1
   weight_decay: 0.01
-  lr_scheduler_type: 'cosine_with_restarts'
+  lr_scheduler_type: 'cosine'
   gradient_accumulation_steps: 4
   evaluation_strategy: 'epoch'
   save_strategy: 'epoch'
@@ -61,15 +59,10 @@ training:
   do_eval: true
   early_stopping_patience: 10
   early_stopping_threshold: 0.001
-  report_to: tensorboard ## "wandb" # (선택) wandb를 사용할 때 설정합니다.
-
-# wandb:
-#   entity: "Upstage-Ai-Lab"
-#   project: "upstage-nlp-competition"
-#   name: "run"
+  report_to: tensorboard
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-08-31-14-08-57/checkpoint-3880"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-01-17-32-12/checkpoint-6337"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true
@@ -77,11 +70,8 @@ inference:
   num_beams: 4
   batch_size: 32
 
-  # 정확한 모델 평가를 위해 제거할 불필요한 생성 토큰들을 정의합니다.
   remove_tokens:
-    - "[PAD]"
-    - "[UNK]"
-    - "[BOS]"
-    - "[EOS]"
-    - "[MASK]"
-    - "[SEP]"
+    - '<usr>'
+    - '<s>'
+    - '</s>'
+    - '<pad>'

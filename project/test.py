@@ -13,6 +13,7 @@ from pprint import pprint
 from rouge import Rouge # 모델의 성능을 평가하기 위한 라이브러리입니다.
 
 from transformers import EarlyStoppingCallback
+from transformers import PreTrainedTokenizerFast
 from torch.utils.data import Dataset , DataLoader
 from transformers import Trainer, TrainingArguments
 from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
@@ -24,13 +25,13 @@ from data.dataset import DatasetForInference, Preprocess
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
-    parser.add_argument('--config_path', type=str, default='./config.yaml', help='Path to the config file')
+    parser.add_argument('--config_path', type=str, default='./configs/config.yaml', help='Path to the config file')
     args = parser.parse_args()
 
     return args
 
 
-def prepare_test_dataset(config,preprocessor, tokenizer):
+def prepare_test_dataset(config, preprocessor, tokenizer):
 
     test_file_path = os.path.join(config['general']['data_path'],'test.csv')
 
@@ -61,9 +62,12 @@ def load_tokenizer_and_model_for_test(config,device):
     model_name = config['general']['model_name']
     ckt_path = config['inference']['ckt_path']
     print('-'*10, f'Model Name : {model_name}', '-'*10,)
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    special_tokens_dict = {'additional_special_tokens': config['tokenizer']['special_tokens']}
-    tokenizer.add_special_tokens(special_tokens_dict)
+    # tokenizer = AutoTokenizer.from_pretrained(model_name)
+    # special_tokens_dict = {'additional_special_tokens': config['tokenizer']['special_tokens']}
+    # tokenizer.add_special_tokens(special_tokens_dict)
+
+    bart_config = BartConfig.from_pretrained(config['general']['model_cfg'])
+    tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
 
     generate_model = BartForConditionalGeneration.from_pretrained(ckt_path)
     generate_model.resize_token_embeddings(len(tokenizer))
@@ -82,7 +86,7 @@ def inference(config):
     generate_model , tokenizer = load_tokenizer_and_model_for_test(config,device)
 
     data_path = config['general']['data_path']
-    preprocessor = Preprocess(config['tokenizer']['bos_token'], config['tokenizer']['eos_token'])
+    preprocessor = Preprocess(config['tokenizer']['bos_token'], config['tokenizer']['eos_token'], config['tokenizer']['sep_token'])
 
     test_data, test_encoder_inputs_dataset = prepare_test_dataset(config,preprocessor, tokenizer)
     dataloader = DataLoader(test_encoder_inputs_dataset, batch_size=config['inference']['batch_size'])

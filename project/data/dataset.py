@@ -4,14 +4,61 @@ import pandas as pd
 
 from torch.utils.data import Dataset
 
+# class Preprocess:
+#     def __init__(self, bos_token: str, eos_token: str, sep_token: str) -> None:
+#         self.bos_token = bos_token
+#         self.eos_token = eos_token
+#         self.sep_token = sep_token
+
+
+#     @staticmethod
+#     def make_set_as_df(file_path, is_train = True):
+#         if is_train:
+#             df = pd.read_csv(file_path)
+#             train_df = df[['fname','dialogue','summary']]
+#             return train_df
+#         else:
+#             df = pd.read_csv(file_path)
+#             test_df = df[['fname','dialogue']]
+#             return test_df
+
+#     def add_sep_tokens(self, dialogue):
+#         # 화자가 바뀔 때 SEP 토큰을 추가하는 함수
+#         pattern = r'(#Person\d+#)'
+#         parts = re.split(pattern, dialogue)
+#         result = []
+#         prev_speaker = None
+#         for part in parts:
+#             if re.match(pattern, part):
+#                 if prev_speaker and prev_speaker != part:
+#                     result.append(self.sep_token)
+#                 prev_speaker = part
+#             result.append(part)
+#         return ''.join(result)
+
+#     def make_input(self, dataset, is_test = False):
+#         if is_test:
+#             encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
+#             decoder_input = [self.bos_token] * len(dataset['dialogue'])
+#             return encoder_input.tolist(), list(decoder_input)
+#         else:
+#             encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
+#             decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
+#             decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
+#             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
+
+
 class Preprocess:
-    def __init__(self, bos_token: str, eos_token: str, sep_token: str) -> None:
+    def __init__(self,
+            bos_token: str,
+            eos_token: str,
+        ) -> None:
+
         self.bos_token = bos_token
         self.eos_token = eos_token
-        self.sep_token = sep_token
-
 
     @staticmethod
+    # 실험에 필요한 컬럼을 가져옵니다.
     def make_set_as_df(file_path, is_train = True):
         if is_train:
             df = pd.read_csv(file_path)
@@ -22,28 +69,15 @@ class Preprocess:
             test_df = df[['fname','dialogue']]
             return test_df
 
-    def add_sep_tokens(self, dialogue):
-        # 화자가 바뀔 때 SEP 토큰을 추가하는 함수
-        pattern = r'(#Person\d+#)'
-        parts = re.split(pattern, dialogue)
-        result = []
-        prev_speaker = None
-        for part in parts:
-            if re.match(pattern, part):
-                if prev_speaker and prev_speaker != part:
-                    result.append(self.sep_token)
-                prev_speaker = part
-            result.append(part)
-        return ''.join(result)
-
-    def make_input(self, dataset, is_test = False):
+    # BART 모델의 입력, 출력 형태를 맞추기 위해 전처리를 진행합니다.
+    def make_input(self, dataset,is_test = False):
         if is_test:
-            encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
+            encoder_input = dataset['dialogue']
             decoder_input = [self.bos_token] * len(dataset['dialogue'])
             return encoder_input.tolist(), list(decoder_input)
         else:
-            encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
-            decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
+            encoder_input = dataset['dialogue']
+            decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x)) # Ground truth를 디코더의 input으로 사용하여 학습합니다.
             decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
         
@@ -55,17 +89,8 @@ def prepare_train_dataset(config, preprocessor: Preprocess, data_path, tokenizer
     train_data = preprocessor.make_set_as_df(train_file_path)
     val_data = preprocessor.make_set_as_df(val_file_path)
 
-    print('-'*150)
-    print(f'train_data:\n {train_data["dialogue"][0]}')
-    print(f'train_label:\n {train_data["summary"][0]}')
-
-    print('-'*150)
-    print(f'val_data:\n {val_data["dialogue"][0]}')
-    print(f'val_label:\n {val_data["summary"][0]}')
-
     encoder_input_train , decoder_input_train, decoder_output_train = preprocessor.make_input(train_data)
     encoder_input_val , decoder_input_val, decoder_output_val = preprocessor.make_input(val_data)
-    print('-'*10, 'Load data complete', '-'*10,)
 
     tokenized_encoder_inputs = tokenizer(encoder_input_train, return_tensors="pt", padding=True,
                             add_special_tokens=True, truncation=True, max_length=config['tokenizer']['encoder_max_len'], return_token_type_ids=False)
@@ -85,7 +110,6 @@ def prepare_train_dataset(config, preprocessor: Preprocess, data_path, tokenizer
 
     val_inputs_dataset = DatasetForVal(val_tokenized_encoder_inputs, val_tokenized_decoder_inputs, val_tokenized_decoder_ouputs,len(encoder_input_val))
 
-    print('-'*10, 'Make dataset complete', '-'*10,)
     return train_inputs_dataset, val_inputs_dataset
         
 class DatasetForTrain(Dataset):
@@ -109,7 +133,6 @@ class DatasetForTrain(Dataset):
     def __len__(self):
         return self.len
 
-# Validation에 사용되는 Dataset 클래스를 정의합니다.
 class DatasetForVal(Dataset):
     def __init__(self, encoder_input, decoder_input, labels, len):
         self.encoder_input = encoder_input
@@ -131,7 +154,6 @@ class DatasetForVal(Dataset):
     def __len__(self):
         return self.len
 
-# Test에 사용되는 Dataset 클래스를 정의합니다.
 class DatasetForInference(Dataset):
     def __init__(self, encoder_input, test_id, len):
         self.encoder_input = encoder_input

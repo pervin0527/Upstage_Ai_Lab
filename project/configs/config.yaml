@@ -13,6 +13,7 @@ tokenizer:
   decoder_max_len: 200 ## 100
   bos_token: "<s>" # "[BOS]"
   eos_token: "</s>" # "[EOS]"
+  sep_token: "<sep>"
   
   # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
   special_tokens:
@@ -48,8 +49,8 @@ training:
 
   num_train_epochs: 500
   learning_rate: 0.00001
-  per_device_train_batch_size: 32
-  per_device_eval_batch_size: 16
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 8
   optim: 'adamw_torch'
   warmup_ratio: 0.1
   weight_decay: 0.01
@@ -71,7 +72,7 @@ training:
   report_to: tensorboard
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-01-17-32-12/checkpoint-6337"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-02-25-06/checkpoint-7595"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true
@@ -80,7 +81,9 @@ inference:
   batch_size: 32
 
   remove_tokens:
-    - '<usr>'
-    - '<s>'
-    - '</s>'
-    - '<pad>'
+    - <unk>
+    - <s>
+    - </s>
+    - <pad>
+    - <sep>
+    - <mask>

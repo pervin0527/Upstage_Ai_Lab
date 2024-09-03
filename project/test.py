@@ -62,12 +62,12 @@ def load_tokenizer_and_model_for_test(config,device):
     model_name = config['general']['model_name']
     ckt_path = config['inference']['ckt_path']
     print('-'*10, f'Model Name : {model_name}', '-'*10,)
-    # tokenizer = AutoTokenizer.from_pretrained(model_name)
-    # special_tokens_dict = {'additional_special_tokens': config['tokenizer']['special_tokens']}
-    # tokenizer.add_special_tokens(special_tokens_dict)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    special_tokens_dict = {'additional_special_tokens': config['tokenizer']['special_tokens']}
+    tokenizer.add_special_tokens(special_tokens_dict)
 
-    bart_config = BartConfig.from_pretrained(config['general']['model_cfg'])
-    tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
+    # bart_config = BartConfig.from_pretrained(config['general']['model_cfg'])
+    # tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
 
     generate_model = BartForConditionalGeneration.from_pretrained(ckt_path)
     generate_model.resize_token_embeddings(len(tokenizer))

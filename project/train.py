@@ -22,16 +22,22 @@ def parse_args():
 
 
 def load_tokenizer_and_model_for_train(config,device):
-    # bart_config = BartConfig.from_pretrained(config['general']['model_cfg'])
+    model_name = config['general']['model_name']
+    print(model_name)
+    bart_config = BartConfig.from_pretrained(model_name)
+    print(bart_config)
+
+    ## Pretrained Tokenizer + Model
     # tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
     # generate_model = BartForConditionalGeneration.from_pretrained('./pretrain')
 
-    model_name = config['general']['model_name']
-    bart_config = BartConfig().from_pretrained(model_name)
+    ## Huggingface Pretrained Model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     generate_model = BartForConditionalGeneration.from_pretrained(model_name, config=bart_config)
-
-    special_tokens_dict={'additional_special_tokens':config['tokenizer']['special_tokens']}
+    special_tokens_dict = {
+        'sep_token': config['tokenizer']['sep_token'],
+        'additional_special_tokens' : config['tokenizer']['special_tokens']
+    }
     tokenizer.add_special_tokens(special_tokens_dict)
     generate_model.resize_token_embeddings(len(tokenizer))
 
@@ -91,7 +97,8 @@ def main(cfg):
     generate_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
     print(tokenizer.special_tokens_map)
 
-    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'])
+    # preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'])
+    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'], cfg['tokenizer']['sep_token'])
     data_path = cfg['general']['data_path']
     train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg, preprocessor, data_path, tokenizer)
 

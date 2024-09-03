@@ -1,119 +1,175 @@
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
+import nltk
+nltk.download('punkt')
+
 import torch
 import random
 import argparse
 import numpy as np
-import torch.nn.functional as F
 
-from transformers import EarlyStoppingCallback
-from torch.distributions.kl import kl_divergence
+from transformers import EarlyStoppingCallback, Trainer
 from transformers import PreTrainedTokenizerFast
-from torch.distributions.categorical import Categorical
-from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
+from transformers import Seq2SeqTrainingArguments
 from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
 
-from utils.metrics import compute_metrics
+from datasets import load_metric
+from typing import Dict, List, Tuple
+from transformers import EvalPrediction
 from data.dataset import Preprocess, prepare_train_dataset
 from utils.config_utils import load_config, save_config, make_save_dir
 
-class R3FTrainer(Seq2SeqTrainer):
-    def __init__(self, *args, noise_epsilon=1e-5, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.noise_epsilon = noise_epsilon
+import torch.nn.functional as F
+import pytorch_lightning as pl
 
-    def compute_kl_divergence(self, logits, perturbed_logits):
-        p = F.log_softmax(logits, dim=-1)
-        q = F.softmax(perturbed_logits, dim=-1)
-        return F.kl_div(p, q, reduction='batchmean')
+def compute_metrics(config, tokenizer, pred: EvalPrediction) -> Dict:
+    rouge_metric = load_metric("rouge")
+    
+    predictions, labels = pred.predictions, pred.label_ids
+    
+    # 예측값이 로짓인 경우 처리
+    if isinstance(predictions, tuple):
+        predictions = predictions[0]
+    
+    # -100을 패딩 토큰 ID로 변경
+    predictions = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
+    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+    
+    # 토큰 ID를 텍스트로 디코딩
+    decoded_preds = tokenizer.batch_decode(predictions, skip_special_tokens=True)
+    decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+    
+    # Rouge expects a newline after each sentence
+    decoded_preds = ["\n".join(tokenizer.tokenize(pred.strip())) for pred in decoded_preds]
+    decoded_labels = ["\n".join(tokenizer.tokenize(label.strip())) for label in decoded_labels]
+    
+    # Rouge 점수 계산
+    result = rouge_metric.compute(predictions=decoded_preds, references=decoded_labels, use_stemmer=True)
+    
+    # 중간값 계산
+    result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
+    
+    # 정밀도를 2자리로 반올림
+    result = {k: round(v, 2) for k, v in result.items()}
+    
+    return result
 
-    def training_step(self, model, inputs):
-        # 원래 입력에 대한 손실 계산
-        outputs = model(**inputs)
+class R3FModule(pl.LightningModule):
+    def __init__(
+        self,
+        model: BartForConditionalGeneration,
+        r3f_lambda: float = 1.0,
+    ):
+        super().__init__()
+        self.model = model
+        self.r3f_lambda = r3f_lambda
+        self.noise_sampler = torch.distributions.normal.Normal(loc=0.0, scale=1e-5)
+
+    def _get_symm_kl(self, noised_logits, input_logits):
+        return (
+            F.kl_div(
+                F.log_softmax(noised_logits, dim=-1, dtype=torch.float32),
+                F.softmax(input_logits, dim=-1, dtype=torch.float32),
+                reduction="sum",
+            )
+            + F.kl_div(
+                F.log_softmax(input_logits, dim=-1, dtype=torch.float32),
+                F.softmax(noised_logits, dim=-1, dtype=torch.float32),
+                reduction="sum",
+            )
+        ) / noised_logits.size(0)
+
+    def forward(self, input_ids, attention_mask, decoder_input_ids, decoder_attention_mask, labels=None):
+        inputs_embeds = self.model.model.shared(input_ids)
+        output = self.model(
+            inputs_embeds=inputs_embeds,
+            attention_mask=attention_mask,
+            decoder_input_ids=decoder_input_ids,
+            decoder_attention_mask=decoder_attention_mask,
+            labels=labels,
+            return_dict=True,
+        )
+
+        if self.training:
+            noise = self.noise_sampler.sample(sample_shape=inputs_embeds.shape).to(inputs_embeds)
+            noise_embeds = inputs_embeds.detach().clone() + noise
+            noise_output = self.model(
+                inputs_embeds=noise_embeds,
+                attention_mask=attention_mask,
+                decoder_input_ids=decoder_input_ids,
+                decoder_attention_mask=decoder_attention_mask,
+                labels=labels,
+                return_dict=True,
+            )
+
+            symm_kl = self._get_symm_kl(noise_output.logits, output.logits)
+            output.loss += self.r3f_lambda * symm_kl
+
+        return output
+
+class R3FTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False):
+        outputs = model(
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            decoder_input_ids=inputs["decoder_input_ids"],
+            decoder_attention_mask=inputs["decoder_attention_mask"],
+            labels=inputs["labels"]
+        )
         loss = outputs.loss
-
-        # 입력에 노이즈 추가
-        noise = torch.normal(mean=0, std=self.noise_epsilon, size=inputs['input_ids'].shape).to(inputs['input_ids'].device)
-        perturbed_inputs = inputs.copy()
-        perturbed_inputs['input_ids'] = inputs['input_ids'] + noise
-
-        # input_ids를 다시 LongTensor로 변환
-        perturbed_inputs['input_ids'] = perturbed_inputs['input_ids'].long()
-
-        # 노이즈가 추가된 입력에 대한 손실 계산
-        perturbed_outputs = model(**perturbed_inputs)
-        perturbed_logits = perturbed_outputs.logits
-
-        # KL Divergence 계산
-        kl_loss = self.compute_kl_divergence(outputs.logits, perturbed_logits)
-
-        # R3F 손실을 원래 손실에 더하기
-        final_loss = loss + kl_loss
-
-        return final_loss
-
-
+        return (loss, outputs) if return_outputs else loss
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
     parser.add_argument('--config_path', type=str, default='./configs/config.yaml', help='Path to the config file')
     args = parser.parse_args()
-
     return args
 
-
-def load_tokenizer_and_model_for_train(config,device):
+def load_tokenizer_and_model_for_train(config, device):
     model_name = config['general']['model_name']
     print(model_name)
     bart_config = BartConfig.from_pretrained(model_name)
     print(bart_config)
 
-    ## Pretrained Tokenizer + Model
-    # tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
-    # generate_model = BartForConditionalGeneration.from_pretrained('./pretrain')
-
-    ## Huggingface Pretrained Model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    generate_model = BartForConditionalGeneration.from_pretrained(model_name, config=bart_config)
+    base_model = BartForConditionalGeneration.from_pretrained(model_name, config=bart_config)
     special_tokens_dict = {
         'sep_token': config['tokenizer']['sep_token'],
-        'additional_special_tokens' : config['tokenizer']['special_tokens']
+        'additional_special_tokens': config['tokenizer']['special_tokens']
     }
     tokenizer.add_special_tokens(special_tokens_dict)
-    generate_model.resize_token_embeddings(len(tokenizer))
+    base_model.resize_token_embeddings(len(tokenizer))
 
-    generate_model.to(device)
-    return generate_model , tokenizer
+    r3f_model = R3FModule(base_model, r3f_lambda=config['training'].get('r3f_lambda', 1.0))
+    r3f_model.to(device)
+    return r3f_model, tokenizer
 
-
-def load_trainer_for_train(config, generate_model, tokenizer, train_inputs_dataset, val_inputs_dataset):
-    # set training args
+def load_trainer_for_train(config, r3f_model, tokenizer, train_inputs_dataset, val_inputs_dataset):
     training_args = Seq2SeqTrainingArguments(
-        output_dir=config['general']['output_dir'],  # model output directory
+        output_dir=config['general']['output_dir'],
         overwrite_output_dir=config['training']['overwrite_output_dir'],
-        num_train_epochs=config['training']['num_train_epochs'],  # total number of training epochs
-        learning_rate=config['training']['learning_rate'],  # learning_rate
-        per_device_train_batch_size=config['training']['per_device_train_batch_size'],  # batch size per device during training
-        per_device_eval_batch_size=config['training']['per_device_eval_batch_size'],  # batch size for evaluation
-        warmup_ratio=config['training']['warmup_ratio'],  # number of warmup steps for learning rate scheduler
-        weight_decay=config['training']['weight_decay'],  # strength of weight decay
+        num_train_epochs=config['training']['num_train_epochs'],
+        learning_rate=config['training']['learning_rate'],
+        per_device_train_batch_size=config['training']['per_device_train_batch_size'],
+        per_device_eval_batch_size=config['training']['per_device_eval_batch_size'],
+        warmup_ratio=config['training']['warmup_ratio'],
+        weight_decay=config['training']['weight_decay'],
         lr_scheduler_type=config['training']['lr_scheduler_type'],
         optim=config['training']['optim'],
         gradient_accumulation_steps=config['training']['gradient_accumulation_steps'],
-        evaluation_strategy=config['training']['evaluation_strategy'],  # evaluation strategy to adopt during training
+        evaluation_strategy=config['training']['evaluation_strategy'],
         save_strategy=config['training']['save_strategy'],
-        save_total_limit=config['training']['save_total_limit'],  # number of total save model.
+        save_total_limit=config['training']['save_total_limit'],
         fp16=config['training']['fp16'],
-        load_best_model_at_end=config['training']['load_best_model_at_end'],  # 최종적으로 가장 높은 점수 저장
+        load_best_model_at_end=config['training']['load_best_model_at_end'],
+        metric_for_best_model="eval_loss",
+        greater_is_better=False,
         seed=config['training']['seed'],
-        logging_dir=config['training']['logging_dir'],  # directory for storing logs
+        logging_dir=config['training']['logging_dir'],
         logging_strategy=config['training']['logging_strategy'],
-        predict_with_generate=config['training']['predict_with_generate'],  # To use BLEU or ROUGE score
+        predict_with_generate=config['training']['predict_with_generate'],
         generation_max_length=config['training']['generation_max_length'],
-        do_train=config['training']['do_train'],
-        do_eval=config['training']['do_eval'],
-        report_to=config['training']['report_to']  # (선택) wandb를 사용할 때 설정합니다.
     )
 
     MyCallback = EarlyStoppingCallback(
@@ -122,18 +178,15 @@ def load_trainer_for_train(config, generate_model, tokenizer, train_inputs_datas
     )
 
     trainer = R3FTrainer(
-        model=generate_model,
+        model=r3f_model,
         args=training_args,
         train_dataset=train_inputs_dataset,
         eval_dataset=val_inputs_dataset,
         compute_metrics=lambda pred: compute_metrics(config, tokenizer, pred),
-        callbacks=[MyCallback],
-        noise_epsilon=config['training'].get('noise_epsilon', 1e-5)  # noise_epsilon 설정
+        callbacks=[MyCallback]
     )
 
     return trainer
-
-
 
 def set_seed(seed):
     random.seed(seed)
@@ -143,23 +196,20 @@ def set_seed(seed):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-
 def main(cfg):
-    device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     set_seed(cfg['training']['seed'])
 
-    generate_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
+    r3f_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
     print(tokenizer.special_tokens_map)
 
-    # preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'])
     preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'], cfg['tokenizer']['sep_token'])
     data_path = cfg['general']['data_path']
     train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg, preprocessor, data_path, tokenizer)
 
-    trainer = load_trainer_for_train(cfg, generate_model, tokenizer, train_inputs_dataset, val_inputs_dataset)
+    trainer = load_trainer_for_train(cfg, r3f_model, tokenizer, train_inputs_dataset, val_inputs_dataset)
     save_config(cfg, cfg['general']['output_dir'])
     trainer.train()
-
 
 if __name__ == "__main__":
     args = parse_args()

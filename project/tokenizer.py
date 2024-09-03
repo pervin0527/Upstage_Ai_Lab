@@ -11,8 +11,8 @@ from transformers import PreTrainedTokenizerFast
 from tokenizers import SentencePieceUnigramTokenizer
 
 parser = argparse.ArgumentParser(prog="train_tokenizer", description="Training Huggingface Tokenizer with Mecab preprocessing")
-parser.add_argument("--tokenizer-path", type=str, default="/home/pervinco/Upstage_Ai_Lab/project/tokenizer", help="path to save tokenizer")
-parser.add_argument("--vocab-size", type=int, default=32000, help="vocab size of tokenizer")
+parser.add_argument("--tokenizer-path", type=str, default="./tokenizer", help="path to save tokenizer")
+parser.add_argument("--vocab-size", type=int, default=8113, help="vocab size of tokenizer")
 
 special_words = [
     '#Person1#',
@@ -32,6 +32,7 @@ special_words = [
     '#CardNumber#',
     '#PhoneNumber#',
     '#PassportNumber#',
+
     "#PersonName#",
     "#System#",
     "#Affiliation#",
@@ -44,7 +45,8 @@ special_words = [
 
 SENTENCEPIECE_URI = "https://raw.githubusercontent.com/google/sentencepiece/master/python/src/sentencepiece/"
 
-PAD, UNK, BOS, EOS, MASK, SEP = "[PAD]", "[UNK]", "[BOS]", "[EOS]", "[MASK]", "[SEP]"
+# PAD, UNK, BOS, EOS, MASK, SEP = "[PAD]", "[UNK]", "[BOS]", "[EOS]", "[MASK]", "[SEP]"
+PAD, UNK, BOS, EOS, MASK, SEP = "<pad>", "<unk>", "<s>", "</s>", "<mask>", "<sep>"
 
 def mecab_tokenize(text):
     mecab = Mecab()
@@ -57,8 +59,9 @@ def main(args: argparse.Namespace):
         # 데이터 파일 읽기
         train_df = pd.read_csv("./dataset/cleaned_train.csv")
         valid_df = pd.read_csv("./dataset/cleaned_dev.csv")
-        new_df = pd.read_csv("./dataset/new_data.csv")
-        df = pd.concat([train_df, valid_df, new_df], ignore_index=True)
+        # new_df = pd.read_csv("./dataset/new_data.csv")
+        # df = pd.concat([train_df, valid_df, new_df], ignore_index=True)
+        df = pd.concat([train_df, valid_df], ignore_index=True)
         
         # dialogue 컬럼의 데이터만 사용
         text_data = df['dialogue'].astype(str)
@@ -94,6 +97,7 @@ def main(args: argparse.Namespace):
     )
     pretrained_tokenizer.save_pretrained(args.tokenizer_path)
     print(f"[+] Saved to {args.tokenizer_path}")
+    print(pretrained_tokenizer.special_tokens_map)
 
     # 샘플 대화 토큰화 및 결과 출력
     sample_dialogue = random.choice(df['dialogue'])

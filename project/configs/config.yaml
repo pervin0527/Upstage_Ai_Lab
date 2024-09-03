@@ -42,17 +42,17 @@ training:
 
   num_train_epochs: 26
   learning_rate: 2.1169083140275866e-05 ## 0.00001
-  per_device_train_batch_size: 8 ## 64
+  per_device_train_batch_size: 16 ## 8
   per_device_eval_batch_size: 4
   optim: 'adamw_torch'
   warmup_ratio: 0.1
   weight_decay: 0.01
   lr_scheduler_type: 'cosine'
-  gradient_accumulation_steps: 3
+  gradient_accumulation_steps: 4 ## 3
   evaluation_strategy: 'epoch'
   save_strategy: 'epoch'
   save_total_limit: 1000
-  fp16: false
+  fp16: true 
   load_best_model_at_end: true
   logging_dir: "./logs"
   logging_strategy: "epoch"
@@ -63,10 +63,10 @@ training:
   early_stopping_patience: 10
   early_stopping_threshold: 0.001
   report_to: tensorboard
-  noise_epsilon: 0.0001
+  lambda_r3f: 1.0
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-15-39-36/checkpoint-7270"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-17-39-54/checkpoint-3116"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true

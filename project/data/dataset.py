@@ -4,6 +4,37 @@ import pandas as pd
 
 from torch.utils.data import Dataset
 
+# class Preprocess:
+#     def __init__(self,
+#             bos_token: str,
+#             eos_token: str,
+#         ) -> None:
+
+#         self.bos_token = bos_token
+#         self.eos_token = eos_token
+
+#     @staticmethod
+#     def make_set_as_df(file_path, is_train = True):
+#         if is_train:
+#             df = pd.read_csv(file_path)
+#             train_df = df[['fname','dialogue','summary']]
+#             return train_df
+#         else:
+#             df = pd.read_csv(file_path)
+#             test_df = df[['fname','dialogue']]
+#             return test_df
+
+#     def make_input(self, dataset,is_test = False):
+#         if is_test:
+#             encoder_input = dataset['dialogue']
+#             decoder_input = [self.bos_token] * len(dataset['dialogue'])
+#             return encoder_input.tolist(), list(decoder_input)
+#         else:
+#             encoder_input = dataset['dialogue']
+#             decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
+#             decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
+#             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
+
 class Preprocess:
     def __init__(self, bos_token: str, eos_token: str, sep_token: str) -> None:
         self.bos_token = bos_token

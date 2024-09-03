@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-
 from rouge import Rouge
 from konlpy.tag import Mecab
 
@@ -55,7 +54,20 @@ def compute_metrics(config, tokenizer, pred):
     # 최종적인 ROUGE 점수를 계산합니다.
     results = rouge.get_scores(tokenized_preds, tokenized_labels, avg=True)
 
-    # ROUGE 점수 중 F-1 score를 통해 평가합니다.
-    result = {key: value["f"] for key, value in results.items()}
+    # ROUGE 점수 중 F1 score를 사용하여 평가합니다.
+    rouge_1_f1 = results['rouge-1']['f']
+    rouge_2_f1 = results['rouge-2']['f']
+    rouge_l_f1 = results['rouge-l']['f']
+
+    # Final Score 계산
+    final_score = (rouge_1_f1 + rouge_2_f1 + rouge_l_f1) / 3
+
+    # 결과 출력
+    result = {
+        "ROUGE-1 F1": rouge_1_f1,
+        "ROUGE-2 F1": rouge_2_f1,
+        "ROUGE-L F1": rouge_l_f1,
+        "Final Score": final_score
+    }
     
     return result

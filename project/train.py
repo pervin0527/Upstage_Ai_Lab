@@ -2,7 +2,9 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import torch
+import random
 import argparse
+import numpy as np
 
 from transformers import EarlyStoppingCallback
 from transformers import PreTrainedTokenizerFast
@@ -91,8 +93,18 @@ def load_trainer_for_train(config,generate_model,tokenizer,train_inputs_dataset,
     return trainer
 
 
+def set_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+
 def main(cfg):
     device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')
+    set_seed(cfg['training']['seed'])
 
     generate_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
     print(tokenizer.special_tokens_map)

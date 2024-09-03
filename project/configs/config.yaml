@@ -5,7 +5,7 @@ general:
   new_file: "new_data.csv"
   model_name: "EbanLee/kobart-summary-v3" ## "digit82/kobart-summarization", "eenzeenee/t5-base-korean-summarization"
   output_dir: "./runs" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
-  model_cfg: "./configs/model_config.json" 
+  model_cfg: ""
 
 tokenizer:
   path: "./tokenizer"
@@ -17,6 +17,7 @@ tokenizer:
   
   # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
   special_tokens:
+    - '<sep>'
     - '#Person1#'
     - '#Person2#'
     - '#Person3#'
@@ -34,28 +35,20 @@ tokenizer:
     - '#CardNumber#'
     - '#PhoneNumber#'
     - '#PassportNumber#'
-    - "#PersonName#"
-    - "#System#"
-    - "#Affiliation#"
-    - "#Account#"
-    - "#Other#"
-    - "#Identity#"
-    - "#Number#"
-    - "#Financial#"
 
 training:
   seed: 42
   overwrite_output_dir: true
 
-  num_train_epochs: 500
-  learning_rate: 0.00001
-  per_device_train_batch_size: 16
-  per_device_eval_batch_size: 8
+  num_train_epochs: 26
+  learning_rate: 2.1169083140275866e-05 ## 0.00001
+  per_device_train_batch_size: 8 ## 64
+  per_device_eval_batch_size: 4
   optim: 'adamw_torch'
   warmup_ratio: 0.1
   weight_decay: 0.01
   lr_scheduler_type: 'cosine'
-  gradient_accumulation_steps: 4
+  gradient_accumulation_steps: 3
   evaluation_strategy: 'epoch'
   save_strategy: 'epoch'
   save_total_limit: 1000
@@ -70,9 +63,10 @@ training:
   early_stopping_patience: 10
   early_stopping_threshold: 0.001
   report_to: tensorboard
+  noise_epsilon: 0.0001
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-02-25-06/checkpoint-7595"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-15-39-36/checkpoint-7270"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true

@@ -75,7 +75,6 @@ def load_tokenizer_and_model_for_test(config, device):
     return generate_model , tokenizer
 
 
-
 # 학습된 모델이 생성한 요약문의 출력 결과를 보여줍니다.
 def inference(config):
     device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')

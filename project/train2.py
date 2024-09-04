@@ -3,16 +3,15 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import torch
 import argparse
-from transformers import PreTrainedTokenizerFast, AutoTokenizer, BartForConditionalGeneration, BartConfig
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from konlpy.tag import Mecab
+
+from transformers import EarlyStoppingCallback
+from transformers import PreTrainedTokenizerFast
+from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
+from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
 
 from utils.metrics import compute_metrics
 from data.dataset import Preprocess, prepare_train_dataset
 from utils.config_utils import load_config, save_config, make_save_dir
-
-mecab = Mecab()
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process config path.")
@@ -21,117 +20,73 @@ def parse_args():
 
     return args
 
-def load_tokenizer_and_model_for_train(config, device):
-    model_name = config['general']['model_name']
-    # bart_config = BartConfig().from_pretrained(model_name)
-    # tokenizer = AutoTokenizer.from_pretrained(model_name)
-    # generate_model = BartForConditionalGeneration.from_pretrained(model_name, config=bart_config)
 
+def load_tokenizer_and_model_for_train(config,device):
     bart_config = BartConfig.from_pretrained(config['general']['model_cfg'])
     tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
     generate_model = BartForConditionalGeneration.from_pretrained('./pretrain')
 
-    special_tokens_dict = {'additional_special_tokens': config['tokenizer']['special_tokens']}
+    # model_name = config['general']['model_name']
+    # bart_config = BartConfig().from_pretrained(model_name)
+    # tokenizer = AutoTokenizer.from_pretrained(model_name)
+    # generate_model = BartForConditionalGeneration.from_pretrained(model_name, config=bart_config)
+
+    special_tokens_dict={'additional_special_tokens':config['tokenizer']['special_tokens']}
     tokenizer.add_special_tokens(special_tokens_dict)
     generate_model.resize_token_embeddings(len(tokenizer))
 
     generate_model.to(device)
-    return generate_model, tokenizer
+    return generate_model , tokenizer
 
-def tokenize_text(text):
-    # 빈 문자열 처리
-    if not text.strip():
-        return 'empty'
-    return ' '.join(mecab.morphs(text))
 
-def train_epoch(model, dataloader, optimizer, device):
-    model.train()
-    total_loss = 0
-    for batch in tqdm(dataloader, desc="Training"):
-        input_ids = batch['input_ids'].to(device)
-        attention_mask = batch['attention_mask'].to(device)
-        labels = batch['labels'].to(device)
+def load_trainer_for_train(config,generate_model,tokenizer,train_inputs_dataset,val_inputs_dataset):
+    # set training args
+    training_args = Seq2SeqTrainingArguments(
+                output_dir=config['general']['output_dir'], # model output directory
+                overwrite_output_dir=config['training']['overwrite_output_dir'],
+                num_train_epochs=config['training']['num_train_epochs'],  # total number of training epochs
+                learning_rate=config['training']['learning_rate'], # learning_rate
+                per_device_train_batch_size=config['training']['per_device_train_batch_size'], # batch size per device during training
+                per_device_eval_batch_size=config['training']['per_device_eval_batch_size'],# batch size for evaluation
+                warmup_ratio=config['training']['warmup_ratio'],  # number of warmup steps for learning rate scheduler
+                weight_decay=config['training']['weight_decay'],  # strength of weight decay
+                lr_scheduler_type=config['training']['lr_scheduler_type'],
+                optim =config['training']['optim'],
+                gradient_accumulation_steps=config['training']['gradient_accumulation_steps'],
+                evaluation_strategy=config['training']['evaluation_strategy'], # evaluation strategy to adopt during training
+                save_strategy =config['training']['save_strategy'],
+                save_total_limit=config['training']['save_total_limit'], # number of total save model.
+                fp16=config['training']['fp16'],
+                load_best_model_at_end=config['training']['load_best_model_at_end'], # 최종적으로 가장 높은 점수 저장
+                seed=config['training']['seed'],
+                logging_dir=config['training']['logging_dir'], # directory for storing logs
+                logging_strategy=config['training']['logging_strategy'],
+                predict_with_generate=config['training']['predict_with_generate'], #To use BLEU or ROUGE score
+                generation_max_length=config['training']['generation_max_length'],
+                do_train=config['training']['do_train'],
+                do_eval=config['training']['do_eval'],
+                report_to=config['training']['report_to'] # (선택) wandb를 사용할 때 설정합니다.
+            )
 
-        outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-        loss = outputs.loss
+    MyCallback = EarlyStoppingCallback(
+        early_stopping_patience=config['training']['early_stopping_patience'],
+        early_stopping_threshold=config['training']['early_stopping_threshold']
+    )
 
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+    trainer = Seq2SeqTrainer(
+        model=generate_model,
+        args=training_args,
+        train_dataset=train_inputs_dataset,
+        eval_dataset=val_inputs_dataset,
+        compute_metrics = lambda pred: compute_metrics(config,tokenizer, pred),
+        callbacks = [MyCallback]
+    )
 
-        total_loss += loss.item()
+    return trainer
 
-    avg_loss = total_loss / len(dataloader)
-    return avg_loss
-
-def evaluate(model, dataloader, tokenizer, config, device):
-    model.eval()
-    total_loss = 0
-    all_predictions = []
-    all_labels = []
-    with torch.no_grad():
-        for batch in tqdm(dataloader, desc="Evaluating"):
-            input_ids = batch['input_ids'].to(device)
-            attention_mask = batch['attention_mask'].to(device)
-            labels = batch['labels'].to(device)
-
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
-            total_loss += loss.item()
-
-            predictions = outputs.logits.argmax(dim=-1)
-            all_predictions.extend(predictions.cpu().numpy())
-            all_labels.extend(labels.cpu().numpy())
-
-    avg_loss = total_loss / len(dataloader)
-
-    # `compute_metrics` 사용하여 ROUGE 점수 계산
-    from transformers import EvalPrediction
-    predictions = torch.tensor(all_predictions)
-    labels = torch.tensor(all_labels)
-    eval_pred = EvalPrediction(predictions=predictions, label_ids=labels)
-    rouge_scores = compute_metrics(config, tokenizer, eval_pred)
-    
-    return avg_loss, rouge_scores
-
-def train(model, train_dataloader, val_dataloader, tokenizer, config, device):
-    optimizer = torch.optim.AdamW(model.parameters(), lr=config['training']['learning_rate'])
-    num_epochs = config['training']['num_train_epochs']
-
-    best_val_loss = float('inf')
-    early_stopping_patience = config['training'].get('early_stopping_patience', 3)
-    early_stopping_counter = 0
-
-    for epoch in range(num_epochs):
-        print(f"Epoch {epoch + 1}/{num_epochs}")
-        train_loss = train_epoch(model, train_dataloader, optimizer, device)
-        print(f"Training Loss: {train_loss:.4f}")
-
-        val_loss, rouge_scores = evaluate(model, val_dataloader, tokenizer, config, device)
-        print(f"Validation Loss: {val_loss:.4f}")
-        print(f"ROUGE-1 F1 Score: {rouge_scores['rouge-1']:.4f}, ROUGE-2 F1 Score: {rouge_scores['rouge-2']:.4f}, ROUGE-L F1 Score: {rouge_scores['rouge-l']:.4f}")
-        print()
-
-        # Best model 저장
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            early_stopping_counter = 0
-            torch.save(model.state_dict(), os.path.join(config['general']['output_dir'], 'best.pth'))
-            print("Best model saved!")
-        else:
-            early_stopping_counter += 1
-
-        # Early Stopping
-        if early_stopping_counter >= early_stopping_patience:
-            print("Early stopping triggered!")
-            break
-
-    # Last model 저장
-    torch.save(model.state_dict(), os.path.join(config['general']['output_dir'], 'last.pth'))
-    print("Last model saved!")
 
 def main(cfg):
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cuda:0' if torch.cuda.is_available()  else 'cpu')
 
     generate_model, tokenizer = load_tokenizer_and_model_for_train(cfg, device)
     print(tokenizer.special_tokens_map)
@@ -140,11 +95,10 @@ def main(cfg):
     data_path = cfg['general']['data_path']
     train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg, preprocessor, data_path, tokenizer)
 
-    train_dataloader = DataLoader(train_inputs_dataset, batch_size=cfg['training']['per_device_train_batch_size'], shuffle=True)
-    val_dataloader = DataLoader(val_inputs_dataset, batch_size=cfg['training']['per_device_eval_batch_size'])
-
+    trainer = load_trainer_for_train(cfg, generate_model, tokenizer, train_inputs_dataset, val_inputs_dataset)
     save_config(cfg, cfg['general']['output_dir'])
-    train(generate_model, train_dataloader, val_dataloader, tokenizer, cfg, device)
+    trainer.train()
+
 
 if __name__ == "__main__":
     args = parse_args()

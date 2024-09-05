@@ -31,3 +31,7 @@ logs/
 best_model/
 prediction/
 pretrain/
+GPT2*/
+*.model
+*.vocab
+T5_runs/

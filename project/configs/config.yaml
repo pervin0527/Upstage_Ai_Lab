@@ -3,7 +3,7 @@ general:
   train_file: "cleaned_train.csv"
   valid_file: "cleaned_dev.csv"
   new_file: "new_data.csv"
-  model_name: "EbanLee/kobart-summary-v3" ## "digit82/kobart-summarization", "eenzeenee/t5-base-korean-summarization"
+  model_name: "EbanLee/kobart-summary-v3" ## "suriya7/bart-finetuned-text-summarization", "digit82/kobart-summarization", "eenzeenee/t5-base-korean-summarization"
   output_dir: "./runs" # 모델의 최종 출력 값을 저장할 경로를 설정합니다.
   model_cfg: ""
 
@@ -14,10 +14,11 @@ tokenizer:
   bos_token: "<s>" # "[BOS]"
   eos_token: "</s>" # "[EOS]"
   sep_token: "<sep>"
+  mask_token: "<mask>s"
   
   # 특정 단어들이 분해되어 tokenization이 수행되지 않도록 special_tokens을 지정해줍니다.
   special_tokens:
-    - '<sep>'
+    # - '<sep>'
     - '#Person1#'
     - '#Person2#'
     - '#Person3#'
@@ -42,7 +43,7 @@ training:
 
   num_train_epochs: 26
   learning_rate: 2.1169083140275866e-05 ## 0.00001
-  per_device_train_batch_size: 16 ## 8
+  per_device_train_batch_size: 32 ## 8
   per_device_eval_batch_size: 4
   optim: 'adamw_torch'
   warmup_ratio: 0.1
@@ -66,7 +67,7 @@ training:
   lambda_r3f: 1.0
 
 inference:
-  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-03-17-39-54/checkpoint-3116"
+  ckt_path: "/home/pervinco/Upstage_Ai_Lab/project/runs/2024-09-05-09-45-46/checkpoint-1657"
   result_path: "./prediction"
   no_repeat_ngram_size: 2
   early_stopping: true

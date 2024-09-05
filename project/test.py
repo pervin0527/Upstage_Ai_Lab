@@ -7,17 +7,9 @@ import argparse
 import pandas as pd
 import pytorch_lightning as pl
 
-from glob import glob
 from tqdm import tqdm
-from pprint import pprint
-from rouge import Rouge # 모델의 성능을 평가하기 위한 라이브러리입니다.
-
-from transformers import EarlyStoppingCallback
-from transformers import PreTrainedTokenizerFast
-from torch.utils.data import Dataset , DataLoader
-from transformers import Trainer, TrainingArguments
-from transformers import AutoTokenizer, BartForConditionalGeneration, BartConfig
-from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
+from torch.utils.data import DataLoader
+from transformers import AutoTokenizer, BartForConditionalGeneration
 
 from utils.config_utils import load_config, save_config
 from data.dataset import DatasetForInference, Preprocess
@@ -33,7 +25,7 @@ def parse_args():
 
 def prepare_test_dataset(config, preprocessor, tokenizer):
 
-    test_file_path = os.path.join(config['general']['data_path'],'test.csv')
+    test_file_path = os.path.join(config['general']['data_path'], 'test.csv')
 
     test_data = preprocessor.make_set_as_df(test_file_path,is_train=False)
     test_id = test_data['fname']

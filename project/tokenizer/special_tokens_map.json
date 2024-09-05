@@ -1,36 +1,37 @@
 {
-  "additional_special_tokens": [
-    "#Person1#",
-    "#Person2#",
-    "#Person3#",
-    "#Person4#",
-    "#Person5#",
-    "#Person6#",
-    "#Person7#",
-    "#SSN#",
-    "#Email#",
-    "#Address#",
-    "#Reaction#",
-    "#CarNumber#",
-    "#Movietitle#",
-    "#DateOfBirth#",
-    "#CardNumber#",
-    "#PhoneNumber#",
-    "#PassportNumber#",
-    "#PersonName#",
-    "#System#",
-    "#Affiliation#",
-    "#Account#",
-    "#Other#",
-    "#Identity#",
-    "#Number#",
-    "#Financial#"
-  ],
-  "bos_token": "[BOS]",
-  "cls_token": "[BOS]",
-  "eos_token": "[EOS]",
-  "mask_token": "[MASK]",
-  "pad_token": "[PAD]",
-  "sep_token": "[SEP]",
-  "unk_token": "[UNK]"
+  "bos_token": {
+    "content": "<s>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "eos_token": {
+    "content": "</s>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "mask_token": {
+    "content": "<mask>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "pad_token": {
+    "content": "<pad>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "unk_token": {
+    "content": "<unk>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  }
 }

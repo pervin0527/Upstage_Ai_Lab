@@ -1,46 +1,16 @@
 import re
 import os
+import random
 import pandas as pd
 
 from torch.utils.data import Dataset
 
-# class Preprocess:
-#     def __init__(self,
-#             bos_token: str,
-#             eos_token: str,
-#         ) -> None:
-
-#         self.bos_token = bos_token
-#         self.eos_token = eos_token
-
-#     @staticmethod
-#     def make_set_as_df(file_path, is_train = True):
-#         if is_train:
-#             df = pd.read_csv(file_path)
-#             train_df = df[['fname','dialogue','summary']]
-#             return train_df
-#         else:
-#             df = pd.read_csv(file_path)
-#             test_df = df[['fname','dialogue']]
-#             return test_df
-
-#     def make_input(self, dataset,is_test = False):
-#         if is_test:
-#             encoder_input = dataset['dialogue']
-#             decoder_input = [self.bos_token] * len(dataset['dialogue'])
-#             return encoder_input.tolist(), list(decoder_input)
-#         else:
-#             encoder_input = dataset['dialogue']
-#             decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
-#             decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
-#             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
-
 class Preprocess:
-    def __init__(self, bos_token: str, eos_token: str, sep_token: str) -> None:
+    def __init__(self, bos_token: str, eos_token: str, sep_token: str, mask_token: str) -> None:
         self.bos_token = bos_token
         self.eos_token = eos_token
         self.sep_token = sep_token
-
+        self.mask_token = mask_token
 
     @staticmethod
     def make_set_as_df(file_path, is_train = True):
@@ -67,15 +37,50 @@ class Preprocess:
             result.append(part)
         return ''.join(result)
 
-    def make_input(self, dataset, is_test = False):
+    def sentence_infilling(self, text, mask_prob=0.15):
+        words = text.split()
+        masked_words = []
+        mask_length = 0
+        for word in words:
+            if random.random() < mask_prob:
+                if mask_length == 0:
+                    masked_words.append(self.mask_token)
+                mask_length += 1
+            else:
+                if mask_length > 0:
+                    masked_words[-1] = self.mask_token
+                    mask_length = 0
+                masked_words.append(word)
+        if mask_length > 0:
+            masked_words[-1] = self.mask_token
+        return ' '.join(masked_words)
+
+    def permutation(self, text, max_perm=3):
+        sentences = text.split('.')
+        num_perm = min(len(sentences), max_perm)
+        perm_indices = list(range(num_perm))
+        random.shuffle(perm_indices)
+        sentences[:num_perm] = [sentences[i] for i in perm_indices]
+        return '.'.join(sentences)
+
+    def apply_augmentations(self, text, infill_prob=0.5, perm_prob=0.5):
+        if random.random() < infill_prob:
+            text = self.sentence_infilling(text)
+        if random.random() < perm_prob:
+            text = self.permutation(text)
+        return text
+
+    def make_input(self, dataset, is_test=False, apply_aug=True):
         if is_test:
             encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
             decoder_input = [self.bos_token] * len(dataset['dialogue'])
             return encoder_input.tolist(), list(decoder_input)
         else:
             encoder_input = dataset['dialogue'].apply(self.add_sep_tokens)
-            decoder_input = dataset['summary'].apply(lambda x : self.bos_token + str(x))
-            decoder_output = dataset['summary'].apply(lambda x : str(x) + self.eos_token)
+            if apply_aug:
+                encoder_input = encoder_input.apply(self.apply_augmentations)
+            decoder_input = dataset['summary'].apply(lambda x: self.bos_token + str(x))
+            decoder_output = dataset['summary'].apply(lambda x: str(x) + self.eos_token)
             return encoder_input.tolist(), decoder_input.tolist(), decoder_output.tolist()
         
 

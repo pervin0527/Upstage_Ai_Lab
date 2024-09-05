@@ -30,7 +30,7 @@ def load_tokenizer_and_model_for_train(config,device):
     print(bart_config)
 
     ## Pretrained Tokenizer + Model
-    # tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
+    tokenizer = PreTrainedTokenizerFast.from_pretrained(config['tokenizer']['path'], config=bart_config)
     # generate_model = BartForConditionalGeneration.from_pretrained('./pretrain')
 
     ## Huggingface Pretrained Model
@@ -110,7 +110,7 @@ def main(cfg):
     print(tokenizer.special_tokens_map)
 
     # preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'])
-    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'], cfg['tokenizer']['sep_token'])
+    preprocessor = Preprocess(cfg['tokenizer']['bos_token'], cfg['tokenizer']['eos_token'], cfg['tokenizer']['sep_token'], cfg['tokenizer']['mask_token'])
     data_path = cfg['general']['data_path']
     train_inputs_dataset, val_inputs_dataset = prepare_train_dataset(cfg, preprocessor, data_path, tokenizer)
 

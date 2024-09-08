@@ -35,3 +35,4 @@ GPT2*/
 *.model
 *.vocab
 T5_runs/
+BART_runs/

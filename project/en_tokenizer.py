@@ -13,7 +13,7 @@ SENTENCEPIECE_URI = "https://raw.githubusercontent.com/google/sentencepiece/mast
 PAD, UNK, BOS, EOS, MASK, SEP = "<pad>", "<unk>", "<s>", "</s>", "<mask>", "<sep>"
 
 parser = argparse.ArgumentParser(prog="train_tokenizer", description="Training Huggingface Tokenizer")
-parser.add_argument("--tokenizer-path", type=str, default="./tokenizer", help="path to save tokenizer")
+parser.add_argument("--tokenizer-path", type=str, default="./tokenizer/en_sentencepiece", help="path to save tokenizer")
 parser.add_argument("--vocab-size", type=int, default=8113, help="vocab size of tokenizer")
 
 special_words = [

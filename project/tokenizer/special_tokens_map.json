@@ -1,37 +1,35 @@
 {
-  "bos_token": {
-    "content": "<s>",
-    "lstrip": false,
-    "normalized": false,
-    "rstrip": false,
-    "single_word": false
-  },
-  "eos_token": {
-    "content": "</s>",
-    "lstrip": false,
-    "normalized": false,
-    "rstrip": false,
-    "single_word": false
-  },
-  "mask_token": {
-    "content": "<mask>",
-    "lstrip": false,
-    "normalized": false,
-    "rstrip": false,
-    "single_word": false
-  },
-  "pad_token": {
-    "content": "<pad>",
-    "lstrip": false,
-    "normalized": false,
-    "rstrip": false,
-    "single_word": false
-  },
-  "unk_token": {
-    "content": "<unk>",
-    "lstrip": false,
-    "normalized": false,
-    "rstrip": false,
-    "single_word": false
-  }
+  "additional_special_tokens": [
+    "#Person1#",
+    "#Person2#",
+    "#Person3#",
+    "#Person4#",
+    "#Person5#",
+    "#Person6#",
+    "#Person7#",
+    "#SSN#",
+    "#Email#",
+    "#Address#",
+    "#Reaction#",
+    "#CarNumber#",
+    "#Movietitle#",
+    "#DateOfBirth#",
+    "#CardNumber#",
+    "#PhoneNumber#",
+    "#PassportNumber#",
+    "#Person1#:",
+    "#Person2#:",
+    "#Person3#:",
+    "#Person4#:",
+    "#Person5#:",
+    "#Person6#:",
+    "#Person7#:"
+  ],
+  "bos_token": "<s>",
+  "cls_token": "<s>",
+  "eos_token": "</s>",
+  "mask_token": "<mask>",
+  "pad_token": "<pad>",
+  "sep_token": "<sep>",
+  "unk_token": "<unk>"
 }

@@ -36,3 +36,4 @@ GPT2*/
 *.vocab
 T5_runs/
 BART_runs/
+*.env

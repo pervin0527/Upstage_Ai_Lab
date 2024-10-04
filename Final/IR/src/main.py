@@ -1,4 +1,7 @@
 import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+import json
 import warnings
 import huggingface_hub
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -17,6 +20,8 @@ from dense_retriever.model import load_hf_encoder
 from dense_retriever.doc_processor import score_normalizer
 
 from sparse_retriever.kiwi_bm25 import KiwiBM25Retriever
+
+from search.answer_processor import answer_question
 
 from dotenv import load_dotenv
 load_dotenv("../keys.env")
@@ -71,6 +76,23 @@ class Args:
     model_kwargs = {"device": "cuda:0"}
     encode_kwargs = {"normalize_embeddings": False,
                      "clean_up_tokenization_spaces": True}
+    
+
+def eval_rag(eval_filename, output_filename, retriever, client, model):
+    with open(eval_filename) as f, open(output_filename, "w") as of:
+        idx = 0
+        for line in f:
+            print(f"{idx:>04}")
+            j = json.loads(line)
+            response = answer_question(j["msg"], retriever, client, model)
+            # print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
+            # print(f'Answer: {response["answer"]}\n')
+
+            # 대회 score 계산은 topk 정보를 사용, answer 정보는 LLM을 통한 자동평가시 활용
+            output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
+            of.write(f'{json.dumps(output, ensure_ascii=False)}\n')
+            idx += 1
+
 
 def main(args:Args):
     documents = load_document(path="../dataset/processed_documents.jsonl")
@@ -94,11 +116,11 @@ def main(args:Args):
     elif args.doc_method == "sparse":
         retrieval = KiwiBM25Retriever.from_documents(documents)
 
-    query = "평균속도는 어떻게 계산하나요?"
-    debug(query, retrieval)
+    # debug("평균속도는 어떻게 계산하나요?", retrieval)
 
     client = OpenAI()
     model = "gpt-4o"
+    eval_rag("../dataset/eval.jsonl", "../dataset/sample_submission.csv", retrieval, client, model)
     
 if __name__ == "__main__":
     main(Args)

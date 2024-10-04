@@ -1,4 +1,4 @@
-import numpy as np
+import traceback
 
 from search.query_processor import create_standalone_query, domain_check
 
@@ -42,46 +42,38 @@ tools = [
     },
 ]
 
-def answer_question(messages, embedding_model, retriever):
+def answer_question(messages, retriever, client, model):
     # 함수의 출력값 초기화
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
     
     # 쿼리 검사1: 멀티턴 대화인 경우 standalone query를 생성한다.
-    result1 = create_standalone_query(messages[0]['content'])
+    result1 = create_standalone_query(messages[0]['content'], model, client)
     
     # 쿼리 검사2: 쿼리가 과학 상식과 관련된 것인지 검사한다.
-    result2 = domain_check(result1['query'])
+    result2 = domain_check(result1['query'], model, client)
     
     if not result2.get('out_of_domain', True):
         query = result2['query']
         response['standalone_query'] = query
         
-        search_result = retriever.get_relevant_documents(query)
+        # Retriever를 통해 관련 문서 검색 및 점수 반환
+        search_result = retriever.similarity_search_with_relevance_scores(query, k=3)
         
         if not search_result:
             response["answer"] = "관련된 문서를 찾을 수 없습니다."
             return response
         
-        top3_results = search_result[:3]
-        query_embedding = np.array(embedding_model.embed_query(query))
-        
-        
+        # 검색된 문서에서 상위 3개만 선택하여 저장
         retrieved_context = []
-        for doc in top3_results:
-            # 문서 임베딩 벡터 가져오기
-            doc_embedding = np.array(embedding_model.embed_documents([doc.page_content])[0])  # 넘파이 배열로 변환
-            
-            # 쿼리 임베딩과 문서 임베딩 간의 L2 Distance 계산
-            l2_distance = calculate_l2_distance(query_embedding, doc_embedding)
-            
+        for doc, score in search_result:
             retrieved_context.append(doc.page_content)
             response["topk"].append(doc.metadata.get('docid'))
             response["references"].append({
-                "score": l2_distance,  # L2 Distance를 점수로 사용
+                "score": score,  # 검색에서 반환된 유사도 점수
                 "content": doc.page_content
             })
         
-        # 검색 결과를 assistant 메시지에 추가 (문자열로 변환)
+        # 검색된 문서들을 assistant 메시지에 추가
         content = "\n".join(retrieved_context)
         messages.append({"role": "assistant", "content": content})
         

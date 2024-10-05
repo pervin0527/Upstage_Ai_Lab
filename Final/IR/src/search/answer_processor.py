@@ -47,10 +47,12 @@ def answer_question(messages, retriever, client, model):
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
     
     # 쿼리 검사1: 멀티턴 대화인 경우 standalone query를 생성한다.
-    result1 = create_standalone_query(messages[0]['content'], model, client)
+    result1 = create_standalone_query(messages, model, client)
+    print(result1)
     
     # 쿼리 검사2: 쿼리가 과학 상식과 관련된 것인지 검사한다.
     result2 = domain_check(result1['query'], model, client)
+    print(result2)
     
     if not result2.get('out_of_domain', True):
         query = result2['query']

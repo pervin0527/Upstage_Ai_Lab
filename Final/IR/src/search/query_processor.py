@@ -8,19 +8,26 @@ def clean_json_response(response):
 
 
 def create_standalone_query(query, model, client):
-    standalone_content = ("입력된 내용이 한 줄의 문장인지 여러 줄의 대화 내용인지 분류하세요. 반드시 JSON 형식으로 응답하며, 키와 값은 모두 이중 따옴표로 감쌉니다."
-                        "- 단일 문장인 경우 : {\"multi_turn\": false, \"query\": \"입력 문장\"} "
-                        "- 여러 줄의 대화 내용인 경우 : {\"multi_turn\": true, \"query\": \"대화 내용을 종합하여 만든 새로운 질문\"}")
+    # 대화 내용이 multi-turn인 경우, 각 대화 턴을 문자열로 변환
+    dialogue_content = []
+    for turn in query:
+        dialogue_content.append(f'"{turn["role"]}" : "{turn["content"]}"')
+    dialogue_content = "\n".join(dialogue_content)
 
-    # query가 중첩된 리스트 형태일 때 텍스트를 추출
-    if isinstance(query, list) and 'content' in query[0]:
-        query = query[0]['content'][0]['content']
+    # LLM에 입력할 프롬프트
+    standalone_content = (
+        "입력된 내용이 한 줄의 문장인지 여러 줄의 대화 내용인지 분류하세요. "
+        "반드시 JSON 형식으로 응답하며, 키와 값은 모두 이중 따옴표로 감쌉니다."
+        "- 단일 문장인 경우 : {\"multi_turn\": false, \"query\": \"입력 문장\"} "
+        "- 여러 줄의 대화 내용인 경우 : {\"multi_turn\": true, \"query\": \"대화 내용을 종합하여 만든 새로운 질문\"}"
+    )
     
+    # LLM 호출
     completion = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": standalone_content},
-            {"role": "user", "content": query}
+            {"role": "user", "content": dialogue_content}
         ],
     )
     

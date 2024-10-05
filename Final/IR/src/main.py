@@ -84,9 +84,9 @@ def eval_rag(eval_filename, output_filename, retriever, client, model):
         for line in f:
             print(f"{idx:>04}")
             j = json.loads(line)
+            print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
             response = answer_question(j["msg"], retriever, client, model)
-            # print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
-            # print(f'Answer: {response["answer"]}\n')
+            print(f'Answer: {response["answer"]}\n')
 
             # 대회 score 계산은 topk 정보를 사용, answer 정보는 LLM을 통한 자동평가시 활용
             output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}

@@ -8,8 +8,8 @@ from langchain_community.cross_encoders import HuggingFaceCrossEncoder
 from langchain.retrievers.document_compressors import CrossEncoderReranker
 
 def load_upstage_encoder(model_name):
-    # encoder = UpstageEmbeddings(model=model_name)
-    encoder = SolarEmbeddings(model=model_name)
+    encoder = UpstageEmbeddings(model=model_name)
+    # encoder = SolarEmbeddings(model=model_name)
 
     return encoder
 

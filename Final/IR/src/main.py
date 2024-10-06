@@ -50,7 +50,7 @@ class Args:
     tokenizer = "kiwi"
 
     ## dense
-    encoder_method = "huggingface"
+    encoder_method = "upstage"
 
     ## HuggingFace
     hf_model_name = "intfloat/multilingual-e5-large-instruct" ## "jhgan/ko-sroberta-multitask"
@@ -88,6 +88,7 @@ def main(args:Args):
             
         index = faiss.IndexFlatL2(len(encoder.embed_query("파이썬")))
 
+        print("벡터 DB 생성 중")
         vector_store = FAISS(
             embedding_function=encoder,
             index=index,
@@ -97,14 +98,19 @@ def main(args:Args):
         )
         vector_store.add_documents(documents=documents)
         retrieval = vector_store
+        print("완료")
 
     elif args.doc_method == "sparse":
+        print("KiwiBM25 생성 중")
         retrieval = KiwiBM25Retriever.from_documents(documents)
+        print("완료")
 
     if args.retrieval_debug:
         retrieval_debug("평균속도는 어떻게 계산하나요?", retrieval)
 
+    print("검색 시작.")
     eval_rag(args, retrieval, client)
+    print("완료.")
     
 if __name__ == "__main__":
     main(Args)

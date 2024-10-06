@@ -1,6 +1,7 @@
 import json
 import traceback
 
+from dense_retriever.model import load_hf_reranker
 from search.query_processor import create_standalone_query, domain_check
 
 # RAG 구현에 필요한 Question Answering을 위한 LLM  프롬프트
@@ -43,15 +44,15 @@ tools = [
     },
 ]
 
-def answer_question(messages, retriever, client, model):
-    # 함수의 출력값 초기화
+
+def answer_question(messages, retriever, client, model, compression_retriever=None):
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
     
-    # 쿼리 검사1: 멀티턴 대화인 경우 standalone query를 생성한다.
+    # 쿼리 검사1: standalone query 생성
     result1 = create_standalone_query(messages, model, client)
     print(result1)
     
-    # 쿼리 검사2: 쿼리가 과학 상식과 관련된 것인지 검사한다.
+    # 쿼리 검사2: 과학 상식 관련 쿼리 확인
     result2 = domain_check(result1['query'], model, client)
     print(result2)
     
@@ -66,21 +67,33 @@ def answer_question(messages, retriever, client, model):
             response["answer"] = "관련된 문서를 찾을 수 없습니다."
             return response
         
-        # 검색된 문서에서 상위 3개만 선택하여 저장
+
         retrieved_context = []
-        for doc, score in search_result:
-            retrieved_context.append(doc.page_content)
-            response["topk"].append(doc.metadata.get('docid'))
-            response["references"].append({
-                "score": score,  # 검색에서 반환된 유사도 점수
-                "content": doc.page_content
-            })
+        if compression_retriever is not None:
+            reranked_docs = compression_retriever.invoke(query)
+        
+            # 상위 3개의 문서만 선택하여 저장
+            for doc in reranked_docs:
+                retrieved_context.append(doc.page_content)
+                response["topk"].append(doc.metadata.get('docid'))
+                response["references"].append({
+                    "score": doc.metadata.get('score'),  # reranker에서 반환된 점수
+                    "content": doc.page_content
+                })
+        else:
+            for doc, score in search_result:
+                retrieved_context.append(doc.page_content)
+                response["topk"].append(doc.metadata.get('docid'))
+                response["references"].append({
+                    "score": score,  # 검색에서 반환된 유사도 점수
+                    "content": doc.page_content
+                })
         
         # 검색된 문서들을 assistant 메시지에 추가
         content = "\n".join(retrieved_context)
         messages.append({"role": "assistant", "content": content})
         
-        # 검색된 문서들을 바탕으로 최종 답변 생성
+        # 최종 답변 생성
         msg = [{"role": "system", "content": persona_qa}] + messages
         try:
             qaresult = client.chat.completions.create(
@@ -102,14 +115,20 @@ def answer_question(messages, retriever, client, model):
     return response
 
 
-def eval_rag(eval_filename, output_filename, retriever, client, model):
-    with open(eval_filename) as f, open(output_filename, "w") as of:
+def eval_rag(args, retriever, client):
+    if args.rerank:
+        compression_retriever = load_hf_reranker(args.reranker_name, retriever)
+    else:
+        compression_retriever = None
+
+    with open(args.eval_file_path) as f, open(args.output_path, "w") as of:
         idx = 0
         for line in f:
             print(f"{idx:>04}")
             j = json.loads(line)
             print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
-            response = answer_question(j["msg"], retriever, client, model)
+
+            response = answer_question(j["msg"], retriever, client, args.llm_model, compression_retriever)
             print(f'Answer: {response["answer"]}\n')
 
             # 대회 score 계산은 topk 정보를 사용, answer 정보는 LLM을 통한 자동평가시 활용

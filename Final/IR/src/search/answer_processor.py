@@ -1,3 +1,4 @@
+import json
 import traceback
 
 from search.query_processor import create_standalone_query, domain_check
@@ -99,3 +100,19 @@ def answer_question(messages, retriever, client, model):
         response["answer"] = "질문이 과학 상식에 해당하지 않습니다."
     
     return response
+
+
+def eval_rag(eval_filename, output_filename, retriever, client, model):
+    with open(eval_filename) as f, open(output_filename, "w") as of:
+        idx = 0
+        for line in f:
+            print(f"{idx:>04}")
+            j = json.loads(line)
+            print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
+            response = answer_question(j["msg"], retriever, client, model)
+            print(f'Answer: {response["answer"]}\n')
+
+            # 대회 score 계산은 topk 정보를 사용, answer 정보는 LLM을 통한 자동평가시 활용
+            output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
+            of.write(f'{json.dumps(output, ensure_ascii=False)}\n')
+            idx += 1

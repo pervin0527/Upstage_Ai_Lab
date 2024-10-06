@@ -2,8 +2,9 @@ from langchain_openai import OpenAIEmbeddings
 
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
-def load_openai_encoder():
-    encoder = OpenAIEmbeddings()
+def load_openai_encoder(model_name, dimensions):
+    encoder = OpenAIEmbeddings(model=model_name,
+                               dimensions=dimensions)
 
     return encoder
 

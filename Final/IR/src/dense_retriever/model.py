@@ -2,20 +2,23 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
 from langchain_upstage import UpstageEmbeddings
-from langchain_community.embeddings import SolarEmbeddings
+from langchain_community.embeddings import OllamaEmbeddings
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain_community.cross_encoders import HuggingFaceCrossEncoder
 from langchain.retrievers.document_compressors import CrossEncoderReranker
 
-def load_upstage_encoder(model_name):
-    encoder = UpstageEmbeddings(model=model_name)
-    # encoder = SolarEmbeddings(model=model_name)
+def load_ollama_encoder(model_name):
+    encoder = OllamaEmbeddings(model_name)
 
     return encoder
 
-def load_openai_encoder(model_name, dimensions):
-    encoder = OpenAIEmbeddings(model=model_name,
-                               dimensions=dimensions)
+def load_upstage_encoder(model_name):
+    encoder = UpstageEmbeddings(model=model_name)
+
+    return encoder
+
+def load_openai_encoder(model_name):
+    encoder = OpenAIEmbeddings(model=model_name)
 
     return encoder
 

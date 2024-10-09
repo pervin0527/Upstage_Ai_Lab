@@ -37,3 +37,4 @@ GPT2*/
 T5_runs/
 BART_runs/
 *.env
+*.npy

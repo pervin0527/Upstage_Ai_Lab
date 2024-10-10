@@ -63,8 +63,17 @@ def answer_question(messages, retriever, client, args, compression_retriever=Non
     print(phase2_query)
     
     if not phase2_query.get('out_of_domain', True):
+        if args.src_lang == "en":
+            phase2_query = translate_query(phase2_query['query'], args.llm_model, client)
+            print("=" * 30)
+            print("번역 결과")
+            print(phase2_query)
+
         if args.query_expansion:
-            phase2_query = query_expansion(phase2_query, args.llm_model, client)
+            print("=" * 30)
+            print("쿼리 확장 결과")
+            phase2_query = query_expansion(phase2_query['query'], args.llm_model, client)
+            print(phase2_query)
     
         query = phase2_query['query']
         response['standalone_query'] = query
@@ -151,7 +160,11 @@ def answer_question(messages, retriever, client, args, compression_retriever=Non
         # 문서 정보 출력 (docid, score, content)
         print("검색된 문서 정보:")
         for ref in response["references"]:
-            print(f"DocID: {ref['docid']}, Score: {ref['score']:.4f}\nContent: {ref['content']}\n")
+            if ref['score'] is not None:
+                print(f"DocID: {ref['docid']}, Score: {ref['score']:.4f}\nContent: {ref['content']}\n")
+            else:
+                print(f"DocID: {ref['docid']}, Score: None\nContent: {ref['content']}\n")
+
     
         content = "\n".join(retrieved_context)
         messages.append({"role": "assistant", "content": content})

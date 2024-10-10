@@ -26,10 +26,10 @@ class Args:
     tokenizer = "kiwi"
 
     ## dense
-    encoder_method = "upstage"
+    encoder_method = "upstage" ## huggingface, upstage, 
 
     ## HuggingFace
-    hf_model_name = "intfloat/multilingual-e5-large-instruct" ## "jhgan/ko-sroberta-multitask"
+    hf_model_name = "BAAI/bge-large-en-v1.5" ## "intfloat/multilingual-e5-large-instruct"
     model_kwargs = {"device": "cuda:0"}
     encode_kwargs = {"normalize_embeddings": False,
                      "clean_up_tokenization_spaces": True}
@@ -45,17 +45,14 @@ class Args:
     query_ensemble = True  # 쿼리 앙상블 수행 여부
     # 앙상블에 사용할 모델
     ensemble_models = [
-        {'type': 'hf', 'name': "Salesforce/SFR-Embedding-2_R"},
-        {'type': 'hf', 'name': "Alibaba-NLP/gte-Qwen2-7B-instruct"},
-        {'type': 'hf', 'name': "BAAI/bge-multilingual-gemma2"},
-        {'type': 'hf', 'name': "intfloat/e5-mistral-7b-instruct"},
-
-        # {'type': 'hf', 'name': "BAAI/bge-m3"},
+        {'type': 'hf', 'name': "intfloat/multilingual-e5-large-instruct"},
+        # {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
+        # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
         # {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
-        # {'type': 'upstage', 'name': upstage_model_name},
+        # {'type': 'hf', 'name': ""},
     ]
-    ensemble_weights = [0.25, 0.25, 0.25, 0.25]  # 각각의 모델 가중치 설정
+    ensemble_weights = [1]  # 각각의 모델 가중치 설정
 
     ## reranker
     rerank = False
-    reranker_name = "bongsoo/kpf-cross-encoder-v1"  ## "BAAI/bge-reranker-large"
+    reranker_name = "BAAI/bge-reranker-v2-m3"  ## "BAAI/bge-reranker-large"

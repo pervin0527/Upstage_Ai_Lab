@@ -10,26 +10,27 @@ class Args:
         eval_file_path = "../dataset/eval.jsonl"
         doc_file_path = "../dataset/processed_documents.jsonl"
 
-    output_path = "./outputs/test_output.csv"
+    output_path = "./outputs/output.csv"
 
-    ## sparse or dense
-    doc_method = "dense"
+    ## sparse or dense or ensemble
+    doc_method = "ensemble"
+    retriever_weights = [0.3, 0.7] ## sparse, dense
 
     ## chunking
-    chunk_size=100
-    chunk_overlap=5
+    chunking = False
+    chunk_method = "recursive" ## recursive, semantic
+    semantic_chunk_method = "huggingface"
+    chunk_size = 300
+    chunk_overlap = 0
 
     ## query expension
     query_expansion = False
 
-    ## sparse
-    tokenizer = "kiwi"
-
     ## dense
-    encoder_method = "huggingface" ## huggingface, upstage, 
+    encoder_method = "upstage" ## huggingface, upstage, 
 
     ## HuggingFace
-    hf_model_name = "intfloat/multilingual-e5-large-instruct" ## "BAAI/bge-large-en-v1.5"
+    hf_model_name = "intfloat/multilingual-e5-large-instruct"
     model_kwargs = {"device": "cuda:0"}
     encode_kwargs = {"normalize_embeddings": False,
                      "clean_up_tokenization_spaces": True}
@@ -45,11 +46,12 @@ class Args:
     query_ensemble = False  # 쿼리 앙상블 수행 여부
     # 앙상블에 사용할 모델
     ensemble_models = [
-        # {'type': 'hf', 'name': "intfloat/multilingual-e5-large-instruct"},
+        # {'type': 'hf', 'name': ""},
+        # {'type': 'hf', 'name': "nlpai-lab/KoE5"},
+        # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5",
+        # {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
         # {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
-        # {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
-        # {'type': 'hf', 'name': ""},
     ]
     ensemble_weights = [1]  # 각각의 모델 가중치 설정
 

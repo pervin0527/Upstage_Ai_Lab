@@ -35,7 +35,7 @@ from dense_retriever.model import load_hf_encoder, load_openai_encoder, load_ups
 
 from search.utils import retrieval_debug
 from search.answer_processor import eval_rag
-    
+from search.ollama_processor import ollama_eval_rag
 
 def main(args: Args):
     os.makedirs("./outputs", exist_ok=True)
@@ -92,7 +92,12 @@ def main(args: Args):
 
     print("+" * 30)
     print("검색 시작.")
-    eval_rag(args, retrieval, client)
+
+    if args.llm_model == "gpt-4o":
+        eval_rag(args, retrieval, client)
+    elif args.llm_model == "ollama":
+        ollama_eval_rag(args, retrieval)
+    
     print("완료.")
     
 if __name__ == "__main__":

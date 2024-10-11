@@ -1,6 +1,6 @@
 class Args:
     retrieval_debug = False
-    llm_model = "gpt-4o"
+    llm_model = "ollama"
     
     src_lang = "ko"
     if src_lang == "en":
@@ -10,7 +10,7 @@ class Args:
         eval_file_path = "../dataset/eval.jsonl"
         doc_file_path = "../dataset/processed_documents.jsonl"
 
-    output_path = "./outputs/output.csv"
+    output_path = "./outputs/test_output.csv"
 
     ## sparse or dense
     doc_method = "dense"
@@ -26,10 +26,10 @@ class Args:
     tokenizer = "kiwi"
 
     ## dense
-    encoder_method = "upstage" ## huggingface, upstage, 
+    encoder_method = "huggingface" ## huggingface, upstage, 
 
     ## HuggingFace
-    hf_model_name = "BAAI/bge-large-en-v1.5" ## "intfloat/multilingual-e5-large-instruct"
+    hf_model_name = "intfloat/multilingual-e5-large-instruct" ## "BAAI/bge-large-en-v1.5"
     model_kwargs = {"device": "cuda:0"}
     encode_kwargs = {"normalize_embeddings": False,
                      "clean_up_tokenization_spaces": True}
@@ -42,10 +42,10 @@ class Args:
     openai_model_name = "text-embedding-3-large"
 
     ## query ensemble
-    query_ensemble = True  # 쿼리 앙상블 수행 여부
+    query_ensemble = False  # 쿼리 앙상블 수행 여부
     # 앙상블에 사용할 모델
     ensemble_models = [
-        {'type': 'hf', 'name': "intfloat/multilingual-e5-large-instruct"},
+        # {'type': 'hf', 'name': "intfloat/multilingual-e5-large-instruct"},
         # {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
         # {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},

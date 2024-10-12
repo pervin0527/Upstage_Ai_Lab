@@ -119,6 +119,35 @@ def ollama_domain_check(model):
 
     return chain2
 
+def ollama_contextual_retrieval(model):
+    prompt_context3 = (
+        "입력된 문서의 조각(document_chunk)를 보고, 다음과 같은 정보들을 생성해주세요.\n\n"
+        "<title>\n"
+        "문서 조각에 해당하는 제목\n"
+        "</title>\n\n"
+
+        "<summary>\n"
+        "문서 조각으로부터 만들 수 있는 요약\n"
+        "</summary>\n\n"
+
+        "<data_insights>\n"
+        "문서 조각으로부터 얻을 수 있는 인사이트\n"
+        "</data_insights>\n\n"
+
+        "<hypothetical_questions>\n"
+        "문서 조각으로부터 떠오르는 질문들\n"
+        "<hypothetical_questions>\n\n"
+
+        "문서 조각 : {document_chunk}\n\n"
+
+        "답변:"
+    )
+
+    prompt3 = ChatPromptTemplate.from_template(prompt_context3)
+    chain3 = prompt3 | model | StrOutputParser()
+
+    return chain3
+
 
 def ollama_answer_question(args, standalone_query, retriever, compression_retriever=None, ensemble_encoders=None):
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
@@ -156,12 +185,13 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
                 search_result = []
                 for doc, score in results:
                     search_result.append((doc, score))
+                    
             elif isinstance(retriever, EnsembleRetriever):
                 results = retriever.invoke(standalone_query)
                 
                 # 점수 기준으로 정렬하고 상위 3개 선택
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
-                search_result = [(result.page_content, result.metadata['score']) for result in sorted_results[:3]]
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:3]]
             else:
                 raise ValueError("Unknown retriever type")
     
@@ -212,7 +242,7 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
                 
                 # 점수 기준으로 정렬하고 상위 3개 선택
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
-                search_result = [(result.page_content, result.metadata['score']) for result in sorted_results[:3]]
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:3]]
             else:
                 raise ValueError("Unknown retriever type")
             
@@ -292,6 +322,7 @@ def ollama_eval_rag(args, retriever):
             j = json.loads(line)
             print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
 
+            id = j['eval_id']
             chats = get_chat_history(j)
             if len(j["msg"]) > 1:
                 query = chain1.invoke({"chat_history": chats})
@@ -301,7 +332,9 @@ def ollama_eval_rag(args, retriever):
             domain_check_result = chain2.invoke({"query": query})
             print(f"Standalone_Query : {query}, Domain_Check : {domain_check_result}")
 
-            if domain_check_result == "False":
+            # if domain_check_result == "False":
+            if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247,
+                      67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
                 query = None
             
             response = ollama_answer_question(args, query, retriever, compression_retriever, ensemble_encoders)

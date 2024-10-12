@@ -13,21 +13,9 @@ class Args:
     output_path = "./outputs/output.csv"
 
     ## sparse or dense or ensemble
-    doc_method = "ensemble"
-    retriever_weights = [0.3, 0.7] ## sparse, dense
-
-    ## chunking
-    chunking = False
-    chunk_method = "recursive" ## recursive, semantic
-    semantic_chunk_method = "huggingface"
-    chunk_size = 300
-    chunk_overlap = 0
-
-    ## query expension
-    query_expansion = False
-
-    ## dense
-    encoder_method = "upstage" ## huggingface, upstage, 
+    doc_method = "dense"
+    encoder_method = "upstage" ## huggingface, upstage, openai
+    retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
     hf_model_name = "intfloat/multilingual-e5-large-instruct"
@@ -41,6 +29,16 @@ class Args:
     
     ## OpenAI
     openai_model_name = "text-embedding-3-large"
+
+    ## chunking
+    chunking = True
+    chunk_method = "recursive" ## recursive, semantic
+    semantic_chunk_method = "upstage"
+    chunk_size = 100
+    chunk_overlap = 50
+
+    ## query expension
+    query_expansion = False
 
     ## query ensemble
     query_ensemble = False  # 쿼리 앙상블 수행 여부

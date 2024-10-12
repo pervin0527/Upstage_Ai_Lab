@@ -20,7 +20,9 @@ os.environ['OPENAI_API_KEY'] = openai_api_key
 hf_token = os.getenv("HF_TOKEN")
 huggingface_hub.login(hf_token)
 
+from tqdm import tqdm
 from openai import OpenAI
+from langchain_community.chat_models import ChatOllama
 
 from langchain.retrievers import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
@@ -33,7 +35,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import Args
 from search.utils import retrieval_debug
 from search.answer_processor import eval_rag
-from search.ollama_processor import ollama_eval_rag
+from search.ollama_processor import ollama_eval_rag, ollama_contextual_retrieval
 
 from data.data import load_document, chunk_documents
 from sparse_retriever.kiwi_bm25 import KiwiBM25Retriever
@@ -69,7 +71,7 @@ def load_sparse_model(documents):
         tokens = okt.morphs(text)
         return tokens
 
-    # retriever = KiwiBM25Retriever.from_documents(documents)
+    retriever = KiwiBM25Retriever.from_documents(documents)
     retriever = BM25Retriever.from_documents(documents, tokenizer=tokenize)
     
     return retriever
@@ -100,7 +102,7 @@ def load_dense_model(args, documents):
     retriever = vector_store
 
     # faiss.write_index(index, f"./index_files/{args.encoder_method}-faiss.npy")
-    # print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
+    print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
 
     return retriever
 
@@ -109,7 +111,6 @@ def main(args: Args):
     os.makedirs("./outputs", exist_ok=True)
 
     print("\n프로세스 실행")
-    client = OpenAI()
 
     print("+" * 30)
     print("문서 로딩", end=" ")
@@ -117,8 +118,10 @@ def main(args: Args):
     print("-> 완료")
 
     if args.chunking:
+        print("+" * 30)
+        print(f"Document Chunking. Method : {args.chunk_method}")
         documents = chunking(args, documents)
-    
+
     print("+" * 30)
     if args.doc_method == "dense":
         print(f"{args.encoder_method} Retriever 생성 중")
@@ -139,7 +142,7 @@ def main(args: Args):
         retriever = EnsembleRetriever(
             retrievers=[sparse_retriever, dense_retriever],
             weights=args.retriever_weights,
-            search_type="mmr"
+            search_type="similarity_score_threshold" ## "mmr"
         )
 
     print("완료")
@@ -147,6 +150,7 @@ def main(args: Args):
     print("+" * 30)
     print("검색 시작.")
     if args.llm_model == "gpt-4o":
+        client = OpenAI()
         eval_rag(args, retriever, client)
 
     elif args.llm_model == "ollama":

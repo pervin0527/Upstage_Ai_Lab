@@ -12,9 +12,9 @@ class Args:
 
     output_path = "./outputs/output.csv"
 
-    ## sparse or dense or ensemble
-    doc_method = "dense"
-    encoder_method = "huggingface" ## huggingface, upstage, openai
+    doc_method = "dense" ## "sparse" or "dense" or "ensemble"
+    encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
+    faiss_index_file = None ## "./index_files/"
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
@@ -25,10 +25,12 @@ class Args:
     
     ## Upstage
     upstage_model_name = "solar-embedding-1-large-passage"
-    faiss_index_file = "./index_files/huggingface/intfloat/multilingual-e5-large-instruct"
     
     ## OpenAI
     openai_model_name = "text-embedding-3-large"
+
+    ## Voyage
+    voyage_model_name = "voyage-3"
 
     ## chunking
     chunking = True
@@ -53,8 +55,9 @@ class Args:
         # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
-    ensemble_weights = [0.25, 0.25, 0.5]  ## 각각의 모델 가중치 설정
+    ensemble_weights = [0.3, 0.35, 0.35]  ## 각각의 모델 가중치 설정
 
     ## reranker
     rerank = False
-    reranker_name = "BAAI/bge-reranker-v2-m3"  ## "BAAI/bge-reranker-large"
+    rerank_method = "voyage" ## "voyage", "huggingface"
+    reranker_name = "rerank-2"  ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3", "rerank-2"

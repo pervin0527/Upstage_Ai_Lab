@@ -35,7 +35,7 @@ def get_chat_history(eval_data):
 
 
 def ollama_standalone_query(model):
-    prompt_context1 = (
+    context = (
         "주어진 '대화내용'을 정리해서 하나의 '질문'을 생성해주세요.\n"
         "반드시 '질문'을 생성해야 하는 것입니다. 질문에 해당하는 답변을 생성하지 않게 주의해주세요."
 
@@ -49,14 +49,14 @@ def ollama_standalone_query(model):
         "답변:"
     )
 
-    prompt1 = ChatPromptTemplate.from_template(prompt_context1)
-    chain1 = prompt1 | model | StrOutputParser()
+    prompt = ChatPromptTemplate.from_template(context)
+    chain = prompt | model | StrOutputParser()
 
-    return chain1
+    return chain
 
 
 def ollama_domain_check(model):
-    prompt_context2 = (
+    context = (
         # "주어진 질문이 '상식'을 물어보는 것인지 판단하세요.\n"
         "주어진 질문이 일반적인 지식이나 사실에 대한 질문인지 판단하세요.\n"
 
@@ -114,13 +114,14 @@ def ollama_domain_check(model):
         "답변:"
     )
 
-    prompt2 = ChatPromptTemplate.from_template(prompt_context2)
-    chain2 = prompt2 | model | StrOutputParser()
+    prompt = ChatPromptTemplate.from_template(context)
+    chain = prompt | model | StrOutputParser()
 
-    return chain2
+    return chain
+
 
 def ollama_contextual_retrieval(model):
-    prompt_context3 = (
+    context = (
         "입력된 문서의 조각(document_chunk)를 보고, 다음과 같은 정보들을 생성해주세요.\n\n"
         "<title>\n"
         "문서 조각에 해당하는 제목\n"
@@ -143,10 +144,28 @@ def ollama_contextual_retrieval(model):
         "답변:"
     )
 
-    prompt3 = ChatPromptTemplate.from_template(prompt_context3)
-    chain3 = prompt3 | model | StrOutputParser()
+    prompt = ChatPromptTemplate.from_template(context)
+    chain = prompt | model | StrOutputParser()
 
-    return chain3
+    return chain
+
+
+def ollama_translate_query(model):
+    context = (
+        """
+        당신은 한국어 문장을 영어로 번역하는 전문 번역가입니다.\n
+        입력된 한국어 질의 문장을 영어 질의 문장으로 번역해주세요.\n
+        답변은 오직 번역된 영어 문장으로만 하고 다른 것은 생성하지 마세요.\n\n
+
+        입력 : {ko_query}\n\n
+        출력 : 
+        """
+    )
+
+    prompt = ChatPromptTemplate.from_template(context)
+    chain = prompt | model | StrOutputParser()
+
+    return chain
 
 
 def ollama_answer_question(args, standalone_query, retriever, compression_retriever=None, ensemble_encoders=None):
@@ -178,8 +197,8 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
             # 검색 결과 가져오기
             if isinstance(retriever, FAISS):
                 search_result = retriever.similarity_search_with_relevance_scores(standalone_query, k=3)
+
             elif isinstance(retriever, BM25Retriever):
-                # results = retriever.search_with_score(standalone_query, k=3)
                 results = search_with_scores(retriever, standalone_query, k=3)
                 
                 search_result = []
@@ -189,7 +208,6 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
             elif isinstance(retriever, EnsembleRetriever):
                 results = retriever.invoke(standalone_query)
                 
-                # 점수 기준으로 정렬하고 상위 3개 선택
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
                 search_result = [(result, result.metadata['score']) for result in sorted_results[:3]]
             else:
@@ -229,8 +247,8 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
             # 검색 결과 가져오기
             if isinstance(retriever, FAISS):
                 search_result = retriever.similarity_search_with_relevance_scores(standalone_query, k=3)
+
             elif isinstance(retriever, BM25Retriever):
-                # results = retriever.search_with_score(standalone_query)
                 results = search_with_scores(retriever, standalone_query, k=3)
 
                 search_result = []
@@ -294,6 +312,7 @@ def ollama_eval_rag(args, retriever):
     
     chain1 = ollama_standalone_query(model)
     chain2 = ollama_domain_check(model)
+    chain3 = ollama_translate_query(model)
 
     ## Query Ensemble Model Load
     if args.query_ensemble:
@@ -334,10 +353,12 @@ def ollama_eval_rag(args, retriever):
             print(f"Standalone_Query : {query}, Domain_Check : {domain_check_result}")
 
             # if domain_check_result == "False":
-            if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247,
-                      67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
+            if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
                 query = None
             
+            if args.src_lang == "en":
+                query = chain3.invoke({"ko_query" : query})
+
             response = ollama_answer_question(args, query, retriever, compression_retriever, ensemble_encoders)
 
             output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}

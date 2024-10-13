@@ -17,6 +17,9 @@ os.environ['UPSTAGE_API_KEY'] = upstage_api_key
 openai_api_key = os.getenv('OPENAI_API_KEY')
 os.environ['OPENAI_API_KEY'] = openai_api_key
 
+voyage_api_key = os.getenv('VOYAGE_API_KEY')
+os.environ['VOYAGE_API_KEY'] = voyage_api_key
+
 hf_token = os.getenv("HF_TOKEN")
 huggingface_hub.login(hf_token)
 
@@ -40,7 +43,7 @@ from search.ollama_processor import ollama_eval_rag, ollama_contextual_retrieval
 from data.data import load_document, chunk_documents
 from sparse_retriever.kiwi_bm25 import KiwiBM25Retriever
 from dense_retriever.doc_processor import score_normalizer
-from dense_retriever.model import load_hf_encoder, load_openai_encoder, load_upstage_encoder
+from dense_retriever.model import load_hf_encoder, load_openai_encoder, load_upstage_encoder, load_voyage_encoder
 
 
 def chunking(args, documents):
@@ -78,8 +81,6 @@ def load_sparse_model(documents):
 
 
 def load_dense_model(args, documents):
-    folder_path = f"./index_files/{args.encoder_method}"
-
     if (not args.faiss_index_file is None) and os.path.exists(args.faiss_index_file):
         # 저장된 인덱스와 관련 데이터 불러오기
         print(f"FAISS 인덱스 로드 중: {args.faiss_index_file}")
@@ -89,16 +90,20 @@ def load_dense_model(args, documents):
             encoder = load_upstage_encoder(args.upstage_model_name)
         elif args.encoder_method == "openai":
             encoder = load_openai_encoder(args.openai_model_name)
+        elif args.encoder_method == "voyage":
+            encoder = load_voyage_encoder(args.voyage_model_name)
 
         # load_local 메서드를 사용하여 인덱스, docstore, index_to_docstore_id 불러오기
         retriever = FAISS.load_local(args.faiss_index_file, encoder, allow_dangerous_deserialization=True)
         print(f"FAISS 인덱스 로드 완료, 총 문서 수: {retriever.index.ntotal}")
     
     else:
-        # 새로운 인덱스 생성
+        folder_path = f"./index_files/{args.encoder_method}"
+
         if args.encoder_method == "huggingface":
             encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
-            folder_path = f"{folder_path}/{args.hf_model_name}"
+            folder_name = args.hf_model_name.replace("/", "-")
+            folder_path = f"{folder_path}/{folder_name}"
             print(f"Embedding Model : {args.hf_model_name}")
 
         elif args.encoder_method == "upstage":
@@ -141,12 +146,15 @@ def main(args: Args):
     print("+" * 30)
     print("문서 로딩", end=" ")
     documents = load_document(path=args.doc_file_path)
+    print(len(documents))
     print("-> 완료")
 
     if args.chunking:
         print("+" * 30)
         print(f"Document Chunking. Method : {args.chunk_method}")
         documents = chunking(args, documents)
+    print(len(documents))
+    print("-> 완료")
 
     print("+" * 30)
     if args.doc_method == "dense":
@@ -160,9 +168,9 @@ def main(args: Args):
     elif args.doc_method == "ensemble":
         print("Ensemble Retriever 생성 중")
         sparse_retriever = load_sparse_model(documents)
-        sparse_retriever.k = 5
+        sparse_retriever.k = 10
         
-        dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 5})
+        dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 10})
         # dense_retriever = FAISS.from_documents(documents, load_openai_encoder(args.openai_model_name)).as_retriever()
 
         retriever = EnsembleRetriever(

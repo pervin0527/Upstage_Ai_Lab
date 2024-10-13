@@ -283,6 +283,7 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
                 print(f"DocID: {ref['docid']}, Score: None\nContent: {ref['content']}\n")
 
     else:
+        print("답변을 생성할 수 없습니다.\n")
         response["answer"] = "질문이 과학 상식에 해당하지 않습니다."
 
     return response

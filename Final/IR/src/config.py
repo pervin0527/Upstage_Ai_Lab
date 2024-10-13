@@ -14,7 +14,7 @@ class Args:
 
     ## sparse or dense or ensemble
     doc_method = "dense"
-    encoder_method = "upstage" ## huggingface, upstage, openai
+    encoder_method = "huggingface" ## huggingface, upstage, openai
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
@@ -25,7 +25,7 @@ class Args:
     
     ## Upstage
     upstage_model_name = "solar-embedding-1-large-passage"
-    faiss_index_file = "./index_files/upstage-faiss.npy"
+    faiss_index_file = "./index_files/huggingface/intfloat/multilingual-e5-large-instruct"
     
     ## OpenAI
     openai_model_name = "text-embedding-3-large"

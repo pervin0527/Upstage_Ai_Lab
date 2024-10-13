@@ -78,31 +78,57 @@ def load_sparse_model(documents):
 
 
 def load_dense_model(args, documents):
-    if args.encoder_method == "huggingface":
-        encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
-        print(f"Embedding Model : {args.hf_model_name}")
+    folder_path = f"./index_files/{args.encoder_method}"
 
-    elif args.encoder_method == "upstage":
-        encoder = load_upstage_encoder(args.upstage_model_name)
-        print(f"Embedding Model : {args.upstage_model_name}")
+    if (not args.faiss_index_file is None) and os.path.exists(args.faiss_index_file):
+        # 저장된 인덱스와 관련 데이터 불러오기
+        print(f"FAISS 인덱스 로드 중: {args.faiss_index_file}")
+        if args.encoder_method == "huggingface":
+            encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
+        elif args.encoder_method == "upstage":
+            encoder = load_upstage_encoder(args.upstage_model_name)
+        elif args.encoder_method == "openai":
+            encoder = load_openai_encoder(args.openai_model_name)
 
-    elif args.encoder_method == "openai":
-        encoder = load_openai_encoder(args.openai_model_name)
-        print(f"Embedding Model : {args.openai_model_name}")
+        # load_local 메서드를 사용하여 인덱스, docstore, index_to_docstore_id 불러오기
+        retriever = FAISS.load_local(args.faiss_index_file, encoder, allow_dangerous_deserialization=True)
+        print(f"FAISS 인덱스 로드 완료, 총 문서 수: {retriever.index.ntotal}")
+    
+    else:
+        # 새로운 인덱스 생성
+        if args.encoder_method == "huggingface":
+            encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
+            folder_path = f"{folder_path}/{args.hf_model_name}"
+            print(f"Embedding Model : {args.hf_model_name}")
 
-    index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))
-    vector_store = FAISS(
-        embedding_function=encoder,
-        index=index,
-        docstore=InMemoryDocstore(),
-        index_to_docstore_id={},
-        relevance_score_fn=score_normalizer
-    )
-    vector_store.add_documents(documents=documents)
-    retriever = vector_store
+        elif args.encoder_method == "upstage":
+            encoder = load_upstage_encoder(args.upstage_model_name)
+            folder_path = f"{folder_path}/{args.upstage_model_name}"
+            print(f"Embedding Model : {args.upstage_model_name}")
 
-    faiss.write_index(index, f"./index_files/{args.encoder_method}-faiss.npy")
-    print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
+        elif args.encoder_method == "openai":
+            encoder = load_openai_encoder(args.openai_model_name)
+            folder_path = f"{folder_path}/{args.openai_model_name}"
+            print(f"Embedding Model : {args.openai_model_name}")
+
+        # 인덱스 생성
+        index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))
+        vector_store = FAISS(
+            embedding_function=encoder,
+            index=index,
+            docstore=InMemoryDocstore(),
+            index_to_docstore_id={},  # 빈 딕셔너리로 초기화
+            relevance_score_fn=score_normalizer
+        )
+        vector_store.add_documents(documents=documents)
+        print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
+
+        # 인덱스 및 관련 데이터 저장
+        os.makedirs(folder_path, exist_ok=True)
+        vector_store.save_local(folder_path)
+        print(f"FAISS 인덱스 저장 완료: {folder_path}")
+
+        retriever = vector_store
 
     return retriever
 

@@ -41,17 +41,19 @@ class Args:
     query_expansion = False
 
     ## query ensemble
-    query_ensemble = False  # 쿼리 앙상블 수행 여부
-    # 앙상블에 사용할 모델
+    query_ensemble = True
+    ## 앙상블에 사용할 모델
     ensemble_models = [
+        {'type': 'hf', 'name': "BAAI/bge-m3"},
+        {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
+        {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
+
         # {'type': 'hf', 'name': ""},
         # {'type': 'hf', 'name': "nlpai-lab/KoE5"},
-        # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5",
-        # {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
-        # {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
+        # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
-    ensemble_weights = [1]  # 각각의 모델 가중치 설정
+    ensemble_weights = [0.25, 0.25, 0.5]  ## 각각의 모델 가중치 설정
 
     ## reranker
     rerank = False

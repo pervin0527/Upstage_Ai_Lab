@@ -101,7 +101,7 @@ def load_dense_model(args, documents):
     vector_store.add_documents(documents=documents)
     retriever = vector_store
 
-    # faiss.write_index(index, f"./index_files/{args.encoder_method}-faiss.npy")
+    faiss.write_index(index, f"./index_files/{args.encoder_method}-faiss.npy")
     print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
 
     return retriever

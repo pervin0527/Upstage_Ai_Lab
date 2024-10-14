@@ -11,7 +11,7 @@ class Args:
         # doc_file_path = "../dataset/processed_documents.jsonl"
         doc_file_path = "../dataset/gpt_contextual_retrieval_documents.jsonl"
 
-    output_path = "./outputs/UP-CH-ER-CR.csv"
+    output_path = "./outputs/UP-ER-CR-QR.csv"
 
     ## chunking
     chunking = False

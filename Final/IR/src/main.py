@@ -1,12 +1,13 @@
+import warnings
+warnings.filterwarnings('ignore')
+
 import os
 import copy
 import json
 import faiss
-import warnings
 import huggingface_hub
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-warnings.filterwarnings("ignore", category=FutureWarning)
 
 from dotenv import load_dotenv
 load_dotenv("../keys.env")

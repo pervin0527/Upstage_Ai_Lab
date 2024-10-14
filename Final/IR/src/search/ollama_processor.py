@@ -4,8 +4,8 @@ import numpy as np
 from openai import OpenAI
 from scipy.spatial.distance import cosine
 
+from langchain_ollama import ChatOllama
 from langchain.retrievers import EnsembleRetriever
-from langchain_community.chat_models import ChatOllama
 from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores.faiss import FAISS
 

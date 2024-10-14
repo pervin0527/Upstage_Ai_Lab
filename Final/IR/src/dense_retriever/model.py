@@ -1,7 +1,6 @@
 import os
 import faiss
 
-from langchain.retrievers import EnsembleRetriever
 from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.document_compressors.rankllm_rerank import RankLLMRerank

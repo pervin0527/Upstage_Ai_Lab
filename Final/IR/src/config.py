@@ -14,7 +14,7 @@ class Args:
 
     doc_method = "dense" ## "sparse" or "dense" or "ensemble"
     encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
-    faiss_index_file = None ## "./index_files/"
+    faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage"
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
@@ -51,6 +51,7 @@ class Args:
         {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
 
         # {'type': 'hf', 'name': ""},
+        # {'type': 'voyage', 'name': "voyage-3"},
         # {'type': 'hf', 'name': "nlpai-lab/KoE5"},
         # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},

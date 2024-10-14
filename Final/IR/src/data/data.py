@@ -32,18 +32,12 @@ def load_document(path='../dataset/documents.jsonl'):
 
     return documents
 
-def chunk_documents(documents, chunk_size=1000, chunk_overlap=100):
-    """문서를 청크로 나누는 함수"""
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-    chunked_docs = []
-    for doc in documents:
-        chunks = text_splitter.split_text(doc.page_content)
-        for i, chunk in enumerate(chunks):
-            chunked_docs.append(
-                Document(page_content=chunk, metadata={"docid": doc.metadata['docid'], "chunk_id": i})
-            )
-    return chunked_docs
+def chunking(args, documents):
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=args.chunk_size,
+        chunk_overlap=args.chunk_overlap,
+        length_function=len,
+        is_separator_regex=False
+    )
 
-
-if __name__ == "__main__":
-    process_and_save_documents("../../dataset/documents.jsonl")
+    return text_splitter.split_documents(documents)

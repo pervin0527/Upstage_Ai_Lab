@@ -38,3 +38,4 @@ T5_runs/
 BART_runs/
 *.env
 *.npy
+index_files/

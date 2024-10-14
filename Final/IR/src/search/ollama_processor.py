@@ -14,7 +14,7 @@ from langchain_core.callbacks.manager import CallbackManager
 from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 from sparse_retriever.kiwi_bm25 import KiwiBM25Retriever
-from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker
+from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder
 
 def search_with_scores(retriever, query, k=10):
     processed_query = retriever.preprocess_func(query)
@@ -188,6 +188,8 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
                     query_embedding = encoder.embed_query(standalone_query)
                 elif model_type == 'upstage':
                     query_embedding = encoder.embed_query(standalone_query)
+                elif model_type == "voyage":
+                    query_embedding = encoder.embed_query(standalone_query)
                 else:
                     raise ValueError(f"Unknown model type: {model_type}")
                 query_embeddings.append((query_embedding, args.ensemble_weights[idx]))
@@ -324,6 +326,8 @@ def ollama_eval_rag(args, retriever):
                 encoder = load_hf_encoder(model_name, args.model_kwargs, args.encode_kwargs)
             elif model_type == 'upstage':
                 encoder = load_upstage_encoder(model_name)
+            elif model_type == 'voyage':
+                encoder = load_voyage_encoder(model_name)
             else:
                 raise ValueError(f"Unknown model type: {model_type}")
             ensemble_encoders.append(encoder)
@@ -356,8 +360,9 @@ def ollama_eval_rag(args, retriever):
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
                 query = None
             
-            if args.src_lang == "en":
+            if not query is None and args.src_lang == "en":
                 query = chain3.invoke({"ko_query" : query})
+                print(f"EN Standalone_query : {query}")
 
             response = ollama_answer_question(args, query, retriever, compression_retriever, ensemble_encoders)
 

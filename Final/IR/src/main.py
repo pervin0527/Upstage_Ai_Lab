@@ -23,119 +23,21 @@ os.environ['VOYAGE_API_KEY'] = voyage_api_key
 hf_token = os.getenv("HF_TOKEN")
 huggingface_hub.login(hf_token)
 
-from tqdm import tqdm
 from openai import OpenAI
-from langchain_community.chat_models import ChatOllama
 
 from langchain.retrievers import EnsembleRetriever
-from langchain_community.retrievers import BM25Retriever
-from langchain_community.vectorstores.faiss import FAISS
-from langchain_community.docstore.in_memory import InMemoryDocstore
 
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from config import Args
+from data.data import load_document, chunking
 from search.utils import retrieval_debug
+
 from search.answer_processor import eval_rag
-from search.ollama_processor import ollama_eval_rag, ollama_contextual_retrieval
+from search.ollama_processor import ollama_eval_rag
 
-from data.data import load_document, chunk_documents
-from sparse_retriever.kiwi_bm25 import KiwiBM25Retriever
-from dense_retriever.doc_processor import score_normalizer
-from dense_retriever.model import load_hf_encoder, load_openai_encoder, load_upstage_encoder, load_voyage_encoder
-
-
-def chunking(args, documents):
-    if args.chunk_method == "recursive":
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=args.chunk_size,
-            chunk_overlap=args.chunk_overlap,
-            length_function=len,
-            is_separator_regex=False
-        )
-    elif args.chunk_method == "semantic":
-        if args.semantic_chunk_method == "huggingface":
-            encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
-        elif args.semantic_chunk_method == "upstage":
-            encoder = load_upstage_encoder(args.upstage_model_name)
-        elif args.semantic_chunk_method == "openai":
-            encoder = load_openai_encoder(args.openai_model_name)
-
-        text_splitter = SemanticChunker(encoder)
-
-    return text_splitter.split_documents(documents)
-
-
-def load_sparse_model(documents):
-    from konlpy.tag import Okt
-    okt = Okt()
-    def tokenize(text):
-        tokens = okt.morphs(text)
-        return tokens
-
-    retriever = KiwiBM25Retriever.from_documents(documents)
-    retriever = BM25Retriever.from_documents(documents, tokenizer=tokenize)
-    
-    return retriever
-
-
-def load_dense_model(args, documents):
-    if (not args.faiss_index_file is None) and os.path.exists(args.faiss_index_file):
-        # 저장된 인덱스와 관련 데이터 불러오기
-        print(f"FAISS 인덱스 로드 중: {args.faiss_index_file}")
-        if args.encoder_method == "huggingface":
-            encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
-        elif args.encoder_method == "upstage":
-            encoder = load_upstage_encoder(args.upstage_model_name)
-        elif args.encoder_method == "openai":
-            encoder = load_openai_encoder(args.openai_model_name)
-        elif args.encoder_method == "voyage":
-            encoder = load_voyage_encoder(args.voyage_model_name)
-
-        # load_local 메서드를 사용하여 인덱스, docstore, index_to_docstore_id 불러오기
-        retriever = FAISS.load_local(args.faiss_index_file, encoder, allow_dangerous_deserialization=True)
-        print(f"FAISS 인덱스 로드 완료, 총 문서 수: {retriever.index.ntotal}")
-    
-    else:
-        folder_path = f"./index_files/{args.encoder_method}"
-
-        if args.encoder_method == "huggingface":
-            encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
-            folder_name = args.hf_model_name.replace("/", "-")
-            folder_path = f"{folder_path}/{folder_name}"
-            print(f"Embedding Model : {args.hf_model_name}")
-
-        elif args.encoder_method == "upstage":
-            encoder = load_upstage_encoder(args.upstage_model_name)
-            folder_path = f"{folder_path}/{args.upstage_model_name}"
-            print(f"Embedding Model : {args.upstage_model_name}")
-
-        elif args.encoder_method == "openai":
-            encoder = load_openai_encoder(args.openai_model_name)
-            folder_path = f"{folder_path}/{args.openai_model_name}"
-            print(f"Embedding Model : {args.openai_model_name}")
-
-        # 인덱스 생성
-        index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))
-        vector_store = FAISS(
-            embedding_function=encoder,
-            index=index,
-            docstore=InMemoryDocstore(),
-            index_to_docstore_id={},  # 빈 딕셔너리로 초기화
-            relevance_score_fn=score_normalizer
-        )
-        vector_store.add_documents(documents=documents)
-        print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
-
-        # 인덱스 및 관련 데이터 저장
-        os.makedirs(folder_path, exist_ok=True)
-        vector_store.save_local(folder_path)
-        print(f"FAISS 인덱스 저장 완료: {folder_path}")
-
-        retriever = vector_store
-
-    return retriever
+from dense_retriever.model import load_dense_model, load_sparse_model
 
 
 def main(args: Args):
@@ -144,6 +46,7 @@ def main(args: Args):
     print("\n프로세스 실행")
 
     print("+" * 30)
+    print(f"사용언어 : {args.src_lang}")
     print("문서 로딩", end=" ")
     documents = load_document(path=args.doc_file_path)
     print(len(documents))
@@ -151,7 +54,10 @@ def main(args: Args):
 
     if args.chunking:
         print("+" * 30)
-        print(f"Document Chunking. Method : {args.chunk_method}")
+        print(f"Document Chunking.")
+        print(f"Method : {args.chunk_method}")
+        print(f"Chunk Size : {args.chunk_size}. Chunk Overlap : {args.chunk_overlap}")
+        
         documents = chunking(args, documents)
     print(len(documents))
     print("-> 완료")
@@ -163,15 +69,14 @@ def main(args: Args):
 
     elif args.doc_method == "sparse":
         print("BM25 Retriever 생성 중")
-        retriever = load_sparse_model(documents)
+        retriever = load_sparse_model(documents, args.src_lang)
 
     elif args.doc_method == "ensemble":
         print("Ensemble Retriever 생성 중")
-        sparse_retriever = load_sparse_model(documents)
+        sparse_retriever = load_sparse_model(documents, args.src_lang)
         sparse_retriever.k = 10
         
         dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 10})
-        # dense_retriever = FAISS.from_documents(documents, load_openai_encoder(args.openai_model_name)).as_retriever()
 
         retriever = EnsembleRetriever(
             retrievers=[sparse_retriever, dense_retriever],

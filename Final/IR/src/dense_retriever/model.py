@@ -100,27 +100,35 @@ def load_dense_model(args, documents):
     
     else:
         folder_path = f"./index_files/{args.encoder_method}"
+        
+        if not args.chunking:
+            args.chunk_size = 0
+            args.chunk_overlap = 0
 
         if args.encoder_method == "huggingface":
             encoder = load_hf_encoder(args.hf_model_name, args.model_kwargs, args.encode_kwargs)
             folder_name = args.hf_model_name.replace("/", "-")
-            folder_path = f"{folder_path}/{folder_name}"
+            folder_path = f"{folder_path}/{folder_name}-cs{args.chunk_size}-co{args.chunk_overlap}"
             print(f"Embedding Model : {args.hf_model_name}")
+            print(f"saved at {folder_path}")
 
         elif args.encoder_method == "upstage":
             encoder = load_upstage_encoder(args.upstage_model_name)
-            folder_path = f"{folder_path}/{args.upstage_model_name}"
+            folder_path = f"{folder_path}/{args.upstage_model_name}-cs{args.chunk_size}-co{args.chunk_overlap}"
             print(f"Embedding Model : {args.upstage_model_name}")
+            print(f"saved at {folder_path}")
 
         elif args.encoder_method == "openai":
             encoder = load_openai_encoder(args.openai_model_name)
-            folder_path = f"{folder_path}/{args.openai_model_name}"
+            folder_path = f"{folder_path}/{args.openai_model_name}-cs{args.chunk_size}-co{args.chunk_overlap}"
             print(f"Embedding Model : {args.openai_model_name}")
+            print(f"saved at {folder_path}")
         
         elif args.encoder_method == "voyage":
             encoder = load_voyage_encoder(args.voyage_model_name)
-            folder_path = f"{folder_path}/{args.voyage_model_name}"
+            folder_path = f"{folder_path}/{args.voyage_model_name}-cs{args.chunk_size}-co{args.chunk_overlap}"
             print(f"Embedding Model : {args.voyage_model_name}")
+            print(f"saved at {folder_path}")
 
         # 인덱스 생성
         index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))

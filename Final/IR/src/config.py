@@ -14,7 +14,7 @@ class Args:
 
     doc_method = "dense" ## "sparse" or "dense" or "ensemble"
     encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
-    faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage"
+    faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage-cs100-co50"
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
@@ -40,7 +40,7 @@ class Args:
     chunk_overlap = 50
 
     ## query expension
-    query_expansion = False
+    query_expansion = True
 
     ## query ensemble
     query_ensemble = True
@@ -51,9 +51,9 @@ class Args:
         {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
 
         # {'type': 'hf', 'name': ""},
-        # {'type': 'voyage', 'name': "voyage-3"},
         # {'type': 'hf', 'name': "nlpai-lab/KoE5"},
         # {'type': 'hf', 'name': "BAAI/bge-large-en-v1.5"},
+        # {'type': 'voyage', 'name': "voyage-multilingual-2"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
     ensemble_weights = [0.3, 0.35, 0.35]  ## 각각의 모델 가중치 설정

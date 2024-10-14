@@ -24,15 +24,10 @@ hf_token = os.getenv("HF_TOKEN")
 huggingface_hub.login(hf_token)
 
 from openai import OpenAI
-
 from langchain.retrievers import EnsembleRetriever
-
-from langchain_experimental.text_splitter import SemanticChunker
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from config import Args
 from data.data import load_document, chunking
-from search.utils import retrieval_debug
 
 from search.answer_processor import eval_rag
 from search.ollama_processor import ollama_eval_rag

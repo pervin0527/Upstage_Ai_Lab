@@ -20,7 +20,7 @@ class Args:
     ## HuggingFace
     hf_model_name = "intfloat/multilingual-e5-large-instruct"
     model_kwargs = {"device": "cuda:0"}
-    encode_kwargs = {"normalize_embeddings": False,
+    encode_kwargs = {"normalize_embeddings": True,
                      "clean_up_tokenization_spaces": True}
     
     ## Upstage
@@ -40,7 +40,7 @@ class Args:
     chunk_overlap = 50
 
     ## query expension
-    query_expansion = True
+    query_expansion = False
 
     ## query ensemble
     query_ensemble = True

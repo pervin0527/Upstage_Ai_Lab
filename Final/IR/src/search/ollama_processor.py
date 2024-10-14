@@ -219,7 +219,7 @@ def ollama_eval_rag(args, retriever):
             if not query is None and args.query_expansion:
                 # query = chain4.invoke({"query" : query})
                 query = query_expansion(query, "gpt-4o", OpenAI())
-                print(f"Expended query : {query}")
+                print(f"Expanded query : {query}")
 
             response = ollama_answer_question(args, query, retriever, compression_retriever, ensemble_encoders)
 

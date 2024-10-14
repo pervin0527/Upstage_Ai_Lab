@@ -76,7 +76,7 @@ def main(args: Args):
         retriever = EnsembleRetriever(
             retrievers=[sparse_retriever, dense_retriever],
             weights=args.retriever_weights,
-            search_type="similarity_score_threshold" ## "mmr"
+            search_type="mrr" ## "mrr", "similarity_score_threshold"
         )
 
     print("완료")

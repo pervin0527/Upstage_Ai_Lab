@@ -116,13 +116,47 @@ def translate_query(query, model, client):
     return json_response
 
 
+def query_refinement(query, model, client):
+    context = (
+        """
+        당신은 주어진 한국어 질의를 이해하고, 핵심 의도를 파악하는 전문가입니다.
+        주어진 질의에서 가장 중요한 정보를 추출하여 한 줄로 간결하게 표현하세요.
+        답변은 반드시 한 줄의 한국어 문장으로 해야 하며, 제 요청 또는 질의의 주제를 벗어난 답변은 하지 마세요.
+
+        예시1
+            Dmitri Ivanovsky가 누구야? 
+            Dmitri Ivanovsky(디미트리 이바노스키)가 어떤 인물인지 알고 싶어합니다.
+
+        예시2
+            피임을 하기 위한 방법중 약으로 처리하는 방법은 쓸만한가?
+            피임약을 사용하는 것이 모든 피임 방법들 중 얼마나 효과적인지 알고 싶어합니다.
+        예시3
+            헬륨이 다른 원소들과 반응을 잘 안하는 이유는?
+            헬륨(He)이 다른 화학 원소들과 잘 반응하지 않는 이유를 알고 싶어합니다.
+
+        예시4 
+            서울에서 가장 좋은 카페는 어디야?
+            서울에서 가장 인기 많은 카페를 추천받고 싶어합니다.
+        """
+    )
+
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role" : "system", "content" : context},
+            {"role" : "user", "content" : query}
+        ],
+    )
+    
+    response = completion.choices[0].message.content
+
+    return response
+
+
 def query_expansion(query, model:str, client):
     context = (
         """
-        당신은 주어진 한국어 질의를 더 구체적이고 명확하게 만들어 검색 결과를 향상시키는 전문가입니다.
-        주어진 질의는 BM25와 벡터 임베딩 검색 엔진에 사용되며, 검색 결과에서 더 정확한 문서가 검색될 수 있도록 질의를 적절히 개선하세요.
-
-        당신이 할 일은 원래 질의가 갖는 궁극적인 목적을 파악한 후, 이를 활용해 검색에 효과적인 형태로 새로운 질의를 만들어내는 것입니다. 
+        당신은 주어진 '한국어 질의'와 '질의 목적'을 읽고 검색에 효과적인 형태로 질의를 재구성하는 전문가입니다.
         단, 원본 질의의 주제를 벗어나지 않아야 하며, 불필요한 정보는 포함시키지 마세요.
         """
     )

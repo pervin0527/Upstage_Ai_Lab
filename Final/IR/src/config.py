@@ -8,13 +8,21 @@ class Args:
         doc_file_path = "../dataset/en_4.0_document.jsonl" ## "../dataset/processed_documents.jsonl"
     else:
         eval_file_path = "../dataset/eval.jsonl"
-        doc_file_path = "../dataset/processed_documents.jsonl"
+        # doc_file_path = "../dataset/processed_documents.jsonl"
+        doc_file_path = "../dataset/gpt_contextual_retrieval_documents.jsonl"
 
-    output_path = "./outputs/output.csv"
+    output_path = "./outputs/UP-CH-ER-CR.csv"
 
-    doc_method = "dense" ## "sparse" or "dense" or "ensemble"
+    ## chunking
+    chunking = False
+    chunk_method = "recursive" ## recursive, semantic
+    semantic_chunk_method = "upstage"
+    chunk_size = 100
+    chunk_overlap = 50
+
+    doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"
     encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
-    faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage-cs100-co50"
+    faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage-cs0-co0" ## "./index_files/upstage/solar-embedding-1-large-passage-cs100-co50"
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
     ## HuggingFace
@@ -31,13 +39,6 @@ class Args:
 
     ## Voyage
     voyage_model_name = "voyage-3"
-
-    ## chunking
-    chunking = True
-    chunk_method = "recursive" ## recursive, semantic
-    semantic_chunk_method = "upstage"
-    chunk_size = 100
-    chunk_overlap = 50
 
     ## query expension
     query_expansion = False
@@ -56,9 +57,9 @@ class Args:
         # {'type': 'voyage', 'name': "voyage-multilingual-2"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
-    ensemble_weights = [0.3, 0.35, 0.35]  ## 각각의 모델 가중치 설정
+    ensemble_weights = [0.3, 0.3, 0.4]  ## 각각의 모델 가중치 설정
 
     ## reranker
     rerank = False
-    rerank_method = "voyage" ## "voyage", "huggingface"
-    reranker_name = "rerank-2"  ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3", "rerank-2"
+    rerank_method = "gpt" ## "huggingface", "gpt"
+    reranker_name = "gpt-4o"  ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3", "gpt-4o"

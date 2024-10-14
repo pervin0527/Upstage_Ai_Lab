@@ -20,6 +20,18 @@ def process_and_save_documents(input_path='../dataset/documents.jsonl', output_p
 def load_jsonl(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         return [json.loads(line) for line in f]
+    
+def load_query(file_path):
+    raw_queries = load_jsonl(file_path)
+
+    queries = []
+    for query in raw_queries:
+        doc_id = query['docid']
+
+        for i in range(1, 4):
+            queries.append({"query": query[f'question{i}'], "metadata": {"docid": doc_id}})
+    
+    return queries
 
 def load_document(path='../dataset/documents.jsonl'):
     raw_documents = load_jsonl(path)

@@ -32,13 +32,15 @@ from data.data import load_document, chunking
 from search.answer_processor import eval_rag
 from search.ollama_processor import ollama_eval_rag
 
-from dense_retriever.model import load_dense_model, load_sparse_model
+from dense_retriever.model import load_dense_model
+from sparse_retriever.model import load_sparse_model
 
 
 def main(args: Args):
     os.makedirs("./outputs", exist_ok=True)
 
     print("\n프로세스 실행")
+    print(f"Document File : {args.doc_file_path}")
 
     print("+" * 30)
     print(f"사용언어 : {args.src_lang}")

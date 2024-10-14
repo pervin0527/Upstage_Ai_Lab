@@ -2,9 +2,9 @@ import os
 import faiss
 
 from langchain.retrievers import EnsembleRetriever
-from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
+from langchain_community.document_compressors.rankllm_rerank import RankLLMRerank
 
 from langchain_openai import OpenAIEmbeddings
 from langchain_voyageai import VoyageAIEmbeddings, VoyageAIRerank
@@ -45,6 +45,12 @@ def load_hf_encoder(model_name, model_kwargs, encode_kwargs):
     
     return encoder
 
+def load_llm_reranker(model, model_name, retriever):
+    compressor = RankLLMRerank(top_n=3, model=model, gpt_model=model_name)
+    compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
+
+    return compression_retriever
+
 def load_hf_reranker(model_name, retriever):
     reranker = HuggingFaceCrossEncoder(model_name=model_name)
     compressor = CrossEncoderReranker(model=reranker, top_n=3)
@@ -58,27 +64,6 @@ def load_voyage_reranker(model_name, retriever):
     compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
 
     return compression_retriever
-
-def load_sparse_model(documents, lang):
-
-    if lang == "ko":
-        from konlpy.tag import Okt
-        okt = Okt()
-        def tokenize(text):
-            tokens = okt.morphs(text)
-            return tokens
-        
-    elif lang == "en":
-        from transformers import AutoTokenizer
-        tokenizer = AutoTokenizer.from_pretrained('voyageai/voyage-3')
-
-        def tokenize(text):
-            tokens = tokenizer.tokenize(text)
-            return tokens
-
-    retriever = BM25Retriever.from_documents(documents, tokenizer=tokenize)
-    
-    return retriever
 
 
 def load_dense_model(args, documents):

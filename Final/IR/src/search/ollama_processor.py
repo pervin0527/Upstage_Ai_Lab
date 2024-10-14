@@ -9,9 +9,9 @@ from langchain_community.chat_models import ChatOllama
 from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores.faiss import FAISS
 
-from search.query_processor import query_expansion
-from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder
+from search.query_processor import query_refinement, query_expansion
 from search.ollama_utils import ollama_standalone_query, ollama_domain_check, ollama_translate_query, ollama_query_expansion
+from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder, load_llm_reranker
 
 
 def search_with_scores(retriever, query, k=10):
@@ -120,14 +120,14 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
         if args.rerank:
             print("=" * 30)
             print("reranking...")
-            reranked_docs = compression_retriever.invoke(standalone_query)
+            reranked_docs = compression_retriever.invoke(standalone_query, search_kwargs={"k": 3})
     
             # 상위 3개의 문서만 선택하여 저장
             for doc in reranked_docs[:3]:
                 retrieved_context.append(doc.page_content)
                 response["topk"].append(doc.metadata.get('docid'))
                 response["references"].append({
-                    "docid": doc.metadata.get('docid'),   # docid 추가
+                    "docid": doc.metadata.get('docid'),
                     "score": doc.metadata.get('score'),
                     "content": doc.page_content
                 })
@@ -138,7 +138,7 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
                 retrieved_context.append(doc.page_content)
                 response["topk"].append(doc.metadata.get('docid'))
                 response["references"].append({
-                    "docid": doc.metadata.get('docid'),   # docid 추가
+                    "docid": doc.metadata.get('docid'),
                     "score": score,
                     "content": doc.page_content
                 })
@@ -187,7 +187,11 @@ def ollama_eval_rag(args, retriever):
 
     ## ReRanking Model Load
     if args.rerank:
-        compression_retriever = load_hf_reranker(args.reranker_name, retriever)
+        if args.rerank_method == "huggingface":
+            compression_retriever = load_hf_reranker(args.reranker_name, retriever)
+        elif args.rerank_method == "gpt":
+            compression_retriever = load_llm_reranker(args.rerank_method, args.reranker_name, retriever)
+            
     else:
         compression_retriever = None
 
@@ -205,7 +209,10 @@ def ollama_eval_rag(args, retriever):
                 query = chats.split(':')[1].strip()
 
             domain_check_result = chain2.invoke({"query": query})
+            print("=" * 30)
             print(f"Standalone_Query : {query}")
+            
+            print("=" * 30)
             print(f"Domain_Check : {domain_check_result}")
 
             # if domain_check_result == "False":
@@ -218,6 +225,10 @@ def ollama_eval_rag(args, retriever):
 
             if not query is None and args.query_expansion:
                 # query = chain4.invoke({"query" : query})
+                query_intention = query_refinement(query, "gpt-4o", OpenAI())
+                print(f"Refinement query : {query_intention}")
+
+                query = f"{query_intention}\n{query}"
                 query = query_expansion(query, "gpt-4o", OpenAI())
                 print(f"Expanded query : {query}")
 

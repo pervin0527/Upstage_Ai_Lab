@@ -11,7 +11,7 @@ class Args:
         # doc_file_path = "../dataset/processed_documents.jsonl"
         doc_file_path = "../dataset/gpt_contextual_retrieval_documents.jsonl"
 
-    output_path = "./outputs/UP-ER-CR-QR.csv"
+    output_path = "./outputs/UP-ER-CR-QR-RR.csv"
 
     ## chunking
     chunking = False
@@ -61,5 +61,5 @@ class Args:
 
     ## reranker
     rerank = False
-    rerank_method = "gpt" ## "huggingface", "gpt"
-    reranker_name = "gpt-4o"  ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3", "gpt-4o"
+    rerank_method = "huggingface"
+    reranker_name = "Dongjin-kr/ko-reranker" ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3"

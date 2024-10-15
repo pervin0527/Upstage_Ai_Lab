@@ -191,6 +191,8 @@ def ollama_eval_rag(args, retriever):
             compression_retriever = load_hf_reranker(args.reranker_name, retriever)
         elif args.rerank_method == "gpt":
             compression_retriever = load_llm_reranker(args.rerank_method, args.reranker_name, retriever)
+        
+        print("Reranker loaded")
             
     else:
         compression_retriever = None

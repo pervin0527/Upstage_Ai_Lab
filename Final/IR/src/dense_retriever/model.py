@@ -53,7 +53,7 @@ def load_llm_reranker(model, model_name, retriever):
 def load_hf_reranker(model_name, retriever):
     reranker = HuggingFaceCrossEncoder(model_name=model_name)
     compressor = CrossEncoderReranker(model=reranker, top_n=3)
-    compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever.as_retriever(search_kwargs={"k": 10}))
+    compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
 
     return compression_retriever
 

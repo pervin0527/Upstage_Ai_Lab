@@ -9,6 +9,7 @@ from langchain.retrievers import EnsembleRetriever
 from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores.faiss import FAISS
 
+from rankgpt.ranker import reranking
 from search.query_processor import query_refinement, query_expansion
 from search.ollama_utils import ollama_standalone_query, ollama_domain_check, ollama_translate_query, ollama_query_expansion
 from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder, load_llm_reranker
@@ -32,7 +33,7 @@ def get_chat_history(eval_data):
     return '\n'.join(str_chat_history)
 
 
-def ollama_answer_question(args, standalone_query, retriever, compression_retriever=None, ensemble_encoders=None):
+def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=None):
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
 
     if standalone_query is not None:
@@ -120,16 +121,26 @@ def ollama_answer_question(args, standalone_query, retriever, compression_retrie
         if args.rerank:
             print("=" * 30)
             print("reranking...")
-            reranked_docs = compression_retriever.invoke(standalone_query, search_kwargs={"k": 3})
+
+            # final_results에서 docid를 추출하여 reranking에 사용
+            top_docs = [result['doc'].metadata['docid'] for result in final_results]
+            docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
+
+            # 초기 점수 추출
+            initial_scores = [result['score'] for result in final_results]
+
+            # RankGPT reranking 수행
+            reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
     
             # 상위 3개의 문서만 선택하여 저장
-            for doc in reranked_docs[:3]:
-                retrieved_context.append(doc.page_content)
-                response["topk"].append(doc.metadata.get('docid'))
+            for idx in reranked_doc_indices:
+                doc = docs[idx]
+                retrieved_context.append(doc['content'])
+                response["topk"].append(doc['metadata'].get('docid'))
                 response["references"].append({
-                    "docid": doc.metadata.get('docid'),
-                    "score": doc.metadata.get('score'),
-                    "content": doc.page_content
+                    "docid": doc['metadata'].get('docid'),
+                    "score": reranked_scores[idx],
+                    "content": doc['content']
                 })
         else:
             for result in final_results:
@@ -185,18 +196,6 @@ def ollama_eval_rag(args, retriever):
     else:
         ensemble_encoders = None
 
-    ## ReRanking Model Load
-    if args.rerank:
-        if args.rerank_method == "huggingface":
-            compression_retriever = load_hf_reranker(args.reranker_name, retriever)
-        elif args.rerank_method == "gpt":
-            compression_retriever = load_llm_reranker(args.rerank_method, args.reranker_name, retriever)
-        
-        print("Reranker loaded")
-            
-    else:
-        compression_retriever = None
-
     with open(args.eval_file_path) as f, open(args.output_path, "w") as of:
         idx = 0
         for line in f:
@@ -234,7 +233,7 @@ def ollama_eval_rag(args, retriever):
                 query = query_expansion(query, "gpt-4o", OpenAI())
                 print(f"Expanded query : {query}")
 
-            response = ollama_answer_question(args, query, retriever, compression_retriever, ensemble_encoders)
+            response = ollama_answer_question(args, query, retriever, ensemble_encoders)
 
             output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
             of.write(f'{json.dumps(output, ensure_ascii=False)}\n')

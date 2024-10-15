@@ -79,13 +79,14 @@ def main(args: Args):
         retriever = EnsembleRetriever(
             retrievers=[sparse_retriever, dense_retriever],
             weights=args.retriever_weights,
-            search_type="mrr" ## "mrr", "similarity_score_threshold"
+            search_type="mrr", ## "mrr", "similarity_score_threshold"
+            # c=10
         )
 
     print("완료")
 
     print("+" * 30)
-    print("검색 시작.")
+    print("검색 시작.\n\n")
     if args.llm_model == "gpt-4o":
         client = OpenAI()
         eval_rag(args, retriever, client)

@@ -11,7 +11,7 @@ class Args:
         # doc_file_path = "../dataset/processed_documents.jsonl"
         doc_file_path = "../dataset/gpt_contextual_retrieval_documents.jsonl"
 
-    output_path = "./outputs/UP-ER-CR-QR-RR.csv"
+    output_path = "./outputs/UP-ER-QE-RR.csv"
 
     ## chunking
     chunking = False
@@ -57,9 +57,7 @@ class Args:
         # {'type': 'voyage', 'name': "voyage-multilingual-2"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
-    ensemble_weights = [0.3, 0.3, 0.4]  ## 각각의 모델 가중치 설정
+    ensemble_weights = [0.2, 0.2, 0.6]  ## 각각의 모델 가중치 설정
 
     ## reranker
     rerank = True
-    rerank_method = "gpt"
-    reranker_name = "gpt-4o" ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3"

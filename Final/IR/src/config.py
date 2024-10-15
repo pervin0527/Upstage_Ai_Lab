@@ -60,6 +60,6 @@ class Args:
     ensemble_weights = [0.3, 0.3, 0.4]  ## 각각의 모델 가중치 설정
 
     ## reranker
-    rerank = False
-    rerank_method = "huggingface"
-    reranker_name = "Dongjin-kr/ko-reranker" ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3"
+    rerank = True
+    rerank_method = "gpt"
+    reranker_name = "gpt-4o" ## "BAAI/bge-reranker-large", "BAAI/bge-reranker-v2-m3"

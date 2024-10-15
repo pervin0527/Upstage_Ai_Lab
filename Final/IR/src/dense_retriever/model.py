@@ -45,7 +45,8 @@ def load_hf_encoder(model_name, model_kwargs, encode_kwargs):
     return encoder
 
 def load_llm_reranker(model, model_name, retriever):
-    compressor = RankLLMRerank(top_n=3, model=model, gpt_model=model_name)
+    # compressor = RankLLMRerank(top_n=3, model=model, gpt_model=model_name)
+    compressor = RankLLMRerank(top_n=3, model="gpt", gpt_model="gpt-3.5-turbo")
     compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
 
     return compression_retriever

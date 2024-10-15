@@ -1,7 +1,4 @@
 import os
-import copy
-import json
-import faiss
 import warnings
 
 import huggingface_hub

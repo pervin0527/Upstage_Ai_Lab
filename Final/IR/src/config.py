@@ -9,9 +9,9 @@ class Args:
     else:
         eval_file_path = "../dataset/eval.jsonl"
         # doc_file_path = "../dataset/processed_documents.jsonl"
-        doc_file_path = "../dataset/gpt_contextual_retrieval_documents.jsonl"
+        doc_file_path = "../dataset/gpt_contextual_retrieval_documents_v2.jsonl"
 
-    output_path = "./outputs/UP-ER-QE-RR.csv"
+    output_path = "./outputs/upstage-ensemble_ret-query_ensemble-context_retV2.csv"
 
     ## chunking
     chunking = False
@@ -25,23 +25,17 @@ class Args:
     faiss_index_file = "./index_files/upstage/solar-embedding-1-large-passage-cs0-co0" ## "./index_files/upstage/solar-embedding-1-large-passage-cs100-co50"
     retriever_weights = [0.3, 0.7] ## [sparse, dense]
 
-    ## HuggingFace
     hf_model_name = "intfloat/multilingual-e5-large-instruct"
     model_kwargs = {"device": "cuda:0"}
     encode_kwargs = {"normalize_embeddings": True,
                      "clean_up_tokenization_spaces": True}
     
-    ## Upstage
     upstage_model_name = "solar-embedding-1-large-passage"
-    
-    ## OpenAI
     openai_model_name = "text-embedding-3-large"
-
-    ## Voyage
     voyage_model_name = "voyage-3"
 
-    ## query expension
-    query_expansion = False
+    ## reranker
+    rerank = False
 
     ## query ensemble
     query_ensemble = True
@@ -57,7 +51,7 @@ class Args:
         # {'type': 'voyage', 'name': "voyage-multilingual-2"},
         # {'type': 'hf', 'name': "sentence-transformers/all-MiniLM-L6-v2"},
     ]
-    ensemble_weights = [0.2, 0.2, 0.6]  ## 각각의 모델 가중치 설정
+    ensemble_weights = [0.3, 0.3, 0.4]  ## 각각의 모델 가중치 설정
 
-    ## reranker
-    rerank = True
+    ## query expension
+    query_expansion = False

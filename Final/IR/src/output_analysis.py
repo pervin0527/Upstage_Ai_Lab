@@ -1,7 +1,7 @@
 import json
 
 def main():
-    file_path = "./outputs/9197.csv"
+    file_path = "/home/pervinco/Upstage_Ai_Lab/Final/IR/src/outputs/9348-UP-ER-QEN-CRV2.csv"
     with open(file_path, 'r', encoding='utf-8') as file:
         file_content = file.readlines()
 
@@ -18,7 +18,7 @@ def main():
             print("\nReferences:")
             for ref in entry['references']:
                 print(f"- Score: {ref['score']:.3f}")
-                print(f"  Content: {ref['content'][:200]}...")  # Limit content preview
+                print(f"  Content: {ref['content']}\n")
             print("\n" + "="*50 + "\n")
 
     # Display the parsed predictions in a readable format

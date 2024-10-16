@@ -80,12 +80,22 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
                     combined_similarity += weight * similarity
                 combined_scores.append((doc, combined_similarity))
 
-            # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
+            # 중복 문서에 대해 평균 점수 계산
             docid_scores = {}
+            docid_count = {}
+
             for doc, score in combined_scores:
                 docid = doc.metadata.get('docid')
-                if docid not in docid_scores or score > docid_scores[docid]['score']:
+                if docid in docid_scores:
+                    docid_scores[docid]['score'] += score
+                    docid_count[docid] += 1
+                else:
                     docid_scores[docid] = {'doc': doc, 'score': score}
+                    docid_count[docid] = 1
+
+            # 평균 점수로 계산
+            for docid in docid_scores:
+                docid_scores[docid]['score'] /= docid_count[docid]
             
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
@@ -106,12 +116,22 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             else:
                 raise ValueError("Unknown retriever type")
             
-            # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
+            # 중복 문서에 대해 평균 점수 계산
             docid_scores = {}
+            docid_count = {}
+
             for doc, score in search_result:
                 docid = doc.metadata.get('docid')
-                if docid not in docid_scores or score > docid_scores[docid]['score']:
+                if docid in docid_scores:
+                    docid_scores[docid]['score'] += score
+                    docid_count[docid] += 1
+                else:
                     docid_scores[docid] = {'doc': doc, 'score': score}
+                    docid_count[docid] = 1
+
+            # 평균 점수로 계산
+            for docid in docid_scores:
+                docid_scores[docid]['score'] /= docid_count[docid]
             
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]

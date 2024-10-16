@@ -45,17 +45,13 @@ def main(args: Args):
     print("문서 로딩", end=" ")
     documents = load_document(path=args.doc_file_path)
     print(len(documents))
-    print("-> 완료")
 
     if args.chunking:
         print("+" * 30)
         print(f"Document Chunking.")
         print(f"Method : {args.chunk_method}")
         print(f"Chunk Size : {args.chunk_size}. Chunk Overlap : {args.chunk_overlap}")
-        
         documents = chunking(args, documents)
-    print(len(documents))
-    print("-> 완료")
 
     print("+" * 30)
     if args.doc_method == "dense":
@@ -80,8 +76,6 @@ def main(args: Args):
             # c=10
         )
 
-    print("완료")
-
     print("+" * 30)
     print("검색 시작.\n\n")
     if args.llm_model == "gpt-4o":
@@ -90,8 +84,6 @@ def main(args: Args):
 
     elif args.llm_model == "ollama":
         ollama_eval_rag(args, retriever)
-
-    print("완료.")
     
 if __name__ == "__main__":
     main(Args)

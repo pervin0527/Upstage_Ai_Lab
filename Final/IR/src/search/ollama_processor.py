@@ -5,7 +5,8 @@ from openai import OpenAI
 from scipy.spatial.distance import cosine
 
 from langchain_ollama import ChatOllama
-from langchain.retrievers import EnsembleRetriever
+# from langchain.retrievers import EnsembleRetriever
+from langchain_teddynote.retrievers import EnsembleRetriever, EnsembleMethod
 from langchain_community.retrievers import BM25Retriever
 from langchain_community.vectorstores.faiss import FAISS
 
@@ -80,22 +81,12 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
                     combined_similarity += weight * similarity
                 combined_scores.append((doc, combined_similarity))
 
-            # 중복 문서에 대해 평균 점수 계산
+            # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
             docid_scores = {}
-            docid_count = {}
-
             for doc, score in combined_scores:
                 docid = doc.metadata.get('docid')
-                if docid in docid_scores:
-                    docid_scores[docid]['score'] += score
-                    docid_count[docid] += 1
-                else:
+                if docid not in docid_scores or score > docid_scores[docid]['score']:
                     docid_scores[docid] = {'doc': doc, 'score': score}
-                    docid_count[docid] = 1
-
-            # 평균 점수로 계산
-            for docid in docid_scores:
-                docid_scores[docid]['score'] /= docid_count[docid]
             
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
@@ -116,22 +107,12 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             else:
                 raise ValueError("Unknown retriever type")
             
-            # 중복 문서에 대해 평균 점수 계산
+            # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
             docid_scores = {}
-            docid_count = {}
-
             for doc, score in search_result:
                 docid = doc.metadata.get('docid')
-                if docid in docid_scores:
-                    docid_scores[docid]['score'] += score
-                    docid_count[docid] += 1
-                else:
+                if docid not in docid_scores or score > docid_scores[docid]['score']:
                     docid_scores[docid] = {'doc': doc, 'score': score}
-                    docid_count[docid] = 1
-
-            # 평균 점수로 계산
-            for docid in docid_scores:
-                docid_scores[docid]['score'] /= docid_count[docid]
             
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
@@ -220,21 +201,28 @@ def ollama_eval_rag(args, retriever):
         idx = 0
         for line in f:
             j = json.loads(line)
-            print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
 
-            id = j['eval_id']
-            chats = get_chat_history(j)
-            if len(j["msg"]) > 1:
-                query = chain1.invoke({"chat_history": chats})
+            if not args.query_expansion:
+                print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
+
+                id = j['eval_id']
+                chats = get_chat_history(j)
+                if len(j["msg"]) > 1:
+                    query = chain1.invoke({"chat_history": chats})
+                else:
+                    query = chats.split(':')[1].strip()
+
+                domain_check_result = chain2.invoke({"query": query})
+                print("=" * 30)
+                print(f"Standalone_Query : {query}")
+                
+                print("=" * 30)
+                print(f"Domain_Check : {domain_check_result}")
+
             else:
-                query = chats.split(':')[1].strip()
-
-            domain_check_result = chain2.invoke({"query": query})
-            print("=" * 30)
-            print(f"Standalone_Query : {query}")
-            
-            print("=" * 30)
-            print(f"Domain_Check : {domain_check_result}")
+                id = j['eval_id']
+                query = j["expanded_query"]
+                print(f'Test {idx:>04}\nQuestion: {j["expanded_query"]}')
 
             # if domain_check_result == "False":
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
@@ -243,15 +231,6 @@ def ollama_eval_rag(args, retriever):
             if not query is None and args.src_lang == "en":
                 query = chain3.invoke({"ko_query" : query})
                 print(f"EN Standalone_query : {query}")
-
-            if not query is None and args.query_expansion:
-                # query = chain4.invoke({"query" : query})
-                query_intention = query_refinement(query, "gpt-4o", OpenAI())
-                print(f"Refinement query : {query_intention}")
-
-                query = f"{query_intention}\n{query}"
-                query = query_expansion(query, "gpt-4o", OpenAI())
-                print(f"Expanded query : {query}")
 
             response = ollama_answer_question(args, query, retriever, ensemble_encoders)
 

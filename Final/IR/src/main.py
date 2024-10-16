@@ -22,7 +22,8 @@ hf_token = os.getenv("HF_TOKEN")
 huggingface_hub.login(hf_token)
 
 from openai import OpenAI
-from langchain.retrievers import EnsembleRetriever
+# from langchain.retrievers import EnsembleRetriever
+from langchain_teddynote.retrievers import EnsembleRetriever, EnsembleMethod
 
 from config import Args
 from data.data import load_document, chunking
@@ -69,12 +70,18 @@ def main(args: Args):
         
         dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 10})
 
-        retriever = EnsembleRetriever(
-            retrievers=[sparse_retriever, dense_retriever],
-            weights=args.retriever_weights,
-            search_type="mrr", ## "mrr", "similarity_score_threshold"
-            # c=10
-        )
+        # retriever = EnsembleRetriever(
+        #     retrievers=[sparse_retriever, dense_retriever],
+        #     weights=args.retriever_weights,
+        #     search_type="mrr", ## "mrr", "similarity_score_threshold"
+        #     # c=10
+        # )
+
+        if args.ensemble_method == "rrf":
+            retriever = EnsembleRetriever(retrievers=[sparse_retriever, dense_retriever], method=EnsembleMethod.RRF)
+
+        elif args.ensemble_method == "cc":
+            retriever = EnsembleRetriever(retrievers=[sparse_retriever, dense_retriever], method=EnsembleMethod.CC)
 
     print("+" * 30)
     print("검색 시작.\n\n")

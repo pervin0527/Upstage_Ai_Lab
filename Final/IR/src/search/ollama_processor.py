@@ -207,21 +207,25 @@ def ollama_eval_rag(args, retriever):
             j = json.loads(line)
 
             if not args.query_expansion:
-                print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
-
                 id = j['eval_id']
-                chats = get_chat_history(j)
-                if len(j["msg"]) > 1:
-                    query = chain1.invoke({"chat_history": chats})
-                else:
-                    query = chats.split(':')[1].strip()
 
-                domain_check_result = chain2.invoke({"query": query})
+                # print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
+                # chats = get_chat_history(j)
+                # if len(j["msg"]) > 1:
+                #     query = chain1.invoke({"chat_history": chats})
+                # else:
+                #     query = chats.split(':')[1].strip()
+                # print("=" * 30)
+                # print(f"Standalone_Query : {query}")
+                
+                # domain_check_result = chain2.invoke({"query": query})
+                # print("=" * 30)
+                # print(f"Domain_Check : {domain_check_result}")
+
+                query = j['query']['query']
+                print(f'Test {idx:>04}\nQuestion: {query}')
                 print("=" * 30)
                 print(f"Standalone_Query : {query}")
-                
-                print("=" * 30)
-                print(f"Domain_Check : {domain_check_result}")
 
             else:
                 id = j['eval_id']

@@ -39,6 +39,7 @@ def main(args: Args):
     os.makedirs("./outputs", exist_ok=True)
 
     print("\n프로세스 실행")
+    print(f"Eval File : {args.eval_file_path}")
     print(f"Document File : {args.doc_file_path}")
 
     print("+" * 30)

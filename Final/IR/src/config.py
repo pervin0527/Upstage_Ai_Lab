@@ -7,7 +7,7 @@ class Args:
         eval_file_path = "../dataset/eval.jsonl" ## "../dataset/en_eval.jsonl" --> 성능이 별로임.
         doc_file_path = "../dataset/en_4.0_document.jsonl" ## "../dataset/processed_documents.jsonl"
     else:
-        eval_file_path = "../dataset/eval.jsonl"
+        eval_file_path = "../dataset/processed_eval.jsonl"
         doc_file_path = "../dataset/gpt_contextual_retrieval_documents_v3.jsonl"
 
     ## query expansion
@@ -16,7 +16,7 @@ class Args:
         eval_file_path = "../dataset/expanded_eval.jsonl"
 
     ## UP-ER-QEN-CR
-    output_path = "./outputs/UP-ER-QEN-CRV3-ratio.csv"
+    output_path = "./outputs/UP-ER-QEN-CRV3.csv"
 
     ## chunking
     chunking = False
@@ -26,7 +26,7 @@ class Args:
     chunk_overlap = 50
 
     ## "./index_files/upstage/CRV1"
-    faiss_index_file = "./index_files/upstage/CRV3"
+    faiss_index_file = None ## "./index_files/upstage/CRV3"
     retriever_weights = [0.4, 0.6] ## [sparse, dense] [0.3, 0.7]
 
     doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"
@@ -49,7 +49,7 @@ class Args:
     ensemble_weights = [0.2, 0.2, 0.6]  ## 각각의 모델 가중치 설정
     ensemble_models = [
         ## 앙상블에 사용할 모델
-        {'type': 'hf', 'name': "BAAI/bge-m3"},
-        {'type': 'hf', 'name': "intfloat/multilingual-e5-large"},
+        {'type' : 'hf', 'name' : "BAAI/bge-m3"},
+        {'type': 'hf', 'name': "dragonkue/bge-m3-ko"},
         {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
     ]

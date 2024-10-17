@@ -114,14 +114,15 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
                 if docid not in docid_scores or score > docid_scores[docid]['score']:
                     docid_scores[docid] = {'doc': doc, 'score': score}
             
-            # 최종 선택된 상위 3개 문서
-            final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
 
         retrieved_context = []
         ## Reranking
         if args.rerank:
             print("=" * 30)
             print("reranking...")
+
+            # 최종 선택된 상위 3개 문서
+            final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
 
             # final_results에서 docid를 추출하여 reranking에 사용
             top_docs = [result['doc'].metadata['docid'] for result in final_results]
@@ -134,16 +135,19 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
     
             # 상위 3개의 문서만 선택하여 저장
-            for idx in reranked_doc_indices:
+            for i, idx in enumerate(reranked_doc_indices):
                 doc = docs[idx]
                 retrieved_context.append(doc['content'])
                 response["topk"].append(doc['metadata'].get('docid'))
                 response["references"].append({
                     "docid": doc['metadata'].get('docid'),
-                    "score": reranked_scores[idx],
+                    "score": initial_scores[idx], ## reranked_scores[i],
                     "content": doc['content']
                 })
         else:
+            # 최종 선택된 상위 3개 문서
+            final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
+
             for result in final_results:
                 doc = result['doc']
                 score = result['score']

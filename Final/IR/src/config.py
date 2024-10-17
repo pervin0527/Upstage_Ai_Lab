@@ -16,7 +16,7 @@ class Args:
         eval_file_path = "../dataset/expanded_eval.jsonl"
 
     ## UP-ER-QEN-CR
-    output_path = "./outputs/UP-ER-QEN-CRV3.csv"
+    output_path = "./outputs/UP-ER-QEN-CRV3-ratio.csv"
 
     ## chunking
     chunking = False
@@ -27,7 +27,7 @@ class Args:
 
     ## "./index_files/upstage/CRV1"
     faiss_index_file = "./index_files/upstage/CRV3"
-    retriever_weights = [0.3, 0.7] ## [sparse, dense] [0.3, 0.7]
+    retriever_weights = [0.4, 0.6] ## [sparse, dense] [0.3, 0.7]
 
     doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"
     encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
@@ -46,7 +46,7 @@ class Args:
 
     ## query ensemble
     query_ensemble = True
-    ensemble_weights = [0.3, 0.3, 0.4]  ## 각각의 모델 가중치 설정
+    ensemble_weights = [0.2, 0.2, 0.6]  ## 각각의 모델 가중치 설정
     ensemble_models = [
         ## 앙상블에 사용할 모델
         {'type': 'hf', 'name': "BAAI/bge-m3"},

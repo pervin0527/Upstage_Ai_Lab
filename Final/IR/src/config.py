@@ -26,7 +26,7 @@ class Args:
     chunk_overlap = 50
 
     ## "./index_files/upstage/CRV1"
-    faiss_index_file = None ## "./index_files/upstage/CRV3"
+    faiss_index_file = "./index_files/upstage/CRV3"
     retriever_weights = [0.4, 0.6] ## [sparse, dense] [0.3, 0.7]
 
     doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"
@@ -43,6 +43,8 @@ class Args:
 
     ## reranker
     rerank = False
+    rerank_method = "cohere" ## "huggingface"
+    reranker_name = "rerank-multilingual-v3.0" ## "Dongjin-kr/ko-reranker"
 
     ## query ensemble
     query_ensemble = True

@@ -209,7 +209,9 @@ def eval_rag(args, retriever, client):
         ensemble_encoders = None
 
     if args.rerank:
-        compression_retriever = load_hf_reranker(args.reranker_name, retriever)
+        if args.rerank_method == "huggingface":
+            compression_retriever = load_hf_reranker(args.reranker_name, retriever)
+
     else:
         compression_retriever = None
 

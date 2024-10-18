@@ -9,6 +9,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_voyageai import VoyageAIEmbeddings, VoyageAIRerank
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
+from langchain_cohere import CohereRerank
 from langchain_upstage import UpstageEmbeddings
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain.retrievers import ContextualCompressionRetriever
@@ -44,9 +45,8 @@ def load_hf_encoder(model_name, model_kwargs, encode_kwargs):
     
     return encoder
 
-def load_llm_reranker(model, model_name, retriever):
-    # compressor = RankLLMRerank(top_n=3, model=model, gpt_model=model_name)
-    compressor = RankLLMRerank(top_n=3, model="gpt", gpt_model="gpt-3.5-turbo")
+def load_cohere_reranker(model_name, retriever):
+    compressor = CohereRerank(model=model_name)
     compression_retriever = ContextualCompressionRetriever(base_compressor=compressor, base_retriever=retriever)
 
     return compression_retriever

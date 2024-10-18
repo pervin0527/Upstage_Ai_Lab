@@ -38,9 +38,10 @@ def load_document(path='../dataset/documents.jsonl'):
 
     documents = []
     for doc in raw_documents:
-        doc_id = doc['docid']
+        docid = doc['docid']
+        src = doc['src']
         content = doc['content']
-        documents.append(Document(page_content=content, metadata={"docid": doc_id}))
+        documents.append(Document(page_content=content, metadata={"docid": docid, "src": src}))
 
     return documents
 

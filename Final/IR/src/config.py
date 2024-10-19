@@ -26,8 +26,8 @@ class Args:
     chunk_overlap = 50
 
     ## "./index_files/upstage/CRV1"
-    faiss_index_file = "./index_files/upstage/CRV3"
-    retriever_weights = [0.4, 0.6] ## [sparse, dense] [0.3, 0.7]
+    faiss_index_file = None ## "./index_files/upstage/BEST-CRV3"
+    retriever_weights = [0.5, 0.5] ## [sparse, dense] [0.3, 0.7]
 
     doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"
     encoder_method = "upstage" ## "huggingface", "upstage", "openai", "voyage"
@@ -35,7 +35,7 @@ class Args:
 
     hf_model_name = "intfloat/multilingual-e5-large-instruct"
     model_kwargs = {"device": "cuda:0"}
-    encode_kwargs = {"normalize_embeddings": False, "clean_up_tokenization_spaces": True}
+    encode_kwargs = {"normalize_embeddings": True, "clean_up_tokenization_spaces": True}
     
     upstage_model_name = "solar-embedding-1-large-passage"
     openai_model_name = "text-embedding-3-large"
@@ -43,15 +43,13 @@ class Args:
 
     ## reranker
     rerank = False
-    rerank_method = "cohere" ## "huggingface"
-    reranker_name = "rerank-multilingual-v3.0" ## "Dongjin-kr/ko-reranker"
 
     ## query ensemble
     query_ensemble = True
     ensemble_weights = [0.2, 0.2, 0.6]  ## 각각의 모델 가중치 설정
     ensemble_models = [
         ## 앙상블에 사용할 모델
-        {'type' : 'hf', 'name' : "BAAI/bge-m3"},
+        {'type': 'hf', 'name' : "BAAI/bge-m3"},
         {'type': 'hf', 'name': "dragonkue/bge-m3-ko"},
         {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
     ]

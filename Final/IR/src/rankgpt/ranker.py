@@ -192,14 +192,16 @@ def run_retriever(topics, searcher, qrels=None, k=100, qid=None):
 
 def get_prefix_prompt(query, num):
     return [{'role': 'system',
-             'content': "You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query."},
+             'content': "당신은 RankGPT입니다. 주어진 쿼리에 대한 관련성에 따라 문서를 순위 매기는 지능형 어시스턴트입니다."
+             },
             {'role': 'user',
-             'content': f"I will provide you with {num} passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: {query}."},
-            {'role': 'assistant', 'content': 'Okay, please provide the passages.'}]
+             'content': f"제가 {num}개의 문서를 번호로 구분하여 제공하겠습니다. \n이 문서들을 쿼리: {query}에 대한 관련성에 따라 순위 매겨 주세요."},
+            {'role': 'assistant', 'content': '알겠습니다. 문서들을 제공해 주세요.'}]
 
 
 def get_post_prompt(query, num):
-    return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain."
+    return f"검색 쿼리: {query}. \n위의 {num}개의 문서를 검색 쿼리에 대한 관련성에 따라 순위 매겨 주세요. 문서는 식별 번호를 사용하여 내림차순으로 나열해야 합니다. 가장 관련성 높은 문서부터 먼저 나열해야 합니다. 출력 형식은 [] > []로, 예: [1] > [2]와 같이 표기해야 합니다. 순위 결과만 응답하고, 다른 설명은 하지 마세요."
+
 
 
 def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo'):

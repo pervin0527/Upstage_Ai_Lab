@@ -12,8 +12,8 @@ from langchain_community.vectorstores.faiss import FAISS
 
 from rankgpt.ranker import reranking
 from search.query_processor import query_refinement, query_expansion
+from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder
 from search.ollama_utils import ollama_standalone_query, ollama_domain_check, ollama_translate_query, ollama_query_expansion
-from dense_retriever.model import load_hf_encoder, load_upstage_encoder, load_hf_reranker, load_voyage_encoder, load_cohere_reranker
 
 
 def search_with_scores(retriever, query, k=10):
@@ -34,7 +34,7 @@ def get_chat_history(eval_data):
     return '\n'.join(str_chat_history)
 
 
-def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=None, compression_retriever=None):
+def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=None):
     response = {"standalone_query": "", "topk": [], "references": [], "answer": ""}
 
     if standalone_query is not None:
@@ -66,7 +66,7 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             elif isinstance(retriever, EnsembleRetriever):
                 results = retriever.invoke(standalone_query)
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
-                search_result = [(result, result.metadata['score']) for result in sorted_results[:10]]
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
 
             else:
                 raise ValueError("Unknown retriever type")
@@ -103,7 +103,7 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             elif isinstance(retriever, EnsembleRetriever):
                 results = retriever.invoke(standalone_query)
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
-                search_result = [(result, result.metadata['score']) for result in sorted_results[:10]]
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
             else:
                 raise ValueError("Unknown retriever type")
             
@@ -121,43 +121,29 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             print("=" * 30)
             print("reranking...")
 
-            if args.rerank_method == "huggingface" or args.rerank_method == "cohere":
-                reranked_docs = compression_retriever.invoke(standalone_query)
-        
-                # 상위 3개의 문서만 선택하여 저장
-                for doc in reranked_docs:
-                    retrieved_context.append(doc.page_content)
-                    response["topk"].append(doc.metadata.get('docid'))
-                    response["references"].append({
-                        "docid": doc.metadata.get('docid'),   # docid 추가
-                        "score": doc.metadata.get('score'),
-                        "content": doc.page_content
-                    })
+            # 최종 선택된 상위 3개 문서
+            final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
 
-            elif args.rerank_method == "rankgpt":
-                # 최종 선택된 상위 3개 문서
-                final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
+            # final_results에서 docid를 추출하여 reranking에 사용
+            top_docs = [result['doc'].metadata['docid'] for result in final_results]
+            docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
 
-                # final_results에서 docid를 추출하여 reranking에 사용
-                top_docs = [result['doc'].metadata['docid'] for result in final_results]
-                docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
+            # 초기 점수 추출
+            initial_scores = [result['score'] for result in final_results]
 
-                # 초기 점수 추출
-                initial_scores = [result['score'] for result in final_results]
-
-                # RankGPT reranking 수행
-                reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
-        
-                for i, idx in enumerate(reranked_doc_indices):
-                    doc = docs[idx]
-                    retrieved_context.append(doc['content'])
-                    response["topk"].append(doc['metadata'].get('docid'))
-                    response["references"].append({
-                        "docid": doc['metadata'].get('docid'),
-                        "score": reranked_scores[i],  # 재정렬된 점수를 사용합니다.
-                        "content": doc['content']
-                    })
-
+            # RankGPT reranking 수행
+            reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
+    
+            # 상위 3개의 문서만 선택하여 저장
+            for i, idx in enumerate(reranked_doc_indices):
+                doc = docs[idx]
+                retrieved_context.append(doc['content'])
+                response["topk"].append(doc['metadata'].get('docid'))
+                response["references"].append({
+                    "docid": doc['metadata'].get('docid'),
+                    "score": initial_scores[idx], ## reranked_scores[i],
+                    "content": doc['content']
+                })
         else:
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
@@ -236,7 +222,7 @@ def ollama_eval_rag(args, retriever):
                 # print("=" * 30)
                 # print(f"Domain_Check : {domain_check_result}")
 
-                query = j['query']['query']
+                query = j['query']
                 print(f'Test {idx:>04}\nQuestion: {query}')
                 print("=" * 30)
                 print(f"Standalone_Query : {query}")
@@ -254,15 +240,7 @@ def ollama_eval_rag(args, retriever):
                 query = chain3.invoke({"ko_query" : query})
                 print(f"EN Standalone_query : {query}")
 
-            if args.rerank:
-                if args.rerank_method == "huggingface":
-                    compression_retriever = load_hf_reranker(args.reranker_name, retriever)
-                elif args.rerank_method == "cohere":
-                    compression_retriever = load_cohere_reranker(args.reranker_name, retriever)
-            else:
-                compression_retriever = None
-
-            response = ollama_answer_question(args, query, retriever, ensemble_encoders, compression_retriever)
+            response = ollama_answer_question(args, query, retriever, ensemble_encoders)
 
             output = {"eval_id": j["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
             of.write(f'{json.dumps(output, ensure_ascii=False)}\n')

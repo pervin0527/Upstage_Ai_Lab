@@ -29,7 +29,9 @@ def load_ollama_encoder(model_name):
     return encoder
 
 def load_upstage_encoder(model_name):
-    encoder = UpstageEmbeddings(model=model_name)
+    encoder = UpstageEmbeddings(model=model_name,
+                                show_progress_bar=True,
+                                embed_batch_size=64)
 
     return encoder
 
@@ -116,16 +118,16 @@ def load_dense_model(args, documents):
             print(f"saved at {folder_path}")
 
         # 인덱스 생성
-        index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))
-        vector_store = FAISS(
-            embedding_function=encoder,
-            index=index,
-            docstore=InMemoryDocstore(),
-            index_to_docstore_id={},  # 빈 딕셔너리로 초기화
-            relevance_score_fn=score_normalizer
-        )
-        vector_store.add_documents(documents=documents)
-        print(f"FAISS 인덱스에 추가된 문서 수: {index.ntotal}")
+        # index = faiss.IndexFlatL2(len(encoder.embed_query("hello world")))
+        # vector_store = FAISS(
+        #     embedding_function=encoder,
+        #     index=index,
+        #     docstore=InMemoryDocstore(),
+        #     index_to_docstore_id={},  # 빈 딕셔너리로 초기화
+        #     relevance_score_fn=score_normalizer
+        # )
+        # vector_store.add_documents(documents=documents)
+        vector_store = FAISS.from_documents(documents, encoder)
 
         # 인덱스 및 관련 데이터 저장
         os.makedirs(folder_path, exist_ok=True)

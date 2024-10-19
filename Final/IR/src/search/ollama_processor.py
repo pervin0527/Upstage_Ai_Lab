@@ -6,8 +6,8 @@ from scipy.spatial.distance import cosine
 
 from langchain_ollama import ChatOllama
 # from langchain.retrievers import EnsembleRetriever
-from langchain_teddynote.retrievers import EnsembleRetriever, EnsembleMethod
 from langchain_community.retrievers import BM25Retriever
+from langchain_teddynote.retrievers import EnsembleRetriever
 from langchain_community.vectorstores.faiss import FAISS
 
 from rankgpt.ranker import reranking
@@ -176,12 +176,12 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
 
 
 def ollama_eval_rag(args, retriever):
-    model = ChatOllama(model="eeve-10.8b-q8:latest")
+    # model = ChatOllama(model="eeve-10.8b-q8:latest")
     
-    chain1 = ollama_standalone_query(model)
-    chain2 = ollama_domain_check(model)
-    chain3 = ollama_translate_query(model)
-    chain4 = ollama_query_expansion(model)
+    # chain1 = ollama_standalone_query(model)
+    # chain2 = ollama_domain_check(model)
+    # chain3 = ollama_translate_query(model)
+    # chain4 = ollama_query_expansion(model)
 
     ## Query Ensemble Model Load
     if args.query_ensemble:
@@ -236,9 +236,9 @@ def ollama_eval_rag(args, retriever):
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
                 query = None
             
-            if not query is None and args.src_lang == "en":
-                query = chain3.invoke({"ko_query" : query})
-                print(f"EN Standalone_query : {query}")
+            # if not query is None and args.src_lang == "en":
+            #     query = chain3.invoke({"ko_query" : query})
+            #     print(f"EN Standalone_query : {query}")
 
             response = ollama_answer_question(args, query, retriever, ensemble_encoders)
 

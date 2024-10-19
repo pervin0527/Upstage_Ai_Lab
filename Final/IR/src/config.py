@@ -26,7 +26,7 @@ class Args:
     chunk_overlap = 50
 
     ## "./index_files/upstage/CRV1"
-    faiss_index_file = None ## "./index_files/upstage/BEST-CRV3"
+    faiss_index_file = "./index_files/upstage/CRV3_2"
     retriever_weights = [0.5, 0.5] ## [sparse, dense] [0.3, 0.7]
 
     doc_method = "ensemble" ## "sparse" or "dense" or "ensemble"

@@ -15,6 +15,8 @@ class Args:
     if query_expansion:
         eval_file_path = "../dataset/expanded_eval.jsonl"
 
+    score_thres = 0
+
     ## UP-ER-QEN-CR
     output_path = "./outputs/UP-ER-QEN-CRV3.csv"
 

@@ -1,4 +1,5 @@
 import json
+import voyageai
 import numpy as np
 
 from openai import OpenAI
@@ -84,9 +85,14 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
             docid_scores = {}
             for doc, score in combined_scores:
-                docid = doc.metadata.get('docid')
-                if docid not in docid_scores or score > docid_scores[docid]['score']:
-                    docid_scores[docid] = {'doc': doc, 'score': score}
+                if score >= args.score_thres:  # score가 score_thres 이상인 경우에만 처리
+                    docid = doc.metadata.get('docid')
+                    if docid not in docid_scores or score > docid_scores[docid]['score']:
+                        docid_scores[docid] = {'doc': doc, 'score': score}
+
+            if not docid_scores:  # 임계값 이상인 문서가 없는 경우
+                print(f"임계값({args.score_thres}) 이상의 문서가 없습니다.")
+                return response
             
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)[:3]
@@ -110,10 +116,14 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
             # 중복 문서 제거: 가장 높은 점수를 받은 청크만 남김
             docid_scores = {}
             for doc, score in search_result:
-                docid = doc.metadata.get('docid')
-                if docid not in docid_scores or score > docid_scores[docid]['score']:
-                    docid_scores[docid] = {'doc': doc, 'score': score}
-            
+                if score >= args.score_thres:  # score가 score_thres 이상인 경우에만 처리
+                    docid = doc.metadata.get('docid')
+                    if docid not in docid_scores or score > docid_scores[docid]['score']:
+                        docid_scores[docid] = {'doc': doc, 'score': score}
+
+            if not docid_scores:  # 임계값 이상인 문서가 없는 경우
+                print(f"임계값({args.score_thres}) 이상의 문서가 없습니다.")
+                return response
 
         retrieved_context = []
         ## Reranking
@@ -123,26 +133,34 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
 
             # 최종 선택된 상위 3개 문서
             final_results = sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
+            print(len(final_results))
 
-            # final_results에서 docid를 추출하여 reranking에 사용
-            top_docs = [result['doc'].metadata['docid'] for result in final_results]
-            docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
+            # final_results에서 문서 내용을 추출하여 reranking에 사용
+            top_docs = [result['doc'].page_content for result in final_results]
 
-            # 초기 점수 추출
-            initial_scores = [result['score'] for result in final_results]
+            # voyageai 클라이언트를 이용한 reranking
+            vo = voyageai.Client()
+            voyage_reranking = vo.rerank(standalone_query, top_docs, model="rerank-2", top_k=3)
 
-            # RankGPT reranking 수행
-            reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
-    
+            # reranking 결과 반영
+            reranked_results = []
+            for r in voyage_reranking.results:
+                doc = next((result for result in final_results if result['doc'].page_content == r.document), None)
+                if doc:
+                    reranked_results.append({
+                        "doc": doc['doc'],
+                        "score": r.relevance_score
+                    })
+
             # 상위 3개의 문서만 선택하여 저장
-            for i, idx in enumerate(reranked_doc_indices):
-                doc = docs[idx]
-                retrieved_context.append(doc['content'])
-                response["topk"].append(doc['metadata'].get('docid'))
+            for result in reranked_results:
+                doc = result['doc']
+                retrieved_context.append(doc.page_content)
+                response["topk"].append(doc.metadata.get('docid'))
                 response["references"].append({
-                    "docid": doc['metadata'].get('docid'),
-                    "score": initial_scores[idx], ## reranked_scores[i],
-                    "content": doc['content']
+                    "docid": doc.metadata.get('docid'),
+                    "score": result['score'],
+                    "content": doc.page_content
                 })
         else:
             # 최종 선택된 상위 3개 문서
@@ -206,31 +224,25 @@ def ollama_eval_rag(args, retriever):
         for line in f:
             j = json.loads(line)
 
-            if not args.query_expansion:
-                id = j['eval_id']
+            # id = j['eval_id']
+            # print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
+            # chats = get_chat_history(j)
+            # if len(j["msg"]) > 1:
+            #     query = chain1.invoke({"chat_history": chats})
+            # else:
+            #     query = chats.split(':')[1].strip()
+            # print("=" * 30)
+            # print(f"Standalone_Query : {query}")
+            
+            # domain_check_result = chain2.invoke({"query": query})
+            # print("=" * 30)
+            # print(f"Domain_Check : {domain_check_result}")
 
-                # print(f'Test {idx:>04}\nQuestion: {j["msg"]}')
-                # chats = get_chat_history(j)
-                # if len(j["msg"]) > 1:
-                #     query = chain1.invoke({"chat_history": chats})
-                # else:
-                #     query = chats.split(':')[1].strip()
-                # print("=" * 30)
-                # print(f"Standalone_Query : {query}")
-                
-                # domain_check_result = chain2.invoke({"query": query})
-                # print("=" * 30)
-                # print(f"Domain_Check : {domain_check_result}")
-
-                query = j['query']
-                print(f'Test {idx:>04}\nQuestion: {query}')
-                print("=" * 30)
-                print(f"Standalone_Query : {query}")
-
-            else:
-                id = j['eval_id']
-                query = j["expanded_query"]
-                print(f'Test {idx:>04}\nQuestion: {j["expanded_query"]}')
+            id = j['eval_id']
+            query = j['query']
+            print(f'Test {idx:>04}\nQuestion: {query}')
+            print("=" * 30)
+            print(f"Standalone_Query : {query}")
 
             # if domain_check_result == "False":
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:

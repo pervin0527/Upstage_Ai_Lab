@@ -19,7 +19,7 @@ from langchain.retrievers.document_compressors import CrossEncoderReranker
 from dense_retriever.doc_processor import score_normalizer
 
 def load_voyage_encoder(model_name):
-    encoder = VoyageAIEmbeddings(model=model_name)
+    encoder = VoyageAIEmbeddings(model=model_name, show_progress_bar=True, batch_size=64)
 
     return encoder
 
@@ -29,10 +29,7 @@ def load_ollama_encoder(model_name):
     return encoder
 
 def load_upstage_encoder(model_name):
-    encoder = UpstageEmbeddings(model=model_name,
-                                show_progress_bar=True,
-                                embed_batch_size=64)
-
+    encoder = UpstageEmbeddings(model=model_name, show_progress_bar=True, embed_batch_size=64)
     return encoder
 
 def load_openai_encoder(model_name):

@@ -42,20 +42,20 @@ def main(args: Args):
     print(f"Eval File : {args.eval_file_path}")
     print(f"Document File : {args.doc_file_path}")
 
-    print("+" * 30)
+    print("+" * 70)
     print(f"사용언어 : {args.src_lang}")
     print("문서 로딩", end=" ")
     documents = load_document(path=args.doc_file_path)
     print(len(documents))
 
     if args.chunking:
-        print("+" * 30)
+        print("+" * 70)
         print(f"Document Chunking.")
         print(f"Method : {args.chunk_method}")
         print(f"Chunk Size : {args.chunk_size}. Chunk Overlap : {args.chunk_overlap}")
         documents = chunking(args, documents)
 
-    print("+" * 30)
+    print("+" * 70)
     if args.doc_method == "dense":
         print(f"{args.encoder_method} Retriever 생성 중")
         retriever = load_dense_model(args, documents)
@@ -67,9 +67,9 @@ def main(args: Args):
     elif args.doc_method == "ensemble":
         print("Ensemble Retriever 생성 중")
         sparse_retriever = load_sparse_model(documents, args.src_lang)
-        sparse_retriever.k = 10
+        sparse_retriever.k = 20
         
-        dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 10})
+        dense_retriever = load_dense_model(args, documents).as_retriever(search_kwargs={"k": 20})
 
         # retriever = EnsembleRetriever(
         #     retrievers=[sparse_retriever, dense_retriever],
@@ -84,7 +84,7 @@ def main(args: Args):
         elif args.ensemble_method == "cc":
             retriever = EnsembleRetriever(retrievers=[sparse_retriever, dense_retriever], method=EnsembleMethod.CC)
 
-    print("+" * 30)
+    print("+" * 70)
     print("검색 시작.\n\n")
     if args.llm_model == "gpt-4o":
         client = OpenAI()

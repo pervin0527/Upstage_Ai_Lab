@@ -153,62 +153,35 @@ def query_refinement(query, model, client):
     return response
 
 
-def query_expansion(query, model:str, client):
+def query_expansion(query, model: str, client):
     content = (
         """
         당신은 한국어 질의를 이해하여 정확한 문서들을 검색하도록 질의를 개선하는 전문가입니다.
         사용자의 질문 의도를 명확히 파악하고, 그 의도를 유지하면서 검색 시스템이 관련 문서를 더 잘 찾을 수 있도록 질의를 더 명확하게 만드세요.
-        다의어(여러 가지 의미를 가질 수 있는 단어)를 포함하는 경우, 주어진 문맥에서 가장 적절한 의미를 선택하여 확장하세요.
-        질문의 키워드가 여러 분야에 걸쳐 사용될 수 있는 경우, 사용자가 의도한 분야 또는 가장 가능성이 높은 분야를 명확히 하세요.
-        질문의 의도가 불명확하거나 모호할 경우, 일반적인 해석을 추가하여 검색의 정확도를 높이세요.
+        질문의 의미를 확장할 필요가 있다면, 추가 정보를 최소화하여 의도를 왜곡하지 않도록 주의하세요.
 
         다음은 몇 가지 예시입니다.
 
         예제1
             입력: Thomas Alva Edison은 누구인가요?
-            출력: 특정 인물에 대해 묻는 질문입니다. Thomas Alva Edison(토머스 앨바 에디슨)라는 인물은 누구인가요?
+            출력: Thomas Alva Edison이라는 인물에 대해 묻는 질문입니다.
 
         예제2
             입력: 온난 전선이 발생하면 이후 날씨는 어떻게 되나?
-            출력: 기후에서 발생하는 온난 전선이 발생한 후의 날씨에 대한 질문입니다. 온난 전선이 발생하면 이후의 기상 현상에 대해 설명해주세요.
+            출력: 기상 현상에서 온난 전선이 발생한 후 날씨에 대해 묻는 질문입니다.
 
-        예제3
-            입력: 짚신 벌레의 번식은 어떻게 이루어지나?
-            출력: 짚신 벌레의 번식 과정에 대해 묻는 질문입니다. 짚신 벌레는 어떻게 번식하며, 그 과정에서 어떤 특징이 나타나는지 설명해주세요.
-
-        예제4
-            입력: 작은 기체 하나의 질량을 어떻게 구할 수 있어?
-            출력: 물리학에서 작은 기체의 질량을 구하는 방법에 대한 질문입니다. 기체의 질량을 구하는 방법을 밀도와 온도를 기반으로 설명해주세요.
-
-        예제5
-            입력: 곤충의 생태를 관찰할 때 사용할 수 있는 방법은?
-            출력: 곤충의 생태를 관찰하는 방법에 대한 질문입니다. 곤충을 관찰하기 위한 도구와 방법, 그리고 생태계에서 관찰할 수 있는 곤충의 행동이나 특징을 설명해주세요.
-
-        예제6
-            입력: 난관의 기능에 대해 알려줘.
-            출력: 여성 생식기에서 난관의 기능에 대해 묻는 질문입니다. 난관은 어떤 역할을 하며, 생식 과정에서 어떻게 기여하는지 설명해주세요.
-
-        확장된 질의는 자연스러운 문장 형태로 제공되어야 합니다.
-        반환하는 형식은 반드시 JSON 포맷이어야 하며, 모든 문자열은 쌍따옴표로 감싸야 합니다.
-        { "query": "확장된 자연스러운 질의" }.'
+        확장된 질의는 자연스러운 문장 형태로 제공되어야 하며, 구체화만 필요할 때에만 확장을 수행하세요.
         """
     )
-
 
     completion = client.chat.completions.create(
         model=model,
         messages=[
-            {"role" : "system", "content" : content},
-            {"role" : "user", "content" : query}
+            {"role": "system", "content": content},
+            {"role": "user", "content": query}
         ],
     )
     
     response = completion.choices[0].message.content
-    response = clean_json_response(response)
     
-    try:
-        json_response = json.loads(response)
-    except json.JSONDecodeError:
-        return {"error": "Invalid JSON response", "response": response}
-    
-    return json_response['query']
+    return response.strip()

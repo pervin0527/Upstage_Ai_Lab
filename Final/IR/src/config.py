@@ -55,3 +55,6 @@ class Args:
         {'type': 'hf', 'name': "dragonkue/bge-m3-ko"},
         {'type': 'upstage', 'name': "solar-embedding-1-large-query"},
     ]
+
+    ## multiple query
+    multiple_query = False

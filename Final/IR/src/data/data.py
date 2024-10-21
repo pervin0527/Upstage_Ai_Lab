@@ -33,8 +33,19 @@ def load_query(file_path):
     
     return queries
 
-def load_document(path='../dataset/documents.jsonl'):
-    raw_documents = load_jsonl(path)
+def load_eval(file_path):
+    raw_evals = load_jsonl(file_path)
+
+    evals = []
+    for eval in raw_evals:
+        eval_id = eval['eval_id']
+        query = eval['query']
+        evals.append({"eval_id":eval_id, "query":query})
+
+    return evals
+
+def load_document(file_path):
+    raw_documents = load_jsonl(file_path)
 
     documents = []
     for doc in raw_documents:

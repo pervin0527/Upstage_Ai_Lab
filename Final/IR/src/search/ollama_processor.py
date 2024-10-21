@@ -7,9 +7,12 @@ from scipy.spatial.distance import cosine
 
 from langchain_ollama import ChatOllama
 # from langchain.retrievers import EnsembleRetriever
+from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.retrievers import BM25Retriever
 from langchain_teddynote.retrievers import EnsembleRetriever
-from langchain_community.vectorstores.faiss import FAISS
+
+from langchain_openai import ChatOpenAI
+from langchain.retrievers.multi_query import MultiQueryRetriever
 
 from rankgpt.ranker import reranking
 from search.query_processor import query_refinement, query_expansion
@@ -69,6 +72,11 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
                 search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
 
+            elif isinstance(retriever, MultiQueryRetriever):
+                results = retriever.invoke(standalone_query)
+                sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
+
             else:
                 raise ValueError("Unknown retriever type")
     
@@ -110,6 +118,12 @@ def ollama_answer_question(args, standalone_query, retriever, ensemble_encoders=
                 results = retriever.invoke(standalone_query)
                 sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
                 search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
+
+            elif isinstance(retriever, MultiQueryRetriever):
+                results = retriever.invoke(standalone_query)
+                sorted_results = sorted(results, key=lambda x: x.metadata['score'], reverse=True)
+                search_result = [(result, result.metadata['score']) for result in sorted_results[:20]]
+
             else:
                 raise ValueError("Unknown retriever type")
             
@@ -218,6 +232,10 @@ def ollama_eval_rag(args, retriever):
             ensemble_encoders.append(encoder)
     else:
         ensemble_encoders = None
+
+    if args.multiple_query:
+        llm = ChatOpenAI(model_name="gpt-4o", temperature=0)
+        retriever = MultiQueryRetriever.from_llm(retriever=retriever, llm=llm)
 
     with open(args.eval_file_path) as f, open(args.output_path, "w") as of:
         idx = 0

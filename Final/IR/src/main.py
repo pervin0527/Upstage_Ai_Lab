@@ -45,7 +45,7 @@ def main(args: Args):
     print("+" * 70)
     print(f"사용언어 : {args.src_lang}")
     print("문서 로딩", end=" ")
-    documents = load_document(path=args.doc_file_path)
+    documents = load_document(args.doc_file_path)
     print(len(documents))
 
     if args.chunking:

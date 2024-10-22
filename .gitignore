@@ -39,3 +39,4 @@ BART_runs/
 *.env
 *.npy
 index_files/
+indexes/

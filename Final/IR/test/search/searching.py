@@ -1,6 +1,7 @@
 import os
 import json
 import yaml
+import voyageai
 import numpy as np
 
 from datetime import datetime
@@ -42,11 +43,34 @@ def retrieve_documents(query, retriever, k=10):
         raise ValueError("Unknown retriever type")
     
 
-def filter_top_docs(cfg, search_results, dataset, ensemble_encoders=None, query_embeddings=None):
-    docid_scores = {}
+def filter_search_results(search_result, score_threshold):
+    # score_threshold 이상인 결과만 필터링
+    filtered_by_score = [
+        (doc, text) for doc, text in search_result 
+        if doc.metadata['score'] >= score_threshold
+    ]
     
-    # 전체 문서에서 docid에 해당하는 문서를 찾기 위한 사전 구축
-    full_doc_map = {doc.metadata['docid']: doc for doc in dataset['full_documents']}
+    # docid별로 최고 점수를 가진 결과를 찾기 위한 임시 딕셔너리
+    docid_to_best_result = {}
+    for doc, text in filtered_by_score:
+        docid = doc.metadata['docid']
+        score = doc.metadata['score']
+        
+        if docid not in docid_to_best_result or score > docid_to_best_result[docid][0].metadata['score']:
+            docid_to_best_result[docid] = (doc, text)
+    
+    # 최종 결과를 점수 순으로 정렬
+    final_results = sorted(
+        docid_to_best_result.values(), 
+        key=lambda x: x[0].metadata['score'], 
+        reverse=True
+    )
+    
+    return final_results
+    
+
+def query_ensembling(cfg, search_results, ensemble_encoders=None, query_embeddings=None):
+    docid_scores = {}
     
     for doc, _ in search_results:
         if query_embeddings:
@@ -54,24 +78,16 @@ def filter_top_docs(cfg, search_results, dataset, ensemble_encoders=None, query_
                 weight * (1 - cosine(query_embedding, doc.metadata.get(f"embedding_{cfg['query_ensemble']['models'][idx]['name']}", ensemble_encoders[idx].embed_query(doc.page_content))))
                 for idx, (query_embedding, weight) in enumerate(query_embeddings)
             )
-        else:
-            combined_similarity = 1  # query_embeddings가 없으면 기본값 설정
 
         # 문서 필터링 및 저장
         if combined_similarity >= cfg['retriever']['score_threshold']:
             docid = doc.metadata.get('docid')
-            if docid not in docid_scores or combined_similarity > docid_scores[docid]['score']:
-                # 해당 docid에 해당하는 full document의 page_content로 대체
-                if docid in full_doc_map:
-                    full_document = full_doc_map[docid]
-                    doc.page_content = full_document.page_content  # 청크의 page_content를 전체 문서 내용으로 교체
-                docid_scores[docid] = {'doc': doc, 'score': combined_similarity}
+            docid_scores[docid] = {'doc': doc, 'score': combined_similarity}
 
-    # 최종 선택된 상위 3개 문서 반환
     return sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
 
 
-def rag(cfg, standalone_query, retriever, dataset, ensemble_encoders=None):
+def rag(cfg, standalone_query, retriever, dataset, full_documents, ensemble_encoders=None):
     response = {"standalone_query": standalone_query or "", "topk": [], "references": [], "answer": ""}
     
     if standalone_query is None:
@@ -79,41 +95,76 @@ def rag(cfg, standalone_query, retriever, dataset, ensemble_encoders=None):
         response["answer"] = "질문이 과학 상식에 해당하지 않습니다."
         return response
     
+    search_result = retrieve_documents(standalone_query, retriever, cfg['retriever']['top_k'])
+    filtered_search_result = filter_search_results(search_result, cfg['retriever']['score_threshold'])
+
+    candidates1 = [(doc.metadata['docid'], doc.metadata['score']) for doc, _ in search_result]
+    candidates2 = [(doc.metadata['docid'], doc.metadata['score']) for doc, _ in filtered_search_result]
+    print(f"candidates1 : {candidates1}")
+    print(f"candidates2 : {candidates2}")
+    
     if cfg['query_ensemble']['apply']:
         print("  query ensembling...")
         if len(cfg['query_ensemble']['models']) != len(cfg['query_ensemble']['weights']):
             raise ValueError("ensemble_models와 ensemble_weights의 길이가 동일해야 합니다.")
-        
+
         query_embeddings = [(encoder.embed_query(standalone_query), cfg['query_ensemble']['weights'][idx]) for idx, encoder in enumerate(ensemble_encoders)]
-        search_result = retrieve_documents(standalone_query, retriever, cfg['retriever']['top_k'])
-        final_results = filter_top_docs(cfg, search_result, dataset, ensemble_encoders, query_embeddings)
+        final_results = query_ensembling(cfg, filtered_search_result, ensemble_encoders, query_embeddings)
+
+        candidates3 = [(result['doc'].metadata['docid'], result['score']) for result in final_results]
+        print(f"candidates3 : {candidates3}")
     else:
-        search_result = retrieve_documents(standalone_query, retriever, cfg['retriever']['top_k'])
-        final_results = filter_top_docs(cfg, search_result, dataset)
-    
-    if not final_results:
-        print(f"임계값({cfg['retriever']['score_threshold']}) 이상의 문서가 없습니다.")
-        return response
+        final_results = [
+            {'doc': doc, 'score': score} 
+            for doc, score in filtered_search_result
+        ]
     
     retrieved_context = []
     if cfg['reranking']:
         print("  reranking...")
-        # top_docs를 [1]: 문서1\n, [2]: 문서2\n 형태로 변환
-        top_docs = [result['doc'].metadata['docid'] for result in final_results]
-        docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
-        initial_scores = [result['score'] for result in final_results]
+        top_docs = [result['doc'].page_content for result in final_results]
 
-        reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
-        reranked_results = [
-            {"doc": final_results[int(idx)]['doc'], "score": reranked_scores[i]}
-            for i, idx in enumerate(reranked_doc_indices)
-        ]
-        final_results = reranked_results[:3]  # 상위 3개 문서만 선택
+        vo = voyageai.Client()
+        voyage_reranking = vo.rerank(standalone_query, top_docs, model="rerank-2", top_k=3)
+
+        reranked_results = []
+        for r in voyage_reranking.results:
+            doc = next((result for result in final_results if result['doc'].page_content == r.document), None)
+            if doc:
+                reranked_results.append({
+                    "doc": doc['doc'],
+                    "score": r.relevance_score
+                })
+
+        for result in reranked_results:
+            doc = result['doc']
+            retrieved_context.append(doc.page_content)
+            response["topk"].append(doc.metadata.get('docid'))
+            response["references"].append({
+                "docid": doc.metadata.get('docid'),
+                "score": result['score'],
+                "content": doc.page_content
+            })
+
+        ## top_docs를 [1]: 문서1\n, [2]: 문서2\n 형태로 변환
+        # top_docs = [result['doc'].metadata['docid'] for result in final_results]
+        # docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
+        # initial_scores = [result['score'] for result in final_results]
+
+        # reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
+        # reranked_results = [
+        #     {"doc": final_results[int(idx)]['doc'], "score": reranked_scores[i]}
+        #     for i, idx in enumerate(reranked_doc_indices)
+        # ]
+        # final_results = reranked_results[:3]  # 상위 3개 문서만 선택
 
     if cfg['custom_reranking']:
         final_results = custom_reranker(standalone_query, final_results)
         
     for result in final_results[:3]:
+        docid = result['doc'].metadata['docid']
+        result['doc'].page_content = full_documents[docid].page_content
+
         doc = result['doc']
         retrieved_context.append(doc.page_content)
         response["topk"].append(doc.metadata.get('docid'))
@@ -123,12 +174,13 @@ def rag(cfg, standalone_query, retriever, dataset, ensemble_encoders=None):
             "content": doc.page_content
         })
     
-    print("\n검색결과")
+    print("\n  검색결과")
     for idx, ref in enumerate(response["references"], start=1):
-        print("-" * 70)
         print(f"  Rank{idx}")
-        print(f"  - DocID: {ref['docid']}, Score: {ref['score']:.4f}")
-        print(f"  - Content: {ref['content']}\n")
+        print("  ","-" * 70)
+        print(f"    - DocID: {ref['docid']}")
+        print(f"    - Score: {ref['score']:.4f}")
+        print(f"    - Content: {ref['content']}\n")
     
     return response
 
@@ -151,6 +203,7 @@ def start_rag(cfg, retriever, dataset):
     with open(cfg_output_path, 'w') as yaml_file:
         yaml.dump(cfg, yaml_file, default_flow_style=False, allow_unicode=True)
 
+    full_doc_map = {doc.metadata['docid']: doc for doc in dataset['full_documents']}
     with open(cfg['dataset']['eval_file']) as f, open(f"{output_path}/{cfg['output']['name']}", "w") as of:
         idx = 0
         for line in f:
@@ -167,8 +220,9 @@ def start_rag(cfg, retriever, dataset):
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
                 query = None
 
-            response = rag(cfg, query, retriever, dataset, ensemble_models)
+            response = rag(cfg, query, retriever, dataset, full_doc_map, ensemble_models)
 
             output = {"eval_id": data["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
             of.write(f'{json.dumps(output, ensure_ascii=False)}\n')
-            idx += 1            
+            idx += 1
+            print()            

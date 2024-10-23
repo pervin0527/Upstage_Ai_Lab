@@ -1,10 +1,11 @@
 import os
+import pickle
+import numpy as np
 
+from tqdm import tqdm
 from datetime import datetime
-from langchain_chroma import Chroma
-from langchain.storage import InMemoryByteStore
-from langchain.retrievers.multi_vector import MultiVectorRetriever, SearchType
-
+from langchain.schema import Document
+from langchain_community.vectorstores.faiss import FAISS
 from langchain_teddynote.retrievers import EnsembleRetriever, EnsembleMethod
 
 from retriever.sparse import load_sparse_retriever
@@ -18,27 +19,26 @@ def setup_dense_retriever(cfg, dataset):
 
     if cfg['retriever']['dense_retriever']['persist_dir'] is None or not os.path.exists(cfg['retriever']['dense_retriever']['persist_dir']):
         timestamp = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-        persist_dir = f"./indexes/{timestamp}"
+        persist_dir = f"./indexes/{cfg['retriever']['dense_retriever']['method']}/{timestamp}"
         os.makedirs(persist_dir, exist_ok=True)
-        vector_store = Chroma(collection_name=cfg['dataset']['collection_name'], 
-                              embedding_function=embedder, 
-                              persist_directory=persist_dir)
 
+        documents = []
         for key in dataset.keys():
             if key == "full_documents":
                 continue
-            vector_store.add_documents(dataset[key], persist_directory=persist_dir)
+            documents.extend(dataset[key])
+            
+        vector_store = FAISS.from_documents(documents, embedder)
+        vector_store.save_local(persist_dir)
+        print(f"  Vector Store Saved {persist_dir}")
+        retriever = vector_store
 
     else:
-        vector_store = Chroma(embedding_function=embedder, persist_directory=cfg['retriever']['dense_retriever']['persist_dir'])
+        retriever = FAISS.load_local(cfg['retriever']['dense_retriever']['persist_dir'], embedder, allow_dangerous_deserialization=True)
 
-    # retriever = vector_store
-    id_key = "docid"
-    store = InMemoryByteStore()
-    retriever = MultiVectorRetriever(vectorstore=vector_store, byte_store=store, id_key=id_key)
-    retriever.search_type = SearchType.mmr ## mmr, similarity, similarity_score_threshold
-
+    print(f"  Total Documents in VectorStore: {retriever.index.ntotal}")
     return retriever
+
 
 def load_retriever(cfg, dataset):
     print("=" * 70)
@@ -57,8 +57,7 @@ def load_retriever(cfg, dataset):
         sparse.k = cfg['retriever']['top_k']
         
         print("  Dense retriever Loading.")
-        # dense = setup_dense_retriever(cfg, dataset).as_retriever(search_kwargs={"k": cfg['retriever']['top_k']})
-        dense = setup_dense_retriever(cfg, dataset)
+        dense = setup_dense_retriever(cfg, dataset).as_retriever(search_type="mmr", search_kwargs={"k": cfg['retriever']['top_k']})
 
         if cfg['retriever']['ensemble_retriever']['method'] == "rrf":
             retriever = EnsembleRetriever(retrievers=[sparse, dense], method=EnsembleMethod.RRF)
@@ -67,6 +66,7 @@ def load_retriever(cfg, dataset):
             retriever = EnsembleRetriever(retrievers=[sparse, dense], method=EnsembleMethod.CC)
 
     return retriever
+
 
 def load_query_ensemblers(cfg):
     ensemble_embedders = []

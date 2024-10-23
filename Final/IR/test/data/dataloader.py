@@ -72,12 +72,12 @@ def load_doc_dataset(cfg):
     if not cfg['dataset']['summary_doc_file'] is None:
         summaries = load_document_summary(cfg['dataset']['summary_doc_file'])
         dataset["summaries"] = summaries
-        print(f"  {cfg['dataset']['summary_doc_file']} Loaded. num of data : {len(documents)}")
+        print(f"  {cfg['dataset']['summary_doc_file']} Loaded. num of data : {len(summaries)}")
     
     if not cfg['dataset']['hyp_query_file'] is None:
-        hyp_queries = load_document_summary(cfg['dataset']['hyp_query_file'])
+        hyp_queries = load_hypothetical_quries(cfg['dataset']['hyp_query_file'])
         dataset["hyp_queries"] = hyp_queries
-        print(f"  {cfg['dataset']['hyp_query_file']} Loaded. num of data : {len(documents)}")
+        print(f"  {cfg['dataset']['hyp_query_file']} Loaded. num of data : {len(hyp_queries)}")
 
     print(f"Dataset keys : {dataset.keys()}")
     

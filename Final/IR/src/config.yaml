@@ -1,0 +1,64 @@
+dataset:
+  language: ko
+  collection_name: "information_retrieval"
+  full_doc_file: "../dataset/processed_documents.jsonl"
+
+  eval_file:  "../dataset/processed_eval.jsonl"
+  doc_file: "../dataset/gpt_contextual_retrieval_documents_v3.jsonl"
+  hyp_query_file: null ## ../dataset/processed_documents_queries.jsonl
+  summary_doc_file: null ## ../dataset/summarized_documents.jsonl
+
+  en_eval_file: "../dataset/koen_eval.jsonl"
+  en_doc_file: "../dataset/en_4.0_document.jsonl"
+
+output: 
+  path: "./outputs"
+  name: "output.csv"
+
+chunking:
+  apply: False
+  method: recursive
+
+  chunk_size: 100
+  chunk_overlap: 50
+
+  semantic_chunk:
+    method: upstage
+    model: solar-embedding-1-large
+
+retriever:
+  method: ensemble
+  top_k: 10
+  score_threshold: 0.7
+
+  dense_retriever:
+    method: "upstage"
+    model: "solar-embedding-1-large"
+    persist_dir: "./indexes/upstage/BEST-9530-CRV3"
+    model_kwargs:
+      device: "cuda:0"
+    encode_kwargs:
+      normalize_embeddings: True
+      clean_up_tokenization_spaces: True
+
+  ensemble_retriever:
+    method: "rrf"
+    weights: [0.5, 0.5]
+
+query_ensemble:
+  apply: True
+  weights: [0.1, 0.3, 0.6]  ## [0.3, 0.3, 0.4]
+  models:
+    - type: huggingface
+      name: "BAAI/bge-m3"
+    - type: huggingface
+      name: "dragonkue/bge-m3-ko"
+    - type: upstage
+      name: "solar-embedding-1-large"
+
+reranking:
+  apply: False
+  score_threshold: 0.6
+
+custom_reranking: False
+multiple_query: False

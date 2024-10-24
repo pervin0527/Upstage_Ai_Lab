@@ -24,7 +24,7 @@ def setup_dense_retriever(cfg, dataset):
 
         documents = []
         for key in dataset.keys():
-            if key == "full_documents":
+            if key in ["full_documents", "en_queries", "en_documents"]:
                 continue
             documents.extend(dataset[key])
             

@@ -69,15 +69,47 @@ def filter_search_results(search_result, score_threshold):
     return final_results
     
 
+# def query_ensembling(cfg, search_results, ensemble_encoders=None, query_embeddings=None):
+#     docid_scores = {}
+    
+#     for doc, _ in search_results:
+#         if query_embeddings:
+#             combined_similarity = sum(
+#                 weight * (1 - cosine(query_embedding, doc.metadata.get(f"embedding_{cfg['query_ensemble']['models'][idx]['name']}", ensemble_encoders[idx].embed_query(doc.page_content))))
+#                 for idx, (query_embedding, weight) in enumerate(query_embeddings)
+#             )
+
+#         # 문서 필터링 및 저장
+#         if combined_similarity >= cfg['retriever']['score_threshold']:
+#             docid = doc.metadata.get('docid')
+#             docid_scores[docid] = {'doc': doc, 'score': combined_similarity}
+
+#     return sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
+
+
 def query_ensembling(cfg, search_results, ensemble_encoders=None, query_embeddings=None):
     docid_scores = {}
     
     for doc, _ in search_results:
         if query_embeddings:
-            combined_similarity = sum(
-                weight * (1 - cosine(query_embedding, doc.metadata.get(f"embedding_{cfg['query_ensemble']['models'][idx]['name']}", ensemble_encoders[idx].embed_query(doc.page_content))))
-                for idx, (query_embedding, weight) in enumerate(query_embeddings)
-            )
+            # 1. cosine similarity로 변환 (거리가 아닌 유사도)
+            similarities = []
+            for idx, (query_embedding, weight) in enumerate(query_embeddings):
+                doc_embedding = doc.metadata.get(
+                    f"embedding_{cfg['query_ensemble']['models'][idx]['name']}", 
+                    ensemble_encoders[idx].embed_query(doc.page_content)
+                )
+                # cosine similarity = 1 - cosine distance
+                similarity = 1 - cosine(query_embedding, doc_embedding)
+                # 2. Min-Max 정규화 적용 (선택적)
+                normalized_similarity = (similarity - (-1)) / (1 - (-1))  # cosine similarity는 [-1, 1] 범위
+                similarities.append(weight * normalized_similarity)
+            
+            # 3. 가중 평균 계산
+            combined_similarity = sum(similarities)
+            
+            # 4. Softmax-like 변환 (선택적)
+            # combined_similarity = np.exp(combined_similarity) / (1 + np.exp(combined_similarity))
 
         # 문서 필터링 및 저장
         if combined_similarity >= cfg['retriever']['score_threshold']:
@@ -87,7 +119,8 @@ def query_ensembling(cfg, search_results, ensemble_encoders=None, query_embeddin
     return sorted(docid_scores.values(), key=lambda x: x['score'], reverse=True)
 
 
-def rag(cfg, standalone_query, retriever, dataset, full_documents, ensemble_encoders=None):
+def rag(cfg, eval_data, retriever, dataset, ensemble_encoders=None):
+    id, standalone_query = eval_data['eval_id'], eval_data['query']
     response = {"standalone_query": standalone_query or "", "topk": [], "references": [], "answer": ""}
     
     if standalone_query is None:
@@ -97,11 +130,6 @@ def rag(cfg, standalone_query, retriever, dataset, full_documents, ensemble_enco
     
     search_result = retrieve_documents(standalone_query, retriever, cfg['retriever']['top_k'])
     filtered_search_result = filter_search_results(search_result, cfg['retriever']['score_threshold'])
-
-    candidates1 = [(doc.metadata['docid'], doc.metadata['score']) for doc, _ in search_result]
-    candidates2 = [(doc.metadata['docid'], doc.metadata['score']) for doc, _ in filtered_search_result]
-    print(f"candidates1 : {candidates1}")
-    print(f"candidates2 : {candidates2}")
     
     if cfg['query_ensemble']['apply']:
         print("  query ensembling...")
@@ -110,60 +138,54 @@ def rag(cfg, standalone_query, retriever, dataset, full_documents, ensemble_enco
 
         query_embeddings = [(encoder.embed_query(standalone_query), cfg['query_ensemble']['weights'][idx]) for idx, encoder in enumerate(ensemble_encoders)]
         final_results = query_ensembling(cfg, filtered_search_result, ensemble_encoders, query_embeddings)
-
-        candidates3 = [(result['doc'].metadata['docid'], result['score']) for result in final_results]
-        print(f"candidates3 : {candidates3}")
     else:
-        final_results = [
-            {'doc': doc, 'score': score} 
-            for doc, score in filtered_search_result
-        ]
+        final_results = [{'doc': doc, 'score': score} for doc, score in filtered_search_result]
     
     retrieved_context = []
-    if cfg['reranking']:
+    if cfg['reranking']['apply']:
         print("  reranking...")
-        top_docs = [result['doc'].page_content for result in final_results]
+        
+        # 영어 쿼리 가져오기
+        en_query = dataset['en_eval_map'].get(id)
+        if not en_query:
+            print("  Warning: English query not found for eval_id:", eval_data['eval_id'])
+            en_query = standalone_query  # Fallback to original query
+            
+        # 영어 문서 준비
+        en_top_docs = []
+        en_final_results = []
+        for result in final_results:
+            docid = result['doc'].metadata['docid']
+            if docid in dataset['en_doc_map']:
+                en_doc = dataset['en_doc_map'][docid]
+                en_top_docs.append(en_doc.page_content)
+                en_final_results.append({
+                    'doc': result['doc'],  # 원본 문서 메타데이터 유지
+                    'en_doc': en_doc,      # 영어 문서 콘텐츠용
+                    'score': result['score']
+                })
+            else:
+                print(f"  Warning: English document not found for docid: {docid}")
+                en_top_docs.append(result['doc'].page_content)
+                en_final_results.append(result)
 
         vo = voyageai.Client()
-        voyage_reranking = vo.rerank(standalone_query, top_docs, model="rerank-2", top_k=3)
+        voyage_reranking = vo.rerank(en_query, en_top_docs, model="rerank-2", top_k=3)
 
         reranked_results = []
         for r in voyage_reranking.results:
-            doc = next((result for result in final_results if result['doc'].page_content == r.document), None)
-            if doc:
-                reranked_results.append({
-                    "doc": doc['doc'],
-                    "score": r.relevance_score
-                })
+            if r.relevance_score >= cfg['reranking']['score_threshold']:
+                doc = next((result for result in en_final_results if 
+                          ('en_doc' in result and result['en_doc'].page_content == r.document) or 
+                          result['doc'].page_content == r.document), None)
+                if doc:
+                    reranked_results.append({"doc": doc['doc'], "score": r.relevance_score})
 
-        for result in reranked_results:
-            doc = result['doc']
-            retrieved_context.append(doc.page_content)
-            response["topk"].append(doc.metadata.get('docid'))
-            response["references"].append({
-                "docid": doc.metadata.get('docid'),
-                "score": result['score'],
-                "content": doc.page_content
-            })
-
-        ## top_docs를 [1]: 문서1\n, [2]: 문서2\n 형태로 변환
-        # top_docs = [result['doc'].metadata['docid'] for result in final_results]
-        # docs = [{'content': result['doc'].page_content, 'metadata': result['doc'].metadata} for result in final_results]
-        # initial_scores = [result['score'] for result in final_results]
-
-        # reranked_doc_indices, reranked_scores = reranking(standalone_query, top_docs, docs, top_k=3, initial_scores=initial_scores)
-        # reranked_results = [
-        #     {"doc": final_results[int(idx)]['doc'], "score": reranked_scores[i]}
-        #     for i, idx in enumerate(reranked_doc_indices)
-        # ]
-        # final_results = reranked_results[:3]  # 상위 3개 문서만 선택
-
-    if cfg['custom_reranking']:
-        final_results = custom_reranker(standalone_query, final_results)
+        final_results = reranked_results
         
     for result in final_results[:3]:
         docid = result['doc'].metadata['docid']
-        result['doc'].page_content = full_documents[docid].page_content
+        result['doc'].page_content = dataset['full_doc_map'][docid].page_content
 
         doc = result['doc']
         retrieved_context.append(doc.page_content)
@@ -180,7 +202,7 @@ def rag(cfg, standalone_query, retriever, dataset, full_documents, ensemble_enco
         print("  ","-" * 70)
         print(f"    - DocID: {ref['docid']}")
         print(f"    - Score: {ref['score']:.4f}")
-        print(f"    - Content: {ref['content']}\n")
+        print(f"    - Content:\n{ref['content']}\n")
     
     return response
 
@@ -203,7 +225,9 @@ def start_rag(cfg, retriever, dataset):
     with open(cfg_output_path, 'w') as yaml_file:
         yaml.dump(cfg, yaml_file, default_flow_style=False, allow_unicode=True)
 
-    full_doc_map = {doc.metadata['docid']: doc for doc in dataset['full_documents']}
+    dataset['full_doc_map'] = {doc.metadata['docid']: doc for doc in dataset['full_documents']}
+    dataset['en_eval_map'] = {query['eval_id']:query['query'] for query in dataset['en_queries']}
+    dataset['en_doc_map'] = {doc.metadata['docid']: doc for doc in dataset['en_documents']}
     with open(cfg['dataset']['eval_file']) as f, open(f"{output_path}/{cfg['output']['name']}", "w") as of:
         idx = 0
         for line in f:
@@ -218,9 +242,9 @@ def start_rag(cfg, retriever, dataset):
             print(f"  Standalone_Query : {query}")
 
             if id in [276, 261, 283, 32, 94, 90, 220,  245, 229, 247, 67, 57, 2, 227, 301, 222, 83, 64, 103, 218]:
-                query = None
+                data['query'] = None
 
-            response = rag(cfg, query, retriever, dataset, full_doc_map, ensemble_models)
+            response = rag(cfg, data, retriever, dataset, ensemble_models)
 
             output = {"eval_id": data["eval_id"], "standalone_query": response["standalone_query"], "topk": response["topk"], "answer": response["answer"], "references": response["references"]}
             of.write(f'{json.dumps(output, ensure_ascii=False)}\n')

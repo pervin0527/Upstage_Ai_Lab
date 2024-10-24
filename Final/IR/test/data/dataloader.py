@@ -56,6 +56,19 @@ def load_document_summary(file_path):
     return documents
 
 
+def load_en_eval(file_path):
+    raw_queries = load_jsonl(file_path)
+
+    en_evals = []
+    for query in raw_queries:
+        eval_id = query['eval_id']
+        en_query = query['en_query']
+
+        en_evals.append({"eval_id":eval_id, "query":en_query})
+
+    return en_evals
+
+
 def load_doc_dataset(cfg):
     print("=" * 70)
     print("Document Loading")
@@ -74,10 +87,15 @@ def load_doc_dataset(cfg):
         dataset["summaries"] = summaries
         print(f"  {cfg['dataset']['summary_doc_file']} Loaded. num of data : {len(summaries)}")
     
-    if not cfg['dataset']['hyp_query_file'] is None:
-        hyp_queries = load_hypothetical_quries(cfg['dataset']['hyp_query_file'])
-        dataset["hyp_queries"] = hyp_queries
-        print(f"  {cfg['dataset']['hyp_query_file']} Loaded. num of data : {len(hyp_queries)}")
+    if not cfg['dataset']['en_eval_file'] is None:
+        en_queries = load_en_eval(cfg['dataset']['en_eval_file'])
+        dataset["en_queries"] = en_queries
+        print(f"  {cfg['dataset']['en_eval_file']} Loaded. num of data : {len(en_queries)}")
+
+    if not cfg['dataset']['en_doc_file'] is None:
+        en_documents = load_document(cfg['dataset']['en_doc_file'])
+        dataset["en_documents"] = en_documents
+        print(f"  {cfg['dataset']['en_doc_file']} Loaded. num of data : {len(en_documents)}")
 
     print(f"Dataset keys : {dataset.keys()}")
     

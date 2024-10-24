@@ -5,7 +5,7 @@ from langchain_community.retrievers.konlpy_bm25 import OktBM25Retriever
 def load_sparse_retriever(dataset, language="ko"):
     documents = []
     for key in dataset.keys():
-        if key == "full_documents":
+        if key in ["full_documents", "en_queries", "en_documents"]:
             continue
         documents.extend(dataset[key])
 

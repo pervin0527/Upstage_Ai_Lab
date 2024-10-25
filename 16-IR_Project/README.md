@@ -1,6 +1,6 @@
 ## 0. Overview
 
-PPT : [패스트캠퍼스_Upstage_AI_Lab_3기_IR_경진대회_발표자료_8조.pdf](./ppt/패스트캠퍼스_Upstage_AI_Lab_3기_IR_경진대회_발표자료_8조.pdf)
+PPT : [패스트캠퍼스_Upstage_AI_Lab_3기_IR_경진대회_발표자료_8조.pdf](./ppt/패스트캠퍼스_Upstage_AI_Lab_3기_IR_경진대회_발표자료_8조.pdf)  
 Blog : [https://pervin0527.github.io/competition/Information-Retrieval/](https://pervin0527.github.io/competition/Information-Retrieval/)
 
 

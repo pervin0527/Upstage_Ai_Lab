@@ -1,7 +1,7 @@
 import json
 
 def main():
-    file_path = "/home/pervinco/Upstage_Ai_Lab/Final/IR/src/outputs/UP-ER-QEN-CRV3.csv"
+    file_path = "/home/pervinco/Upstage_Ai_Lab/Final/IR/src/outputs/BEST-9530/output.csv"
     with open(file_path, 'r', encoding='utf-8') as file:
         file_content = file.readlines()
 

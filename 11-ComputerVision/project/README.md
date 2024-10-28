@@ -115,7 +115,7 @@
 
 ### EDA
 
-![image](./imgs/docs/train_class_dist.png)
+![image](./imgs/train_dist.png)
 
 train data의 클래스별로 이미지 수를 파악해보면 이력서, 소견서, 임신 의료비 지급 신청서를 제외한 나머지 클래스는 100개의 데이터로 균등한 양상을 보입니다.
 
@@ -129,7 +129,7 @@ train 데이터는 노이즈나 변형이 없는 클린 데이터고, test 데�
 
 따라서 test 데이터에 적용된 augmentation이 어떻게 구성되어 있는지 확인하고, train data에 적용하여 학습하는 방식을 채택했고 이후에는 test 데이터의 노이즈를 제거하는 방식을 추가로 도입했습니다.
 
-![image](./imgs/docs/data_generate.png)
+![image](./imgs/plots/sample_medical_bill_receipts.png)
 
 또한 OCR 기술을 활용하던 중 추출된 글자를 활용하여 데이터를 생성할 수 있다고 판단해 위와 같은 커스텀 이미지를 생성해 학습에 적용했습니다.
 
@@ -152,10 +152,6 @@ CNN 계열로 ResNet, EfficientNet 그리고 transformer 계열로 ViT, Swin-tra
 따라서 위 클래스들만 학습하는 Calibration 모델을 추가했었으나 이 모델 역시 문제를 해결하지 못하여 기각했습니다.
 
 ## 5. Result
-
-### Leader Board
-
-![image](./imgs/docs/LB.png)
 
 마지막 날에는 TTA에 올인하여 성능을 조금이라도 높히려고 노력했고 1~2%정도 점수를 향상시킬 수 있었습니다.
 

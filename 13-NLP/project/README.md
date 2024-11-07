@@ -101,22 +101,20 @@ dialogue에 등장하는 #문자열# 형태의 특수토큰은 다음과 같다.
 
 ## 4. Modeling
 
-### Modeling Process
-
-#### 1.Tokenizer, Pretraining
+### 1.Tokenizer, Pretraining
 
 - 대회 데이터에 토크나이저와 pretrained model간 부적합한 부분이 있어 점수에 한계가 있는 것은 아닐까라는 생각에 토크나이저를 새로 구성하고 추가적인 pretraining을 해봤다.
 - BART : SentencePiece, T5 : BPE
 - Pretrain Task : Span Corruption
 - 토크나이저와 pretrained weight가 서로 상응하지 않는 경우 pretrained weight를 사용하기 어렵다는 점을 알게되어 더 이상 시도하지 않았다.
 
-#### 2.문제점
+### 2.문제점
 
 - Bart, T5를 기반으로 몇가지 실험을 진행하였지만 리더보드 점수는 최대 40점.
 - 한국어로 학습된 pretrained weight는 선택 폭이 너무 좁았다.
 - 대회 데이터는 원래 영어로 구성된 데이터였으나 한국어로 번역된 것이기 때문에 형태소 분석시 적합한 결과라고 받아들이기 힘든 경우가 있었다. ex) '스미스' -> ['스', '미스']
 
-#### 3.QLoRA
+### 3.QLoRA
 
 BART, T5 모델들은 성능 향상이 이루어지지 않아서 LLM 모델을 시도. ```LLama3-8B-int4```를 모델을 선택하고, 컴퓨팅 자원이 부족하기 때문에 효율성을 위해 QLoRA를 적용.
 
